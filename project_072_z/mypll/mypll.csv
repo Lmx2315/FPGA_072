@@ -1,0 +1,18 @@
+# system info mypll on 2018.01.23.15:58:19
+system_info:
+name,value
+DEVICE,5AGXMA7G4F31C4
+DEVICE_FAMILY,Arria V
+GENERATION_ID,1516708671
+#
+#
+# Files generated for mypll on 2018.01.23.15:58:19
+files:
+filepath,kind,attributes,module,is_top
+simulation/mypll.v,VERILOG,,mypll,true
+simulation/submodules/mypll_altclkctrl_0.v,VERILOG,,mypll_altclkctrl_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+mypll.altclkctrl_0,mypll_altclkctrl_0

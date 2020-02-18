@@ -1,0 +1,173 @@
+timestamp=1518155503189
+
+[$root]
+A/$root=22|""|0|1*99468
+BinI32/$root=3*97984
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[io_buf_opdrn]
+A/io_buf_opdrn=22|./../../../../quartus/eda/sim_lib/sgate.v|249|1*109655
+BinI32/io_buf_opdrn=3*106615
+P/~emb=143,339,524,649
+R=./../../../../quartus/eda/sim_lib/sgate.v|249
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[io_buf_tri]
+A/io_buf_tri=22|./../../../../quartus/eda/sim_lib/sgate.v|221|1*108269
+BinI32/io_buf_tri=3*106049
+P/~emb=166,363,554,679
+R=./../../../../quartus/eda/sim_lib/sgate.v|221
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[mux21]
+A/mux21=22|./../../../../quartus/eda/sim_lib/sgate.v|191|1*106599
+BinI32/mux21=3*105520
+P/~emb=207,413,621,746
+R=./../../../../quartus/eda/sim_lib/sgate.v|191
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_add]
+A/oper_add=22|./../../../../quartus/eda/sim_lib/sgate.v|19|1*100034
+BinI32/oper_add=3*98123
+P/~emb=383,952,1412,1694
+R=./../../../../quartus/eda/sim_lib/sgate.v|19
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_addsub]
+A/oper_addsub=22|./../../../../quartus/eda/sim_lib/sgate.v|96|1*102866
+BinI32/oper_addsub=3*100219
+P/~emb=328,731,1230,1472
+R=./../../../../quartus/eda/sim_lib/sgate.v|96
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_bus_mux]
+A/oper_bus_mux=22|./../../../../quartus/eda/sim_lib/sgate.v|1073|1*144960
+BinI32/oper_bus_mux=3*143373
+P/~emb=312,728,1155,1385
+R=./../../../../quartus/eda/sim_lib/sgate.v|1073
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_decoder]
+A/oper_decoder=22|./../../../../quartus/eda/sim_lib/sgate.v|1037|1*143012
+BinI32/oper_decoder=3*142294
+P/~emb=228,566,822,1026
+R=./../../../../quartus/eda/sim_lib/sgate.v|1037
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_div]
+A/oper_div=22|./../../../../quartus/eda/sim_lib/sgate.v|395|1*116397
+BinI32/oper_div=3*112890
+P/~emb=299,865,1443,1747
+R=./../../../../quartus/eda/sim_lib/sgate.v|395
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_latch]
+A/oper_latch=22|./../../../../quartus/eda/sim_lib/sgate.v|1136|1*147848
+BinI32/oper_latch=3*146438
+P/~emb=251,453,641,763
+R=./../../../../quartus/eda/sim_lib/sgate.v|1136
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_left_shift]
+A/oper_left_shift=22|./../../../../quartus/eda/sim_lib/sgate.v|573|1*123245
+BinI32/oper_left_shift=3*121615
+P/~emb=345,755,1204,1403
+R=./../../../../quartus/eda/sim_lib/sgate.v|573
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_less_than]
+A/oper_less_than=22|./../../../../quartus/eda/sim_lib/sgate.v|854|1*135395
+BinI32/oper_less_than=3*133643
+P/~emb=343,729,1290,1537
+R=./../../../../quartus/eda/sim_lib/sgate.v|854
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_mod]
+A/oper_mod=22|./../../../../quartus/eda/sim_lib/sgate.v|484|1*119821
+BinI32/oper_mod=3*117255
+P/~emb=299,867,1456,1766
+R=./../../../../quartus/eda/sim_lib/sgate.v|484
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_mult]
+A/oper_mult=22|./../../../../quartus/eda/sim_lib/sgate.v|275|1*110955
+BinI32/oper_mult=3*107158
+P/~emb=395,901,1379,1619
+R=./../../../../quartus/eda/sim_lib/sgate.v|275
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_mux]
+A/oper_mux=22|./../../../../quartus/eda/sim_lib/sgate.v|946|1*138563
+BinI32/oper_mux=3*138982
+P/~emb=230,526,797,933
+R=./../../../../quartus/eda/sim_lib/sgate.v|946
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_right_shift]
+A/oper_right_shift=22|./../../../../quartus/eda/sim_lib/sgate.v|650|1*126309
+BinI32/oper_right_shift=3*125145
+P/~emb=347,758,1239,1457
+R=./../../../../quartus/eda/sim_lib/sgate.v|650
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_rotate_left]
+A/oper_rotate_left=22|./../../../../quartus/eda/sim_lib/sgate.v|733|1*129391
+BinI32/oper_rotate_left=3*129247
+P/~emb=355,890,1308,1544
+R=./../../../../quartus/eda/sim_lib/sgate.v|733
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_rotate_right]
+A/oper_rotate_right=22|./../../../../quartus/eda/sim_lib/sgate.v|794|1*132391
+BinI32/oper_rotate_right=3*131441
+P/~emb=357,893,1308,1539
+R=./../../../../quartus/eda/sim_lib/sgate.v|794
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[oper_selector]
+A/oper_selector=22|./../../../../quartus/eda/sim_lib/sgate.v|992|1*140581
+BinI32/oper_selector=3*140604
+P/~emb=240,555,912,1067
+R=./../../../../quartus/eda/sim_lib/sgate.v|992
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[tri_bus]
+A/tri_bus=22|./../../../../quartus/eda/sim_lib/sgate.v|348|1*114170
+BinI32/tri_bus=3*111143
+P/~emb=227,542,885,1040
+R=./../../../../quartus/eda/sim_lib/sgate.v|348
+Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284e4f2c498d2f4b2d52d04d494a57d02d33ca3605005da00789
+
+[~A]
+LastVerilogToplevel=oper_latch
+ModifyID=653
+Version=73
+c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v=0*107461*112827
+
+[~MFT]
+0=69|0sgate_ver.mgf|112827|11752
+1=99|1sgate_ver.mgf|147848|99468
+3=99|3sgate_ver.mgf|146438|97984
+
+[~U]
+$root=12|0*75558|
+io_buf_opdrn=12|0*81986||0x90
+io_buf_tri=12|0*81071||0x90
+mux21=12|0*80094||0x90
+oper_add=12|0*75932||0x90
+oper_addsub=12|0*78017||0x90
+oper_bus_mux=12|0*104705||0x90
+oper_decoder=12|0*103483||0x90
+oper_div=12|0*86256||0x90
+oper_latch=12|0*106473||0x90
+oper_left_shift=12|0*90847||0x90
+oper_less_than=12|0*98646||0x90
+oper_mod=12|0*88536||0x90
+oper_mult=12|0*82862||0x90
+oper_mux=12|0*100801||0x90
+oper_right_shift=12|0*92779||0x90
+oper_rotate_left=12|0*94796||0x90
+oper_rotate_right=12|0*96724||0x90
+oper_selector=12|0*102040||0x90
+tri_bus=12|0*84844||0x90
+

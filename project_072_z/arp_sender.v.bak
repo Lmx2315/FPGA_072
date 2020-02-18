@@ -1,0 +1,205 @@
+//-----------------------------------------------------------------------------
+//
+// Title       : udp_sender
+// Design      : list
+// Author      : Microsoft
+// Company     : Microsoft
+//
+//-----------------------------------------------------------------------------
+//
+// File        : d:\My_Designs\project\list\src\udp_sender.v
+// Generated   : Tue Feb  5 15:49:38 2019
+// From        : interface description file
+// By          : Itf2Vhdl ver. 1.22
+//
+//-----------------------------------------------------------------------------
+//
+// Description : 
+//
+//-----------------------------------------------------------------------------
+`timescale 1 ns / 1 ps
+
+//{{ Section below this comment is automatically maintained
+//   and may be overwritten
+//{module {udp_sender}}
+module arp_sender ( en,tx_uflow ,tx_septy ,tx_mod ,tx_err ,
+	tx_crc_fwd ,tx_wren ,tx_rdy ,tx_eop ,
+	tx_sop ,tx_data ,lenght ,port_dest ,
+	port_source ,ip_dest ,ip_source ,dest_mac ,mac ,clk );
+
+output [1:0] tx_mod ;
+wire [1:0] tx_mod ;	//Indicates invalid bytes in the final frame word
+output tx_err ;
+wire tx_err ;
+output tx_crc_fwd ;
+wire tx_crc_fwd ;
+output tx_wren ;
+wire tx_wren ;
+output tx_eop ;
+wire tx_eop ;
+output tx_sop ;
+wire tx_sop ;
+output [31:0] tx_data ;
+wire [31:0] tx_data ;
+
+input en ;
+wire en ;
+input tx_uflow ;
+wire tx_uflow ;
+input tx_septy ;
+wire tx_septy ;
+input tx_rdy ;
+wire tx_rdy ;
+input [15:0] lenght ;
+wire [15:0] lenght ;
+input [15:0] port_dest ;
+wire [15:0] port_dest ;
+input [15:0] port_source ;
+wire [15:0] port_source ;
+input [31:0] ip_dest ;
+wire [31:0] ip_dest ;
+input [31:0] ip_source ;
+wire [31:0] ip_source ;
+input [47:0] dest_mac ;
+wire [47:0] dest_mac ;
+input [47:0] mac ;
+wire [47:0] mac ;
+input clk ;
+wire clk ;
+
+reg [15:0] step=0;
+reg [31:0] data_reg=0;
+reg [31:0] crc_reg=0;
+
+reg [1:0]  tx_mod_reg=0;
+reg  tx_sop_reg=0;
+reg  tx_eop_reg=0;
+reg  tx_wren_reg=0;	
+reg [15:0] sch=0;
+
+reg [15:0] lenght_Type=16'h0800; 
+reg [ 7:0] Version_IntHiderLengh=8'h45;   
+reg [ 7:0] Diff_service=8'h00; 
+reg [15:0] Total_length=16'd28;//20 (ip header) + 8 (udp header) + whithout 38 byte data of data	= 
+reg [15:0] Identification=16'h00;	
+reg [15:0] Flags_fragment_offset=0;	 
+reg [ 7:0] Time_to_live=8'd64;	
+reg [ 7:0] Protocol=8'h11;
+reg [15:0] Header_crc=0; 
+reg [15:0] Length=46;//8 (UDP header) + 38 byte data
+reg [15:0] Checksum=0;	  
+reg [15:0] ARP_frame_type=16'h0806; 
+
+assign 	tx_sop=tx_sop_reg;
+assign 	tx_eop=tx_eop_reg;
+assign 	tx_wren=tx_wren_reg;
+assign  tx_data=data_reg;
+assign  tx_mod=tx_mod_reg;
+
+always @(posedge clk)
+	
+	if (en) 
+		begin
+		step<=0;	
+		crc_reg<=0;	
+		sch<=0;
+
+		end
+	else
+if (tx_rdy)
+	begin
+		
+		if (step==0)   //------------------MAC header -----------------------
+			begin
+			tx_wren_reg<=1;//write enable	
+			tx_sop_reg<=1;//start of packet	
+			data_reg<={dest_mac[7:0],dest_mac[15:8],dest_mac[23:16],dest_mac[31:24]};
+			step<=1;				
+			end	else
+		if (step==1)
+			begin
+			tx_sop_reg<=0;//start of packet	
+			data_reg<={dest_mac[39:32],dest_mac[47:40],mac[7:0],mac[15:8]};	
+			step<=2;
+			end	else
+		if (step==2)
+			begin
+			data_reg<={mac[23:16],mac[31:24],mac[39:32],mac[47:40]};	
+			step<=3;
+			end	else
+		if (step==3)               //--------------ARP Header ---------
+			begin
+			data_reg<={ARP_frame_type,16'h0001};	//
+			step<=4;
+			end	else
+		if (step==4)
+			begin
+			data_reg<={16'h0800,8'h06,8'h04};	 //
+			step<=5;
+			end	else  
+		if (step==5)
+			begin
+			data_reg<={16'h0002,mac[47:40],mac[39:32]}; //
+			step<=6;	
+			end	else
+		if (step==6)
+			begin
+			data_reg<={mac[31:24],mac[23:16],mac[15:8],mac[7:0]};		 //	
+			step<=7;
+			end	else
+		if (step==7)
+			begin
+			data_reg<={ip_source[31:16],ip_source[15:0]};		 //	
+			step<=8;
+			end	else
+		if (step==8)
+			begin
+			data_reg<={dest_mac[47:40],dest_mac[39:32],dest_mac[31:24],dest_mac[23:16]};	    //	
+			step<=9;
+			end	else		
+		if (step==9)
+			begin
+			data_reg<={dest_mac[15:8],dest_mac[7:0],ip_dest[31:24],ip_dest[23:16],};	// 
+			step<=10;
+			end	else 
+		if (step==10)
+			begin
+			data_reg<={ip_dest[16:0],crc_reg[31:24],crc_reg[23:16]};	//
+			step<=11;
+			end	else 
+		if (step==11) //
+			begin
+			data_reg<={crc_reg[15:8],crc_reg[7:0],16'h0000};	
+			step<=12;
+			tx_eop_reg<=1'b1;//end of packet
+			end	else
+		if (step==12)
+			begin 
+			tx_wren_reg<=0;//write desable
+			tx_eop_reg<=1'b0;
+			step<=13;
+			end	
+			
+	 end
+
+endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

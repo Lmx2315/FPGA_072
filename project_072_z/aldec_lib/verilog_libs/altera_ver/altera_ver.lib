@@ -1,0 +1,368 @@
+timestamp=1518155499720
+
+[$root]
+A/$root=22|""|0|1*235608
+BinI32/$root=3*73980
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[PRIM_GDFF_HIGH]
+A/PRIM_GDFF_HIGH=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1337|1*278924
+BinI32/PRIM_GDFF_HIGH=3*83787
+P/~emb=404,654,1092,1126
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1337
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[PRIM_GDFF_HIGH_SCLR_PRIORITY]
+A/PRIM_GDFF_HIGH_SCLR_PRIORITY=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1380|1*281920
+BinI32/PRIM_GDFF_HIGH_SCLR_PRIORITY=3*84088
+P/~emb=432,696,1146,1180
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1380
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[PRIM_GDFF_LOW]
+A/PRIM_GDFF_LOW=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1251|1*272884
+BinI32/PRIM_GDFF_LOW=3*83173
+P/~emb=402,651,1089,1123
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1251
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[PRIM_GDFF_LOW_SCLR_PRIORITY]
+A/PRIM_GDFF_LOW_SCLR_PRIORITY=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1294|1*275876
+BinI32/PRIM_GDFF_LOW_SCLR_PRIORITY=3*83473
+P/~emb=430,693,1143,1177
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1294
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[TRI]
+A/TRI=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|114|1*244625
+BinI32/TRI=3*76600
+P/~emb=136,313,426,523
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|114
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_bidir_buf]
+A/alt_bidir_buf=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1218|1*349939
+BinI32/alt_bidir_buf=3*109676
+P/~emb=549,931,1257,1361
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1218
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_bidir_diff]
+A/alt_bidir_diff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1180|1*346248
+BinI32/alt_bidir_diff=3*108057
+P/~emb=587,989,1370,1475
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1180
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_inbuf]
+A/alt_inbuf=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|985|1*322234
+BinI32/alt_inbuf=3*102525
+P/~emb=314,601,750,814
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|985
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_inbuf_diff]
+A/alt_inbuf_diff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1068|1*333717
+BinI32/alt_inbuf_diff=3*104483
+P/~emb=360,688,966,1071
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1068
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_iobuf]
+A/alt_iobuf=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1039|1*330216
+BinI32/alt_iobuf=3*103721
+P/~emb=580,957,1217,1305
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1039
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_iobuf_diff]
+A/alt_iobuf_diff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1141|1*342444
+BinI32/alt_iobuf_diff=3*106555
+P/~emb=598,1001,1383,1488
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1141
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_outbuf]
+A/alt_outbuf=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1000|1*324389
+BinI32/alt_outbuf=3*102933
+P/~emb=452,794,967,1031
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1000
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_outbuf_diff]
+A/alt_outbuf_diff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1098|1*336240
+BinI32/alt_outbuf_diff=3*105408
+P/~emb=465,802,992,1056
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1098
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_outbuf_tri]
+A/alt_outbuf_tri=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1019|1*327250
+BinI32/alt_outbuf_tri=3*103402
+P/~emb=491,839,1017,1115
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1019
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[alt_outbuf_tri_diff]
+A/alt_outbuf_tri_diff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|1119|1*339193
+BinI32/alt_outbuf_tri_diff=3*105966
+P/~emb=504,851,1043,1148
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|1119
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[carry]
+A/carry=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|49|1*237275
+BinI32/carry=3*74441
+P/~emb=113,286,394,458
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|49
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[carry_sum]
+A/carry_sum=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|65|1*239285
+BinI32/carry_sum=3*75084
+P/~emb=186,377,515,579
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|65
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[cascade]
+A/cascade=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|57|1*238276
+BinI32/cascade=3*74762
+P/~emb=117,292,400,464
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|57
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[clklock]
+A/clklock=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|590|1*315235
+BinI32/clklock=3*93261
+P/~emb=257,1143,2889,3627
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|590
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[dff]
+A/dff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|203|1*252430
+BinI32/dff=3*79404
+P/~emb=210,414,561,687
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|203
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[dffe]
+A/dffe=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|214|1*254786
+BinI32/dffe=3*79818
+P/~emb=241,452,605,729
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|214
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[dffea]
+A/dffea=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|225|1*257145
+BinI32/dffea=3*80231
+P/~emb=309,549,767,931
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|225
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[dffeas]
+A/dffeas=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|247|1*259884
+BinI32/dffeas=3*80885
+D/dffeas=4*4604
+P/~emb=622,1168,1828,2165
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|247
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[dffeas_pr]
+A/dffeas_pr=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|341|1*284972
+BinI32/dffeas_pr=3*84403
+D/dffeas_pr=4*5752
+P/~emb=702,1268,1939,2275
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|341
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[dlatch]
+A/dlatch=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|153|1*248961
+BinI32/dlatch=3*77861
+P/~emb=197,390,583,713
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|153
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[exp]
+A/exp=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|76|1*240628
+BinI32/exp=3*75489
+P/~emb=109,280,390,454
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|76
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[global]
+A/global=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|38|1*236270
+BinI32/global=3*74119
+P/~emb=115,289,397,461
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|38
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[jkff]
+A/jkff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|514|1*305461
+BinI32/jkff=3*90679
+P/~emb=238,448,601,724
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|514
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[jkffe]
+A/jkffe=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|525|1*307489
+BinI32/jkffe=3*91094
+P/~emb=269,483,641,762
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|525
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[latch]
+A/latch=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|139|1*247738
+BinI32/latch=3*77388
+P/~emb=135,312,470,583
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|139
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[lut_input]
+A/lut_input=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|123|1*245688
+BinI32/lut_input=3*76737
+P/~emb=121,298,406,470
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|123
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[lut_output]
+A/lut_output=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|131|1*246711
+BinI32/lut_output=3*77062
+P/~emb=123,301,409,473
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|131
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[opndrn]
+A/opndrn=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|98|1*242618
+BinI32/opndrn=3*76134
+P/~emb=115,289,392,486
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|98
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[prim_gdff]
+A/prim_gdff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|171|1*250379
+BinI32/prim_gdff=3*78488
+P/~emb=352,583,879,1057
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|171
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[prim_gjkff]
+A/prim_gjkff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|484|1*303705
+BinI32/prim_gjkff=3*89757
+P/~emb=257,464,760,929
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|484
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[prim_gsrff]
+A/prim_gsrff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|536|1*309470
+BinI32/prim_gsrff=3*91509
+P/~emb=257,466,761,930
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|536
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[prim_gtff]
+A/prim_gtff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|436|1*298255
+BinI32/prim_gtff=3*88129
+P/~emb=230,436,690,846
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|436
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[row_global]
+A/row_global=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|106|1*243598
+BinI32/row_global=3*76274
+P/~emb=123,301,409,473
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|106
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[soft]
+A/soft=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|87|1*241621
+BinI32/soft=3*75814
+P/~emb=111,283,391,455
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|87
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[srff]
+A/srff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|566|1*311226
+BinI32/srff=3*92430
+P/~emb=238,446,601,728
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|566
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[srffe]
+A/srffe=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|577|1*313254
+BinI32/srffe=3*92846
+P/~emb=269,482,646,771
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|577
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[tff]
+A/tff=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|462|1*299904
+BinI32/tff=3*88927
+P/~emb=210,414,563,683
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|462
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[tffe]
+A/tffe=22|./../../../../quartus/eda/sim_lib/altera_primitives.v|473|1*301828
+BinI32/tffe=3*89341
+P/~emb=241,452,607,725
+R=./../../../../quartus/eda/sim_lib/altera_primitives.v|473
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd5148cc29492d4a8c2f4b2d52d04d494a57d02d33ca36050066a007ee
+
+[~A]
+LastVerilogToplevel=alt_bidir_buf
+ModifyID=1431
+Version=73
+c:/intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v=0*176101*183991
+
+[~MFT]
+0=141|0altera_ver.mgf|183991|16840
+1=219|1altera_ver.mgf|349939|235608
+3=219|3altera_ver.mgf|109676|73980
+4=9|4altera_ver.mgf|5752|4604
+
+[~U]
+$root=12|0*123014|
+PRIM_GDFF_HIGH=12|0*141562||0xa0
+PRIM_GDFF_HIGH_SCLR_PRIORITY=12|0*142806||0xa0
+PRIM_GDFF_LOW=12|0*139014||0xa0
+PRIM_GDFF_LOW_SCLR_PRIORITY=12|0*140254||0xa0
+TRI=12|0*128245||0x90
+alt_bidir_buf=12|0*174466||0x90
+alt_bidir_diff=12|0*172662||0x90
+alt_inbuf=12|0*162220||0x90
+alt_inbuf_diff=12|0*167053||0x90
+alt_iobuf=12|0*165548||0x90
+alt_iobuf_diff=12|0*170852||0x90
+alt_outbuf=12|0*163162||0x90
+alt_outbuf_diff=12|0*168388||0x90
+alt_outbuf_tri=12|0*164323||0x90
+alt_outbuf_tri_diff=12|0*169589||0x90
+carry=12|0*124006||0x90
+carry_sum=12|0*125178||0x90
+cascade=12|0*124588||0x90
+clklock=12|0*156182||0x90
+dff=12|0*133183||0x90
+dffe=12|0*134014||0x90
+dffea=12|0*134891||0x90
+dffeas=12|0*136052||0x90
+dffeas_pr=12|0*144118||0x90
+dlatch=12|0*130833||0x90
+exp=12|0*125900||0x90
+global=12|0*123420||0x90
+jkff=12|0*151335||0x90
+jkffe=12|0*152205||0x90
+latch=12|0*130066||0x90
+lut_input=12|0*128866||0x90
+lut_output=12|0*129464||0x90
+opndrn=12|0*127056||0x90
+prim_gdff=12|0*131777||0x80
+prim_gjkff=12|0*150061||0x80
+prim_gsrff=12|0*153117||0x80
+prim_gtff=12|0*147214||0x80
+row_global=12|0*127643||0x90
+soft=12|0*126478||0x90
+srff=12|0*154387||0x90
+srffe=12|0*155261||0x90
+tff=12|0*148359||0x90
+tffe=12|0*149187||0x90
+

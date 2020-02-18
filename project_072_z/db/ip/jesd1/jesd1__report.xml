@@ -1,0 +1,2422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2018.01.23.16:30:49"
+ outputDirectory="C:/intelFPGA/17.0/project/db/ip/jesd1/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5AGXMA7G4F31C4"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="4_H4"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_JESD204_TX_AVS_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_JESD204_TX_AVS_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_JESD204_TX_AVS_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_PLL_REF_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_PLL_REF_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_PLL_REF_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TXLINK_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TXLINK_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_TXLINK_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="csr_cf" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_cf" direction="output" role="export" width="5" />
+  </interface>
+  <interface name="csr_cs" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_cs" direction="output" role="export" width="2" />
+  </interface>
+  <interface name="csr_f" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_f" direction="output" role="export" width="8" />
+  </interface>
+  <interface name="csr_hd" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_hd" direction="output" role="export" width="1" />
+  </interface>
+  <interface name="csr_k" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_k" direction="output" role="export" width="5" />
+  </interface>
+  <interface name="csr_l" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_l" direction="output" role="export" width="5" />
+  </interface>
+  <interface name="csr_lane_powerdown" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_lane_powerdown" direction="output" role="export" width="2" />
+  </interface>
+  <interface name="csr_m" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_m" direction="output" role="export" width="8" />
+  </interface>
+  <interface name="csr_n" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_n" direction="output" role="export" width="5" />
+  </interface>
+  <interface name="csr_np" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_np" direction="output" role="export" width="5" />
+  </interface>
+  <interface name="csr_s" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_s" direction="output" role="export" width="5" />
+  </interface>
+  <interface name="csr_tx_testmode" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="csr_tx_testmode" direction="output" role="export" width="4" />
+  </interface>
+  <interface name="csr_tx_testpattern_a" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="csr_tx_testpattern_a"
+       direction="output"
+       role="export"
+       width="32" />
+  </interface>
+  <interface name="csr_tx_testpattern_b" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="csr_tx_testpattern_b"
+       direction="output"
+       role="export"
+       width="32" />
+  </interface>
+  <interface name="csr_tx_testpattern_c" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="csr_tx_testpattern_c"
+       direction="output"
+       role="export"
+       width="32" />
+  </interface>
+  <interface name="csr_tx_testpattern_d" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="csr_tx_testpattern_d"
+       direction="output"
+       role="export"
+       width="32" />
+  </interface>
+  <interface name="dev_sync_n" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="dev_sync_n" direction="output" role="export" width="1" />
+  </interface>
+  <interface name="jesd204_tx_avs" kind="avalon" start="0">
+   <property name="addressAlignment" value="DYNAMIC" />
+   <property name="addressGroup" value="0" />
+   <property name="addressSpan" value="1024" />
+   <property name="addressUnits" value="WORDS" />
+   <property name="alwaysBurstMaxBurst" value="false" />
+   <property name="associatedClock" value="jesd204_tx_avs_clk" />
+   <property name="associatedReset" value="jesd204_tx_avs_rst_n" />
+   <property name="bitsPerSymbol" value="8" />
+   <property name="bridgedAddressOffset" value="0" />
+   <property name="bridgesToMaster" value="" />
+   <property name="burstOnBurstBoundariesOnly" value="false" />
+   <property name="burstcountUnits" value="WORDS" />
+   <property name="constantBurstBehavior" value="false" />
+   <property name="explicitAddressSpan" value="0" />
+   <property name="holdTime" value="0" />
+   <property name="interleaveBursts" value="false" />
+   <property name="isBigEndian" value="false" />
+   <property name="isFlash" value="false" />
+   <property name="isMemoryDevice" value="false" />
+   <property name="isNonVolatileStorage" value="false" />
+   <property name="linewrapBursts" value="false" />
+   <property name="maximumPendingReadTransactions" value="0" />
+   <property name="maximumPendingWriteTransactions" value="0" />
+   <property name="minimumUninterruptedRunLength" value="1" />
+   <property name="printableDevice" value="false" />
+   <property name="readLatency" value="1" />
+   <property name="readWaitStates" value="1" />
+   <property name="readWaitTime" value="1" />
+   <property name="registerIncomingSignals" value="false" />
+   <property name="registerOutgoingSignals" value="false" />
+   <property name="setupTime" value="0" />
+   <property name="timingUnits" value="Cycles" />
+   <property name="transparentBridge" value="false" />
+   <property name="wellBehavedWaitrequest" value="false" />
+   <property name="writeLatency" value="0" />
+   <property name="writeWaitStates" value="0" />
+   <property name="writeWaitTime" value="0" />
+   <port
+       name="jesd204_tx_avs_chipselect"
+       direction="input"
+       role="chipselect"
+       width="1" />
+   <port
+       name="jesd204_tx_avs_address"
+       direction="input"
+       role="address"
+       width="8" />
+   <port name="jesd204_tx_avs_read" direction="input" role="read" width="1" />
+   <port
+       name="jesd204_tx_avs_readdata"
+       direction="output"
+       role="readdata"
+       width="32" />
+   <port
+       name="jesd204_tx_avs_waitrequest"
+       direction="output"
+       role="waitrequest"
+       width="1" />
+   <port name="jesd204_tx_avs_write" direction="input" role="write" width="1" />
+   <port
+       name="jesd204_tx_avs_writedata"
+       direction="input"
+       role="writedata"
+       width="32" />
+  </interface>
+  <interface name="jesd204_tx_avs_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="jesd204_tx_avs_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="jesd204_tx_avs_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="jesd204_tx_avs_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="jesd204_tx_avs_rst_n"
+       direction="input"
+       role="reset_n"
+       width="1" />
+  </interface>
+  <interface name="jesd204_tx_dlb_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="jesd204_tx_dlb_data"
+       direction="output"
+       role="export"
+       width="64" />
+  </interface>
+  <interface name="jesd204_tx_dlb_kchar_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="jesd204_tx_dlb_kchar_data"
+       direction="output"
+       role="export"
+       width="8" />
+  </interface>
+  <interface name="jesd204_tx_frame_error" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="jesd204_tx_frame_error"
+       direction="input"
+       role="export"
+       width="1" />
+  </interface>
+  <interface name="jesd204_tx_frame_ready" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="jesd204_tx_frame_ready"
+       direction="output"
+       role="export"
+       width="1" />
+  </interface>
+  <interface name="jesd204_tx_int" kind="interrupt" start="0">
+   <property name="associatedAddressablePoint" value="jesd1.jesd204_tx_avs" />
+   <property name="associatedClock" value="jesd204_tx_avs_clk" />
+   <property name="associatedReset" value="jesd204_tx_avs_rst_n" />
+   <property name="bridgedReceiverOffset" value="0" />
+   <property name="bridgesToReceiver" value="" />
+   <property name="irqScheme" value="NONE" />
+   <port name="jesd204_tx_int" direction="output" role="irq" width="1" />
+  </interface>
+  <interface name="jesd204_tx_link" kind="avalon_streaming" start="0">
+   <property name="associatedClock" value="txlink_clk" />
+   <property name="associatedReset" value="txlink_rst_n" />
+   <property name="beatsPerCycle" value="1" />
+   <property name="dataBitsPerSymbol" value="64" />
+   <property name="emptyWithinPacket" value="false" />
+   <property name="errorDescriptor" value="" />
+   <property name="firstSymbolInHighOrderBits" value="true" />
+   <property name="highOrderSymbolAtMSB" value="false" />
+   <property name="maxChannel" value="0" />
+   <property name="packetDescription" value="" />
+   <property name="readyLatency" value="0" />
+   <property name="symbolsPerBeat" value="1" />
+   <port name="jesd204_tx_link_data" direction="input" role="data" width="64" />
+   <port name="jesd204_tx_link_valid" direction="input" role="valid" width="1" />
+   <port
+       name="jesd204_tx_link_ready"
+       direction="output"
+       role="ready"
+       width="1" />
+  </interface>
+  <interface name="mdev_sync_n" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="mdev_sync_n" direction="input" role="export" width="1" />
+  </interface>
+  <interface name="pll_locked" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="pll_locked" direction="output" role="pll_locked" width="2" />
+  </interface>
+  <interface name="pll_powerdown" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="pll_powerdown" direction="input" role="pll_powerdown" width="1" />
+  </interface>
+  <interface name="pll_ref_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="pll_ref_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reconfig_from_xcvr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="reconfig_from_xcvr"
+       direction="output"
+       role="reconfig_from_xcvr"
+       width="138" />
+  </interface>
+  <interface name="reconfig_to_xcvr" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="reconfig_to_xcvr"
+       direction="input"
+       role="reconfig_to_xcvr"
+       width="210" />
+  </interface>
+  <interface name="somf" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="somf" direction="output" role="export" width="4" />
+  </interface>
+  <interface name="sync_n" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="sync_n" direction="input" role="export" width="1" />
+  </interface>
+  <interface name="sysref" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="sysref" direction="input" role="export" width="1" />
+  </interface>
+  <interface name="tx_analogreset" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="tx_analogreset"
+       direction="input"
+       role="tx_analogreset"
+       width="2" />
+  </interface>
+  <interface name="tx_cal_busy" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="tx_cal_busy" direction="output" role="tx_cal_busy" width="2" />
+  </interface>
+  <interface name="tx_digitalreset" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="tx_digitalreset"
+       direction="input"
+       role="tx_digitalreset"
+       width="2" />
+  </interface>
+  <interface name="tx_serial_data" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port
+       name="tx_serial_data"
+       direction="output"
+       role="tx_serial_data"
+       width="2" />
+  </interface>
+  <interface name="txlink_clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="txlink_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="txlink_rst_n" kind="reset" start="0">
+   <property name="associatedClock" value="txlink_clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port
+       name="txlink_rst_n_reset_n"
+       direction="input"
+       role="reset_n"
+       width="1" />
+  </interface>
+  <interface name="txphy_clk" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="txphy_clk" direction="output" role="tx_std_clkout" width="2" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="jesd1:1.0:AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_FAMILY=Arria V,AUTO_DEVICE_SPEEDGRADE=4_H4,AUTO_GENERATION_ID=1516710505,AUTO_JESD204_TX_AVS_CLK_CLOCK_DOMAIN=-1,AUTO_JESD204_TX_AVS_CLK_CLOCK_RATE=-1,AUTO_JESD204_TX_AVS_CLK_RESET_DOMAIN=-1,AUTO_PLL_REF_CLK_CLOCK_DOMAIN=-1,AUTO_PLL_REF_CLK_CLOCK_RATE=-1,AUTO_PLL_REF_CLK_RESET_DOMAIN=-1,AUTO_TXLINK_CLK_CLOCK_DOMAIN=-1,AUTO_TXLINK_CLK_CLOCK_RATE=-1,AUTO_TXLINK_CLK_RESET_DOMAIN=-1,AUTO_UNIQUE_ID=(altera_jesd204:17.0:ADJCNT=0,ADJDIR=0,ALIGNMENT_PATTERN=658812,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_SPEEDGRADE=4_H4,BID=0,BIT_REVERSAL=0,BYTE_REVERSAL=0,CF=0,CS=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,DID=0,DLB_TEST=0,ECC_EN=0,ED_DEV_KIT=NONE,ED_FILESET_SIM=false,ED_FILESET_SYNTH=false,ED_GENERIC_5SERIES=No,ED_GENERIC_A10=No,ED_GENERIC_S10=No,ED_HDL_FORMAT_SIM=VERILOG,ED_HDL_FORMAT_SYNTH=VERILOG,ED_TYPE=NONE,F=2,FCHK0=46,FCHK1=47,FCHK2=0,FCHK3=0,FCHK4=0,FCHK5=0,FCHK6=0,FCHK7=0,FK=32,GUI_CFG_F=4,GUI_EN_CFG_F=false,HD=0,JESDV=1,K=16,L=2,LID0=0,LID1=1,LID2=2,LID3=3,LID4=4,LID5=5,LID6=6,LID7=7,LS_FIFO_DEPTH=32,LS_FIFO_WIDTHU=5,M=2,N=12,N_PRIME=16,OPTIMIZE=0,PCS_CONFIG=JESD_PCS_CFG1,PHADJ=0,PMA_WIDTH=32,PULSE_WIDTH=2,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,REFCLK_FREQ=125.0,RES1=0,RES2=0,S=1,SCR=0,SER_SIZE=4,SUBCLASSV=1,TERMINATE_RECONFIG_EN=false,TEST_COMPONENTS_EN=false,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bitrev_en=false,bonded_mode=bonded,d_refclk_freq=125.0,lane_rate=3125.0,part_trait_bd=ARRIAVA7,part_trait_dp=5AGXMA7G4F31C4,pll_reconfig_enable=false,pll_type=CMU,rcfg_jtag_enable=false,rcfg_shared=true,sdc_constraint=1.0,set_capability_reg_enable=false,set_csr_soft_logic_enable=false,set_prbs_soft_logic_enable=false,set_user_identifier=0,wrapper_opt=base_phy(altera_clock_bridge:17.0:DERIVED_CLOCK_RATE=0,EXPLICIT_CLOCK_RATE=0,NUM_CLOCK_OUTPUTS=2)(altera_reset_bridge:17.0:ACTIVE_LOW_RESET=1,AUTO_CLK_CLOCK_RATE=0,NUM_RESET_OUTPUTS=2,SYNCHRONOUS_EDGES=deassert,USE_RESET_REQUEST=0)(altera_jesd204_tx:17.0:ADJCNT=0,ADJDIR=0,BID=0,BIT_REVERSAL=0,BYTE_REVERSAL=0,CF=0,CS=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,DID=0,F=2,FCHK0=46,FCHK1=47,FCHK2=0,FCHK3=0,FCHK4=0,FCHK5=0,FCHK6=0,FCHK7=0,FK=32,HD=0,JESDV=1,K=16,L=2,LID0=0,LID1=1,LID2=2,LID3=3,LID4=4,LID5=5,LID6=6,LID7=7,M=2,N=12,N_PRIME=16,OPTIMIZE=0,PHADJ=0,PMA_WIDTH=32,PULSE_WIDTH=2,RES1=0,RES2=0,S=1,SCR=0,SER_SIZE=4,SUBCLASSV=1,lane_rate=3125.0,pll_type=CMU,sdc_constraint=1.0,wrapper_opt=base_phy)(altera_jesd204_phy:17.0:ALIGNMENT_PATTERN=658812,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_SPEEDGRADE=4_H4,BIT_REVERSAL=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,SER_SIZE=4,TEST_COMPONENTS_EN=false,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,pll_type=CMU,rcfg_jtag_enable=false,rcfg_shared=true,sdc_constraint=1.0,set_capability_reg_enable=false,set_csr_soft_logic_enable=false,set_prbs_soft_logic_enable=false,set_user_identifier=0,wrapper_opt=base_phy(altera_jesd204_tx_mlpcs:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,SER_SIZE=4,TEST_COMPONENTS_EN=false,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,sdc_constraint=1.0,wrapper_opt=base_phy)(altera_jesd204_phy_adapter:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,pll_reconfig_enable=false)(altera_xcvr_native_av:17.0:base_data_rate=3125.0,bonded_mode=xN,cdr_reconfig_enable=0,cdr_refclk_cnt=1,cdr_refclk_freq=125.0 MHz,cdr_refclk_select=0,channels=2,data_path_select=standard,data_rate=3125.0 Mbps,device_family=Arria V,device_speedgrade=fastest,enable_port_rx_is_lockedtodata=1,enable_port_rx_is_lockedtoref=1,enable_port_rx_pma_clkout=1,enable_port_rx_seriallpbken=0,enable_port_rx_signaldetect=0,enable_port_rx_std_bitrev_ena=0,enable_port_rx_std_bitslip=0,enable_port_rx_std_bitslipboundarysel=0,enable_port_rx_std_byteorder_ena=0,enable_port_rx_std_byteorder_flag=0,enable_port_rx_std_byterev_ena=0,enable_port_rx_std_pcfifo_empty=0,enable_port_rx_std_pcfifo_full=0,enable_port_rx_std_polinv=0,enable_port_rx_std_prbs_status=0,enable_port_rx_std_rmfifo_empty=0,enable_port_rx_std_rmfifo_full=0,enable_port_rx_std_runlength_err=0,enable_port_rx_std_signaldetect=0,enable_port_rx_std_wa_a1a2size=0,enable_port_rx_std_wa_patternalign=0,enable_port_tx_std_bitslipboundarysel=0,enable_port_tx_std_elecidle=1,enable_port_tx_std_pcfifo_empty=1,enable_port_tx_std_pcfifo_full=1,enable_port_tx_std_polinv=1,enable_ports_rx_manual_cdr_mode=1,enable_simple_interface=1,enable_std=1,gui_pll_reconfig_pll0_clk_network=xN,gui_pll_reconfig_pll0_data_rate=1250 Mbps,gui_pll_reconfig_pll0_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll0_pll_type=CMU,gui_pll_reconfig_pll0_refclk_freq=125.0 MHz,gui_pll_reconfig_pll0_refclk_sel=0,gui_pll_reconfig_pll1_clk_network=x1,gui_pll_reconfig_pll1_data_rate=1250 Mbps,gui_pll_reconfig_pll1_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll1_pll_type=CMU,gui_pll_reconfig_pll1_refclk_freq=125.0 MHz,gui_pll_reconfig_pll1_refclk_sel=0,gui_pll_reconfig_pll2_clk_network=x1,gui_pll_reconfig_pll2_data_rate=1250 Mbps,gui_pll_reconfig_pll2_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll2_pll_type=CMU,gui_pll_reconfig_pll2_refclk_freq=125.0 MHz,gui_pll_reconfig_pll2_refclk_sel=0,gui_pll_reconfig_pll3_clk_network=x1,gui_pll_reconfig_pll3_data_rate=1250 Mbps,gui_pll_reconfig_pll3_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll3_pll_type=CMU,gui_pll_reconfig_pll3_refclk_freq=125.0 MHz,gui_pll_reconfig_pll3_refclk_sel=0,l_enable_rx_pma_direct=0,l_enable_rx_std=0,l_enable_rx_std_word_aligner=0,l_enable_tx_pma_direct=0,l_enable_tx_std=1,l_netlist_plls=1,l_pll_settings=0,l_pma_direct_word_count=8,l_pma_direct_word_width=10,l_rcfg_from_xcvr_width=138,l_rcfg_interfaces=3,l_rcfg_to_xcvr_width=210,l_std_rx_field_width=16,l_std_rx_word_count=2,l_std_rx_word_width=10,l_std_tx_field_width=11,l_std_tx_word_count=4,l_std_tx_word_width=8,message_level=error,pll_data_rate=3125.0 Mbps,pll_external_enable=0,pll_feedback_path=internal,pll_reconfig_enable=0,pll_refclk_cnt=1,pll_refclk_freq=125.0 MHz,pll_refclk_select=0,pll_select=0,pll_type=CMU,plls=1,pma_bonding_mode=xN,pma_direct_width=80,pma_width=20,rx_clkslip_enable=0,rx_enable=0,rx_ppm_detect_threshold=1000,set_cdr_refclk_freq=125.0 MHz,set_data_path_select=standard,set_data_rate=3125.0,show_advanced_features=0,std_low_latency_bypass_enable=0,std_pcs_pma_width=20,std_protocol_hint=basic,std_rx_8b10b_enable=0,std_rx_bitrev_enable=0,std_rx_byte_deser_enable=0,std_rx_byte_order_enable=0,std_rx_byte_order_mode=manual,std_rx_byte_order_pad=0,std_rx_byte_order_pattern=0,std_rx_byte_order_symbol_count=1,std_rx_byte_order_width=10,std_rx_byterev_enable=0,std_rx_pcfifo_mode=low_latency,std_rx_pld_pcs_width=20,std_rx_polinv_enable=0,std_rx_rmfifo_enable=0,std_rx_rmfifo_pattern_n=00000,std_rx_rmfifo_pattern_p=00000,std_rx_run_length_val=31,std_rx_word_aligner_mode=bit_slip,std_rx_word_aligner_pattern=0000000000,std_rx_word_aligner_pattern_len=7,std_rx_word_aligner_renumber=3,std_rx_word_aligner_rgnumber=3,std_rx_word_aligner_rknumber=3,std_tx_8b10b_disp_ctrl_enable=0,std_tx_8b10b_enable=1,std_tx_bitrev_enable=0,std_tx_bitslip_enable=0,std_tx_byte_ser_enable=1,std_tx_byterev_enable=0,std_tx_pcfifo_mode=low_latency,std_tx_pld_pcs_width=32,std_tx_polinv_enable=1,tx_enable=1,tx_pma_clk_div=1)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0))(clock:17.0:)(reset:17.0:)(reset:17.0:)(clock:17.0:)(clock:17.0:)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0))"
+   instancePathKey="jesd1"
+   kind="jesd1"
+   version="1.0"
+   name="jesd1">
+  <parameter name="AUTO_GENERATION_ID" value="1516710505" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_PLL_REF_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_JESD204_TX_AVS_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_JESD204_TX_AVS_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_JESD204_TX_AVS_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_TXLINK_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="AUTO_PLL_REF_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_TXLINK_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_DEVICE" value="5AGXMA7G4F31C4" />
+  <parameter name="AUTO_TXLINK_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_PLL_REF_CLK_CLOCK_RATE" value="-1" />
+  <generatedFiles>
+   <file path="C:/intelFPGA/17.0/project/db/ip/jesd1/jesd1.v" type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/jesd1_jesd204_0.v"
+       type="VERILOG" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_base.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_csr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_ctl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_dll.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_regmap.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_regmap_opt.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_scrambler.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_base.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/jesd1_jesd204_0_inst_phy.v"
+       type="VERILOG" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_pcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_wys_lut.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_xn_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_pcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_mixed_width_dcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204.sdc"
+       type="SDC"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_phy_adapter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_functions.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_ip.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_merger.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm_csr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_rx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_native.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_plls.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_data_adapter.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_basic.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_rx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_tx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_pipe_gen1_2_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_lego.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_tgx_cdrauto.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_resync.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_selector.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_mgmt2dec.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_wait_generate.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av_functions_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_data_adapter_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/plain_files.txt"
+       type="OTHER"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="C:/intelFPGA/17.0/project/jesd1.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/top/altera_jesd204_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx/altera_jesd204_tx_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_top/altera_jesd204_phy_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx_mlpcs/altera_jesd204_tx_mlpcs_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_adapter/altera_jesd204_phy_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/alt_xcvr/altera_xcvr_native_phy/av/tcl/altera_xcvr_native_av_hw.tcl" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/guava-15.0.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.version.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/javasysmon.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-impl.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-core.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:jesd1 "jesd1"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="jesd1"><![CDATA["<b>jesd1</b>" reuses <b>altera_jesd204</b> "<b>submodules/jesd1_jesd204_0</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_jesd204 "submodules/jesd1_jesd204_0"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>4</b> modules, <b>16</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="jesd204_0"><![CDATA["<b>jesd204_0</b>" reuses <b>altera_jesd204_tx</b> "<b>submodules/altera_jesd204_tx_base</b>"]]></message>
+   <message level="Debug" culprit="jesd204_0"><![CDATA["<b>jesd204_0</b>" reuses <b>altera_jesd204_phy</b> "<b>submodules/jesd1_jesd204_0_inst_phy</b>"]]></message>
+   <message level="Info" culprit="jesd204_0"><![CDATA["<b>jesd1</b>" instantiated <b>altera_jesd204</b> "<b>jesd204_0</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_tx "submodules/altera_jesd204_tx_base"</message>
+   <message level="Info" culprit="inst_tx"><![CDATA["<b>jesd204_0</b>" instantiated <b>altera_jesd204_tx</b> "<b>inst_tx</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_jesd204_phy "submodules/jesd1_jesd204_0_inst_phy"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>14</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_jesd204_tx_mlpcs</b> "<b>submodules/altera_jesd204_tx_mlpcs</b>"]]></message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_jesd204_phy_adapter</b> "<b>submodules/altera_jesd204_phy_adapter</b>"]]></message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_xcvr_native_av</b> "<b>submodules/altera_xcvr_native_av</b>"]]></message>
+   <message level="Info" culprit="inst_phy"><![CDATA["<b>jesd204_0</b>" instantiated <b>altera_jesd204_phy</b> "<b>inst_phy</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 2 starting:altera_jesd204_tx_mlpcs "submodules/altera_jesd204_tx_mlpcs"</message>
+   <message level="Info" culprit="inst_tx_mlpcs"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_tx_mlpcs</b> "<b>inst_tx_mlpcs</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_phy_adapter "submodules/altera_jesd204_phy_adapter"</message>
+   <message level="Info" culprit="inst_phy_adapter"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_phy_adapter</b> "<b>inst_phy_adapter</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_xcvr_native_av "submodules/altera_xcvr_native_av"</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/altera_xcvr_functions.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_ip.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_ip.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_merger.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_merger.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm_csr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm_csr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_rx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_rx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_native.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_native.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_plls.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_plls.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_data_adapter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_data_adapter.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_basic.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_basic.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_rx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_rx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_tx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_tx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_pipe_gen1_2_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_pipe_gen1_2_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_lego.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_lego.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_tgx_cdrauto.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_tgx_cdrauto.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_selector.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_selector.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_mgmt2dec.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_mgmt2dec.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_wait_generate.v VERILOG PATH ../../../../altera_xcvr_generic/ctrl/altera_wait_generate.v</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av_functions_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_data_adapter_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_data_adapter_av.sv</message>
+   <message level="Info" culprit="inst_xcvr"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_xcvr_native_av</b> "<b>inst_xcvr</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_jesd204:17.0:ADJCNT=0,ADJDIR=0,ALIGNMENT_PATTERN=658812,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_SPEEDGRADE=4_H4,BID=0,BIT_REVERSAL=0,BYTE_REVERSAL=0,CF=0,CS=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,DID=0,DLB_TEST=0,ECC_EN=0,ED_DEV_KIT=NONE,ED_FILESET_SIM=false,ED_FILESET_SYNTH=false,ED_GENERIC_5SERIES=No,ED_GENERIC_A10=No,ED_GENERIC_S10=No,ED_HDL_FORMAT_SIM=VERILOG,ED_HDL_FORMAT_SYNTH=VERILOG,ED_TYPE=NONE,F=2,FCHK0=46,FCHK1=47,FCHK2=0,FCHK3=0,FCHK4=0,FCHK5=0,FCHK6=0,FCHK7=0,FK=32,GUI_CFG_F=4,GUI_EN_CFG_F=false,HD=0,JESDV=1,K=16,L=2,LID0=0,LID1=1,LID2=2,LID3=3,LID4=4,LID5=5,LID6=6,LID7=7,LS_FIFO_DEPTH=32,LS_FIFO_WIDTHU=5,M=2,N=12,N_PRIME=16,OPTIMIZE=0,PCS_CONFIG=JESD_PCS_CFG1,PHADJ=0,PMA_WIDTH=32,PULSE_WIDTH=2,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,REFCLK_FREQ=125.0,RES1=0,RES2=0,S=1,SCR=0,SER_SIZE=4,SUBCLASSV=1,TERMINATE_RECONFIG_EN=false,TEST_COMPONENTS_EN=false,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bitrev_en=false,bonded_mode=bonded,d_refclk_freq=125.0,lane_rate=3125.0,part_trait_bd=ARRIAVA7,part_trait_dp=5AGXMA7G4F31C4,pll_reconfig_enable=false,pll_type=CMU,rcfg_jtag_enable=false,rcfg_shared=true,sdc_constraint=1.0,set_capability_reg_enable=false,set_csr_soft_logic_enable=false,set_prbs_soft_logic_enable=false,set_user_identifier=0,wrapper_opt=base_phy(altera_clock_bridge:17.0:DERIVED_CLOCK_RATE=0,EXPLICIT_CLOCK_RATE=0,NUM_CLOCK_OUTPUTS=2)(altera_reset_bridge:17.0:ACTIVE_LOW_RESET=1,AUTO_CLK_CLOCK_RATE=0,NUM_RESET_OUTPUTS=2,SYNCHRONOUS_EDGES=deassert,USE_RESET_REQUEST=0)(altera_jesd204_tx:17.0:ADJCNT=0,ADJDIR=0,BID=0,BIT_REVERSAL=0,BYTE_REVERSAL=0,CF=0,CS=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,DID=0,F=2,FCHK0=46,FCHK1=47,FCHK2=0,FCHK3=0,FCHK4=0,FCHK5=0,FCHK6=0,FCHK7=0,FK=32,HD=0,JESDV=1,K=16,L=2,LID0=0,LID1=1,LID2=2,LID3=3,LID4=4,LID5=5,LID6=6,LID7=7,M=2,N=12,N_PRIME=16,OPTIMIZE=0,PHADJ=0,PMA_WIDTH=32,PULSE_WIDTH=2,RES1=0,RES2=0,S=1,SCR=0,SER_SIZE=4,SUBCLASSV=1,lane_rate=3125.0,pll_type=CMU,sdc_constraint=1.0,wrapper_opt=base_phy)(altera_jesd204_phy:17.0:ALIGNMENT_PATTERN=658812,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_SPEEDGRADE=4_H4,BIT_REVERSAL=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,SER_SIZE=4,TEST_COMPONENTS_EN=false,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,pll_type=CMU,rcfg_jtag_enable=false,rcfg_shared=true,sdc_constraint=1.0,set_capability_reg_enable=false,set_csr_soft_logic_enable=false,set_prbs_soft_logic_enable=false,set_user_identifier=0,wrapper_opt=base_phy(altera_jesd204_tx_mlpcs:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,SER_SIZE=4,TEST_COMPONENTS_EN=false,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,sdc_constraint=1.0,wrapper_opt=base_phy)(altera_jesd204_phy_adapter:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,pll_reconfig_enable=false)(altera_xcvr_native_av:17.0:base_data_rate=3125.0,bonded_mode=xN,cdr_reconfig_enable=0,cdr_refclk_cnt=1,cdr_refclk_freq=125.0 MHz,cdr_refclk_select=0,channels=2,data_path_select=standard,data_rate=3125.0 Mbps,device_family=Arria V,device_speedgrade=fastest,enable_port_rx_is_lockedtodata=1,enable_port_rx_is_lockedtoref=1,enable_port_rx_pma_clkout=1,enable_port_rx_seriallpbken=0,enable_port_rx_signaldetect=0,enable_port_rx_std_bitrev_ena=0,enable_port_rx_std_bitslip=0,enable_port_rx_std_bitslipboundarysel=0,enable_port_rx_std_byteorder_ena=0,enable_port_rx_std_byteorder_flag=0,enable_port_rx_std_byterev_ena=0,enable_port_rx_std_pcfifo_empty=0,enable_port_rx_std_pcfifo_full=0,enable_port_rx_std_polinv=0,enable_port_rx_std_prbs_status=0,enable_port_rx_std_rmfifo_empty=0,enable_port_rx_std_rmfifo_full=0,enable_port_rx_std_runlength_err=0,enable_port_rx_std_signaldetect=0,enable_port_rx_std_wa_a1a2size=0,enable_port_rx_std_wa_patternalign=0,enable_port_tx_std_bitslipboundarysel=0,enable_port_tx_std_elecidle=1,enable_port_tx_std_pcfifo_empty=1,enable_port_tx_std_pcfifo_full=1,enable_port_tx_std_polinv=1,enable_ports_rx_manual_cdr_mode=1,enable_simple_interface=1,enable_std=1,gui_pll_reconfig_pll0_clk_network=xN,gui_pll_reconfig_pll0_data_rate=1250 Mbps,gui_pll_reconfig_pll0_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll0_pll_type=CMU,gui_pll_reconfig_pll0_refclk_freq=125.0 MHz,gui_pll_reconfig_pll0_refclk_sel=0,gui_pll_reconfig_pll1_clk_network=x1,gui_pll_reconfig_pll1_data_rate=1250 Mbps,gui_pll_reconfig_pll1_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll1_pll_type=CMU,gui_pll_reconfig_pll1_refclk_freq=125.0 MHz,gui_pll_reconfig_pll1_refclk_sel=0,gui_pll_reconfig_pll2_clk_network=x1,gui_pll_reconfig_pll2_data_rate=1250 Mbps,gui_pll_reconfig_pll2_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll2_pll_type=CMU,gui_pll_reconfig_pll2_refclk_freq=125.0 MHz,gui_pll_reconfig_pll2_refclk_sel=0,gui_pll_reconfig_pll3_clk_network=x1,gui_pll_reconfig_pll3_data_rate=1250 Mbps,gui_pll_reconfig_pll3_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll3_pll_type=CMU,gui_pll_reconfig_pll3_refclk_freq=125.0 MHz,gui_pll_reconfig_pll3_refclk_sel=0,l_enable_rx_pma_direct=0,l_enable_rx_std=0,l_enable_rx_std_word_aligner=0,l_enable_tx_pma_direct=0,l_enable_tx_std=1,l_netlist_plls=1,l_pll_settings=0,l_pma_direct_word_count=8,l_pma_direct_word_width=10,l_rcfg_from_xcvr_width=138,l_rcfg_interfaces=3,l_rcfg_to_xcvr_width=210,l_std_rx_field_width=16,l_std_rx_word_count=2,l_std_rx_word_width=10,l_std_tx_field_width=11,l_std_tx_word_count=4,l_std_tx_word_width=8,message_level=error,pll_data_rate=3125.0 Mbps,pll_external_enable=0,pll_feedback_path=internal,pll_reconfig_enable=0,pll_refclk_cnt=1,pll_refclk_freq=125.0 MHz,pll_refclk_select=0,pll_select=0,pll_type=CMU,plls=1,pma_bonding_mode=xN,pma_direct_width=80,pma_width=20,rx_clkslip_enable=0,rx_enable=0,rx_ppm_detect_threshold=1000,set_cdr_refclk_freq=125.0 MHz,set_data_path_select=standard,set_data_rate=3125.0,show_advanced_features=0,std_low_latency_bypass_enable=0,std_pcs_pma_width=20,std_protocol_hint=basic,std_rx_8b10b_enable=0,std_rx_bitrev_enable=0,std_rx_byte_deser_enable=0,std_rx_byte_order_enable=0,std_rx_byte_order_mode=manual,std_rx_byte_order_pad=0,std_rx_byte_order_pattern=0,std_rx_byte_order_symbol_count=1,std_rx_byte_order_width=10,std_rx_byterev_enable=0,std_rx_pcfifo_mode=low_latency,std_rx_pld_pcs_width=20,std_rx_polinv_enable=0,std_rx_rmfifo_enable=0,std_rx_rmfifo_pattern_n=00000,std_rx_rmfifo_pattern_p=00000,std_rx_run_length_val=31,std_rx_word_aligner_mode=bit_slip,std_rx_word_aligner_pattern=0000000000,std_rx_word_aligner_pattern_len=7,std_rx_word_aligner_renumber=3,std_rx_word_aligner_rgnumber=3,std_rx_word_aligner_rknumber=3,std_tx_8b10b_disp_ctrl_enable=0,std_tx_8b10b_enable=1,std_tx_bitrev_enable=0,std_tx_bitslip_enable=0,std_tx_byte_ser_enable=1,std_tx_byterev_enable=0,std_tx_pcfifo_mode=low_latency,std_tx_pld_pcs_width=32,std_tx_polinv_enable=1,tx_enable=1,tx_pma_clk_div=1)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0))(clock:17.0:)(reset:17.0:)(reset:17.0:)(clock:17.0:)(clock:17.0:)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)"
+   instancePathKey="jesd1:.:jesd204_0"
+   kind="altera_jesd204"
+   version="17.0"
+   name="jesd1_jesd204_0">
+  <parameter name="PCS_CONFIG" value="JESD_PCS_CFG1" />
+  <parameter name="sdc_constraint" value="1.0" />
+  <parameter name="BYTE_REVERSAL" value="0" />
+  <parameter name="SCR" value="0" />
+  <parameter name="BIT_REVERSAL" value="0" />
+  <parameter name="UNUSED_RX_PARALLEL_WIDTH" value="8" />
+  <parameter name="PHADJ" value="0" />
+  <parameter name="LID2" value="2" />
+  <parameter name="bonded_mode" value="bonded" />
+  <parameter name="LID1" value="1" />
+  <parameter name="LID0" value="0" />
+  <parameter name="ED_GENERIC_A10" value="No" />
+  <parameter name="LID6" value="6" />
+  <parameter name="LID5" value="5" />
+  <parameter name="LID4" value="4" />
+  <parameter name="set_user_identifier" value="0" />
+  <parameter name="LID3" value="3" />
+  <parameter name="XCVR_PLL_LOCKED_WIDTH" value="1" />
+  <parameter name="part_trait_dp" value="5AGXMA7G4F31C4" />
+  <parameter name="PMA_WIDTH" value="32" />
+  <parameter name="LID7" value="7" />
+  <parameter name="RES2" value="0" />
+  <parameter name="ED_FILESET_SYNTH" value="false" />
+  <parameter name="RES1" value="0" />
+  <parameter name="ED_DEV_KIT" value="NONE" />
+  <parameter name="RECONFIG_SHARED" value="true" />
+  <parameter name="rcfg_shared" value="true" />
+  <parameter name="PULSE_WIDTH" value="2" />
+  <parameter name="ED_TYPE" value="NONE" />
+  <parameter name="LS_FIFO_DEPTH" value="32" />
+  <parameter name="ED_GENERIC_5SERIES" value="No" />
+  <parameter name="ADJCNT" value="0" />
+  <parameter name="DATA_PATH" value="TX" />
+  <parameter name="OPTIMIZE" value="0" />
+  <parameter name="ED_FILESET_SIM" value="false" />
+  <parameter name="lane_rate" value="3125.0" />
+  <parameter name="GUI_CFG_F" value="4" />
+  <parameter name="AUTO_DEVICE" value="5AGXMA7G4F31C4" />
+  <parameter name="JESDV" value="1" />
+  <parameter name="bitrev_en" value="false" />
+  <parameter name="TEST_COMPONENTS_EN" value="false" />
+  <parameter name="FK" value="32" />
+  <parameter name="F" value="2" />
+  <parameter name="DEVICE_FAMILY" value="Arria V" />
+  <parameter name="pll_type" value="CMU" />
+  <parameter name="FCHK1" value="47" />
+  <parameter name="FCHK0" value="46" />
+  <parameter name="FCHK3" value="0" />
+  <parameter name="d_refclk_freq" value="125.0" />
+  <parameter name="K" value="16" />
+  <parameter name="FCHK2" value="0" />
+  <parameter name="L" value="2" />
+  <parameter name="FCHK5" value="0" />
+  <parameter name="M" value="2" />
+  <parameter name="ECC_EN" value="0" />
+  <parameter name="ADJDIR" value="0" />
+  <parameter name="FCHK4" value="0" />
+  <parameter name="N" value="12" />
+  <parameter name="FCHK7" value="0" />
+  <parameter name="UNUSED_TX_PARALLEL_WIDTH" value="8" />
+  <parameter name="ED_HDL_FORMAT_SYNTH" value="VERILOG" />
+  <parameter name="FCHK6" value="0" />
+  <parameter name="S" value="1" />
+  <parameter name="GUI_EN_CFG_F" value="false" />
+  <parameter name="ED_HDL_FORMAT_SIM" value="VERILOG" />
+  <parameter name="DLB_TEST" value="0" />
+  <parameter name="BID" value="0" />
+  <parameter name="DID" value="0" />
+  <parameter name="CF" value="0" />
+  <parameter name="TERMINATE_RECONFIG_EN" value="false" />
+  <parameter name="part_trait_bd" value="ARRIAVA7" />
+  <parameter name="set_capability_reg_enable" value="false" />
+  <parameter name="REFCLK_FREQ" value="125.0" />
+  <parameter name="set_csr_soft_logic_enable" value="false" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="SUBCLASSV" value="1" />
+  <parameter name="CS" value="0" />
+  <parameter name="RECONFIG_ADDRESS_WIDTH" value="7" />
+  <parameter name="rcfg_jtag_enable" value="false" />
+  <parameter name="ED_GENERIC_S10" value="No" />
+  <parameter name="wrapper_opt" value="base_phy" />
+  <parameter name="HD" value="0" />
+  <parameter name="set_prbs_soft_logic_enable" value="false" />
+  <parameter name="LS_FIFO_WIDTHU" value="5" />
+  <parameter name="pll_reconfig_enable" value="false" />
+  <parameter name="N_PRIME" value="16" />
+  <parameter name="SER_SIZE" value="4" />
+  <parameter name="ALIGNMENT_PATTERN" value="658812" />
+  <generatedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/jesd1_jesd204_0.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_base.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_csr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_ctl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_dll.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_regmap.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_regmap_opt.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_scrambler.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_base.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/jesd1_jesd204_0_inst_phy.v"
+       type="VERILOG" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_pcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_wys_lut.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_xn_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_pcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_mixed_width_dcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204.sdc"
+       type="SDC"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_phy_adapter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_functions.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_ip.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_merger.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm_csr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_rx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_native.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_plls.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_data_adapter.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_basic.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_rx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_tx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_pipe_gen1_2_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_lego.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_tgx_cdrauto.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_resync.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_selector.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_mgmt2dec.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_wait_generate.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av_functions_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_data_adapter_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/plain_files.txt"
+       type="OTHER"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/top/altera_jesd204_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx/altera_jesd204_tx_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_top/altera_jesd204_phy_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx_mlpcs/altera_jesd204_tx_mlpcs_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_adapter/altera_jesd204_phy_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/alt_xcvr/altera_xcvr_native_phy/av/tcl/altera_xcvr_native_av_hw.tcl" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/guava-15.0.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.version.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/javasysmon.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-impl.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-core.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
+  </childSourceFiles>
+  <instantiator instantiator="jesd1" as="jesd204_0" />
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_jesd204 "submodules/jesd1_jesd204_0"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>4</b> modules, <b>16</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="jesd204_0"><![CDATA["<b>jesd204_0</b>" reuses <b>altera_jesd204_tx</b> "<b>submodules/altera_jesd204_tx_base</b>"]]></message>
+   <message level="Debug" culprit="jesd204_0"><![CDATA["<b>jesd204_0</b>" reuses <b>altera_jesd204_phy</b> "<b>submodules/jesd1_jesd204_0_inst_phy</b>"]]></message>
+   <message level="Info" culprit="jesd204_0"><![CDATA["<b>jesd1</b>" instantiated <b>altera_jesd204</b> "<b>jesd204_0</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_tx "submodules/altera_jesd204_tx_base"</message>
+   <message level="Info" culprit="inst_tx"><![CDATA["<b>jesd204_0</b>" instantiated <b>altera_jesd204_tx</b> "<b>inst_tx</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_jesd204_phy "submodules/jesd1_jesd204_0_inst_phy"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>14</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_jesd204_tx_mlpcs</b> "<b>submodules/altera_jesd204_tx_mlpcs</b>"]]></message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_jesd204_phy_adapter</b> "<b>submodules/altera_jesd204_phy_adapter</b>"]]></message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_xcvr_native_av</b> "<b>submodules/altera_xcvr_native_av</b>"]]></message>
+   <message level="Info" culprit="inst_phy"><![CDATA["<b>jesd204_0</b>" instantiated <b>altera_jesd204_phy</b> "<b>inst_phy</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 2 starting:altera_jesd204_tx_mlpcs "submodules/altera_jesd204_tx_mlpcs"</message>
+   <message level="Info" culprit="inst_tx_mlpcs"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_tx_mlpcs</b> "<b>inst_tx_mlpcs</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_phy_adapter "submodules/altera_jesd204_phy_adapter"</message>
+   <message level="Info" culprit="inst_phy_adapter"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_phy_adapter</b> "<b>inst_phy_adapter</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_xcvr_native_av "submodules/altera_xcvr_native_av"</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/altera_xcvr_functions.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_ip.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_ip.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_merger.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_merger.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm_csr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm_csr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_rx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_rx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_native.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_native.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_plls.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_plls.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_data_adapter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_data_adapter.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_basic.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_basic.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_rx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_rx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_tx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_tx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_pipe_gen1_2_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_pipe_gen1_2_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_lego.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_lego.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_tgx_cdrauto.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_tgx_cdrauto.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_selector.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_selector.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_mgmt2dec.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_mgmt2dec.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_wait_generate.v VERILOG PATH ../../../../altera_xcvr_generic/ctrl/altera_wait_generate.v</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av_functions_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_data_adapter_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_data_adapter_av.sv</message>
+   <message level="Info" culprit="inst_xcvr"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_xcvr_native_av</b> "<b>inst_xcvr</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_jesd204_tx:17.0:ADJCNT=0,ADJDIR=0,BID=0,BIT_REVERSAL=0,BYTE_REVERSAL=0,CF=0,CS=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,DID=0,F=2,FCHK0=46,FCHK1=47,FCHK2=0,FCHK3=0,FCHK4=0,FCHK5=0,FCHK6=0,FCHK7=0,FK=32,HD=0,JESDV=1,K=16,L=2,LID0=0,LID1=1,LID2=2,LID3=3,LID4=4,LID5=5,LID6=6,LID7=7,M=2,N=12,N_PRIME=16,OPTIMIZE=0,PHADJ=0,PMA_WIDTH=32,PULSE_WIDTH=2,RES1=0,RES2=0,S=1,SCR=0,SER_SIZE=4,SUBCLASSV=1,lane_rate=3125.0,pll_type=CMU,sdc_constraint=1.0,wrapper_opt=base_phy"
+   instancePathKey="jesd1:.:jesd204_0:.:inst_tx"
+   kind="altera_jesd204_tx"
+   version="17.0"
+   name="altera_jesd204_tx_base">
+  <parameter name="sdc_constraint" value="1.0" />
+  <parameter name="BYTE_REVERSAL" value="0" />
+  <parameter name="SCR" value="0" />
+  <parameter name="BIT_REVERSAL" value="0" />
+  <parameter name="PHADJ" value="0" />
+  <parameter name="LID2" value="2" />
+  <parameter name="LID1" value="1" />
+  <parameter name="LID0" value="0" />
+  <parameter name="LID6" value="6" />
+  <parameter name="LID5" value="5" />
+  <parameter name="LID4" value="4" />
+  <parameter name="LID3" value="3" />
+  <parameter name="PMA_WIDTH" value="32" />
+  <parameter name="LID7" value="7" />
+  <parameter name="RES2" value="0" />
+  <parameter name="RES1" value="0" />
+  <parameter name="PULSE_WIDTH" value="2" />
+  <parameter name="ADJCNT" value="0" />
+  <parameter name="DATA_PATH" value="TX" />
+  <parameter name="OPTIMIZE" value="0" />
+  <parameter name="lane_rate" value="3125.0" />
+  <parameter name="JESDV" value="1" />
+  <parameter name="FK" value="32" />
+  <parameter name="F" value="2" />
+  <parameter name="DEVICE_FAMILY" value="Arria V" />
+  <parameter name="pll_type" value="CMU" />
+  <parameter name="FCHK1" value="47" />
+  <parameter name="FCHK0" value="46" />
+  <parameter name="FCHK3" value="0" />
+  <parameter name="K" value="16" />
+  <parameter name="FCHK2" value="0" />
+  <parameter name="L" value="2" />
+  <parameter name="FCHK5" value="0" />
+  <parameter name="M" value="2" />
+  <parameter name="ADJDIR" value="0" />
+  <parameter name="FCHK4" value="0" />
+  <parameter name="N" value="12" />
+  <parameter name="FCHK7" value="0" />
+  <parameter name="FCHK6" value="0" />
+  <parameter name="S" value="1" />
+  <parameter name="BID" value="0" />
+  <parameter name="DID" value="0" />
+  <parameter name="CF" value="0" />
+  <parameter name="SUBCLASSV" value="1" />
+  <parameter name="CS" value="0" />
+  <parameter name="wrapper_opt" value="base_phy" />
+  <parameter name="HD" value="0" />
+  <parameter name="N_PRIME" value="16" />
+  <parameter name="SER_SIZE" value="4" />
+  <generatedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_base.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_csr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_ctl.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_dll.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_regmap.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_regmap_opt.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_scrambler.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_base.ocp"
+       type="OTHER"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx/altera_jesd204_tx_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="jesd1_jesd204_0" as="inst_tx" />
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_tx "submodules/altera_jesd204_tx_base"</message>
+   <message level="Info" culprit="inst_tx"><![CDATA["<b>jesd204_0</b>" instantiated <b>altera_jesd204_tx</b> "<b>inst_tx</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_jesd204_phy:17.0:ALIGNMENT_PATTERN=658812,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_SPEEDGRADE=4_H4,BIT_REVERSAL=0,DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,SER_SIZE=4,TEST_COMPONENTS_EN=false,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,pll_type=CMU,rcfg_jtag_enable=false,rcfg_shared=true,sdc_constraint=1.0,set_capability_reg_enable=false,set_csr_soft_logic_enable=false,set_prbs_soft_logic_enable=false,set_user_identifier=0,wrapper_opt=base_phy(altera_jesd204_tx_mlpcs:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,SER_SIZE=4,TEST_COMPONENTS_EN=false,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,sdc_constraint=1.0,wrapper_opt=base_phy)(altera_jesd204_phy_adapter:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,pll_reconfig_enable=false)(altera_xcvr_native_av:17.0:base_data_rate=3125.0,bonded_mode=xN,cdr_reconfig_enable=0,cdr_refclk_cnt=1,cdr_refclk_freq=125.0 MHz,cdr_refclk_select=0,channels=2,data_path_select=standard,data_rate=3125.0 Mbps,device_family=Arria V,device_speedgrade=fastest,enable_port_rx_is_lockedtodata=1,enable_port_rx_is_lockedtoref=1,enable_port_rx_pma_clkout=1,enable_port_rx_seriallpbken=0,enable_port_rx_signaldetect=0,enable_port_rx_std_bitrev_ena=0,enable_port_rx_std_bitslip=0,enable_port_rx_std_bitslipboundarysel=0,enable_port_rx_std_byteorder_ena=0,enable_port_rx_std_byteorder_flag=0,enable_port_rx_std_byterev_ena=0,enable_port_rx_std_pcfifo_empty=0,enable_port_rx_std_pcfifo_full=0,enable_port_rx_std_polinv=0,enable_port_rx_std_prbs_status=0,enable_port_rx_std_rmfifo_empty=0,enable_port_rx_std_rmfifo_full=0,enable_port_rx_std_runlength_err=0,enable_port_rx_std_signaldetect=0,enable_port_rx_std_wa_a1a2size=0,enable_port_rx_std_wa_patternalign=0,enable_port_tx_std_bitslipboundarysel=0,enable_port_tx_std_elecidle=1,enable_port_tx_std_pcfifo_empty=1,enable_port_tx_std_pcfifo_full=1,enable_port_tx_std_polinv=1,enable_ports_rx_manual_cdr_mode=1,enable_simple_interface=1,enable_std=1,gui_pll_reconfig_pll0_clk_network=xN,gui_pll_reconfig_pll0_data_rate=1250 Mbps,gui_pll_reconfig_pll0_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll0_pll_type=CMU,gui_pll_reconfig_pll0_refclk_freq=125.0 MHz,gui_pll_reconfig_pll0_refclk_sel=0,gui_pll_reconfig_pll1_clk_network=x1,gui_pll_reconfig_pll1_data_rate=1250 Mbps,gui_pll_reconfig_pll1_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll1_pll_type=CMU,gui_pll_reconfig_pll1_refclk_freq=125.0 MHz,gui_pll_reconfig_pll1_refclk_sel=0,gui_pll_reconfig_pll2_clk_network=x1,gui_pll_reconfig_pll2_data_rate=1250 Mbps,gui_pll_reconfig_pll2_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll2_pll_type=CMU,gui_pll_reconfig_pll2_refclk_freq=125.0 MHz,gui_pll_reconfig_pll2_refclk_sel=0,gui_pll_reconfig_pll3_clk_network=x1,gui_pll_reconfig_pll3_data_rate=1250 Mbps,gui_pll_reconfig_pll3_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll3_pll_type=CMU,gui_pll_reconfig_pll3_refclk_freq=125.0 MHz,gui_pll_reconfig_pll3_refclk_sel=0,l_enable_rx_pma_direct=0,l_enable_rx_std=0,l_enable_rx_std_word_aligner=0,l_enable_tx_pma_direct=0,l_enable_tx_std=1,l_netlist_plls=1,l_pll_settings=0,l_pma_direct_word_count=8,l_pma_direct_word_width=10,l_rcfg_from_xcvr_width=138,l_rcfg_interfaces=3,l_rcfg_to_xcvr_width=210,l_std_rx_field_width=16,l_std_rx_word_count=2,l_std_rx_word_width=10,l_std_tx_field_width=11,l_std_tx_word_count=4,l_std_tx_word_width=8,message_level=error,pll_data_rate=3125.0 Mbps,pll_external_enable=0,pll_feedback_path=internal,pll_reconfig_enable=0,pll_refclk_cnt=1,pll_refclk_freq=125.0 MHz,pll_refclk_select=0,pll_select=0,pll_type=CMU,plls=1,pma_bonding_mode=xN,pma_direct_width=80,pma_width=20,rx_clkslip_enable=0,rx_enable=0,rx_ppm_detect_threshold=1000,set_cdr_refclk_freq=125.0 MHz,set_data_path_select=standard,set_data_rate=3125.0,show_advanced_features=0,std_low_latency_bypass_enable=0,std_pcs_pma_width=20,std_protocol_hint=basic,std_rx_8b10b_enable=0,std_rx_bitrev_enable=0,std_rx_byte_deser_enable=0,std_rx_byte_order_enable=0,std_rx_byte_order_mode=manual,std_rx_byte_order_pad=0,std_rx_byte_order_pattern=0,std_rx_byte_order_symbol_count=1,std_rx_byte_order_width=10,std_rx_byterev_enable=0,std_rx_pcfifo_mode=low_latency,std_rx_pld_pcs_width=20,std_rx_polinv_enable=0,std_rx_rmfifo_enable=0,std_rx_rmfifo_pattern_n=00000,std_rx_rmfifo_pattern_p=00000,std_rx_run_length_val=31,std_rx_word_aligner_mode=bit_slip,std_rx_word_aligner_pattern=0000000000,std_rx_word_aligner_pattern_len=7,std_rx_word_aligner_renumber=3,std_rx_word_aligner_rgnumber=3,std_rx_word_aligner_rknumber=3,std_tx_8b10b_disp_ctrl_enable=0,std_tx_8b10b_enable=1,std_tx_bitrev_enable=0,std_tx_bitslip_enable=0,std_tx_byte_ser_enable=1,std_tx_byterev_enable=0,std_tx_pcfifo_mode=low_latency,std_tx_pld_pcs_width=32,std_tx_polinv_enable=1,tx_enable=1,tx_pma_clk_div=1)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)(conduit:17.0:endPort=,endPortLSB=0,startPort=,startPortLSB=0,width=0)"
+   instancePathKey="jesd1:.:jesd204_0:.:inst_phy"
+   kind="altera_jesd204_phy"
+   version="17.0"
+   name="jesd1_jesd204_0_inst_phy">
+  <parameter name="PCS_CONFIG" value="JESD_PCS_CFG1" />
+  <parameter name="sdc_constraint" value="1.0" />
+  <parameter name="BIT_REVERSAL" value="0" />
+  <parameter name="UNUSED_RX_PARALLEL_WIDTH" value="8" />
+  <parameter name="TEST_COMPONENTS_EN" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Arria V" />
+  <parameter name="pll_type" value="CMU" />
+  <parameter name="bonded_mode" value="bonded" />
+  <parameter name="d_refclk_freq" value="125.0" />
+  <parameter name="L" value="2" />
+  <parameter name="UNUSED_TX_PARALLEL_WIDTH" value="8" />
+  <parameter name="set_user_identifier" value="0" />
+  <parameter name="XCVR_PLL_LOCKED_WIDTH" value="1" />
+  <parameter name="PMA_WIDTH" value="32" />
+  <parameter name="RECONFIG_SHARED" value="true" />
+  <parameter name="rcfg_shared" value="true" />
+  <parameter name="set_capability_reg_enable" value="false" />
+  <parameter name="DATA_PATH" value="TX" />
+  <parameter name="set_csr_soft_logic_enable" value="false" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <parameter name="RECONFIG_ADDRESS_WIDTH" value="7" />
+  <parameter name="rcfg_jtag_enable" value="false" />
+  <parameter name="lane_rate" value="3125.0" />
+  <parameter name="AUTO_DEVICE" value="5AGXMA7G4F31C4" />
+  <parameter name="wrapper_opt" value="base_phy" />
+  <parameter name="set_prbs_soft_logic_enable" value="false" />
+  <parameter name="pll_reconfig_enable" value="false" />
+  <parameter name="SER_SIZE" value="4" />
+  <parameter name="ALIGNMENT_PATTERN" value="658812" />
+  <generatedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/jesd1_jesd204_0_inst_phy.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_pcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_wys_lut.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_xn_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_pcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_mixed_width_dcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204.sdc"
+       type="SDC"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_phy_adapter.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_functions.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_ip.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_merger.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm_csr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_rx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_native.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_plls.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_data_adapter.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_basic.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_rx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_tx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_pipe_gen1_2_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_lego.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_tgx_cdrauto.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_resync.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_selector.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_mgmt2dec.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_wait_generate.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av_functions_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_data_adapter_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/plain_files.txt"
+       type="OTHER"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_top/altera_jesd204_phy_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx_mlpcs/altera_jesd204_tx_mlpcs_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_adapter/altera_jesd204_phy_adapter_hw.tcl" />
+   <file
+       path="C:/intelfpga/17.0/ip/altera/alt_xcvr/altera_xcvr_native_phy/av/tcl/altera_xcvr_native_av_hw.tcl" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/guava-15.0.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.version.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/javasysmon.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-impl.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-core.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
+  </childSourceFiles>
+  <instantiator instantiator="jesd1_jesd204_0" as="inst_phy" />
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_jesd204_phy "submodules/jesd1_jesd204_0_inst_phy"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>14</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_jesd204_tx_mlpcs</b> "<b>submodules/altera_jesd204_tx_mlpcs</b>"]]></message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_jesd204_phy_adapter</b> "<b>submodules/altera_jesd204_phy_adapter</b>"]]></message>
+   <message level="Debug" culprit="inst_phy"><![CDATA["<b>inst_phy</b>" reuses <b>altera_xcvr_native_av</b> "<b>submodules/altera_xcvr_native_av</b>"]]></message>
+   <message level="Info" culprit="inst_phy"><![CDATA["<b>jesd204_0</b>" instantiated <b>altera_jesd204_phy</b> "<b>inst_phy</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 2 starting:altera_jesd204_tx_mlpcs "submodules/altera_jesd204_tx_mlpcs"</message>
+   <message level="Info" culprit="inst_tx_mlpcs"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_tx_mlpcs</b> "<b>inst_tx_mlpcs</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_phy_adapter "submodules/altera_jesd204_phy_adapter"</message>
+   <message level="Info" culprit="inst_phy_adapter"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_phy_adapter</b> "<b>inst_phy_adapter</b>"]]></message>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_xcvr_native_av "submodules/altera_xcvr_native_av"</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/altera_xcvr_functions.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_ip.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_ip.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_merger.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_merger.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm_csr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm_csr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_rx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_rx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_native.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_native.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_plls.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_plls.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_data_adapter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_data_adapter.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_basic.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_basic.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_rx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_rx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_tx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_tx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_pipe_gen1_2_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_pipe_gen1_2_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_lego.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_lego.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_tgx_cdrauto.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_tgx_cdrauto.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_selector.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_selector.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_mgmt2dec.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_mgmt2dec.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_wait_generate.v VERILOG PATH ../../../../altera_xcvr_generic/ctrl/altera_wait_generate.v</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av_functions_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_data_adapter_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_data_adapter_av.sv</message>
+   <message level="Info" culprit="inst_xcvr"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_xcvr_native_av</b> "<b>inst_xcvr</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_jesd204_tx_mlpcs:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,PMA_WIDTH=32,SER_SIZE=4,TEST_COMPONENTS_EN=false,d_refclk_freq=125.0,lane_rate=3125.0,pll_reconfig_enable=false,sdc_constraint=1.0,wrapper_opt=base_phy"
+   instancePathKey="jesd1:.:jesd204_0:.:inst_phy:.:inst_tx_mlpcs"
+   kind="altera_jesd204_tx_mlpcs"
+   version="17.0"
+   name="altera_jesd204_tx_mlpcs">
+  <parameter name="PCS_CONFIG" value="JESD_PCS_CFG1" />
+  <parameter name="PMA_WIDTH" value="32" />
+  <parameter name="sdc_constraint" value="1.0" />
+  <parameter name="lane_rate" value="3125.0" />
+  <parameter name="TEST_COMPONENTS_EN" value="false" />
+  <parameter name="DEVICE_FAMILY" value="Arria V" />
+  <parameter name="DATA_PATH" value="TX" />
+  <parameter name="d_refclk_freq" value="125.0" />
+  <parameter name="wrapper_opt" value="base_phy" />
+  <parameter name="L" value="2" />
+  <parameter name="SER_SIZE" value="4" />
+  <parameter name="pll_reconfig_enable" value="false" />
+  <generatedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_pcs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_wys_lut.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_xn_8b10b_enc.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_pcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_mixed_width_dcfifo.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204.sdc"
+       type="SDC"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_tx_mlpcs.ocp"
+       type="OTHER"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/tx_mlpcs/altera_jesd204_tx_mlpcs_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="jesd1_jesd204_0_inst_phy" as="inst_tx_mlpcs" />
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 2 starting:altera_jesd204_tx_mlpcs "submodules/altera_jesd204_tx_mlpcs"</message>
+   <message level="Info" culprit="inst_tx_mlpcs"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_tx_mlpcs</b> "<b>inst_tx_mlpcs</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_jesd204_phy_adapter:17.0:DATA_PATH=TX,DEVICE_FAMILY=Arria V,L=2,PCS_CONFIG=JESD_PCS_CFG1,RECONFIG_ADDRESS_WIDTH=7,RECONFIG_SHARED=true,UNUSED_RX_PARALLEL_WIDTH=8,UNUSED_TX_PARALLEL_WIDTH=8,XCVR_PLL_LOCKED_WIDTH=1,bonded_mode=bonded,pll_reconfig_enable=false"
+   instancePathKey="jesd1:.:jesd204_0:.:inst_phy:.:inst_phy_adapter"
+   kind="altera_jesd204_phy_adapter"
+   version="17.0"
+   name="altera_jesd204_phy_adapter">
+  <parameter name="DEVICE_FAMILY" value="Arria V" />
+  <generatedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_jesd204_phy_adapter.v"
+       type="VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/altera_jesd204/src/lib/phy_adapter/altera_jesd204_phy_adapter_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="jesd1_jesd204_0_inst_phy" as="inst_phy_adapter" />
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 1 starting:altera_jesd204_phy_adapter "submodules/altera_jesd204_phy_adapter"</message>
+   <message level="Info" culprit="inst_phy_adapter"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_jesd204_phy_adapter</b> "<b>inst_phy_adapter</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_xcvr_native_av:17.0:base_data_rate=3125.0,bonded_mode=xN,cdr_reconfig_enable=0,cdr_refclk_cnt=1,cdr_refclk_freq=125.0 MHz,cdr_refclk_select=0,channels=2,data_path_select=standard,data_rate=3125.0 Mbps,device_family=Arria V,device_speedgrade=fastest,enable_port_rx_is_lockedtodata=1,enable_port_rx_is_lockedtoref=1,enable_port_rx_pma_clkout=1,enable_port_rx_seriallpbken=0,enable_port_rx_signaldetect=0,enable_port_rx_std_bitrev_ena=0,enable_port_rx_std_bitslip=0,enable_port_rx_std_bitslipboundarysel=0,enable_port_rx_std_byteorder_ena=0,enable_port_rx_std_byteorder_flag=0,enable_port_rx_std_byterev_ena=0,enable_port_rx_std_pcfifo_empty=0,enable_port_rx_std_pcfifo_full=0,enable_port_rx_std_polinv=0,enable_port_rx_std_prbs_status=0,enable_port_rx_std_rmfifo_empty=0,enable_port_rx_std_rmfifo_full=0,enable_port_rx_std_runlength_err=0,enable_port_rx_std_signaldetect=0,enable_port_rx_std_wa_a1a2size=0,enable_port_rx_std_wa_patternalign=0,enable_port_tx_std_bitslipboundarysel=0,enable_port_tx_std_elecidle=1,enable_port_tx_std_pcfifo_empty=1,enable_port_tx_std_pcfifo_full=1,enable_port_tx_std_polinv=1,enable_ports_rx_manual_cdr_mode=1,enable_simple_interface=1,enable_std=1,gui_pll_reconfig_pll0_clk_network=xN,gui_pll_reconfig_pll0_data_rate=1250 Mbps,gui_pll_reconfig_pll0_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll0_pll_type=CMU,gui_pll_reconfig_pll0_refclk_freq=125.0 MHz,gui_pll_reconfig_pll0_refclk_sel=0,gui_pll_reconfig_pll1_clk_network=x1,gui_pll_reconfig_pll1_data_rate=1250 Mbps,gui_pll_reconfig_pll1_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll1_pll_type=CMU,gui_pll_reconfig_pll1_refclk_freq=125.0 MHz,gui_pll_reconfig_pll1_refclk_sel=0,gui_pll_reconfig_pll2_clk_network=x1,gui_pll_reconfig_pll2_data_rate=1250 Mbps,gui_pll_reconfig_pll2_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll2_pll_type=CMU,gui_pll_reconfig_pll2_refclk_freq=125.0 MHz,gui_pll_reconfig_pll2_refclk_sel=0,gui_pll_reconfig_pll3_clk_network=x1,gui_pll_reconfig_pll3_data_rate=1250 Mbps,gui_pll_reconfig_pll3_data_rate_der=3125.0 Mbps,gui_pll_reconfig_pll3_pll_type=CMU,gui_pll_reconfig_pll3_refclk_freq=125.0 MHz,gui_pll_reconfig_pll3_refclk_sel=0,l_enable_rx_pma_direct=0,l_enable_rx_std=0,l_enable_rx_std_word_aligner=0,l_enable_tx_pma_direct=0,l_enable_tx_std=1,l_netlist_plls=1,l_pll_settings=0,l_pma_direct_word_count=8,l_pma_direct_word_width=10,l_rcfg_from_xcvr_width=138,l_rcfg_interfaces=3,l_rcfg_to_xcvr_width=210,l_std_rx_field_width=16,l_std_rx_word_count=2,l_std_rx_word_width=10,l_std_tx_field_width=11,l_std_tx_word_count=4,l_std_tx_word_width=8,message_level=error,pll_data_rate=3125.0 Mbps,pll_external_enable=0,pll_feedback_path=internal,pll_reconfig_enable=0,pll_refclk_cnt=1,pll_refclk_freq=125.0 MHz,pll_refclk_select=0,pll_select=0,pll_type=CMU,plls=1,pma_bonding_mode=xN,pma_direct_width=80,pma_width=20,rx_clkslip_enable=0,rx_enable=0,rx_ppm_detect_threshold=1000,set_cdr_refclk_freq=125.0 MHz,set_data_path_select=standard,set_data_rate=3125.0,show_advanced_features=0,std_low_latency_bypass_enable=0,std_pcs_pma_width=20,std_protocol_hint=basic,std_rx_8b10b_enable=0,std_rx_bitrev_enable=0,std_rx_byte_deser_enable=0,std_rx_byte_order_enable=0,std_rx_byte_order_mode=manual,std_rx_byte_order_pad=0,std_rx_byte_order_pattern=0,std_rx_byte_order_symbol_count=1,std_rx_byte_order_width=10,std_rx_byterev_enable=0,std_rx_pcfifo_mode=low_latency,std_rx_pld_pcs_width=20,std_rx_polinv_enable=0,std_rx_rmfifo_enable=0,std_rx_rmfifo_pattern_n=00000,std_rx_rmfifo_pattern_p=00000,std_rx_run_length_val=31,std_rx_word_aligner_mode=bit_slip,std_rx_word_aligner_pattern=0000000000,std_rx_word_aligner_pattern_len=7,std_rx_word_aligner_renumber=3,std_rx_word_aligner_rgnumber=3,std_rx_word_aligner_rknumber=3,std_tx_8b10b_disp_ctrl_enable=0,std_tx_8b10b_enable=1,std_tx_bitrev_enable=0,std_tx_bitslip_enable=0,std_tx_byte_ser_enable=1,std_tx_byterev_enable=0,std_tx_pcfifo_mode=low_latency,std_tx_pld_pcs_width=32,std_tx_polinv_enable=1,tx_enable=1,tx_pma_clk_div=1"
+   instancePathKey="jesd1:.:jesd204_0:.:inst_phy:.:inst_xcvr"
+   kind="altera_xcvr_native_av"
+   version="17.0"
+   name="altera_xcvr_native_av">
+  <parameter name="enable_ports_rx_manual_cdr_mode" value="1" />
+  <parameter name="data_rate" value="3125.0 Mbps" />
+  <parameter name="std_rx_byte_order_pad" value="0" />
+  <parameter name="gui_pll_reconfig_pll0_data_rate" value="1250 Mbps" />
+  <parameter name="enable_port_rx_std_byterev_ena" value="0" />
+  <parameter name="l_pma_direct_word_width" value="10" />
+  <parameter name="enable_port_rx_signaldetect" value="0" />
+  <parameter name="enable_port_rx_std_signaldetect" value="0" />
+  <parameter name="tx_enable" value="1" />
+  <parameter name="enable_port_rx_std_byteorder_flag" value="0" />
+  <parameter name="enable_port_rx_pma_clkout" value="1" />
+  <parameter name="pll_feedback_path" value="internal" />
+  <parameter name="enable_port_rx_std_prbs_status" value="0" />
+  <parameter name="l_std_tx_field_width" value="11" />
+  <parameter name="rx_clkslip_enable" value="0" />
+  <parameter name="l_enable_tx_std" value="1" />
+  <parameter name="gui_pll_reconfig_pll2_refclk_sel" value="0" />
+  <parameter name="cdr_refclk_cnt" value="1" />
+  <parameter name="enable_port_rx_std_bitrev_ena" value="0" />
+  <parameter name="pll_external_enable" value="0" />
+  <parameter name="enable_port_tx_std_elecidle" value="1" />
+  <parameter name="std_rx_word_aligner_mode" value="bit_slip" />
+  <parameter name="gui_pll_reconfig_pll1_data_rate" value="1250 Mbps" />
+  <parameter name="std_protocol_hint" value="basic" />
+  <parameter name="gui_pll_reconfig_pll3_data_rate_der" value="3125.0 Mbps" />
+  <parameter name="pma_bonding_mode" value="xN" />
+  <parameter name="pma_width" value="20" />
+  <parameter name="gui_pll_reconfig_pll0_data_rate_der" value="3125.0 Mbps" />
+  <parameter name="std_tx_8b10b_enable" value="1" />
+  <parameter name="std_tx_byterev_enable" value="0" />
+  <parameter name="std_rx_polinv_enable" value="0" />
+  <parameter name="pll_refclk_freq" value="125.0 MHz" />
+  <parameter name="enable_simple_interface" value="1" />
+  <parameter name="std_rx_pld_pcs_width" value="20" />
+  <parameter name="pll_select" value="0" />
+  <parameter name="std_pcs_pma_width" value="20" />
+  <parameter name="pma_direct_width" value="80" />
+  <parameter name="std_rx_run_length_val" value="31" />
+  <parameter name="pll_type" value="CMU" />
+  <parameter name="l_enable_tx_pma_direct" value="0" />
+  <parameter name="device_family" value="Arria V" />
+  <parameter name="base_data_rate" value="3125.0" />
+  <parameter name="enable_port_rx_std_wa_a1a2size" value="0" />
+  <parameter name="l_enable_rx_pma_direct" value="0" />
+  <parameter name="l_enable_rx_std_word_aligner" value="0" />
+  <parameter name="gui_pll_reconfig_pll3_pll_type" value="CMU" />
+  <parameter name="gui_pll_reconfig_pll3_refclk_sel" value="0" />
+  <parameter name="set_cdr_refclk_freq" value="125.0 MHz" />
+  <parameter name="gui_pll_reconfig_pll2_data_rate" value="1250 Mbps" />
+  <parameter name="enable_port_rx_std_runlength_err" value="0" />
+  <parameter name="std_tx_pcfifo_mode" value="low_latency" />
+  <parameter name="std_tx_pld_pcs_width" value="32" />
+  <parameter name="pll_refclk_cnt" value="1" />
+  <parameter name="pll_refclk_select" value="0" />
+  <parameter name="gui_pll_reconfig_pll1_refclk_sel" value="0" />
+  <parameter name="enable_port_tx_std_polinv" value="1" />
+  <parameter name="std_rx_pcfifo_mode" value="low_latency" />
+  <parameter name="l_std_tx_word_width" value="8" />
+  <parameter name="std_rx_rmfifo_pattern_n" value="00000" />
+  <parameter name="l_std_rx_word_width" value="10" />
+  <parameter name="set_data_path_select" value="standard" />
+  <parameter name="tx_pma_clk_div" value="1" />
+  <parameter name="enable_port_tx_std_pcfifo_full" value="1" />
+  <parameter name="std_rx_rmfifo_pattern_p" value="00000" />
+  <parameter name="l_enable_rx_std" value="0" />
+  <parameter name="l_netlist_plls" value="1" />
+  <parameter name="gui_pll_reconfig_pll0_refclk_sel" value="0" />
+  <parameter name="message_level" value="error" />
+  <parameter name="enable_port_rx_std_bitslipboundarysel" value="0" />
+  <parameter name="cdr_reconfig_enable" value="0" />
+  <parameter name="enable_port_rx_std_rmfifo_full" value="0" />
+  <parameter name="std_rx_word_aligner_rgnumber" value="3" />
+  <parameter name="enable_port_rx_std_polinv" value="0" />
+  <parameter name="pll_reconfig_enable" value="0" />
+  <parameter name="gui_pll_reconfig_pll2_refclk_freq" value="125.0 MHz" />
+  <parameter name="rx_ppm_detect_threshold" value="1000" />
+  <parameter name="gui_pll_reconfig_pll3_refclk_freq" value="125.0 MHz" />
+  <parameter name="bonded_mode" value="xN" />
+  <parameter name="enable_port_rx_std_rmfifo_empty" value="0" />
+  <parameter name="pll_data_rate" value="3125.0 Mbps" />
+  <parameter name="set_data_rate" value="3125.0" />
+  <parameter name="std_rx_byte_deser_enable" value="0" />
+  <parameter name="enable_port_tx_std_bitslipboundarysel" value="0" />
+  <parameter name="rx_enable" value="0" />
+  <parameter name="enable_port_rx_is_lockedtodata" value="1" />
+  <parameter name="gui_pll_reconfig_pll1_pll_type" value="CMU" />
+  <parameter name="l_std_rx_field_width" value="16" />
+  <parameter name="gui_pll_reconfig_pll0_clk_network" value="xN" />
+  <parameter name="gui_pll_reconfig_pll1_clk_network" value="x1" />
+  <parameter name="enable_port_rx_seriallpbken" value="0" />
+  <parameter name="std_tx_byte_ser_enable" value="1" />
+  <parameter name="gui_pll_reconfig_pll2_clk_network" value="x1" />
+  <parameter name="std_rx_rmfifo_enable" value="0" />
+  <parameter name="l_std_rx_word_count" value="2" />
+  <parameter name="gui_pll_reconfig_pll0_pll_type" value="CMU" />
+  <parameter name="std_rx_word_aligner_pattern" value="0000000000" />
+  <parameter name="std_rx_word_aligner_renumber" value="3" />
+  <parameter name="channels" value="2" />
+  <parameter name="plls" value="1" />
+  <parameter name="l_rcfg_to_xcvr_width" value="210" />
+  <parameter name="device_speedgrade" value="fastest" />
+  <parameter name="enable_std" value="1" />
+  <parameter name="std_rx_word_aligner_pattern_len" value="7" />
+  <parameter name="l_std_tx_word_count" value="4" />
+  <parameter name="data_path_select" value="standard" />
+  <parameter name="l_rcfg_interfaces" value="3" />
+  <parameter name="gui_pll_reconfig_pll3_clk_network" value="x1" />
+  <parameter name="show_advanced_features" value="0" />
+  <parameter name="l_pll_settings" value="0" />
+  <parameter name="std_tx_bitslip_enable" value="0" />
+  <parameter name="l_rcfg_from_xcvr_width" value="138" />
+  <parameter name="gui_pll_reconfig_pll2_data_rate_der" value="3125.0 Mbps" />
+  <parameter name="enable_port_tx_std_pcfifo_empty" value="1" />
+  <parameter name="enable_port_rx_std_byteorder_ena" value="0" />
+  <parameter name="enable_port_rx_std_wa_patternalign" value="0" />
+  <parameter name="std_rx_word_aligner_rknumber" value="3" />
+  <parameter name="std_rx_byte_order_enable" value="0" />
+  <parameter name="enable_port_rx_std_bitslip" value="0" />
+  <parameter name="enable_port_rx_std_pcfifo_full" value="0" />
+  <parameter name="std_tx_bitrev_enable" value="0" />
+  <parameter name="std_tx_8b10b_disp_ctrl_enable" value="0" />
+  <parameter name="std_rx_byterev_enable" value="0" />
+  <parameter name="std_tx_polinv_enable" value="1" />
+  <parameter name="gui_pll_reconfig_pll3_data_rate" value="1250 Mbps" />
+  <parameter name="std_low_latency_bypass_enable" value="0" />
+  <parameter name="l_pma_direct_word_count" value="8" />
+  <parameter name="std_rx_byte_order_mode" value="manual" />
+  <parameter name="gui_pll_reconfig_pll1_data_rate_der" value="3125.0 Mbps" />
+  <parameter name="std_rx_byte_order_width" value="10" />
+  <parameter name="cdr_refclk_select" value="0" />
+  <parameter name="enable_port_rx_std_pcfifo_empty" value="0" />
+  <parameter name="cdr_refclk_freq" value="125.0 MHz" />
+  <parameter name="std_rx_8b10b_enable" value="0" />
+  <parameter name="std_rx_byte_order_pattern" value="0" />
+  <parameter name="std_rx_bitrev_enable" value="0" />
+  <parameter name="gui_pll_reconfig_pll2_pll_type" value="CMU" />
+  <parameter name="enable_port_rx_is_lockedtoref" value="1" />
+  <parameter name="gui_pll_reconfig_pll0_refclk_freq" value="125.0 MHz" />
+  <parameter name="std_rx_byte_order_symbol_count" value="1" />
+  <parameter name="gui_pll_reconfig_pll1_refclk_freq" value="125.0 MHz" />
+  <generatedFiles>
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_functions.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_to_ip.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/sv_reconfig_bundle_merger.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm_csr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_tx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_rx_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pma.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs_ch.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_pcs.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_avmm.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_native.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_plls.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_xcvr_data_adapter.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_basic.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_reconfig_bundle_to_xcvr.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_rx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_8g_tx_pcs_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_common_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_pipe_gen1_2_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_rx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pcs_pma_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/av_hssi_tx_pld_pcs_interface_rbc.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_lego.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_reset_ctrl_tgx_cdrauto.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_resync.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_common.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_pcs8g.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_csr_selector.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/alt_xcvr_mgmt2dec.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_wait_generate.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av_functions_h.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_native_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/altera_xcvr_data_adapter_av.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="C:/intelFPGA/17.0/project/db/ip/jesd1/submodules/plain_files.txt"
+       type="OTHER"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.0/ip/altera/alt_xcvr/altera_xcvr_native_phy/av/tcl/altera_xcvr_native_av_hw.tcl" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.hwtclvalidator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.privateinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/guava-15.0.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.infrastructure.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.jdbcsqlite.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.version.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.model.common.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.utilities.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/hamcrest-all-1.3.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-lang3-3.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/javasysmon.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-impl.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-api.jar" />
+   <file path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jaxb-core.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/commons-logging-1.1.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopclibrary.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.atlantic.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.components.tclmodule.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlcomponent.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.hdlwriter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.minieval2.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.generator.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.cmsis.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.qsys.ipxact.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopc.qsymbol.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcmodel.transforms.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcdocument.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.sopcreport.build.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/com.altera.tcl.interpreter.jar" />
+   <file
+       path="C:/intelFPGA/17.0/quartus/sopc_builder/model/lib/jacl1.3.2a.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="jesd1_jesd204_0_inst_phy" as="inst_xcvr" />
+  <messages>
+   <message level="Debug" culprit="jesd1">queue size: 0 starting:altera_xcvr_native_av "submodules/altera_xcvr_native_av"</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_functions.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/altera_xcvr_functions.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_to_ip.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_to_ip.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./sv_reconfig_bundle_merger.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/sv/sv_reconfig_bundle_merger.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm_csr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm_csr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_tx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_tx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_rx_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_rx_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pma.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pma.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs_ch.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs_ch.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_pcs.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_pcs.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_avmm.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_avmm.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_native.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_native.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_plls.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_plls.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_xcvr_data_adapter.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_xcvr_data_adapter.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_basic.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_basic.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_reconfig_bundle_to_xcvr.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/av_reconfig_bundle_to_xcvr.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_rx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_rx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_8g_tx_pcs_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_8g_tx_pcs_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_common_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_common_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_pipe_gen1_2_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_pipe_gen1_2_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_rx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_rx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pcs_pma_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pcs_pma_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./av_hssi_tx_pld_pcs_interface_rbc.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/av/rbc/av_hssi_tx_pld_pcs_interface_rbc.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_lego.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_lego.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_reset_ctrl_tgx_cdrauto.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_reset_ctrl_tgx_cdrauto.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_resync.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_resync.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_common.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_common.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g_h.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_pcs8g.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_pcs8g.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_csr_selector.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_csr_selector.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./alt_xcvr_mgmt2dec.sv SYSTEM_VERILOG PATH ../../../../altera_xcvr_generic/ctrl/alt_xcvr_mgmt2dec.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_wait_generate.v VERILOG PATH ../../../../altera_xcvr_generic/ctrl/altera_wait_generate.v</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av_functions_h.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av_functions_h.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_native_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_native_av.sv</message>
+   <message level="Info" culprit="inst_xcvr">add_fileset_file ./altera_xcvr_data_adapter_av.sv SYSTEM_VERILOG PATH ..//altera_xcvr_data_adapter_av.sv</message>
+   <message level="Info" culprit="inst_xcvr"><![CDATA["<b>inst_phy</b>" instantiated <b>altera_xcvr_native_av</b> "<b>inst_xcvr</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

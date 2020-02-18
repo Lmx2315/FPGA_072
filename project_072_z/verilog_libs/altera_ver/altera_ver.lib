@@ -1,0 +1,368 @@
+timestamp=1529415657529
+
+[~A]
+LastVerilogToplevel=alt_bidir_buf
+ModifyID=1440
+Version=74
+c:/intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v=0*350444*358366
+
+[$root]
+A/$root=22|||1*1164606
+BinI32/$root=3*492210
+SLP=3*492314
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c73a565f2ade592f8ac1c68f484c921670f54b7379e61ce3fca14acaf4710f10
+
+[PRIM_GDFF_HIGH]
+A/PRIM_GDFF_HIGH=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1337|1*1202628
+BinI32/PRIM_GDFF_HIGH=3*505337
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1337
+SLP=3*505586
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|70e326a0ae2d87051faa9a45793611d09137a4245026c2b9307b1fe3558ae18b6ccd7a50c385195f53470ff4aabe932c
+
+[PRIM_GDFF_HIGH_SCLR_PRIORITY]
+A/PRIM_GDFF_HIGH_SCLR_PRIORITY=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1380|1*1205240
+BinI32/PRIM_GDFF_HIGH_SCLR_PRIORITY=3*505740
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1380
+SLP=3*506003
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|70e326a0ae2d87051faa9a45793611d0bcc426b7fdde41e59c179113153f50c3d17c07092fe9c84baee7ec6fc64b09d2ba3b2092a39240b981b9f2149a41b252
+
+[PRIM_GDFF_LOW]
+A/PRIM_GDFF_LOW=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1251|1*1197356
+BinI32/PRIM_GDFF_LOW=3*504498
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1251
+SLP=3*504745
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6644d3431e378c4251ff4c7156243e573c8881aa38f54b5394ac07974b4be906a339b34b8fd772584a9f07d16d3c99f1
+
+[PRIM_GDFF_LOW_SCLR_PRIORITY]
+A/PRIM_GDFF_LOW_SCLR_PRIORITY=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1294|1*1199964
+BinI32/PRIM_GDFF_LOW_SCLR_PRIORITY=3*504898
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1294
+SLP=3*505160
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6644d3431e378c4251ff4c7156243e5716089c99139bbe5ffec9166ec4d5dc61f1c1c79a19d11e7fd1009623e543e04177883090f7d75a61bcddfb7ba30fc56a
+
+[TRI]
+A/TRI=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|114|1*1172853
+BinI32/TRI=3*495613
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|114
+SLP=3*495715
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|584b04f7de1f44e011b52d09cafe872fc2e938ac9506c3db6be49d0e97a60b9b
+
+[alt_bidir_buf]
+A/alt_bidir_buf=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1218|1*1264080
+BinI32/alt_bidir_buf=3*538435
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1218
+SLP=3*539448
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|d988558db19b1000d6b5f90b945b2748bfc8e62f9c4873f45c9999fbfde9b3bcffcd6242403378f9c6631c9f5e6bf76a
+
+[alt_bidir_diff]
+A/alt_bidir_diff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1180|1*1260852
+BinI32/alt_bidir_diff=3*536565
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1180
+SLP=3*537863
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|97b235da27926036b20995442085b479bf42fc03731fc0c6ad2a8297514994cfbbe731e2dde6cf64ba2197070a3cfe8c
+
+[alt_inbuf]
+A/alt_inbuf=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|985|1*1239618
+BinI32/alt_inbuf=3*530211
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|985
+SLP=3*530538
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|31ac415be30461c8a5ab41113eaf0bc8d11a51508dfe70bf9efaf19ddf0be0fd2161638b3c8dcbf8ba579b1a8e261edf
+
+[alt_inbuf_diff]
+A/alt_inbuf_diff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1068|1*1249823
+BinI32/alt_inbuf_diff=3*532436
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1068
+SLP=3*533137
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|d0bd63600c21bf649d5ede721fe89bbf903c2b79568faa25fc89a124d624208627127c5483dac04edf7087161595cb19
+
+[alt_iobuf]
+A/alt_iobuf=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1039|1*1246745
+BinI32/alt_iobuf=3*531548
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1039
+SLP=3*532159
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|56286a729aac2ab29d159f004a5ca3673b7fd6471a083072b1d7305c6137d67369bd912e23fb0d20752cdfa74e4c986e
+
+[alt_iobuf_diff]
+A/alt_iobuf_diff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1141|1*1257542
+BinI32/alt_iobuf_diff=3*534829
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1141
+SLP=3*536038
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0cd92dda68df26949cdce566ac9ed0159309c62bc186e29af9545741f769a1d0bbe731e2dde6cf64ba2197070a3cfe8c
+
+[alt_outbuf]
+A/alt_outbuf=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1000|1*1241535
+BinI32/alt_outbuf=3*530704
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1000
+SLP=3*531032
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b2d4f73bf2567350da90a2a8847d97a182d1a211da2d1a850547f94940ffc9c48e492ae23d4dc41bdef65ed65e2ee0f9
+
+[alt_outbuf_diff]
+A/alt_outbuf_diff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1098|1*1252032
+BinI32/alt_outbuf_diff=3*533530
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1098
+SLP=3*533938
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f2870537cb1c81688f32bbf344683990bb50b9e1c6d139c9b9610773e7f849177572d5440283d993d49fd8c5f6343acc
+
+[alt_outbuf_tri]
+A/alt_outbuf_tri=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1019|1*1244087
+BinI32/alt_outbuf_tri=3*531209
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1019
+SLP=3*531392
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f1f307b2f70d3e6279f7b4f203411a15214e8c2ab3765cdfb97ccdd78643d221f2be336bf5148aa9c6174a12cd4ae03f
+
+[alt_outbuf_tri_diff]
+A/alt_outbuf_tri_diff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1119|1*1254643
+BinI32/alt_outbuf_tri_diff=3*534145
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|1119
+SLP=3*534587
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f1f307b2f70d3e6279f7b4f203411a15d089347a0690c7629ae2a6bc639718646b2937e1e72dab40d611f19b1c292801
+
+[carry]
+A/carry=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|49|1*1166155
+BinI32/carry=3*492798
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|49
+SLP=3*493083
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bfe93747ce552961188dae1d7c347f095c67b42333f3ea3ce3d3bae82fb58073
+
+[carry_sum]
+A/carry_sum=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|65|1*1167993
+BinI32/carry_sum=3*493628
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|65
+SLP=3*493987
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a1c4ca4a766f5b795d67a6f5d0ffc7914fff32ca6be2d86a22eaa69897de254a748d64d6298649c6b59468d44a43fbf3
+
+[cascade]
+A/cascade=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|57|1*1167070
+BinI32/cascade=3*493210
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|57
+SLP=3*493497
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0a553179f6b63f0082823b6008e5d75326527262ddaa47cb266f3a3c4d9b973a09d513b36f9419a28ee857e437bdd9c1
+
+[clklock]
+A/clklock=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|590|1*1234016
+BinI32/clklock=3*517186
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|590
+SLP=3*525032
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|aa79dd6d1cdb15720c7fe5d3f6f8cf5626527262ddaa47cb266f3a3c4d9b973a6697363e42e600d2418330a6b17e9cd2
+
+[dff]
+A/dff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|203|1*1179736
+BinI32/dff=3*499585
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|203
+SLP=3*499952
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6a4f0a87167aa7fed99534ff2dffab1bc125150ac6da7164864fe6d1347c24d7
+
+[dffe]
+A/dffe=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|214|1*1181684
+BinI32/dffe=3*500124
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|214
+SLP=3*500492
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|01d4a72707ae89965d6e4e60b42996a3b806d4c7bce3057a36204fe29a5af607
+
+[dffea]
+A/dffea=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|225|1*1183644
+BinI32/dffea=3*500669
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|225
+SLP=3*501229
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|20742f3a47625e49cc96bf6615b247b0a94b31ab0bf286f9214cf8d3eced9f6f
+
+[dffeas]
+A/dffeas=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|247|1*1185904
+BinI32/dffeas=3*501522
+D/dffeas=4*25322
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|247
+SLP=3*503520
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e8b9f586f561944bc426a3d620d97cf22a9a6d5faf80fb5b8eb7f328834e8ccd
+
+[dffeas_pr]
+A/dffeas_pr=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|341|1*1207908
+BinI32/dffeas_pr=3*506182
+D/dffeas_pr=4*26470
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|341
+SLP=3*508973
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|86d7f0c205e92e82624e565aff7363d5ca3f2bfb9615ce8da1628794c98150fe1554ce4e3c9cca7cb5eac2194f14f6cb
+
+[dlatch]
+A/dlatch=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|153|1*1176799
+BinI32/dlatch=3*497315
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|153
+SLP=3*497892
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c858ac2bee9ead80db437eaa42b9af65cc8440e5fe3eddd8b844984e1fb0b96d
+
+[exp]
+A/exp=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|76|1*1169175
+BinI32/exp=3*494148
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|76
+SLP=3*494443
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6100221c91cc8fe894e67160f19f84d8a351be58f697966fd25f601b27d24117
+
+[global]
+A/global=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|38|1*1165236
+BinI32/global=3*492382
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|38
+SLP=3*492668
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c0f9e5003eec43bd96b47574636b6e2b6e2b8d656f249b7249d5847a276a04c3
+
+[jkff]
+A/jkff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|514|1*1225717
+BinI32/jkff=3*513631
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|514
+SLP=3*513998
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|83a7367c1e9cf1cfe1707edefaa119e89d82619d06ba6086baf1e4623895814b
+
+[jkffe]
+A/jkffe=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|525|1*1227432
+BinI32/jkffe=3*514174
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|525
+SLP=3*514545
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|d405a073ad12bd7cd5a8196f34b812ef0a1a1761f10c89e27da8b3472fa4314f
+
+[latch]
+A/latch=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|139|1*1175712
+BinI32/latch=3*496659
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|139
+SLP=3*497093
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a22d876ebebee021e55c6f2aa5a42966b23af967c974dc58f983cb367d26c1b1
+
+[lut_input]
+A/lut_input=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|123|1*1173834
+BinI32/lut_input=3*495810
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|123
+SLP=3*496099
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|efa4bba023c336e5efeaa4d65146857d9dd4038800ea7627f6858577fd3be4ba49c4dbd6b51815a852aea71dc341ca90
+
+[lut_output]
+A/lut_output=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|131|1*1174771
+BinI32/lut_output=3*496234
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|131
+SLP=3*496524
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|96ba0a968c281119128f133afa2ef13c3554cb63af590c7b18f670a1fb250a976255bc5b65871e77eaddf9a50378979d
+
+[opndrn]
+A/opndrn=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|98|1*1170993
+BinI32/opndrn=3*494983
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|98
+SLP=3*495088
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ae4f29a9ff2827b80769384ef0060e8b96cf4ed279db0913f3d27a04b1781a60
+
+[prim_gdff]
+A/prim_gdff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|171|1*1178039
+BinI32/prim_gdff=3*498208
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|171
+SLP=3*499052
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|624c1ed215642af43668c485d3fe0147fe08ec5dd4a9166b7b73853feca178063d5e3f9b412ad7962f0c2b8f8e1be7e9
+
+[prim_gjkff]
+A/prim_gjkff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|484|1*1224242
+BinI32/prim_gjkff=3*512262
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|484
+SLP=3*513139
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ae98167fb39144235c314b26c3ba55e7a1a4b2da5f81a1b18251bed6457d96685260ad2725bdac609a029a624fd2d535
+
+[prim_gsrff]
+A/prim_gsrff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|536|1*1229129
+BinI32/prim_gsrff=3*514727
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|536
+SLP=3*515601
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a625ad3f3e15b72e2a5c2396a20f1290109df2cd4aa456566bd79f13f7410aeeef1ebe11a9017034c52fa8ab26d86f33
+
+[prim_gtff]
+A/prim_gtff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|436|1*1219597
+BinI32/prim_gtff=3*509996
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|436
+SLP=3*510734
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e4c40de7fb515f9e467df53b888ba6a0d3653051ad52a43dcf83c4813aa3d7d0f165f1099fca524ccc56048a27e11243
+
+[row_global]
+A/row_global=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|106|1*1171912
+BinI32/row_global=3*495185
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|106
+SLP=3*495475
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|59048e08c9e6367d964a44a7e098add72148c4825ea6393e4e1a2b958244ed35019b9836d9bc7a00f7ba86034b0535bc
+
+[soft]
+A/soft=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|87|1*1170082
+BinI32/soft=3*494575
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|87
+SLP=3*494859
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2f699b4b18eda94a3ffe06979e81e069079ae19e1eb3433aa339b2e3334f3821
+
+[srff]
+A/srff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|566|1*1230604
+BinI32/srff=3*516087
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|566
+SLP=3*516454
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|718095396e2505172fb9ae63fc31fbd43d6d2b8f9356d11102d40b1451348446
+
+[srffe]
+A/srffe=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|577|1*1232319
+BinI32/srffe=3*516632
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|577
+SLP=3*517003
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|09dcd5576415d11287b7a96b4e5a2cd8a0c8fbaf20fe74645b79b8f3d472e055
+
+[tff]
+A/tff=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|462|1*1220996
+BinI32/tff=3*511166
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|462
+SLP=3*511538
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0c00345ad7fb6fd0846289e8b5bbfd4417062b1bfe893fb04175824355f4befe
+
+[tffe]
+A/tffe=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|473|1*1222628
+BinI32/tffe=3*511711
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v|473
+SLP=3*512084
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3fc05f1313292003e7211380e09cfa36593bcfa8fd4a8feca73434652867e135
+
+[~MFT]
+0=48|0altera_ver.mgf|358366|93140
+1=88|1altera_ver.mgf|1264080|1164606
+3=176|3altera_ver.mgf|539448|492210
+4=4|4altera_ver.mgf|26470|25322
+
+[~U]
+$root=12|0*339536|
+PRIM_GDFF_HIGH=12|0*344057||0x20
+PRIM_GDFF_HIGH_SCLR_PRIORITY=12|0*344322||0x20
+PRIM_GDFF_LOW=12|0*343503||0x20
+PRIM_GDFF_LOW_SCLR_PRIORITY=12|0*343767||0x20
+TRI=12|0*341335||0x10
+alt_bidir_buf=12|0*350106||0x10
+alt_bidir_diff=12|0*349762||0x10
+alt_inbuf=12|0*347215||0x10
+alt_inbuf_diff=12|0*348469||0x10
+alt_iobuf=12|0*348129||0x10
+alt_iobuf_diff=12|0*349416||0x10
+alt_outbuf=12|0*347486||0x10
+alt_outbuf_diff=12|0*348756||0x10
+alt_outbuf_tri=12|0*347802||0x10
+alt_outbuf_tri_diff=12|0*349080||0x10
+carry=12|0*340114||0x10
+carry_sum=12|0*340458||0x10
+cascade=12|0*340284||0x10
+clklock=12|0*346964||0x10
+dff=12|0*342485||0x10
+dffe=12|0*342693||0x10
+dffea=12|0*342913||0x10
+dffeas=12|0*343155||0x10
+dffeas_pr=12|0*344613||0x10
+dlatch=12|0*342043||0x10
+exp=12|0*340649||0x10
+global=12|0*339942||0x10
+jkff=12|0*345857||0x10
+jkffe=12|0*346072||0x10
+latch=12|0*341862||0x10
+lut_input=12|0*341507||0x10
+lut_output=12|0*341684||0x10
+opndrn=12|0*340983||0x10
+prim_gdff=12|0*342242|
+prim_gjkff=12|0*345637|
+prim_gsrff=12|0*346299|
+prim_gtff=12|0*344996|
+row_global=12|0*341155||0x10
+soft=12|0*340815||0x10
+srff=12|0*346520||0x10
+srffe=12|0*346736||0x10
+tff=12|0*345209||0x10
+tffe=12|0*345417||0x10

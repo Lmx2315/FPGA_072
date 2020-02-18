@@ -1,0 +1,312 @@
+I 000038 56 1110 1518108191271 dffeas
+(_unit dffeas
+	(_specify
+		(_tchk setuphold 0 291
+			(_port clk (posedge) (_code  34 nosloadsclr))
+			(_port d ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 292
+			(_port clk (posedge) (_code  35 reset))
+			(_port sclr ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 293
+			(_port clk (posedge) (_code  36 reset))
+			(_port sload ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 294
+			(_port clk (posedge) (_code  37 sloaddata))
+			(_port asdata ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 295
+			(_port clk (posedge) (_code  38 reset))
+			(_port ena ())
+			(_register (viol))
+		)
+		(_modpath parallel positive 0 297
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 298
+			(_port clrn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 299
+			(_port prn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 300
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 301
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+I 000041 56 1113 1518108191292 dffeas_pr
+(_unit dffeas_pr
+	(_specify
+		(_tchk setuphold 0 386
+			(_port clk (posedge) (_code  34 nosloadsclr))
+			(_port d ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 387
+			(_port clk (posedge) (_code  35 reset))
+			(_port sclr ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 388
+			(_port clk (posedge) (_code  36 reset))
+			(_port sload ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 389
+			(_port clk (posedge) (_code  37 sloaddata))
+			(_port asdata ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 390
+			(_port clk (posedge) (_code  38 reset))
+			(_port ena ())
+			(_register (viol))
+		)
+		(_modpath parallel positive 0 392
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 393
+			(_port clrn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 394
+			(_port prn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 395
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 396
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+I 000038 56 1110 1518108297120 dffeas
+(_unit dffeas
+	(_specify
+		(_tchk setuphold 0 291
+			(_port clk (posedge) (_code  34 nosloadsclr))
+			(_port d ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 292
+			(_port clk (posedge) (_code  35 reset))
+			(_port sclr ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 293
+			(_port clk (posedge) (_code  36 reset))
+			(_port sload ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 294
+			(_port clk (posedge) (_code  37 sloaddata))
+			(_port asdata ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 295
+			(_port clk (posedge) (_code  38 reset))
+			(_port ena ())
+			(_register (viol))
+		)
+		(_modpath parallel positive 0 297
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 298
+			(_port clrn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 299
+			(_port prn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 300
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 301
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+I 000041 56 1113 1518108297141 dffeas_pr
+(_unit dffeas_pr
+	(_specify
+		(_tchk setuphold 0 386
+			(_port clk (posedge) (_code  34 nosloadsclr))
+			(_port d ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 387
+			(_port clk (posedge) (_code  35 reset))
+			(_port sclr ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 388
+			(_port clk (posedge) (_code  36 reset))
+			(_port sload ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 389
+			(_port clk (posedge) (_code  37 sloaddata))
+			(_port asdata ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 390
+			(_port clk (posedge) (_code  38 reset))
+			(_port ena ())
+			(_register (viol))
+		)
+		(_modpath parallel positive 0 392
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 393
+			(_port clrn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 394
+			(_port prn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 395
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 396
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+V 000038 56 1110 1518155499519 dffeas
+(_unit dffeas
+	(_specify
+		(_tchk setuphold 0 291
+			(_port clk (posedge) (_code  34 nosloadsclr))
+			(_port d ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 292
+			(_port clk (posedge) (_code  35 reset))
+			(_port sclr ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 293
+			(_port clk (posedge) (_code  36 reset))
+			(_port sload ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 294
+			(_port clk (posedge) (_code  37 sloaddata))
+			(_port asdata ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 295
+			(_port clk (posedge) (_code  38 reset))
+			(_port ena ())
+			(_register (viol))
+		)
+		(_modpath parallel positive 0 297
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 298
+			(_port clrn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 299
+			(_port prn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 300
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 301
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+V 000041 56 1113 1518155499557 dffeas_pr
+(_unit dffeas_pr
+	(_specify
+		(_tchk setuphold 0 386
+			(_port clk (posedge) (_code  34 nosloadsclr))
+			(_port d ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 387
+			(_port clk (posedge) (_code  35 reset))
+			(_port sclr ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 388
+			(_port clk (posedge) (_code  36 reset))
+			(_port sload ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 389
+			(_port clk (posedge) (_code  37 sloaddata))
+			(_port asdata ())
+			(_register (viol))
+		)
+		(_tchk setuphold 0 390
+			(_port clk (posedge) (_code  38 reset))
+			(_port ena ())
+			(_register (viol))
+		)
+		(_modpath parallel positive 0 392
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 393
+			(_port clrn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 394
+			(_port prn in negedge)
+			(_port q out negedge)
+		)
+		(_modpath parallel positive 0 395
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 396
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)

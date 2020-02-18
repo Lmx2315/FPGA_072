@@ -1,0 +1,1888 @@
+timestamp=1529415695533
+
+[~A]
+LastVerilogToplevel=arriav_hssi_pma_hi_xcvrif
+ModifyID=866
+Version=74
+c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v=0*403862*404372
+c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v=0*2739205*2776632
+
+[$root]
+A/$root=22|||1*7668504
+BinI32/$root=3*19612897
+SLP=3*19613001
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c73a565f2ade592f8ac1c68f484c92160fd525ca13b840c05e655590eb0de872
+
+[arriav_channel_pll]
+A/arriav_channel_pll=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3901|1*7949335
+BinI32/arriav_channel_pll=3*19633295
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3901
+SLP=3*19633814
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c60835a19e73b0e254b8e0f8c8806f2f94c5306c05e0371121d4d16bc5edc5bc9e000efaaa6c40ab5aea29e86fb9ac78
+
+[arriav_hssi_8g_pcs_aggregate]
+A/arriav_hssi_8g_pcs_aggregate=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|31|1*7673102
+BinI32/arriav_hssi_8g_pcs_aggregate=3*19613069
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|31
+SLP=3*19613593
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1f26a17340bdb76b7a093d24132f835b21086da608169853fb0a73d28ba87654b800a4a4d48937ef70a44825c38803eae6720f9d75e8050ac4afaaef8236d389
+
+[arriav_hssi_8g_rx_pcs]
+A/arriav_hssi_8g_rx_pcs=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|527|1*7706137
+BinI32/arriav_hssi_8g_rx_pcs=3*19614460
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|527
+SLP=3*19614982
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1f26a17340bdb76b7a093d24132f835b1985a4f908ff0ccd9426d83994671c59bef97e9a48fb1a27e349d91948dfc55f
+
+[arriav_hssi_8g_tx_pcs]
+A/arriav_hssi_8g_tx_pcs=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|1119|1*7753276
+BinI32/arriav_hssi_8g_tx_pcs=3*19616231
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|1119
+SLP=3*19616751
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1f26a17340bdb76b7a093d24132f835b924880f26097d748b19331ec3cf9379d86d7d392764193d02216a1ba30df3423
+
+[arriav_hssi_avmm_interface]
+A/arriav_hssi_avmm_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|4098|1*7964408
+BinI32/arriav_hssi_avmm_interface=3*19634261
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|4098
+SLP=3*19634787
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bfdd4e1b1853f02f0a03ddc6a76cf98878cd4c651871bad41d9d38460d6620d3691399b98f6e5022a510277121e61c8e0f162ae89b7c0d62f02bdeffe7c442c3
+
+[arriav_hssi_common_pcs_pma_interface]
+A/arriav_hssi_common_pcs_pma_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|1429|1*7777334
+BinI32/arriav_hssi_common_pcs_pma_interface=3*19617507
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|1429
+SLP=3*19618042
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bfdd4e1b1853f02f0a03ddc6a76cf98867b4b88f9c6227361dda8157e637aaa83a88e41ca49ae315d2ae9e490cca16d428a26782b1d8e399fe00317e81fea819
+
+[arriav_hssi_common_pld_pcs_interface]
+A/arriav_hssi_common_pld_pcs_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|1825|1*7805178
+BinI32/arriav_hssi_common_pld_pcs_interface=3*19618881
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|1825
+SLP=3*19619417
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bfdd4e1b1853f02f0a03ddc6a76cf9882f69ebee5db602b1e0ea53d822f8791fe8cd946ef0e47cd2a39821003b56af31536dfec28084c7668fdae229ba8b5fa9
+
+[arriav_hssi_pipe_gen1_2]
+A/arriav_hssi_pipe_gen1_2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2063|1*7822748
+BinI32/arriav_hssi_pipe_gen1_2=3*19620104
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2063
+SLP=3*19620628
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987dcb66b1eb5fae49c50b8ce1ff124fa4826527262ddaa47cb266f3a3c4d9b973af905a2b85d4871b3ca8ec2549e1596ba
+
+[arriav_hssi_pma_aux]
+A/arriav_hssi_pma_aux=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2253|1*7836967
+BinI32/arriav_hssi_pma_aux=3*19621153
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2253
+SLP=3*19621675
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987445bf50bd9b2d691b7fa03958c0416adeccb48448fbf8baf2407f923af5de7fa
+
+[arriav_hssi_pma_cdr_refclk_select_mux]
+A/arriav_hssi_pma_cdr_refclk_select_mux=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3155|1*7898973
+BinI32/arriav_hssi_pma_cdr_refclk_select_mux=3*19627332
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3155
+SLP=3*19627869
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987ba073303cc165b146392a75e9c9c876ea69953b8c15560383003404a85e2f14119edcdedb3ff6dd5df10326b3325f866
+
+[arriav_hssi_pma_hi_pmaif]
+A/arriav_hssi_pma_hi_pmaif=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|4204|1*7970981
+BinI32/arriav_hssi_pma_hi_pmaif=3*19635188
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|4204
+SLP=3*19635381
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b8898753a755b4efc7ccfdfcf7d5879c3bc76cf179ea9fa2f3d823ddae472f7973f76d
+
+[arriav_hssi_pma_hi_xcvrif]
+A/arriav_hssi_pma_hi_xcvrif=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|4231|1*7972783
+BinI32/arriav_hssi_pma_hi_xcvrif=3*19635532
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|4231
+SLP=3*19635726
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987af7d7c2cd3a932793ca41abdee9c50474d347d26856403ff81d965a43def7423c15662363d84b94b8fa56cc22ecef949
+
+[arriav_hssi_pma_int]
+A/arriav_hssi_pma_int=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2323|1*7842216
+BinI32/arriav_hssi_pma_int=3*19621901
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2323
+SLP=3*19622421
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b889873590d1dc8d23291317aadac9bd410dc818b5efeb2c3f5647eff433a061991f6f
+
+[arriav_hssi_pma_rx_buf]
+A/arriav_hssi_pma_rx_buf=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2537|1*7855813
+BinI32/arriav_hssi_pma_rx_buf=3*19622945
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2537
+SLP=3*19623469
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987a9876f53fd6c08478d118344cd0e03252dd7332f9062cf9f81b21b728070e06e
+
+[arriav_hssi_pma_rx_deser]
+A/arriav_hssi_pma_rx_deser=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2640|1*7862961
+BinI32/arriav_hssi_pma_rx_deser=3*19623771
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2640
+SLP=3*19624295
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987714980da131213a168a8d51bd6f7d59fdee517a8f11eaca41eeada4f35cf50f3b4acd93560c4e784b73765f140543da0
+
+[arriav_hssi_pma_tx_buf]
+A/arriav_hssi_pma_tx_buf=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2728|1*7868832
+BinI32/arriav_hssi_pma_tx_buf=3*19624596
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2728
+SLP=3*19625121
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b8898712928619010da93c6e0c029eacdbdf78d2644a445b4fbcd7af19790fabc9cfec
+
+[arriav_hssi_pma_tx_cgb]
+A/arriav_hssi_pma_tx_cgb=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2852|1*7877662
+BinI32/arriav_hssi_pma_tx_cgb=3*19625476
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|2852
+SLP=3*19625998
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987d56ee3d385073f9d7faf6c1d415def389a35097fb0b90cbfd22494d4482d264a
+
+[arriav_hssi_pma_tx_ser]
+A/arriav_hssi_pma_tx_ser=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3059|1*7892255
+BinI32/arriav_hssi_pma_tx_ser=3*19626469
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3059
+SLP=3*19626993
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b8898737ff38da3485591042bbcf751ef33f2ef02f53fccc181d407d2f117fc852dd2b
+
+[arriav_hssi_refclk_divider]
+A/arriav_hssi_refclk_divider=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3847|1*7945018
+BinI32/arriav_hssi_refclk_divider=3*19632117
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3847
+SLP=3*19632644
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b8898703b457ec8d31fbdabb592f5fe390071e207e487f5d44681bde5032db0d08e12e9a41c17ede23557e6c2949206436f72b
+
+[arriav_hssi_rx_pcs_pma_interface]
+A/arriav_hssi_rx_pcs_pma_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3352|1*7911368
+BinI32/arriav_hssi_rx_pcs_pma_interface=3*19628292
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3352
+SLP=3*19628824
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b889878521ec5ceaabb35d49a1a011bc22f44b37a6a197f205a50b42c7c19128933952fb6a552f55df45135e333e109233d5ae
+
+[arriav_hssi_rx_pld_pcs_interface]
+A/arriav_hssi_rx_pld_pcs_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3446|1*7917733
+BinI32/arriav_hssi_rx_pld_pcs_interface=3*19629190
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3446
+SLP=3*19629722
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987c9ff94c0d47963ec6762509d33b16999026dc232a61660b874aa382ead5f2f00fb6a552f55df45135e333e109233d5ae
+
+[arriav_hssi_tx_pcs_pma_interface]
+A/arriav_hssi_tx_pcs_pma_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3652|1*7931555
+BinI32/arriav_hssi_tx_pcs_pma_interface=3*19630284
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3652
+SLP=3*19630816
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987b91185f274eaf66b2c74617044eafa9d374c860756c4f0f976ab239a5a12bac4c103f0c33ba207ac8c16e5c23d2ce59c
+
+[arriav_hssi_tx_pld_pcs_interface]
+A/arriav_hssi_tx_pld_pcs_interface=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3724|1*7936387
+BinI32/arriav_hssi_tx_pld_pcs_interface=3*19631127
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3724
+SLP=3*19631661
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|92b6ea1953590045a93715c8c8b88987db899e6287f445e71a849e13cd8bbc01c100ffd9e4a71f6bb4ebafdfe88f22a4038e8a597e072c62cc1ed5185f9666cc
+
+[arriav_pll_aux]
+A/arriav_pll_aux=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3874|1*7947288
+BinI32/arriav_pll_aux=3*19632804
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v|3874
+SLP=3*19633104
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9b7359aeb7df45ba20454040fb3558a9218cadd4525c6a73355cf25977d21007ecf8336cc198c313113326cdc4a42c9c
+
+[protected_0bdb7af13de5e5da3aed8523153a39f32456446fa36a1a7e80e8f51d006c3215]
+A/protected_0bdb7af13de5e5da3aed8523153a39f32456446fa36a1a7e80e8f51d006c3215=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53653|1*7526144
+BinI32/protected_0bdb7af13de5e5da3aed8523153a39f32456446fa36a1a7e80e8f51d006c3215=3*18943690
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53653
+SLP=3*18944243
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|480c64a3f9bed694bffec6ad0330fcf7166db85c8910c6694f418ce797be5d52a7bbe98801b911e6ec0a9ab4c33135e9c543d216590219088b719da6360f6b9b6e47625f6fc4442e024eaf732d24bd5589f36e88eec8764af185315d930336a3
+
+[protected_0bdb7af13de5e5da3aed8523153a39f3360122b801c76c35ff20bbdcb772f694]
+A/protected_0bdb7af13de5e5da3aed8523153a39f3360122b801c76c35ff20bbdcb772f694=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53633|1*7525365
+BinI32/protected_0bdb7af13de5e5da3aed8523153a39f3360122b801c76c35ff20bbdcb772f694=3*18943315
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53633
+SLP=3*18943488
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|79201c60881f23aceb05a467f9abdabdba92dc841f13402494a5a0d23e98206a53e650020f033e9e6223ddd5c529a7ef28be8b8c41b841f2717c843e2e74ec762adb44c10eb8d24314d0f45489e733a0e0b06d394f9fe4b50eb22e1ff3aaeed3
+
+[protected_0bdb7af13de5e5da3aed8523153a39f34ce71fb4c006c955b996d1bb820a3874]
+A/protected_0bdb7af13de5e5da3aed8523153a39f34ce71fb4c006c955b996d1bb820a3874=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53795|1*7529057
+BinI32/protected_0bdb7af13de5e5da3aed8523153a39f34ce71fb4c006c955b996d1bb820a3874=3*18949609
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53795
+SLP=3*18949782
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|190e385ad32de05cdc8cf472bb54aa759c47739f078a35835375466dc1b84fe22e27ebdcb0871018b65e5c39da83158f041477e69be0f2e593d71640bc0ea71a10c88061196f91db9b0e0f888b7dc458e963ef58a09385c2a26cc321c723e252
+
+[protected_0bdb7af13de5e5da3aed8523153a39f3563b1dcb40368019d3498b6ffb71a994]
+A/protected_0bdb7af13de5e5da3aed8523153a39f3563b1dcb40368019d3498b6ffb71a994=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53610|1*7524570
+BinI32/protected_0bdb7af13de5e5da3aed8523153a39f3563b1dcb40368019d3498b6ffb71a994=3*18942328
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53610
+SLP=3*18942937
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e623e0eecd8b35786b481b316bb23e7c44a66a357f121d9bb527cbc8266b83ca3e510ae105aba8ed993ee3dd56e807cf005eb80655803a043f83c32a0d3d1f35261bfc7748c4e7a2891e989b8c0ac4e9978def5d586b75080b3fafe52507b764
+
+[protected_0bdb7af13de5e5da3aed8523153a39f3dc36db8db90f8237fe6be5c81b650370]
+A/protected_0bdb7af13de5e5da3aed8523153a39f3dc36db8db90f8237fe6be5c81b650370=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53778|1*7528182
+BinI32/protected_0bdb7af13de5e5da3aed8523153a39f3dc36db8db90f8237fe6be5c81b650370=3*18949186
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53778
+SLP=3*18949359
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|32cc05a7ee83b66853358737366b1807e4f60402e94ff0dc55998d0b819afb7880b02f76690a2c37e08f7219f2ce289695ce151c224fff27fd887bc0579c5280588e2a0c223735ece41d93a02ff79bf92e5ebd78810642e898aa1c68f5866ad8
+
+[protected_0bdb7af13de5e5da3aed8523153a39f3f335684fbfc8c2a9d9d20f430973627d]
+A/protected_0bdb7af13de5e5da3aed8523153a39f3f335684fbfc8c2a9d9d20f430973627d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53679|1*7526907
+BinI32/protected_0bdb7af13de5e5da3aed8523153a39f3f335684fbfc8c2a9d9d20f430973627d=3*18944653
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53679
+SLP=3*18947687
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6c3ff0f8fa935b5f25d849b767f99513e001a3fb5e614fc9b81f8a5fb787f93f191ed1f03ed3adb8d2d1ef7f0619986410a3e169ee9607e56f1d953f65f1c4d022dc1ade1dcd5ddc2e15485db3f26efc67417790fa7ecd2f7f3cff45bff0924b
+
+[protected_10db91748e51d9e4d3e4262ec60a1b6c]
+A/protected_10db91748e51d9e4d3e4262ec60a1b6c=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|48926|1*7496167
+BinI32/protected_10db91748e51d9e4d3e4262ec60a1b6c=3*18817651
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|48926
+SLP=3*18845713
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|59b7e066ee6b2a9825b4a6794daa0e99f5681214b08faf1a34b05cad1dcdb43a976c888c450a58bdfd7a87e73f0f142e50d393e8777295ea9f1a2d4d9a6579bd2b097ecc4707d8972dc495326052a311
+
+[protected_204a1a68ae5180da53495b8ce3f9b04c96fcbc35e50349a6f404efd0b5403775]
+A/protected_204a1a68ae5180da53495b8ce3f9b04c96fcbc35e50349a6f404efd0b5403775=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53462|1*7522095
+BinI32/protected_204a1a68ae5180da53495b8ce3f9b04c96fcbc35e50349a6f404efd0b5403775=3*18935808
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53462
+SLP=3*18940301
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|31c686b809c3b322ed1386e3d4e518e5c1e3e83dc913c63ff3afdf906836cdcda824d53066e5525cc95044d6e9db575266f6dc0a2cf788df839abcce38095a54d8f9abc5a919b4f58e04de35ee702b965a4bf2a0fbf00cc8ec85f1e1cccdcbb0
+
+[protected_2230dcb480c248c741c8dd4dc8089dbbdca5a07035ba6cba8e59a10739b49078e4e1ededee314a6e09b8970f422eed58]
+A/protected_2230dcb480c248c741c8dd4dc8089dbbdca5a07035ba6cba8e59a10739b49078e4e1ededee314a6e09b8970f422eed58=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63079|1*7583528
+BinI32/protected_2230dcb480c248c741c8dd4dc8089dbbdca5a07035ba6cba8e59a10739b49078e4e1ededee314a6e09b8970f422eed58=3*19367686
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63079
+SLP=3*19369054
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7748a8a7797fda2bee40d399ec50c4d048462f74e54272e1c8cac7c95c9dfaa2af3343905f8e3e64f9eb6cc94ac3f927c59fbb507c15242bdb8823dcb1633a4823418ee4547c1ed218d4b63ce5878d5a73f47daff88dce3b8c824a00cf8b2744f58b24fd9de94f83ee5115ec88da4394
+
+[protected_28491064809cd3603e6c898657c2ea6400c724957952527ce0b44b9f473b49d1]
+A/protected_28491064809cd3603e6c898657c2ea6400c724957952527ce0b44b9f473b49d1=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2030|1*7223245
+BinI32/protected_28491064809cd3603e6c898657c2ea6400c724957952527ce0b44b9f473b49d1=3*17532921
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2030
+SLP=3*17533330
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c95e7f689d6437ca337f936e5d19efaf947030f239b2450af4a8454555354f610ae5a5d1b0ecc4b8d3ec3297bbd17e304016a074ae6b79299bbe7eab6dc3b0d8a1d2c683f342be615a86f4e42a2cfbd2588b6bdc6dfe45e03ae6dc45a1ff162a
+
+[protected_28491064809cd3603e6c898657c2ea640cd715aecb81644a734670d6c40be748]
+A/protected_28491064809cd3603e6c898657c2ea640cd715aecb81644a734670d6c40be748=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|118|1*7206708
+BinI32/protected_28491064809cd3603e6c898657c2ea640cd715aecb81644a734670d6c40be748=3*17468038
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|118
+SLP=3*17468445
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f5da26e0ea52c5f0f48443c4505426fc3c67026104c51df7d849f1eaf978c381ed11b320dd6ee4b60226b939859fd4790ea320a7165ded752506762713955391599badd4152c1a1d26cf312762b1e7e532461877f850ecb2491cc22db537f148
+
+[protected_28491064809cd3603e6c898657c2ea641b51687b0cb2d124bf16e5b8b991c0f2]
+A/protected_28491064809cd3603e6c898657c2ea641b51687b0cb2d124bf16e5b8b991c0f2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|544|1*7213798
+BinI32/protected_28491064809cd3603e6c898657c2ea641b51687b0cb2d124bf16e5b8b991c0f2=3*17479799
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|544
+SLP=3*17483656
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c1e44a5d926177a6362211dbecb6add8594db4d711f29b84623858b16dcba126cfee6cbe7eedeb9474ed1e3fa100299894aeb8ae844a3f26596f293b3797c3b1f29fc257973b338e17fe59fbaf96253cece957ede5c18b76dd72c907742591e8
+
+[protected_28491064809cd3603e6c898657c2ea641c4c7279dbee0eed9e7aa8903f6a16ddef706ca415fa0785f0004baf566db43c]
+A/protected_28491064809cd3603e6c898657c2ea641c4c7279dbee0eed9e7aa8903f6a16ddef706ca415fa0785f0004baf566db43c=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2181|1*7227193
+BinI32/protected_28491064809cd3603e6c898657c2ea641c4c7279dbee0eed9e7aa8903f6a16ddef706ca415fa0785f0004baf566db43c=3*17535726
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2181
+SLP=3*17536304
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b4c5be555c3161adfc39fad0a8bd5b022e0585f1ca9e55eca1e334dec09c49da3a57edf002c94202573e9fc705dc6c4b71b0e2e2f9c0a0a23d8c7c08af02b494a096f49bef984b5dc45a233d629b7125bcc41ddcae2f7392f03b61de7d0d5e8c7277d82a53461e6bcdc2b8ff490b27f0
+
+[protected_28491064809cd3603e6c898657c2ea641f9bccac53e6b32d73e225ceb945cbc9]
+A/protected_28491064809cd3603e6c898657c2ea641f9bccac53e6b32d73e225ceb945cbc9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2803|1*7234042
+BinI32/protected_28491064809cd3603e6c898657c2ea641f9bccac53e6b32d73e225ceb945cbc9=3*17572514
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2803
+SLP=3*17572921
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6b5c10e5fb63977aadf8ba6f7eef17c29b6bb65aac9eb0bfa062eee49f04a04d41abf16d76eec07bd83705d394dd8251127e9f4b9e638227376343c2c256fc4f5e99892d53772d0063336d5deb1bd439831d6e92af6387c5130cf16fcf14666d
+
+[protected_28491064809cd3603e6c898657c2ea642157b1017778850f6a1eda9571ced702]
+A/protected_28491064809cd3603e6c898657c2ea642157b1017778850f6a1eda9571ced702=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2156|1*7226302
+BinI32/protected_28491064809cd3603e6c898657c2ea642157b1017778850f6a1eda9571ced702=3*17534946
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2156
+SLP=3*17535444
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e72527a7c24a4124b96cd5c79e280438342869117de874ab15d754c113d3efc578be75a7838b10491ec82deed482aaaf97fc53d46cfcd48bb82e5c4f2840c6b8c61210be377fa014c57834bf4d4cb71f8da113ae1987c4b79eccf1793b3834a3
+
+[protected_28491064809cd3603e6c898657c2ea6426b6fb226f413c0aba17a56a59ae45f6]
+A/protected_28491064809cd3603e6c898657c2ea6426b6fb226f413c0aba17a56a59ae45f6=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2072|1*7224264
+BinI32/protected_28491064809cd3603e6c898657c2ea6426b6fb226f413c0aba17a56a59ae45f6=3*17533596
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2072
+SLP=3*17534005
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|10cd3dd56e42864c2fab9e08f5d5299facb822345a42cf2df89b85a4f08bf51aa1a663c56adba4c4b7220a0f54a50ad9bfef8d07b0b34ea4402171a3c2ff2bd0964923cc0c18f1a72db9474da3d3e3ef4f9fe145460bd4b60e510deb5d20a975
+
+[protected_28491064809cd3603e6c898657c2ea643f1032f59002adc36e12308523c6bf8d]
+A/protected_28491064809cd3603e6c898657c2ea643f1032f59002adc36e12308523c6bf8d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2715|1*7232831
+BinI32/protected_28491064809cd3603e6c898657c2ea643f1032f59002adc36e12308523c6bf8d=3*17570097
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2715
+SLP=3*17571736
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|24a45bfdd53348100949804254933f2964442e6e0a825f704a08b3d57fbc2791be819727556eb4b3bed650c4a82730050f3596332e95eb501b2d04ef25dd36a5c088696a6f8557cf08199ce85d85caa454214229115533b40594cb4ddca0de67
+
+[protected_28491064809cd3603e6c898657c2ea6457f0ddd97ba93f2e53ec29960440c1e3]
+A/protected_28491064809cd3603e6c898657c2ea6457f0ddd97ba93f2e53ec29960440c1e3=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|1508|1*7219639
+BinI32/protected_28491064809cd3603e6c898657c2ea6457f0ddd97ba93f2e53ec29960440c1e3=3*17516881
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|1508
+SLP=3*17523845
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8798ad89be02e09f591f8bd09d0541ea958664953f46a6fc01e0bad304b67a668ae415e42bf29020317e20fbaca83ae0cb51cb94f46cccc3b74a1d88e0cb259c8549969ac6d92bf21164eceeb26f81e530cf7fa0ae06387b1e7a78dae2c064b6
+
+[protected_28491064809cd3603e6c898657c2ea645b0a3751c00585b4007e5081a31d697e]
+A/protected_28491064809cd3603e6c898657c2ea645b0a3751c00585b4007e5081a31d697e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2114|1*7225283
+BinI32/protected_28491064809cd3603e6c898657c2ea645b0a3751c00585b4007e5081a31d697e=3*17534271
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2114
+SLP=3*17534680
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|d437014c81e3e6de0cfbccfc314fd12bedc16260d06ff2412799b6cd75e564c5442b93453458dc5ecfe583abe7a308e1de9ecd159225de3a2021a15d613a3525e07d7932166576bf05f2df83dd56f0a1e852d77de33838817964ccab9e6f8e3a
+
+[protected_28491064809cd3603e6c898657c2ea647c8a44d6616030fbd8ee317346023051]
+A/protected_28491064809cd3603e6c898657c2ea647c8a44d6616030fbd8ee317346023051=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|1884|1*7221826
+BinI32/protected_28491064809cd3603e6c898657c2ea647c8a44d6616030fbd8ee317346023051=3*17528576
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|1884
+SLP=3*17531182
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|372e7c35e62e2ca4fc96bbbd671a4fd32e8db07f950d4fd958b64c378687a61fb163a77f1a1c7724284dd55db83bfabdfae93b9427a7a0389706005cecd2a65229a4763fc73d59d59a7553fb3f2fa497a9a10919e96af0cb081b1da6be14b59c
+
+[protected_28491064809cd3603e6c898657c2ea6485f3c99e5318ff55a636df12264cfb9f]
+A/protected_28491064809cd3603e6c898657c2ea6485f3c99e5318ff55a636df12264cfb9f=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|151|1*7207663
+BinI32/protected_28491064809cd3603e6c898657c2ea6485f3c99e5318ff55a636df12264cfb9f=3*17468695
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|151
+SLP=3*17469102
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f86b043453702858b3df7c4158a5d06c38d58659433b00719fcf9efd04904a890fe11c4f946ecd685cb7ecef8aaee922ad9fb6a1abd44718559b84fa306a00a54035f204c3acdb94e12755d55f36fc8c985e16e408ec3c401c6f0db9f1560204
+
+[protected_28491064809cd3603e6c898657c2ea649a2440bead634839b5c4ed732b8eb5d2]
+A/protected_28491064809cd3603e6c898657c2ea649a2440bead634839b5c4ed732b8eb5d2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|85|1*7205753
+BinI32/protected_28491064809cd3603e6c898657c2ea649a2440bead634839b5c4ed732b8eb5d2=3*17467381
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|85
+SLP=3*17467788
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|006ff41d71cb3abe797b150275ed6114cda078e8429627f1b830e5b778b279833abf26bd9b5e30cbc94506a8d74bd29fb8eb81e726c380ca6f8399115c9ad141891e58bab51a77dd4d870128aaff15d86342cb0f445d275c9edc280a9147969c
+
+[protected_28491064809cd3603e6c898657c2ea649dca4837fff3c9a495b33b3c9ca3fc2efd4701f02989cf363fa71f5663e8c817]
+A/protected_28491064809cd3603e6c898657c2ea649dca4837fff3c9a495b33b3c9ca3fc2efd4701f02989cf363fa71f5663e8c817=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|1354|1*7218156
+BinI32/protected_28491064809cd3603e6c898657c2ea649dca4837fff3c9a495b33b3c9ca3fc2efd4701f02989cf363fa71f5663e8c817=3*17511403
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|1354
+SLP=3*17515158
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a4c09342830f54a61dcfc3c4a6758ef7c2ab0c06cc8bd589df83846ae8229a8e0cb19a0571f150a06a4f67ba31102af6b75cc829b82831b212e4083a170a431ec60dec2940bc84dacaf58655d00d74ef7d6579c6118a527955ff35b756132d250032c9314f28ab4db1219b3b8bcde0fd
+
+[protected_28491064809cd3603e6c898657c2ea64ae1ec011e03a4e7a04133985364fc275]
+A/protected_28491064809cd3603e6c898657c2ea64ae1ec011e03a4e7a04133985364fc275=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2842|1*7234997
+BinI32/protected_28491064809cd3603e6c898657c2ea64ae1ec011e03a4e7a04133985364fc275=3*17573171
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2842
+SLP=3*17573578
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|31eb427f158a40f8b10e55f39285032ad879a0d4ddade6ac92f4af00eb3c7fa57c22a66cc8acfe9968db385c1c53aa268df7dc9c2a68be77024cf688c2b2e9df8ab2d55a2e97cc164fa9ec3dc2ae2f24c2628d420b3dcb7bb1b9bbb0f4ba8545
+
+[protected_28491064809cd3603e6c898657c2ea64cf291d8d677e3e77278e8a31da42186e]
+A/protected_28491064809cd3603e6c898657c2ea64cf291d8d677e3e77278e8a31da42186e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|476|1*7212683
+BinI32/protected_28491064809cd3603e6c898657c2ea64cf291d8d677e3e77278e8a31da42186e=3*17479076
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|476
+SLP=3*17479485
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ebb291cecf0c0a311cb455d360c70c68c87c1f903196d00ce4e077dbbce778f6370f5b4085b9c463c0ee88438a0181a3f2a7f212b2424587f0b5619fa7243430de1015cd7b879e27dc96b81eb44abba257c174caea62836b7969f9b1e4e3b972
+
+[protected_28491064809cd3603e6c898657c2ea64d1b7ffad374bba689be1f9b3f5547803]
+A/protected_28491064809cd3603e6c898657c2ea64d1b7ffad374bba689be1f9b3f5547803=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|183|1*7208618
+BinI32/protected_28491064809cd3603e6c898657c2ea64d1b7ffad374bba689be1f9b3f5547803=3*17469352
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|183
+SLP=3*17471839
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2f8390f0f88810734eb16324e026fc81d022f6c881a8084ac8bb78ed1bbf838ea7923ff59721b7df26d19e8cfee8d81c2057db5d2d5fb3e097e799deb0b60cad3ac37300bdb8ff3a2dbba28a2737a856b918e5246aaf98c0f997c8e77d1b5a1a
+
+[protected_28491064809cd3603e6c898657c2ea64d28efe1ef81c9589d67918dc5dbec9a1]
+A/protected_28491064809cd3603e6c898657c2ea64d28efe1ef81c9589d67918dc5dbec9a1=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|43|1*7204686
+BinI32/protected_28491064809cd3603e6c898657c2ea64d28efe1ef81c9589d67918dc5dbec9a1=3*17463557
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|43
+SLP=3*17466635
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8af414d6960318c21de0722c9c3db9115ae98a1a280d38a9f35168eee5ceed3b7a1c504b3800835d607da283e981ac3886eae330d9dc4904c6d98e3029b64e0c653468f59220d2ab140efb60cee0845a218a1e3b06a0b7c68783e53276a15e60
+
+[protected_28491064809cd3603e6c898657c2ea64d40ac204b9b3e073b2cd8a020d833419]
+A/protected_28491064809cd3603e6c898657c2ea64d40ac204b9b3e073b2cd8a020d833419=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|296|1*7210421
+BinI32/protected_28491064809cd3603e6c898657c2ea64d40ac204b9b3e073b2cd8a020d833419=3*17473178
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|296
+SLP=3*17475406
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3f316c74fd6c0e95de6d6cdba9b51e746ba2a5c600289b3ccce8c7a3162d3c3fe7cc8ced7fd3b037f581480f634ea9404684c08f90ea83d206e647de6f7075391a3703a9078273fd9e8fcc054b297c8124bec16a7609b827d22bb9d4294a90ef
+
+[protected_28491064809cd3603e6c898657c2ea64d94ac4ac518b5525182b60152c0bcbd9]
+A/protected_28491064809cd3603e6c898657c2ea64d94ac4ac518b5525182b60152c0bcbd9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2208|1*7228020
+BinI32/protected_28491064809cd3603e6c898657c2ea64d94ac4ac518b5525182b60152c0bcbd9=3*17536730
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2208
+SLP=3*17555213
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9e7d15494740f64af3d3c660a7e0dcfdd9e04fd238423ac8cf165553239d62b535794123c897ece9d291441cc4ce145a164f244530a8f508d371285c78b5a984871de5c795dc6330445a27d939e33a69be7772f99b3501178e3acc6f13fc20eb
+
+[protected_28491064809cd3603e6c898657c2ea64eff0ebc1c80833cf135eb3a9a41cbe57]
+A/protected_28491064809cd3603e6c898657c2ea64eff0ebc1c80833cf135eb3a9a41cbe57=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|633|1*7215281
+BinI32/protected_28491064809cd3603e6c898657c2ea64eff0ebc1c80833cf135eb3a9a41cbe57=3*17485571
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|633
+SLP=3*17499839
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|fac4b1f3f92d7caa7ed04890ed407c387ef97bd792d856d4fefc88b57d98992b2106506c40fc6b3b8e97363a7ac44e0884a1a5ab64435936b42ca6da10aaf37cbc5f4b62b0259714f95fe7ce6f98f7a73ba7c2364b6d480b3c17f3a2cc38a2cd
+
+[protected_28491064809cd3603e6c898657c2ea64f5c1ff371b7f22912275a3a9127ca57d]
+A/protected_28491064809cd3603e6c898657c2ea64f5c1ff371b7f22912275a3a9127ca57d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2881|1*7235952
+BinI32/protected_28491064809cd3603e6c898657c2ea64f5c1ff371b7f22912275a3a9127ca57d=3*17573828
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2881
+SLP=3*17574235
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6143a9dd1e1778fc22b902baaa416da0a0b87d58900f97c1373e969e1aff834f2c09cea6508632fa4bac6b20a431d96ecbc6ec296f171709770bdd3f49a1d07b6f84045253aad7d75720789c22de3a5e6e7a2ef33f01d1f6206a514bf33b6668
+
+[protected_28491064809cd3603e6c898657c2ea64fc6f9e7c2b3a315c41cccb9bd6e0d679]
+A/protected_28491064809cd3603e6c898657c2ea64fc6f9e7c2b3a315c41cccb9bd6e0d679=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|374|1*7211552
+BinI32/protected_28491064809cd3603e6c898657c2ea64fc6f9e7c2b3a315c41cccb9bd6e0d679=3*17476264
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|374
+SLP=3*17478250
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f9b906a2f9225c41830935a06dab7b3dcaeeaedade9c746151a83c4991d08cc824971c2e10ce8b336c2682dd99f4ff5153aaba5f09a4e28cca49f574ef69e119a753347e6aa442b1a779a0c48ff6047519aca5295b0fa4617dc072c1afa098a6
+
+[protected_3118f6029ab6551087370fe419ae74196ec84a2f58e5e5adf46e7e0aba24bbfa]
+A/protected_3118f6029ab6551087370fe419ae74196ec84a2f58e5e5adf46e7e0aba24bbfa=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|62616|1*7581325
+BinI32/protected_3118f6029ab6551087370fe419ae74196ec84a2f58e5e5adf46e7e0aba24bbfa=3*19352547
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|62616
+SLP=3*19361611
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|59ab52ec8ba26df7aa7adc3bc3b3ae7f6495725f5c42293980a0c7b67188d6d4582baecd7138f7baee34aeac1c65a41b881455cd9f81ffc722bc481aca2c8b6bede296abbc26f8c3bb9986dbb2f6e5aaaedf2b9f0fc67f6bd445bb04e9e289de
+
+[protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5]
+A/protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|68954|1*7641118
+BinI32/protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5=3*19505134
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|68954
+SLP=3*19508064
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ac415f111d6b87372356cb18c36ab15e558e1bddae33e7a9657edcac7d4f2eefced2ba6a08c20c9455d60f10716dc27a19c3084190f4859c13ca36be91917efdc82e98698671c6f648898f46e12a55604847b88e7f9ba91a1a7fdfb934d02478902cdfbb86cc14cfa73f5ae48029cd00
+
+[protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564]
+A/protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70401|1*7654368
+BinI32/protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564=3*19545798
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70401
+SLP=3*19551306
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a8008e67c69e6622b7ce832971397ff2e4e2898f336accebe048846435594309492b77971d7363e9d154c9ff030bb4e9b497081442d467734223bd1c0b892a186b645ebc5d858e8fc5af6eca4fb03d6e17797fd32ef590c32142a1afb62ccf3a6a9f0e7fb3dfc5359745008a0f3e1519
+
+[protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5]
+A/protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|68766|1*7638931
+BinI32/protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5=3*19500034
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|68766
+SLP=3*19503043
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|938783cbcade69986ec57c628ebb38c52846c11d6494e69aedc106dddaabac8d3b54ed7bbd1a12d0f312a9d716ac883c8f50a3d35978f93216ae85c3bbb7a3117806681ab0cab39e02d584434d01d272b71402b16eeab425497c35e7502e1910c488070c30e095ce2f3cb31490666e17
+
+[protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564]
+A/protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70179|1*7652869
+BinI32/protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564=3*19537258
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70179
+SLP=3*19543323
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|97b73051ef074a5aa5a431462f5c9ee0e840019a9789b62823b6ced322fdcd6edf91fe2198130945caf9f4d3829f0076c0231a33aecd1b17b2f793466a0deb8512c343d781f6ac8dcf226944668b01518838f48474a42e73ab487a523509f573b00942e09061a4d3e57af9e010440a69
+
+[protected_37bb8d6cef94f3f079bfb874a4fb97f28f82eae4252ddd0c0cdb6b5bed7bd729]
+A/protected_37bb8d6cef94f3f079bfb874a4fb97f28f82eae4252ddd0c0cdb6b5bed7bd729=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|48395|1*7493932
+BinI32/protected_37bb8d6cef94f3f079bfb874a4fb97f28f82eae4252ddd0c0cdb6b5bed7bd729=3*18801466
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|48395
+SLP=3*18812232
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|337a2dfabdf7e00b34e7cf7a996912ca5875950f4ff13113a7f0dd9f5ff63eca3f3937b35da562aa543884815521bce848ddbc630eccad35e73c3d6c7625b89d890fb4368f6859b36194f33ef1297cc8a0ae25470ba8345a1494a229809d0e33
+
+[protected_37bb8d6cef94f3f079bfb874a4fb97f2b126125acb73372e6d70c8eb5e06ce00]
+A/protected_37bb8d6cef94f3f079bfb874a4fb97f2b126125acb73372e6d70c8eb5e06ce00=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|45570|1*7483638
+BinI32/protected_37bb8d6cef94f3f079bfb874a4fb97f2b126125acb73372e6d70c8eb5e06ce00=3*18702203
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|45570
+SLP=3*18737872
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f10589bce2f91cba1862b1a9084cda335daf16322f05a0460a2dff6e99b9c4c62be71390bcb18831764d84591e6c11b96bb835b57d7c65444818ad728d4b353f53596721b26febbf717df889af4a3a1bd0f1c99d2e5c15fe802b1429eb930e0f
+
+[protected_3c024501438a03fa708e001b3054d788]
+A/protected_3c024501438a03fa708e001b3054d788=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|51590|1*7509880
+BinI32/protected_3c024501438a03fa708e001b3054d788=3*18877126
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|51590
+SLP=3*18887955
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|80547dd0767dd03887bb66fca47f59e2c89cf8dc80435a88997e89bb8a86557dab7c93eb4cb84c0d4125bd633a17c8bc387e603594cc5185273e2ad6d894d8b98daa2e2617befead3a3a5caf977793d6
+
+[protected_404d2c2fa6d424c6fc003ae717f7c9d300feb6cd6f267661cbf10d7a213309b5]
+A/protected_404d2c2fa6d424c6fc003ae717f7c9d300feb6cd6f267661cbf10d7a213309b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|72270|1*7667485
+BinI32/protected_404d2c2fa6d424c6fc003ae717f7c9d300feb6cd6f267661cbf10d7a213309b5=3*19608796
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|72270
+SLP=3*19611174
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b226c86520bf92b1512981eb784095c9766c5bb4af45a8493dba5c4ea6985a993f059a2eddb3d6993a1dee2f1374b0dfa6a8b50966cef646157407845c1a39f43a0b9e82b3540fc2a04d5cba1919e7f707262f9cfd27d0129083b82874d2bde3
+
+[protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e255c81ddf2c6536a55fd71cbc228656096]
+A/protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e255c81ddf2c6536a55fd71cbc228656096=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|68270|1*7634920
+BinI32/protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e255c81ddf2c6536a55fd71cbc228656096=3*19484731
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|68270
+SLP=3*19494423
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2716f5c371c127244ac6bc0c713339d23e1ecb48a2634048f286aa0e41319621e78eb37f8c8cf48cc1866cb9da4ecdd7dc936f6a0d740df77f72ba463a0b1f3f697bbbd8af8e81442c7a26179cdccfb920c2cdb5b6c1880060b32bdefdbbdb1bffe64ac9746497cb9ba36c8c4b4f0ddb
+
+[protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e25ff6b16814b1a20b8cc6846dcd64afded]
+A/protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e25ff6b16814b1a20b8cc6846dcd64afded=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69936|1*7651258
+BinI32/protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e25ff6b16814b1a20b8cc6846dcd64afded=3*19527704
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69936
+SLP=3*19534271
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|287c9401aed8c8723e219abb407d60dd8134f9a3d3ac56047c5240416de4ad880663d52f481082cfc5a436557b6d5b71d781699f655abc548d0086c326abdcae1b8a21f155b5138c9f2ee452199f1165090d482267e331a0b50b619a96b09385cbf29772ca129102fdbb1ced77048b39
+
+[protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de699185c81ddf2c6536a55fd71cbc228656096]
+A/protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de699185c81ddf2c6536a55fd71cbc228656096=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67658|1*7629661
+BinI32/protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de699185c81ddf2c6536a55fd71cbc228656096=3*19469055
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67658
+SLP=3*19479248
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|154a583ccfd967352be5ffa944ada994eeb142e9b36cb8a35fcd0b4ba459b381f20b2d7c4b3a09863b81c25dc93bfa79b178a720b169162527c2fd1561d6cb5a63f97d6e4d65b1d5d85ee12f95207ba28c78d28bd4491e3a81b9867a7eff9f57e158dda3b99b8cd8f83e3802533b795a
+
+[protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de69918ff6b16814b1a20b8cc6846dcd64afded]
+A/protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de69918ff6b16814b1a20b8cc6846dcd64afded=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69685|1*7649599
+BinI32/protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de69918ff6b16814b1a20b8cc6846dcd64afded=3*19518012
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69685
+SLP=3*19524781
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6267c9851ebfe0d9bf21e40600d064e6954f20c65ab9c13c9df9471459cc06029a65ec39f0976710618f43317b5851a9ee05bf2e9d329d2ad9db23c8da5c5397f8e45689a70b56b7cb204807d071cc17b4cc43b43437268474d7112d2339e3008595f7e130335baf43e00a4a8c6805a5
+
+[protected_5c7c9b4b65403807edebf1b533e6b85d]
+A/protected_5c7c9b4b65403807edebf1b533e6b85d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52889|1*7518292
+BinI32/protected_5c7c9b4b65403807edebf1b533e6b85d=3*18920589
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52889
+SLP=3*18930437
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|90f63bcb7fbc37714f0d04ff80510ea25a24be1a1f270b7baf36a6babc008440c006c04f607938e404905d4ce5cad6cd6173db41e522d2d7e786912e6f9f7524b4112b8472b8cbc2e2d70aa5a47d256f
+
+[protected_62708e8a620608cdd686164d9b2a343e7c099e6d33a693df31238d7e52c9df4a]
+A/protected_62708e8a620608cdd686164d9b2a343e7c099e6d33a693df31238d7e52c9df4a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52217|1*7514862
+BinI32/protected_62708e8a620608cdd686164d9b2a343e7c099e6d33a693df31238d7e52c9df4a=3*18897293
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52217
+SLP=3*18909782
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b193ca87fdd5d2483e2dd98bc3f7aa72a822d19fe4c74065e533b449637c8bd1c00b62cabf08f5d1902b4feb8d4d7a7a7a580e0d0568abe72afbd8e20c01f71eff997fe18ca91e800794dcf6781f2c06c18de480f1965f9364306d05030774a5
+
+[protected_837b38a7f07865f747217746f70e36218f82eae4252ddd0c0cdb6b5bed7bd729]
+A/protected_837b38a7f07865f747217746f70e36218f82eae4252ddd0c0cdb6b5bed7bd729=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|46543|1*7489569
+BinI32/protected_837b38a7f07865f747217746f70e36218f82eae4252ddd0c0cdb6b5bed7bd729=3*18752524
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|46543
+SLP=3*18779414
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1795f49d7c5be52b0719c03fadb79137fb6b16bce48d18cc592a7ea13626629310ded67f9e4fb8f0774238d2b4b01da84b88b638745ad5dff4cc49391544cdd62f0c5a80a9d0686c85709e0499611c303c4365e81e351dc4f3ca2e3168cfadf0
+
+[protected_837b38a7f07865f747217746f70e3621b126125acb73372e6d70c8eb5e06ce00]
+A/protected_837b38a7f07865f747217746f70e3621b126125acb73372e6d70c8eb5e06ce00=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|43210|1*7470747
+BinI32/protected_837b38a7f07865f747217746f70e3621b126125acb73372e6d70c8eb5e06ce00=3*18544304
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|43210
+SLP=3*18664527
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6b309f6c6fcfbbf0bc8dec2dfdf9a13ce7b5bad3dede4b5733d5ad28fa0d481a1d429e6b2f7754ef17e40185760b446f089c9e37c641662763a70785042a95e3758f55d4a03f49d9debc3da0528775f60dc48b96d1a5009fc7b650e81f632906
+
+[protected_86c002c044f98d37e6830308c5161cb4]
+A/protected_86c002c044f98d37e6830308c5161cb4=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|55083|1*7537954
+BinI32/protected_86c002c044f98d37e6830308c5161cb4=3*18988079
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|55083
+SLP=3*19001840
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1368880a3e72fff2bb81ef2936074d5421ccc5bc825a4c2d5336621f3854888d457784ed9444d2739fbee284a8f00714f934c871b3ca77576c59e8272d61be0e18712d5dc3abe5a516f27e34db269144
+
+[protected_9a58192a33db82d3f340bc302128b15129954b495834b2243ee573d938027a4d]
+A/protected_9a58192a33db82d3f340bc302128b15129954b495834b2243ee573d938027a4d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53819|1*7529932
+BinI32/protected_9a58192a33db82d3f340bc302128b15129954b495834b2243ee573d938027a4d=3*18950032
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|53819
+SLP=3*18964027
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b010a5a422e249470d8e52f4ed8e70642e6132c43f90aca92eabe44323f8a61bdcb8783de5866687e0ecdc8bea17e86a4c2da7b4b50aca583f403bab7ce263703d7388cce0aee05e9691ae08208a4debb023284f8ba0646fe37a962ff27b179d
+
+[protected_9a951bcc1b51bf615b4ce52452de78c5129f74f9996c9054ea86103855d2ca77a51fe293352be6c4cae975deb575de71]
+A/protected_9a951bcc1b51bf615b4ce52452de78c5129f74f9996c9054ea86103855d2ca77a51fe293352be6c4cae975deb575de71=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|42628|1*7466096
+BinI32/protected_9a951bcc1b51bf615b4ce52452de78c5129f74f9996c9054ea86103855d2ca77a51fe293352be6c4cae975deb575de71=3*18536954
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|42628
+SLP=3*18540853
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3d2793ab2b7eec131abf81906226d4642fb81141a0e4ae08c6b656f07ee1c680d6fb678664c206637308ad13f81cde60e8fe4e2b3e82bb480da6a087a6e79bbe65d28d9caa83a7f209dac8103fd475cfb57b12872901577ed0d94a21f837764df8ed5d483c6d6d61bbcc664768b89b4c
+
+[protected_a2150148ee9bcbafd896635bec54bb60bef9d5eccc91f1fcd6a7c00d01c888fbe4e1ededee314a6e09b8970f422eed58]
+A/protected_a2150148ee9bcbafd896635bec54bb60bef9d5eccc91f1fcd6a7c00d01c888fbe4e1ededee314a6e09b8970f422eed58=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70979|1*7658705
+BinI32/protected_a2150148ee9bcbafd896635bec54bb60bef9d5eccc91f1fcd6a7c00d01c888fbe4e1ededee314a6e09b8970f422eed58=3*19569356
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70979
+SLP=3*19572736
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bcfc7eb43bd4b0178476f136998fc7d9fbe6eb51ff6d78410cbc1c60815171639ce71202cef5940033ea1d3cbaa204e16c9a46b346ab09a8aa71757244ea834932192d2e7603c270c3d18dcff918931d7ed57027b0c8ad3ac08531196340cdadf6755a03854e1db2d3371249305afa49
+
+[protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5]
+A/protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69456|1*7646852
+BinI32/protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5=3*19514034
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69456
+SLP=3*19516257
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|aeb9d8197ebc0b41ee7badd32e65c6bf8d4e02ed12fb9a36956edfc6d22b6969eca04948a0e3c560eee7651f21ff85739ea77f7f842e3062ba32eb78b7df6e6051636d67c8985dbd92f78e1b3196479fb8efcf48e5ce7033aeb4af109303dafd8f67f1d3ec5e6c22621d7a2c12f12dcc
+
+[protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564]
+A/protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70801|1*7657302
+BinI32/protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564=3*19561841
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70801
+SLP=3*19567329
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1d0d3cdf1ab885083adb13aa6e51b48af627f5e86fc596525473926935ddf4dfd85b9d789d22b26924f25f76c48c7d8bdf0b379c1ecf4672db2766ffd311ddfb138d00455b41d50fddccb5fd299b7188f1380ea12d4c3a966fe2d78e16a437279032c2e80fea9d74545e57a49c51b520
+
+[protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5]
+A/protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69312|1*7644905
+BinI32/protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5=3*19510251
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|69312
+SLP=3*19512439
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ae0b0177465517532f0b79f65cc20815a84ef5a71f05f1776aa0c9611e66d14862ff7b4fe18f2d0e95d3c8f08386809a0c0ad9cb4c5036a370bbff2a10972723fe3d56384ce867b56d84985cb5393fb3c32acaefc36da844a267ebe4f6084227d1800fb3bc487dbf16349eb5edcb78e7
+
+[protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564]
+A/protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70582|1*7655819
+BinI32/protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564=3*19553429
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|70582
+SLP=3*19559398
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|42693a24d86783322e21fe46a66a1d5011974f2e1b048f0efbf33a3684fe889bc659ea6f662221ea0e56d8f9beb3060a13ffa46375cabe413ef82ab63859f712cbdedc85b5d6cdf09e812495a9dfc78bb81a42166f07e70d651236646cf68bcad7219bfdc657e4bc537641ce686b72a2
+
+[protected_ba5133dbc3589eefed23cd38a9d975c7527b9fb32376a4d04fce82696ee031a4]
+A/protected_ba5133dbc3589eefed23cd38a9d975c7527b9fb32376a4d04fce82696ee031a4=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|71181|1*7660860
+BinI32/protected_ba5133dbc3589eefed23cd38a9d975c7527b9fb32376a4d04fce82696ee031a4=3*19574411
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|71181
+SLP=3*19576392
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c21750abfe4d1451002ad74e45ed045c91c8f3482ea36cc37c2cc5de294edae893f7e33d82ba5aae79fe025edec98e97b91d532050851ed0c23681f2f47816e07db761f43784db760bc81d1c599e2008415a57d1ea74c679b231243940a9d3c7
+
+[protected_be4a4dcefd45adb4b6fa2716bb53fb055c1a3b4bcb8ed0c2a5383a9f4cce8ba4feb4059cbda0a71e2affdf6c88806804]
+A/protected_be4a4dcefd45adb4b6fa2716bb53fb055c1a3b4bcb8ed0c2a5383a9f4cce8ba4feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|50853|1*7506178
+BinI32/protected_be4a4dcefd45adb4b6fa2716bb53fb055c1a3b4bcb8ed0c2a5383a9f4cce8ba4feb4059cbda0a71e2affdf6c88806804=3*18862909
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|50853
+SLP=3*18864884
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|75ecab14d188caf8c0c262b282db8362c24d9bd2fcd1463da32e9f61a703106d3bf6d482de4d330d1bdb54d503419870a88832bb7c44976ba5e435d78092f637e62ecc95f3d317fd27bdc390e3e4bf46282ebf7d4d1dd735ee72b6147463b0033ec649e786e9c2ccf4f4a225695c5733
+
+[protected_be4a4dcefd45adb4b6fa2716bb53fb05c6586a5fbc66d03f33de737a6a41ee50]
+A/protected_be4a4dcefd45adb4b6fa2716bb53fb05c6586a5fbc66d03f33de737a6a41ee50=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|50927|1*7507309
+BinI32/protected_be4a4dcefd45adb4b6fa2716bb53fb05c6586a5fbc66d03f33de737a6a41ee50=3*18866031
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|50927
+SLP=3*18872747
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|894320a5c26fb3eeb1bd372afe55917f0cd018c9b7784e387c532961cac63686cfdc629001ae80fccd8810afe9e7b2e0b2172e0c164d00cd4b8af6a580cdbfc721359a49da59131605367ebca2f49fc34c069d1bc2d4655df53074bd2b957737
+
+[protected_c90dba4fa3cc13d2412559f15c3e6337]
+A/protected_c90dba4fa3cc13d2412559f15c3e6337=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|54611|1*7534791
+BinI32/protected_c90dba4fa3cc13d2412559f15c3e6337=3*18972502
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|54611
+SLP=3*18982468
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1de49e3d934f2b07867b24672f803dec86fc11ee9f69858ac33ee0e21b0b161ae173273ce29cdc6412d50a516e4cf8d357bb155881fe67767155c43f300b9b66f921e33330748e9f56e787796ffb979b
+
+[protected_c9865c0b45cd9b1cab9a399cd6ca64bd366bb3a877867f9591197d3d2f99ca2f]
+A/protected_c9865c0b45cd9b1cab9a399cd6ca64bd366bb3a877867f9591197d3d2f99ca2f=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52132|1*7513747
+BinI32/protected_c9865c0b45cd9b1cab9a399cd6ca64bd366bb3a877867f9591197d3d2f99ca2f=3*18893390
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52132
+SLP=3*18895842
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2aaebba3cff2ae2f570a0f6b4d136af1675a4e674325a5d2534ce419c826273b1b2c80b598762fbe07de2cf8bcdd56088f3d1d779ab412ad19e59aeee2adc35255615de93e0276593c0fc243e7a214e0abb775a928b671f866f3b44d536b5d11
+
+[protected_d01009257c727f787de3ac96110b2ce90d115cf6a1a463f99b84fd47ea0b1e43]
+A/protected_d01009257c727f787de3ac96110b2ce90d115cf6a1a463f99b84fd47ea0b1e43=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|56230|1*7544680
+BinI32/protected_d01009257c727f787de3ac96110b2ce90d115cf6a1a463f99b84fd47ea0b1e43=3*19016537
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|56230
+SLP=3*19035253
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|469e2ef431b7aa2a0567f43f30bd98dbd1e27021918987fa6365f6f51235e42d67b34b27ba9d417e47d482c848a8a3a84743153637235e6f97b46d45ff4ded3f64a4c01beae4a3a7f534ae6cc82cdaac5aa444af4f815502c93661becff1c0fe
+
+[protected_d01009257c727f787de3ac96110b2ce91015dd1605c05930f2e3ec6034617202feb4059cbda0a71e2affdf6c88806804]
+A/protected_d01009257c727f787de3ac96110b2ce91015dd1605c05930f2e3ec6034617202feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|56731|1*7548163
+BinI32/protected_d01009257c727f787de3ac96110b2ce91015dd1605c05930f2e3ec6034617202feb4059cbda0a71e2affdf6c88806804=3*19041424
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|56731
+SLP=3*19073471
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|027f22cf8994f6c09a4c65849411afe80f86e2a91d81cb3cebb2ec16a88ab9979de246ff23803f2f816c3ea171f8dbf23ce7ff04fbcdce2055349f6b18ddcdca80ade7dff218ead7ec80278a3b98d0f9f43eccee7bd2208a4770530800e492bbd1e8fc7afd2a2d2bbeee8a37dd2eda00
+
+[protected_d01009257c727f787de3ac96110b2ce91a096e160cbfa9ff87c3e271560365c9]
+A/protected_d01009257c727f787de3ac96110b2ce91a096e160cbfa9ff87c3e271560365c9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|61556|1*7576220
+BinI32/protected_d01009257c727f787de3ac96110b2ce91a096e160cbfa9ff87c3e271560365c9=3*19316220
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|61556
+SLP=3*19323133
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7d069d58b2f9ea56514774f45ee5ef5a5d152404a2887049ca0cc704602fef6874206c3bb7cecdaed21ef541bf139e0940a6921080f8a6677e4550d335be0d11bc4762ef44e104078d5b84eb12ad514c9b3e80f7ff917236be16a69cfc34baeb
+
+[protected_d01009257c727f787de3ac96110b2ce92cf1c2affc2b27b1e5b0288d07e26f34]
+A/protected_d01009257c727f787de3ac96110b2ce92cf1c2affc2b27b1e5b0288d07e26f34=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|60779|1*7572742
+BinI32/protected_d01009257c727f787de3ac96110b2ce92cf1c2affc2b27b1e5b0288d07e26f34=3*19290334
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|60779
+SLP=3*19299365
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7585bbcbdbba845b6ca72bdfed54f28cd9c8a7a481706a349035b4440c994be5b6d7415c8913ee4decf9f83a74728ca3ea072b97686be14ff8a0a100ba5435b894d463a3feafe3ff96e628bd3939ccce94b52aa27b43aa01e1124d41c1de8ed3
+
+[protected_d01009257c727f787de3ac96110b2ce93f71e91426a3aa56f6035bde5b0b9a23feb4059cbda0a71e2affdf6c88806804]
+A/protected_d01009257c727f787de3ac96110b2ce93f71e91426a3aa56f6035bde5b0b9a23feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|58023|1*7556356
+BinI32/protected_d01009257c727f787de3ac96110b2ce93f71e91426a3aa56f6035bde5b0b9a23feb4059cbda0a71e2affdf6c88806804=3*19138541
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|58023
+SLP=3*19164798
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|12ca7aaf7473f19370a006ad3c99218f4890674cdb261cb4b5ce92b2ad9773d64b4921c0bc237e4dfe051e16b56db80349de7d9e8e343522ef58becaaa6e91004fb7673c258f786ca9ffa9489b546bba9460a59d0fdfd5c0a9ac44a5c917316704661acb0f788416241f408b58f9a166
+
+[protected_d01009257c727f787de3ac96110b2ce94d8fe2ce86ddfc243ab254030444f818]
+A/protected_d01009257c727f787de3ac96110b2ce94d8fe2ce86ddfc243ab254030444f818=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|60115|1*7569456
+BinI32/protected_d01009257c727f787de3ac96110b2ce94d8fe2ce86ddfc243ab254030444f818=3*19267295
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|60115
+SLP=3*19276090
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c9b9cac9ab028ba26768aef89aabdadc001be8b479dfe84f229e7a0fcdc4aa28db3f4ac25224010b76b262df6fb09fe4823c94b1ddc22d49a0573e9d65fee497b2fe412419d63920d6d65ed5f769f7b231eccd0ca846815ae2c0ffdbc9627d7e
+
+[protected_d01009257c727f787de3ac96110b2ce976893646a67aac19f4a5c396131d5487feb4059cbda0a71e2affdf6c88806804]
+A/protected_d01009257c727f787de3ac96110b2ce976893646a67aac19f4a5c396131d5487feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|58592|1*7559503
+BinI32/protected_d01009257c727f787de3ac96110b2ce976893646a67aac19f4a5c396131d5487feb4059cbda0a71e2affdf6c88806804=3*19174137
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|58592
+SLP=3*19186000
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|43a066e948b1c1040963d2a0f230edcaa25888eff518106b8151ea9ac965090c9a8e5a04e53d37054c1f8d836d3c29af915d6fbed1aedfd9ad2251f6212dc82264c8c52fa42f1c0c7b8b82bf54569065e81596cb937fd731be6b5ad406e00bb626245e80e76750868cd5137be3447c54
+
+[protected_d01009257c727f787de3ac96110b2ce97ad8bb794478d2460eee5877b0aea927feb4059cbda0a71e2affdf6c88806804]
+A/protected_d01009257c727f787de3ac96110b2ce97ad8bb794478d2460eee5877b0aea927feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|57474|1*7553209
+BinI32/protected_d01009257c727f787de3ac96110b2ce97ad8bb794478d2460eee5877b0aea927feb4059cbda0a71e2affdf6c88806804=3*19092886
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|57474
+SLP=3*19129346
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b481e4769dd3a3a1b27f69e1c1d78db4e8fd89f2a001551f5b291b8fe03c668d1535dba3dee1eab25bfbd0d4f55ef951dc4254aa3de61156878c408a73abb078edb36b2f129fef65fdc187114bab1b017fbe47683f15ca0dcac1f39391d5367eb684c9504d77f8446c675cea337d3e37
+
+[protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39de989e46599f294a65e0c70894324f89]
+A/protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39de989e46599f294a65e0c70894324f89=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|61832|1*7577751
+BinI32/protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39de989e46599f294a65e0c70894324f89=3*19326200
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|61832
+SLP=3*19332492
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|187cbc788b547abbbb194b385be2ded49de3343537f8153b24e060969b6726a6d4400b5c0a756d19a799cf0eb81dc02f740307917fb526fb993317f3bf73ce6d1e6afa608db26b097f30cfdc48a27b68a2bf6d586fe28f65b7732c6530c499611ae2025d3f0446d7089caee3f529f0ef
+
+[protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39f5a286ebb3945c850d28cae8cd5c37ed]
+A/protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39f5a286ebb3945c850d28cae8cd5c37ed=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|58882|1*7561754
+BinI32/protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39f5a286ebb3945c850d28cae8cd5c37ed=3*19190011
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|58882
+SLP=3*19198395
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a97ddda02b238ef9f0135759248dd0b6952d308aca86f9042f7fc912563bc69a84b038593e186a8043d2dd8ce891a5c2a1e1b56d92de9be774d5cdec56bfd57295c3a3ab712fa284a4032d05a28d1159ce580cb48ea3023b4a5b5c607af91aedd7c92103af516b28f086ce3b7be16aeb
+
+[protected_d01009257c727f787de3ac96110b2ce9ae97c9b15c1042f3d6ad871c7a7e063e2733923f961684b5f96d97c5475274e4]
+A/protected_d01009257c727f787de3ac96110b2ce9ae97c9b15c1042f3d6ad871c7a7e063e2733923f961684b5f96d97c5475274e4=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|57224|1*7551182
+BinI32/protected_d01009257c727f787de3ac96110b2ce9ae97c9b15c1042f3d6ad871c7a7e063e2733923f961684b5f96d97c5475274e4=3*19081050
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|57224
+SLP=3*19089227
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3128cf557d0a60642bc1aa21617654d1106abee4786d7b2368e36937a18986f20a713f4767b92a58d041b5e718de5d30ef2453e7e4f60ea3a301d2996cfacedd7be5c4b4772467865158481cab3583ad44a051bf2dfe09f70bf3a1d6fb39e96b2189f6bf54a90fca034c55f64f4cb2cb
+
+[protected_d01009257c727f787de3ac96110b2ce9b1d744dbc7bf566d0bd375cbb091782e]
+A/protected_d01009257c727f787de3ac96110b2ce9b1d744dbc7bf566d0bd375cbb091782e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|60514|1*7571259
+BinI32/protected_d01009257c727f787de3ac96110b2ce9b1d744dbc7bf566d0bd375cbb091782e=3*19280789
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|60514
+SLP=3*19287507
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|69477691293b4296d6693b15240981df42b34539d9162d626e305aa41243ccb42eb2f5fe6d92b18d9fd002aa1f06e05243619a9bb717ed8098d6a689d3c9882eef2407a4d5f61a08ac39be8a70abbe01eb6091e200f8c4b29af4dcf6b51cfe43
+
+[protected_d01009257c727f787de3ac96110b2ce9c30de7ee0f636e364ca06e7ceca9362c]
+A/protected_d01009257c727f787de3ac96110b2ce9c30de7ee0f636e364ca06e7ceca9362c=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|61217|1*7574561
+BinI32/protected_d01009257c727f787de3ac96110b2ce9c30de7ee0f636e364ca06e7ceca9362c=3*19304400
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|61217
+SLP=3*19312337
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6fb82a10c40d2a2f757d3dfc13d526ab884b179ba7d2b6efba904076da3e33e7606bb5dbbf1929f11221136eba14c754a763c742de134c645111dd282b749bf95bc91baab346c7289ab9944369a56179c7aa7eeccdd2e6dd40b083dd7758534d
+
+[protected_d01009257c727f787de3ac96110b2ce9e6c793b11cf94bb58915a7b746f84ee42733923f961684b5f96d97c5475274e4]
+A/protected_d01009257c727f787de3ac96110b2ce9e6c793b11cf94bb58915a7b746f84ee42733923f961684b5f96d97c5475274e4=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63121|1*7584659
+BinI32/protected_d01009257c727f787de3ac96110b2ce9e6c793b11cf94bb58915a7b746f84ee42733923f961684b5f96d97c5475274e4=3*19369784
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63121
+SLP=3*19370735
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|5c63ffa71c1f593ba9978b437657b082607addc84db9baa12b07f45c9aeff88d5a70cf7e683b459225742e9e5491f74ff2b2a19517d17dd762e65c91bb103550ecf0a4f6639337b1c2751910c780d522fef07494047eec27920c500d4ca8967a7d9e6e70e7529c2362cddcde6ca273b6
+
+[protected_d01009257c727f787de3ac96110b2ce9ea193bb32dd528743f55a072d9d3b720]
+A/protected_d01009257c727f787de3ac96110b2ce9ea193bb32dd528743f55a072d9d3b720=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|55935|1*7543453
+BinI32/protected_d01009257c727f787de3ac96110b2ce9ea193bb32dd528743f55a072d9d3b720=3*19009947
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|55935
+SLP=3*19013758
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|44ced4bc5a19386d85adc5b6f7606564f541155289407f5f4cf1c34c780e1514fb567cacee0f7965724a054bea57b13ec6f440f356ada89569bf4398e697261c958898c43ccb914fc1d3e263202237dd7ad7f9d73d2a0d2e706918ac921f9d9a
+
+[protected_d01009257c727f787de3ac96110b2ce9ff6ce2c6bf93c26481abbef2ec7e79a33cd3924d4d3941abbe07e68357a4ca1d]
+A/protected_d01009257c727f787de3ac96110b2ce9ff6ce2c6bf93c26481abbef2ec7e79a33cd3924d4d3941abbe07e68357a4ca1d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63148|1*7585550
+BinI32/protected_d01009257c727f787de3ac96110b2ce9ff6ce2c6bf93c26481abbef2ec7e79a33cd3924d4d3941abbe07e68357a4ca1d=3*19371113
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63148
+SLP=3*19372057
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|eecdf9a1d868cc221314122f22d1c3c3bc5aba3aafc3f9ff071a44f6fca35f086d0d6550e761968a79ff9488fbf6b3dbe23a6d991276f43d8f5f44fa38c3fd79175b6fd3aae26655e6cb54af0f90d27a9af7905474a670d653a9a5f860ce7460778e9a89aae147fe47d5fe26e09ca0e6
+
+[protected_e6c9de529497e17aa2ce47f242d41e950e51247e26323cc690c899afaf218d43feb4059cbda0a71e2affdf6c88806804]
+A/protected_e6c9de529497e17aa2ce47f242d41e950e51247e26323cc690c899afaf218d43feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|64918|1*7600037
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e950e51247e26323cc690c899afaf218d43feb4059cbda0a71e2affdf6c88806804=3*19419065
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|64918
+SLP=3*19419588
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9776a73f67ea557cbb5b6213b701494723a5e8cac04adde1f099939418ebad96b0ef2e2d5beff812cd74ef3a64604d04768606c2bb0d423e5e4e6ceedc5837a22005cf8e8c48d24ea28a3eee75ab92e7682701de0e444027ac336bdf90a6158dce5e4c12050f313d2c7de070730874a9
+
+[protected_e6c9de529497e17aa2ce47f242d41e951045296602885a5b9183a08da93f1c98]
+A/protected_e6c9de529497e17aa2ce47f242d41e951045296602885a5b9183a08da93f1c98=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63174|1*7586441
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e951045296602885a5b9183a08da93f1c98=3*19372435
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63174
+SLP=3*19382713
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|969550008d2cad25ac842b9bc375af9ef38719d1461fda2b17195bcec15f09824892fc1423d4e6ea209ed89b7fc327d062bef636cfa5ed02a16b227bcd3fd3125590f2e24726ba86e65387764d6415c59f7cbeedb973c96853521119e41fcfe9
+
+[protected_e6c9de529497e17aa2ce47f242d41e95293ee6059b35e87e69c70a1e19c4700d]
+A/protected_e6c9de529497e17aa2ce47f242d41e95293ee6059b35e87e69c70a1e19c4700d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|66773|1*7618401
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e95293ee6059b35e87e69c70a1e19c4700d=3*19437410
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|66773
+SLP=3*19447103
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|af40fc0d0cd8f41e895e98fd634e8dc5b22b742a1d66de3a0844898be81adb2994de54aa268c13e719e61367ae986b434e59db0703b6d6dcb5edf755481b741282e81dba1d6c3a7e03af3ab84ba887ff747bb85c20a1f690571e10f91a3d6110
+
+[protected_e6c9de529497e17aa2ce47f242d41e952dde9f8682c2e77f19fa3c5e6252720e]
+A/protected_e6c9de529497e17aa2ce47f242d41e952dde9f8682c2e77f19fa3c5e6252720e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63565|1*7591092
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e952dde9f8682c2e77f19fa3c5e6252720e=3*19387684
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63565
+SLP=3*19393636
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|65125220369f8ac329683589d82691613e7b93a445739a43f31fc64911dd2c74fa53b20d17c941ce6de168329b472a8047f752303660929b1777590141f688485d5cc5b27c257b61f6710b264e88439ce5b46ef9c129f3ac64a4500674b96947
+
+[protected_e6c9de529497e17aa2ce47f242d41e955330ce469e8442eaaf3939679fc19916]
+A/protected_e6c9de529497e17aa2ce47f242d41e955330ce469e8442eaaf3939679fc19916=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|64982|1*7601040
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e955330ce469e8442eaaf3939679fc19916=3*19419902
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|64982
+SLP=3*19420345
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9e3b3be4bb501794c900a64c474f5764ea7c5f48339d963d3b426e9b2f5728f99ae328b27e29c6c8bc9e20081fdc5cebace7da15ab06b25fed93b06ce55f41d051bb40fd0ae0d9ae43941d2252b0f4f944475d619a36b6a9b503e5281b2bb14d
+
+[protected_e6c9de529497e17aa2ce47f242d41e955fa7e5aa8280cbae3ae1af39561d976dfeb4059cbda0a71e2affdf6c88806804]
+A/protected_e6c9de529497e17aa2ce47f242d41e955fa7e5aa8280cbae3ae1af39561d976dfeb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|64891|1*7599226
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e955fa7e5aa8280cbae3ae1af39561d976dfeb4059cbda0a71e2affdf6c88806804=3*19418102
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|64891
+SLP=3*19418719
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|324ac646f50cffcadda7d214fa963f4481114cfcc6164b765c8fe5a27821e96cb5283b5863cf4bb1048636ee90275bf0f62b57868374df7d79738cbcedce9ce432511fccbe1678b96486bd49f86f1395bbece8db3a9509b1c07301677fddc3c7d9bb9fbcf72d08ae50a89d2aef1090cd
+
+[protected_e6c9de529497e17aa2ce47f242d41e9581a9a0d68ba892db704e3cce3b51a4b9]
+A/protected_e6c9de529497e17aa2ce47f242d41e9581a9a0d68ba892db704e3cce3b51a4b9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67306|1*7625271
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e9581a9a0d68ba892db704e3cce3b51a4b9=3*19456413
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67306
+SLP=3*19462593
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bc52f7265ed5b639f56542a2f9fec4c6347b2780c6cb5c138becb7a42548408f1acdecb539689885f29a7d40dc8b0610d3018a0977aa861274dc2d7ca2343bf9323bb58f5f0edd1a1bd05847dd432a54932460ab55d3e7da1b80e76de7ea3c5a
+
+[protected_e6c9de529497e17aa2ce47f242d41e959129bed4ad927e8b02823f3a9aeef9b5]
+A/protected_e6c9de529497e17aa2ce47f242d41e959129bed4ad927e8b02823f3a9aeef9b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63969|1*7595711
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e959129bed4ad927e8b02823f3a9aeef9b5=3*19396111
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|63969
+SLP=3*19408891
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8152a5088eea3190ae50ac806e7466f9322bb77e60642c4aae78d092645fedd47a87a09d0da36f483d4e157957b2196ae87e577f69a16f5a73e4ea00b459043b1cd45b01a9b30da8e456371cce4b31b1c5b0a97f33c965ae6393ccb7c1e3f5e7
+
+[protected_e6c9de529497e17aa2ce47f242d41e95a352a4c6e86f058e6b406ec8004a41fd]
+A/protected_e6c9de529497e17aa2ce47f242d41e95a352a4c6e86f058e6b406ec8004a41fd=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|66112|1*7611734
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e95a352a4c6e86f058e6b406ec8004a41fd=3*19430158
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|66112
+SLP=3*19434695
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|db6f894bd0042fe2871a04335f64bf9cdc4ccc9172b49f3045590baa85c54a5b32f40d87a39157a2c0fc75ae5485cea1465b60dad3ba09b0de6d090255ea9e64bd5ccf84e28da906e23b6fac8a8cc114c8608297f260a932e52b045f1f842189
+
+[protected_e6c9de529497e17aa2ce47f242d41e95c1fd33d5853fa604d1d22ce11fcecaf9]
+A/protected_e6c9de529497e17aa2ce47f242d41e95c1fd33d5853fa604d1d22ce11fcecaf9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67546|1*7628274
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e95c1fd33d5853fa604d1d22ce11fcecaf9=3*19465564
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67546
+SLP=3*19468133
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|dfa87136713b78683c35c77d13932afd20506207edc6ad172ababfa76fee6042478044f2c1288c91d1c590cc860d69028043959f20a7834a9b7e7d6babc01d00220c5ceaa69d8d0ad6fc2b73765b5ef1eb9d17453a37cf39e50106d61f907fb0
+
+[protected_e6c9de529497e17aa2ce47f242d41e95dd5bc959c59b34e32fbadbfef1ca947a]
+A/protected_e6c9de529497e17aa2ce47f242d41e95dd5bc959c59b34e32fbadbfef1ca947a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|65109|1*7602459
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e95dd5bc959c59b34e32fbadbfef1ca947a=3*19420691
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|65109
+SLP=3*19426243
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|640b2fb5939d9f87b6ce001b6064f8ef95b33a9a43512896e64df5a5490c5dafd4cef0de63e42028f4527089d348589fdd6262917d627221cd01e84c438b894922274794cf35c812bd645401b9c9ebaee849f98fb6350cec8fdb0fdf8742d305
+
+[protected_e6c9de529497e17aa2ce47f242d41e95eaa360eea1d555705685952455495468]
+A/protected_e6c9de529497e17aa2ce47f242d41e95eaa360eea1d555705685952455495468=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67173|1*7623516
+BinI32/protected_e6c9de529497e17aa2ce47f242d41e95eaa360eea1d555705685952455495468=3*19452074
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|67173
+SLP=3*19455202
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1c47b99a7f03db6dd65acf4105d259b6fbe947afc90bdf1c5109dd3798b5f50b5681824d7576175a55b495de8d70c389942b1752d9aa651ca9571a3e690abea4a7cdfc6c8e6dc71a3c178707ef813c9db9162baa4e221af9560b2ab85e630691
+
+[protected_f2866cceb05234b8ca55de876d6dc3415052887e4a6330cd9c9c8a9866e61038]
+A/protected_f2866cceb05234b8ca55de876d6dc3415052887e4a6330cd9c9c8a9866e61038=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|59145|1*7564069
+BinI32/protected_f2866cceb05234b8ca55de876d6dc3415052887e4a6330cd9c9c8a9866e61038=3*19201926
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|59145
+SLP=3*19250971
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1b5337840b20291ef46128af84e385e141d63886a71591eacc76a6d41668f3065befc8c202ed223244a42725a4b7f053214a4651c8e61b9fef20a8fe474754d11a173ff026bd1c22f099dbf7ec02ca6f2710ff3ac772f87f54f197eb9ce1b22a
+
+[protected_f2866cceb05234b8ca55de876d6dc341bde137d70c8b7333bc2f2d6977cefd0a]
+A/protected_f2866cceb05234b8ca55de876d6dc341bde137d70c8b7333bc2f2d6977cefd0a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|62069|1*7579250
+BinI32/protected_f2866cceb05234b8ca55de876d6dc341bde137d70c8b7333bc2f2d6977cefd0a=3*19335239
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|62069
+SLP=3*19346200
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|173cffebc265ecaa354a3c171d49ddbdc8296063597095c4b52890150d807c73af5153713eae535370e47cdfdaa6b0c3d1a66a4c0b7e02becdc64df25a482886dcfe43243730e10324865279be1b085a84fcd3a46448adaf3b37416b9effbb2d
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af0051d1332392b9d12dfec8074660adcd]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af0051d1332392b9d12dfec8074660adcd=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35724|1*7425824
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af0051d1332392b9d12dfec8074660adcd=3*18342209
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35724
+SLP=3*18342605
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|89f2d380dc0f1b1de15ea1a315b359f9e2a40fa2bc09e3d2948708305ac28224a6e649839094a5999e67c8aede2df6fe1c86b075022ea44075bdcc83b47f41a48489a5e5e6e58aa92a602bcbf549a9756d6b555daf527da8d790846289195918
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af00c0b285c9e48901bb870c52325260b6]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af00c0b285c9e48901bb870c52325260b6=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33408|1*7409586
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af00c0b285c9e48901bb870c52325260b6=3*18282588
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33408
+SLP=3*18283099
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f0cb4b627bfe18b4f62310c5e52826939cb4d367051b38f73ccee4733ddba6ac4a1cf7434e9eae322843b4f42d450c876caacc309d1b4f178d0790c87d2aada178996860be447666a811a2bc1a1e79295d8cac14a4e842bc1cdc0c19e2e460c9
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af0594bca034a75e2b2bd63078434fb6941b292128b80021ab3e9bef2413e2c866]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af0594bca034a75e2b2bd63078434fb6941b292128b80021ab3e9bef2413e2c866=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|28476|1*7381385
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af0594bca034a75e2b2bd63078434fb6941b292128b80021ab3e9bef2413e2c866=3*18125355
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|28476
+SLP=3*18126401
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|756d1a4193eacf2918d209d304f173ed3436f2a746cf03292afde542b9a5d0e696fbeb4633c1b10f2ad7c0e0c57fba71657b360017b091393dfcb9ea26e6e4e81b2e23e30783c2d9543cb8265fbd61d967d5d012b8c78d2ebaabb920ad7f3ff1af0291f92ff808017948580fe536213b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af06adaedb17667caf22610c880a0b77ef]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af06adaedb17667caf22610c880a0b77ef=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22211|1*7357887
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af06adaedb17667caf22610c880a0b77ef=3*18007979
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22211
+SLP=3*18010197
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0431da3e60c5f7f65d936ef1c07b7ecfbe9e9d48a79b77d30cc0cb92a89e2fd4c0bb36158c1769100e2707e8d9e72d14356a73dd0cf8d4b70d9bfa087e27b51ad29bd785d57c77858b6f662fa9eed48eacc38753624492625774a5c6aebb65e9
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af0762d1bcf541ef244d23a952e23eb0e2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af0762d1bcf541ef244d23a952e23eb0e2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22455|1*7362304
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af0762d1bcf541ef244d23a952e23eb0e2=3*18016309
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22455
+SLP=3*18017416
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2bb0122253e0caab09e830f12fa2fc2c612aefd7f798f60c6fd0f94dc2143889e6edea1d31b30a91a1504b50ff889865cebc2ff126930c91b9918ad17c1d4812b3b19a5c2e497bbf9a18428da48a7de4649bab31326bc6b2c21fa525ecc180d6
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af080adf425a0b4d68567713ff15d0dcc654fa5a4afde8fe2abb95b23c5e0065c8]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af080adf425a0b4d68567713ff15d0dcc654fa5a4afde8fe2abb95b23c5e0065c8=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18943|1*7330952
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af080adf425a0b4d68567713ff15d0dcc654fa5a4afde8fe2abb95b23c5e0065c8=3*17915803
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18943
+SLP=3*17918271
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9d1e3288acf0f2577fd0b3c586542a9a76535deffff8ec264fd693e78fd2458a471e60a8bd28fee30f10ff13047bc35ef83df1a12fb02a89cbbcd8d04a118048ae4ffa9b766d0e06dd47c5b65467dd247abccb31c80b3ae36474f72a04023949f7b3cbe480846d8d0fb042f35bc51576
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af0b2a1c5e8dc01dcc5c5f234626993f488238a849d4f6e6710d652f3e79ab97a2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af0b2a1c5e8dc01dcc5c5f234626993f488238a849d4f6e6710d652f3e79ab97a2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|25788|1*7371586
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af0b2a1c5e8dc01dcc5c5f234626993f488238a849d4f6e6710d652f3e79ab97a2=3*18046994
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|25788
+SLP=3*18049351
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9924a4898714697027caa3adcedbd768aa0fdf39cb7456b4b4c5a2489594fe6f85801e6fd2c74e4aa272c58dc0971ee839ee97938cf7b0f839a696edfdcd56763ab9e849893151d5b8c4ad49b2293f09dde183ec90a81060441b757b340f5e611e2489c5a45c1a809c131bddcec7a16a
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af0d707bfddb1fc5a0581900759dc2fac2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af0d707bfddb1fc5a0581900759dc2fac2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|8594|1*7271537
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af0d707bfddb1fc5a0581900759dc2fac2=3*17703328
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|8594
+SLP=3*17712831
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|833945706f5ca672b80c4c52f1fe2f2098277988969ebdb981e784c7cbb5ea6a0c5afb464c23675b53566ba970d890e09f3c9de0f2716ec097255f7954f82bd404f3c29d98db07fc610d1f7e9d88719024524620c02a31c488badbac4adae7eb
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af101a1998226757437ec3376447667d64]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af101a1998226757437ec3376447667d64=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21823|1*7354179
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af101a1998226757437ec3376447667d64=3*17993938
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21823
+SLP=3*17994487
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|21a843391aeca672197a7c6d11ace7c5312bde7d4419bd7ccebee63a2c7540b52512c599ba104b5acbc79445d8783b1e8782da2b75e5616b3003f6ff31bc1542cf0fb5439782740f3f8fa4ba78b0be9a941a15c6d93f43636b87006a59e427e9
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af11f087a4e5000f5e58687137980fec7a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af11f087a4e5000f5e58687137980fec7a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|30521|1*7392219
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af11f087a4e5000f5e58687137980fec7a=3*18194729
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|30521
+SLP=3*18210395
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|69d16beed3b1d6fbc0372449f7c33cda151fdaf63adc5d3b493a3fa079c9a07a6aad88bfc826e32b6940dcb2832b34f9857d6ee620d4761eb409da7fae01bfd01845ca8f4b8da8933ae7fe32e5b89b7f5c6069d0624a642c5ee55053de39ec3f
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af13d78c316f15642372476ed2085c8828]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af13d78c316f15642372476ed2085c8828=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|7054|1*7263877
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af13d78c316f15642372476ed2085c8828=3*17664466
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|7054
+SLP=3*17673273
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|296175c36b7920eaf0123ffc70b2c41a3cbdf28db125e317f430ddc6e61dd862545146ba34a7748168f5810b472a79a5f121f65bec318d961cd881a0d9a9747f9575e26ccfd6599cc44ced551dd3390be1ac3bd12963ff2f841aef8029973736
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af1bcf476e9e83dd3bda675f4bbe603d90]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af1bcf476e9e83dd3bda675f4bbe603d90=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35693|1*7424426
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af1bcf476e9e83dd3bda675f4bbe603d90=3*18340838
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35693
+SLP=3*18341253
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b6f74b3ec8bba6c169591d46ab379b5fc5223a4b607e303c046ff040c2304d8d3102bc92eec824e7470ec2f70584898b132b7ee4798ff36a6583ef5649a45943c67d131fb6f27bdd536a81f3a1e4948a98f537786a9310b7bce3e5b55604ad88
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af1cd9e13bd7b63b911e9300a003a7bdcd]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af1cd9e13bd7b63b911e9300a003a7bdcd=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20066|1*7339951
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af1cd9e13bd7b63b911e9300a003a7bdcd=3*17946944
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20066
+SLP=3*17947752
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|fcb1fa671647fad3113e1399da26c8622a02ee1863aea3a6576904ecf539c80f91fd1c803952dd4cc870ae74150919798669af043fc62d26ed15bf05d55450a619947ba6f7528857e67f801d8ff4ada285fb947c212e8760928ffb6065c5f150
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af2193bbf1bf1aa0860ecf48f9cd8dc5cd]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af2193bbf1bf1aa0860ecf48f9cd8dc5cd=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18854|1*7329837
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af2193bbf1bf1aa0860ecf48f9cd8dc5cd=3*17914442
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18854
+SLP=3*17915281
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3402a3bea6b6ac8ab50a7afb65ad8fcc9d9e725e92038581798cd079202c661a9c68be2a8a8d7e3c347d1cd6383680d6526b24149a62e97015bee66c5f0562470ac3a2f3b3ddfb974485568cf74202194ac21e3ee369e82e472d2915ae76555a
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af246d7d3b2bb05f48e71bd979f61029be]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af246d7d3b2bb05f48e71bd979f61029be=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|34202|1*7414686
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af246d7d3b2bb05f48e71bd979f61029be=3*18297218
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|34202
+SLP=3*18298140
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|5e0175c0af87050c32d0c214965a8577b26fb5d742cd664116c3d598516d4d627f70c50921f2f928f8190e0ac891a2a632df55e94898d08fd071ceace1c21af959c1c6ebb9c8554e75a3fda8a2c42f71e9932ef5bcb66d63b553250c4914d1dc
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af24953c912558f2593c06e95c1b48fc9e]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af24953c912558f2593c06e95c1b48fc9e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|34262|1*7415785
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af24953c912558f2593c06e95c1b48fc9e=3*18298614
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|34262
+SLP=3*18316319
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|4dd1ddfe40e63a5b29743ea4a9e8f2d386e058f8864b35429aaff4a088588d131b1411aac2461d6c9bc385c35c95c2b68b533a1a22ef15a35b60610eb61726c1e859b301c6a71d9a5394133878f0b0900ca1771ddbcff850ad585bc4fa519dab
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af24a6c068b478c87abd97ad792ffc65df]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af24a6c068b478c87abd97ad792ffc65df=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14431|1*7299450
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af24a6c068b478c87abd97ad792ffc65df=3*17847734
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14431
+SLP=3*17850569
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|be509efeb86cbb41e027008195c180df8125cb55b56bd8ec0c61e7c7cdd385d671d8f1eccaa4887ec886a9d9f809d1913881fd3eae3260b121c7b393e4949917c68b8da2004bd3a965dbdf3848bfcf4ca5f6c0d3c5baf7bcf0733d37c6221cab
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af2f1982a8d1a060cb69d1321a2768ccee]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af2f1982a8d1a060cb69d1321a2768ccee=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|29417|1*7389488
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af2f1982a8d1a060cb69d1321a2768ccee=3*18168201
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|29417
+SLP=3*18180973
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e81250d936ec4915e1f810c35fc4c8ebf5fc263d57912bf616aa22aed5abd6c3e199d4f8b1c27c28400f5aefb23d425da7346356fdedee1e710cea3fce67465d06b63b30054f3a80b8058d590b71a15287f7d778674910c95fe99a17bdf4396f
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af2f68c3b10894980cd691ca3edff1be3b01ebf097e8fb2485b67b5d6e65268225]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af2f68c3b10894980cd691ca3edff1be3b01ebf097e8fb2485b67b5d6e65268225=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20085|1*7340746
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af2f68c3b10894980cd691ca3edff1be3b01ebf097e8fb2485b67b5d6e65268225=3*17948290
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20085
+SLP=3*17949246
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|854c80e3015133156cbb5695dc75d169030c2c20f16b43a47c67436c8f508eda375f0e732f5c60d28ffcaa4209d3f7b809f79003c36dccab0a0a6c05ab778d397d7572752b7c4f6985a31e9da4dc0a3d373a0b231d6cdeccdda937880eb17faa132f260bb3c9ad6ebc49df663daed3dc
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af3439cc1737ae4a2fd792d758517e5916]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af3439cc1737ae4a2fd792d758517e5916=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40260|1*7450740
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af3439cc1737ae4a2fd792d758517e5916=3*18445979
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40260
+SLP=3*18446841
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|4941c73795d740eec873a66c44ae2ab0eba50ae20f4686540942d1000608600395c5ab530a0d8f07a31a59a45c3d95be2623a341e5532ae193d326d5cad31b321c8e74d4a1240cdcc6adbb09382beb82f17148aeb355a8b36feddd864c831b28
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af345bcda49a9cde3f4fcc40bda3611f20d2eb61a8ef54ff00066091aa81d8fa4a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af345bcda49a9cde3f4fcc40bda3611f20d2eb61a8ef54ff00066091aa81d8fa4a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|32667|1*7404316
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af345bcda49a9cde3f4fcc40bda3611f20d2eb61a8ef54ff00066091aa81d8fa4a=3*18267394
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|32667
+SLP=3*18270058
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e70756479a9b09e0bbb30d29edd7d6b7372346b8b2b3803dd563607ed1167efa4ea033b2f3e59f6ce37663628ddd5694a61ee3acf7406d3a1713f83f12cbdda487132f9f61b82e25b9e1651e90cfdffd1bb98d6520db7e870cea00b06801e2e76005bbad5af03af19fded3d262631541
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af38030e848cb10a7d0b0e409fb140ff35feefed4327e1f33fe6e35d26a4ca2981]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af38030e848cb10a7d0b0e409fb140ff35feefed4327e1f33fe6e35d26a4ca2981=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40045|1*7448462
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af38030e848cb10a7d0b0e409fb140ff35feefed4327e1f33fe6e35d26a4ca2981=3*18441967
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40045
+SLP=3*18443515
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f42a06803389453ef8266883f1b390e0a3c713d9ef63343a3445b32b419e6827707eebd5b22d4afb5f28e4d98b4990d64d16a779d701b11fb011c54695d09c15c707228e4ec4ccd592d43a8ecbeef46425745eb11b97c916cb3d7db4f2d1695df897214b20a7db11b7ec2f50e200d63c
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af38f2a4067127de54a7c177ccd581e7a7]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af38f2a4067127de54a7c177ccd581e7a7=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|31560|1*7399377
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af38f2a4067127de54a7c177ccd581e7a7=3*18241896
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|31560
+SLP=3*18256022
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0177ce44532c39b61e7bbccfe00c9ae0eba50ae20f4686540942d100060860036f5fc3d245c4b5610dff9cd422d5efea5869f16601204c427e4270ef70c42be4df9d06bb1e079c70f8692d99b9ca4bbbcc0306130bf08ef85d30e21724745219
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af3d0b0ef65a8b235df95bec506e79b373]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af3d0b0ef65a8b235df95bec506e79b373=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33850|1*7413379
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af3d0b0ef65a8b235df95bec506e79b373=3*18289727
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33850
+SLP=3*18294519
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a2390e72dcc3e32805788ea120e6d577b458b5e58433c9788eb740d4891991cbdb1fb307ee92dcb66036e1bf1435932dc113a8b35ded448548811fd024d4663f322e05d833177289ae4975cd9ff66e1d9f00b74b50b6c683a7c47a841b1186fd
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af3e1d560164ead80f951b46096cde7ed8]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af3e1d560164ead80f951b46096cde7ed8=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21843|1*7354894
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af3e1d560164ead80f951b46096cde7ed8=3*17994833
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21843
+SLP=3*17995267
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|52692dee4e69baaa16e19d1ae2178824f64a74500b33b63d22e81e765d70ed2b4df1c722f4ed3f9f59d7d096e00e1a122599beadb4107b9bb44df910334fac27eca89b5886440d288876abad6bd06136640052abf789b6ee3749e8af1f8cb7dd
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af41eabc0410c6668573f8556fdc4c84c4ba888db3d427be581b132f4598405001]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af41eabc0410c6668573f8556fdc4c84c4ba888db3d427be581b132f4598405001=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22522|1*7363419
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af41eabc0410c6668573f8556fdc4c84c4ba888db3d427be581b132f4598405001=3*18017986
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22522
+SLP=3*18019727
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6d20379320fb2b72d73913c5d783ac69dd435370f51d21544405e889e25362b4d74c3cbb20ae67f2fe7c412f0e163da50c26e84c4b6f685de513714078ea1f5ccf7fc231ad79a01124678ac381a97a61221cdd6ec7b3d7ee7540f8b0f24e2923d1610c847f2bd1f0f897398352a31558
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af42b18b571b209227f1d32cfb8be799450de6bc1bc03e77df77afe30ef595d894]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af42b18b571b209227f1d32cfb8be799450de6bc1bc03e77df77afe30ef595d894=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|26521|1*7376136
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af42b18b571b209227f1d32cfb8be799450de6bc1bc03e77df77afe30ef595d894=3*18053772
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|26521
+SLP=3*18054791
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8e2a5a4da4e8cce958ce98e30b8667d0e1bfe7c112162afcf016fc6dde34f77db71369e35f591ce08ebdf4e6bce60cafa9f852da90218151eac6386caf22538236574a902d30098aa4ab67ff93420ab61125088c822737749e02ca4bd737fd34b0b1786affd6ff8691c2a717da924b4b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af453c7f9fbf55216cefa91843320d17c7]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af453c7f9fbf55216cefa91843320d17c7=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40323|1*7451599
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af453c7f9fbf55216cefa91843320d17c7=3*18447379
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40323
+SLP=3*18451887
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3631b36cd9c602bfb4be4960fb2e9486d3f91a580c65e39d614e532153844a2b6e53c292efbdb99f076e15d7ee88305d3db9c17974390db61c48c360e3b4a23ea8d0282f6d2d8b35dee6fcddb00e8d202870ee4533ba635f2c687cf2b273211d
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af46c632734ee6afe09ed366b87333881a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af46c632734ee6afe09ed366b87333881a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|32929|1*7406279
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af46c632734ee6afe09ed366b87333881a=3*18271525
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|32929
+SLP=3*18279425
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|5915f79bdb5b29c87d2b44a8a31a818ea7c3deb927b303e408e000b0dd2f9458bd9a0d61c9919ad3f10c6d3dfad5ec6cbb01359d92a7f1fa7b70ac523f7ec23b6e834ba913a5367d88799b4d64e33a6082c7bd684360fe03a2375c94032d8695
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af4b3b46fdb345706b0a9009a7e077b4dd543c47a53ef6f65b1963293edb018aec32396636bb7f78dce12e0726cd7d920e]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af4b3b46fdb345706b0a9009a7e077b4dd543c47a53ef6f65b1963293edb018aec32396636bb7f78dce12e0726cd7d920e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21453|1*7348257
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af4b3b46fdb345706b0a9009a7e077b4dd543c47a53ef6f65b1963293edb018aec32396636bb7f78dce12e0726cd7d920e=3*17981880
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21453
+SLP=3*17984342
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9201c81e028a46c732358c8f71e25cc356bb48253101f7a851b646015938cf14fa8c002e5cb4ae2c44df82f2bbff66e739d5e08a34e71dad4c47b95e5c2fafdaa975b69a77298e10ba8a6e1d2bf922fe91d9be7bb0da4bdc4ff59ab72099c484db001fca27529c360d90c69bcaadc37eeb1decfb15cb0d1844c4b31a631d0f3e
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af4de101ffda1291816e3454a89c74cc86]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af4de101ffda1291816e3454a89c74cc86=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14386|1*7298527
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af4de101ffda1291816e3454a89c74cc86=3*17845300
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14386
+SLP=3*17846988
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|d3a8286bad358af5504f4c0b7827336b59b79692ca2243a469e42d4f724f1bdb8b3029ba5e97ba064f7c4f470c2a8f0362b08e59914df641a5651ca643b4a52ece7562a0136c426b626c5eea452d44bed1c1e3ff045208bce21609668daaa6b1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af4ff23de0935cac32481bdc592ac6f862b27610f29b9434a0fdcfa3cf4cfea8f8]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af4ff23de0935cac32481bdc592ac6f862b27610f29b9434a0fdcfa3cf4cfea8f8=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3390|1*7242546
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af4ff23de0935cac32481bdc592ac6f862b27610f29b9434a0fdcfa3cf4cfea8f8=3*17588151
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3390
+SLP=3*17591972
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|597d24bda03b872c7ff3bf3a2224de511f4f084fa84d2f9b61bcfc9f74bd105d689b58e180d68401e59b6eb1f5c935f664920ce98c6bb7169b2c9fbb914b90682149237124a46bda5e51106ebdc2ac322435f763248299b68e7baa3dddd6d1059b9afac3f8da0a3c75868884ad8b0db0
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af504ce9983179f39ff130052d46d3c8637c099e6d33a693df31238d7e52c9df4a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af504ce9983179f39ff130052d46d3c8637c099e6d33a693df31238d7e52c9df4a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|13054|1*7291400
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af504ce9983179f39ff130052d46d3c8637c099e6d33a693df31238d7e52c9df4a=3*17810157
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|13054
+SLP=3*17811782
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|06c6ccb5737409ae623cf7a58a9c5013ce0087e80432fe100afb6248063f07a5b15ca8bb64e8e668ffce55198f433c4c7434b7ad2b0a8cd3454f75c71c3d57c7e78205a4a2921653fac6dadd76fb61e2e61ac8004b23c302f147e227d184f085dd4e2b62bf806b9878809a2b48a33e77
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af5206480d9411a36cfa6a9690ba0a7022]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af5206480d9411a36cfa6a9690ba0a7022=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|6073|1*7259423
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af5206480d9411a36cfa6a9690ba0a7022=3*17622827
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|6073
+SLP=3*17630310
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|fe8dbd1f91442d4da33d3546a590cde776ae3e2c8b14abec48a5cfd0a52d19e45fed62a4a3f49829b89aa53cd55436bd0e6af9138b3b771006c62a9fdf84c05c089e06fae939c16421b4709b565df04548f510f6ab3d39416355f3242aa9ab3b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af5eaf070117234399507dbb05a95c5efcfeb4059cbda0a71e2affdf6c88806804]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af5eaf070117234399507dbb05a95c5efcfeb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14751|1*7303024
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af5eaf070117234399507dbb05a95c5efcfeb4059cbda0a71e2affdf6c88806804=3*17858960
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14751
+SLP=3*17864412
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e070f09d22099a35eb5332c6fcb147b67acdca223f5b1e6d5dda5b10442b4cb3c4fa8054ee782cd581d27ff4ff9835a665413a83d36abae4dfe42e0cbd5982fc97cff36b63108da2c64f7f5ea0520eeaadc261c24e535ed6566499a9776957cca0b977091b7ed7cece39db193dacc26b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af60c3bd036751987fbd221f84100cf037]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af60c3bd036751987fbd221f84100cf037=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|26603|1*7377091
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af60c3bd036751987fbd221f84100cf037=3*18055473
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|26603
+SLP=3*18068239
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9514285572e5423828ddd84e8a6a7c523e9561f1fcd82c3b711933b1d86f2b5ce27f41874c75b32984f5bdad9f190b32b97db84e58cdda804b3fe43e3578232d8c7d2d2ef9253cc511fb8cbe6f538fb701926c9662471f50f39affbdd43d03f2
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af61479604a43ece3688239f0a1d272c73]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af61479604a43ece3688239f0a1d272c73=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19613|1*7337460
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af61479604a43ece3688239f0a1d272c73=3*17932952
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19613
+SLP=3*17940725
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|16c793748b76bc1c83fce5318dfd27e762fd686f035284c2117e85af3b0a0a6d5487cc4ecf1dce8e5118d87405c6bc83d82e647ada269754ffd42232798a3838dad9b02c5b7c1240565088a38909ca31d8bf90b26c8f5396f11e13453086efa1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af62df6e37da755101c266095277b2eb43]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af62df6e37da755101c266095277b2eb43=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|28823|1*7384175
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af62df6e37da755101c266095277b2eb43=3*18140411
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|28823
+SLP=3*18151592
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b3e9331b6f01d5ab6d5c4506e2e5028c7526c1bc2adac8f0e7c306bfc3c71fb8b3c85b7bafbe1db48bc550ff96d57b898b83dc9d6e8e159db6f2d11088f912f36fd21d0dce56c71d3005f648f0f77612d8f2c4cb8b1b9ec05026d677caf97a9a
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af632cd841b60d527a75168f016849d631]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af632cd841b60d527a75168f016849d631=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2982|1*7237942
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af632cd841b60d527a75168f016849d631=3*17577093
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2982
+SLP=3*17579133
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|cc386ed3ec9544a15a12720745b2a7d67754e3235e5ce97664fdac99feb5b2cac1711927603a892e2d8ac22f2b5ddda015ab97bb2abebc13bbf35c6d9b6769c9055a2f5f95f2086daedd5de9684e9f2a7e5ff6bee19841b5ed3263a532b8a8a1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af639433c684c1ad0a4c4ffd5c0439a249]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af639433c684c1ad0a4c4ffd5c0439a249=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40151|1*7449545
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af639433c684c1ad0a4c4ffd5c0439a249=3*18444613
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40151
+SLP=3*18445521
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|062724ab49fea9cf6c8f70f3b095be198824bb0b40c36f37358e868a672ed234656e29f7195790a82a3d371507f932238984e8cc4eb10330c6c17e75a6f02a28e59e0c45a924abd1eba083e1b3dcc5bb3dbb2b5e6e8cd5f54a9900f72f5bd58f
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af63a4d71b66d90faf39f7fb6caf8e3cb4]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af63a4d71b66d90faf39f7fb6caf8e3cb4=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|36486|1*7432966
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af63a4d71b66d90faf39f7fb6caf8e3cb4=3*18358942
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|36486
+SLP=3*18367521
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|aeb4ffb4267484c68595a80fd0bc5b9c7c9a200c878117fea431a6c5850e79f74a8b5a684461644f9b3d53a445bf35d920344100427b6988caa33237c2415ffe3b64c3a5cdd784feafe62394edb6f3d8173551e8063b36615f86fe395064b7cd
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af6531f415445a79725caad5081db62ece]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af6531f415445a79725caad5081db62ece=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3662|1*7246131
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af6531f415445a79725caad5081db62ece=3*17596204
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3662
+SLP=3*17598833
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|23459d5e32a67ef8b2feec5c99b0fceecb8281b0ad7c4edddfbb2183f960da7a5e416bc72f17cd9f292029dc470561065c92fe93b92fd896e24de612f1da09a153cc126d1620cf733779fe871c677d55d6613983c684a4ad7b531c4023e9503f
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af654df57338d955e5a8009b23782afae8]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af654df57338d955e5a8009b23782afae8=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19465|1*7334718
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af654df57338d955e5a8009b23782afae8=3*17924995
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19465
+SLP=3*17927635
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|065014b16af04fead0b5783383a47a65d39b778c771bb408688a08edb528ebee42abeecaa8fac6cde2fcf4cf6f017ae2532d486fbe02fc4247278907362a99b32d55280985775c0b85d07372e587b70f20573d10850b64e3f33a892ae3f70905
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af69a77febf5a65675f0d09a93fa399197]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af69a77febf5a65675f0d09a93fa399197=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21800|1*7353464
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af69a77febf5a65675f0d09a93fa399197=3*17992911
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21800
+SLP=3*17993512
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|a2bb78b3ca7a78ee8ddd310abae63a58c03045eda6f87a4bcf3b04e4b1d9fbd227ac91090418da378606b1d3013ff0cebe4461d1878bbe9f1f440a8db2fac974527c3e644c15588a51f2f82908b0806d3c800f74b0c55b742fd3838f7db49fd5
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af6a6b0ec4521dad3fa5b00033568d698d]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af6a6b0ec4521dad3fa5b00033568d698d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3069|1*7238961
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af6a6b0ec4521dad3fa5b00033568d698d=3*17580055
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3069
+SLP=3*17581633
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3b1ec3bdc64ee4e20f3d8403c4b15b158502f0bae80fe5ad3b4edcb30ae99668a848dc2aef16985ccac58004e0c9b13ab6182d24393ea2527ae0e3e13b8518c1a05f789da2bd83b7dc5e7e856989ef26f9b25d1160c0c271d825e302ded4925f
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af715b062a3d12f5dd1eed4f38c36c3958c927e06a8fbd200188bd2a690b1d0a42]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af715b062a3d12f5dd1eed4f38c36c3958c927e06a8fbd200188bd2a690b1d0a42=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21620|1*7349596
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af715b062a3d12f5dd1eed4f38c36c3958c927e06a8fbd200188bd2a690b1d0a42=3*17986145
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21620
+SLP=3*17988033
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0282cb17e5574234eb174d4fcc9292e4162b8a7153f6cbe7bc95cfe79e8e27e9a47eb7ef61dd23e5da004ddd26c7efa39721c17b4a6681c6396b9bd0b2a717ba082e39e45ac5d475f07f5ac2c8673cba4cb67c0b3c0a36b1518ae35b660516e74e48500bea779810a30f1a7e00dcc20c
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af71e1bfe052cd2914ef00def4c12966a3]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af71e1bfe052cd2914ef00def4c12966a3=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35509|1*7422543
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af71e1bfe052cd2914ef00def4c12966a3=3*18340014
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35509
+SLP=3*18340332
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|19f6d179ca78aca424aaf3fe570b5c360e7d70d691c48e82db8f64d44e654c521ed932cf3881e946bb8da80fbc2b05359f70bd78e1a0c528f4d045538867143f3246f2322252953735357d902a7127436203bccf596a7f49c8b45dfc94377f44
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af7431a705e6b1120359f08cd19152055b]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af7431a705e6b1120359f08cd19152055b=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18269|1*7325111
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af7431a705e6b1120359f08cd19152055b=3*17902275
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18269
+SLP=3*17906676
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|27d6253c1b1d15d44ea58e23c6d4ef7f319cd34911382da322fee36708836bc4433552b11736cfe0720288cf2433eba1f51786d6839362852b700091a132479fb046e6808b71233bf03e9d830d46ee2fcfaab9ebe095657e7cd844228726ccd8
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f3b94f82a02e353df323c19b095d4dcf7]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f3b94f82a02e353df323c19b095d4dcf7=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20962|1*7344939
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f3b94f82a02e353df323c19b095d4dcf7=3*17979410
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20962
+SLP=3*17980148
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1d0ee24b89c6b01ce99aaf2a79a8d4d159556ad3784102b72e52e45143566b2cc5fc90df667bae25fc337df0e062106092ae36e157171df982682d9464cc1ebee3ec6b8a194b4ebd18f82e27f53b1165952d578527ab2d73adcba96ef05ec9d8783ce5c5f4f707bd48c006076e8095ea
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f92097860e782dd8e31f14f021b454ba6]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f92097860e782dd8e31f14f021b454ba6=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21258|1*7346774
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f92097860e782dd8e31f14f021b454ba6=3*17980670
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21258
+SLP=3*17981406
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|e8e9409946c43b575933401ec8537acda87dd863f75ece46a4bb27ee6c22d67258cdf3e6a6ede4e9c6ccc3a0fd004c4497c892f48d86269d53c803c5420750f115063f95109989399fab09b762e29373df8cd27539d0a7519cca9fc4e720afbc26949a9541412f8145b5f82e631ec23b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af77ab678c95293f7f10e205f7a6188c55]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af77ab678c95293f7f10e205f7a6188c55=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|12933|1*7290285
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af77ab678c95293f7f10e205f7a6188c55=3*17806548
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|12933
+SLP=3*17809042
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|46534c5cfdb1cface146f7ca9327f62193f38b7f1bbc023901001f657a44651aa32666f5e5615bbbaebca19f69fc9236a853e1ac81ab062361b7ab729b0bd69d115a018149dda740c999be7738469ab6ee30835a0ce3a986f381cf99bd0480e9
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af80d4f7d1d330c632a143c797d23842b5]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af80d4f7d1d330c632a143c797d23842b5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|17320|1*7320273
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af80d4f7d1d330c632a143c797d23842b5=3*17877962
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|17320
+SLP=3*17878707
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6e97c6cc0caa71cd2bc8ef0949b57cded2337ab8ad4117e7fa9b104a0c86e868b331071f6adc79c2f168db69cb41fa7329c4a02260f27a3ac59c5cf621464303be28743b3b72e19884eb50471928e2c40b6e6b6efcf78ffad1435a2f8f0b0228
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af843cfccb227c869e81b90ba072b3dcde]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af843cfccb227c869e81b90ba072b3dcde=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35709|1*7425125
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af843cfccb227c869e81b90ba072b3dcde=3*18341503
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35709
+SLP=3*18341943
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|81eaf37819478020383eaa0c53f2ea8f835187af83fbddf98eefe388e911f469245e3228f58a4f24421ebbff0c52163059ded193b52fc888e34b83d9a30b988bbce047e5c910409e588af1a6241ca576da7366a87a48289e9a6891834e1e2f14
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af85ab744ffff56c328704cc00b32b8fd722cdf441349f0821a48f7a0be8adc026]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af85ab744ffff56c328704cc00b32b8fd722cdf441349f0821a48f7a0be8adc026=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33435|1*7410333
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af85ab744ffff56c328704cc00b32b8fd722cdf441349f0821a48f7a0be8adc026=3*18283397
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33435
+SLP=3*18285874
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|50349a6eaadde69c25d0f6c064c32fb6a5c93d44fb3fa6e28e8ad495134141c1022943213925824f0f11921a22c0241bafa4482652382c9c85dde71b2f580663ed21fac8156ccde9f37b7182f47af35e8bd8e190dc5bd9f98caa12a3f578d6111853104452841af0824c65d78c66b3a8
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af8842559228fe1541da2a9e194da22818]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af8842559228fe1541da2a9e194da22818=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20108|1*7341589
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af8842559228fe1541da2a9e194da22818=3*17949816
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20108
+SLP=3*17957648
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c2c1a55943d9d327bfb7dd2688c6774ad7cfd3bc4b493edf87b1c40d1a270a8b2d2fb263f98ccf36a0b203a20c55adfa76591891dd87d5fc23981ee06aac24b29e164bdec628cdf9ed02ab22e88bd5bffb00a7b43cb840720dced1c1cb4b1ee4
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af8d058405609ed307e8a004e81876f8a15cb4f3147fe7439a0bf4ec3e59835832]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af8d058405609ed307e8a004e81876f8a15cb4f3147fe7439a0bf4ec3e59835832=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14253|1*7296265
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af8d058405609ed307e8a004e81876f8a15cb4f3147fe7439a0bf4ec3e59835832=3*17839216
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14253
+SLP=3*17842779
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6f6a7990de644365765c067f978ca3113a12fabba8694567a8dad73d86873e38d3d8bfd2a50a97571e2b8111630a51a0f3dcfaebcdbbb52e51ab68ec469875b31278615626e4952c186ebf87a4716c110f4684a7b0c3386c3cea5c5b0af1769a4c59e916acd7f787882ff3669300e9d0
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af9061ef33815b424811390687d37dfc4d]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af9061ef33815b424811390687d37dfc4d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|13696|1*7294414
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af9061ef33815b424811390687d37dfc4d=3*17824725
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|13696
+SLP=3*17833765
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|74f85ec88941a91dd409daafcc4fe52401c115ff53284c9319fc923899001cb1b7f6fc97950bfca9ec881ee96dbb6cadec62ebdf88cfc338bd610704339e7e2c13708a7ef2a67c691fac3b1b86b6d63321ed5f3e39ff448711a3ba5378cf43f2
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af912184b4c61f3b20df6df3dbe7114ec6]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af912184b4c61f3b20df6df3dbe7114ec6=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21779|1*7352749
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af912184b4c61f3b20df6df3dbe7114ec6=3*17991968
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21779
+SLP=3*17992533
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|3c69bb7029b4cd7ada0bb8b293d2962454ac863bba0b758f13cc195038185a4c6ff644f9492cf2c4b156a145e618d06f18d4cf2ae36dbbe8cea989cad3f3d19a470832261f2fa1d7c3e577983ef4f3aab60cf69dcab83ea6c8c45ceb026c3453
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af96393b4e06cf7843af13239db25ffaabfeb4059cbda0a71e2affdf6c88806804]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af96393b4e06cf7843af13239db25ffaabfeb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|5208|1*7253582
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af96393b4e06cf7843af13239db25ffaabfeb4059cbda0a71e2affdf6c88806804=3*17602844
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|5208
+SLP=3*17610392
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|51f200ccd1bd8c722b5018544d75562f9a019387417acc0e582b895cee66b059173a5ba52e0051a40f787225645c94f8468bda9f18dc1d4ac3d92f7cf6c97ffc9afa688a4cd8810eeb802cd62894fed7864cb606e95b7a8ca1475213de039dca3161b3d8ea17ef47b19e45b52344d769
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af9832dd81b6a1f168e36a2ba4be7eeb9b]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af9832dd81b6a1f168e36a2ba4be7eeb9b=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22361|1*7361029
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af9832dd81b6a1f168e36a2ba4be7eeb9b=3*18015310
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22361
+SLP=3*18015883
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8e1e67147c37f2c947d1b9b49b6da6f52b850c01d78c87e1ebdeb19456f85d572281e8dec82bf4ed0cdb3cf651899da0fef910db9a84b56f6ecf6bf6231952882ea67919b7701aec3e205da8e97de101649bab31326bc6b2c21fa525ecc180d6
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af9ac579870b56c842cbd31e50c31fa627]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af9ac579870b56c842cbd31e50c31fa627=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|37138|1*7435916
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af9ac579870b56c842cbd31e50c31fa627=3*18379806
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|37138
+SLP=3*18386589
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|18ad0a708c77731c2fe40c7618c6cc1549de29207632dc2181e9377534ad162bbb627a3b36c471400305df5d3eae1abc824cedcca1086eb669200fda1f10b73c26d8489f0e9fb2d19dbe948996301c67a2d02a2d8093d40f3525838f5d022a83
+
+[protected_f6e2dfec109f9d80a2001837f3dda7af9e4de64cc5e22a2b75e56f23878ed3a9]
+A/protected_f6e2dfec109f9d80a2001837f3dda7af9e4de64cc5e22a2b75e56f23878ed3a9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20493|1*7343104
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7af9e4de64cc5e22a2b75e56f23878ed3a9=3*17961099
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|20493
+SLP=3*17973575
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2e0ebcfd6db7ed05aecaf026f3320109e748fd6454c9a4f26f4e73e9310ff84efab6e4a2d0e6f932cf80d21d94c5ba4f0c08644a37f14e54d52c43efa41fbe20a45c57a1649168cbf60ae771e32c06ad07a9fd764c850237a324a6744c40cc8b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afa11f03b2726ab1b86c3fac21bf1626800637c0d4e7910314e5f6c3445ee0ece2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afa11f03b2726ab1b86c3fac21bf1626800637c0d4e7910314e5f6c3445ee0ece2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35741|1*7426523
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afa11f03b2726ab1b86c3fac21bf1626800637c0d4e7910314e5f6c3445ee0ece2=3*18342839
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35741
+SLP=3*18355331
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|57bf67f37f67331c34b67036360ba600e4af16bee781d24d4d9ea11f7e7dec4fb9f89cb468486a5bd1b376175d2ef467750cce33062cd48e55b470049b191ecb8eab9997aa10591acd0aa85c4fe284e10d2140b813a86c07ed1597a08644a977765b737f269a653a37929788569e5ec3
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afa42f7fbb1f3189aa1a926370e686a591feb4059cbda0a71e2affdf6c88806804]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afa42f7fbb1f3189aa1a926370e686a591feb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|29120|1*7386170
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afa42f7fbb1f3189aa1a926370e686a591feb4059cbda0a71e2affdf6c88806804=3*18155139
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|29120
+SLP=3*18161377
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|5aaab449162a60b75814dd1dc8ae679a46bb0dd3a2bafeb23587852d867058d8705d94fd19f44761f01976860caf47fcaa1b2106bb146b73f76ccf13a8ee1f37d5c2616c77af343f61a976713f173f868163586ce181a62a4782e5964bbdab6928d6610b084ab409cf24d89e35fcd233
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afa7250ecabb83ed28600dce7c873339f0]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afa7250ecabb83ed28600dce7c873339f0=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19536|1*7336057
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afa7250ecabb83ed28600dce7c873339f0=3*17928734
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19536
+SLP=3*17931709
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1984c82b9f4ec75c6cc19ad62a767630ef21437a4419d518c76a309679bfcbb50d6b24a2747235f516bb0fbe0a2899e69598466dbb01d443ab73acc62f35a7406029f010bef230451c592e16e551a27223ef99ccc661f56654f5d4ac23361899
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afacf8ac0334c943d47b3e844d6896dab2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afacf8ac0334c943d47b3e844d6896dab2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|27314|1*7378878
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afacf8ac0334c943d47b3e844d6896dab2=3*18078635
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|27314
+SLP=3*18105607
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c49743ac98581db727a90df77ea31556a9b6618fba0a689432edddef57c51b6d25e2a87136b3e5a3be9d6702e2df9b08f61414806f0747ddc1752577f06058ce55e548dd48595baffa491fc274750ea0132383907736dc09e7e4487c88dd575d
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afaf1c7eefc22e35d9c175a0f0fd5606e1]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afaf1c7eefc22e35d9c175a0f0fd5606e1=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|13236|1*7292867
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afaf1c7eefc22e35d9c175a0f0fd5606e1=3*17812688
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|13236
+SLP=3*17820362
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9c89b69b0042ee4449772573e7093226c6fe9a5c03d567a947be741d2943adc04a947e8608601071adfb3b09cd205c296b44178c5b810c97e70edfe955fd7680ca633916390e83e986434fababd77d39246b25b80c41677d38b4c2ebb936390c
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afafdbf22d694d1590adb009dab53ad179]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afafdbf22d694d1590adb009dab53ad179=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35105|1*7420516
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afafdbf22d694d1590adb009dab53ad179=3*18327515
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|35105
+SLP=3*18336067
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|cbb82c72b9370664f9b88e3eb0875f7617f3f5e9ae24341a1d4bd1083e560d9ef43cafc62d9a2f2e2517e3760e6e2cd8c400e3e85b1cfe1bff19c6f11caa352a8322ceae31d8e3dca643dd2b51b71f24038562b394d72cab9e8689ffd25581a0
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afb079d024ea7bc1368b35e8be0afed326]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afb079d024ea7bc1368b35e8be0afed326=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33671|1*7411912
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afb079d024ea7bc1368b35e8be0afed326=3*18287981
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|33671
+SLP=3*18289093
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ad8fa72752d59c0c975fbe6dee14d27b28abd0dfa1a0d0b5b68cb061f77fa7eff23f8078e4cb957818edc6970f1542e3df24f248cf2e28e9041884e8dde7223a1cdf8c2b44d8703ab5e35ec1fa20b6629490c19e8b726fde22d355bcceb10f98
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afb3086c807372420e091e9c7184ab762e]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afb3086c807372420e091e9c7184ab762e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|36988|1*7434529
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afb3086c807372420e091e9c7184ab762e=3*18371548
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|36988
+SLP=3*18375427
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8d8831fa3b5a8fe8947abe6f78c5dea885cf6200e6b3a03cda75f8f5add52dd9196ea3ccb3ddf195b74f99cfb45971c79cd1dd2ef913c49979e484ca3a4b2a429239e2408976d8711f473d909ca0520880e83c9dbba4592b68d520b9de8c2159
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afb67c511e052dc0354b1ec838a7bde11e]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afb67c511e052dc0354b1ec838a7bde11e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|15011|1*7304459
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afb67c511e052dc0354b1ec838a7bde11e=3*17867191
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|15011
+SLP=3*17871017
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2574d7197cdfabaf2216805ee1c7e647d49f097269c22f4d442e5396a1655b3ad3bf0129f02014e8aad94ac269c681ef05eb7356c2111b747ef716b1374f993cffa91d37ff5aec4433a6dfe072bb7c44f76dd8cedd910d7611f9e54db3658a0a
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afb7207afc3fe8a71eae2bbc65fc4fc17d]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afb7207afc3fe8a71eae2bbc65fc4fc17d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|42413|1*7464901
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afb7207afc3fe8a71eae2bbc65fc4fc17d=3*18531908
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|42413
+SLP=3*18535391
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|452a6ac3ebb0696270d1709172df3bd0e07b1ce814c402da1d320e5ae0085ff1a95391be53cfff6a283609cd7646302b36044993ce4e697c15b61c1b47eb724480e3f3d131623bda7155149582ea975aec95c28ded8ab03c2ae223ccb09d69bf
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afb968a546338fa0f7343329200c6551e2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afb968a546338fa0f7343329200c6551e2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22278|1*7359434
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afb968a546338fa0f7343329200c6551e2=3*18011344
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22278
+SLP=3*18013939
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|afb3fe0504c358e7acec0cb4408c3d4e52b2b8b1f2122c370f0687d4651a79060aaea2bb937ce94fe9b7fb48bbb9884afa6645e754493e0866700997dcf31326b67f164d9a77eedb1b05f4bf3632c18a409e67ae15c098e6b68844f6aff7fda7
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afbca7a2245cf0f3739f9eff1fb1c6376d]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afbca7a2245cf0f3739f9eff1fb1c6376d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|28565|1*7382356
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afbca7a2245cf0f3739f9eff1fb1c6376d=3*18127195
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|28565
+SLP=3*18137328
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ab7f4612be7accd9370c9cd695570a539b3af430a5909e4db92aeebcdaaf6b306776175175ab965e93584919f5cfb372e2888be29c2d9653e88f7d7162bee7c0f36e7c6589d9a9331b65998076f1f1e5170a2a6509f9e1a0091caf41d304a7c7
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afbeafa179a4d1922e22602d720d863b0b]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afbeafa179a4d1922e22602d720d863b0b=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|6527|1*7261786
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afbeafa179a4d1922e22602d720d863b0b=3*17637505
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|6527
+SLP=3*17652950
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|74c9ffdea2e5ea820fe609b6660c1254bcfd4a5c7d8b232e189089e801b2e25c654c618456ac4729a73af2996373aff48e64178073edd8dcabfe4a39832e64bd3f96c289d4e921e4aff1a4191803b412e6a80182b678228ce285b043fd434b49
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afbfa80abc88c6ace0ab7a2c4bcfd64a97]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afbfa80abc88c6ace0ab7a2c4bcfd64a97=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|7618|1*7267915
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afbfa80abc88c6ace0ab7a2c4bcfd64a97=3*17679041
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|7618
+SLP=3*17685748
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0740ebdb1ce91e3ad5ec14ac30781ac0ca2543f228dd5a78821ce3862d393e63ebf000a8911fb51532bd9f3334a9d7cfd6d1f0eb6ba404b15e1a5aae0fe0d1de2e31607065329e5866d6510dcfa8220de3b0568606e89328114da6d033320baa
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afc43b3702ff9eda1329a07c4bafa64874]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afc43b3702ff9eda1329a07c4bafa64874=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18585|1*7327618
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afc43b3702ff9eda1329a07c4bafa64874=3*17909327
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|18585
+SLP=3*17912239
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|12c83be6b45767e99cf3584ef4f86d62a3364959fa5b9791c34da7d3746978d5ec9176604e28b3a8807637577d46451c96dd13304e69b0057dafb4b801c5e78574c0ae293b41a8e73bb6f6c804350adae023ed82bfb9ce9df3a7f4081c0150e7
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afc4aafb56f47cd933bca330bd221fccdd]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afc4aafb56f47cd933bca330bd221fccdd=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40855|1*7455434
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afc4aafb56f47cd933bca330bd221fccdd=3*18454298
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40855
+SLP=3*18494296
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b164b0997fcaeaf877f5b0a6e123b822925f7b35650dfed70aa15da90214a1db0e675db62788d135a48a731f22e13e2434980822d06cb3eccc4739713f50c44d3ccef17436ea1f2549a79a63c9b26ead7b6c9909b296f9a5613bba09ac606134
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afc75e9b9c33b160c38060edb508e68e8962a529d8e50b5ff51776820ba44d5aad]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afc75e9b9c33b160c38060edb508e68e8962a529d8e50b5ff51776820ba44d5aad=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3456|1*7243645
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afc75e9b9c33b160c38060edb508e68e8962a529d8e50b5ff51776820ba44d5aad=3*17592702
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3456
+SLP=3*17594199
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|83d74f21020a8bcb7718e2e92f030b3a2387ba32116cd17abd38a71406561b80b043ce21550d1c88bf5c3fc3cc8f509e392905b1f273679adf7b62a4bb2c6a3fbe0def8afb2f7082be190f290799eecd6d54f128cb10b10327fece9ee47ce2b88d5b289da7620b7d020377a918398814
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afc7ad4c0dbacec718d204d4600ba6f1f1]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afc7ad4c0dbacec718d204d4600ba6f1f1=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40014|1*7447715
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afc7ad4c0dbacec718d204d4600ba6f1f1=3*18441159
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|40014
+SLP=3*18441669
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|aa0b38798c8f37128e7563e4979a7c1a726ec233443e19c3005d3ecd730d7473ccfb0613865ade643127a3ab18e441b6ffe6a0ccce1ab642bc41875d23a1f3e3d5b9e7992c21af87a59d2e20b6e59a1551dd2d5f545d8e0f9ec5ae5df529bab1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afc82b111fda493b6e60df3e20f053428b]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afc82b111fda493b6e60df3e20f053428b=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|9210|1*7273420
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afc82b111fda493b6e60df3e20f053428b=3*17718906
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|9210
+SLP=3*17722773
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|69a79042f5aa749913712fe915c45a4d0f717975112178cb3802d57ebaf8be63b682b9f9ed421b3dd116a699b350e1b55a891d2c28ddfa378e2e0be98582477d581d21de7f73339c5ecfa04b54c65e98d707032a4b0402d1d73e1d7d112afb1c
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afcafc9690f9393a8279b4d23aacb992c1]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afcafc9690f9393a8279b4d23aacb992c1=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|7433|1*7266400
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afcafc9690f9393a8279b4d23aacb992c1=3*17678132
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|7433
+SLP=3*17678663
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|41d8eb6b20823790e751c871b6fc15a4b53def3bdb4448d286ba00b10aef4bcbae9321fdfdc681c6fdb4bed1e25abebf4bd2cdddc6f6de272a20e0df7a5cc64ee66710c29f5b3d40307ba42ab21a94a07be92ac59f0c59ce7c3d35fdeb7fa685
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afcce1c30198b72aa2300574f0bd8acb97]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afcce1c30198b72aa2300574f0bd8acb97=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3229|1*7240540
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afcce1c30198b72aa2300574f0bd8acb97=3*17583516
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3229
+SLP=3*17585095
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|93b01f2eb01f0bd0dadddfab631b97fe3a4becae9a5f5c7839acb54267cc3d46dc57dd0458ed6f9291695f060ce07ada108f282acfeba71d6c6f950a1b07ad27c13990587405d25fae58562adb98aee6051105e4e94aee9e968220552bd35f97
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afce639447385cb1f6a867b2924dda490288bd484b8679ddcab978e975d7dfd84c]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afce639447385cb1f6a867b2924dda490288bd484b8679ddcab978e975d7dfd84c=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|31101|1*7396278
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afce639447385cb1f6a867b2924dda490288bd484b8679ddcab978e975d7dfd84c=3*18221975
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|31101
+SLP=3*18234013
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1790d3ffacc8df7ab4d2272c68bddde107884460826e766a0612931daaf8222113c3800db7da6d05b46f2d03bb84dda70eeb9fb8e5a22f531d907efd4c7cf500798133c46ad35942d83bec8a4f2ef78fb54ceafa32979a63a72c9790dd13e0e7e012d5888474ff4c8dde453bc92559c5
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afcebba1775840b21a76735a9d20efc3123dd8c3ada98a7c7372af265dc55a51a7]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afcebba1775840b21a76735a9d20efc3123dd8c3ada98a7c7372af265dc55a51a7=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|26406|1*7374813
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afcebba1775840b21a76735a9d20efc3123dd8c3ada98a7c7372af265dc55a51a7=3*18051426
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|26406
+SLP=3*18052786
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|68efb83e7c97ee82046b42482a9fbcf22aba0383d37b6daf89eda5565f815e9f0609ddd36d6eb7ddb2fadfbb7137a7bed715677c74fd116e629e75f9431181e2fec23f5ff8e7baedbc79f3e043910edb76dcc57413e9cce87b0ef836c5b588909f2162a0b391057c9537eee496c67600
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afd1bf7e200766ec25c17beacd52328397180e835c455d52ae6cc3d288bcaafafee17ed458c5705fb66fc08560f0da8ef6]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afd1bf7e200766ec25c17beacd52328397180e835c455d52ae6cc3d288bcaafafee17ed458c5705fb66fc08560f0da8ef6=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19158|1*7332547
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afd1bf7e200766ec25c17beacd52328397180e835c455d52ae6cc3d288bcaafafee17ed458c5705fb66fc08560f0da8ef6=3*17919994
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|19158
+SLP=3*17923128
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7421f97010ebcaeb23e7ca8749c62edf9e167cbbcbf5c1ff8676cb03f30799439b659f95e6e3a4cbca89452ca188ec52d6929b18e27df58d2d1a4abc22b1000c7056be44671dae1674ad8881dc97e16662630abb9172df91ba5e837ede4ffdbee27003f08cb5ea1d2f0ed48b04dea8890b116bec7a086ee6465619f48ac91c2c
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afd6bea40f0879d9d38d69d0a04d73eccfbb35a0cea0ca2bc91dbe0862f6798752]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afd6bea40f0879d9d38d69d0a04d73eccfbb35a0cea0ca2bc91dbe0862f6798752=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21709|1*7350999
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afd6bea40f0879d9d38d69d0a04d73eccfbb35a0cea0ca2bc91dbe0862f6798752=3*17989468
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21709
+SLP=3*17990599
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7ae178d8b8a9aea0bb9dc2e2a7a2e6f542050029713089867f7b807d1e706a95542ab7a377f2775c50de08ee487fdd31e91ef4bdf5f7665c2e9769f71af4d55f3b7aa986c01692bf00b6a8dca0d4df4c73afcea41dfd6ea5511c36f301ae15ac052d40b8ceb79d716fe12f3c4092a0d6
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afd98c0cbe8923a82878052c64970b827c]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afd98c0cbe8923a82878052c64970b827c=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3591|1*7245208
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afd98c0cbe8923a82878052c64970b827c=3*17595378
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3591
+SLP=3*17595906
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|f864b765d919dbe17b76f115f6cf2eaf26cc15cc4c1761d9d24a8773b0df17cd054a05724f90f90aad1c4041afceff55dab1e5068c0579cbe18055698572c1d450501e1a3f4628f4b296670db753afd2edfc4d6a53c8925f27c52ae4d68499a2
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afdbd473df771d3d041a176519cf7ca7b3]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afdbd473df771d3d041a176519cf7ca7b3=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|39898|1*7446440
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afdbd473df771d3d041a176519cf7ca7b3=3*18438947
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|39898
+SLP=3*18440445
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|5f8cd2ebadd63ec1ac43d82426ce0068034310bee81a9a6fa5a09afc854b1798f2c979e2611ab791a7343103dd84948d7413ed8aaf847fd36cc1d13e3248ae8d2d437e2a953547135a0b0cd059b3c3fb51dd2d5f545d8e0f9ec5ae5df529bab1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afdc0291455488be1687650c56db4ce3dd]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afdc0291455488be1687650c56db4ce3dd=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|24794|1*7366433
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afdc0291455488be1687650c56db4ce3dd=3*18030617
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|24794
+SLP=3*18036152
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6b66dea468ff9845b955b911dbd2b08acb90edf8919d2524a8dcce58f531f4b7701a0a9f05d0d9e3f3bd02bd09361bbfff4adef5c0344f0cf8d6103f67303688222f3237177e395a5313bdb936e3cc53d9339413201b762f76b05cafd2cb92db
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afde32e9e30932003062def686ee433ed5]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afde32e9e30932003062def686ee433ed5=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|29269|1*7387717
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afde32e9e30932003062def686ee433ed5=3*18163100
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|29269
+SLP=3*18166222
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7c6aa0ab0debfbe0b669855e81ecb7a075e00475af203d1b8a3b0ca32e6249026736488417584d98ab2b298be56bfebb9db07e444ccea4d14a5a8bf80421ad9ddbea861c6e86e16ac14e4fcb08541717bbc1b1b5fc7cf94b15f937fd38ef1639
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afdf54fb644f832a62091835aee2f51843]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afdf54fb644f832a62091835aee2f51843=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|8073|1*7269974
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afdf54fb644f832a62091835aee2f51843=3*17689343
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|8073
+SLP=3*17697765
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|337d0e6f7220daf93e7a04bbb873c06e675e48ed06fd782a4be2ee703a54e58b958e562ccf9860ed91257c774938e7620da1ca42f1bb4e95bcddeb3f6aa8ad36302456254cdf5ed36f34eb615c874fea39f741cb7cb17a13bbaf828fc4deef01
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe09a959b01e0761b6d7395f95f97e0cafeb4059cbda0a71e2affdf6c88806804]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe09a959b01e0761b6d7395f95f97e0cafeb4059cbda0a71e2affdf6c88806804=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|17484|1*7321980
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe09a959b01e0761b6d7395f95f97e0cafeb4059cbda0a71e2affdf6c88806804=3*17879293
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|17484
+SLP=3*17894408
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|4a00f9383a4bf7eb7e649df305e40e7513f5c9c882af8c23a6812badc3f18e9583311725e8655c0f506124cfefc5067b0fe407d8fc612754daee8813bf4e51df75c6175b0f4e25b97cac5fda7765f4ede11c4b59cfa4d361740f81abbbfcd69566bbec95e17280d948bcce529eeb8ae6
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe0cabc86ce65c77ce3375d81a8f0dc53e89394abc30e2e5ff65d0e5977862961]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe0cabc86ce65c77ce3375d81a8f0dc53e89394abc30e2e5ff65d0e5977862961=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2923|1*7236907
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe0cabc86ce65c77ce3375d81a8f0dc53e89394abc30e2e5ff65d0e5977862961=3*17574485
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|2923
+SLP=3*17576395
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2f7a1682e112e133cf796f6475d1c66b5cfc47c1feab7debce9d0adb29546aa84f1ab7a8992c195ac912f52d39af8bbf46bb21986a3f71f402047061837ad11b74a4acc303a4e7461f136ee194a1a253b815f0b73b495a9c894d2bff158a609b3778c390ba8309a5bbc98cb29d0623d2
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe25cc93cdc601cd1e3aaa7217760b6e7]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe25cc93cdc601cd1e3aaa7217760b6e7=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22559|1*7364278
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe25cc93cdc601cd1e3aaa7217760b6e7=3*18020249
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22559
+SLP=3*18026014
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bf06f1a3ebefe02db3ee172bb8081b5303aae70e93fe98d77d1f5541d7bdc1e7e1164e0cba5a8c2195954d27451ec157e7c9fa56b8b96ceca4e2d87bde36c096cdaea3485bb511c86f1a3d07729cd3bb749be85c4130da23036bb1894fb8507b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe5bc9bac25a31b502614d3849444f366]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe5bc9bac25a31b502614d3849444f366=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|9747|1*7277031
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe5bc9bac25a31b502614d3849444f366=3*17724960
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|9747
+SLP=3*17748455
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|369a4447b25fa3fe6bef88f267f447631840deba34b611112f178d4c8027a2832dee8ed48c5ae097fe1feb33bc0365768cf581fed818af6692558060c2c1d839931270bc0ebb7e389893ab68cae93c423d2bc31cf62fdb04fcbd764f7ed4b54b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe648c82fa2aabf4e036bbcb5fab3e4e8]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe648c82fa2aabf4e036bbcb5fab3e4e8=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|11258|1*7283682
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe648c82fa2aabf4e036bbcb5fab3e4e8=3*17763811
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|11258
+SLP=3*17788976
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|b314b132ce53823d1ae6f1920308d49f6c08cdc4b82bb1499fb80e7d3ae8d0ac3d0531a84a7a8f34dbe2329c38cc9b95e205fa20d4f970ab6718e946bf341aeee0df74310b387808854c380ccf62c761dc2878c1df700f36a7002877b93949a1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe66612d89451d59dc1d7b5548b9d6be3d2eb61a8ef54ff00066091aa81d8fa4a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe66612d89451d59dc1d7b5548b9d6be3d2eb61a8ef54ff00066091aa81d8fa4a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|37761|1*7439719
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe66612d89451d59dc1d7b5548b9d6be3d2eb61a8ef54ff00066091aa81d8fa4a=3*18390440
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|37761
+SLP=3*18390941
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|30b6096c94e7bf847b5b67c9376fe29b38c7f7080c07e112e5fc67bcd2faf48367ecd005c963bb0fcc6f8fbdce47f62962ae3b0149fe62400f6b77d71d6fe507513e7fef2aa164310b419e4e89411df28be5b8f6436173272696ba09ca870326cd64378dc832e3d5a2dd5a303c3b61cf
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afe9681c883ca2f39c7b11e5cf14ff1b16f6d92b6a0f2afb17a23bab4e5f172b96]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afe9681c883ca2f39c7b11e5cf14ff1b16f6d92b6a0f2afb17a23bab4e5f172b96=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22148|1*7356964
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afe9681c883ca2f39c7b11e5cf14ff1b16f6d92b6a0f2afb17a23bab4e5f172b96=3*18006504
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|22148
+SLP=3*18007377
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|32d49e79dddc946b364572e95a8104425b64691c603bdc3efe613a65ddf3a16926f4e10956e7c092cfd0b00fcbf146ceff9b9e7290b1100b5d19edac6652a5a5a4a2a111088b62c66b4590f690dc03a8210715abadcc4e9da30442c7147096dac8227f0ec5a711e2cd1e3fbd78374ecb
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afed78a3be9deed6ffcede7a0c5b3f7b38]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afed78a3be9deed6ffcede7a0c5b3f7b38=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14496|1*7300661
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afed78a3be9deed6ffcede7a0c5b3f7b38=3*17851956
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14496
+SLP=3*17855957
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2b0a19179706efbd8171d7f5cb3c4b6c13d441de296b90b1b64dea8c8daef95cdd67345149966cc15fa465f443264cf2f12d2921054e77ca204b7a65068aa246ca669101da92f4a152157c61244e77fd4a82553ce75a877982dfb43936c4aea1
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afed81acb63d72b90ae5f43ccfba4520b9]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afed81acb63d72b90ae5f43ccfba4520b9=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|37899|1*7441106
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afed81acb63d72b90ae5f43ccfba4520b9=3*18391383
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|37899
+SLP=3*18413657
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|73f801bd7afdc19757ef69a9ab17b97a684d8a655153294a1a0b4216d12dfa511bf33f4327c9350372b068b87a4c16e8099595978397c747510a4e15bc0ea7a9c5bdfc722e205ad88910b0f8980d0f887db17cac74459c0bcb9bd09b917aa3a5
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f6032396636bb7f78dce12e0726cd7d920e]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f6032396636bb7f78dce12e0726cd7d920e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|25237|1*7368556
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f6032396636bb7f78dce12e0726cd7d920e=3*18040579
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|25237
+SLP=3*18040784
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|cf08b7c7abb07f7bed83bb4c911af0de926ba34b5083a9db15395f88b4b0744ed93793d5304bdc6901d5410615e32639d8e21d1cdb39b7047f4318bf3f32ff0da65ec4ffbe30b907f20aa4f6d8c29518ebf318e069b8f8466c199b9c831ed6017c0b77ca1f5d19376c54b1fd664f0ed3
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f609aa79509505e2e15931097a9306713a8]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f609aa79509505e2e15931097a9306713a8=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|25416|1*7369783
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f609aa79509505e2e15931097a9306713a8=3*18041114
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|25416
+SLP=3*18044615
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|d86d680ff1a84856c4be623904fcda0310fd29b581b5415ec56db270c2b747194f798d45ad5211e5bbe5fd7430c7935be8d1d2ad72537bf0c70dacb1ffb637180ebc3f6b021d4aee13eeb431e5cf7278251610e0cc132b7ecce459254767d92b38f321f3b7dce7153ee9defd813e8446
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afeda96600423024f663a685025cdc4b8a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afeda96600423024f663a685025cdc4b8a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|5827|1*7256281
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afeda96600423024f663a685025cdc4b8a=3*17614579
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|5827
+SLP=3*17616390
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|1c56ecaf189fb80c5ef81421447360a6fd0f5bfed93e8792ca602e762e02d67c4f422d7c0253f762c31967a26fa4c5eea04bcf7678c6ffc9e70f12edf3f1059038ab69e99db21b4aa1e35d3c672a591b9bcc65ebbe345d2427d34ccf0810990b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7aff3f89cbb22a58ff9c81bf7f8719a0c0da9af2e957537507cbf0f6e38dbc05146]
+A/protected_f6e2dfec109f9d80a2001837f3dda7aff3f89cbb22a58ff9c81bf7f8719a0c0da9af2e957537507cbf0f6e38dbc05146=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3296|1*7241463
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7aff3f89cbb22a58ff9c81bf7f8719a0c0da9af2e957537507cbf0f6e38dbc05146=3*17585617
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|3296
+SLP=3*17587261
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|43bd44c9cad18eb3281ae50c4aa52fdca2c4c730069a058cc73465adbb74a0dac69948c9453606237f4f4116c105d621c32c947b14d030178793a1702c5ea9258d9b4521ca2de3617ec11d182a478a991a081a1161ed20ff8aca9f8773b12d5982cce730f0f36a01787fd1ccc84dbef5
+
+[protected_f6e2dfec109f9d80a2001837f3dda7aff69bf77cf7c408252e1e127e7892c924]
+A/protected_f6e2dfec109f9d80a2001837f3dda7aff69bf77cf7c408252e1e127e7892c924=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21856|1*7355609
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7aff69bf77cf7c408252e1e127e7892c924=3*17995533
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21856
+SLP=3*18003005
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9acf9da4f539c6975b518f5ecef0a755f70d26cc17a68d4539a6e49eb952ba68bec42917cdb0b029d7d43c6c8cdc7fcfb2b3b14bb1d5441b1b3596b01efca9956658dfe7542f61c674bbbba0fa9a483b923a3488564efb91f90e9d880d879a09
+
+[protected_f6e2dfec109f9d80a2001837f3dda7aff7f07b0f316f3bb0dbf01e8c6c4b052b]
+A/protected_f6e2dfec109f9d80a2001837f3dda7aff7f07b0f316f3bb0dbf01e8c6c4b052b=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|16630|1*7315110
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7aff7f07b0f316f3bb0dbf01e8c6c4b052b=3*17874068
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|16630
+SLP=3*17876239
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|420882c382315c03d531e3ed7698fc9ada0d94b9a5095cc4df1d49eaf4a152e0414c6ae1e20aeeedd98a52a4237fb048ed8af51cb8b2a4a5b9cb150bc380d03550a783a74217a50b7c65b326c66c2297f092b51a9cb5be99bbb99f66a759a4d3
+
+[protected_f6e2dfec109f9d80a2001837f3dda7aff81e583203e13bdf9657073f3ea6a21b7c099e6d33a693df31238d7e52c9df4a]
+A/protected_f6e2dfec109f9d80a2001837f3dda7aff81e583203e13bdf9657073f3ea6a21b7c099e6d33a693df31238d7e52c9df4a=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14331|1*7297508
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7aff81e583203e13bdf9657073f3ea6a21b7c099e6d33a693df31238d7e52c9df4a=3*17843589
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|14331
+SLP=3*17844682
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9a469f1badf8babd64162626ce634878cbc9b218c696cbe96fd20dd56b03b01e44b1a26007bd1290ead61b236a448148ee2dfe50408bb35042c7cd081125b153de2564ecf62ee03638df8e52b0c4cbd0aefec88106a8e5781eb79923c695980b4c59e916acd7f787882ff3669300e9d0
+
+[protected_f6e2dfec109f9d80a2001837f3dda7affc03260a26790a33bd710f60ba564828]
+A/protected_f6e2dfec109f9d80a2001837f3dda7affc03260a26790a33bd710f60ba564828=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|39574|1*7443981
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7affc03260a26790a33bd710f60ba564828=3*18432909
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|39574
+SLP=3*18437128
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|9940086f8c2c520a6ea4ce9d6e686ae111d97ce39f535d9edd417c8ada921e08d7b47a3d2d000b732ea0021b8edf50b626ade7adbdd07142e98f540b9e8b5949719c5548df4aca93f83e811bff84df0800d6da791ed0c16cabd129841262c633
+
+[protected_f6e2dfec109f9d80a2001837f3dda7afff05ca5dcbe259e8e75ce34241cadc4e]
+A/protected_f6e2dfec109f9d80a2001837f3dda7afff05ca5dcbe259e8e75ce34241cadc4e=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|5914|1*7257524
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7afff05ca5dcbe259e8e75ce34241cadc4e=3*17617168
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|5914
+SLP=3*17621088
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|6ef2c9c1de5c75a63e8d7c91ed87698f6c86156a2cdc937e8827953ed52904166c9d10c4f7774d73ec720b4fba651c9c7a93e13d820e2607cfedd4e8676130430fc3e8a3cf13e75afedec67e7ec1c25a5644aa4152dcd58878085075355fea5b
+
+[protected_f6e2dfec109f9d80a2001837f3dda7affff2772098006d4a5187cd728ff1faf2]
+A/protected_f6e2dfec109f9d80a2001837f3dda7affff2772098006d4a5187cd728ff1faf2=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21762|1*7352034
+BinI32/protected_f6e2dfec109f9d80a2001837f3dda7affff2772098006d4a5187cd728ff1faf2=3*17991233
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|21762
+SLP=3*17991686
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|4a517e44aa9e2cbc7964fa4ab73ec2b7a7b874faa79ea43dabf1411a5b70f89e9165c9f7307091cb5023bc1a1e40776b7133d96cf5301bf055ae886407f4a2ae71e6ee39b1cddb7061c5452a29db903a8c5c1b3baf99e47965deae4ea7442e7d
+
+[protected_f70c7599922a8a93170a6dbf480bd9d79e606bff382f47e93e5148a5de1731ad29954b495834b2243ee573d938027a4d]
+A/protected_f70c7599922a8a93170a6dbf480bd9d79e606bff382f47e93e5148a5de1731ad29954b495834b2243ee573d938027a4d=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|71303|1*7662039
+BinI32/protected_f70c7599922a8a93170a6dbf480bd9d79e606bff382f47e93e5148a5de1731ad29954b495834b2243ee573d938027a4d=3*19577683
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|71303
+SLP=3*19587341
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|71b2d03cc2ac9af985d3028861be0b28b5a2328d220d49322b9958c433560186c8459baaa1dbaee1518d9efc614760514846e4d35fc0dcfbee7e2a7048f306f2138d6120baac6a05c2b4aae3c79d08cd3f41ae46c8f950ef5d107bf5f9fa4f8682551a79023eed142085041878446af2
+
+[protected_f70c7599922a8a93170a6dbf480bd9d7fd9c09a321f200d6b6468ece58970fae]
+A/protected_f70c7599922a8a93170a6dbf480bd9d7fd9c09a321f200d6b6468ece58970fae=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|71735|1*7665586
+BinI32/protected_f70c7599922a8a93170a6dbf480bd9d7fd9c09a321f200d6b6468ece58970fae=3*19592776
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|71735
+SLP=3*19602513
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0d30dc03f845b977643401163bb6e32a3e707855f49efa255f448f63b03faf37bde6aa624923786abb2d3e105a00da493a9b2c471faa8c71c564002d46153fcac3a0bbb613b3a6e9fe8e4132635a823b821c654d9965ee7a6ac6fc65ac2ca409
+
+[protected_f7adb85cf8e528790a6df0bab97e99f245caf58c74608961108330b5aa6dd728]
+A/protected_f7adb85cf8e528790a6df0bab97e99f245caf58c74608961108330b5aa6dd728=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52831|1*7517465
+BinI32/protected_f7adb85cf8e528790a6df0bab97e99f245caf58c74608961108330b5aa6dd728=3*18918913
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v|52831
+SLP=3*18919843
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|73187f5029a2281b1d798135991fcb0a9baa08d9abd70993c7059aee5c7ab8d879865481c844e831cb09d8b96956bbf800aff3bf9b21b1d858f1483894143b305a3c49c4ac47fd9f3f72254fb573fff0c33b5496391d9e7684517c30fd52cc9c
+
+[~MFT]
+0=29|0arriav_hssi_ver.mgf|2776632|419849
+1=50|1arriav_hssi_ver.mgf|7972783|7204686
+3=100|3arriav_hssi_ver.mgf|19635726|17463557
+
+[~U]
+$root=12|0*2707616|
+arriav_channel_pll=12|0*2736850||0x10
+arriav_hssi_8g_pcs_aggregate=12|0*2715686||0x10
+arriav_hssi_8g_rx_pcs=12|0*2717531||0x10
+arriav_hssi_8g_tx_pcs=12|0*2720750||0x10
+arriav_hssi_avmm_interface=12|0*2737985||0x10
+arriav_hssi_common_pcs_pma_interface=12|0*2722599||0x10
+arriav_hssi_common_pld_pcs_interface=12|0*2724585||0x10
+arriav_hssi_pipe_gen1_2=12|0*2725894||0x10
+arriav_hssi_pma_aux=12|0*2726972||0x10
+arriav_hssi_pma_cdr_refclk_select_mux=12|0*2732204||0x10
+arriav_hssi_pma_hi_pmaif=12|0*2738610||0x10
+arriav_hssi_pma_hi_xcvrif=12|0*2738906||0x10
+arriav_hssi_pma_int=12|0*2727479||0x10
+arriav_hssi_pma_rx_buf=12|0*2728523||0x10
+arriav_hssi_pma_rx_deser=12|0*2729212||0x10
+arriav_hssi_pma_tx_buf=12|0*2729786||0x10
+arriav_hssi_pma_tx_cgb=12|0*2730582||0x10
+arriav_hssi_pma_tx_ser=12|0*2731576||0x10
+arriav_hssi_refclk_divider=12|0*2736216||0x10
+arriav_hssi_rx_pcs_pma_interface=12|0*2732964||0x10
+arriav_hssi_rx_pld_pcs_interface=12|0*2733630||0x10
+arriav_hssi_tx_pcs_pma_interface=12|0*2734827||0x10
+arriav_hssi_tx_pld_pcs_interface=12|0*2735382||0x10
+arriav_pll_aux=12|0*2736559||0x10
+protected_0bdb7af13de5e5da3aed8523153a39f32456446fa36a1a7e80e8f51d006c3215=12|0*2653512|
+protected_0bdb7af13de5e5da3aed8523153a39f3360122b801c76c35ff20bbdcb772f694=12|0*2653133|
+protected_0bdb7af13de5e5da3aed8523153a39f34ce71fb4c006c955b996d1bb820a3874=12|0*2654761|
+protected_0bdb7af13de5e5da3aed8523153a39f3563b1dcb40368019d3498b6ffb71a994=12|0*2652802|
+protected_0bdb7af13de5e5da3aed8523153a39f3dc36db8db90f8237fe6be5c81b650370=12|0*2654302|
+protected_0bdb7af13de5e5da3aed8523153a39f3f335684fbfc8c2a9d9d20f430973627d=12|0*2653843|
+protected_10db91748e51d9e4d3e4262ec60a1b6c=12|0*2644351|
+protected_204a1a68ae5180da53495b8ce3f9b04c96fcbc35e50349a6f404efd0b5403775=12|0*2652183||0x10
+protected_2230dcb480c248c741c8dd4dc8089dbbdca5a07035ba6cba8e59a10739b49078e4e1ededee314a6e09b8970f422eed58=12|0*2675040||0x10
+protected_28491064809cd3603e6c898657c2ea6400c724957952527ce0b44b9f473b49d1=12|0*2550405||0x10
+protected_28491064809cd3603e6c898657c2ea640cd715aecb81644a734670d6c40be748=12|0*2544508||0x10
+protected_28491064809cd3603e6c898657c2ea641b51687b0cb2d124bf16e5b8b991c0f2=12|0*2547486||0x10
+protected_28491064809cd3603e6c898657c2ea641c4c7279dbee0eed9e7aa8903f6a16ddef706ca415fa0785f0004baf566db43c=12|0*2552353|
+protected_28491064809cd3603e6c898657c2ea641f9bccac53e6b32d73e225ceb945cbc9=12|0*2554034||0x10
+protected_28491064809cd3603e6c898657c2ea642157b1017778850f6a1eda9571ced702=12|0*2551926|
+protected_28491064809cd3603e6c898657c2ea6426b6fb226f413c0aba17a56a59ae45f6=12|0*2550912||0x10
+protected_28491064809cd3603e6c898657c2ea643f1032f59002adc36e12308523c6bf8d=12|0*2553591|
+protected_28491064809cd3603e6c898657c2ea6457f0ddd97ba93f2e53ec29960440c1e3=12|0*2549311||0x10
+protected_28491064809cd3603e6c898657c2ea645b0a3751c00585b4007e5081a31d697e=12|0*2551419||0x10
+protected_28491064809cd3603e6c898657c2ea647c8a44d6616030fbd8ee317346023051=12|0*2549978|
+protected_28491064809cd3603e6c898657c2ea6485f3c99e5318ff55a636df12264cfb9f=12|0*2544951||0x10
+protected_28491064809cd3603e6c898657c2ea649a2440bead634839b5c4ed732b8eb5d2=12|0*2544065|
+protected_28491064809cd3603e6c898657c2ea649dca4837fff3c9a495b33b3c9ca3fc2efd4701f02989cf363fa71f5663e8c817=12|0*2548708|
+protected_28491064809cd3603e6c898657c2ea64ae1ec011e03a4e7a04133985364fc275=12|0*2554509||0x10
+protected_28491064809cd3603e6c898657c2ea64cf291d8d677e3e77278e8a31da42186e=12|0*2546947||0x10
+protected_28491064809cd3603e6c898657c2ea64d1b7ffad374bba689be1f9b3f5547803=12|0*2545394|
+protected_28491064809cd3603e6c898657c2ea64d28efe1ef81c9589d67918dc5dbec9a1=12|0*2543670|
+protected_28491064809cd3603e6c898657c2ea64d40ac204b9b3e073b2cd8a020d833419=12|0*2546029||0x10
+protected_28491064809cd3603e6c898657c2ea64d94ac4ac518b5525182b60152c0bcbd9=12|0*2552748||0x10
+protected_28491064809cd3603e6c898657c2ea64eff0ebc1c80833cf135eb3a9a41cbe57=12|0*2548025||0x10
+protected_28491064809cd3603e6c898657c2ea64f5c1ff371b7f22912275a3a9127ca57d=12|0*2555000||0x10
+protected_28491064809cd3603e6c898657c2ea64fc6f9e7c2b3a315c41cccb9bd6e0d679=12|0*2546504|
+protected_3118f6029ab6551087370fe419ae74196ec84a2f58e5e5adf46e7e0aba24bbfa=12|0*2674229|
+protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5=12|0*2696086||0x10
+protected_367ccd33b55d5784e29671aeacfbb39f77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564=12|0*2701544|
+protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5=12|0*2695179||0x10
+protected_367ccd33b55d5784e29671aeacfbb39fc33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564=12|0*2700861|
+protected_37bb8d6cef94f3f079bfb874a4fb97f28f82eae4252ddd0c0cdb6b5bed7bd729=12|0*2643236|
+protected_37bb8d6cef94f3f079bfb874a4fb97f2b126125acb73372e6d70c8eb5e06ce00=12|0*2638990||0x10
+protected_3c024501438a03fa708e001b3054d788=12|0*2647888|
+protected_404d2c2fa6d424c6fc003ae717f7c9d300feb6cd6f267661cbf10d7a213309b5=12|0*2707157||0x10
+protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e255c81ddf2c6536a55fd71cbc228656096=12|0*2693616||0x10
+protected_53de7126c1ab920af67c0c920c96c4b8028860e868725159aea220f8f5565e25ff6b16814b1a20b8cc6846dcd64afded=12|0*2700162|
+protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de699185c81ddf2c6536a55fd71cbc228656096=12|0*2691381||0x10
+protected_53de7126c1ab920af67c0c920c96c4b89c4eeb031b6830b417c8cfb91de69918ff6b16814b1a20b8cc6846dcd64afded=12|0*2699399|
+protected_5c7c9b4b65403807edebf1b533e6b85d=12|0*2650652|
+protected_62708e8a620608cdd686164d9b2a343e7c099e6d33a693df31238d7e52c9df4a=12|0*2649558|
+protected_837b38a7f07865f747217746f70e36218f82eae4252ddd0c0cdb6b5bed7bd729=12|0*2641225|
+protected_837b38a7f07865f747217746f70e3621b126125acb73372e6d70c8eb5e06ce00=12|0*2635011||0x10
+protected_86c002c044f98d37e6830308c5161cb4=12|0*2657882|
+protected_9a58192a33db82d3f340bc302128b15129954b495834b2243ee573d938027a4d=12|0*2655316|
+protected_9a951bcc1b51bf615b4ce52452de78c5129f74f9996c9054ea86103855d2ca77a51fe293352be6c4cae975deb575de71=12|0*2632616||0x10
+protected_a2150148ee9bcbafd896635bec54bb60bef9d5eccc91f1fcd6a7c00d01c888fbe4e1ededee314a6e09b8970f422eed58=12|0*2703465||0x10
+protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c700feb6cd6f267661cbf10d7a213309b5=12|0*2698316||0x10
+protected_b3ed1f9140749a2410af82eeb65dfc5e77bebeaecb554ef39ad1bb2e854c26c7926c81c57b92be7a3a7cd2a7cdb1c564=12|0*2702846|
+protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae00feb6cd6f267661cbf10d7a213309b5=12|0*2697521||0x10
+protected_b3ed1f9140749a2410af82eeb65dfc5ec33828b6dd67031ff7d185947ee088ae926c81c57b92be7a3a7cd2a7cdb1c564=12|0*2702179|
+protected_ba5133dbc3589eefed23cd38a9d975c7527b9fb32376a4d04fce82696ee031a4=12|0*2704292||0x10
+protected_be4a4dcefd45adb4b6fa2716bb53fb055c1a3b4bcb8ed0c2a5383a9f4cce8ba4feb4059cbda0a71e2affdf6c88806804=12|0*2646826|
+protected_be4a4dcefd45adb4b6fa2716bb53fb05c6586a5fbc66d03f33de737a6a41ee50=12|0*2647269||0x10
+protected_c90dba4fa3cc13d2412559f15c3e6337=12|0*2656959|
+protected_c9865c0b45cd9b1cab9a399cd6ca64bd366bb3a877867f9591197d3d2f99ca2f=12|0*2649163||0x10
+protected_d01009257c727f787de3ac96110b2ce90d115cf6a1a463f99b84fd47ea0b1e43=12|0*2660512||0x10
+protected_d01009257c727f787de3ac96110b2ce91015dd1605c05930f2e3ec6034617202feb4059cbda0a71e2affdf6c88806804=12|0*2661707||0x10
+protected_d01009257c727f787de3ac96110b2ce91a096e160cbfa9ff87c3e271560365c9=12|0*2672004|
+protected_d01009257c727f787de3ac96110b2ce92cf1c2affc2b27b1e5b0288d07e26f34=12|0*2670542|
+protected_d01009257c727f787de3ac96110b2ce93f71e91426a3aa56f6035bde5b0b9a23feb4059cbda0a71e2affdf6c88806804=12|0*2664780||0x10
+protected_d01009257c727f787de3ac96110b2ce94d8fe2ce86ddfc243ab254030444f818=12|0*2669144|
+protected_d01009257c727f787de3ac96110b2ce976893646a67aac19f4a5c396131d5487feb4059cbda0a71e2affdf6c88806804=12|0*2666039||0x10
+protected_d01009257c727f787de3ac96110b2ce97ad8bb794478d2460eee5877b0aea927feb4059cbda0a71e2affdf6c88806804=12|0*2663569||0x10
+protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39de989e46599f294a65e0c70894324f89=12|0*2672655|
+protected_d01009257c727f787de3ac96110b2ce99aacaf0b29024dac716074d9da812e39f5a286ebb3945c850d28cae8cd5c37ed=12|0*2666930||0x10
+protected_d01009257c727f787de3ac96110b2ce9ae97c9b15c1042f3d6ad871c7a7e063e2733923f961684b5f96d97c5475274e4=12|0*2662726||0x10
+protected_d01009257c727f787de3ac96110b2ce9b1d744dbc7bf566d0bd375cbb091782e=12|0*2669907|
+protected_d01009257c727f787de3ac96110b2ce9c30de7ee0f636e364ca06e7ceca9362c=12|0*2671305|
+protected_d01009257c727f787de3ac96110b2ce9e6c793b11cf94bb58915a7b746f84ee42733923f961684b5f96d97c5475274e4=12|0*2675531||0x10
+protected_d01009257c727f787de3ac96110b2ce9ea193bb32dd528743f55a072d9d3b720=12|0*2659909||0x10
+protected_d01009257c727f787de3ac96110b2ce9ff6ce2c6bf93c26481abbef2ec7e79a33cd3924d4d3941abbe07e68357a4ca1d=12|0*2675958||0x10
+protected_e6c9de529497e17aa2ce47f242d41e950e51247e26323cc690c899afaf218d43feb4059cbda0a71e2affdf6c88806804=12|0*2681165|
+protected_e6c9de529497e17aa2ce47f242d41e951045296602885a5b9183a08da93f1c98=12|0*2676385|
+protected_e6c9de529497e17aa2ce47f242d41e95293ee6059b35e87e69c70a1e19c4700d=12|0*2687033|
+protected_e6c9de529497e17aa2ce47f242d41e952dde9f8682c2e77f19fa3c5e6252720e=12|0*2677884|
+protected_e6c9de529497e17aa2ce47f242d41e955330ce469e8442eaaf3939679fc19916=12|0*2681720||0x10
+protected_e6c9de529497e17aa2ce47f242d41e955fa7e5aa8280cbae3ae1af39561d976dfeb4059cbda0a71e2affdf6c88806804=12|0*2680754|
+protected_e6c9de529497e17aa2ce47f242d41e9581a9a0d68ba892db704e3cce3b51a4b9=12|0*2689599|
+protected_e6c9de529497e17aa2ce47f242d41e959129bed4ad927e8b02823f3a9aeef9b5=12|0*2680023|
+protected_e6c9de529497e17aa2ce47f242d41e95a352a4c6e86f058e6b406ec8004a41fd=12|0*2684782||0x10
+protected_e6c9de529497e17aa2ce47f242d41e95c1fd33d5853fa604d1d22ce11fcecaf9=12|0*2690778|
+protected_e6c9de529497e17aa2ce47f242d41e95dd5bc959c59b34e32fbadbfef1ca947a=12|0*2682547||0x10
+protected_e6c9de529497e17aa2ce47f242d41e95eaa360eea1d555705685952455495468=12|0*2688868|
+protected_f2866cceb05234b8ca55de876d6dc3415052887e4a6330cd9c9c8a9866e61038=12|0*2667885||0x10
+protected_f2866cceb05234b8ca55de876d6dc341bde137d70c8b7333bc2f2d6977cefd0a=12|0*2673306|
+protected_f6e2dfec109f9d80a2001837f3dda7af0051d1332392b9d12dfec8074660adcd=12|0*2620648||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af00c0b285c9e48901bb870c52325260b6=12|0*2613850|
+protected_f6e2dfec109f9d80a2001837f3dda7af0594bca034a75e2b2bd63078434fb6941b292128b80021ab3e9bef2413e2c866=12|0*2606625||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af06adaedb17667caf22610c880a0b77ef=12|0*2597511|
+protected_f6e2dfec109f9d80a2001837f3dda7af0762d1bcf541ef244d23a952e23eb0e2=12|0*2599336||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af080adf425a0b4d68567713ff15d0dcc654fa5a4afde8fe2abb95b23c5e0065c8=12|0*2586576|
+protected_f6e2dfec109f9d80a2001837f3dda7af0b2a1c5e8dc01dcc5c5f234626993f488238a849d4f6e6710d652f3e79ab97a2=12|0*2602890|
+protected_f6e2dfec109f9d80a2001837f3dda7af0d707bfddb1fc5a0581900759dc2fac2=12|0*2567945||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af101a1998226757437ec3376447667d64=12|0*2595803|
+protected_f6e2dfec109f9d80a2001837f3dda7af11f087a4e5000f5e58687137980fec7a=12|0*2609603|
+protected_f6e2dfec109f9d80a2001837f3dda7af13d78c316f15642372476ed2085c8828=12|0*2565197|
+protected_f6e2dfec109f9d80a2001837f3dda7af1bcf476e9e83dd3bda675f4bbe603d90=12|0*2620018||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af1cd9e13bd7b63b911e9300a003a7bdcd=12|0*2590007||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af2193bbf1bf1aa0860ecf48f9cd8dc5cd=12|0*2586085|
+protected_f6e2dfec109f9d80a2001837f3dda7af246d7d3b2bb05f48e71bd979f61029be=12|0*2616086||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af24953c912558f2593c06e95c1b48fc9e=12|0*2616561|
+protected_f6e2dfec109f9d80a2001837f3dda7af24a6c068b478c87abd97ad792ffc65df=12|0*2575634|
+protected_f6e2dfec109f9d80a2001837f3dda7af2f1982a8d1a060cb69d1321a2768ccee=12|0*2608888||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af2f68c3b10894980cd691ca3edff1be3b01ebf097e8fb2485b67b5d6e65268225=12|0*2590322||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af3439cc1737ae4a2fd792d758517e5916=12|0*2628844||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af345bcda49a9cde3f4fcc40bda3611f20d2eb61a8ef54ff00066091aa81d8fa4a=12|0*2612132||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af38030e848cb10a7d0b0e409fb140ff35feefed4327e1f33fe6e35d26a4ca2981=12|0*2627830||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af38f2a4067127de54a7c177ccd581e7a7=12|0*2610585||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af3d0b0ef65a8b235df95bec506e79b373=12|0*2615547||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af3e1d560164ead80f951b46096cde7ed8=12|0*2596134|
+protected_f6e2dfec109f9d80a2001837f3dda7af41eabc0410c6668573f8556fdc4c84c4ba888db3d427be581b132f4598405001=12|0*2599763||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af42b18b571b209227f1d32cfb8be799450de6bc1bc03e77df77afe30ef595d894=12|0*2604880||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af453c7f9fbf55216cefa91843320d17c7=12|0*2629223||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af46c632734ee6afe09ed366b87333881a=12|0*2612879|
+protected_f6e2dfec109f9d80a2001837f3dda7af4b3b46fdb345706b0a9009a7e077b4dd543c47a53ef6f65b1963293edb018aec32396636bb7f78dce12e0726cd7d920e=12|0*2593385|
+protected_f6e2dfec109f9d80a2001837f3dda7af4de101ffda1291816e3454a89c74cc86=12|0*2575287|
+protected_f6e2dfec109f9d80a2001837f3dda7af4ff23de0935cac32481bdc592ac6f862b27610f29b9434a0fdcfa3cf4cfea8f8=12|0*2557802|
+protected_f6e2dfec109f9d80a2001837f3dda7af504ce9983179f39ff130052d46d3c8637c099e6d33a693df31238d7e52c9df4a=12|0*2572400|
+protected_f6e2dfec109f9d80a2001837f3dda7af5206480d9411a36cfa6a9690ba0a7022=12|0*2563927|
+protected_f6e2dfec109f9d80a2001837f3dda7af5eaf070117234399507dbb05a95c5efcfeb4059cbda0a71e2affdf6c88806804=12|0*2576776|
+protected_f6e2dfec109f9d80a2001837f3dda7af60c3bd036751987fbd221f84100cf037=12|0*2605323||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af61479604a43ece3688239f0a1d272c73=12|0*2589068||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af62df6e37da755101c266095277b2eb43=12|0*2607495||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af632cd841b60d527a75168f016849d631=12|0*2555982|
+protected_f6e2dfec109f9d80a2001837f3dda7af639433c684c1ad0a4c4ffd5c0439a249=12|0*2628257||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af63a4d71b66d90faf39f7fb6caf8e3cb4=12|0*2622222||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af6531f415445a79725caad5081db62ece=12|0*2559371|
+protected_f6e2dfec109f9d80a2001837f3dda7af654df57338d955e5a8009b23782afae8=12|0*2588230|
+protected_f6e2dfec109f9d80a2001837f3dda7af69a77febf5a65675f0d09a93fa399197=12|0*2595472|
+protected_f6e2dfec109f9d80a2001837f3dda7af6a6b0ec4521dad3fa5b00033568d698d=12|0*2556409|
+protected_f6e2dfec109f9d80a2001837f3dda7af715b062a3d12f5dd1eed4f38c36c3958c927e06a8fbd200188bd2a690b1d0a42=12|0*2593908|
+protected_f6e2dfec109f9d80a2001837f3dda7af71e1bfe052cd2914ef00def4c12966a3=12|0*2618631|
+protected_f6e2dfec109f9d80a2001837f3dda7af7431a705e6b1120359f08cd19152055b=12|0*2584783||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f3b94f82a02e353df323c19b095d4dcf7=12|0*2591843||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af778b7d92151a96658593a72a58bc9d2f92097860e782dd8e31f14f021b454ba6=12|0*2592670||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af77ab678c95293f7f10e205f7a6188c55=12|0*2571909||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af80d4f7d1d330c632a143c797d23842b5=12|0*2583353||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af843cfccb227c869e81b90ba072b3dcde=12|0*2620333||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af85ab744ffff56c328704cc00b32b8fd722cdf441349f0821a48f7a0be8adc026=12|0*2614197||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af8842559228fe1541da2a9e194da22818=12|0*2590701||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af8d058405609ed307e8a004e81876f8a15cb4f3147fe7439a0bf4ec3e59835832=12|0*2574369|
+protected_f6e2dfec109f9d80a2001837f3dda7af9061ef33815b424811390687d37dfc4d=12|0*2573622||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af912184b4c61f3b20df6df3dbe7114ec6=12|0*2595141|
+protected_f6e2dfec109f9d80a2001837f3dda7af96393b4e06cf7843af13239db25ffaabfeb4059cbda0a71e2affdf6c88806804=12|0*2561846|
+protected_f6e2dfec109f9d80a2001837f3dda7af9832dd81b6a1f168e36a2ba4be7eeb9b=12|0*2598653|
+protected_f6e2dfec109f9d80a2001837f3dda7af9ac579870b56c842cbd31e50c31fa627=12|0*2623348||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7af9e4de64cc5e22a2b75e56f23878ed3a9=12|0*2591224||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afa11f03b2726ab1b86c3fac21bf1626800637c0d4e7910314e5f6c3445ee0ece2=12|0*2620963||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afa42f7fbb1f3189aa1a926370e686a591feb4059cbda0a71e2affdf6c88806804=12|0*2607906||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afa7250ecabb83ed28600dce7c873339f0=12|0*2588641|
+protected_f6e2dfec109f9d80a2001837f3dda7afacf8ac0334c943d47b3e844d6896dab2=12|0*2605926||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afaf1c7eefc22e35d9c175a0f0fd5606e1=12|0*2573051||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afafdbf22d694d1590adb009dab53ad179=12|0*2617820|
+protected_f6e2dfec109f9d80a2001837f3dda7afb079d024ea7bc1368b35e8be0afed326=12|0*2614880||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afb3086c807372420e091e9c7184ab762e=12|0*2622857||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afb67c511e052dc0354b1ec838a7bde11e=12|0*2577379|
+protected_f6e2dfec109f9d80a2001837f3dda7afb7207afc3fe8a71eae2bbc65fc4fc17d=12|0*2632093||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afb968a546338fa0f7343329200c6551e2=12|0*2598146|
+protected_f6e2dfec109f9d80a2001837f3dda7afbca7a2245cf0f3739f9eff1fb1c6376d=12|0*2607068||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afbeafa179a4d1922e22602d720d863b0b=12|0*2564546|
+protected_f6e2dfec109f9d80a2001837f3dda7afbfa80abc88c6ace0ab7a2c4bcfd64a97=12|0*2566675||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afc43b3702ff9eda1329a07c4bafa64874=12|0*2585434|
+protected_f6e2dfec109f9d80a2001837f3dda7afc4aafb56f47cd933bca330bd221fccdd=12|0*2630978||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afc75e9b9c33b160c38060edb508e68e8962a529d8e50b5ff51776820ba44d5aad=12|0*2558293|
+protected_f6e2dfec109f9d80a2001837f3dda7afc7ad4c0dbacec718d204d4600ba6f1f1=12|0*2627499|
+protected_f6e2dfec109f9d80a2001837f3dda7afc82b111fda493b6e60df3e20f053428b=12|0*2568644|
+protected_f6e2dfec109f9d80a2001837f3dda7afcafc9690f9393a8279b4d23aacb992c1=12|0*2565992|
+protected_f6e2dfec109f9d80a2001837f3dda7afcce1c30198b72aa2300574f0bd8acb97=12|0*2556884|
+protected_f6e2dfec109f9d80a2001837f3dda7afce639447385cb1f6a867b2924dda490288bd484b8679ddcab978e975d7dfd84c=12|0*2610062|
+protected_f6e2dfec109f9d80a2001837f3dda7afcebba1775840b21a76735a9d20efc3123dd8c3ada98a7c7372af265dc55a51a7=12|0*2604261|
+protected_f6e2dfec109f9d80a2001837f3dda7afd1bf7e200766ec25c17beacd52328397180e835c455d52ae6cc3d288bcaafafee17ed458c5705fb66fc08560f0da8ef6=12|0*2587307||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afd6bea40f0879d9d38d69d0a04d73eccfbb35a0cea0ca2bc91dbe0862f6798752=12|0*2594383|
+protected_f6e2dfec109f9d80a2001837f3dda7afd98c0cbe8923a82878052c64970b827c=12|0*2558880|
+protected_f6e2dfec109f9d80a2001837f3dda7afdbd473df771d3d041a176519cf7ca7b3=12|0*2626960|
+protected_f6e2dfec109f9d80a2001837f3dda7afdc0291455488be1687650c56db4ce3dd=12|0*2600889|
+protected_f6e2dfec109f9d80a2001837f3dda7afde32e9e30932003062def686ee433ed5=12|0*2608397||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afdf54fb644f832a62091835aee2f51843=12|0*2567406||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afe09a959b01e0761b6d7395f95f97e0cafeb4059cbda0a71e2affdf6c88806804=12|0*2583956||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afe0cabc86ce65c77ce3375d81a8f0dc53e89394abc30e2e5ff65d0e5977862961=12|0*2555491|
+protected_f6e2dfec109f9d80a2001837f3dda7afe25cc93cdc601cd1e3aaa7217760b6e7=12|0*2600206|
+protected_f6e2dfec109f9d80a2001837f3dda7afe5bc9bac25a31b502614d3849444f366=12|0*2569727||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afe648c82fa2aabf4e036bbcb5fab3e4e8=12|0*2570842||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afe66612d89451d59dc1d7b5548b9d6be3d2eb61a8ef54ff00066091aa81d8fa4a=12|0*2624767||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afe9681c883ca2f39c7b11e5cf14ff1b16f6d92b6a0f2afb17a23bab4e5f172b96=12|0*2597084||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afed78a3be9deed6ffcede7a0c5b3f7b38=12|0*2576013|
+protected_f6e2dfec109f9d80a2001837f3dda7afed81acb63d72b90ae5f43ccfba4520b9=12|0*2625482||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f6032396636bb7f78dce12e0726cd7d920e=12|0*2601556|
+protected_f6e2dfec109f9d80a2001837f3dda7afed8770c0fbc3a1d18c4084c9ce0b5f609aa79509505e2e15931097a9306713a8=12|0*2602239||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7afeda96600423024f663a685025cdc4b8a=12|0*2562881|
+protected_f6e2dfec109f9d80a2001837f3dda7aff3f89cbb22a58ff9c81bf7f8719a0c0da9af2e957537507cbf0f6e38dbc05146=12|0*2557295|
+protected_f6e2dfec109f9d80a2001837f3dda7aff69bf77cf7c408252e1e127e7892c924=12|0*2596465||0x10
+protected_f6e2dfec109f9d80a2001837f3dda7aff7f07b0f316f3bb0dbf01e8c6c4b052b=12|0*2581390|
+protected_f6e2dfec109f9d80a2001837f3dda7aff81e583203e13bdf9657073f3ea6a21b7c099e6d33a693df31238d7e52c9df4a=12|0*2574876|
+protected_f6e2dfec109f9d80a2001837f3dda7affc03260a26790a33bd710f60ba564828=12|0*2626165|
+protected_f6e2dfec109f9d80a2001837f3dda7afff05ca5dcbe259e8e75ce34241cadc4e=12|0*2563356|
+protected_f6e2dfec109f9d80a2001837f3dda7affff2772098006d4a5187cd728ff1faf2=12|0*2594810|
+protected_f70c7599922a8a93170a6dbf480bd9d79e606bff382f47e93e5148a5de1731ad29954b495834b2243ee573d938027a4d=12|0*2704767||0x10
+protected_f70c7599922a8a93170a6dbf480bd9d7fd9c09a321f200d6b6468ece58970fae=12|0*2706378|
+protected_f7adb85cf8e528790a6df0bab97e99f245caf58c74608961108330b5aa6dd728=12|0*2650305|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

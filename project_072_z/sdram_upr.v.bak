@@ -1,0 +1,226 @@
+// TOP
+
+
+module sdram_upr
+#(
+     parameter SDRAM_ROW_WIDTH_BIT  = 13,
+     parameter SDRAM_COL_WIDTH_BIT  = 10,
+	 parameter SDRAM_BANK_WIDTH_BIT = 2,
+	 parameter SDRAM_DATA_WIDTH_BIT = 16,
+	 
+	 parameter SDRAM_CAS            = 3,   // cas 2 or 3
+//	 parameter SDRAM_CAS            = 2,   // cas 2 or 3
+	 
+     parameter tPOWERUP   = 16'd14285, // delay perd init 100 us
+	 parameter tREF       = 64,        // ms
+	 parameter tREF_COUNT = 8192,      // refresh counter (cycle refresh)
+	 parameter tCK        = 8          // Period SDRAM CLK (pri 143Mhz(7ns) nehvataet refresha.)
+)
+
+(
+	input wire i_clk, 
+
+	input  wire [15:0] data_wr,
+	input  wire [14:0] adr_wr,
+	input  wire   array_wr_req,
+	output wire   wr_ok,  
+	
+	output wire [15:0] data_rd,
+  	input  wire [14:0] adr_rd,
+	input  wire   array_rd_req,
+	output wire   rd_ok,
+	 
+	 output wire o_sys_clk,
+	 output wire o_clk_shift,
+ 	 output wire o_ready,
+	 
+	 // interface for SDRAM
+	 output wire o_sdram_clk,
+	 output wire o_sdram_cke,
+	 output wire o_sdram_cs_l,
+	 output wire o_sdram_ras_l,
+	 output wire o_sdram_cas_l,
+	 output wire o_sdram_we_l,
+     output wire [SDRAM_ROW_WIDTH_BIT -1:0] o_sdram_addr,	 
+	 output wire [SDRAM_BANK_WIDTH_BIT-1:0] o_sdram_ba,
+	 inout wire  [SDRAM_DATA_WIDTH_BIT-1:0] o_sdram_dq,
+	 output wire o_sdram_dqml,
+	 output wire o_sdram_dqmh,
+);
+
+wire [SDRAM_DATA_WIDTH_BIT-1:0] sdram_data_o;
+
+reg  [SDRAM_DATA_WIDTH_BIT-1:0] i_ram_data = 0;
+wire [SDRAM_DATA_WIDTH_BIT-1:0] o_ram_data;
+reg  [SDRAM_DATA_WIDTH_BIT-1:0] ram_data_r = 0;
+reg  [SDRAM_ROW_WIDTH_BIT + SDRAM_COL_WIDTH_BIT + SDRAM_BANK_WIDTH_BIT - 1:0] ram_addr = 0;
+reg  [SDRAM_COL_WIDTH_BIT:0] ram_len = 0;
+reg  ram_read_req    = 0;
+wire ram_read_valid;
+reg  ram_write_req   = 0;
+wire ram_write_valid;
+wire sdram_buf_we;
+
+
+sdram_cntr
+#(
+     .SDRAM_ROW_WIDTH_BIT(SDRAM_ROW_WIDTH_BIT),
+     .SDRAM_COL_WIDTH_BIT(SDRAM_COL_WIDTH_BIT),
+	 .SDRAM_BANK_WIDTH_BIT(SDRAM_BANK_WIDTH_BIT),
+	 .SDRAM_DATA_WIDTH_BIT(SDRAM_DATA_WIDTH_BIT),
+	 .SDRAM_CAS(SDRAM_CAS),
+	 .tPOWERUP(tPOWERUP),
+	 .tREF(tREF),
+	 .tREF_COUNT(tREF_COUNT),
+	 .tCK(tCK)
+	 
+)
+SDRAM_CNTR0
+(
+    .i_clk(             i_clk         ),
+	 
+	 // interface for manager RAM
+	 .i_ram_data(        i_ram_data         ),
+	 .o_ram_data(        o_ram_data         ),
+
+	 .i_ram_addr(        ram_addr           ),
+	 .i_ram_len(         ram_len            ),
+
+	 .i_ram_read_req(    ram_read_req       ),
+	 .o_ram_read_valid(  ram_read_valid     ),
+	 
+	 .i_ram_write_req(   ram_write_req      ),
+	 .o_ram_write_valid( ram_write_valid    ),
+	 
+	 .o_ready(           o_ready            ),
+	 
+	 // interface for SDRAM
+	 .i_sdram_data(      o_sdram_dq         ),
+	 .o_sdram_data(      sdram_data_o       ),
+	 .o_sdram_addr(      o_sdram_addr       ),
+
+//	 .o_sdram_clk(       o_sdram_clk        ),
+	 .o_sdram_clk(       o_sys_clk          ),
+
+	 .o_sdram_cke(       o_sdram_cke        ),
+	 .o_sdram_cs_l(      o_sdram_cs_l       ),
+	 .o_sdram_ras_l(     o_sdram_ras_l      ),
+	 .o_sdram_cas_l(     o_sdram_cas_l      ),
+	 .o_sdram_we_l(      o_sdram_we_l       ),
+	 .o_sdram_buf_we(    sdram_buf_we       ),
+	 .o_sdram_ba(        o_sdram_ba         ),
+	 .o_sdram_dqml(      o_sdram_dqml       ),
+	 .o_sdram_dqmh(      o_sdram_dqmh       )
+
+);
+
+
+localparam PAGE_SIZE = 2**SDRAM_COL_WIDTH_BIT;
+localparam ADDR_ROW_BA_END = 15'b111_1111_1111_1111; 
+//localparam ADDR_ROW_BA_END = 15'b000_0000_0000_0000; 
+//localparam ADDR_ROW_BA_END = 15'b000_0000_0000_0011; 
+
+reg [7:0] data_num = 0; // nomer danih v tabliche
+
+reg [SDRAM_BANK_WIDTH_BIT + SDRAM_ROW_WIDTH_BIT - 1:0] addr_row_ba = 0; // adress BANK & ROW
+reg [SDRAM_DATA_WIDTH_BIT - 1:0] data_w = 0; //data for write
+
+reg [15:0] st = 0;
+
+reg [SDRAM_COL_WIDTH_BIT:0] cnt = 0; 
+ 	
+reg reg_wr_ok=0;
+reg reg_rd_ok=0;
+assign wr_ok = ram_write_valid;
+assign rd_ok = ram_read_valid;
+
+always @(posedge i_clk)
+if (array_wr_req) st<=0; else
+if (array_rd_req) st<=4; else	
+begin
+    case (st)	 
+	 0:
+	 begin
+	   addr_row_ba <= adr_wr;
+	   data_num    <= 0;
+	   data_w      <= data_wr;
+	   if (o_ready) 
+	   begin
+	      st <= st + 1'b1;
+	   end
+	 end	 
+	 // write page ---------------------------------------------
+	 1:
+	 begin
+		cnt           <= 0;
+	    ram_write_req <= 1;
+	    ram_addr      <= {addr_row_ba, 9'b0_0000_0000};
+		ram_len       <= PAGE_SIZE;
+		st            <= st + 1'b1;
+	 end	 
+	 2:
+	 begin
+		  if (cnt == PAGE_SIZE) 
+		  begin
+		      st <= st + 1'b1;
+		  end
+		  if (ram_write_valid) 
+		  begin
+			  reg_wr_ok<=1;
+		      i_ram_data    <= data_wr;
+		      ram_write_req <= 0;
+		      cnt           <= cnt + 1'b1;
+		  end else reg_wr_ok<=0;
+	 end
+	 // reset pered read ---------------------------------------
+	 4:
+	 begin
+	     addr_row_ba <= adr_rd;
+	     st   <= st + 1'b1;
+	 end
+	 
+    // read page -----------------------------------------------
+	 5:
+	 begin
+		  cnt           <= 0;
+	      ram_read_req  <= 1;
+		  ram_addr      <= {addr_row_ba, 9'b0_0000_0000};
+		  ram_len       <= PAGE_SIZE;
+		  st            <= st + 1'b1;
+	 end 	 
+	 6:
+	 begin		  
+		  if (ram_read_valid) 
+		  begin	
+			  reg_rd_ok<=1;
+		      ram_data_r    <= o_ram_data;
+		      ram_read_req  <= 0;
+		      cnt           <= cnt + 1'b1;
+		  end else
+		  begin
+			 reg_rd_ok<=0;  
+		  if (cnt == PAGE_SIZE) 
+			  begin
+		      st <= 10;
+		  	  end
+		  end
+	 end
+ 	 10:
+	 begin
+	     ram_read_req  <= 0;
+	     ram_write_req <= 0;
+	 end
+	 
+	 
+	 endcase
+end
+
+// assign ---------------------------------------------------------
+assign o_sdram_dq = sdram_buf_we ? sdram_data_o : 16'hz;
+assign data_rd = ram_data_r;
+
+assign o_sdram_clk       = i_clk;
+assign o_sys_clk         = i_clk;
+assign o_clk_shift       = i_clk;
+
+endmodule

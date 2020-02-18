@@ -1,0 +1,321 @@
+createdesign arria5_tst1 C:/intelFPGA/17.0/project
+# Design arria5_tst1 created
+opendesign -a arria5_tst1.adf
+# Design: 15:02, 22 February 2018
+# Design: Opening design "C:\intelFPGA\17.0\project\arria5_tst1\arria5_tst1.adf"
+waveformmode ASDB
+alib verilog_libs/altera_ver
+# Warning: Library altera_ver already exists
+amap altera_ver verilog_libs/altera_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\altera_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work altera_ver c:/intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v
+# done
+alib verilog_libs/lpm_ver
+# Warning: Library lpm_ver already exists
+amap lpm_ver verilog_libs/lpm_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\lpm_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work lpm_ver c:/intelfpga/17.0/quartus/eda/sim_lib/220model.v
+# done
+alib verilog_libs/sgate_ver
+# Warning: Library sgate_ver already exists
+amap sgate_ver verilog_libs/sgate_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\sgate_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work sgate_ver c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v
+# done
+alib verilog_libs/altera_mf_ver
+# Warning: Library altera_mf_ver already exists
+amap altera_mf_ver verilog_libs/altera_mf_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\altera_mf_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work altera_mf_ver c:/intelfpga/17.0/quartus/eda/sim_lib/altera_mf.v
+# done
+alib verilog_libs/altera_lnsim_ver
+# Warning: Library altera_lnsim_ver already exists
+amap altera_lnsim_ver verilog_libs/altera_lnsim_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\altera_lnsim_ver.lib" does not exist.
+alog  -sv2k5 -dbg -msg 0 -work altera_lnsim_ver c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv
+# done
+alib verilog_libs/arriav_ver
+# Warning: Library arriav_ver already exists
+amap arriav_ver verilog_libs/arriav_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\arriav_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work arriav_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hmi_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_ver c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v
+# done
+alib verilog_libs/arriav_hssi_ver
+# Warning: Library arriav_hssi_ver already exists
+amap arriav_hssi_ver verilog_libs/arriav_hssi_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\arriav_hssi_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work arriav_hssi_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_hssi_ver c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v
+# done
+alib verilog_libs/arriav_pcie_hip_ver
+# Warning: Library arriav_pcie_hip_ver already exists
+amap arriav_pcie_hip_ver verilog_libs/arriav_pcie_hip_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\arriav_pcie_hip_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work arriav_pcie_hip_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_pcie_hip_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_pcie_hip_ver c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_pcie_hip_atoms.v
+# done
+addfile -c -auto C:/intelFPGA/17.0/project/pll1.vo
+# Design: Error: File "C:\intelFPGA\17.0\project\pll1.vo" does not exist or does not have READ permission
+# Error: Cannot add file C:\intelFPGA\17.0\project\pll1.vo to current design
+addfile -c -auto C:/intelFPGA/17.0/project/arria5_tst1.v
+# Adding file C:\intelFPGA\17.0\project\arria5_tst1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/Block_upr_spi1.v
+# Adding file C:\intelFPGA\17.0\project\Block_upr_spi1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/pll1/pll1_0002.v
+# Adding file C:\intelFPGA\17.0\project\pll1\pll1_0002.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/tst_rst_modul.v
+# Adding file C:\intelFPGA\17.0\project\tst_rst_modul.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi4.v
+# Adding file C:\intelFPGA\17.0\project\bufi4.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi5.v
+# Adding file C:\intelFPGA\17.0\project\bufi5.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout3.v
+# Adding file C:\intelFPGA\17.0\project\bufout3.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi3.v
+# Adding file C:\intelFPGA\17.0\project\bufi3.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/Block_control_GPHY.v
+# Adding file C:\intelFPGA\17.0\project\Block_control_GPHY.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/buf_out1.v
+# Adding file C:\intelFPGA\17.0\project\buf_out1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/buf_io1.v
+# Adding file C:\intelFPGA\17.0\project\buf_io1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/buf34_out.v
+# Adding file C:\intelFPGA\17.0\project\buf34_out.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufin20.v
+# Adding file C:\intelFPGA\17.0\project\bufin20.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout10.v
+# Adding file C:\intelFPGA\17.0\project\bufout10.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout7.v
+# Adding file C:\intelFPGA\17.0\project\bufout7.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi1.v
+# Adding file C:\intelFPGA\17.0\project\bufi1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout17.v
+# Adding file C:\intelFPGA\17.0\project\bufout17.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi6.v
+# Adding file C:\intelFPGA\17.0\project\bufi6.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout16.v
+# Adding file C:\intelFPGA\17.0\project\bufout16.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout18.v
+# Adding file C:\intelFPGA\17.0\project\bufout18.v ... Done
+alib mypll
+# Adding library O.K.
+alog  -v2k5 -dbg -work mypll c:/intelfpga/17.0/project/db/ip/mypll/mypll.v +incdir+c:/intelfpga/17.0/project/db/ip/mypll
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP2515 ../../db/ip/mypll/mypll.v : (14, 7): Undefined module: mypll_altclkctrl_0 was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Unit top modules: mypll.
+# $root top modules: mypll.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog  -v2k5 -dbg -work mypll c:/intelfpga/17.0/project/db/ip/mypll/submodules/mypll_altclkctrl_0.v +incdir+c:/intelfpga/17.0/project/db/ip/mypll/submodules
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 ../../db/ip/mypll/submodules/mypll_altclkctrl_0.v : (54, 31): Undefined module: arriav_clkena was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: mypll.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work arria5_tst1 $dsn/src/arria5_tst1.v $dsn/src/Block_upr_spi1.v $dsn/src/pll1_0002.v $dsn/src/tst_rst_modul.v $dsn/src/bufi4.v $dsn/src/bufi5.v $dsn/src/bufout3.v $dsn/src/bufi3.v $dsn/src/Block_control_GPHY.v $dsn/src/buf_out1.v $dsn/src/buf_io1.v $dsn/src/buf34_out.v $dsn/src/bufin20.v $dsn/src/bufout10.v $dsn/src/bufout7.v $dsn/src/bufi1.v $dsn/src/bufout17.v $dsn/src/bufi6.v $dsn/src/bufout16.v $dsn/src/bufout18.v
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP2515 arria5_tst1.v : (359, 7): Undefined module: pll1 was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 arria5_tst1.v : (368, 19): Undefined module: mypll was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 arria5_tst1.v : (1324, 7): Undefined module: custom_phy was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 pll1_0002.v : (85, 7): Undefined module: altera_pll was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 bufi4.v : (70, 7): Undefined module: arriav_io_ibuf was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 bufout3.v : (79, 7): Undefined module: arriav_io_obuf was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2641 arria5_tst1.v : (1118, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1119, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1120, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1121, 25): Redundant digits given in number 1'h00.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: top_module pll1_0002.
+# $root top modules: top_module pll1_0002.
+# Compile success 0 Errors 10 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 arria5_tst1.v (353): Design unit pll1 instantiated in arria5_tst1.top_module not found in searched libraries: arria5_tst1.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 arria5_tst1.v (353): Design unit pll1 instantiated in arria5_tst1.top_module not found in searched libraries: arria5_tst1.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# Design: 15:07, 22 February 2018
+# Design: Opening design "C:\My_Designs\b072\arria5_tst1\arria5_tst1.adf"
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# Design Explorer: Shortcut to "C:\My_Designs\b072\arria5_tst1\arria5_tst1.aws" design added.
+alog -O2 -l altera_lnsim_ver -l altera_mf_ver -l altera_ver -l arria5_tst1 -l arriav_hssi_ver -l arriav_pcie_hip_ver -l arriav_ver -l lpm_ver -l mypll -l sgate_ver -sve -msg 5 -sv2k12 -work arria5_tst1 $dsn/src/arria5_tst1.v $dsn/src/Block_upr_spi1.v $dsn/src/pll1_0002.v $dsn/src/tst_rst_modul.v $dsn/src/bufi4.v $dsn/src/bufi5.v $dsn/src/bufout3.v $dsn/src/bufi3.v $dsn/src/Block_control_GPHY.v $dsn/src/buf_out1.v $dsn/src/buf_io1.v $dsn/src/buf34_out.v $dsn/src/bufin20.v $dsn/src/bufout10.v $dsn/src/bufout7.v $dsn/src/bufi1.v $dsn/src/bufout17.v $dsn/src/bufi6.v $dsn/src/bufout16.v $dsn/src/bufout18.v $dsn/src/pll1.vo $dsn/src/mypll.v
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Info: VCP2110 Module altera_pll found in library altera_lnsim_ver.
+# Info: VCP2110 Module arriav_io_ibuf found in library arriav_ver.
+# Info: VCP2110 Module arriav_io_obuf found in library arriav_ver.
+# Info: VCP2110 Module mypll_altclkctrl_0 found in library mypll.
+# Pass 2. Processing instantiations.
+# Warning: VCP2597 pll1.vo : (46, 1): Some unconnected ports remain at instance: pll1_altera_pll_altera_pll_i_639. Module altera_pll has unconnected  port(s) : refclk1, phase_en, updn, num_phase_shifts, scanclk, cntsel, reconfig_to_pll, extswitch, adjpllin, cclk, fboutclk, phase_done, reconfig_from_pll, activeclk, clkbad, phout, lvds_clk, loaden, extclk_out, cascade_out, zdbfbclk.
+# Warning: VCP2597 pll1_0002.v : (17, 1): Some unconnected ports remain at instance: altera_pll_i. Module altera_pll has unconnected  port(s) : refclk1, phase_en, updn, num_phase_shifts, scanclk, cntsel, reconfig_to_pll, extswitch, adjpllin, cclk, phase_done, reconfig_from_pll, activeclk, clkbad, phout, lvds_clk, loaden, extclk_out, cascade_out, zdbfbclk.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2641 arria5_tst1.v : (1118, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1119, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1120, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1121, 25): Redundant digits given in number 1'h00.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: top_module pll1_0002.
+# $root top modules: top_module pll1_0002.
+# Compile success 0 Errors 6 Warnings  Analysis time: 1[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+asim -O5 -PL altera_lnsim_ver -PL altera_mf_ver -PL altera_ver -PL arria5_tst1 -PL arriav_hssi_ver -PL arriav_pcie_hip_ver -PL arriav_ver -PL lpm_ver -PL mypll -PL sgate_ver +access +w_nets +m+top_module +accb +accr +access +r +m+top_module top_module
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: altera_lnsim.sv (28454): Index [1] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28455): Index [2] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28456): Index [3] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28457): Index [4] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28458): Index [5] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28459): Index [6] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28460): Index [7] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28461): Index [8] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28462): Index [9] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28463): Index [10] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28464): Index [11] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28465): Index [12] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28466): Index [13] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28467): Index [14] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28468): Index [15] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28469): Index [16] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28470): Index [17] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (1) does not match the length of port "rx_runningdisp" (2) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (1) does not match the length of port "rx_disperr" (2) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (1) does not match the length of port "rx_errdetect" (2) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (8) does not match the length of port "tx_parallel_data" (16) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (1) does not match the length of port "tx_datak" (2) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (8) does not match the length of port "rx_parallel_data" (16) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (1) does not match the length of port "rx_datak" (2) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1327): Length of connection (2) does not match the length of port "pll_locked" (1) on instance "/top_module/block_GPHY1".
+# SLP: Warning: arria5_tst1.v (1065): Length of connection (7) does not match the length of port "out" (8) on instance "/top_module/spi_upr1".
+# SLP: Warning: arria5_tst1.v (1053): Length of connection (6) does not match the length of port "out" (8) on instance "/top_module/spi_att4".
+# SLP: Warning: arria5_tst1.v (1042): Length of connection (6) does not match the length of port "out" (8) on instance "/top_module/spi_att3".
+# SLP: Warning: arria5_tst1.v (1031): Length of connection (6) does not match the length of port "out" (8) on instance "/top_module/spi_att2".
+# SLP: Warning: arria5_tst1.v (1020): Length of connection (6) does not match the length of port "out" (8) on instance "/top_module/spi_att1".
+# SLP: Warning: arria5_tst1.v (703): Length of connection (7) does not match the length of port "dataout" (1) on instance "/top_module/bufout7_inst".
+# SLP: Warning: arria5_tst1.v (703): Length of connection (7) does not match the length of port "datain" (1) on instance "/top_module/bufout7_inst".
+# SLP: Warning: arria5_tst1.v (627): Length of connection (19) does not match the length of port "dataout" (20) on instance "/top_module/bufin20_inst".
+# SLP: Warning: arria5_tst1.v (627): Length of connection (19) does not match the length of port "datain" (20) on instance "/top_module/bufin20_inst".
+# SLP: Warning: arria5_tst1.v (418): Length of connection (24) does not match the length of port "dataout" (35) on instance "/top_module/buf_io1_inst".
+# SLP: Warning: arria5_tst1.v (418): Length of connection (24) does not match the length of port "datain" (35) on instance "/top_module/buf_io1_inst".
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 3.6 [s]
+# SLP: Finished : 3.8 [s]
+# SLP: 286 (21.50%) primitives and 1044 (78.50%) other processes in SLP
+# SLP: 3869 (90.21%) signals in SLP and 358 (8.35%) interface signals
+# ELAB2: Elaboration final pass complete - time: 4.4 [s].
+# KERNEL: SLP loading done - time: 0.2 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 16130 kB (elbread=4353 elab2=11431 kernel=345 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\b072\arria5_tst1\src\wave.asdb
+#  15:08, 22 February 2018
+#  Simulation has been initialized
+# 420 signal(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/b072/arria5_tst1/src/wave.asdb'.
+run 100 us
+# KERNEL: Info: =================================================
+# KERNEL: Info:           Generic PLL Summary
+# KERNEL: Info: =================================================
+# KERNEL: Time scale of (top_module.pll1_inst1.pll1_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is 1ps / 1ps
+# KERNEL: Info: hierarchical_name = top_module.pll1_inst1.pll1_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# KERNEL: Info: reference_clock_frequency = 100.0 MHz
+# KERNEL: Info: output_clock_frequency = 125 MHZ
+# KERNEL: Info: phase_shift = 0 ps
+# KERNEL: Info: duty_cycle = 50
+# KERNEL: Info: sim_additional_refclk_cycles_to_lock = 0
+# KERNEL: Info: output_clock_high_period = 4000.000000
+# KERNEL: Info: output_clock_low_period = 4000.000000
+# KERNEL: stopped at time: 100 us
+# KERNEL: Warning: KERNEL_0291 Signal '/top_module/clk_100MHZ' has already been traced.
+# 0 signal(s) traced.
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.3 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Warning: altera_lnsim.sv (28454): Index [1] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28455): Index [2] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28456): Index [3] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28457): Index [4] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28458): Index [5] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28459): Index [6] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28460): Index [7] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28461): Index [8] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28462): Index [9] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28463): Index [10] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28464): Index [11] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28465): Index [12] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28466): Index [13] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28467): Index [14] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28468): Index [15] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28469): Index [16] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Warning: altera_lnsim.sv (28470): Index [17] is out of range [0:0] of 'output_clock_frequency_parameter'.
+# SLP: Elaboration phase ... skipped, using existing simulator library: 0.0 [s]
+# SLP: Finished : 0.1 [s]
+# SLP: 286 (21.50%) primitives and 1044 (78.50%) other processes in SLP
+# SLP: 3869 (90.21%) signals in SLP and 358 (8.35%) interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 16130 kB (elbread=4353 elab2=11431 kernel=345 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\b072\arria5_tst1\src\wave.asdb
+#  15:08, 22 February 2018
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/b072/arria5_tst1/src/wave.asdb'.
+run 100 us
+# KERNEL: Info: =================================================
+# KERNEL: Info:           Generic PLL Summary
+# KERNEL: Info: =================================================
+# KERNEL: Time scale of (top_module.pll1_inst1.pll1_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen) is 1ps / 1ps
+# KERNEL: Info: hierarchical_name = top_module.pll1_inst1.pll1_altera_pll_altera_pll_i_639.new_model.gpll.no_need_to_gen
+# KERNEL: Info: reference_clock_frequency = 100.0 MHz
+# KERNEL: Info: output_clock_frequency = 125 MHZ
+# KERNEL: Info: phase_shift = 0 ps
+# KERNEL: Info: duty_cycle = 50
+# KERNEL: Info: sim_additional_refclk_cycles_to_lock = 0
+# KERNEL: Info: output_clock_high_period = 4000.000000
+# KERNEL: Info: output_clock_low_period = 4000.000000
+# KERNEL: stopped at time: 100 us

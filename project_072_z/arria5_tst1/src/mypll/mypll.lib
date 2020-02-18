@@ -1,0 +1,46 @@
+timestamp=1519301037664
+
+[~A]
+LastVerilogToplevel=mypll
+ModifyID=2
+Version=74
+c:/intelfpga/17.0/project/db/ip/mypll/mypll.v=0*374*779
+c:/intelfpga/17.0/project/db/ip/mypll/submodules/mypll_altclkctrl_0.v=0*1989*2914
+
+[$root]
+A/$root=22|||1*1213
+BinI32/$root=3*371
+SLP=3*475
+Version=10.4.183.6396  (Windows)|00000043789cd32d33ca3655d04d494a57d0cecc4b4ec92cd24eb6d2cfcc2b49cd492b484fd43734d733d02f28cacf4a4d2ed14f49d2cf2cd0cfad2cc8c9d12f2e4dcacd4f29cd492d0600e9ef174c|c73a565f2ade592f8ac1c68f484c92164bc3f54094c4a0caef1cd48331e87387
+
+[mypll]
+A/mypll=22|./../../../db/ip/mypll/mypll.v|6|1*374
+BinI32/mypll=3*172
+R=./../../../db/ip/mypll/mypll.v|6
+SLP=3*276
+Version=10.4.183.6396  (Windows)|00000038789cd32d33ca3655d04d494a57d0cecc4b4ec92cd24eb6d2cfcc2b49cd492b484fd43734d733d02f28cacf4a4d2ed14f49d2cf2cd0cfad2cc8c90100010312da|5b3ac7aae5d0e8f503c5504fbf225adbcce8df6aa31722c0258a1a453ca4f359
+
+[mypll_altclkctrl_0]
+A/mypll_altclkctrl_0=22|./../../../db/ip/mypll/submodules/mypll_altclkctrl_0.v|80|1*3455
+BinI32/mypll_altclkctrl_0=3*1175
+R=./../../../db/ip/mypll/submodules/mypll_altclkctrl_0.v|80
+SLP=3*1817
+Version=10.4.183.6396  (Windows)|00000043789cd32d33ca3655d04d494a57d0cecc4b4ec92cd24eb6d2cfcc2b49cd492b484fd43734d733d02f28cacf4a4d2ed14f49d2cf2cd0cfad2cc8c9d12f2e4dcacd4f29cd492d0600e9ef174c|778b5cc02bf3aa9f11c1f950fa12665850dcf71505049616c0c61b4088172939280421e1c7158654d816d05b9c87b1c6
+
+[mypll_altclkctrl_0_sub]
+A/mypll_altclkctrl_0_sub=22|./../../../db/ip/mypll/submodules/mypll_altclkctrl_0.v|29|1*1587
+BinI32/mypll_altclkctrl_0_sub=3*543
+R=./../../../db/ip/mypll/submodules/mypll_altclkctrl_0.v|29
+SLP=3*915
+Version=10.4.183.6396  (Windows)|00000043789cd32d33ca3655d04d494a57d0cecc4b4ec92cd24eb6d2cfcc2b49cd492b484fd43734d733d02f28cacf4a4d2ed14f49d2cf2cd0cfad2cc8c9d12f2e4dcacd4f29cd492d0600e9ef174c|778b5cc02bf3aa9f11c1f950fa126658063e205b585e4962ef868b2d299f7367125c943e37bc186c2fb7a0fb2a315ef5
+
+[~MFT]
+0=5|0mypll.mgf|2914|0
+1=4|1mypll.mgf|3455|374
+3=8|3mypll.mgf|1817|172
+
+[~U]
+$root=12|0*1305|
+mypll=12|0*182||0x10
+mypll_altclkctrl_0=12|0*1751|
+mypll_altclkctrl_0_sub=12|0*1503|

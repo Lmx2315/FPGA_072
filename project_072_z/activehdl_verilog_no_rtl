@@ -1,0 +1,110 @@
+Info: Changing the current directory to output directory C:/Work_murmansk/Quartus/b072/project ..
+Info: Using Path C:/Aldec/Active-HDL-10.4/BIN that was set in EDA Simulation Library Compiler Options
+Info: Generating commands to compile library altera_ver ...
+Info: Generating commands to compile library lpm_ver ...
+Info: Generating commands to compile library sgate_ver ...
+Info: Generating commands to compile library altera_mf_ver ...
+Info: Generating commands to compile library altera_lnsim_ver ...
+Info: Executing command file containing library compilation commands
+Info: VHDL/Verilog/EDIF/SystemC Simulator build 10.4.183.6396 
+Info: (c) 1997-2016 Aldec, Inc. All rights reserved.
+Info: License Number 0
+Info: VSIMSA: Configuration files: `C:\Aldec\Active-HDL-10.4\vlib\library.cfg', `C:\Aldec\Active-HDL-10.4\BIN\vsimsa.cfg'
+Info:  Welcome to VSIMSA!
+Info:  This message was printed from `startup.do' macro file.
+Info: alib -global altera_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/altera_ver"
+Info: ALIB: Library `altera_ver' attached.
+Info: altera_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\altera_ver\altera_ver.lib
+Info: alog  -dbg -work altera_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: global carry cascade carry_sum exp soft opndrn row_global TRI lut_input lut_output latch dlatch dff dffe dffea dffeas dffeas_pr tff tffe jkff jkffe srff srffe clklock alt_inbuf alt_outbuf alt_outbuf_tri alt_iobuf alt_inbuf_diff alt_outbuf_diff alt_outbuf_tri_diff alt_iobuf_diff alt_bidir_diff alt_bidir_buf.
+Info: $root top modules: global carry cascade carry_sum exp soft opndrn row_global TRI lut_input lut_output latch dlatch dff dffe dffea dffeas dffeas_pr tff tffe jkff jkffe srff srffe clklock alt_inbuf alt_outbuf alt_outbuf_tri alt_iobuf alt_inbuf_diff alt_outbuf_diff alt_outbuf_tri_diff alt_iobuf_diff alt_bidir_diff alt_bidir_buf.
+Info: Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+Info: done
+Info: alib -global lpm_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/lpm_ver"
+Info: ALIB: Library `lpm_ver' attached.
+Info: lpm_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\lpm_ver\lpm_ver.lib
+Info: alog  -dbg -work lpm_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/220model.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: lpm_constant lpm_inv lpm_and lpm_or lpm_xor lpm_bustri lpm_mux lpm_decode lpm_clshift lpm_add_sub lpm_compare lpm_mult lpm_divide lpm_abs lpm_counter lpm_latch lpm_ff lpm_shiftreg lpm_ram_dq lpm_ram_dp lpm_ram_io lpm_rom lpm_fifo lpm_fifo_dc lpm_inpad lpm_outpad lpm_bipad.
+Info: $root top modules: lpm_constant lpm_inv lpm_and lpm_or lpm_xor lpm_bustri lpm_mux lpm_decode lpm_clshift lpm_add_sub lpm_compare lpm_mult lpm_divide lpm_abs lpm_counter lpm_latch lpm_ff lpm_shiftreg lpm_ram_dq lpm_ram_dp lpm_ram_io lpm_rom lpm_fifo lpm_fifo_dc lpm_inpad lpm_outpad lpm_bipad.
+Info: Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
+Info: done
+Info: alib -global sgate_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/sgate_ver"
+Info: ALIB: Library `sgate_ver' attached.
+Info: sgate_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\sgate_ver\sgate_ver.lib
+Info: alog  -dbg -work sgate_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v : (84, 19): Undefined module: lpm_add_sub was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v : (328, 19): Undefined module: lpm_mult was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v : (420, 15): Undefined module: lpm_divide was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v : (755, 19): Undefined module: lpm_clshift was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v : (1061, 19): Undefined module: lpm_decode was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v : (1123, 19): Undefined module: lpm_mux was used. Port connection rules will not be checked at such instantiations.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: oper_add oper_addsub mux21 io_buf_tri io_buf_opdrn oper_mult tri_bus oper_div oper_mod oper_left_shift oper_right_shift oper_rotate_left oper_rotate_right oper_less_than oper_mux oper_selector oper_decoder oper_bus_mux oper_latch.
+Info: $root top modules: oper_add oper_addsub mux21 io_buf_tri io_buf_opdrn oper_mult tri_bus oper_div oper_mod oper_left_shift oper_right_shift oper_rotate_left oper_rotate_right oper_less_than oper_mux oper_selector oper_decoder oper_bus_mux oper_latch.
+Info: Compile success 0 Errors 6 Warnings  Analysis time: 0[s].
+Info: done
+Info: alib -global altera_mf_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/altera_mf_ver"
+Info: ALIB: Library `altera_mf_ver' attached.
+Info: altera_mf_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\altera_mf_ver\altera_mf_ver.lib
+Info: alog  -dbg -work altera_mf_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/altera_mf.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Pass 2. Processing instantiations.
+Warning: Warning: VCP2597 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_mf.v : (31791, 1): Some unconnected ports remain at instance: DCFIFO_MW. Module dcfifo_mixed_widths has unconnected  port(s) : eccstatus.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: lcell altpll altlvds_rx altlvds_tx dcfifo altaccumulate altmult_accum altmult_add altfp_mult altsqrt altclklock altddio_bidir altdpram alt3pram parallel_add scfifo altshift_taps a_graycounter altsquare altera_std_synchronizer_bundle alt_cal alt_cal_mm alt_cal_c3gxb alt_cal_sv alt_cal_av alt_aeq_s4 alt_eyemon alt_dfe sld_virtual_jtag sld_signaltap altstratixii_oct altparallel_flash_loader altserial_flash_loader alt_fault_injection sld_virtual_jtag_basic altsource_probe.
+Info: $root top modules: lcell altpll altlvds_rx altlvds_tx dcfifo altaccumulate altmult_accum altmult_add altfp_mult altsqrt altclklock altddio_bidir altdpram alt3pram parallel_add scfifo altshift_taps a_graycounter altsquare altera_std_synchronizer_bundle alt_cal alt_cal_mm alt_cal_c3gxb alt_cal_sv alt_cal_av alt_aeq_s4 alt_eyemon alt_dfe sld_virtual_jtag sld_signaltap altstratixii_oct altparallel_flash_loader altserial_flash_loader alt_fault_injection sld_virtual_jtag_basic altsource_probe.
+Info: Compile success 0 Errors 1 Warnings  Analysis time: 4[s].
+Info: done
+Info: alib -global altera_lnsim_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/altera_lnsim_ver"
+Info: ALIB: Library `altera_lnsim_ver' attached.
+Info: altera_lnsim_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\altera_lnsim_ver\altera_lnsim_ver.lib
+Info: alog  -dbg -work altera_lnsim_ver -sv2k5 "c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (22489, 7): Undefined module: stratixv_ffpll_reconfig was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (24525, 7): Undefined module: arriav_ffpll_reconfig was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (26561, 7): Undefined module: arriavgz_ffpll_reconfig was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (27944, 7): Undefined module: cyclonev_ffpll_reconfig was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (30571, 25): Undefined module: alt_inbuf was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (30581, 26): Undefined module: alt_outbuf was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (30593, 26): Undefined module: alt_iobuf was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (31503, 12): Undefined module: twentynm_clkena was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (31547, 12): Undefined module: twentynm_oscillator was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (32082, 11): Undefined module: fourteennm_iopll was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (33875, 3): Undefined module: twentynm_iopll was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (34238, 15): Undefined module: stratixv_lcell_comb was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (34253, 15): Undefined module: arriav_lcell_comb was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (34268, 15): Undefined module: arriavgz_lcell_comb was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (34283, 15): Undefined module: cyclonev_lcell_comb was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (34298, 15): Undefined module: twentynm_lcell_comb was used. Port connection rules will not be checked at such instantiations.
+Info: Pass 2. Processing instantiations.
+Warning: Warning: VCP2597 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (28597, 1): Some unconnected ports remain at instance: gpll. Module generic_pll has unconnected  port(s) : writedutycycledata.
+Warning: Warning: VCP2597 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (32567, 1): Some unconnected ports remain at instance: fourteennm_sub_iopll_inst. Module fourteennm_sub_iopll has unconnected  port(s) : fbclk, fboutclk.
+Warning: Warning: VCP2597 c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv : (32637, 1): Some unconnected ports remain at instance: fourteennm_sub_iopll_inst. Module fourteennm_sub_iopll has unconnected  port(s) : fbclk, fboutclk.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: generic_cdr generic_m20k generic_m10k common_porta_latches generic_28nm_hp_mlab_cell_impl generic_28nm_lc_mlab_cell_impl generic_14nm_mlab_cell_impl generic_mux generic_device_pll altera_mult_add altera_pll_reconfig_tasks altera_syncram altera_pll altera_iopll fourteennm_altera_iopll fourteennm_simple_iopll.
+Info: $root top modules: generic_cdr generic_m20k generic_m10k common_porta_latches generic_28nm_hp_mlab_cell_impl generic_28nm_lc_mlab_cell_impl generic_14nm_mlab_cell_impl generic_mux generic_device_pll altera_mult_add altera_pll_reconfig_tasks altera_syncram altera_pll altera_iopll fourteennm_altera_iopll fourteennm_simple_iopll.
+Info: Compile success 0 Errors 19 Warnings  Analysis time: 3[s].
+Info: done

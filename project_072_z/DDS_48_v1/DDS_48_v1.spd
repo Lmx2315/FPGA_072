@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/mentor/asj_nco_fxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_nco_fxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_nco_apr_dxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_nco_apr_dxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cordic_axor_1p_lpm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cordic_axor_1p_lpm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/dop_reg.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/dop_reg.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cord_seg_sel.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cord_seg_sel.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_dxx_g.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_dxx_g.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cord_2c.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cord_2c.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_altqmcpipe.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_altqmcpipe.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_nco_isdr.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_nco_isdr.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_nco_pxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_nco_pxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cord_fs.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cord_fs.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cord_init_pm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cord_init_pm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_dxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_dxx.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cordic_zxor_1p_lpm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cordic_zxor_1p_lpm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/asj_crd_par.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/asj_crd_par.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/mentor/cordic_sxor_1p_lpm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="modelsim" />
+ <file
+   path="simulation/submodules/aldec/cordic_sxor_1p_lpm.v"
+   type="VERILOG_ENCRYPT"
+   library="nco_ii_0"
+   simulator="riviera" />
+ <file
+   path="simulation/submodules/DDS_48_v1_nco_ii_0.v"
+   type="VERILOG"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/DDS_48_v1_nco_ii_0_tb.vhd"
+   type="OTHER"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/c_model/model_wrapper.cpp"
+   type="OTHER"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/c_model/nco_model.cpp"
+   type="OTHER"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/c_model/nco_model.h"
+   type="OTHER"
+   library="nco_ii_0" />
+ <file path="simulation/DDS_48_v1.v" type="VERILOG" />
+ <topLevel name="DDS_48_v1" />
+ <deviceFamily name="arriav" />
+</simPackage>

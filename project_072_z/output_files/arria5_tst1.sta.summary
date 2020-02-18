@@ -1,0 +1,837 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -3.208
+TNS   : -1977.253
+
+Type  : Slow 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -2.579
+TNS   : -9.663
+
+Type  : Slow 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : -2.521
+TNS   : -5.039
+
+Type  : Slow 1100mV 85C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.494
+TNS   : -339.649
+
+Type  : Slow 1100mV 85C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -1.423
+TNS   : -15.246
+
+Type  : Slow 1100mV 85C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.053
+TNS   : -0.189
+
+Type  : Slow 1100mV 85C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.363
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.229
+TNS   : -41.257
+
+Type  : Slow 1100mV 85C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 4.645
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.446
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.833
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.451
+TNS   : -19.401
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.868
+TNS   : -1.736
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 1.273
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'REF3'
+Slack : 1.370
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.068
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 3.188
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 3.357
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'eth1|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'eth2|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.164
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -2.896
+TNS   : -1631.142
+
+Type  : Slow 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -2.295
+TNS   : -8.546
+
+Type  : Slow 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : -2.239
+TNS   : -4.390
+
+Type  : Slow 1100mV 0C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.354
+TNS   : -228.470
+
+Type  : Slow 1100mV 0C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -1.306
+TNS   : -14.036
+
+Type  : Slow 1100mV 0C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.196
+TNS   : -1.475
+
+Type  : Slow 1100mV 0C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.222
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.117
+TNS   : -7.695
+
+Type  : Slow 1100mV 0C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 4.837
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.773
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.451
+TNS   : -19.401
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.868
+TNS   : -1.736
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 1.264
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'REF3'
+Slack : 1.378
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.070
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 3.174
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 3.337
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'eth1|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'eth2|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.165
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -2.084
+TNS   : -65.129
+
+Type  : Fast 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : -1.839
+TNS   : -3.596
+
+Type  : Fast 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -1.787
+TNS   : -6.841
+
+Type  : Fast 1100mV 85C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -0.072
+TNS   : -0.348
+
+Type  : Fast 1100mV 85C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.077
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.223
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.998
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 5.624
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.227
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.481
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.418
+TNS   : -15.048
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 1.293
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'REF3'
+Slack : 1.357
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 3.210
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 3.381
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'eth1|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'eth2|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.546
+TNS   : -37.215
+
+Type  : Fast 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -1.401
+TNS   : -5.343
+
+Type  : Fast 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : -1.369
+TNS   : -2.728
+
+Type  : Fast 1100mV 0C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.031
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.079
+TNS   : -0.170
+
+Type  : Fast 1100mV 0C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.201
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 5.902
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 0.267
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -0.418
+TNS   : -15.048
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc1_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'custom_phy_4line:adc2_phy|altera_xcvr_custom:custom_phy_4line_inst|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_xcvr_custom:i_custom_phyip_0|av_xcvr_custom_nr:A5|av_xcvr_custom_native:transceiver_core|av_xcvr_native:gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|av_pma:inst_av_pma|av_rx_pma:av_rx_pma|rx_pmas[0].rx_pma.wire_cdr_to_deser_clk'
+Slack : 0.800
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.041
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 1.297
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 1.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'REF3'
+Slack : 1.357
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 2.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : 3.207
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 3.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'eth1|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'eth2|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
+Slack : 4.000
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc1_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[1].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[2].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'adc2_phy|custom_phy_4line_inst|A5|transceiver_core|gen.av_xcvr_native_insts[3].gen_bonded_group.av_xcvr_native_inst|inst_av_pcs|ch[0].inst_av_pcs_ch|inst_av_hssi_8g_rx_pcs|wys|rcvdclkpma'
+Slack : 4.163
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,976 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V, 3.0V or 3.3V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.1V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3A:       3.3V
+ --                  Bank 3D:       3.3V
+ --                  Bank 4D:       1.8V
+ --                  Bank 4C:       2.5V
+ --                  Bank 4B:       1.8V
+ --                  Bank 4A:  2.5V
+ --                  Bank 7A:  3.3V
+ --                  Bank 7B:  3.3V
+ --                  Bank 7C:  3.3V
+ --                  Bank 7D:  3.3V
+ --                  Bank 8D:  3.3V
+ --                  Bank 8A:  3.3V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+CHIP  "arria5_tst1"  ASSIGNED TO AN: 5AGXMA7G4F31C4
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+UPR_AT2_05                   : A2        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+RESERVED_INPUT               : A3        :        :                   :         : 7A        :                
+RESERVED_INPUT               : A4        :        :                   :         : 7A        :                
+RESERVED_INPUT               : A5        :        :                   :         : 7A        :                
+RESERVED_INPUT               : A6        :        :                   :         : 7A        :                
+RESERVED_INPUT               : A7        :        :                   :         : 7B        :                
+BOOT0                        : A8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+VCCIO7B                      : A9        : power  :                   : 3.3V    : 7B        :                
+SPI4_MOSI_MK                 : A10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+SPI4_MISO_MK                 : A11       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+VCCIO7C                      : A12       : power  :                   : 3.3V    : 7C        :                
+SFP1_TX_FAULT                : A13       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
+LMK_STATUS_LD2_FPGA_3V3      : A14       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+CLK_MO                       : A15       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
+WDATA_MK1                    : A16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+WDATA_MK0                    : A17       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+VCCIO7D                      : A18       : power  :                   : 3.3V    : 7D        :                
+RESERVED_INPUT               : A19       :        :                   :         : 7D        :                
+VCCIO8D                      : A20       : power  :                   : 3.3V    : 8D        :                
+A5                           : A21       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+VCCIO8D                      : A22       : power  :                   : 3.3V    : 8D        :                
+SCKE                         : A23       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+ABE1                         : A24       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+VCCIO8A                      : A25       : power  :                   : 3.3V    : 8A        :                
+RX_FTDI_2                    : A26       : output : 3.3-V LVTTL       :         : 8A        : Y              
+TX_FTDI_2                    : A27       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+LMK_SDIO_3V3                 : A28       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+BOOT_MK_FTDI                 : A29       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+GND                          : AA1       : gnd    :                   :         :           :                
+GND                          : AA2       : gnd    :                   :         :           :                
+GXB_NC                       : AA3       :        :                   :         : B0R       :                
+GXB_NC                       : AA4       :        :                   :         : B0R       :                
+GND                          : AA5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AA6       :        :                   :         : 4A        :                
+VCCPD4A                      : AA7       : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT               : AA8       :        :                   :         : 4A        :                
+D2_SYNC_N_CD                 : AA9       : input  : 1.8 V             :         : 4B        : Y              
+RESERVED_INPUT               : AA10      :        :                   :         : 4B        :                
+RESERVED_INPUT               : AA11      :        :                   :         : 4B        :                
+RESERVED_INPUT               : AA12      :        :                   :         : 4B        :                
+A1_SNC(n)                    : AA13      : output : LVDS              :         : 4C        : Y              
+RESERVED_INPUT               : AA14      :        :                   :         : 4C        :                
+D1_SCLK                      : AA15      : output : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AA16      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AA17      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AA18      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AA19      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AA20      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AA21      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AA22      :        :                   :         : 3D        :                
+VCCPD3                       : AA23      : power  :                   : 3.3V    : 3A, 3B, 3C, 3D :                
+VCCPGM                       : AA24      : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+nCSO, DATA4                  : AA25      :        :                   :         : 3A        :                
+GND                          : AA26      : gnd    :                   :         :           :                
+GXB_NC                       : AA27      :        :                   :         : B0L       :                
+GXB_NC                       : AA28      :        :                   :         : B0L       :                
+GND                          : AA29      : gnd    :                   :         :           :                
+GND                          : AA30      : gnd    :                   :         :           :                
+GND                          : AB1       :        :                   :         : B0R       :                
+GND                          : AB2       :        :                   :         : B0R       :                
+GND                          : AB3       : gnd    :                   :         :           :                
+GND                          : AB4       : gnd    :                   :         :           :                
+VCCIO4A                      : AB5       : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT               : AB6       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AB7       :        :                   :         : 4A        :                
+D2_SYNC_N_AB                 : AB8       : input  : 1.8 V             :         : 4B        : Y              
+A1_SDOUT_1V8                 : AB9       : input  : 1.8 V             :         : 4B        : Y              
+A1_SEN_1V8                   : AB10      : output : 1.8 V             :         : 4B        : Y              
+A2_OVRB_1V8                  : AB11      : input  : 1.8 V             :         : 4B        : Y              
+D1_SYNCB(n)                  : AB12      : input  : LVDS              :         : 4C        : Y              
+A1_SNC                       : AB13      : output : LVDS              :         : 4C        : Y              
+RESERVED_INPUT               : AB14      :        :                   :         : 4C        :                
+D1_RESETB                    : AB15      : output : 1.8 V             :         : 4D        : Y              
+D2_ALARM                     : AB16      : input  : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AB17      :        :                   :         : 4D        :                
+A2_CTRL1_1V8                 : AB18      : output : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AB19      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AB20      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AB21      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AB22      :        :                   :         : 3D        :                
+FLASH_MISO_3V3               : AB23      : input  : 3.3-V LVCMOS      :         : 3A        : Y              
+FLASH_MOSI_3V3               : AB24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT3_16                   : AB25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+DNU                          : AB26      :        :                   :         :           :                
+GND                          : AB27      : gnd    :                   :         :           :                
+GND                          : AB28      : gnd    :                   :         :           :                
+A2_TX2(n)                    : AB29      : input  : 1.5-V PCML        :         : B0L       : Y              
+A2_TX2                       : AB30      : input  : 1.5-V PCML        :         : B0L       : Y              
+GND                          : AC1       : gnd    :                   :         :           :                
+GND                          : AC2       : gnd    :                   :         :           :                
+GXB_NC                       : AC3       :        :                   :         : B0R       :                
+GXB_NC                       : AC4       :        :                   :         : B0R       :                
+GND                          : AC5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AC6       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AC7       :        :                   :         : 4A        :                
+GND                          : AC8       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AC9       :        :                   :         : 4B        :                
+A1_SDATA_1V8                 : AC10      : output : 1.8 V             :         : 4B        : Y              
+GND                          : AC11      : gnd    :                   :         :           :                
+D1_SYNCB                     : AC12      : input  : LVDS              :         : 4C        : Y              
+A2_SNC(n)                    : AC13      : output : LVDS              :         : 4C        : Y              
+GND                          : AC14      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AC15      :        :                   :         : 4D        :                
+D1_SYNC_N_CD                 : AC16      : input  : 1.8 V             :         : 4D        : Y              
+GND                          : AC17      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AC18      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AC19      :        :                   :         : 3D        :                
+GND                          : AC20      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AC21      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AC22      :        :                   :         : 3D        :                
+GND                          : AC23      : gnd    :                   :         :           :                
+UPR_AT1_1                    : AC24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT3_8                    : AC25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+GND                          : AC26      : gnd    :                   :         :           :                
+GXB_NC                       : AC27      :        :                   :         : B0L       :                
+GXB_NC                       : AC28      :        :                   :         : B0L       :                
+GND                          : AC29      : gnd    :                   :         :           :                
+GND                          : AC30      : gnd    :                   :         :           :                
+GND                          : AD1       :        :                   :         : B0R       :                
+GND                          : AD2       :        :                   :         : B0R       :                
+GND                          : AD3       : gnd    :                   :         :           :                
+GND                          : AD4       : gnd    :                   :         :           :                
+VCCIO4A                      : AD5       : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT               : AD6       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AD7       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AD8       :        :                   :         : 4B        :                
+D2_TXENABLE                  : AD9       : output : 1.8 V             :         : 4B        : Y              
+A1_SCLK_1V8                  : AD10      : output : 1.8 V             :         : 4B        : Y              
+RESERVED_INPUT               : AD11      :        :                   :         : 4B        :                
+A2_SNC                       : AD12      : output : LVDS              :         : 4C        : Y              
+FPGA_SYNC1(n)                : AD13      : input  : LVDS              :         : 4C        : Y              
+RESERVED_INPUT               : AD14      :        :                   :         : 4C        :                
+RESERVED_INPUT               : AD15      :        :                   :         : 4D        :                
+D1_SYNC_N_AB                 : AD16      : input  : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AD17      :        :                   :         : 4D        :                
+A2_OVRA_1V8                  : AD18      : input  : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AD19      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AD20      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AD21      :        :                   :         : 3D        :                
+RESERVED_INPUT               : AD22      :        :                   :         : 3D        :                
+UPR_AT4_4                    : AD23      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT1_05                   : AD24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT1_8                    : AD25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+VCCIO3A                      : AD26      : power  :                   : 3.3V    : 3A        :                
+GND                          : AD27      : gnd    :                   :         :           :                
+GND                          : AD28      : gnd    :                   :         :           :                
+A2_TX3(n)                    : AD29      : input  : 1.5-V PCML        :         : B0L       : Y              
+A2_TX3                       : AD30      : input  : 1.5-V PCML        :         : B0L       : Y              
+GND                          : AE1       : gnd    :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+GND                          : AE3       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AE4       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AE5       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AE6       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AE7       :        :                   :         : 4A        :                
+A2_RESET_1V8                 : AE8       : output : 1.8 V             :         : 4B        : Y              
+A1_CTRL1_1V8                 : AE9       : output : 1.8 V             :         : 4B        : Y              
+VCCIO4B                      : AE10      : power  :                   : 1.8V    : 4B        :                
+A2_PWRDOWN_1V8               : AE11      : output : 1.8 V             :         : 4B        : Y              
+VCCIO4C                      : AE12      : power  :                   : 2.5V    : 4C        :                
+FPGA_SYNC1                   : AE13      : input  : LVDS              :         : 4C        : Y              
+RESERVED_INPUT               : AE14      :        :                   :         : 4C        :                
+RESERVED_INPUT               : AE15      :        :                   :         : 4C        :                
+VCCIO4D                      : AE16      : power  :                   : 1.8V    : 4D        :                
+RESERVED_INPUT               : AE17      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AE18      :        :                   :         : 4D        :                
+VCCIO3D                      : AE19      : power  :                   : 3.3V    : 3D        :                
+UPR_SWITCH4                  : AE20      : output : 3.3-V LVCMOS      :         : 3D        : Y              
+VCCIO3D                      : AE21      : power  :                   : 3.3V    : 3D        :                
+RESERVED_INPUT               : AE22      :        :                   :         : 3D        :                
+UPR_AT4_2                    : AE23      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+VCCIO3A                      : AE24      : power  :                   : 3.3V    : 3A        :                
+UPR_SWITCH3                  : AE25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+RESERVED_INPUT               : AE26      :        :                   :         : 3A        :                
+DE_MISO_LVDS_3V3             : AE27      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+GND                          : AE28      : gnd    :                   :         :           :                
+GND                          : AE29      : gnd    :                   :         :           :                
+GND                          : AE30      : gnd    :                   :         :           :                
+RREF                         : AF1       :        :                   :         :           :                
+DNU                          : AF2       :        :                   :         :           :                
+GND                          : AF3       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF4       :        :                   :         : 4A        :                
+GND                          : AF5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF6       :        :                   :         : 4A        :                
+D_MISO                       : AF7       : output : 2.5 V             :         : 4A        : N              
+GND                          : AF8       : gnd    :                   :         :           :                
+A1_CTRL2_1V8                 : AF9       : output : 1.8 V             :         : 4B        : Y              
+A2_SCLK_1V8                  : AF10      : output : 1.8 V             :         : 4B        : Y              
+GND                          : AF11      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF12      :        :                   :         : 4C        :                
+RESERVED_INPUT               : AF13      :        :                   :         : 4C        :                
+GND                          : AF14      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AF15      :        :                   :         : 4C        :                
+D1_SDO                       : AF16      : input  : 1.8 V             :         : 4D        : Y              
+GND                          : AF17      : gnd    :                   :         :           :                
+A2_STBY_1V8                  : AF18      : output : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AF19      :        :                   :         : 4D        :                
+GND                          : AF20      : gnd    :                   :         :           :                
+IZL2_KONTROL                 : AF21      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+KAN3_KONTROL                 : AF22      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+GND                          : AF23      : gnd    :                   :         :           :                
+UPR_AT4_16                   : AF24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT1_4                    : AF25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+GND                          : AF26      : gnd    :                   :         :           :                
+BOOT_MK_FPGA                 : AF27      : input  : 3.3-V LVCMOS      :         : 3A        : Y              
+RESERVED_INPUT               : AF28      :        :                   :         : 3A        :                
+TDI                          : AF29      : input  :                   :         : 3A        :                
+TDO                          : AF30      : output :                   :         : 3A        :                
+GND                          : AG1       : gnd    :                   :         :           :                
+DNU                          : AG2       :        :                   :         :           :                
+RESERVED_INPUT               : AG3       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AG4       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AG5       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AG6       :        :                   :         : 4A        :                
+D2_SCLK                      : AG7       : output : 1.8 V             :         : 4B        : Y              
+D2_SLEEP                     : AG8       : output : 1.8 V             :         : 4B        : Y              
+VCCIO4B                      : AG9       : power  :                   : 1.8V    : 4B        :                
+A1_STBY_1V8                  : AG10      : output : 1.8 V             :         : 4B        : Y              
+D2_SYNCB(n)                  : AG11      : input  : LVDS              :         : 4C        : Y              
+SYSREF6(n)                   : AG12      : input  : LVDS              :         : 4C        : Y              
+VCCIO4C                      : AG13      : power  :                   : 2.5V    : 4C        :                
+RESERVED_INPUT               : AG14      :        :                   :         : 4C        :                
+RESERVED_INPUT               : AG15      :        :                   :         : 4C        :                
+D1_SDIO                      : AG16      : output : 1.8 V             :         : 4D        : Y              
+D1_ALARM                     : AG17      : input  : 1.8 V             :         : 4D        : Y              
+VCCIO4D                      : AG18      : power  :                   : 1.8V    : 4D        :                
+A2_CTRL2_1V8                 : AG19      : output : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AG20      :        :                   :         : 3D        :                
+IZL1_KONTROL                 : AG21      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+KAN4_KONTROL                 : AG22      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+IZL4_KONTROL                 : AG23      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+UPR_AT4_8                    : AG24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+FLASH_CS_3V3                 : AG25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT3_4                    : AG26      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+MR_RESET_MK_FPGA             : AG27      : input  : 3.3-V LVCMOS      :         : 3A        : Y              
+FPGA_LED1_3V3                : AG28      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+TCK                          : AG29      : input  :                   :         : 3A        :                
+TMS                          : AG30      : input  :                   :         : 3A        :                
+RESERVED_INPUT               : AH1       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AH2       :        :                   :         : 4A        :                
+VCCIO4A                      : AH3       : power  :                   : 2.5V    : 4A        :                
+RESERVED_INPUT               : AH4       :        :                   :         : 4A        :                
+RESERVED_INPUT               : AH5       :        :                   :         : 4A        :                
+VCCIO4A                      : AH6       : power  :                   : 2.5V    : 4A        :                
+D2_RESETB                    : AH7       : output : 1.8 V             :         : 4B        : Y              
+D2_SDENB                     : AH8       : output : 1.8 V             :         : 4B        : Y              
+A1_RESET_1V8                 : AH9       : output : 1.8 V             :         : 4B        : Y              
+VCCIO4B                      : AH10      : power  :                   : 1.8V    : 4B        :                
+D2_SYNCB                     : AH11      : input  : LVDS              :         : 4C        : Y              
+SYSREF6                      : AH12      : input  : LVDS              :         : 4C        : Y              
+SYSREF5(n)                   : AH13      : input  : LVDS              :         : 4C        : Y              
+RESERVED_INPUT               : AH14      :        :                   :         : 4C        :                
+RESERVED_INPUT               : AH15      :        :                   :         : 4C        :                
+VCCIO4D                      : AH16      : power  :                   : 1.8V    : 4D        :                
+D1_TXENABLE                  : AH17      : output : 1.8 V             :         : 4D        : Y              
+A2_SEN_1V8                   : AH18      : output : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AH19      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AH20      :        :                   :         : 3D        :                
+VCCIO3D                      : AH21      : power  :                   : 3.3V    : 3D        :                
+RESERVED_INPUT               : AH22      :        :                   :         : 3D        :                
+UPR_SWITCH1                  : AH23      : output : 3.3-V LVCMOS      :         : 3D        : Y              
+VCCIO3A                      : AH24      : power  :                   : 3.3V    : 3A        :                
+FLASH_CLK_3V3                : AH25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT3_2                    : AH26      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+VCCIO3A                      : AH27      : power  :                   : 3.3V    : 3A        :                
+RESERVED_INPUT               : AH28      :        :                   :         : 3A        :                
+GND                          : AH29      : gnd    :                   :         :           :                
+AS_DATA3, DATA3              : AH30      :        :                   :         : 3A        :                
+RESERVED_INPUT               : AJ1       :        :                   :         : 4A        :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+REF3(n)                      : AJ3       : input  : LVDS              :         : 4A        : Y              
+RESERVED_INPUT               : AJ4       :        :                   :         : 4A        :                
+GND                          : AJ5       : gnd    :                   :         :           :                
+RESERVED_INPUT               : AJ6       :        :                   :         : 4A        :                
+D2_SDO                       : AJ7       : input  : 1.8 V             :         : 4B        : Y              
+GND                          : AJ8       : gnd    :                   :         :           :                
+A1_OVRB_1V8                  : AJ9       : input  : 1.8 V             :         : 4B        : Y              
+A1_PWRDOWN_1V8               : AJ10      : output : 1.8 V             :         : 4B        : Y              
+GND                          : AJ11      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AJ12      :        :                   :         : 4C        :                
+SYSREF5                      : AJ13      : input  : LVDS              :         : 4C        : Y              
+GND                          : AJ14      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AJ15      :        :                   :         : 4C        :                
+RESERVED_INPUT               : AJ16      :        :                   :         : 4D        :                
+GND                          : AJ17      : gnd    :                   :         :           :                
+D1_SLEEP                     : AJ18      : output : 1.8 V             :         : 4D        : Y              
+RESERVED_INPUT               : AJ19      :        :                   :         : 4D        :                
+GND                          : AJ20      : gnd    :                   :         :           :                
+KAN2_KONTROL                 : AJ21      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+IZL3_KONTROL                 : AJ22      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+GND                          : AJ23      : gnd    :                   :         :           :                
+UPR_AT4_1                    : AJ24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT1_2                    : AJ25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+GND                          : AJ26      : gnd    :                   :         :           :                
+RESERVED_INPUT               : AJ27      :        :                   :         : 3A        :                
+clk_100MHZ                   : AJ28      : input  : 3.3-V LVCMOS      :         : 3A        : Y              
+DCLK                         : AJ29      :        :                   :         : 3A        :                
+AS_DATA2, DATA2              : AJ30      :        :                   :         : 3A        :                
+RESERVED_INPUT               : AK2       :        :                   :         : 4A        :                
+REF3                         : AK3       : input  : LVDS              :         : 4A        : Y              
+SYSREF0                      : AK4       : input  : LVDS              :         : 4A        : Y              
+SYSREF0(n)                   : AK5       : input  : LVDS              :         : 4A        : Y              
+RESERVED_INPUT               : AK6       :        :                   :         : 4A        :                
+D2_SDIO                      : AK7       : output : 1.8 V             :         : 4B        : Y              
+A1_OVRA_1V8                  : AK8       : input  : 1.8 V             :         : 4B        : Y              
+VCCIO4B                      : AK9       : power  :                   : 1.8V    : 4B        :                
+A2_SDATA_1V8                 : AK10      : output : 1.8 V             :         : 4B        : Y              
+A2_SDOUT_1V8                 : AK11      : input  : 1.8 V             :         : 4B        : Y              
+RESERVED_INPUT               : AK12      :        :                   :         : 4C        :                
+VCCIO4C                      : AK13      : power  :                   : 2.5V    : 4C        :                
+RESERVED_INPUT               : AK14      :        :                   :         : 4C        :                
+VCCIO4C                      : AK15      : power  :                   : 2.5V    : 4C        :                
+RESERVED_INPUT               : AK16      :        :                   :         : 4D        :                
+D1_SDENB                     : AK17      : output : 1.8 V             :         : 4D        : Y              
+VCCIO4D                      : AK18      : power  :                   : 1.8V    : 4D        :                
+RESERVED_INPUT               : AK19      :        :                   :         : 4D        :                
+RESERVED_INPUT               : AK20      :        :                   :         : 3D        :                
+UPR_AT1_16                   : AK21      : output : 3.3-V LVCMOS      :         : 3D        : Y              
+KAN1_KONTROL                 : AK22      : input  : 3.3-V LVCMOS      :         : 3D        : Y              
+VCCIO3D                      : AK23      : power  :                   : 3.3V    : 3D        :                
+UPR_AT4_05                   : AK24      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT3_05                   : AK25      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+UPR_AT3_1                    : AK26      : output : 3.3-V LVCMOS      :         : 3A        : Y              
+RESERVED_INPUT               : AK27      :        :                   :         : 3A        :                
+AS_DATA0, ASDO, DATA0        : AK28      :        :                   :         : 3A        :                
+AS_DATA1, DATA1              : AK29      :        :                   :         : 3A        :                
+UPR_AT2_1                    : B1        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+GND                          : B2        : gnd    :                   :         :           :                
+REZERV1                      : B3        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+RESERVED_INPUT               : B4        :        :                   :         : 7A        :                
+GND                          : B5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : B6        :        :                   :         : 7A        :                
+UART6_RX                     : B7        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+GND                          : B8        : gnd    :                   :         :           :                
+CS_FLASH_FPGA                : B9        : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : B10       :        :                   :         : 7B        :                
+GND                          : B11       : gnd    :                   :         :           :                
+RESERVED_INPUT               : B12       :        :                   :         : 7C        :                
+RESERVED_INPUT               : B13       :        :                   :         : 7C        :                
+GND                          : B14       : gnd    :                   :         :           :                
+RESERVED_INPUT               : B15       :        :                   :         : 7C        :                
+WDATA_MK4                    : B16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+GND                          : B17       : gnd    :                   :         :           :                
+CS_ADC1                      : B18       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+LMK_STATUS_LD2_3V3           : B19       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+GND                          : B20       : gnd    :                   :         :           :                
+A6                           : B21       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A7                           : B22       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+GND                          : B23       : gnd    :                   :         :           :                
+SPI3_CS                      : B24       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+RESERVED_INPUT               : B25       :        :                   :         : 8A        :                
+GND                          : B26       : gnd    :                   :         :           :                
+LMK_CS_3V3                   : B27       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+RESET_MK_FTDI                : B28       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+GND                          : B29       : gnd    :                   :         :           :                
+CONF_DONE                    : B30       :        :                   :         : 8A        :                
+FPGA_IND2                    : C1        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+FPGA_IND1                    : C2        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+VCCIO7A                      : C3        : power  :                   : 3.3V    : 7A        :                
+EN_2V5_VDA                   : C4        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+D1_ALARM_FPGA                : C5        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+VCCIO7A                      : C6        : power  :                   : 3.3V    : 7A        :                
+BOOT1                        : C7        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+SPI2_NSS_MK                  : C8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+VCCIO7B                      : C9        : power  :                   : 3.3V    : 7B        :                
+D_MOSI                       : C10       : input  : 2.5 V             :         : 7B        : N              
+RESERVED_INPUT               : C11       :        :                   :         : 7B        :                
+VCCIO7C                      : C12       : power  :                   : 3.3V    : 7C        :                
+SFP1_LOS                     : C13       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
+RESERVED_INPUT               : C14       :        :                   :         : 7C        :                
+VCCIO7C                      : C15       : power  :                   : 3.3V    : 7C        :                
+WDATA_MK5                    : C16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+SYNC_DA2                     : C17       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+VCCIO7D                      : C18       : power  :                   : 3.3V    : 7D        :                
+CS_ADC2                      : C19       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+A8                           : C20       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+VCCIO8D                      : C21       : power  :                   : 3.3V    : 8D        :                
+A9                           : C22       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A10                          : C23       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+VCCIO8A                      : C24       : power  :                   : 3.3V    : 8A        :                
+SWE                          : C25       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+TX_FTDI_1                    : C26       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+LMK_SYNC_3V3                 : C27       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+LMK_SEL0_3V3                 : C28       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+MSEL2                        : C29       :        :                   :         : 8A        :                
+MSEL0                        : C30       :        :                   :         : 8A        :                
+UPR_AT2_16                   : D1        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+UPR_AT2_8                    : D2        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+UPR_AT2_4                    : D3        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+UPR_AT2_2                    : D4        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+D2_ALARM_FPGA                : D5        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+RESERVED_INPUT               : D6        :        :                   :         : 7A        :                
+VCCIO7B                      : D7        : power  :                   : 3.3V    : 7B        :                
+UART6_TX                     : D8        : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+CLK_FOR_MK_3V3               : D9        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : D10       :        :                   :         : 7B        :                
+OK_BUS                       : D11       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : D12       :        :                   :         : 7C        :                
+SFP1_TX_DISABLE              : D13       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+RESERVED_INPUT               : D14       :        :                   :         : 7C        :                
+CE_MO                        : D15       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
+WDATA_MK6                    : D16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+RESERVED_INPUT               : D17       :        :                   :         : 7D        :                
+CS_LMK                       : D18       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+RESERVED_INPUT               : D19       :        :                   :         : 7D        :                
+A12                          : D20       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A13                          : D21       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A4                           : D22       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A3                           : D23       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+SPI3_MOSI                    : D24       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+SCAS                         : D25       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+RX_FTDI_1                    : D26       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+LMK_SEL1_3V3                 : D27       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+nSTATUS                      : D28       :        :                   :         : 8A        :                
+MSEL3                        : D29       :        :                   :         : 8A        :                
+MSEL1                        : D30       :        :                   :         : 8A        :                
+ADDR0                        : E1        : input  : 3.3-V LVCMOS      :         : 7A        : Y              
+GND                          : E2        : gnd    :                   :         :           :                
+SYS_REF                      : E3        : input  : 3.3-V LVCMOS      :         : 7A        : Y              
+RESERVED_INPUT               : E4        :        :                   :         : 7A        :                
+GND                          : E5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : E6        :        :                   :         : 7A        :                
+TX1_RS422                    : E7        : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+GND                          : E8        : gnd    :                   :         :           :                
+RESERVED_INPUT               : E9        :        :                   :         : 7B        :                
+WR_BUS                       : E10       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+GND                          : E11       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E12       :        :                   :         : 7C        :                
+SFP1_PRESENT                 : E13       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
+GND                          : E14       : gnd    :                   :         :           :                
+RESERVED_INPUT               : E15       :        :                   :         : 7C        :                
+WDATA_MK7                    : E16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+GND                          : E17       : gnd    :                   :         :           :                
+CS_FPGA1                     : E18       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+LMK_STATUS_LD1_3V3           : E19       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+GND                          : E20       : gnd    :                   :         :           :                
+A2                           : E21       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A1                           : E22       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+GND                          : E23       : gnd    :                   :         :           :                
+SPI3_SCK                     : E24       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+RESERVED_INPUT               : E25       :        :                   :         : 8A        :                
+GND                          : E26       : gnd    :                   :         :           :                
+nCONFIG                      : E27       :        :                   :         : 8A        :                
+nCE                          : E28       :        :                   :         : 8A        :                
+DNU                          : E29       :        :                   :         :           :                
+GND                          : E30       : gnd    :                   :         :           :                
+ADDR1                        : F1        : input  : 3.3-V LVCMOS      :         : 7A        : Y              
+VCCIO7A                      : F2        : power  :                   : 3.3V    : 7A        :                
+GND                          : F3        : gnd    :                   :         :           :                
+GND                          : F4        : gnd    :                   :         :           :                
+GND                          : F5        :        :                   :         : 7A        :                
+VCCIO7A                      : F6        : power  :                   : 3.3V    : 7A        :                
+RX1_RS422                    : F7        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+T_TEST1                      : F8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+VCCIO7B                      : F9        : power  :                   : 3.3V    : 7B        :                
+RD_BUS                       : F10       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : F11       :        :                   :         : 7C        :                
+VCCIO7C                      : F12       : power  :                   : 3.3V    : 7C        :                
+RATE1_SELECTION              : F13       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+RESERVED_INPUT               : F14       :        :                   :         : 7C        :                
+RATE2_SELECTION              : F15       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+VCCIO7D                      : F16       : power  :                   : 3.3V    : 7D        :                
+CS_DAC1                      : F17       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+VCCIO7D                      : F18       : power  :                   : 3.3V    : 7D        :                
+SA10                         : F19       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+A19                          : F20       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+D0                           : F21       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+VCCIO8D                      : F22       : power  :                   : 3.3V    : 8D        :                
+D1                           : F23       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+VCCIO8A                      : F24       : power  :                   : 3.3V    : 8A        :                
+SEL_ETALON_3V3               : F25       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+MSEL4                        : F26       :        :                   :         : 8A        :                
+GND                          : F27       : gnd    :                   :         :           :                
+GND                          : F28       : gnd    :                   :         :           :                
+DNU                          : F29       :        :                   :         :           :                
+RREF                         : F30       :        :                   :         :           :                
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+D1_RX1                       : G3        : output : 1.5-V PCML        :         : B1R       : Y              
+D1_RX1(n)                    : G4        : output : 1.5-V PCML        :         : B1R       : Y              
+GND                          : G5        : gnd    :                   :         :           :                
+RESERVED_INPUT               : G6        :        :                   :         : 7A        :                
+RESERVED_INPUT               : G7        :        :                   :         : 7A        :                
+T_TEST2                      : G8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+RNE1_RS422                   : G9        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+SFP2_LOS                     : G10       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : G11       :        :                   :         : 7C        :                
+RESERVED_INPUT               : G12       :        :                   :         : 7C        :                
+UPR_SWITCH2                  : G13       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+LMK_STATUS_LD1_FPGA_3V3      : G14       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+RESERVED_INPUT               : G15       :        :                   :         : 7D        :                
+WDATA_MK2                    : G16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+CS_DAC2                      : G17       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+RESERVED_INPUT               : G18       :        :                   :         : 7D        :                
+D2                           : G19       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D3                           : G20       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D8                           : G21       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D5                           : G22       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D6                           : G23       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+RESERVED_INPUT               : G24       :        :                   :         : 8A        :                
+RESERVED_INPUT               : G25       :        :                   :         : 8A        :                
+GND                          : G26       : gnd    :                   :         :           :                
+GXB_NC                       : G27       :        :                   :         : B1L       :                
+GXB_NC                       : G28       :        :                   :         : B1L       :                
+GND                          : G29       : gnd    :                   :         :           :                
+GND                          : G30       : gnd    :                   :         :           :                
+GND                          : H1        :        :                   :         : B1R       :                
+GND                          : H2        :        :                   :         : B1R       :                
+GND                          : H3        : gnd    :                   :         :           :                
+GND                          : H4        : gnd    :                   :         :           :                
+DNU                          : H5        :        :                   :         :           :                
+RESERVED_INPUT               : H6        :        :                   :         : 7A        :                
+RESERVED_INPUT               : H7        :        :                   :         : 7A        :                
+GND                          : H8        : gnd    :                   :         :           :                
+DE1RX_RS422                  : H9        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+SFP2_TX_DISABLE              : H10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+GND                          : H11       : gnd    :                   :         :           :                
+RESET_MK                     : H12       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+RESERVED_INPUT               : H13       :        :                   :         : 7C        :                
+GND                          : H14       : gnd    :                   :         :           :                
+SFP2_TX_FAULT                : H15       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+WDATA_MK3                    : H16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+GND                          : H17       : gnd    :                   :         :           :                
+RESERVED_INPUT               : H18       :        :                   :         : 7D        :                
+CLK_OUT                      : H19       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+GND                          : H20       : gnd    :                   :         :           :                
+D7                           : H21       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D4                           : H22       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+GND                          : H23       : gnd    :                   :         :           :                
+LMK_RESET_3V3                : H24       : input  : 3.3-V LVCMOS      :         : 8A        : Y              
+DAC_SYNC                     : H25       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+GND                          : H26       :        :                   :         : 8A        :                
+GND                          : H27       : gnd    :                   :         :           :                
+GND                          : H28       : gnd    :                   :         :           :                
+GND                          : H29       :        :                   :         : B1L       :                
+GND                          : H30       :        :                   :         : B1L       :                
+GND                          : J1        : gnd    :                   :         :           :                
+GND                          : J2        : gnd    :                   :         :           :                
+D1_RX0                       : J3        : output : 1.5-V PCML        :         : B1R       : Y              
+D1_RX0(n)                    : J4        : output : 1.5-V PCML        :         : B1R       : Y              
+GND                          : J5        : gnd    :                   :         :           :                
+ADDR3                        : J6        : input  : 3.3-V LVCMOS      :         : 7A        : Y              
+INT1_FPGA                    : J7        : output : 3.3-V LVCMOS      :         : 7A        : Y              
+UART1_TX                     : J8        : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : J9        :        :                   :         : 7B        :                
+SPI4_SCK_MK                  : J10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : J11       :        :                   :         : 7C        :                
+RESERVED_INPUT               : J12       :        :                   :         : 7C        :                
+RESERVED_INPUT               : J13       :        :                   :         : 7C        :                
+SDATA1_I2C                   : J14       : bidir  : 3.3-V LVCMOS      :         : 7C        : Y              
+SDATA2_I2C                   : J15       : bidir  : 3.3-V LVCMOS      :         : 7D        : Y              
+SCLK2_I2C                    : J16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
+CS_FPGA2                     : J17       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+RESERVED_INPUT               : J18       :        :                   :         : 7D        :                
+D9                           : J19       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D10                          : J20       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D11                          : J21       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D12                          : J22       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+SMS                          : J23       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+LMK_SCK_3V3                  : J24       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+RESERVED_INPUT               : J25       :        :                   :         : 8A        :                
+GND                          : J26       : gnd    :                   :         :           :                
+GXB_NC                       : J27       :        :                   :         : B1L       :                
+GXB_NC                       : J28       :        :                   :         : B1L       :                
+GND                          : J29       : gnd    :                   :         :           :                
+GND                          : J30       : gnd    :                   :         :           :                
+GND                          : K1        :        :                   :         : B1R       :                
+GND                          : K2        :        :                   :         : B1R       :                
+GND                          : K3        : gnd    :                   :         :           :                
+GND                          : K4        : gnd    :                   :         :           :                
+VCCPGM                       : K5        : power  :                   : 1.8V/2.5V/3.0V/3.3V :           :                
+ADDR2                        : K6        : input  : 3.3-V LVCMOS      :         : 7A        : Y              
+RESERVED_INPUT               : K7        :        :                   :         : 7A        :                
+UART1_RX                     : K8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
+RESERVED_INPUT               : K9        :        :                   :         : 7B        :                
+SPI4_NSS_MK                  : K10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+TNC_MK_1HZ                   : K11       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+RESERVED_INPUT               : K12       :        :                   :         : 7C        :                
+RESERVED_INPUT               : K13       :        :                   :         : 7C        :                
+SCLK1_I2C                    : K14       : output : 3.3-V LVCMOS      :         : 7C        : Y              
+DNU                          : K15       :        :                   :         :           :                
+SFP2_PRESENT                 : K16       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
+RESERVED_INPUT               : K17       :        :                   :         : 7D        :                
+RESERVED_INPUT               : K18       :        :                   :         : 7D        :                
+D13                          : K19       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+D14                          : K20       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+A18                          : K21       : output : 3.3-V LVCMOS      :         : 8D        : Y              
+D15                          : K22       : bidir  : 3.3-V LVCMOS      :         : 8D        : Y              
+RESERVED_INPUT               : K23       :        :                   :         : 8A        :                
+SRAS                         : K24       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+ABE0                         : K25       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+VCCBAT                       : K26       : power  :                   : 1.2V    :           :                
+GND                          : K27       : gnd    :                   :         :           :                
+GND                          : K28       : gnd    :                   :         :           :                
+A1_TX0(n)                    : K29       : input  : 1.5-V PCML        :         : B1L       : Y              
+A1_TX0                       : K30       : input  : 1.5-V PCML        :         : B1L       : Y              
+GND                          : L1        : gnd    :                   :         :           :                
+GND                          : L2        : gnd    :                   :         :           :                
+D2_RX1                       : L3        : output : 1.5-V PCML        :         : B1R       : Y              
+D2_RX1(n)                    : L4        : output : 1.5-V PCML        :         : B1R       : Y              
+GND                          : L5        : gnd    :                   :         :           :                
+GND                          : L6        : gnd    :                   :         :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCPD7A                      : L8        : power  :                   : 3.3V    : 7A        :                
+VCCP                         : L9        : power  :                   : 1.1V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+VCCP                         : L11       : power  :                   : 1.1V    :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+VCCPD7BCD                    : L13       : power  :                   : 3.3V    : 7B, 7C, 7D :                
+GND                          : L14       : gnd    :                   :         :           :                
+VCCP                         : L15       : power  :                   : 1.1V    :           :                
+GND                          : L16       : gnd    :                   :         :           :                
+VCCPD7BCD                    : L17       : power  :                   : 3.3V    : 7B, 7C, 7D :                
+GND                          : L18       : gnd    :                   :         :           :                
+VCCP                         : L19       : power  :                   : 1.1V    :           :                
+VCCP                         : L20       : power  :                   : 1.1V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+SPI3_MISO                    : L22       : output : 3.3-V LVCMOS      :         : 8A        : Y              
+VCCIO8A                      : L23       : power  :                   : 3.3V    : 8A        :                
+GND                          : L24       : gnd    :                   :         :           :                
+GND                          : L25       : gnd    :                   :         :           :                
+GND                          : L26       : gnd    :                   :         :           :                
+GXB_NC                       : L27       :        :                   :         : B1L       :                
+GXB_NC                       : L28       :        :                   :         : B1L       :                
+GND                          : L29       : gnd    :                   :         :           :                
+GND                          : L30       : gnd    :                   :         :           :                
+GND                          : M1        :        :                   :         : B1R       :                
+GND                          : M2        :        :                   :         : B1R       :                
+GND                          : M3        : gnd    :                   :         :           :                
+GND                          : M4        : gnd    :                   :         :           :                
+VCCR_GXBR                    : M5        : power  :                   : 1.1V    :           :                
+VCCL_GXBR1                   : M6        : power  :                   : 1.1V    :           :                
+GND                          : M7        : gnd    :                   :         :           :                
+VCCD_FPLL                    : M8        : power  :                   : 1.5V    :           :                
+VCCPD7BCD                    : M9        : power  :                   : 3.3V    : 7B, 7C, 7D :                
+VCC                          : M10       : power  :                   : 1.1V    :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+VCC_AUX                      : M12       : power  :                   : 2.5V    :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCC                          : M14       : power  :                   : 1.1V    :           :                
+VCCD_FPLL                    : M15       : power  :                   : 1.5V    :           :                
+VCCA_FPLL                    : M16       : power  :                   : 2.5V    :           :                
+GND                          : M17       : gnd    :                   :         :           :                
+VCC_AUX                      : M18       : power  :                   : 2.5V    :           :                
+GND                          : M19       : gnd    :                   :         :           :                
+VCC                          : M20       : power  :                   : 1.1V    :           :                
+GND                          : M21       : gnd    :                   :         :           :                
+VCCPD8                       : M22       : power  :                   : 3.3V    : 8A, 8B, 8C, 8D :                
+VCCPD8                       : M23       : power  :                   : 3.3V    : 8A, 8B, 8C, 8D :                
+GND                          : M24       : gnd    :                   :         :           :                
+VCCL_GXBL1                   : M25       : power  :                   : 1.1V    :           :                
+VCCR_GXBL                    : M26       : power  :                   : 1.1V    :           :                
+GND                          : M27       : gnd    :                   :         :           :                
+GND                          : M28       : gnd    :                   :         :           :                
+A1_TX1(n)                    : M29       : input  : 1.5-V PCML        :         : B1L       : Y              
+A1_TX1                       : M30       : input  : 1.5-V PCML        :         : B1L       : Y              
+GND                          : N1        : gnd    :                   :         :           :                
+GND                          : N2        : gnd    :                   :         :           :                
+D2_RX0                       : N3        : output : 1.5-V PCML        :         : B1R       : Y              
+D2_RX0(n)                    : N4        : output : 1.5-V PCML        :         : B1R       : Y              
+GND                          : N5        : gnd    :                   :         :           :                
+VCCL_GXBR1                   : N6        : power  :                   : 1.1V    :           :                
+VCCH_GXBR1                   : N7        : power  :                   : 1.5V    :           :                
+GND                          : N8        : gnd    :                   :         :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+VCC                          : N11       : power  :                   : 1.1V    :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+VCC                          : N13       : power  :                   : 1.1V    :           :                
+GND                          : N14       : gnd    :                   :         :           :                
+VCC                          : N15       : power  :                   : 1.1V    :           :                
+GND                          : N16       : gnd    :                   :         :           :                
+VCC                          : N17       : power  :                   : 1.1V    :           :                
+GND                          : N18       : gnd    :                   :         :           :                
+VCC                          : N19       : power  :                   : 1.1V    :           :                
+GND                          : N20       : gnd    :                   :         :           :                
+VCC                          : N21       : power  :                   : 1.1V    :           :                
+VCCD_FPLL                    : N22       : power  :                   : 1.5V    :           :                
+GND                          : N23       : gnd    :                   :         :           :                
+GND                          : N24       : gnd    :                   :         :           :                
+VCCH_GXBL1                   : N25       : power  :                   : 1.5V    :           :                
+GND                          : N26       : gnd    :                   :         :           :                
+GXB_NC                       : N27       :        :                   :         : B0L       :                
+GXB_NC                       : N28       :        :                   :         : B0L       :                
+GND                          : N29       : gnd    :                   :         :           :                
+GND                          : N30       : gnd    :                   :         :           :                
+GND                          : P1        :        :                   :         : B1R       :                
+GND                          : P2        :        :                   :         : B1R       :                
+GND                          : P3        : gnd    :                   :         :           :                
+GND                          : P4        : gnd    :                   :         :           :                
+VCCT_GXBR1                   : P5        : power  :                   : 1.1V    :           :                
+GND                          : P6        : gnd    :                   :         :           :                
+VCCA_GXBR1                   : P7        : power  :                   : 2.5V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCA_FPLL                    : P9        : power  :                   : 2.5V    :           :                
+VCC                          : P10       : power  :                   : 1.1V    :           :                
+GND                          : P11       : gnd    :                   :         :           :                
+VCC                          : P12       : power  :                   : 1.1V    :           :                
+GND                          : P13       : gnd    :                   :         :           :                
+VCC                          : P14       : power  :                   : 1.1V    :           :                
+GND                          : P15       : gnd    :                   :         :           :                
+VCC                          : P16       : power  :                   : 1.1V    :           :                
+GND                          : P17       : gnd    :                   :         :           :                
+VCC                          : P18       : power  :                   : 1.1V    :           :                
+GND                          : P19       : gnd    :                   :         :           :                
+VCC                          : P20       : power  :                   : 1.1V    :           :                
+GND                          : P21       : gnd    :                   :         :           :                
+VCCA_FPLL                    : P22       : power  :                   : 2.5V    :           :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCA_GXBL1                   : P24       : power  :                   : 2.5V    :           :                
+GND                          : P25       : gnd    :                   :         :           :                
+VCCT_GXBL1                   : P26       : power  :                   : 1.1V    :           :                
+GND                          : P27       : gnd    :                   :         :           :                
+GND                          : P28       : gnd    :                   :         :           :                
+A1_TX2(n)                    : P29       : input  : 1.5-V PCML        :         : B0L       : Y              
+A1_TX2                       : P30       : input  : 1.5-V PCML        :         : B0L       : Y              
+GND                          : R1        : gnd    :                   :         :           :                
+GND                          : R2        : gnd    :                   :         :           :                
+GXB_NC                       : R3        :        :                   :         : B1R       :                
+GXB_NC                       : R4        :        :                   :         : B1R       :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCT_GXBR1                   : R6        : power  :                   : 1.1V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+GND                          : R8        :        :                   :         : B1R       :                
+GND                          : R9        :        :                   :         : B1R       :                
+GND                          : R10       : gnd    :                   :         :           :                
+VCC                          : R11       : power  :                   : 1.1V    :           :                
+GND                          : R12       : gnd    :                   :         :           :                
+VCC                          : R13       : power  :                   : 1.1V    :           :                
+GND                          : R14       : gnd    :                   :         :           :                
+VCC                          : R15       : power  :                   : 1.1V    :           :                
+GND                          : R16       : gnd    :                   :         :           :                
+VCC                          : R17       : power  :                   : 1.1V    :           :                
+GND                          : R18       : gnd    :                   :         :           :                
+VCC                          : R19       : power  :                   : 1.1V    :           :                
+GND                          : R20       : gnd    :                   :         :           :                
+VCC                          : R21       : power  :                   : 1.1V    :           :                
+GND                          : R22       :        :                   :         : B1L       :                
+GND                          : R23       :        :                   :         : B1L       :                
+GND                          : R24       : gnd    :                   :         :           :                
+VCCR_GXBL                    : R25       : power  :                   : 1.1V    :           :                
+VCCR_GXBL                    : R26       : power  :                   : 1.1V    :           :                
+GXB_NC                       : R27       :        :                   :         : B0L       :                
+GXB_NC                       : R28       :        :                   :         : B0L       :                
+GND                          : R29       : gnd    :                   :         :           :                
+GND                          : R30       : gnd    :                   :         :           :                
+GND                          : T1        :        :                   :         : B1R       :                
+GND                          : T2        :        :                   :         : B1R       :                
+GND                          : T3        : gnd    :                   :         :           :                
+GND                          : T4        : gnd    :                   :         :           :                
+VCCR_GXBR                    : T5        : power  :                   : 1.1V    :           :                
+VCCR_GXBR                    : T6        : power  :                   : 1.1V    :           :                
+VCCH_GXBR0                   : T7        : power  :                   : 1.5V    :           :                
+GND                          : T8        : gnd    :                   :         :           :                
+VCCA_FPLL                    : T9        : power  :                   : 2.5V    :           :                
+VCC                          : T10       : power  :                   : 1.1V    :           :                
+GND                          : T11       : gnd    :                   :         :           :                
+VCC                          : T12       : power  :                   : 1.1V    :           :                
+GND                          : T13       : gnd    :                   :         :           :                
+VCC                          : T14       : power  :                   : 1.1V    :           :                
+GND                          : T15       : gnd    :                   :         :           :                
+VCC                          : T16       : power  :                   : 1.1V    :           :                
+GND                          : T17       : gnd    :                   :         :           :                
+VCC                          : T18       : power  :                   : 1.1V    :           :                
+GND                          : T19       : gnd    :                   :         :           :                
+VCC                          : T20       : power  :                   : 1.1V    :           :                
+GND                          : T21       : gnd    :                   :         :           :                
+VCCA_FPLL                    : T22       : power  :                   : 2.5V    :           :                
+GND                          : T23       : gnd    :                   :         :           :                
+VCCH_GXBL0                   : T24       : power  :                   : 1.5V    :           :                
+VCCL_GXBL0                   : T25       : power  :                   : 1.1V    :           :                
+VCCL_GXBL0                   : T26       : power  :                   : 1.1V    :           :                
+GND                          : T27       : gnd    :                   :         :           :                
+GND                          : T28       : gnd    :                   :         :           :                
+A1_TX3(n)                    : T29       : input  : 1.5-V PCML        :         : B0L       : Y              
+A1_TX3                       : T30       : input  : 1.5-V PCML        :         : B0L       : Y              
+GND                          : U1        : gnd    :                   :         :           :                
+GND                          : U2        : gnd    :                   :         :           :                
+TX2_GTP                      : U3        : output : 1.5-V PCML        :         : B1R       : Y              
+TX2_GTP(n)                   : U4        : output : 1.5-V PCML        :         : B1R       : Y              
+GND                          : U5        : gnd    :                   :         :           :                
+VCCL_GXBR0                   : U6        : power  :                   : 1.1V    :           :                
+GND                          : U7        : gnd    :                   :         :           :                
+GND                          : U8        :        :                   :         : B1R       :                
+GND                          : U9        :        :                   :         : B1R       :                
+GND                          : U10       : gnd    :                   :         :           :                
+VCC                          : U11       : power  :                   : 1.1V    :           :                
+GND                          : U12       : gnd    :                   :         :           :                
+VCC                          : U13       : power  :                   : 1.1V    :           :                
+GND                          : U14       : gnd    :                   :         :           :                
+VCC                          : U15       : power  :                   : 1.1V    :           :                
+GND                          : U16       : gnd    :                   :         :           :                
+VCC                          : U17       : power  :                   : 1.1V    :           :                
+GND                          : U18       : gnd    :                   :         :           :                
+VCC                          : U19       : power  :                   : 1.1V    :           :                
+GND                          : U20       : gnd    :                   :         :           :                
+VCC                          : U21       : power  :                   : 1.1V    :           :                
+GND                          : U22       :        :                   :         : B0L       :                
+GND                          : U23       :        :                   :         : B0L       :                
+GND                          : U24       : gnd    :                   :         :           :                
+VCCT_GXBL0                   : U25       : power  :                   : 1.1V    :           :                
+GND                          : U26       : gnd    :                   :         :           :                
+GXB_NC                       : U27       :        :                   :         : B0L       :                
+GXB_NC                       : U28       :        :                   :         : B0L       :                
+GND                          : U29       : gnd    :                   :         :           :                
+GND                          : U30       : gnd    :                   :         :           :                
+RX2_GTP                      : V1        : input  : 2.5-V PCML        :         : B1R       : Y              
+RX2_GTP(n)                   : V2        : input  : 2.5-V PCML        :         : B1R       : Y              
+GND                          : V3        : gnd    :                   :         :           :                
+GND                          : V4        : gnd    :                   :         :           :                
+VCCT_GXBR0                   : V5        : power  :                   : 1.1V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXBR0                   : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCD_FPLL                    : V9        : power  :                   : 1.5V    :           :                
+VCC                          : V10       : power  :                   : 1.1V    :           :                
+GND                          : V11       : gnd    :                   :         :           :                
+VCC                          : V12       : power  :                   : 1.1V    :           :                
+GND                          : V13       : gnd    :                   :         :           :                
+VCC                          : V14       : power  :                   : 1.1V    :           :                
+GND                          : V15       : gnd    :                   :         :           :                
+VCC                          : V16       : power  :                   : 1.1V    :           :                
+GND                          : V17       : gnd    :                   :         :           :                
+VCC                          : V18       : power  :                   : 1.1V    :           :                
+GND                          : V19       : gnd    :                   :         :           :                
+VCC                          : V20       : power  :                   : 1.1V    :           :                
+GND                          : V21       : gnd    :                   :         :           :                
+VCCD_FPLL                    : V22       : power  :                   : 1.5V    :           :                
+GND                          : V23       : gnd    :                   :         :           :                
+VCCA_GXBL0                   : V24       : power  :                   : 2.5V    :           :                
+GND                          : V25       : gnd    :                   :         :           :                
+VCCT_GXBL0                   : V26       : power  :                   : 1.1V    :           :                
+GND                          : V27       : gnd    :                   :         :           :                
+GND                          : V28       : gnd    :                   :         :           :                
+A2_TX1(n)                    : V29       : input  : 1.5-V PCML        :         : B0L       : Y              
+A2_TX1                       : V30       : input  : 1.5-V PCML        :         : B0L       : Y              
+GND                          : W1        : gnd    :                   :         :           :                
+GND                          : W2        : gnd    :                   :         :           :                
+TX_GTP                       : W3        : output : 1.5-V PCML        :         : B0R       : Y              
+TX_GTP(n)                    : W4        : output : 1.5-V PCML        :         : B0R       : Y              
+VCCR_GXBR                    : W5        : power  :                   : 1.1V    :           :                
+VCCR_GXBR                    : W6        : power  :                   : 1.1V    :           :                
+GND                          : W7        : gnd    :                   :         :           :                
+GND                          : W8        :        :                   :         : B0R       :                
+GND                          : W9        :        :                   :         : B0R       :                
+GND                          : W10       : gnd    :                   :         :           :                
+VCCP                         : W11       : power  :                   : 1.1V    :           :                
+VCC_AUX                      : W12       : power  :                   : 2.5V    :           :                
+VCCP                         : W13       : power  :                   : 1.1V    :           :                
+GND                          : W14       : gnd    :                   :         :           :                
+VCCD_FPLL                    : W15       : power  :                   : 1.5V    :           :                
+VCCA_FPLL                    : W16       : power  :                   : 2.5V    :           :                
+VCCP                         : W17       : power  :                   : 1.1V    :           :                
+VCC_AUX                      : W18       : power  :                   : 2.5V    :           :                
+VCCP                         : W19       : power  :                   : 1.1V    :           :                
+GND                          : W20       : gnd    :                   :         :           :                
+VCCP                         : W21       : power  :                   : 1.1V    :           :                
+GND                          : W22       :        :                   :         : B0L       :                
+GND                          : W23       :        :                   :         : B0L       :                
+GND                          : W24       : gnd    :                   :         :           :                
+VCCR_GXBL                    : W25       : power  :                   : 1.1V    :           :                
+VCCR_GXBL                    : W26       : power  :                   : 1.1V    :           :                
+GXB_NC                       : W27       :        :                   :         : B0L       :                
+GXB_NC                       : W28       :        :                   :         : B0L       :                
+GND                          : W29       : gnd    :                   :         :           :                
+GND                          : W30       : gnd    :                   :         :           :                
+RX_GTP                       : Y1        : input  : 2.5-V PCML        :         : B0R       : Y              
+RX_GTP(n)                    : Y2        : input  : 2.5-V PCML        :         : B0R       : N              
+GND                          : Y3        : gnd    :                   :         :           :                
+GND                          : Y4        : gnd    :                   :         :           :                
+GND                          : Y5        : gnd    :                   :         :           :                
+GND                          : Y6        : gnd    :                   :         :           :                
+GND                          : Y7        : gnd    :                   :         :           :                
+GND                          : Y8        : gnd    :                   :         :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+VCCPD4BCD                    : Y10       : power  :                   : 2.5V    : 4B, 4C, 4D :                
+GND                          : Y11       : gnd    :                   :         :           :                
+RESERVED_INPUT               : Y12       :        :                   :         : 4C        :                
+RESERVED_INPUT               : Y13       :        :                   :         : 4C        :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCPD4BCD                    : Y15       : power  :                   : 2.5V    : 4B, 4C, 4D :                
+DNU                          : Y16       :        :                   :         :           :                
+GND                          : Y17       : gnd    :                   :         :           :                
+VCCPD4BCD                    : Y18       : power  :                   : 2.5V    : 4B, 4C, 4D :                
+GND                          : Y19       : gnd    :                   :         :           :                
+RESERVED_INPUT               : Y20       :        :                   :         : 3D        :                
+VCCPD3                       : Y21       : power  :                   : 3.3V    : 3A, 3B, 3C, 3D :                
+GND                          : Y22       : gnd    :                   :         :           :                
+GND                          : Y23       : gnd    :                   :         :           :                
+GND                          : Y24       : gnd    :                   :         :           :                
+GND                          : Y25       : gnd    :                   :         :           :                
+GND                          : Y26       : gnd    :                   :         :           :                
+GND                          : Y27       : gnd    :                   :         :           :                
+GND                          : Y28       : gnd    :                   :         :           :                
+A2_TX0(n)                    : Y29       : input  : 1.5-V PCML        :         : B0L       : Y              
+A2_TX0                       : Y30       : input  : 1.5-V PCML        :         : B0L       : Y              

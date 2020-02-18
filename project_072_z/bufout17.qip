@@ -1,0 +1,6 @@
+set_global_assignment -name IP_TOOL_NAME "ALTIOBUF"
+set_global_assignment -name IP_TOOL_VERSION "17.0"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Arria V}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "bufout17.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "bufout17_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "bufout17_bb.v"]

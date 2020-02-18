@@ -1,0 +1,214 @@
+timestamp=1518155539190
+
+[$root]
+A/$root=22|""|0|1*679840
+BinI32/$root=3*54693
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_channel_pll]
+A/arriav_channel_pll=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3901|1*991702
+BinI32/arriav_channel_pll=3*78815
+P/~emb=3736,5120,5758,6751
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3901
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_8g_pcs_aggregate]
+A/arriav_hssi_8g_pcs_aggregate=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|31|1*680486
+BinI32/arriav_hssi_8g_pcs_aggregate=3*54832
+P/~emb=13755,15745,16947,19448
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|31
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_8g_rx_pcs]
+A/arriav_hssi_8g_rx_pcs=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|527|1*718497
+BinI32/arriav_hssi_8g_rx_pcs=3*55925
+P/~emb=15123,19150,21060,24052
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|527
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_8g_tx_pcs]
+A/arriav_hssi_8g_tx_pcs=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|1119|1*771176
+BinI32/arriav_hssi_8g_tx_pcs=3*58483
+P/~emb=7637,9849,10867,12441
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|1119
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_avmm_interface]
+A/arriav_hssi_avmm_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|4098|1*1008244
+BinI32/arriav_hssi_avmm_interface=3*80502
+P/~emb=2118,2728,3117,3655
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|4098
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_common_pcs_pma_interface]
+A/arriav_hssi_common_pcs_pma_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|1429|1*798077
+BinI32/arriav_hssi_common_pcs_pma_interface=3*60143
+P/~emb=11118,13283,14397,16393
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|1429
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_common_pld_pcs_interface]
+A/arriav_hssi_common_pld_pcs_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|1825|1*829865
+BinI32/arriav_hssi_common_pld_pcs_interface=3*61321
+P/~emb=5928,7326,8109,9319
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|1825
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pipe_gen1_2]
+A/arriav_hssi_pipe_gen1_2=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2063|1*849592
+BinI32/arriav_hssi_pipe_gen1_2=3*62570
+P/~emb=4075,5341,5996,6962
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2063
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_aux]
+A/arriav_hssi_pma_aux=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2253|1*865564
+BinI32/arriav_hssi_pma_aux=3*63991
+P/~emb=1145,1721,2009,2381
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2253
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_cdr_refclk_select_mux]
+A/arriav_hssi_pma_cdr_refclk_select_mux=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3155|1*935117
+BinI32/arriav_hssi_pma_cdr_refclk_select_mux=3*72235
+P/~emb=3395,4210,4796,5507
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3155
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_hi_pmaif]
+A/arriav_hssi_pma_hi_pmaif=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|4204|1*1015810
+BinI32/arriav_hssi_pma_hi_pmaif=3*81457
+P/~emb=390,680,849,1023
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|4204
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_hi_xcvrif]
+A/arriav_hssi_pma_hi_xcvrif=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|4231|1*1017783
+BinI32/arriav_hssi_pma_hi_xcvrif=3*81722
+P/~emb=392,680,849,1023
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|4231
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_int]
+A/arriav_hssi_pma_int=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2323|1*871228
+BinI32/arriav_hssi_pma_int=3*65111
+P/~emb=4401,5512,6148,7235
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2323
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_rx_buf]
+A/arriav_hssi_pma_rx_buf=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2537|1*886853
+BinI32/arriav_hssi_pma_rx_buf=3*66247
+P/~emb=1734,2547,2934,3438
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2537
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_rx_deser]
+A/arriav_hssi_pma_rx_deser=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2640|1*894842
+BinI32/arriav_hssi_pma_rx_deser=3*67450
+P/~emb=1474,2092,2426,2876
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2640
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_tx_buf]
+A/arriav_hssi_pma_tx_buf=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2728|1*901414
+BinI32/arriav_hssi_pma_tx_buf=3*68541
+P/~emb=2273,3222,3673,4300
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2728
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_tx_cgb]
+A/arriav_hssi_pma_tx_cgb=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2852|1*911261
+BinI32/arriav_hssi_pma_tx_cgb=3*69783
+P/~emb=4373,5473,6078,7122
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|2852
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_pma_tx_ser]
+A/arriav_hssi_pma_tx_ser=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3059|1*927573
+BinI32/arriav_hssi_pma_tx_ser=3*71105
+P/~emb=1691,2365,2734,3251
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3059
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_refclk_divider]
+A/arriav_hssi_refclk_divider=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3847|1*986908
+BinI32/arriav_hssi_refclk_divider=3*77478
+P/~emb=502,834,1015,1216
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3847
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_rx_pcs_pma_interface]
+A/arriav_hssi_rx_pcs_pma_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3352|1*948692
+BinI32/arriav_hssi_rx_pcs_pma_interface=3*73463
+P/~emb=1942,2630,2990,3478
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3352
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_rx_pld_pcs_interface]
+A/arriav_hssi_rx_pld_pcs_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3446|1*955873
+BinI32/arriav_hssi_rx_pld_pcs_interface=3*74479
+P/~emb=5172,6380,7005,8058
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3446
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_tx_pcs_pma_interface]
+A/arriav_hssi_tx_pcs_pma_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3652|1*971692
+BinI32/arriav_hssi_tx_pcs_pma_interface=3*75495
+P/~emb=1410,1975,2277,2654
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3652
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_hssi_tx_pld_pcs_interface]
+A/arriav_hssi_tx_pld_pcs_interface=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3724|1*977099
+BinI32/arriav_hssi_tx_pld_pcs_interface=3*76478
+P/~emb=2903,3756,4203,4846
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3724
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[arriav_pll_aux]
+A/arriav_pll_aux=22|./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3874|1*989368
+BinI32/arriav_pll_aux=3*78437
+P/~emb=439,737,902,978
+R=./../../../../quartus/eda/sim_lib/arriav_hssi_atoms.v|3874
+Version=9.1.2353.4205  (Windows)|0000001d789cd3cd51482c2aca4c2c8bcf282ece8c2f4b2d52d04d494a57d02d33ca3605009d110a10
+
+[~A]
+LastVerilogToplevel=arriav_hssi_pma_hi_xcvrif
+ModifyID=848
+Version=73
+c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v=0*404122*404632
+c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v=0*567657*605084
+
+[~MFT]
+0=97|0arriav_hssi_ver.mgf|605084|78052
+1=128|1arriav_hssi_ver.mgf|1017783|679840
+3=128|3arriav_hssi_ver.mgf|81722|54693
+
+[~U]
+$root=12|0*405231|
+arriav_channel_pll=12|0*554632||0x90
+arriav_hssi_8g_pcs_aggregate=12|0*405749||0x90
+arriav_hssi_8g_rx_pcs=12|0*425346||0x90
+arriav_hssi_8g_tx_pcs=12|0*449540||0x90
+arriav_hssi_avmm_interface=12|0*561521||0x90
+arriav_hssi_common_pcs_pma_interface=12|0*462123||0x90
+arriav_hssi_common_pld_pcs_interface=12|0*478673||0x90
+arriav_hssi_pipe_gen1_2=12|0*488148||0x90
+arriav_hssi_pma_aux=12|0*495253||0x90
+arriav_hssi_pma_cdr_refclk_select_mux=12|0*526845||0x90
+arriav_hssi_pma_hi_pmaif=12|0*565322||0x90
+arriav_hssi_pma_hi_xcvrif=12|0*566489||0x90
+arriav_hssi_pma_int=12|0*497773||0x90
+arriav_hssi_pma_rx_buf=12|0*505147||0x90
+arriav_hssi_pma_rx_deser=12|0*508727||0x90
+arriav_hssi_pma_tx_buf=12|0*511746||0x90
+arriav_hssi_pma_tx_cgb=12|0*516188||0x90
+arriav_hssi_pma_tx_ser=12|0*523452||0x90
+arriav_hssi_refclk_divider=12|0*552146||0x90
+arriav_hssi_rx_pcs_pma_interface=12|0*532503||0x90
+arriav_hssi_rx_pld_pcs_interface=12|0*536133||0x90
+arriav_hssi_tx_pcs_pma_interface=12|0*544343||0x90
+arriav_hssi_tx_pld_pcs_interface=12|0*547148||0x90
+arriav_pll_aux=12|0*553508||0x90
+

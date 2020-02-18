@@ -1,0 +1,172 @@
+Info: Changing the current directory to output directory C:/Work_murmansk/Quartus/b072/project ..
+Info: Using Path C:/Aldec/Active-HDL-10.4/BIN that was set in EDA Simulation Library Compiler Options
+Info: Generating commands to compile library arriav_ver ...
+Info: Generating commands to compile library arriav_hssi_ver ...
+Info: Generating commands to compile library arriav_pcie_hip_ver ...
+Info: Executing command file containing library compilation commands
+Info: VHDL/Verilog/EDIF/SystemC Simulator build 10.4.183.6396 
+Info: (c) 1997-2016 Aldec, Inc. All rights reserved.
+Info: License Number 0
+Info: VSIMSA: Configuration files: `C:\Aldec\Active-HDL-10.4\vlib\library.cfg', `C:\Aldec\Active-HDL-10.4\BIN\vsimsa.cfg'
+Info:  Welcome to VSIMSA!
+Info:  This message was printed from `startup.do' macro file.
+Info: alib -global arriav_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/arriav_ver"
+Info: ALIB: Library `arriav_ver' attached.
+Info: arriav_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\arriav_ver\arriav_ver.lib
+Info: alog  -dbg -work arriav_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_atoms_ncrypt.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Warning: Warning: VCP1251 The warning message cannot be shown because a protected code block was seen in the current compilation session. Any further warnings will be disregarded.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: $root top modules: arriav_dffe arriav_mux41 arriav_and1 arriav_and16 arriav_bmux21 arriav_b17mux21 arriav_nmux21 arriav_b5mux21 arriav_ff arriav_lcell_comb arriav_routing_wire arriav_ram_block arriav_mlab_cell arriav_io_ibuf arriav_io_obuf arriav_ddio_out arriav_ddio_oe arriav_ddio_in arriav_io_pad arriav_pseudo_diff_out arriav_bias_block arriav_clk_phase_select arriav_clkena arriav_clkselect arriav_delay_chain arriav_dll_offset_ctrl arriav_dll arriav_dqs_config arriav_dqs_delay_chain arriav_dqs_enable_ctrl arriav_duty_cycle_adjustment arriav_fractional_pll arriav_half_rate_input arriav_input_phase_alignment arriav_io_clock_divider arriav_io_config arriav_leveling_delay_chain arriav_pll_dll_output arriav_pll_dpa_output arriav_pll_extclk_output arriav_pll_lvds_output arriav_pll_output_counter arriav_pll_reconfig arriav_pll_refclk_select arriav_termination_logic arriav_termination arriav_asmiblock arriav_chipidblock arriav_controller arriav_crcblock arriav_jtag arriav_prblock a
+Info: rriav_rublock arriav_tsdblock arriav_read_fifo arriav_read_fifo_read_enable arriav_phy_clkbuf arriav_serdes_dpa arriav_ir_fifo_userdes arriav_read_fifo_read_clock_select arriav_lfifo arriav_vfifo arriav_mac arriav_mem_phy arriav_oscillator arriav_hps_interface_fpga2sdram."
+Info: Compile success 0 Errors 16 Warnings  Analysis time: 4[s].
+Info: done
+Info: alog  -dbg -work arriav_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hmi_atoms_ncrypt.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Pass 2. Processing instantiations.
+Warning: Warning: VCP1251 The warning message cannot be shown because a protected code block was seen in the current compilation session. Any further warnings will be disregarded.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: $root top modules: arriav_dffe arriav_mux41 arriav_and1 arriav_and16 arriav_bmux21 arriav_b17mux21 arriav_nmux21 arriav_b5mux21 arriav_ff arriav_lcell_comb arriav_routing_wire arriav_ram_block arriav_mlab_cell arriav_io_ibuf arriav_io_obuf arriav_ddio_out arriav_ddio_oe arriav_ddio_in arriav_io_pad arriav_pseudo_diff_out arriav_bias_block arriav_clk_phase_select arriav_clkena arriav_clkselect arriav_delay_chain arriav_dll_offset_ctrl arriav_dll arriav_dqs_config arriav_dqs_delay_chain arriav_dqs_enable_ctrl arriav_duty_cycle_adjustment arriav_fractional_pll arriav_half_rate_input arriav_input_phase_alignment arriav_io_clock_divider arriav_io_config arriav_leveling_delay_chain arriav_pll_dll_output arriav_pll_dpa_output arriav_pll_extclk_output arriav_pll_lvds_output arriav_pll_output_counter arriav_pll_reconfig arriav_pll_refclk_select arriav_termination_logic arriav_termination arriav_asmiblock arriav_chipidblock arriav_controller arriav_crcblock arriav_jtag arriav_prblock a
+Info: rriav_rublock arriav_tsdblock arriav_read_fifo arriav_read_fifo_read_enable arriav_phy_clkbuf arriav_serdes_dpa arriav_ir_fifo_userdes arriav_read_fifo_read_clock_select arriav_lfifo arriav_vfifo arriav_mac arriav_mem_phy arriav_oscillator arriav_hps_interface_fpga2sdram."
+Info: Compile success 0 Errors 2 Warnings  Analysis time: 4[s].
+Info: done
+Info: alog  -dbg -work arriav_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Warning: Warning: VCP2732 c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v : (138, 63): The UDP table entry no. 21 conflicts with entry no. 0.
+Warning: Warning: VCP2732 c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v : (176, 64): The UDP table entry no. 21 conflicts with entry no. 0.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v : (1128, 3): Undefined module: generic_m10k was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v : (1282, 3): Undefined module: generic_28nm_lc_mlab_cell_impl was used. Port connection rules will not be checked at such instantiations.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v : (1722, 21): Undefined module: dffeas was used. Port connection rules will not be checked at such instantiations.
+Info: Info: VCP2113 Module arriav_clk_phase_select_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_clkena_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_clkselect_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_delay_chain_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_dll_offset_ctrl_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_dll_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_dqs_config_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_dqs_delay_chain_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_dqs_enable_ctrl_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_duty_cycle_adjustment_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_fractional_pll_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_half_rate_input_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_input_phase_alignment_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_io_clock_divider_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_io_config_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_leveling_delay_chain_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_dll_output_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_dpa_output_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_extclk_output_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_lvds_output_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_output_counter_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_reconfig_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_pll_refclk_select_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_termination_logic_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_termination_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_asmiblock_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_chipidblock_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_controller_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_crcblock_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_jtag_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_prblock_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_rublock_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_tsdblock_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_read_fifo_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_read_fifo_read_enable_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_phy_clkbuf_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_serdes_dpa_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_ir_fifo_userdes_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_read_fifo_read_clock_select_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_lfifo_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_vfifo_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_mac_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_mem_phy_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_oscillator_encrypted found in current working library.
+Warning: Warning: VCP2515 c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v : (5263, 7): Undefined module: hps_sdram was used. Port connection rules will not be checked at such instantiations.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: arriav_dffe arriav_mux41 arriav_and1 arriav_and16 arriav_bmux21 arriav_b17mux21 arriav_nmux21 arriav_b5mux21 arriav_ff arriav_lcell_comb arriav_routing_wire arriav_ram_block arriav_mlab_cell arriav_io_ibuf arriav_io_obuf arriav_ddio_out arriav_ddio_oe arriav_ddio_in arriav_io_pad arriav_pseudo_diff_out arriav_bias_block arriav_clk_phase_select arriav_clkena arriav_clkselect arriav_delay_chain arriav_dll_offset_ctrl arriav_dll arriav_dqs_config arriav_dqs_delay_chain arriav_dqs_enable_ctrl arriav_duty_cycle_adjustment arriav_fractional_pll arriav_half_rate_input arriav_input_phase_alignment arriav_io_clock_divider arriav_io_config arriav_leveling_delay_chain arriav_pll_dll_output arriav_pll_dpa_output arriav_pll_extclk_output arriav_pll_lvds_output arriav_pll_output_counter arriav_pll_reconfig arriav_pll_refclk_select arriav_termination_logic arriav_termination arriav_asmiblock arriav_chipidblock arriav_controller arriav_crcblock arriav_jtag arriav_prblock ar
+Info: riav_rublock arriav_tsdblock arriav_read_fifo arriav_read_fifo_read_enable arriav_phy_clkbuf arriav_serdes_dpa arriav_ir_fifo_userdes arriav_read_fifo_read_clock_select arriav_lfifo arriav_vfifo arriav_mac arriav_mem_phy arriav_oscillator arriav_hps_interface_fpga2sdram."
+Info: $root top modules: arriav_dffe arriav_mux41 arriav_and1 arriav_and16 arriav_bmux21 arriav_b17mux21 arriav_nmux21 arriav_b5mux21 arriav_ff arriav_lcell_comb arriav_routing_wire arriav_ram_block arriav_mlab_cell arriav_io_ibuf arriav_io_obuf arriav_ddio_out arriav_ddio_oe arriav_ddio_in arriav_io_pad arriav_pseudo_diff_out arriav_bias_block arriav_clk_phase_select arriav_clkena arriav_clkselect arriav_delay_chain arriav_dll_offset_ctrl arriav_dll arriav_dqs_config arriav_dqs_delay_chain arriav_dqs_enable_ctrl arriav_duty_cycle_adjustment arriav_fractional_pll arriav_half_rate_input arriav_input_phase_alignment arriav_io_clock_divider arriav_io_config arriav_leveling_delay_chain arriav_pll_dll_output arriav_pll_dpa_output arriav_pll_extclk_output arriav_pll_lvds_output arriav_pll_output_counter arriav_pll_reconfig arriav_pll_refclk_select arriav_termination_logic arriav_termination arriav_asmiblock arriav_chipidblock arriav_controller arriav_crcblock arriav_jtag arriav_prblock a
+Info: rriav_rublock arriav_tsdblock arriav_read_fifo arriav_read_fifo_read_enable arriav_phy_clkbuf arriav_serdes_dpa arriav_ir_fifo_userdes arriav_read_fifo_read_clock_select arriav_lfifo arriav_vfifo arriav_mac arriav_mem_phy arriav_oscillator arriav_hps_interface_fpga2sdram."
+Info: Compile success 0 Errors 6 Warnings  Analysis time: 0[s].
+Info: done
+Info: alib -global arriav_hssi_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/arriav_hssi_ver"
+Info: ALIB: Library `arriav_hssi_ver' attached.
+Info: arriav_hssi_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\arriav_hssi_ver\arriav_hssi_ver.lib
+Info: alog  -dbg -work arriav_hssi_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Warning: Warning: VCP1251 The warning message cannot be shown because a protected code block was seen in the current compilation session. Any further warnings will be disregarded.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: $root top modules: arriav_hssi_8g_pcs_aggregate arriav_hssi_8g_rx_pcs arriav_hssi_8g_tx_pcs arriav_hssi_common_pcs_pma_interface arriav_hssi_common_pld_pcs_interface arriav_hssi_pipe_gen1_2 arriav_hssi_pma_aux arriav_hssi_pma_int arriav_hssi_pma_rx_buf arriav_hssi_pma_rx_deser arriav_hssi_pma_tx_buf arriav_hssi_pma_tx_cgb arriav_hssi_pma_tx_ser arriav_hssi_pma_cdr_refclk_select_mux arriav_hssi_rx_pcs_pma_interface arriav_hssi_rx_pld_pcs_interface arriav_hssi_tx_pcs_pma_interface arriav_hssi_tx_pld_pcs_interface arriav_hssi_refclk_divider arriav_pll_aux arriav_channel_pll arriav_hssi_avmm_interface arriav_hssi_pma_hi_pmaif arriav_hssi_pma_hi_xcvrif.
+Info: Compile success 0 Errors 156 Warnings  Analysis time: 4[s].
+Info: done
+Info: alog  -dbg -work arriav_hssi_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_8g_pcs_aggregate_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_8g_rx_pcs_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_8g_tx_pcs_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_common_pcs_pma_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_common_pld_pcs_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pipe_gen1_2_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_aux_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_int_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_rx_buf_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_rx_deser_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_tx_buf_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_tx_cgb_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_tx_ser_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_cdr_refclk_select_mux_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_rx_pcs_pma_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_rx_pld_pcs_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_tx_pcs_pma_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_tx_pld_pcs_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_refclk_divider_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_channel_pll_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_avmm_interface_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_hi_pmaif_encrypted found in current working library.
+Info: Info: VCP2113 Module arriav_hssi_pma_hi_xcvrif_encrypted found in current working library.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: arriav_hssi_8g_pcs_aggregate arriav_hssi_8g_rx_pcs arriav_hssi_8g_tx_pcs arriav_hssi_common_pcs_pma_interface arriav_hssi_common_pld_pcs_interface arriav_hssi_pipe_gen1_2 arriav_hssi_pma_aux arriav_hssi_pma_int arriav_hssi_pma_rx_buf arriav_hssi_pma_rx_deser arriav_hssi_pma_tx_buf arriav_hssi_pma_tx_cgb arriav_hssi_pma_tx_ser arriav_hssi_pma_cdr_refclk_select_mux arriav_hssi_rx_pcs_pma_interface arriav_hssi_rx_pld_pcs_interface arriav_hssi_tx_pcs_pma_interface arriav_hssi_tx_pld_pcs_interface arriav_hssi_refclk_divider arriav_pll_aux arriav_channel_pll arriav_hssi_avmm_interface arriav_hssi_pma_hi_pmaif arriav_hssi_pma_hi_xcvrif.
+Info: $root top modules: arriav_hssi_8g_pcs_aggregate arriav_hssi_8g_rx_pcs arriav_hssi_8g_tx_pcs arriav_hssi_common_pcs_pma_interface arriav_hssi_common_pld_pcs_interface arriav_hssi_pipe_gen1_2 arriav_hssi_pma_aux arriav_hssi_pma_int arriav_hssi_pma_rx_buf arriav_hssi_pma_rx_deser arriav_hssi_pma_tx_buf arriav_hssi_pma_tx_cgb arriav_hssi_pma_tx_ser arriav_hssi_pma_cdr_refclk_select_mux arriav_hssi_rx_pcs_pma_interface arriav_hssi_rx_pld_pcs_interface arriav_hssi_tx_pcs_pma_interface arriav_hssi_tx_pld_pcs_interface arriav_hssi_refclk_divider arriav_pll_aux arriav_channel_pll arriav_hssi_avmm_interface arriav_hssi_pma_hi_pmaif arriav_hssi_pma_hi_xcvrif.
+Info: Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+Info: done
+Info: alib -global arriav_pcie_hip_ver "C:/Work_murmansk/Quartus/b072/project/verilog_libs/arriav_pcie_hip_ver"
+Info: ALIB: Library `arriav_pcie_hip_ver' attached.
+Info: arriav_pcie_hip_ver = C:\Work_murmansk\Quartus\b072\project\verilog_libs\arriav_pcie_hip_ver\arriav_pcie_hip_ver.lib
+Info: alog  -dbg -work arriav_pcie_hip_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_pcie_hip_atoms_ncrypt.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Warning: Warning: VCP1251 The warning message cannot be shown because a protected code block was seen in the current compilation session. Any further warnings will be disregarded.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: $root top modules: arriav_hd_altpe2_hip_top.
+Info: Compile success 0 Errors 3 Warnings  Analysis time: 7[s].
+Info: done
+Info: alog  -dbg -work arriav_pcie_hip_ver -v2k "c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_pcie_hip_atoms.v" 
+Info: Pass 1. Scanning modules hierarchy.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Info: VCP2113 Module arriav_hd_altpe2_hip_top_encrypted found in current working library.
+Info: Pass 2. Processing instantiations.
+Info: Pass 3. Processing behavioral statements.
+Info: ELB/DAG code generating.
+Info: Info: VCP2113 Module \$root found in current working library.
+Info: Unit top modules: arriav_hd_altpe2_hip_top.
+Info: $root top modules: arriav_hd_altpe2_hip_top.
+Info: Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+Info: done

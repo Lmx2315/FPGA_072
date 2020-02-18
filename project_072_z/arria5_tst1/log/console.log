@@ -1,0 +1,160 @@
+waveformmode ASDB
+alib verilog_libs/altera_ver
+# Warning: Library altera_ver already exists
+amap altera_ver verilog_libs/altera_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\altera_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work altera_ver c:/intelfpga/17.0/quartus/eda/sim_lib/altera_primitives.v
+# done
+
+alib verilog_libs/lpm_ver
+# Warning: Library lpm_ver already exists
+amap lpm_ver verilog_libs/lpm_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\lpm_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work lpm_ver c:/intelfpga/17.0/quartus/eda/sim_lib/220model.v
+# done
+
+alib verilog_libs/sgate_ver
+# Warning: Library sgate_ver already exists
+amap sgate_ver verilog_libs/sgate_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\sgate_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work sgate_ver c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v
+# done
+
+alib verilog_libs/altera_mf_ver
+# Warning: Library altera_mf_ver already exists
+amap altera_mf_ver verilog_libs/altera_mf_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\altera_mf_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work altera_mf_ver c:/intelfpga/17.0/quartus/eda/sim_lib/altera_mf.v
+# done
+
+alib verilog_libs/altera_lnsim_ver
+# Warning: Library altera_lnsim_ver already exists
+amap altera_lnsim_ver verilog_libs/altera_lnsim_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\altera_lnsim_ver.lib" does not exist.
+alog  -sv2k5 -dbg -msg 0 -work altera_lnsim_ver c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv
+# done
+
+alib verilog_libs/arriav_ver
+# Warning: Library arriav_ver already exists
+amap arriav_ver verilog_libs/arriav_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\arriav_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work arriav_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hmi_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_ver c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v
+# done
+
+alib verilog_libs/arriav_hssi_ver
+# Warning: Library arriav_hssi_ver already exists
+amap arriav_hssi_ver verilog_libs/arriav_hssi_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\arriav_hssi_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work arriav_hssi_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hssi_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_hssi_ver c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_hssi_atoms.v
+# done
+
+alib verilog_libs/arriav_pcie_hip_ver
+# Warning: Library arriav_pcie_hip_ver already exists
+amap arriav_pcie_hip_ver verilog_libs/arriav_pcie_hip_ver
+# AMAP: Error: Library: "C:\intelFPGA\17.0\project\arria5_tst1\src\verilog_libs\arriav_pcie_hip_ver.lib" does not exist.
+alog  -v2k5 -dbg -msg 0 -work arriav_pcie_hip_ver c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_pcie_hip_atoms_ncrypt.v
+# done
+alog  -v2k5 -dbg -msg 0 -work arriav_pcie_hip_ver c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_pcie_hip_atoms.v
+# done
+
+addfile -c -auto C:/intelFPGA/17.0/project/pll1.vo
+# Design: Error: File "C:\intelFPGA\17.0\project\pll1.vo" does not exist or does not have READ permission
+# Error: Cannot add file C:\intelFPGA\17.0\project\pll1.vo to current design
+addfile -c -auto C:/intelFPGA/17.0/project/arria5_tst1.v
+# Adding file C:\intelFPGA\17.0\project\arria5_tst1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/Block_upr_spi1.v
+# Adding file C:\intelFPGA\17.0\project\Block_upr_spi1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/pll1/pll1_0002.v
+# Adding file C:\intelFPGA\17.0\project\pll1\pll1_0002.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/tst_rst_modul.v
+# Adding file C:\intelFPGA\17.0\project\tst_rst_modul.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi4.v
+# Adding file C:\intelFPGA\17.0\project\bufi4.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi5.v
+# Adding file C:\intelFPGA\17.0\project\bufi5.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout3.v
+# Adding file C:\intelFPGA\17.0\project\bufout3.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi3.v
+# Adding file C:\intelFPGA\17.0\project\bufi3.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/Block_control_GPHY.v
+# Adding file C:\intelFPGA\17.0\project\Block_control_GPHY.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/buf_out1.v
+# Adding file C:\intelFPGA\17.0\project\buf_out1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/buf_io1.v
+# Adding file C:\intelFPGA\17.0\project\buf_io1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/buf34_out.v
+# Adding file C:\intelFPGA\17.0\project\buf34_out.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufin20.v
+# Adding file C:\intelFPGA\17.0\project\bufin20.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout10.v
+# Adding file C:\intelFPGA\17.0\project\bufout10.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout7.v
+# Adding file C:\intelFPGA\17.0\project\bufout7.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi1.v
+# Adding file C:\intelFPGA\17.0\project\bufi1.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout17.v
+# Adding file C:\intelFPGA\17.0\project\bufout17.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufi6.v
+# Adding file C:\intelFPGA\17.0\project\bufi6.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout16.v
+# Adding file C:\intelFPGA\17.0\project\bufout16.v ... Done
+addfile -c -auto C:/intelFPGA/17.0/project/bufout18.v
+# Adding file C:\intelFPGA\17.0\project\bufout18.v ... Done
+alib mypll
+# Adding library O.K.
+alog  -v2k5 -dbg -work mypll c:/intelfpga/17.0/project/db/ip/mypll/mypll.v +incdir+c:/intelfpga/17.0/project/db/ip/mypll
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP2515 ../../db/ip/mypll/mypll.v : (14, 7): Undefined module: mypll_altclkctrl_0 was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Unit top modules: mypll.
+# $root top modules: mypll.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog  -v2k5 -dbg -work mypll c:/intelfpga/17.0/project/db/ip/mypll/submodules/mypll_altclkctrl_0.v +incdir+c:/intelfpga/17.0/project/db/ip/mypll/submodules
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 ../../db/ip/mypll/submodules/mypll_altclkctrl_0.v : (54, 31): Undefined module: arriav_clkena was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# $root top modules: mypll.
+# Compile success 0 Errors 1 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k12 -work arria5_tst1 $dsn/src/arria5_tst1.v $dsn/src/Block_upr_spi1.v $dsn/src/pll1_0002.v $dsn/src/tst_rst_modul.v $dsn/src/bufi4.v $dsn/src/bufi5.v $dsn/src/bufout3.v $dsn/src/bufi3.v $dsn/src/Block_control_GPHY.v $dsn/src/buf_out1.v $dsn/src/buf_io1.v $dsn/src/buf34_out.v $dsn/src/bufin20.v $dsn/src/bufout10.v $dsn/src/bufout7.v $dsn/src/bufi1.v $dsn/src/bufout17.v $dsn/src/bufi6.v $dsn/src/bufout16.v $dsn/src/bufout18.v
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP2515 arria5_tst1.v : (359, 7): Undefined module: pll1 was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 arria5_tst1.v : (368, 19): Undefined module: mypll was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 arria5_tst1.v : (1324, 7): Undefined module: custom_phy was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 pll1_0002.v : (85, 7): Undefined module: altera_pll was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 bufi4.v : (70, 7): Undefined module: arriav_io_ibuf was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 bufout3.v : (79, 7): Undefined module: arriav_io_obuf was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Warning: VCP2641 arria5_tst1.v : (1118, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1119, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1120, 25): Redundant digits given in number 1'h00.
+# Warning: VCP2641 arria5_tst1.v : (1121, 25): Redundant digits given in number 1'h00.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: top_module pll1_0002.
+# $root top modules: top_module pll1_0002.
+# Compile success 0 Errors 10 Warnings  Analysis time: 0[s].
+# Warning: ALOG: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 arria5_tst1.v (353): Design unit pll1 instantiated in arria5_tst1.top_module not found in searched libraries: arria5_tst1.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed
+# ELBREAD: Elaboration process.
+# ELBREAD: Error: ELBREAD_0081 arria5_tst1.v (353): Design unit pll1 instantiated in arria5_tst1.top_module not found in searched libraries: arria5_tst1.
+# ELBREAD: Error: Elaboration process completed with errors.
+# Design: Error: Elaboration failed

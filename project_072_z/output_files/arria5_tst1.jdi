@@ -1,0 +1,22 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="a5432b1375d8356ed130"/>
+  </project>
+  <file_info>
+    <file device="5AGXMA7G4F31C4" path="arria5_tst1.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="DDS_48_v1:dds_0" name="dds_0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME DDS_48_v1 HAS_SOPCINFO 1 GENERATION_ID 1581951084"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="DDS_48_v1:dds_1" name="dds_1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME DDS_48_v1 HAS_SOPCINFO 1 GENERATION_ID 1581951084"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

@@ -1,0 +1,78 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+[Configurations]
+compile=arria5_tst1
+[Library]
+arria5_tst1=.\arria5_tst1\arria5_tst1.lib
+mypll=.\src\mypll\mypll.lib
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+[LocalVhdlSets]
+CompileWithDebug=0
+[$LibMap$]
+arria5_tst1=.
+mypll=.
+[Files]
+/arria5_tst1.v=-1
+/Block_upr_spi1.v=-1
+/pll1_0002.v=-1
+/tst_rst_modul.v=-1
+/bufi4.v=-1
+/bufi5.v=-1
+/bufout3.v=-1
+/bufi3.v=-1
+/Block_control_GPHY.v=-1
+/buf_out1.v=-1
+/buf_io1.v=-1
+/buf34_out.v=-1
+/bufin20.v=-1
+/bufout10.v=-1
+/bufout7.v=-1
+/bufi1.v=-1
+/bufout17.v=-1
+/bufi6.v=-1
+/bufout16.v=-1
+/bufout18.v=-1
+[Files.Data]
+.\src\arria5_tst1.v=Verilog Source Code
+.\src\Block_upr_spi1.v=Verilog Source Code
+.\src\pll1_0002.v=Verilog Source Code
+.\src\tst_rst_modul.v=Verilog Source Code
+.\src\bufi4.v=Verilog Source Code
+.\src\bufi5.v=Verilog Source Code
+.\src\bufout3.v=Verilog Source Code
+.\src\bufi3.v=Verilog Source Code
+.\src\Block_control_GPHY.v=Verilog Source Code
+.\src\buf_out1.v=Verilog Source Code
+.\src\buf_io1.v=Verilog Source Code
+.\src\buf34_out.v=Verilog Source Code
+.\src\bufin20.v=Verilog Source Code
+.\src\bufout10.v=Verilog Source Code
+.\src\bufout7.v=Verilog Source Code
+.\src\bufi1.v=Verilog Source Code
+.\src\bufout17.v=Verilog Source Code
+.\src\bufi6.v=Verilog Source Code
+.\src\bufout16.v=Verilog Source Code
+.\src\bufout18.v=Verilog Source Code
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.02.17.17:53:17"
+ outputDirectory="F:/project_072_z/DDS_48_v1/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria V"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="5AGXMA7G4F31C4"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="4_H4"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="in" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="clken" direction="input" role="clken" width="1" />
+   <port name="phi_inc_i" direction="input" role="phi_inc_i" width="48" />
+   <port name="freq_mod_i" direction="input" role="freq_mod_i" width="32" />
+   <port name="phase_mod_i" direction="input" role="phase_mod_i" width="16" />
+  </interface>
+  <interface name="out" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="fsin_o" direction="output" role="fsin_o" width="16" />
+   <port name="fcos_o" direction="output" role="fcos_o" width="16" />
+   <port name="out_valid" direction="output" role="out_valid" width="1" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="DDS_48_v1:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_FAMILY=Arria V,AUTO_DEVICE_SPEEDGRADE=4_H4,AUTO_GENERATION_ID=1581951084,AUTO_UNIQUE_ID=(altera_nco_ii:18.1:apr=48,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=8,fmod_pipe=1,freq_out=15.0,fsamp=96.0,hyper_opt=false,hyper_opt_select=false,mpr=16,numba=1,numch=1,phi_inc=43980465111040,pmod_pipe=1,real_freq_out=15.0,selected_device_family=Arria V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=true,want_phase_mod=true,want_sin_and_cos=dual_output)"
+   instancePathKey="DDS_48_v1"
+   kind="DDS_48_v1"
+   version="1.0"
+   name="DDS_48_v1">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1581951084" />
+  <parameter name="AUTO_DEVICE" value="5AGXMA7G4F31C4" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="4_H4" />
+  <generatedFiles>
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/DDS_48_v1.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_fxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/dop_reg.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_seg_sel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx_g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_2c.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_isdr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_pxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_fs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_init_pm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_crd_par.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altq.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcash.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.ocp"
+       type="OTHER"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="F:/project_072_z/DDS_48_v1.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga/18.1/ip/altera/dsp/altera_nco_ii/altera_nco_ii_hw.tcl" />
+   <file path="C:/intelFPGA/18.1/ip/altera/dsp/altera_nco_ii/nco_helper.jar" />
+   <file
+       path="C:/intelFPGA/18.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="DDS_48_v1">queue size: 0 starting:DDS_48_v1 "DDS_48_v1"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="DDS_48_v1"><![CDATA["<b>DDS_48_v1</b>" reuses <b>altera_nco_ii</b> "<b>submodules/DDS_48_v1_nco_ii_0</b>"]]></message>
+   <message level="Debug" culprit="DDS_48_v1">queue size: 0 starting:altera_nco_ii "submodules/DDS_48_v1_nco_ii_0"</message>
+   <message level="Info" culprit="nco_ii_0"><![CDATA["<b>DDS_48_v1</b>" instantiated <b>altera_nco_ii</b> "<b>nco_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_nco_ii:18.1:apr=48,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=8,fmod_pipe=1,freq_out=15.0,fsamp=96.0,hyper_opt=false,hyper_opt_select=false,mpr=16,numba=1,numch=1,phi_inc=43980465111040,pmod_pipe=1,real_freq_out=15.0,selected_device_family=Arria V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=true,want_phase_mod=true,want_sin_and_cos=dual_output"
+   instancePathKey="DDS_48_v1:.:nco_ii_0"
+   kind="altera_nco_ii"
+   version="18.1"
+   name="DDS_48_v1_nco_ii_0">
+  <parameter name="aprp" value="16" />
+  <parameter name="numba" value="1" />
+  <parameter name="cordic_arch" value="parallel" />
+  <parameter name="pmod_pipe" value="1" />
+  <parameter name="fsamp" value="96.0" />
+  <parameter name="cycles_per_output" value="1" />
+  <parameter name="selected_device_family" value="Arria V" />
+  <parameter name="apri" value="16" />
+  <parameter name="aprf" value="32" />
+  <parameter name="want_dither" value="true" />
+  <parameter name="hyper_opt_select" value="false" />
+  <parameter name="want_phase_mod" value="true" />
+  <parameter name="apr" value="48" />
+  <parameter name="hyper_opt" value="false" />
+  <parameter name="trig_cycles_per_output" value="1" />
+  <parameter name="dpri" value="8" />
+  <parameter name="mpr" value="16" />
+  <parameter name="design_env" value="NATIVE" />
+  <parameter name="numch" value="1" />
+  <parameter name="want_freq_mod" value="true" />
+  <parameter name="use_dedicated_multipliers" value="true" />
+  <parameter name="want_sin_and_cos" value="dual_output" />
+  <parameter name="phi_inc" value="43980465111040" />
+  <parameter name="fmod_pipe" value="1" />
+  <parameter name="arch" value="cordic" />
+  <parameter name="freq_out" value="15.0" />
+  <parameter name="real_freq_out" value="15.0" />
+  <generatedFiles>
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_fxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/dop_reg.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_seg_sel.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx_g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_2c.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_isdr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_pxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_fs.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_init_pm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_crd_par.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altq.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcash.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.ocp"
+       type="OTHER"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/18.1/ip/altera/dsp/altera_nco_ii/altera_nco_ii_hw.tcl" />
+   <file path="C:/intelFPGA/18.1/ip/altera/dsp/altera_nco_ii/nco_helper.jar" />
+   <file
+       path="C:/intelFPGA/18.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="DDS_48_v1" as="nco_ii_0" />
+  <messages>
+   <message level="Debug" culprit="DDS_48_v1">queue size: 0 starting:altera_nco_ii "submodules/DDS_48_v1_nco_ii_0"</message>
+   <message level="Info" culprit="nco_ii_0"><![CDATA["<b>DDS_48_v1</b>" instantiated <b>altera_nco_ii</b> "<b>nco_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

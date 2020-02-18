@@ -1,0 +1,173 @@
+timestamp=1529415660327
+
+[~A]
+LastVerilogToplevel=oper_latch
+ModifyID=662
+Version=74
+c:/intelfpga/17.0/quartus/eda/sim_lib/sgate.v=0*207206*212572
+
+[$root]
+A/$root=22|||1*500780
+BinI32/$root=3*569175
+SLP=3*569279
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c73a565f2ade592f8ac1c68f484c9216dc5da9ee73e514ce85b25a5695fe26bb
+
+[io_buf_opdrn]
+A/io_buf_opdrn=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|249|1*509789
+BinI32/io_buf_opdrn=3*579082
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|249
+SLP=3*579566
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|352d0d24d39edeb0abfb5e9e4764bc734280b2653aaa26fa75a24d0509412b87b05e96cf1c893a646982e48cc40ad042
+
+[io_buf_tri]
+A/io_buf_tri=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|221|1*508585
+BinI32/io_buf_tri=3*578291
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|221
+SLP=3*578802
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|bfdef75fc817d01b461539d0ed1d149476b0027d4c69ea6af6ffd28b0945d95b82acf24867e21e7aec6666fbe833a612
+
+[mux21]
+A/mux21=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|191|1*507152
+BinI32/mux21=3*577529
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|191
+SLP=3*578022
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|959acea00ed13aea6f5c6237bd5f200a231ee26ec558f10b3be5010d9a25bfc6
+
+[oper_add]
+A/oper_add=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|19|1*501330
+BinI32/oper_add=3*569347
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|19
+SLP=3*571027
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|5e62a9100ba189e5cc6b80d28da3fca62818afb70cf1f2f39ae611a8b84306909d90372ec42890b91ada41ef466ba424
+
+[oper_addsub]
+A/oper_addsub=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|96|1*503983
+BinI32/oper_addsub=3*571934
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|96
+SLP=3*576160
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0366580054b31b9e65234391f2cbc5281e5292cf0faecda30ecbfa6c57a45f42b396e0321d36dbbc47fb7448ff9abd87
+
+[oper_bus_mux]
+A/oper_bus_mux=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|1073|1*541389
+BinI32/oper_bus_mux=3*618216
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|1073
+SLP=3*620303
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|ebb61cf53a419da92441aafa28d8c648f47ae9bb63ee924dd0b769661077e31d5d24d5803556a0691117ba306b4f7f58
+
+[oper_decoder]
+A/oper_decoder=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|1037|1*539539
+BinI32/oper_decoder=3*617027
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|1037
+SLP=3*617863
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|4136e173de9efd91a63050e71909df75f93d16a0d5e00bec5bc4259eea27da55c748b87ef7082b3f7c81c36d8ab9e1b3
+
+[oper_div]
+A/oper_div=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|395|1*515900
+BinI32/oper_div=3*585388
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|395
+SLP=3*588842
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|330fae5dbb5c03c988f5bb041e22a2ea23b0775eaf50bfb15e1a083253ac86ef944177f3042e515396b1d2ebd4b1aff9
+
+[oper_latch]
+A/oper_latch=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|1136|1*544048
+BinI32/oper_latch=3*621139
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|1136
+SLP=3*621649
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|eb3d1123ee7c1687dd58d460280bb935a13f858aa93b90b388a49a62f7159ced17f355a2cf71b8a8f3f53f0b15902676
+
+[oper_left_shift]
+A/oper_left_shift=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|573|1*522160
+BinI32/oper_left_shift=3*594718
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|573
+SLP=3*597395
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|71c422a85696a1fcbf24867237898d3341a739c5e8b02c8ca27ed3a0ab8d2f5aaffc57314580152ffc9dd0e7a8c7c2c4
+
+[oper_less_than]
+A/oper_less_than=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|854|1*532974
+BinI32/oper_less_than=3*607968
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|854
+SLP=3*611675
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|fff179fc4174dd7834e3fa08c59d06991eef974df35ec00b7e7bfa3c56882a0f844658279ad221c34462a2c4ed3f9c1e
+
+[oper_mod]
+A/oper_mod=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|484|1*519030
+BinI32/oper_mod=3*590062
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|484
+SLP=3*593523
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|8d06492ec5a84430b1104196c414f923bf54c37a5929d0b0bef44c4f98f3ba18944177f3042e515396b1d2ebd4b1aff9
+
+[oper_mult]
+A/oper_mult=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|275|1*510928
+BinI32/oper_mult=3*579835
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|275
+SLP=3*582369
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0072e9382ea4cdea8b1b737fbb4f9e4e39f08beca6824c6950d73c955418dcb71a6623e967d3b673db5d46608ba36eaa
+
+[oper_mux]
+A/oper_mux=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|946|1*535683
+BinI32/oper_mux=3*613009
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|946
+SLP=3*614273
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|c89ab02314426ee986b16abab2f788513de928612a4f300a0130f3a4cd5eb21fc008982fce13cef34db20d75436571ad
+
+[oper_right_shift]
+A/oper_right_shift=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|650|1*524796
+BinI32/oper_right_shift=3*598593
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|650
+SLP=3*601631
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|7c58ce914210dc94ea6d6a8e195da710d912761c59fa0921be3d3a3f08b1184813d6fefbbe083ed0c1628473323ecdd1
+
+[oper_rotate_left]
+A/oper_rotate_left=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|733|1*527450
+BinI32/oper_rotate_left=3*602953
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|733
+SLP=3*604614
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|39f7e0dc58f1ce088e7b8ce2ab3d650a856b62e7a27383d37cf6b11b55425eac70948e628664fefcfca215e7d69fb32a
+
+[oper_rotate_right]
+A/oper_rotate_right=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|794|1*530210
+BinI32/oper_rotate_right=3*605462
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|794
+SLP=3*607123
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|2e6d667c82c4dab82fb516a0502e04f0a7538104e3de42fa700a9c03df52c58b29a7792f7c58cea0b7f0084ce6e9f1be
+
+[oper_selector]
+A/oper_selector=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|992|1*537436
+BinI32/oper_selector=3*614885
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|992
+SLP=3*616269
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|0c150b6f9d8008307637009ff09db995b044b831af9bff36320050d0c566303e1e04c41a10ae656640a9419d08852cb2
+
+[tri_bus]
+A/tri_bus=22|./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|348|1*513956
+BinI32/tri_bus=3*583188
+R=./../../../../../../intelfpga/17.0/quartus/eda/sim_lib/sgate.v|348
+SLP=3*584627
+Version=10.4.183.6396  (Windows)|0000000a789cd32d33ca3655d04d494a07000f5802f0|506baf7110e51efd0a1be004a69b6cdd26527262ddaa47cb266f3a3c4d9b973a85bd7af620162c27843e640e8011ee0f
+
+[~MFT]
+0=24|0sgate_ver.mgf|212572|64940
+1=40|1sgate_ver.mgf|544048|500780
+3=80|3sgate_ver.mgf|621649|569175
+
+[~U]
+$root=12|0*202027|
+io_buf_opdrn=12|0*203346||0x10
+io_buf_tri=12|0*203154||0x10
+mux21=12|0*202956||0x10
+oper_add=12|0*202401||0x10
+oper_addsub=12|0*202688||0x10
+oper_bus_mux=12|0*206716||0x10
+oper_decoder=12|0*206472||0x10
+oper_div=12|0*204056||0x10
+oper_latch=12|0*206982||0x10
+oper_left_shift=12|0*204581||0x10
+oper_less_than=12|0*205711||0x10
+oper_mod=12|0*204318||0x10
+oper_mult=12|0*203534||0x10
+oper_mux=12|0*205996||0x10
+oper_right_shift=12|0*204860||0x10
+oper_rotate_left=12|0*205140||0x10
+oper_rotate_right=12|0*205425||0x10
+oper_selector=12|0*206230||0x10
+tri_bus=12|0*203832||0x10

@@ -1,0 +1,53 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.jesd204_0.inst_rst_n_bridge -pg 1
+preplace inst unsaved.jesd204_0.inst_phy.inst_phy_adapter -pg 1
+preplace inst unsaved.jesd204_0.inst_phy -pg 1
+preplace inst unsaved.jesd204_0 -pg 1 -lvl 1 -y 50
+preplace inst unsaved.jesd204_0.inst_phy.inst_rx_mlpcs -pg 1
+preplace inst unsaved.jesd204_0.inst_rx -pg 1
+preplace inst unsaved.jesd204_0.inst_phy.inst_xcvr -pg 1
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst unsaved.jesd204_0.inst_clk_bridge -pg 1
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.rx_digitalreset,(SLAVE)unsaved.rx_digitalreset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_cf,(SLAVE)jesd204_0.csr_cf) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.rxlink_clk,(SLAVE)jesd204_0.rxlink_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.csr_cs,(SLAVE)unsaved.csr_cs) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.somf,(SLAVE)jesd204_0.somf) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_avs_clk,(SLAVE)unsaved.jesd204_rx_avs_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.rxphy_clk,(SLAVE)jesd204_0.rxphy_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_dlb_data_valid,(SLAVE)unsaved.jesd204_rx_dlb_data_valid) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(MASTER)jesd204_0.jesd204_rx_link,(MASTER)unsaved.jesd204_rx_link) 1 1 1 N
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.dev_sync_n,(SLAVE)unsaved.dev_sync_n) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_avs_rst_n,(SLAVE)unsaved.jesd204_rx_avs_rst_n) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.sysref,(SLAVE)unsaved.sysref) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_frame_error,(SLAVE)unsaved.jesd204_rx_frame_error) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.rxlink_rst_n,(SLAVE)jesd204_0.rxlink_rst_n) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.sof,(SLAVE)jesd204_0.sof) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_k,(SLAVE)jesd204_0.csr_k) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.csr_n,(SLAVE)unsaved.csr_n) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.rx_analogreset,(SLAVE)unsaved.rx_analogreset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_m,(SLAVE)jesd204_0.csr_m) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_dlb_disperr,(SLAVE)unsaved.jesd204_rx_dlb_disperr) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.rx_serial_data,(SLAVE)jesd204_0.rx_serial_data) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_s,(SLAVE)jesd204_0.csr_s) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_dlb_kchar_data,(SLAVE)unsaved.jesd204_rx_dlb_kchar_data) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.pll_ref_clk,(SLAVE)unsaved.pll_ref_clk) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_np,(SLAVE)jesd204_0.csr_np) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.jesd204_rx_avs,(SLAVE)jesd204_0.jesd204_rx_avs) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_int,(SLAVE)unsaved.jesd204_rx_int) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.rx_cal_busy,(SLAVE)jesd204_0.rx_cal_busy) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.reconfig_from_xcvr,(SLAVE)unsaved.reconfig_from_xcvr) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_lane_powerdown,(SLAVE)jesd204_0.csr_lane_powerdown) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.jesd204_rx_dlb_errdetect,(SLAVE)jesd204_0.jesd204_rx_dlb_errdetect) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.csr_f,(SLAVE)unsaved.csr_f) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.dev_lane_aligned,(SLAVE)unsaved.dev_lane_aligned) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.csr_hd,(SLAVE)jesd204_0.csr_hd) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.csr_l,(SLAVE)unsaved.csr_l) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.rx_islockedtodata,(SLAVE)jesd204_0.rx_islockedtodata) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.csr_rx_testmode,(SLAVE)unsaved.csr_rx_testmode) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.jesd204_rx_dlb_data,(SLAVE)unsaved.jesd204_rx_dlb_data) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.reconfig_to_xcvr,(SLAVE)unsaved.reconfig_to_xcvr) 1 0 1 NJ
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)jesd204_0.alldev_lane_aligned,(SLAVE)unsaved.alldev_lane_aligned) 1 0 1 NJ
+levelinfo -pg 1 0 170 670
+levelinfo -hier unsaved 180 360 540

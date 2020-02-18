@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="pll_125_120_96_96_96_v1_sim/pll_125_120_96_96_96_v1.vo"
+   type="VERILOG" />
+ <topLevel name="pll_125_120_96_96_96_v1" />
+ <deviceFamily name="arriav" />
+</simPackage>

@@ -1,0 +1,507 @@
+timestamp=1518155534639
+
+[$root]
+A/$root=22|""|0|1*5333894
+BinI32/$root=3*3185952
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ALTERA_LNSIM_MEMORY_INITIALIZATION]
+A/ALTERA_LNSIM_MEMORY_INITIALIZATION=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|19197|1*6543010
+BinI32/ALTERA_LNSIM_MEMORY_INITIALIZATION=3*3736917
+P/~emb=1135,2939,8756,11091
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|19197
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_arriav_pll]
+A/altera_arriav_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|22500|1*6820069
+BinI32/altera_arriav_pll=3*3924290
+P/~emb=74588,86421,94969,99195
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|22500
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_arriavgz_pll]
+A/altera_arriavgz_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|24536|1*7073081
+BinI32/altera_arriavgz_pll=3*4082897
+P/~emb=74596,86431,94979,99205
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|24536
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_cyclonev_pll]
+A/altera_cyclonev_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|26572|1*7326013
+BinI32/altera_cyclonev_pll=3*4242094
+P/~emb=45725,53696,59416,61885
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|26572
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_generic_pll_functions]
+A/altera_generic_pll_functions=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|1486|1*5375517
+BinI32/altera_generic_pll_functions=3*3222451
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|1486
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_iopll]
+A/altera_iopll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30840|1*7775290
+BinI32/altera_iopll=3*4575316
+P/~emb=6172,9619,11327,14848
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30840
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_iopll_rotation_lcells]
+A/altera_iopll_rotation_lcells=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|34133|1*7830623
+BinI32/altera_iopll_rotation_lcells=3*4594759
+P/~emb=951,1359,1669,2026
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|34133
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_lnsim_functions]
+A/altera_lnsim_functions=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4|1*5334476
+BinI32/altera_lnsim_functions=3*3186091
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_mult_add]
+A/altera_mult_add=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5815|1*5641888
+BinI32/altera_mult_add=3*3415021
+P/~emb=21728,25533,28856,33092
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5815
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_mult_add_rtl]
+A/altera_mult_add_rtl=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|6919|1*5743544
+BinI32/altera_mult_add_rtl=3*3438567
+P/~emb=22346,27533,32238,37224
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|6919
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_pll]
+A/altera_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|27965|1*7479701
+BinI32/altera_pll=3*4362005
+P/~emb=14051,20747,24998,43260
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|27965
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_pll_dps_lcell_comb]
+A/altera_pll_dps_lcell_comb=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|34206|1*7703811
+BinI32/altera_pll_dps_lcell_comb=3*4569358
+P/~emb=434,820,1146,1922
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|34206
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_pll_reconfig_tasks]
+A/altera_pll_reconfig_tasks=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|11302|1*6030757
+BinI32/altera_pll_reconfig_tasks=3*3567628
+P/~emb=84845,87279,98814,104183
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|11302
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_stratixv_pll]
+A/altera_stratixv_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|20461|1*6567137
+BinI32/altera_stratixv_pll=3*3765227
+P/~emb=74596,86431,94979,99205
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|20461
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_syncram]
+A/altera_syncram=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|16238|1*6485474
+BinI32/altera_syncram=3*3633182
+P/~emb=5344,9671,23652,28719
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|16238
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[altera_syncram_forwarding_logic]
+A/altera_syncram_forwarding_logic=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|19104|1*6562588
+BinI32/altera_syncram_forwarding_logic=3*3761795
+P/~emb=754,1135,1593,1682
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|19104
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_adder_function]
+A/ama_adder_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|9479|1*5968828
+BinI32/ama_adder_function=3*3528859
+P/~emb=2426,3350,4497,5741
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|9479
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_chainout_adder_accumulator_function]
+A/ama_chainout_adder_accumulator_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10300|1*6003266
+BinI32/ama_chainout_adder_accumulator_function=3*3550099
+P/~emb=1598,2426,3301,4485
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10300
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_coef_reg_ext_function]
+A/ama_coef_reg_ext_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|9087|1*5897643
+BinI32/ama_coef_reg_ext_function=3*3493473
+P/~emb=4065,5113,6358,7825
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|9087
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_data_split_reg_ext_function]
+A/ama_data_split_reg_ext_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8758|1*5878305
+BinI32/ama_data_split_reg_ext_function=3*3483958
+P/~emb=2830,3678,4772,6284
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8758
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_dynamic_signed_function]
+A/ama_dynamic_signed_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8469|1*6022844
+BinI32/ama_dynamic_signed_function=3*3562663
+P/~emb=559,888,1136,1206
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8469
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_latency_function]
+A/ama_latency_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|11150|1*5872904
+BinI32/ama_latency_function=3*3475733
+P/~emb=631,1165,2048,2273
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|11150
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_multiplier_function]
+A/ama_multiplier_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|9789|1*5954664
+BinI32/ama_multiplier_function=3*3524571
+P/~emb=2987,3800,4573,5618
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|9789
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_preadder_function]
+A/ama_preadder_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10034|1*5933395
+BinI32/ama_preadder_function=3*3504256
+P/~emb=4008,4931,6356,6986
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10034
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_register_function]
+A/ama_register_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8529|1*5868130
+BinI32/ama_register_function=3*3469164
+P/~emb=613,1135,1904,2087
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8529
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_register_with_ext_function]
+A/ama_register_with_ext_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8657|1*6026146
+BinI32/ama_register_with_ext_function=3*3565001
+P/~emb=969,1504,1872,2204
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8657
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_scanchain]
+A/ama_scanchain=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10917|1*5921523
+BinI32/ama_scanchain=3*3499728
+P/~emb=2066,2726,3381,4491
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10917
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_signed_extension_function]
+A/ama_signed_extension_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8411|1*6019662
+BinI32/ama_signed_extension_function=3*3560271
+P/~emb=519,840,1077,1147
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|8411
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[ama_systolic_adder_function]
+A/ama_systolic_adder_function=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10610|1*5986023
+BinI32/ama_systolic_adder_function=3*3536872
+P/~emb=2350,3224,4380,5524
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|10610
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_14nm_lutram_register]
+A/common_14nm_lutram_register=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5503|1*5618851
+BinI32/common_14nm_lutram_register=3*3391583
+D/common_14nm_lutram_register=4*13784
+P/~emb=488,866,1339,1501
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5503
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_lutram_register]
+A/common_28nm_lutram_register=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5241|1*5603298
+BinI32/common_28nm_lutram_register=3*3384996
+D/common_28nm_lutram_register=4*12327
+P/~emb=488,861,1297,1428
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5241
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_mlab_cell_core]
+A/common_28nm_mlab_cell_core=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4579|1*5565380
+BinI32/common_28nm_mlab_cell_core=3*3369021
+P/~emb=1308,1994,2784,3140
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4579
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_mlab_cell_pulse_generator]
+A/common_28nm_mlab_cell_pulse_generator=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4496|1*5561218
+BinI32/common_28nm_mlab_cell_pulse_generator=3*3366789
+D/common_28nm_mlab_cell_pulse_generator=4*11594
+P/~emb=246,506,766,917
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4496
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_mlab_latch]
+A/common_28nm_mlab_latch=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4539|1*5563510
+BinI32/common_28nm_mlab_latch=3*3367625
+P/~emb=238,462,718,881
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4539
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_ram_block]
+A/common_28nm_ram_block=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2886|1*5455374
+BinI32/common_28nm_ram_block=3*3313971
+P/~emb=6831,9393,15360,18592
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2886
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_ram_pulse_generator]
+A/common_28nm_ram_pulse_generator=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2767|1*5446940
+BinI32/common_28nm_ram_pulse_generator=3*3308942
+D/common_28nm_ram_pulse_generator=4*10028
+P/~emb=313,592,888,1041
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2767
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_28nm_ram_register]
+A/common_28nm_ram_register=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2812|1*5449613
+BinI32/common_28nm_ram_register=3*3310428
+D/common_28nm_ram_register=4*10339
+P/~emb=445,770,1190,1323
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2812
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_porta_latches]
+A/common_porta_latches=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4737|1*5576079
+BinI32/common_porta_latches=3*3378268
+P/~emb=807,1167,1540,1799
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4737
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[common_porta_registers]
+A/common_porta_registers=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4976|1*5589514
+BinI32/common_porta_registers=3*3381625
+P/~emb=924,1302,1643,2061
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4976
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[dprio_init]
+A/dprio_init=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30680|1*7698972
+BinI32/dprio_init=3*4566565
+P/~emb=563,981,1583,1775
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30680
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[dps_extra_kick]
+A/dps_extra_kick=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30601|1*7695519
+BinI32/dps_extra_kick=3*4563437
+P/~emb=564,925,1483,1755
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30601
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[dps_pulse_gen]
+A/dps_pulse_gen=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30759|1*7693243
+BinI32/dps_pulse_gen=3*4561282
+P/~emb=297,541,860,1036
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|30759
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[dps_pulse_gen_fourteennm_iopll]
+A/dps_pulse_gen_fourteennm_iopll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32142|1*7907643
+BinI32/dps_pulse_gen_fourteennm_iopll=3*4625183
+P/~emb=583,892,1256,1431
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32142
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[dps_pulse_gen_iopll]
+A/dps_pulse_gen_iopll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|31402|1*7827343
+BinI32/dps_pulse_gen_iopll=3*4592319
+P/~emb=561,859,1223,1398
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|31402
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[fourteennm_altera_iopll]
+A/fourteennm_altera_iopll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|31619|1*7856497
+BinI32/fourteennm_altera_iopll=3*4608757
+P/~emb=6300,9759,11247,14767
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|31619
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[fourteennm_iopll_functions]
+A/fourteennm_iopll_functions=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32218|1*7910967
+BinI32/fourteennm_iopll_functions=3*4627637
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32218
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[fourteennm_simple_iopll]
+A/fourteennm_simple_iopll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32330|1*7921827
+BinI32/fourteennm_simple_iopll=3*4634441
+P/~emb=5104,6533,7889,9052
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32330
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[fourteennm_sub_iopll]
+A/fourteennm_sub_iopll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32697|1*7948246
+BinI32/fourteennm_sub_iopll=3*4728313
+P/~emb=4597,6312,9609,11017
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|32697
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_14nm_mlab_cell_impl]
+A/generic_14nm_mlab_cell_impl=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5324|1*5609434
+BinI32/generic_14nm_mlab_cell_impl=3*3388943
+D/generic_14nm_mlab_cell_impl=4*13585
+P/~emb=1482,2365,3148,3607
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5324
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_28nm_hp_mlab_cell_impl]
+A/generic_28nm_hp_mlab_cell_impl=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4812|1*5580057
+BinI32/generic_28nm_hp_mlab_cell_impl=3*3379238
+D/generic_28nm_hp_mlab_cell_impl=4*11917
+P/~emb=1515,2386,3167,3630
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4812
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_28nm_lc_mlab_cell_impl]
+A/generic_28nm_lc_mlab_cell_impl=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5062|1*5593777
+BinI32/generic_28nm_lc_mlab_cell_impl=3*3382357
+D/generic_28nm_lc_mlab_cell_impl=4*12122
+P/~emb=1518,2404,3201,3664
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5062
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_cdr]
+A/generic_cdr=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2394|1*5428497
+BinI32/generic_cdr=3*3266469
+P/~emb=1360,2397,3645,5087
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|2394
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_device_pll]
+A/generic_device_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5597|1*5626269
+BinI32/generic_device_pll=3*3396437
+P/~emb=1967,2779,3449,4179
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5597
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_m10k]
+A/generic_m10k=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4269|1*5542318
+BinI32/generic_m10k=3*3365263
+P/~emb=3991,5186,6261,6646
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4269
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_m20k]
+A/generic_m20k=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4038|1*5522392
+BinI32/generic_m20k=3*3363637
+P/~emb=4118,5336,6483,6866
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|4038
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_mux]
+A/generic_mux=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5585|1*5624987
+BinI32/generic_mux=3*3395873
+P/~emb=169,363,507,583
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|5585
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[generic_pll]
+A/generic_pll=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|1605|1*5379467
+BinI32/generic_pll=3*3223868
+P/~emb=4543,6376,9717,11105
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|1605
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[iopll_bootstrap]
+A/iopll_bootstrap=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|34306|1*7839633
+BinI32/iopll_bootstrap=3*4597715
+P/~emb=1107,2386,4516,5261
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|34306
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[twentynm_iopll_arlol]
+A/twentynm_iopll_arlol=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|31462|1*7834106
+BinI32/twentynm_iopll_arlol=3*4595220
+P/~emb=304,835,1448,1906
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|31462
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[twentynm_iopll_ip]
+A/twentynm_iopll_ip=22|./../../../../quartus/eda/sim_lib/altera_lnsim.sv|33519|1*7708469
+BinI32/twentynm_iopll_ip=3*4571439
+P/~emb=11807,14553,18603,19196
+R=./../../../../quartus/eda/sim_lib/altera_lnsim.sv|33519
+Version=9.1.2353.4205  (Windows)|0000001f789cd3cd5148cc29492d4a8ccfc92bcecc8d2f4b2d52d04d494a57d02d2e33ca360500b37d0ae3
+
+[~A]
+LastVerilogToplevel=fourteennm_simple_iopll
+ModifyID=1899
+Version=73
+c:/intelfpga/17.0/quartus/eda/sim_lib/altera_lnsim.sv=0*3351977*3574841
+
+[~MFT]
+0=192|0altera_lnsim_ver.mgf|3574841|446780
+1=304|1altera_lnsim_ver.mgf|7948246|5333894
+3=304|3altera_lnsim_ver.mgf|4728313|3185952
+4=39|4altera_lnsim_ver.mgf|13784|10028
+
+[~U]
+$root=12|0*2383578|
+ALTERA_LNSIM_MEMORY_INITIALIZATION=12|0*2820049||0x80
+altera_arriav_pll=12|0*2940221||0x80
+altera_arriavgz_pll=12|0*3039606||0x80
+altera_cyclonev_pll=12|0*3139003||0x80
+altera_generic_pll_functions=12|0*2421818||0x200000000000
+altera_iopll=12|0*3275694||0x90
+altera_iopll_rotation_lcells=12|0*3293182||0x80
+altera_lnsim_functions=12|0*2384256||0x200000000000
+altera_mult_add=12|0*2518633||0x90
+altera_mult_add_rtl=12|0*2551855||0x80
+altera_pll=12|0*3201080||0x90
+altera_pll_dps_lcell_comb=12|0*3254123||0x80
+altera_pll_reconfig_tasks=12|0*2655154||0x90
+altera_stratixv_pll=12|0*2840824||0x80
+altera_syncram=12|0*2774142||0x90
+altera_syncram_forwarding_logic=12|0*2838775||0x80
+ama_adder_function=12|0*2631331||0x80
+ama_chainout_adder_accumulator_function=12|0*2644336||0x80
+ama_coef_reg_ext_function=12|0*2603709||0x80
+ama_data_split_reg_ext_function=12|0*2596725||0x80
+ama_dynamic_signed_function=12|0*2651248||0x80
+ama_latency_function=12|0*2593542||0x80
+ama_multiplier_function=12|0*2625339||0x80
+ama_preadder_function=12|0*2617362||0x80
+ama_register_function=12|0*2590677||0x80
+ama_register_with_ext_function=12|0*2652721||0x80
+ama_scanchain=12|0*2612509||0x80
+ama_signed_extension_function=12|0*2649836||0x80
+ama_systolic_adder_function=12|0*2637914||0x80
+common_14nm_lutram_register=12|0*2511103||0x80
+common_28nm_lutram_register=12|0*2504950||0x80
+common_28nm_mlab_cell_core=12|0*2488516||0x80
+common_28nm_mlab_cell_pulse_generator=12|0*2486063||0x80
+common_28nm_mlab_latch=12|0*2487362||0x80
+common_28nm_ram_block=12|0*2448281||0x80
+common_28nm_ram_pulse_generator=12|0*2444937||0x80
+common_28nm_ram_register=12|0*2446362||0x80
+common_porta_latches=12|0*2492465||0x90
+common_porta_registers=12|0*2498573||0x80
+dprio_init=12|0*3251689||0x80
+dps_extra_kick=12|0*3249379||0x80
+dps_pulse_gen=12|0*3247998||0x80
+dps_pulse_gen_fourteennm_iopll=12|0*3321882||0x80
+dps_pulse_gen_iopll=12|0*3291406||0x80
+fourteennm_altera_iopll=12|0*3306484||0x90
+fourteennm_iopll_functions=12|0*3323702||0x200000000000
+fourteennm_simple_iopll=12|0*3326535||0x90
+fourteennm_sub_iopll=12|0*3336506||0x80
+generic_14nm_mlab_cell_impl=12|0*2507024||0x90
+generic_28nm_hp_mlab_cell_impl=12|0*2494469||0x90
+generic_28nm_lc_mlab_cell_impl=12|0*2500803||0x90
+generic_cdr=12|0*2438455||0x90
+generic_device_pll=12|0*2514012||0x90
+generic_m10k=12|0*2479285||0x90
+generic_m20k=12|0*2472288||0x90
+generic_mux=12|0*2513277||0x90
+generic_pll=12|0*2422800||0x80
+iopll_bootstrap=12|0*3298129||0x80
+twentynm_iopll_arlol=12|0*3295393||0x80
+twentynm_iopll_ip=12|0*3256360||0x80
+

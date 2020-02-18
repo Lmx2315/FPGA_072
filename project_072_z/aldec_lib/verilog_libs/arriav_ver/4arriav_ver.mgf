@@ -1,0 +1,987 @@
+I 000042 56 972 1518108227428 arriav_dffe
+(_unit arriav_dffe
+	(_specify
+		(_specparam TREG integer 0)
+		(_specparam TREN integer 0)
+		(_specparam TRSU integer 0)
+		(_specparam TRH integer 0)
+		(_specparam TRPR integer 0)
+		(_specparam TRCL integer 0)
+		(_tchk setup 0 216
+			(_port D ())
+			(_port CLK (posedge) (_code  1 legal))
+			(_register (viol_notifier))
+		)
+		(_tchk hold 0 217
+			(_port CLK (posedge) (_code  2 legal))
+			(_port D ())
+			(_register (viol_notifier))
+		)
+		(_tchk setup 0 218
+			(_port ENA ())
+			(_port CLK (posedge) (_code  3 legal))
+			(_register (viol_notifier))
+		)
+		(_tchk hold 0 219
+			(_port CLK (posedge) (_code  4 legal))
+			(_port ENA ())
+			(_register (viol_notifier))
+		)
+		(_modpath parallel positive 0 221
+			(_port CLRN in negedge)
+			(_port Q out negedge)
+		)
+		(_modpath parallel positive 0 222
+			(_port PRN in negedge)
+			(_port Q out negedge)
+		)
+		(_modpath parallel positive 0 223
+			(_port CLK in posedge)
+			(_port Q out posedge)
+			(_datain D in posedge)
+		)
+	)
+)
+I 000043 56 261 1518108227433 arriav_mux21
+(_unit arriav_mux21
+	(_specify
+		(_modpath parallel unknown 0 246
+			(_port A in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 247
+			(_port B in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 248
+			(_port S in )
+			(_port MO out )
+		)
+	)
+)
+I 000043 56 526 1518108227438 arriav_mux41
+(_unit arriav_mux41
+	(_specify
+		(_modpath parallel unknown 0 283
+			(_port IN0 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 284
+			(_port IN1 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 285
+			(_port IN2 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 286
+			(_port IN3 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 287
+			(_port S (_constant \1\) in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 288
+			(_port S (_constant \0\) in )
+			(_port MO out )
+		)
+	)
+)
+I 000042 56 111 1518108227443 arriav_and1
+(_unit arriav_and1
+	(_specify
+		(_modpath parallel unknown 0 304
+			(_port IN1 in )
+			(_port Y out )
+		)
+	)
+)
+I 000043 56 112 1518108227448 arriav_and16
+(_unit arriav_and16
+	(_specify
+		(_modpath parallel unknown 0 317
+			(_port IN1 in )
+			(_port Y out )
+		)
+	)
+)
+I 000041 56 1044 1518108227469 arriav_ff
+(_unit arriav_ff
+	(_specify
+		(_tchk setuphold 0 469
+			(_port clk (posedge) (_code  8 nosloadsclr))
+			(_port d ())
+			(_register (d_viol))
+		)
+		(_tchk setuphold 0 470
+			(_port clk (posedge) (_code  9 reset))
+			(_port sclr ())
+			(_register (sclr_viol))
+		)
+		(_tchk setuphold 0 471
+			(_port clk (posedge) (_code  10 reset))
+			(_port sload ())
+			(_register (sload_viol))
+		)
+		(_tchk setuphold 0 472
+			(_port clk (posedge) (_code  11 sloaddata))
+			(_port asdata ())
+			(_register (asdata_viol))
+		)
+		(_tchk setuphold 0 473
+			(_port clk (posedge) (_code  12 reset))
+			(_port ena ())
+			(_register (ena_viol))
+		)
+		(_modpath parallel positive 0 475
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 476
+			(_port clrn in posedge)
+			(_port q out posedge)
+		)
+		(_modpath parallel positive 0 477
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 478
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+I 000049 56 2117 1518108227474 arriav_lcell_comb
+(_unit arriav_lcell_comb
+	(_specify
+		(_modpath parallel unknown 0 772
+			(_port dataa in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 773
+			(_port datab in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 774
+			(_port datac in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 775
+			(_port datad in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 776
+			(_port datae in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 777
+			(_port dataf in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 778
+			(_port datag in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 780
+			(_port dataa in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 781
+			(_port datab in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 782
+			(_port datac in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 783
+			(_port datad in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 784
+			(_port dataf in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 785
+			(_port cin in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 786
+			(_port sharein in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 788
+			(_port dataa in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 789
+			(_port datab in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 790
+			(_port datac in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 791
+			(_port datad in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 792
+			(_port dataf in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 793
+			(_port cin in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 794
+			(_port sharein in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 796
+			(_port dataa in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 797
+			(_port datab in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 798
+			(_port datac in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 799
+			(_port datad in )
+			(_port shareout out )
+		)
+	)
+)
+I 000050 56 128 1518108227479 arriav_routing_wire
+(_unit arriav_routing_wire
+	(_specify
+		(_modpath parallel unknown 0 940
+			(_port datain in )
+			(_port dataout out )
+		)
+	)
+)
+I 000045 56 191 1518108227492 arriav_io_ibuf
+(_unit arriav_io_ibuf
+	(_specify
+		(_modpath parallel unknown 0 1351
+			(_port i in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1352
+			(_port ibar in )
+			(_port o out )
+		)
+	)
+)
+I 000045 56 346 1518108227497 arriav_io_obuf
+(_unit arriav_io_obuf
+	(_specify
+		(_modpath parallel unknown 0 1456
+			(_port i in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1457
+			(_port i in )
+			(_port obar out )
+		)
+		(_modpath parallel unknown 0 1458
+			(_port oe in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1459
+			(_port oe in )
+			(_port obar out )
+		)
+	)
+)
+I 000048 56 488 1518108227530 arriav_bias_block
+(_unit arriav_bias_block
+	(_specify
+		(_tchk setuphold 0 2419
+			(_port clk (posedge))
+			(_port din ())
+			(_register (din_viol))
+		)
+		(_tchk setuphold 0 2420
+			(_port clk (posedge))
+			(_port shiftnld ())
+			(_register (shiftnld_viol))
+		)
+		(_tchk setuphold 0 2421
+			(_port clk (posedge))
+			(_port captnupdt ())
+			(_register (captnupdt_viol))
+		)
+		(_modpath parallel positive 0 2423
+			(_port clk in posedge)
+			(_port dout out posedge)
+			(_datain dout_tmp in posedge)
+		)
+	)
+)
+I 000042 56 972 1518108330931 arriav_dffe
+(_unit arriav_dffe
+	(_specify
+		(_specparam TREG integer 0)
+		(_specparam TREN integer 0)
+		(_specparam TRSU integer 0)
+		(_specparam TRH integer 0)
+		(_specparam TRPR integer 0)
+		(_specparam TRCL integer 0)
+		(_tchk setup 0 216
+			(_port D ())
+			(_port CLK (posedge) (_code  1 legal))
+			(_register (viol_notifier))
+		)
+		(_tchk hold 0 217
+			(_port CLK (posedge) (_code  2 legal))
+			(_port D ())
+			(_register (viol_notifier))
+		)
+		(_tchk setup 0 218
+			(_port ENA ())
+			(_port CLK (posedge) (_code  3 legal))
+			(_register (viol_notifier))
+		)
+		(_tchk hold 0 219
+			(_port CLK (posedge) (_code  4 legal))
+			(_port ENA ())
+			(_register (viol_notifier))
+		)
+		(_modpath parallel positive 0 221
+			(_port CLRN in negedge)
+			(_port Q out negedge)
+		)
+		(_modpath parallel positive 0 222
+			(_port PRN in negedge)
+			(_port Q out negedge)
+		)
+		(_modpath parallel positive 0 223
+			(_port CLK in posedge)
+			(_port Q out posedge)
+			(_datain D in posedge)
+		)
+	)
+)
+I 000043 56 261 1518108330936 arriav_mux21
+(_unit arriav_mux21
+	(_specify
+		(_modpath parallel unknown 0 246
+			(_port A in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 247
+			(_port B in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 248
+			(_port S in )
+			(_port MO out )
+		)
+	)
+)
+I 000043 56 526 1518108330941 arriav_mux41
+(_unit arriav_mux41
+	(_specify
+		(_modpath parallel unknown 0 283
+			(_port IN0 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 284
+			(_port IN1 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 285
+			(_port IN2 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 286
+			(_port IN3 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 287
+			(_port S (_constant \1\) in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 288
+			(_port S (_constant \0\) in )
+			(_port MO out )
+		)
+	)
+)
+I 000042 56 111 1518108330946 arriav_and1
+(_unit arriav_and1
+	(_specify
+		(_modpath parallel unknown 0 304
+			(_port IN1 in )
+			(_port Y out )
+		)
+	)
+)
+I 000043 56 112 1518108330951 arriav_and16
+(_unit arriav_and16
+	(_specify
+		(_modpath parallel unknown 0 317
+			(_port IN1 in )
+			(_port Y out )
+		)
+	)
+)
+I 000041 56 1044 1518108330972 arriav_ff
+(_unit arriav_ff
+	(_specify
+		(_tchk setuphold 0 469
+			(_port clk (posedge) (_code  8 nosloadsclr))
+			(_port d ())
+			(_register (d_viol))
+		)
+		(_tchk setuphold 0 470
+			(_port clk (posedge) (_code  9 reset))
+			(_port sclr ())
+			(_register (sclr_viol))
+		)
+		(_tchk setuphold 0 471
+			(_port clk (posedge) (_code  10 reset))
+			(_port sload ())
+			(_register (sload_viol))
+		)
+		(_tchk setuphold 0 472
+			(_port clk (posedge) (_code  11 sloaddata))
+			(_port asdata ())
+			(_register (asdata_viol))
+		)
+		(_tchk setuphold 0 473
+			(_port clk (posedge) (_code  12 reset))
+			(_port ena ())
+			(_register (ena_viol))
+		)
+		(_modpath parallel positive 0 475
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 476
+			(_port clrn in posedge)
+			(_port q out posedge)
+		)
+		(_modpath parallel positive 0 477
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 478
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+I 000049 56 2117 1518108330977 arriav_lcell_comb
+(_unit arriav_lcell_comb
+	(_specify
+		(_modpath parallel unknown 0 772
+			(_port dataa in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 773
+			(_port datab in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 774
+			(_port datac in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 775
+			(_port datad in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 776
+			(_port datae in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 777
+			(_port dataf in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 778
+			(_port datag in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 780
+			(_port dataa in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 781
+			(_port datab in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 782
+			(_port datac in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 783
+			(_port datad in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 784
+			(_port dataf in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 785
+			(_port cin in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 786
+			(_port sharein in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 788
+			(_port dataa in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 789
+			(_port datab in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 790
+			(_port datac in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 791
+			(_port datad in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 792
+			(_port dataf in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 793
+			(_port cin in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 794
+			(_port sharein in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 796
+			(_port dataa in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 797
+			(_port datab in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 798
+			(_port datac in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 799
+			(_port datad in )
+			(_port shareout out )
+		)
+	)
+)
+I 000050 56 128 1518108330982 arriav_routing_wire
+(_unit arriav_routing_wire
+	(_specify
+		(_modpath parallel unknown 0 940
+			(_port datain in )
+			(_port dataout out )
+		)
+	)
+)
+I 000045 56 191 1518108330995 arriav_io_ibuf
+(_unit arriav_io_ibuf
+	(_specify
+		(_modpath parallel unknown 0 1351
+			(_port i in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1352
+			(_port ibar in )
+			(_port o out )
+		)
+	)
+)
+I 000045 56 346 1518108331000 arriav_io_obuf
+(_unit arriav_io_obuf
+	(_specify
+		(_modpath parallel unknown 0 1456
+			(_port i in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1457
+			(_port i in )
+			(_port obar out )
+		)
+		(_modpath parallel unknown 0 1458
+			(_port oe in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1459
+			(_port oe in )
+			(_port obar out )
+		)
+	)
+)
+I 000048 56 488 1518108331033 arriav_bias_block
+(_unit arriav_bias_block
+	(_specify
+		(_tchk setuphold 0 2419
+			(_port clk (posedge))
+			(_port din ())
+			(_register (din_viol))
+		)
+		(_tchk setuphold 0 2420
+			(_port clk (posedge))
+			(_port shiftnld ())
+			(_register (shiftnld_viol))
+		)
+		(_tchk setuphold 0 2421
+			(_port clk (posedge))
+			(_port captnupdt ())
+			(_register (captnupdt_viol))
+		)
+		(_modpath parallel positive 0 2423
+			(_port clk in posedge)
+			(_port dout out posedge)
+			(_datain dout_tmp in posedge)
+		)
+	)
+)
+V 000042 56 972 1518155537377 arriav_dffe
+(_unit arriav_dffe
+	(_specify
+		(_specparam TREG integer 0)
+		(_specparam TREN integer 0)
+		(_specparam TRSU integer 0)
+		(_specparam TRH integer 0)
+		(_specparam TRPR integer 0)
+		(_specparam TRCL integer 0)
+		(_tchk setup 0 216
+			(_port D ())
+			(_port CLK (posedge) (_code  1 legal))
+			(_register (viol_notifier))
+		)
+		(_tchk hold 0 217
+			(_port CLK (posedge) (_code  2 legal))
+			(_port D ())
+			(_register (viol_notifier))
+		)
+		(_tchk setup 0 218
+			(_port ENA ())
+			(_port CLK (posedge) (_code  3 legal))
+			(_register (viol_notifier))
+		)
+		(_tchk hold 0 219
+			(_port CLK (posedge) (_code  4 legal))
+			(_port ENA ())
+			(_register (viol_notifier))
+		)
+		(_modpath parallel positive 0 221
+			(_port CLRN in negedge)
+			(_port Q out negedge)
+		)
+		(_modpath parallel positive 0 222
+			(_port PRN in negedge)
+			(_port Q out negedge)
+		)
+		(_modpath parallel positive 0 223
+			(_port CLK in posedge)
+			(_port Q out posedge)
+			(_datain D in posedge)
+		)
+	)
+)
+V 000043 56 261 1518155537398 arriav_mux21
+(_unit arriav_mux21
+	(_specify
+		(_modpath parallel unknown 0 246
+			(_port A in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 247
+			(_port B in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 248
+			(_port S in )
+			(_port MO out )
+		)
+	)
+)
+V 000043 56 526 1518155537403 arriav_mux41
+(_unit arriav_mux41
+	(_specify
+		(_modpath parallel unknown 0 283
+			(_port IN0 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 284
+			(_port IN1 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 285
+			(_port IN2 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 286
+			(_port IN3 in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 287
+			(_port S (_constant \1\) in )
+			(_port MO out )
+		)
+		(_modpath parallel unknown 0 288
+			(_port S (_constant \0\) in )
+			(_port MO out )
+		)
+	)
+)
+V 000042 56 111 1518155537408 arriav_and1
+(_unit arriav_and1
+	(_specify
+		(_modpath parallel unknown 0 304
+			(_port IN1 in )
+			(_port Y out )
+		)
+	)
+)
+V 000043 56 112 1518155537413 arriav_and16
+(_unit arriav_and16
+	(_specify
+		(_modpath parallel unknown 0 317
+			(_port IN1 in )
+			(_port Y out )
+		)
+	)
+)
+V 000041 56 1044 1518155537434 arriav_ff
+(_unit arriav_ff
+	(_specify
+		(_tchk setuphold 0 469
+			(_port clk (posedge) (_code  8 nosloadsclr))
+			(_port d ())
+			(_register (d_viol))
+		)
+		(_tchk setuphold 0 470
+			(_port clk (posedge) (_code  9 reset))
+			(_port sclr ())
+			(_register (sclr_viol))
+		)
+		(_tchk setuphold 0 471
+			(_port clk (posedge) (_code  10 reset))
+			(_port sload ())
+			(_register (sload_viol))
+		)
+		(_tchk setuphold 0 472
+			(_port clk (posedge) (_code  11 sloaddata))
+			(_port asdata ())
+			(_register (asdata_viol))
+		)
+		(_tchk setuphold 0 473
+			(_port clk (posedge) (_code  12 reset))
+			(_port ena ())
+			(_register (ena_viol))
+		)
+		(_modpath parallel positive 0 475
+			(_port clk in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel positive 0 476
+			(_port clrn in posedge)
+			(_port q out posedge)
+		)
+		(_modpath parallel positive 0 477
+			(_port aload in posedge)
+			(_port q out posedge)
+			(_datain q_tmp in posedge)
+		)
+		(_modpath parallel unknown 0 478
+			(_port asdata in )
+			(_port q out )
+		)
+	)
+)
+V 000049 56 2117 1518155537439 arriav_lcell_comb
+(_unit arriav_lcell_comb
+	(_specify
+		(_modpath parallel unknown 0 772
+			(_port dataa in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 773
+			(_port datab in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 774
+			(_port datac in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 775
+			(_port datad in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 776
+			(_port datae in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 777
+			(_port dataf in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 778
+			(_port datag in )
+			(_port combout out )
+		)
+		(_modpath parallel unknown 0 780
+			(_port dataa in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 781
+			(_port datab in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 782
+			(_port datac in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 783
+			(_port datad in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 784
+			(_port dataf in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 785
+			(_port cin in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 786
+			(_port sharein in )
+			(_port sumout out )
+		)
+		(_modpath parallel unknown 0 788
+			(_port dataa in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 789
+			(_port datab in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 790
+			(_port datac in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 791
+			(_port datad in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 792
+			(_port dataf in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 793
+			(_port cin in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 794
+			(_port sharein in )
+			(_port cout out )
+		)
+		(_modpath parallel unknown 0 796
+			(_port dataa in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 797
+			(_port datab in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 798
+			(_port datac in )
+			(_port shareout out )
+		)
+		(_modpath parallel unknown 0 799
+			(_port datad in )
+			(_port shareout out )
+		)
+	)
+)
+V 000050 56 128 1518155537444 arriav_routing_wire
+(_unit arriav_routing_wire
+	(_specify
+		(_modpath parallel unknown 0 940
+			(_port datain in )
+			(_port dataout out )
+		)
+	)
+)
+V 000045 56 191 1518155537457 arriav_io_ibuf
+(_unit arriav_io_ibuf
+	(_specify
+		(_modpath parallel unknown 0 1351
+			(_port i in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1352
+			(_port ibar in )
+			(_port o out )
+		)
+	)
+)
+V 000045 56 346 1518155537462 arriav_io_obuf
+(_unit arriav_io_obuf
+	(_specify
+		(_modpath parallel unknown 0 1456
+			(_port i in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1457
+			(_port i in )
+			(_port obar out )
+		)
+		(_modpath parallel unknown 0 1458
+			(_port oe in )
+			(_port o out )
+		)
+		(_modpath parallel unknown 0 1459
+			(_port oe in )
+			(_port obar out )
+		)
+	)
+)
+V 000048 56 488 1518155537495 arriav_bias_block
+(_unit arriav_bias_block
+	(_specify
+		(_tchk setuphold 0 2419
+			(_port clk (posedge))
+			(_port din ())
+			(_register (din_viol))
+		)
+		(_tchk setuphold 0 2420
+			(_port clk (posedge))
+			(_port shiftnld ())
+			(_register (shiftnld_viol))
+		)
+		(_tchk setuphold 0 2421
+			(_port clk (posedge))
+			(_port captnupdt ())
+			(_register (captnupdt_viol))
+		)
+		(_modpath parallel positive 0 2423
+			(_port clk in posedge)
+			(_port dout out posedge)
+			(_datain dout_tmp in posedge)
+		)
+	)
+)

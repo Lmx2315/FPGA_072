@@ -1,0 +1,285 @@
+timestamp=1518155502448
+
+[$root]
+A/$root=22|""|0|1*420518
+BinI32/$root=3*466690
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[LPM_DEVICE_FAMILIES]
+A/LPM_DEVICE_FAMILIES=22|./../../../../quartus/eda/sim_lib/220model.v|1367|1*440802
+BinI32/LPM_DEVICE_FAMILIES=3*493355
+P/~emb=2496,7671,11780,12276
+R=./../../../../quartus/eda/sim_lib/220model.v|1367
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[LPM_HINT_EVALUATION]
+A/LPM_HINT_EVALUATION=22|./../../../../quartus/eda/sim_lib/220model.v|1257|1*437065
+BinI32/LPM_HINT_EVALUATION=3*490761
+P/~emb=342,739,1345,1594
+R=./../../../../quartus/eda/sim_lib/220model.v|1257
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[LPM_MEMORY_INITIALIZATION]
+A/LPM_MEMORY_INITIALIZATION=22|./../../../../quartus/eda/sim_lib/220model.v|77|1*421116
+BinI32/LPM_MEMORY_INITIALIZATION=3*466829
+P/~emb=961,2548,7960,10130
+R=./../../../../quartus/eda/sim_lib/220model.v|77
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_abs]
+A/lpm_abs=22|./../../../../quartus/eda/sim_lib/220model.v|3479|1*516030
+BinI32/lpm_abs=3*587997
+P/~emb=282,610,881,1014
+R=./../../../../quartus/eda/sim_lib/220model.v|3479
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_add_sub]
+A/lpm_add_sub=22|./../../../../quartus/eda/sim_lib/220model.v|2606|1*485507
+BinI32/lpm_add_sub=3*549890
+P/~emb=643,1292,2282,2604
+R=./../../../../quartus/eda/sim_lib/220model.v|2606
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_and]
+A/lpm_and=22|./../../../../quartus/eda/sim_lib/220model.v|1682|1*454833
+BinI32/lpm_and=3*518972
+P/~emb=276,619,1007,1173
+R=./../../../../quartus/eda/sim_lib/220model.v|1682
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_bipad]
+A/lpm_bipad=22|./../../../../quartus/eda/sim_lib/220model.v|6690|1*628558
+BinI32/lpm_bipad=3*697168
+P/~emb=330,659,991,1148
+R=./../../../../quartus/eda/sim_lib/220model.v|6690
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_bustri]
+A/lpm_bustri=22|./../../../../quartus/eda/sim_lib/220model.v|1972|1*463182
+BinI32/lpm_bustri=3*525444
+P/~emb=384,739,1160,1361
+R=./../../../../quartus/eda/sim_lib/220model.v|1972
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_clshift]
+A/lpm_clshift=22|./../../../../quartus/eda/sim_lib/220model.v|2321|1*475288
+BinI32/lpm_clshift=3*537975
+P/~emb=1325,1981,3546,4132
+R=./../../../../quartus/eda/sim_lib/220model.v|2321
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_compare]
+A/lpm_compare=22|./../../../../quartus/eda/sim_lib/220model.v|2812|1*491882
+BinI32/lpm_compare=3*559487
+P/~emb=607,1155,1999,2283
+R=./../../../../quartus/eda/sim_lib/220model.v|2812
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_constant]
+A/lpm_constant=22|./../../../../quartus/eda/sim_lib/220model.v|1578|1*450720
+BinI32/lpm_constant=3*515973
+P/~emb=272,607,849,967
+R=./../../../../quartus/eda/sim_lib/220model.v|1578
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_counter]
+A/lpm_counter=22|./../../../../quartus/eda/sim_lib/220model.v|3543|1*518260
+BinI32/lpm_counter=3*591461
+P/~emb=1080,1992,3524,4056
+R=./../../../../quartus/eda/sim_lib/220model.v|3543
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_decode]
+A/lpm_decode=22|./../../../../quartus/eda/sim_lib/220model.v|2193|1*470660
+BinI32/lpm_decode=3*533404
+P/~emb=445,917,1558,1840
+R=./../../../../quartus/eda/sim_lib/220model.v|2193
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_divide]
+A/lpm_divide=22|./../../../../quartus/eda/sim_lib/220model.v|3272|1*508365
+BinI32/lpm_divide=3*578050
+P/~emb=647,1376,2367,2716
+R=./../../../../quartus/eda/sim_lib/220model.v|3272
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_ff]
+A/lpm_ff=22|./../../../../quartus/eda/sim_lib/220model.v|3951|1*533834
+BinI32/lpm_ff=3*606304
+P/~emb=819,1426,2571,3052
+R=./../../../../quartus/eda/sim_lib/220model.v|3951
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_fifo]
+A/lpm_fifo=22|./../../../../quartus/eda/sim_lib/220model.v|5398|1*585235
+BinI32/lpm_fifo=3*661511
+P/~emb=647,1625,3326,4000
+R=./../../../../quartus/eda/sim_lib/220model.v|5398
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_fifo_dc]
+A/lpm_fifo_dc=22|./../../../../quartus/eda/sim_lib/220model.v|6455|1*616939
+BinI32/lpm_fifo_dc=3*693228
+P/~emb=1074,1602,2219,2472
+R=./../../../../quartus/eda/sim_lib/220model.v|6455
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_fifo_dc_async]
+A/lpm_fifo_dc_async=22|./../../../../quartus/eda/sim_lib/220model.v|6018|1*600601
+BinI32/lpm_fifo_dc_async=3*682926
+P/~emb=1483,2723,4928,6114
+R=./../../../../quartus/eda/sim_lib/220model.v|6018
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_fifo_dc_dffpipe]
+A/lpm_fifo_dc_dffpipe=22|./../../../../quartus/eda/sim_lib/220model.v|5729|1*593043
+BinI32/lpm_fifo_dc_dffpipe=3*674303
+P/~emb=279,511,948,1167
+R=./../../../../quartus/eda/sim_lib/220model.v|5729
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_fifo_dc_fefifo]
+A/lpm_fifo_dc_fefifo=22|./../../../../quartus/eda/sim_lib/220model.v|5816|1*595718
+BinI32/lpm_fifo_dc_fefifo=3*677158
+P/~emb=535,1199,2239,2662
+R=./../../../../quartus/eda/sim_lib/220model.v|5816
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_inpad]
+A/lpm_inpad=22|./../../../../quartus/eda/sim_lib/220model.v|6578|1*624788
+BinI32/lpm_inpad=3*694567
+P/~emb=246,548,785,918
+R=./../../../../quartus/eda/sim_lib/220model.v|6578
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_inv]
+A/lpm_inv=22|./../../../../quartus/eda/sim_lib/220model.v|1629|1*452961
+BinI32/lpm_inv=3*517615
+P/~emb=242,550,780,909
+R=./../../../../quartus/eda/sim_lib/220model.v|1629
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_latch]
+A/lpm_latch=22|./../../../../quartus/eda/sim_lib/220model.v|3827|1*528912
+BinI32/lpm_latch=3*602849
+P/~emb=636,1093,1717,1981
+R=./../../../../quartus/eda/sim_lib/220model.v|3827
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_mult]
+A/lpm_mult=22|./../../../../quartus/eda/sim_lib/220model.v|2986|1*498280
+BinI32/lpm_mult=3*565290
+P/~emb=821,1613,3055,3540
+R=./../../../../quartus/eda/sim_lib/220model.v|2986
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_mux]
+A/lpm_mux=22|./../../../../quartus/eda/sim_lib/220model.v|2058|1*466006
+BinI32/lpm_mux=3*528236
+P/~emb=472,933,1595,1881
+R=./../../../../quartus/eda/sim_lib/220model.v|2058
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_or]
+A/lpm_or=22|./../../../../quartus/eda/sim_lib/220model.v|1762|1*457618
+BinI32/lpm_or=3*521129
+P/~emb=273,613,1003,1171
+R=./../../../../quartus/eda/sim_lib/220model.v|1762
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_outpad]
+A/lpm_outpad=22|./../../../../quartus/eda/sim_lib/220model.v|6634|1*626671
+BinI32/lpm_outpad=3*695868
+P/~emb=245,551,789,924
+R=./../../../../quartus/eda/sim_lib/220model.v|6634
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_ram_dp]
+A/lpm_ram_dp=22|./../../../../quartus/eda/sim_lib/220model.v|4630|1*557976
+BinI32/lpm_ram_dp=3*629156
+P/~emb=1168,2112,3514,4106
+R=./../../../../quartus/eda/sim_lib/220model.v|4630
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_ram_dq]
+A/lpm_ram_dq=22|./../../../../quartus/eda/sim_lib/220model.v|4374|1*549753
+BinI32/lpm_ram_dq=3*619841
+P/~emb=921,1847,3153,3730
+R=./../../../../quartus/eda/sim_lib/220model.v|4374
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_ram_io]
+A/lpm_ram_io=22|./../../../../quartus/eda/sim_lib/220model.v|4921|1*568815
+BinI32/lpm_ram_io=3*643017
+P/~emb=927,1777,3088,3676
+R=./../../../../quartus/eda/sim_lib/220model.v|4921
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_rom]
+A/lpm_rom=22|./../../../../quartus/eda/sim_lib/220model.v|5183|1*577659
+BinI32/lpm_rom=3*651708
+P/~emb=865,1845,2984,3440
+R=./../../../../quartus/eda/sim_lib/220model.v|5183
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_shiftreg]
+A/lpm_shiftreg=22|./../../../../quartus/eda/sim_lib/220model.v|4170|1*541764
+BinI32/lpm_shiftreg=3*612907
+P/~emb=883,1526,2570,3003
+R=./../../../../quartus/eda/sim_lib/220model.v|4170
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[lpm_xor]
+A/lpm_xor=22|./../../../../quartus/eda/sim_lib/220model.v|1843|1*460397
+BinI32/lpm_xor=3*523286
+P/~emb=276,620,1006,1172
+R=./../../../../quartus/eda/sim_lib/220model.v|1843
+Version=9.1.2353.4205  (Windows)|00000015789cd3cd51c829c88d2f4b2d52d04d494a57d02d33ca3605004c8d06be
+
+[~A]
+LastVerilogToplevel=lpm_bipad
+ModifyID=1097
+Version=73
+c:/intelfpga/17.0/quartus/eda/sim_lib/220model.v=0*493575*533169
+
+[~MFT]
+0=111|0lpm_ver.mgf|533169|80214
+1=169|1lpm_ver.mgf|628558|420518
+3=169|3lpm_ver.mgf|697168|466690
+
+[~U]
+$root=12|0*355788|
+LPM_DEVICE_FAMILIES=12|0*376268||0x80
+LPM_HINT_EVALUATION=12|0*373897||0x80
+LPM_MEMORY_INITIALIZATION=12|0*356226||0x80
+lpm_abs=12|0*428608||0x90
+lpm_add_sub=12|0*412470||0x90
+lpm_and=12|0*395004||0x90
+lpm_bipad=12|0*492100||0x90
+lpm_bustri=12|0*399755||0x90
+lpm_clshift=12|0*406622||0x90
+lpm_compare=12|0*416351||0x90
+lpm_constant=12|0*392635||0x90
+lpm_counter=12|0*429947||0x90
+lpm_decode=12|0*404103||0x90
+lpm_divide=12|0*424728||0x90
+lpm_ff=12|0*438242||0x90
+lpm_fifo=12|0*467343||0x90
+lpm_fifo_dc=12|0*486984||0x90
+lpm_fifo_dc_async=12|0*478916||0x80
+lpm_fifo_dc_dffpipe=12|0*473408||0x80
+lpm_fifo_dc_fefifo=12|0*475052||0x80
+lpm_inpad=12|0*489761||0x90
+lpm_inv=12|0*393856||0x90
+lpm_latch=12|0*435599||0x90
+lpm_mult=12|0*419551||0x90
+lpm_mux=12|0*401526||0x90
+lpm_or=12|0*396588||0x90
+lpm_outpad=12|0*490925||0x90
+lpm_ram_dp=12|0*451792||0x90
+lpm_ram_dq=12|0*446595||0x90
+lpm_ram_io=12|0*457540||0x90
+lpm_rom=12|0*462710||0x90
+lpm_shiftreg=12|0*442500||0x90
+lpm_xor=12|0*398172||0x90
+

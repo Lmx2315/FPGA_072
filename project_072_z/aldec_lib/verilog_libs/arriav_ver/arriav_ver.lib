@@ -1,0 +1,611 @@
+timestamp=1518155537677
+
+[$root]
+A/$root=22|""|0|1*667390
+BinI32/$root=3*118024
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[ARRIAV_PRIM_DFFE]
+A/ARRIAV_PRIM_DFFE=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|32|1*668452
+BinI32/ARRIAV_PRIM_DFFE=3*118163
+P/~emb=288,517,997,1031
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|32
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[ARRIAV_PRIM_DFFEAS]
+A/ARRIAV_PRIM_DFFEAS=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|105|1*670951
+BinI32/ARRIAV_PRIM_DFFEAS=3*118465
+P/~emb=412,666,1050,1084
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|105
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[ARRIAV_PRIM_DFFEAS_HIGH]
+A/ARRIAV_PRIM_DFFEAS_HIGH=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|143|1*673725
+BinI32/ARRIAV_PRIM_DFFEAS_HIGH=3*118769
+P/~emb=422,681,1065,1099
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|143
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_and1]
+A/arriav_and1=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|299|1*685662
+BinI32/arriav_and1=3*120489
+D/arriav_and1=4*15461
+P/~emb=123,291,393,487
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|299
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_and16]
+A/arriav_and16=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|312|1*686714
+BinI32/arriav_and16=3*120634
+D/arriav_and16=4*15614
+P/~emb=137,353,534,821
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|312
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_asmiblock]
+A/arriav_asmiblock=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3768|1*895530
+BinI32/arriav_asmiblock=3*168422
+P/~emb=896,1242,1552,1843
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3768
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_b17mux21]
+A/arriav_b17mux21=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|352|1*690970
+BinI32/arriav_b17mux21=3*121513
+P/~emb=197,383,540,604
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|352
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_b5mux21]
+A/arriav_b5mux21=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|373|1*693466
+BinI32/arriav_b5mux21=3*122785
+P/~emb=192,376,533,597
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|373
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_bias_block]
+A/arriav_bias_block=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2387|1*789055
+BinI32/arriav_bias_block=3*152117
+D/arriav_bias_block=4*19825
+P/~emb=364,736,977,1241
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2387
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_bias_generator]
+A/arriav_bias_generator=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2301|1*786146
+BinI32/arriav_bias_generator=3*149518
+P/~emb=326,597,1051,1287
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2301
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_bias_logic]
+A/arriav_bias_logic=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2215|1*783167
+BinI32/arriav_bias_logic=3*148416
+P/~emb=343,633,1022,1238
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2215
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_bmux21]
+A/arriav_bmux21=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|341|1*689675
+BinI32/arriav_bmux21=3*120780
+P/~emb=193,377,534,598
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|341
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_chipidblock]
+A/arriav_chipidblock=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3840|1*899307
+BinI32/arriav_chipidblock=3*168780
+P/~emb=308,566,748,879
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3840
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_clk_phase_select]
+A/arriav_clk_phase_select=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2452|1*793006
+BinI32/arriav_clk_phase_select=3*152375
+P/~emb=524,881,1144,1293
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2452
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_clkena]
+A/arriav_clkena=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2488|1*795879
+BinI32/arriav_clkena=3*152827
+P/~emb=452,794,1044,1185
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2488
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_clkselect]
+A/arriav_clkselect=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2524|1*798588
+BinI32/arriav_clkselect=3*153246
+P/~emb=300,559,756,885
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2524
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_controller]
+A/arriav_controller=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3863|1*901071
+BinI32/arriav_controller=3*169140
+P/~emb=193,411,547,653
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3863
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_crcblock]
+A/arriav_crcblock=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3879|1*902358
+BinI32/arriav_crcblock=3*169465
+P/~emb=577,967,1234,1385
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3879
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_ddio_in]
+A/arriav_ddio_in=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|1942|1*771730
+BinI32/arriav_ddio_in=3*145267
+P/~emb=671,1190,1824,2390
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|1942
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_ddio_oe]
+A/arriav_ddio_oe=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|1779|1*765272
+BinI32/arriav_ddio_oe=3*143111
+P/~emb=698,1281,1962,2482
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|1779
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_ddio_out]
+A/arriav_ddio_out=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|1535|1*753523
+BinI32/arriav_ddio_out=3*139967
+P/~emb=896,1675,2689,3333
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|1535
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_delay_chain]
+A/arriav_delay_chain=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2549|1*800488
+BinI32/arriav_delay_chain=3*153604
+P/~emb=458,775,1013,1145
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2549
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_dffe]
+A/arriav_dffe=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|181|1*676519
+BinI32/arriav_dffe=3*119079
+D/arriav_dffe=4*13574
+P/~emb=262,561,784,967
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|181
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_dll]
+A/arriav_dll=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2616|1*805656
+BinI32/arriav_dll=3*154493
+P/~emb=1020,1576,2035,2236
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2616
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_dll_offset_ctrl]
+A/arriav_dll_offset_ctrl=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2578|1*803045
+BinI32/arriav_dll_offset_ctrl=3*154067
+P/~emb=543,858,1101,1270
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2578
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_dqs_config]
+A/arriav_dqs_config=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2689|1*811184
+BinI32/arriav_dqs_config=3*155131
+P/~emb=896,1285,1550,1781
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2689
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_dqs_delay_chain]
+A/arriav_dqs_delay_chain=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2742|1*814472
+BinI32/arriav_dqs_delay_chain=3*155456
+P/~emb=817,1277,1620,1801
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2742
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_dqs_enable_ctrl]
+A/arriav_dqs_enable_ctrl=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2794|1*818584
+BinI32/arriav_dqs_enable_ctrl=3*155985
+P/~emb=525,856,1066,1240
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2794
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_duty_cycle_adjustment]
+A/arriav_duty_cycle_adjustment=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2829|1*820941
+BinI32/arriav_duty_cycle_adjustment=3*156349
+P/~emb=438,736,957,1098
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2829
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_ff]
+A/arriav_ff=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|394|1*694760
+BinI32/arriav_ff=3*123517
+D/arriav_ff=4*15769
+P/~emb=500,942,1724,2139
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|394
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_fractional_pll]
+A/arriav_fractional_pll=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2857|1*823293
+BinI32/arriav_fractional_pll=3*156776
+P/~emb=3730,4990,5651,6737
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2857
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_half_rate_input]
+A/arriav_half_rate_input=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3065|1*842542
+BinI32/arriav_half_rate_input=3*158930
+P/~emb=504,830,1079,1249
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3065
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_hps_interface_fpga2sdram]
+A/arriav_hps_interface_fpga2sdram=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|5093|1*988048
+BinI32/arriav_hps_interface_fpga2sdram=3*176864
+P/~emb=4136,4842,5348,6284
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|5093
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_input_phase_alignment]
+A/arriav_input_phase_alignment=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3103|1*845181
+BinI32/arriav_input_phase_alignment=3*159318
+P/~emb=834,1278,1565,1766
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3103
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_io_clock_divider]
+A/arriav_io_clock_divider=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3156|1*848882
+BinI32/arriav_io_clock_divider=3*159752
+P/~emb=471,782,1005,1154
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3156
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_io_config]
+A/arriav_io_config=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3190|1*851354
+BinI32/arriav_io_config=3*160149
+P/~emb=748,1118,1366,1577
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3190
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_io_ibuf]
+A/arriav_io_ibuf=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|1320|1*745744
+BinI32/arriav_io_ibuf=3*135345
+D/arriav_io_ibuf=4*19198
+P/~emb=364,744,1260,1495
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|1320
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_io_obuf]
+A/arriav_io_obuf=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|1412|1*748719
+BinI32/arriav_io_obuf=3*137722
+D/arriav_io_obuf=4*19434
+P/~emb=671,1111,1766,2038
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|1412
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_io_pad]
+A/arriav_io_pad=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2116|1*777912
+BinI32/arriav_io_pad=3*147089
+P/~emb=178,408,584,701
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2116
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_ir_fifo_userdes]
+A/arriav_ir_fifo_userdes=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4343|1*936209
+BinI32/arriav_ir_fifo_userdes=3*173215
+P/~emb=1764,2375,2793,3199
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4343
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_jtag]
+A/arriav_jtag=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3918|1*905486
+BinI32/arriav_jtag=3*169957
+P/~emb=914,1275,1563,1874
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3918
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_lcell_comb]
+A/arriav_lcell_comb=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|567|1*703037
+BinI32/arriav_lcell_comb=3*126098
+D/arriav_lcell_comb=4*16854
+P/~emb=1292,1909,3467,4090
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|567
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_leveling_delay_chain]
+A/arriav_leveling_delay_chain=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3235|1*854367
+BinI32/arriav_leveling_delay_chain=3*160473
+P/~emb=397,716,932,1061
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3235
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_lfifo]
+A/arriav_lfifo=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4446|1*944840
+BinI32/arriav_lfifo=3*173911
+P/~emb=437,710,893,1074
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4446
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_mac]
+A/arriav_mac=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4497|1*948518
+BinI32/arriav_mac=3*174421
+P/~emb=2850,3692,5061,5381
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4497
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_mem_phy]
+A/arriav_mem_phy=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4713|1*966134
+BinI32/arriav_mem_phy=3*176216
+P/~emb=6430,7809,9164,10366
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4713
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_mlab_cell]
+A/arriav_mlab_cell=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|1208|1*739089
+BinI32/arriav_mlab_cell=3*134372
+P/~emb=1272,1861,2377,2632
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|1208
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_mux21]
+A/arriav_mux21=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|231|1*680154
+BinI32/arriav_mux21=3*119353
+D/arriav_mux21=4*14588
+P/~emb=173,373,569,702
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|231
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_mux41]
+A/arriav_mux41=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|258|1*682320
+BinI32/arriav_mux41=3*119835
+D/arriav_mux41=4*14892
+P/~emb=244,472,745,915
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|258
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_nmux21]
+A/arriav_nmux21=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|363|1*692273
+BinI32/arriav_nmux21=3*122250
+P/~emb=175,355,497,561
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|363
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_oscillator]
+A/arriav_oscillator=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|5076|1*986879
+BinI32/arriav_oscillator=3*176713
+P/~emb=225,438,566,695
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|5076
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_phy_clkbuf]
+A/arriav_phy_clkbuf=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4186|1*921626
+BinI32/arriav_phy_clkbuf=3*172162
+P/~emb=195,408,543,664
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4186
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_dll_output]
+A/arriav_pll_dll_output=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3261|1*856583
+BinI32/arriav_pll_dll_output=3*160916
+P/~emb=306,554,721,894
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3261
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_dpa_output]
+A/arriav_pll_dpa_output=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3285|1*858412
+BinI32/arriav_pll_dpa_output=3*161633
+P/~emb=334,595,772,953
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3285
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_extclk_output]
+A/arriav_pll_extclk_output=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3311|1*860362
+BinI32/arriav_pll_extclk_output=3*162557
+P/~emb=476,773,966,1186
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3311
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_lvds_output]
+A/arriav_pll_lvds_output=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3343|1*862823
+BinI32/arriav_pll_lvds_output=3*163463
+P/~emb=541,857,1050,1273
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3343
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_output_counter]
+A/arriav_pll_output_counter=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3377|1*865735
+BinI32/arriav_pll_output_counter=3*164412
+P/~emb=1614,2221,2555,3061
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3377
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_reconfig]
+A/arriav_pll_reconfig=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3468|1*873223
+BinI32/arriav_pll_reconfig=3*165637
+P/~emb=1596,2109,2444,2909
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3468
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pll_refclk_select]
+A/arriav_pll_refclk_select=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3555|1*879326
+BinI32/arriav_pll_refclk_select=3*166391
+P/~emb=1141,1615,1887,2254
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3555
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_prblock]
+A/arriav_prblock=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3997|1*909174
+BinI32/arriav_prblock=3*170276
+P/~emb=443,729,945,1124
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3997
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_pseudo_diff_out]
+A/arriav_pseudo_diff_out=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|2148|1*779686
+BinI32/arriav_pseudo_diff_out=3*147486
+P/~emb=419,714,1071,1214
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|2148
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_ram_block]
+A/arriav_ram_block=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|961|1*719020
+BinI32/arriav_ram_block=3*132530
+P/~emb=3906,5090,6361,6752
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|961
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_read_fifo]
+A/arriav_read_fifo=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4116|1*917453
+BinI32/arriav_read_fifo=3*171502
+P/~emb=419,695,910,1091
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4116
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_read_fifo_read_clock_select]
+A/arriav_read_fifo_read_clock_select=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4433|1*943421
+BinI32/arriav_read_fifo_read_clock_select=3*173743
+P/~emb=281,510,645,774
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4433
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_read_fifo_read_enable]
+A/arriav_read_fifo_read_enable=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4155|1*919700
+BinI32/arriav_read_fifo_read_enable=3*171826
+P/~emb=393,668,850,1011
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4155
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_routing_wire]
+A/arriav_routing_wire=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|924|1*717509
+BinI32/arriav_routing_wire=3*132194
+D/arriav_routing_wire=4*19020
+P/~emb=157,349,486,587
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|924
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_rublock]
+A/arriav_rublock=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4034|1*911377
+BinI32/arriav_rublock=3*170598
+P/~emb=566,923,1175,1346
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4034
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_serdes_dpa]
+A/arriav_serdes_dpa=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4200|1*922761
+BinI32/arriav_serdes_dpa=3*172313
+P/~emb=3050,4088,4857,5293
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4200
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_termination]
+A/arriav_termination=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3657|1*886820
+BinI32/arriav_termination=3*167776
+P/~emb=1884,2634,3254,3540
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3657
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_termination_logic]
+A/arriav_termination_logic=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|3618|1*884295
+BinI32/arriav_termination_logic=3*167410
+P/~emb=580,921,1147,1316
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|3618
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_tsdblock]
+A/arriav_tsdblock=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4076|1*914291
+BinI32/arriav_tsdblock=3*171043
+P/~emb=535,911,1200,1350
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4076
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[arriav_vfifo]
+A/arriav_vfifo=22|./../../../../quartus/eda/sim_lib/arriav_atoms.v|4474|1*947024
+BinI32/arriav_vfifo=3*174275
+P/~emb=310,549,678,845
+R=./../../../../quartus/eda/sim_lib/arriav_atoms.v|4474
+Version=9.1.2353.4205  (Windows)|00000018789cd3cd51482c2aca4c2c8b2f4b2d52d04d494a57d02d33ca360500676907fa
+
+[~A]
+LastVerilogToplevel=arriav_hps_interface_fpga2sdram
+ModifyID=2499
+Version=73
+c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_atoms_ncrypt.v=0*392518*393151
+c:/intelfpga/17.0/quartus/eda/sim_lib/aldec/arriav_hmi_atoms_ncrypt.v=0*394839*395300
+c:/intelfpga/17.0/quartus/eda/sim_lib/arriav_atoms.v=0*549045*587651
+
+[~MFT]
+0=254|0arriav_ver.mgf|587651|82642
+1=372|1arriav_ver.mgf|988048|667390
+3=372|3arriav_ver.mgf|176864|118024
+4=54|4arriav_ver.mgf|19825|13574
+
+[~U]
+$root=12|0*395898|
+ARRIAV_PRIM_DFFE=12|0*396960||0xa0
+ARRIAV_PRIM_DFFEAS=12|0*398113||0xa0
+ARRIAV_PRIM_DFFEAS_HIGH=12|0*399326||0xa0
+arriav_and1=12|0*404090||0x90
+arriav_and16=12|0*404736||0x90
+arriav_asmiblock=12|0*499168||0x90
+arriav_b17mux21=12|0*406471||0x90
+arriav_b5mux21=12|0*407954||0x90
+arriav_bias_block=12|0*449347||0x90
+arriav_bias_generator=12|0*447567||0x80
+arriav_bias_logic=12|0*445896||0x80
+arriav_bmux21=12|0*405717||0x90
+arriav_chipidblock=12|0*501141||0x90
+arriav_clk_phase_select=12|0*450877||0x90
+arriav_clkena=12|0*452307||0x90
+arriav_clkselect=12|0*453620||0x90
+arriav_controller=12|0*502151||0x90
+arriav_crcblock=12|0*502935||0x90
+arriav_ddio_in=12|0*440535||0x90
+arriav_ddio_oe=12|0*437423||0x90
+arriav_ddio_out=12|0*433131||0x90
+arriav_delay_chain=12|0*454634||0x90
+arriav_dffe=12|0*400559||0x90
+arriav_dll=12|0*457317||0x90
+arriav_dll_offset_ctrl=12|0*455911||0x90
+arriav_dqs_config=12|0*459677||0x90
+arriav_dqs_delay_chain=12|0*461590||0x90
+arriav_dqs_enable_ctrl=12|0*463529||0x90
+arriav_duty_cycle_adjustment=12|0*464905||0x90
+arriav_ff=12|0*408708||0x90
+arriav_fractional_pll=12|0*466145||0x90
+arriav_half_rate_input=12|0*473023||0x90
+arriav_hps_interface_fpga2sdram=12|0*542616||0x90
+arriav_input_phase_alignment=12|0*474408||0x90
+arriav_io_clock_divider=12|0*476316||0x90
+arriav_io_config=12|0*477607||0x90
+arriav_io_ibuf=12|0*428321||0x90
+arriav_io_obuf=12|0*430388||0x90
+arriav_io_pad=12|0*443495||0x90
+arriav_ir_fifo_userdes=12|0*519251||0x90
+arriav_jtag=12|0*504450||0x90
+arriav_lcell_comb=12|0*411830||0x90
+arriav_leveling_delay_chain=12|0*479315||0x90
+arriav_lfifo=12|0*523507||0x90
+arriav_mac=12|0*525677||0x90
+arriav_mem_phy=12|0*531296||0x90
+arriav_mlab_cell=12|0*425553||0x90
+arriav_mux21=12|0*401926||0x80
+arriav_mux41=12|0*402867||0x90
+arriav_nmux21=12|0*407233||0x90
+arriav_oscillator=12|0*541791||0x90
+arriav_phy_clkbuf=12|0*513032||0x90
+arriav_pll_dll_output=12|0*480517||0x90
+arriav_pll_dpa_output=12|0*481551||0x90
+arriav_pll_extclk_output=12|0*482645||0x90
+arriav_pll_lvds_output=12|0*483975||0x90
+arriav_pll_output_counter=12|0*485389||0x90
+arriav_pll_reconfig=12|0*488595||0x90
+arriav_pll_refclk_select=12|0*491643||0x90
+arriav_prblock=12|0*506449||0x90
+arriav_pseudo_diff_out=12|0*444347||0x90
+arriav_ram_block=12|0*418665||0x90
+arriav_read_fifo=12|0*510657||0x90
+arriav_read_fifo_read_clock_select=12|0*522586||0x90
+arriav_read_fifo_read_enable=12|0*511879||0x90
+arriav_routing_wire=12|0*417878||0x90
+arriav_rublock=12|0*507703||0x90
+arriav_serdes_dpa=12|0*513827||0x90
+arriav_termination=12|0*495495||0x90
+arriav_termination_logic=12|0*494041||0x90
+arriav_tsdblock=12|0*509178||0x90
+arriav_vfifo=12|0*524707||0x90
+

@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="submodules/altera_xcvr_functions.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/altera_xcvr_functions.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/sv_reconfig_bundle_to_xcvr.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/sv_reconfig_bundle_to_ip.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/sv_reconfig_bundle_merger.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/sv_reconfig_bundle_to_xcvr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/sv_reconfig_bundle_to_ip.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/sv_reconfig_bundle_merger.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/av_xcvr_h.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_xcvr_avmm_csr.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_tx_pma_ch.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_tx_pma.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_rx_pma.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file path="submodules/av_pma.sv" type="SYSTEM_VERILOG" library="inst_xcvr" />
+ <file
+   path="submodules/av_pcs_ch.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file path="submodules/av_pcs.sv" type="SYSTEM_VERILOG" library="inst_xcvr" />
+ <file
+   path="submodules/av_xcvr_avmm.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_xcvr_native.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_xcvr_plls.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_xcvr_data_adapter.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_reconfig_bundle_to_basic.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_reconfig_bundle_to_xcvr.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/av_xcvr_h.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_xcvr_avmm_csr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_tx_pma_ch.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_tx_pma.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_rx_pma.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_pma.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_pcs_ch.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_pcs.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_xcvr_avmm.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_xcvr_native.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_xcvr_plls.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_xcvr_data_adapter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_reconfig_bundle_to_basic.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_reconfig_bundle_to_xcvr.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/av_hssi_8g_rx_pcs_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_8g_tx_pcs_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_common_pcs_pma_interface_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_common_pld_pcs_interface_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_pipe_gen1_2_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_rx_pcs_pma_interface_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_rx_pld_pcs_interface_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_tx_pcs_pma_interface_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/av_hssi_tx_pld_pcs_interface_rbc.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/av_hssi_8g_rx_pcs_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_8g_tx_pcs_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_common_pcs_pma_interface_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_common_pld_pcs_interface_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_pipe_gen1_2_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/alt_reset_ctrl_lego.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_reset_ctrl_tgx_cdrauto.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_xcvr_resync.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/alt_reset_ctrl_lego.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_reset_ctrl_tgx_cdrauto.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_xcvr_resync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/alt_xcvr_csr_common_h.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_xcvr_csr_common.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_xcvr_csr_pcs8g_h.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_xcvr_csr_pcs8g.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_xcvr_csr_selector.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/alt_xcvr_mgmt2dec.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/altera_wait_generate.v"
+   type="VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/alt_xcvr_csr_common_h.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_xcvr_csr_common.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_xcvr_csr_pcs8g_h.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_xcvr_csr_pcs8g.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_xcvr_csr_selector.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/alt_xcvr_mgmt2dec.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_wait_generate.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/altera_xcvr_native_av_functions_h.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/altera_xcvr_native_av.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/altera_xcvr_data_adapter_av.sv"
+   type="SYSTEM_VERILOG"
+   library="inst_xcvr" />
+ <file
+   path="submodules/mentor/altera_xcvr_native_av_functions_h.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_xcvr_native_av.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_xcvr_data_adapter_av.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="inst_xcvr"
+   simulator="modelsim" />
+ <file path="submodules/plain_files.txt" type="OTHER" library="inst_xcvr" />
+ <file path="submodules/mentor_files.txt" type="OTHER" library="inst_xcvr" />
+ <file path="submodules/cadence_files.txt" type="OTHER" library="inst_xcvr" />
+ <file path="submodules/synopsys_files.txt" type="OTHER" library="inst_xcvr" />
+ <file path="submodules/aldec_files.txt" type="OTHER" library="inst_xcvr" />
+ <file
+   path="submodules/mentor/altera_jesd204_phy_adapter.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_phy_adapter"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_jesd204_phy_adapter.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_phy_adapter"
+   simulator="riviera" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_mlpcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_8b10b_dec.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_pcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_wa.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_wys_lut.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_xn_8b10b_dec.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_mlpcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_8b10b_dec.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_pcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_wa.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_wys_lut.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_xn_8b10b_dec.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_mlpcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_8b10b_enc.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_pcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_wys_lut.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_xn_8b10b_enc.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_pcfifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_mixed_width_dcfifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_mlpcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_8b10b_enc.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_pcs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_wys_lut.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_xn_8b10b_enc.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_pcfifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_mixed_width_dcfifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx_mlpcs"
+   simulator="riviera" />
+ <file
+   path="submodules/altera_jesd204_altera_jesd204_inst_phy.v"
+   type="VERILOG"
+   library="inst_phy" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_base.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_csr.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_ctl.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_dll.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_regmap.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_regmap_opt.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_tx_scrambler.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_base.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_csr.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_ctl.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_dll.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_regmap.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_regmap_opt.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_tx_scrambler.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_tx"
+   simulator="riviera" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_base.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_csr.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_ctl.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_descrambler.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_char_val.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_cs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_fs_char_replace.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_frame_align.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_lane_align.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_data_store.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_ecc_enc.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_ecc_dec.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_ecc_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_dll_wo_ecc_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/mentor/altera_jesd204_rx_regmap.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="modelsim" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_base.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_csr.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_ctl.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_descrambler.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_char_val.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_cs.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_fs_char_replace.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_frame_align.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_lane_align.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_data_store.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_ecc_enc.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_ecc_dec.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_ecc_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_dll_wo_ecc_fifo.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/aldec/altera_jesd204_rx_regmap.v"
+   type="VERILOG_ENCRYPT"
+   library="inst_rx"
+   simulator="riviera" />
+ <file
+   path="submodules/altera_jesd204_altera_jesd204.v"
+   type="VERILOG"
+   library="altera_jesd204" />
+ <file path="altera_jesd204.v" type="VERILOG" />
+ <topLevel name="altera_jesd204" />
+ <deviceFamily name="arriav" />
+</simPackage>

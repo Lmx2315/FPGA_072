@@ -1,0 +1,817 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
+# Date created = 12:51:33  September 08, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		arria5_tst1_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Arria V"
+set_global_assignment -name DEVICE 5AGXMA7G4F31C4
+set_global_assignment -name TOP_LEVEL_ENTITY top_module
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "12:51:33  SEPTEMBER 08, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_location_assignment PIN_AJ24 -to UPR_AT4_1
+set_location_assignment PIN_AE23 -to UPR_AT4_2
+set_location_assignment PIN_AD23 -to UPR_AT4_4
+set_location_assignment PIN_AG24 -to UPR_AT4_8
+set_location_assignment PIN_AF24 -to UPR_AT4_16
+set_location_assignment PIN_AC24 -to UPR_AT1_1
+set_location_assignment PIN_AJ25 -to UPR_AT1_2
+set_location_assignment PIN_AH25 -to FLASH_CLK_3V3
+set_location_assignment PIN_AB23 -to FLASH_MISO_3V3
+set_location_assignment PIN_AB24 -to FLASH_MOSI_3V3
+set_location_assignment PIN_AG25 -to FLASH_CS_3V3
+set_location_assignment PIN_AF25 -to UPR_AT1_4
+set_location_assignment PIN_AK26 -to UPR_AT3_1
+set_location_assignment PIN_AH26 -to UPR_AT3_2
+set_location_assignment PIN_AG26 -to UPR_AT3_4
+set_location_assignment PIN_AC25 -to UPR_AT3_8
+set_location_assignment PIN_AB25 -to UPR_AT3_16
+set_location_assignment PIN_AE27 -to DE_MISO_LVDS_3V3
+set_location_assignment PIN_AG27 -to MR_RESET_MK_FPGA
+set_location_assignment PIN_AF27 -to BOOT_MK_FPGA
+set_location_assignment PIN_AG28 -to FPGA_LED1_3V3
+set_location_assignment PIN_AD25 -to UPR_AT1_8
+set_location_assignment PIN_AE25 -to UPR_SWITCH3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT4_1
+set_location_assignment PIN_AE9 -to A1_CTRL1_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_CTRL1_1V8
+set_location_assignment PIN_AF9 -to A1_CTRL2_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_CTRL2_1V8
+set_location_assignment PIN_AK8 -to A1_OVRA_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_OVRA_1V8
+set_location_assignment PIN_AJ9 -to A1_OVRB_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_OVRB_1V8
+set_location_assignment PIN_AJ10 -to A1_PWRDOWN_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_PWRDOWN_1V8
+set_location_assignment PIN_AH9 -to A1_RESET_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_RESET_1V8
+set_location_assignment PIN_AD10 -to A1_SCLK_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_SCLK_1V8
+set_location_assignment PIN_AC10 -to A1_SDATA_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_SDATA_1V8
+set_location_assignment PIN_AB9 -to A1_SDOUT_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_SDOUT_1V8
+set_location_assignment PIN_AB10 -to A1_SEN_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_SEN_1V8
+set_location_assignment PIN_AG10 -to A1_STBY_1V8
+set_location_assignment PIN_AB18 -to A2_CTRL1_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_CTRL1_1V8
+set_location_assignment PIN_AG19 -to A2_CTRL2_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_CTRL2_1V8
+set_location_assignment PIN_AD18 -to A2_OVRA_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_OVRA_1V8
+set_location_assignment PIN_AB11 -to A2_OVRB_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_OVRB_1V8
+set_location_assignment PIN_AE11 -to A2_PWRDOWN_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_PWRDOWN_1V8
+set_location_assignment PIN_AE8 -to A2_RESET_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_RESET_1V8
+set_location_assignment PIN_AF10 -to A2_SCLK_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_SCLK_1V8
+set_location_assignment PIN_AK10 -to A2_SDATA_1V8
+set_location_assignment PIN_AK11 -to A2_SDOUT_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_SDATA_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_SDOUT_1V8
+set_location_assignment PIN_AH18 -to A2_SEN_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_SEN_1V8
+set_location_assignment PIN_AF18 -to A2_STBY_1V8
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A2_STBY_1V8
+set_location_assignment PIN_E1 -to ADDR0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADDR0
+set_location_assignment PIN_F1 -to ADDR1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADDR1
+set_location_assignment PIN_K6 -to ADDR2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADDR2
+set_location_assignment PIN_J6 -to ADDR3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ADDR3
+set_location_assignment PIN_A8 -to BOOT0
+set_location_assignment PIN_C7 -to BOOT1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BOOT0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BOOT1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BOOT_MK_FPGA
+set_location_assignment PIN_A29 -to BOOT_MK_FTDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to BOOT_MK_FTDI
+set_location_assignment PIN_D9 -to CLK_FOR_MK_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLK_FOR_MK_3V3
+set_location_assignment PIN_B18 -to CS_ADC1
+set_location_assignment PIN_C19 -to CS_ADC2
+set_location_assignment PIN_F17 -to CS_DAC1
+set_location_assignment PIN_G17 -to CS_DAC2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_ADC1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_ADC2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_DAC1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_DAC2
+set_location_assignment PIN_B9 -to CS_FLASH_FPGA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_FLASH_FPGA
+set_location_assignment PIN_E18 -to CS_FPGA1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_FPGA1
+set_location_assignment PIN_J17 -to CS_FPGA2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_FPGA2
+set_location_assignment PIN_D18 -to CS_LMK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CS_LMK
+set_location_assignment PIN_C5 -to D1_ALARM_FPGA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D1_ALARM_FPGA
+set_location_assignment PIN_AG17 -to D1_ALARM
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_ALARM
+set_location_assignment PIN_AB15 -to D1_RESETB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_RESETB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to A1_STBY_1V8
+set_location_assignment PIN_AA15 -to D1_SCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SCLK
+set_location_assignment PIN_AK17 -to D1_SDENB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SDENB
+set_location_assignment PIN_AG16 -to D1_SDIO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SDIO
+set_location_assignment PIN_AF16 -to D1_SDO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SDO
+set_location_assignment PIN_AJ18 -to D1_SLEEP
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SLEEP
+set_location_assignment PIN_AD16 -to D1_SYNC_N_AB
+set_location_assignment PIN_AC16 -to D1_SYNC_N_CD
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SYNC_N_AB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_SYNC_N_CD
+set_location_assignment PIN_AH17 -to D1_TXENABLE
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D1_TXENABLE
+set_location_assignment PIN_AB16 -to D2_ALARM
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_ALARM
+set_location_assignment PIN_D5 -to D2_ALARM_FPGA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D2_ALARM_FPGA
+set_location_assignment PIN_AH7 -to D2_RESETB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_RESETB
+set_location_assignment PIN_AG7 -to D2_SCLK
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SCLK
+set_location_assignment PIN_AH8 -to D2_SDENB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SDENB
+set_location_assignment PIN_AK7 -to D2_SDIO
+set_location_assignment PIN_AJ7 -to D2_SDO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SDIO
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SDO
+set_location_assignment PIN_AG8 -to D2_SLEEP
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SLEEP
+set_location_assignment PIN_AB8 -to D2_SYNC_N_AB
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SYNC_N_AB
+set_location_assignment PIN_AA9 -to D2_SYNC_N_CD
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_SYNC_N_CD
+set_location_assignment PIN_AD9 -to D2_TXENABLE
+set_instance_assignment -name IO_STANDARD "1.8 V" -to D2_TXENABLE
+set_location_assignment PIN_H25 -to DAC_SYNC
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DAC_SYNC
+set_location_assignment PIN_H9 -to DE1RX_RS422
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DE1RX_RS422
+set_location_assignment PIN_C4 -to EN_2V5_VDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to EN_2V5_VDA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to DE_MISO_LVDS_3V3
+set_location_assignment PIN_C2 -to FPGA_IND1
+set_location_assignment PIN_C1 -to FPGA_IND2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FPGA_IND1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FPGA_IND2
+set_location_assignment PIN_J7 -to INT1_FPGA
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to INT1_FPGA
+set_location_assignment PIN_AG21 -to IZL1_KONTROL
+set_location_assignment PIN_AF21 -to IZL2_KONTROL
+set_location_assignment PIN_AJ22 -to IZL3_KONTROL
+set_location_assignment PIN_AG23 -to IZL4_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to IZL1_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to IZL2_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to IZL3_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to IZL4_KONTROL
+set_location_assignment PIN_AK22 -to KAN1_KONTROL
+set_location_assignment PIN_AJ21 -to KAN2_KONTROL
+set_location_assignment PIN_AF22 -to KAN3_KONTROL
+set_location_assignment PIN_AG22 -to KAN4_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KAN1_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KAN2_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KAN3_KONTROL
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to KAN4_KONTROL
+set_location_assignment PIN_B27 -to LMK_CS_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_CS_3V3
+set_location_assignment PIN_H24 -to LMK_RESET_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_RESET_3V3
+set_location_assignment PIN_J24 -to LMK_SCK_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_SCK_3V3
+set_location_assignment PIN_A28 -to LMK_SDIO_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_SDIO_3V3
+set_location_assignment PIN_C28 -to LMK_SEL0_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_SEL0_3V3
+set_location_assignment PIN_D27 -to LMK_SEL1_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_SEL1_3V3
+set_location_assignment PIN_E19 -to LMK_STATUS_LD1_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_STATUS_LD1_3V3
+set_location_assignment PIN_G14 -to LMK_STATUS_LD1_FPGA_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_STATUS_LD1_FPGA_3V3
+set_location_assignment PIN_B19 -to LMK_STATUS_LD2_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_STATUS_LD2_3V3
+set_location_assignment PIN_A14 -to LMK_STATUS_LD2_FPGA_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_STATUS_LD2_FPGA_3V3
+set_location_assignment PIN_C27 -to LMK_SYNC_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to LMK_SYNC_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to MR_RESET_MK_FPGA
+set_location_assignment PIN_D11 -to OK_BUS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to OK_BUS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ONET1_RX_LOS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ONET2_RX_LOS
+set_location_assignment PIN_F10 -to RD_BUS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RD_BUS
+set_location_assignment PIN_H12 -to RESET_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RESET_MK
+set_location_assignment PIN_B28 -to RESET_MK_FTDI
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RESET_MK_FTDI
+set_location_assignment PIN_B3 -to REZERV1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to REZERV1
+set_location_assignment PIN_G9 -to RNE1_RS422
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RNE1_RS422
+set_location_assignment PIN_F7 -to RX1_RS422
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RX1_RS422
+set_location_assignment PIN_D26 -to RX_FTDI_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RX_FTDI_1
+set_location_assignment PIN_A26 -to RX_FTDI_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RX_FTDI_2
+set_location_assignment PIN_F25 -to SEL_ETALON_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SEL_ETALON_3V3
+set_location_assignment PIN_C8 -to SPI2_NSS_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI2_NSS_MK
+set_location_assignment PIN_B24 -to SPI3_CS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI3_CS
+set_location_assignment PIN_L22 -to SPI3_MISO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI3_MISO
+set_location_assignment PIN_D24 -to SPI3_MOSI
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI3_MOSI
+set_location_assignment PIN_E24 -to SPI3_SCK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI3_SCK
+set_location_assignment PIN_A11 -to SPI4_MISO_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI4_MISO_MK
+set_location_assignment PIN_A10 -to SPI4_MOSI_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI4_MOSI_MK
+set_location_assignment PIN_K10 -to SPI4_NSS_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI4_NSS_MK
+set_location_assignment PIN_J10 -to SPI4_SCK_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SPI4_SCK_MK
+set_location_assignment PIN_C17 -to SYNC_DA2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SYNC_DA2
+set_location_assignment PIN_E3 -to SYS_REF
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SYS_REF
+set_location_assignment PIN_K11 -to TNC_MK_1HZ
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to TNC_MK_1HZ
+set_location_assignment PIN_E7 -to TX1_RS422
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to TX1_RS422
+set_location_assignment PIN_C26 -to TX_FTDI_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to TX_FTDI_1
+set_location_assignment PIN_A27 -to TX_FTDI_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to TX_FTDI_2
+set_location_assignment PIN_F8 -to T_TEST1
+set_location_assignment PIN_G8 -to T_TEST2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to T_TEST1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to T_TEST2
+set_location_assignment PIN_K8 -to UART1_RX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UART1_RX
+set_location_assignment PIN_J8 -to UART1_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UART1_TX
+set_location_assignment PIN_B7 -to UART6_RX
+set_location_assignment PIN_D8 -to UART6_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UART6_RX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UART6_TX
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT1_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT1_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT1_4
+set_location_assignment PIN_AD24 -to UPR_AT1_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT1_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT1_8
+set_location_assignment PIN_AK21 -to UPR_AT1_16
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT1_16
+set_location_assignment PIN_B1 -to UPR_AT2_1
+set_location_assignment PIN_D4 -to UPR_AT2_2
+set_location_assignment PIN_D3 -to UPR_AT2_4
+set_location_assignment PIN_A2 -to UPR_AT2_05
+set_location_assignment PIN_D2 -to UPR_AT2_8
+set_location_assignment PIN_D1 -to UPR_AT2_16
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT2_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT2_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT2_4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT2_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT2_8
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT2_16
+set_location_assignment PIN_AK25 -to UPR_AT3_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT3_1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT3_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT3_4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT3_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT3_8
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT3_16
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT4_2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT4_4
+set_location_assignment PIN_AK24 -to UPR_AT4_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT4_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT4_8
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_AT4_16
+set_location_assignment PIN_AH23 -to UPR_SWITCH1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_SWITCH1
+set_location_assignment PIN_G13 -to UPR_SWITCH2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_SWITCH2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_SWITCH3
+set_location_assignment PIN_AE20 -to UPR_SWITCH4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to UPR_SWITCH4
+set_location_assignment PIN_E10 -to WR_BUS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WR_BUS
+set_location_assignment PIN_AJ28 -to clk_100MHZ
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to clk_100MHZ
+set_instance_assignment -name IO_STANDARD LVDS -to A1_SNC
+set_location_assignment PIN_AB13 -to A1_SNC
+set_location_assignment PIN_AA13 -to "A1_SNC(n)"
+set_location_assignment PIN_K30 -to A1_TX0
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A1_TX0
+set_location_assignment PIN_K29 -to "A1_TX0(n)"
+set_location_assignment PIN_M30 -to A1_TX1
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A1_TX1
+set_location_assignment PIN_M29 -to "A1_TX1(n)"
+set_location_assignment PIN_P30 -to A1_TX2
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A1_TX2
+set_location_assignment PIN_P29 -to "A1_TX2(n)"
+set_location_assignment PIN_T30 -to A1_TX3
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A1_TX3
+set_location_assignment PIN_T29 -to "A1_TX3(n)"
+set_location_assignment PIN_AD12 -to A2_SNC
+set_instance_assignment -name IO_STANDARD LVDS -to A2_SNC
+set_location_assignment PIN_AC13 -to "A2_SNC(n)"
+set_location_assignment PIN_Y30 -to A2_TX0
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A2_TX0
+set_location_assignment PIN_Y29 -to "A2_TX0(n)"
+set_location_assignment PIN_V30 -to A2_TX1
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A2_TX1
+set_location_assignment PIN_V29 -to "A2_TX1(n)"
+set_location_assignment PIN_AB30 -to A2_TX2
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A2_TX2
+set_location_assignment PIN_AB29 -to "A2_TX2(n)"
+set_location_assignment PIN_AD30 -to A2_TX3
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to A2_TX3
+set_location_assignment PIN_AD29 -to "A2_TX3(n)"
+set_location_assignment PIN_J3 -to D1_RX0
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to D1_RX0
+set_location_assignment PIN_J4 -to "D1_RX0(n)"
+set_location_assignment PIN_G3 -to D1_RX1
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to D1_RX1
+set_location_assignment PIN_G4 -to "D1_RX1(n)"
+set_location_assignment PIN_AC12 -to D1_SYNCB
+set_instance_assignment -name IO_STANDARD LVDS -to D1_SYNCB
+set_location_assignment PIN_AB12 -to "D1_SYNCB(n)"
+set_location_assignment PIN_N3 -to D2_RX0
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to D2_RX0
+set_location_assignment PIN_N4 -to "D2_RX0(n)"
+set_location_assignment PIN_L3 -to D2_RX1
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to D2_RX1
+set_location_assignment PIN_L4 -to "D2_RX1(n)"
+set_location_assignment PIN_AH11 -to D2_SYNCB
+set_instance_assignment -name IO_STANDARD LVDS -to D2_SYNCB
+set_location_assignment PIN_AG11 -to "D2_SYNCB(n)"
+set_location_assignment PIN_W22 -to DCLK0
+set_instance_assignment -name IO_STANDARD LVDS -to DCLK0
+set_location_assignment PIN_W23 -to "DCLK0(n)"
+set_location_assignment PIN_U9 -to DCLK5
+set_instance_assignment -name IO_STANDARD "2.5-V PCML" -to DCLK5
+set_location_assignment PIN_W9 -to DCLK6
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to DCLK6
+set_location_assignment PIN_W8 -to "DCLK6(n)"
+set_location_assignment PIN_AD1 -to FPGA_F48MHZ
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to FPGA_F48MHZ
+set_location_assignment PIN_AD2 -to "FPGA_F48MHZ(n)"
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FLASH_CLK_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FLASH_CS_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FLASH_MISO_3V3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FLASH_MOSI_3V3
+set_location_assignment PIN_AE13 -to FPGA_SYNC1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to FPGA_LED1_3V3
+set_instance_assignment -name IO_STANDARD LVDS -to FPGA_SYNC1
+set_location_assignment PIN_AD13 -to "FPGA_SYNC1(n)"
+set_location_assignment PIN_AK14 -to FPGA_SYNC2
+set_instance_assignment -name IO_STANDARD LVDS -to FPGA_SYNC2
+set_location_assignment PIN_AJ15 -to "FPGA_SYNC2(n)"
+set_location_assignment PIN_AH15 -to FPGA_SYNC3
+set_instance_assignment -name IO_STANDARD LVDS -to FPGA_SYNC3
+set_location_assignment PIN_AG15 -to "FPGA_SYNC3(n)"
+set_location_assignment PIN_Y1 -to RX_GTP
+set_instance_assignment -name IO_STANDARD "2.5-V PCML" -to RX_GTP
+set_location_assignment PIN_AK3 -to REF3
+set_instance_assignment -name IO_STANDARD LVDS -to REF3
+set_location_assignment PIN_AJ3 -to "REF3(n)"
+set_location_assignment PIN_AK4 -to SYSREF0
+set_instance_assignment -name IO_STANDARD LVDS -to SYSREF0
+set_location_assignment PIN_AK5 -to "SYSREF0(n)"
+set_location_assignment PIN_AJ13 -to SYSREF5
+set_instance_assignment -name IO_STANDARD LVDS -to SYSREF5
+set_location_assignment PIN_AH13 -to "SYSREF5(n)"
+set_location_assignment PIN_AH12 -to SYSREF6
+set_instance_assignment -name IO_STANDARD LVDS -to SYSREF6
+set_location_assignment PIN_AG12 -to "SYSREF6(n)"
+set_location_assignment PIN_W3 -to TX_GTP
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to TX_GTP
+set_location_assignment PIN_W4 -to "TX_GTP(n)"
+set_location_assignment PIN_AH1 -to si570_clk
+set_instance_assignment -name IO_STANDARD LVDS -to si570_clk
+set_location_assignment PIN_AH2 -to "si570_clk(n)"
+set_global_assignment -name IGNORE_CLOCK_SETTINGS OFF
+set_global_assignment -name INCLUDE_EXTERNAL_PIN_DELAYS_IN_FMAX_CALCULATIONS OFF
+set_global_assignment -name FMAX_REQUIREMENT "156.25 MHz"
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE FASTEST
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 4.0
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_instance_assignment -name VIRTUAL_PIN ON -to stat_rr_link
+set_instance_assignment -name VIRTUAL_PIN ON -to ctrl_tc_force_train
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_sop
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_eop
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_err
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_mty
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_dat
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_adr
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_val
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_dav
+set_instance_assignment -name VIRTUAL_PIN ON -to rxrdp_ena
+set_instance_assignment -name VIRTUAL_PIN ON -to stat_rxrdp_empty
+set_instance_assignment -name VIRTUAL_PIN ON -to err_rr_rxrdp_oflw
+set_instance_assignment -name VIRTUAL_PIN ON -to err_txrdp_oflw
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_ena
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_dav
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_sop
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_eop
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_err
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_mty
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_dat
+set_instance_assignment -name VIRTUAL_PIN ON -to txrdp_adr
+set_instance_assignment -name CUT ON -from * -to *seriallite1_slite2_top*meta*
+set_instance_assignment -name CUT ON -from * -to *seriallite1_slite2_top*wr_*sync*
+set_instance_assignment -name CUT ON -from * -to *seriallite1_slite2_top*rd_*sync*
+set_instance_assignment -name CUT ON -from *seriallite1_slite2_top*linksm_inst|link_up -to *
+set_instance_assignment -name CUT ON -from * -to *meta*
+set_instance_assignment -name CUT ON -from *seriallite1_slite2_top*reset_syncer|reset_d[2] -to *
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SEARCH_PATH mypll
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to "DCLK6(n)"
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_instance_assignment -name XCVR_REFCLK_PIN_TERMINATION AC_COUPLING -to DCLK5
+set_location_assignment PIN_U8 -to "DCLK5(n)"
+set_location_assignment PIN_K14 -to SCLK1_I2C
+set_location_assignment PIN_J14 -to SDATA1_I2C
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SCLK1_I2C
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SDATA1_I2C
+set_location_assignment PIN_C13 -to SFP1_LOS
+set_location_assignment PIN_E13 -to SFP1_PRESENT
+set_location_assignment PIN_F13 -to RATE1_SELECTION
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RATE1_SELECTION
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP1_LOS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP1_PRESENT
+set_location_assignment PIN_D13 -to SFP1_TX_DISABLE
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP1_TX_DISABLE
+set_location_assignment PIN_A13 -to SFP1_TX_FAULT
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP1_TX_FAULT
+set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
+set_global_assignment -name SMART_RECOMPILE ON
+set_location_assignment PIN_J16 -to SCLK2_I2C
+set_location_assignment PIN_J15 -to SDATA2_I2C
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SCLK2_I2C
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SDATA2_I2C
+set_location_assignment PIN_V1 -to RX2_GTP
+set_instance_assignment -name IO_STANDARD "2.5-V PCML" -to RX2_GTP
+set_location_assignment PIN_V2 -to "RX2_GTP(n)"
+set_location_assignment PIN_G10 -to SFP2_LOS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP2_LOS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP2_PRESENT
+set_location_assignment PIN_K16 -to SFP2_PRESENT
+set_location_assignment PIN_H10 -to SFP2_TX_DISABLE
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP2_TX_DISABLE
+set_location_assignment PIN_H15 -to SFP2_TX_FAULT
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SFP2_TX_FAULT
+set_location_assignment PIN_U3 -to TX2_GTP
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to TX2_GTP
+set_location_assignment PIN_U4 -to "TX2_GTP(n)"
+set_location_assignment PIN_F15 -to RATE2_SELECTION
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to RATE2_SELECTION
+set_location_assignment PIN_F21 -to D0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D1
+set_location_assignment PIN_E22 -to A1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A1
+set_location_assignment PIN_E21 -to A2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A2
+set_location_assignment PIN_D23 -to A3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A3
+set_location_assignment PIN_D22 -to A4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A4
+set_location_assignment PIN_A21 -to A5
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A5
+set_location_assignment PIN_B21 -to A6
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A6
+set_location_assignment PIN_B22 -to A7
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A7
+set_location_assignment PIN_C20 -to A8
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A8
+set_location_assignment PIN_C22 -to A9
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A9
+set_location_assignment PIN_C23 -to A10
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A10
+set_location_assignment PIN_D20 -to A12
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A12
+set_location_assignment PIN_D21 -to A13
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A13
+set_location_assignment PIN_F20 -to A19
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A19
+set_location_assignment PIN_K21 -to A18
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to A18
+set_location_assignment PIN_K25 -to ABE0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABE0
+set_location_assignment PIN_A24 -to ABE1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to ABE1
+set_location_assignment PIN_F23 -to D1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D0
+set_location_assignment PIN_G19 -to D2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D5
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D6
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D7
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D8
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D9
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D10
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D11
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D12
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D13
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D14
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to D15
+set_location_assignment PIN_G20 -to D3
+set_location_assignment PIN_H22 -to D4
+set_location_assignment PIN_G22 -to D5
+set_location_assignment PIN_G23 -to D6
+set_location_assignment PIN_H21 -to D7
+set_location_assignment PIN_G21 -to D8
+set_location_assignment PIN_J19 -to D9
+set_location_assignment PIN_J20 -to D10
+set_location_assignment PIN_J21 -to D11
+set_location_assignment PIN_J22 -to D12
+set_location_assignment PIN_K19 -to D13
+set_location_assignment PIN_K20 -to D14
+set_location_assignment PIN_K22 -to D15
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CE_MO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLK_MO
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to CLK_OUT
+set_location_assignment PIN_D15 -to CE_MO
+set_location_assignment PIN_A15 -to CLK_MO
+set_location_assignment PIN_H19 -to CLK_OUT
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SA10
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SCAS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SCKE
+set_location_assignment PIN_F19 -to SA10
+set_location_assignment PIN_D25 -to SCAS
+set_location_assignment PIN_A23 -to SCKE
+set_location_assignment PIN_J23 -to SMS
+set_location_assignment PIN_K24 -to SRAS
+set_location_assignment PIN_C25 -to SWE
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SMS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SRAS
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to SWE
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME top_module_vlg_tst -section_id tb
+set_global_assignment -name EDA_TEST_BENCH_FILE simulation/modelsim/top_module.vt -section_id tb
+set_location_assignment PIN_E16 -to WDATA_MK7
+set_location_assignment PIN_C16 -to WDATA_MK5
+set_location_assignment PIN_D16 -to WDATA_MK6
+set_location_assignment PIN_B16 -to WDATA_MK4
+set_location_assignment PIN_H16 -to WDATA_MK3
+set_location_assignment PIN_G16 -to WDATA_MK2
+set_location_assignment PIN_A16 -to WDATA_MK1
+set_location_assignment PIN_A17 -to WDATA_MK0
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK7
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK6
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK5
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK4
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK3
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK2
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK1
+set_instance_assignment -name IO_STANDARD "3.3-V LVCMOS" -to WDATA_MK0
+set_global_assignment -name ALLOW_REGISTER_MERGING OFF
+set_global_assignment -name ENABLE_DRC_SETTINGS ON
+set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
+set_global_assignment -name FLOW_ENABLE_IO_ASSIGNMENT_ANALYSIS ON
+set_global_assignment -name ALLOW_REGISTER_RETIMING OFF
+set_global_assignment -name EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY "C:\\Work_murmansk\\Modelsim_pj\\Modelsim_rep\\TB_UDP\\lib" -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/DDS_48_v1.v
+set_global_assignment -name QIP_FILE DDS_48_v1/synthesis/DDS_48_v1.qip
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/dop_reg.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_seg_sel.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_init_pm.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_fs.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_2c.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_pxx.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_isdr.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_fxx.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_dxx_g.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_dxx.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_crd_par.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v
+set_global_assignment -name VERILOG_FILE sdram_mk_upr.v
+set_global_assignment -name VERILOG_FILE sdram_cntr.v
+set_global_assignment -name QIP_FILE mem_for_sdram_v1.qip
+set_global_assignment -name QIP_FILE dds/synthesis/dds.qip
+set_global_assignment -name VERILOG_FILE crc_form.v
+set_global_assignment -name QIP_FILE nco_test/synthesis/nco_test.qip
+set_global_assignment -name QIP_FILE cic/synthesis/cic.qip
+set_global_assignment -name VERILOG_FILE tst_writer.v
+set_global_assignment -name VERILOG_FILE sdram_wr_rd.v
+set_global_assignment -name VERILOG_FILE sdram_controller_2.v
+set_global_assignment -name VERILOG_FILE udp_arbitr.v
+set_global_assignment -name VERILOG_FILE udp_packet_rcv.v
+set_global_assignment -name VERILOG_FILE udp_reciver.v
+set_global_assignment -name VERILOG_FILE i2c_v3.v
+set_global_assignment -name VERILOG_FILE sfp_master.v
+set_global_assignment -name VERILOG_FILE i2c_master.v
+set_global_assignment -name VERILOG_FILE adc1_align.v
+set_global_assignment -name VERILOG_FILE adc1_jesd_rcv.v
+set_global_assignment -name VERILOG_FILE adc2_align.v
+set_global_assignment -name VERILOG_FILE adc2_jesd_rcv.v
+set_global_assignment -name VERILOG_FILE adc_align.v
+set_global_assignment -name VERILOG_FILE elastic_buffer.v
+set_global_assignment -name SDC_FILE arria5_tst1.sdc
+set_global_assignment -name VERILOG_FILE Block_read_spi_v3.v
+set_global_assignment -name VERILOG_FILE fifo_2clk.v
+set_global_assignment -name VERILOG_FILE adc_data_rcv.v
+set_global_assignment -name VERILOG_FILE nco_faza.v
+set_global_assignment -name VERILOG_FILE DAC_upr.v
+set_global_assignment -name VERILOG_FILE cordic.v
+set_global_assignment -name VERILOG_FILE convert_cos.v
+set_global_assignment -name VERILOG_FILE test_sqr_gen.v
+set_global_assignment -name VERILOG_FILE sync_align_ila.v
+set_global_assignment -name VERILOG_FILE sync_al_tst.v
+set_global_assignment -name VERILOG_FILE arria5_tst1.v
+set_global_assignment -name VERILOG_FILE trans_reconfig_control.v
+set_global_assignment -name VERILOG_FILE Block_upr_spi1.v
+set_global_assignment -name VERILOG_FILE pll1/pll1_0002.v
+set_global_assignment -name VERILOG_FILE pll1.v
+set_global_assignment -name VERILOG_FILE tst_rst_modul.v
+set_global_assignment -name SDC_FILE SDC1.sdc
+set_global_assignment -name QIP_FILE bufi4.qip
+set_global_assignment -name QIP_FILE bufi5.qip
+set_global_assignment -name QIP_FILE bufout5.qip
+set_global_assignment -name QIP_FILE bufout3.qip
+set_global_assignment -name QIP_FILE bufi3.qip
+set_global_assignment -name QIP_FILE custom_phy.qip
+set_global_assignment -name SIP_FILE custom_phy.sip
+set_global_assignment -name VERILOG_FILE Block_control_GPHY.v
+set_global_assignment -name VERILOG_FILE reset_long.v
+set_global_assignment -name VERILOG_FILE Block_read_spi.v
+set_global_assignment -name VERILOG_FILE output_files/Block_write_spi.v
+set_global_assignment -name QIP_FILE bufin7.qip
+set_global_assignment -name QIP_FILE bufout4.qip
+set_global_assignment -name QIP_FILE BUFIN24.qip
+set_global_assignment -name QIP_FILE pll_gigtrans.qip
+set_global_assignment -name SIP_FILE pll_gigtrans.sip
+set_global_assignment -name QIP_FILE phy_reconfig.qip
+set_global_assignment -name SIP_FILE phy_reconfig.sip
+set_global_assignment -name QIP_FILE phy_rst.qip
+set_global_assignment -name SIP_FILE phy_rst.sip
+set_global_assignment -name QIP_FILE custom_phy_dac.qip
+set_global_assignment -name SIP_FILE custom_phy_dac.sip
+set_global_assignment -name QIP_FILE PHY_pll.qip
+set_global_assignment -name SIP_FILE PHY_pll.sip
+set_global_assignment -name QIP_FILE bufout2.qip
+set_global_assignment -name QIP_FILE bufout15.qip
+set_global_assignment -name QIP_FILE bufout11.qip
+set_global_assignment -name QIP_FILE pll96.qip
+set_global_assignment -name SIP_FILE pll96.sip
+set_global_assignment -name VERILOG_FILE error_sch.v
+set_global_assignment -name QIP_FILE custom_phy_4line.qip
+set_global_assignment -name SIP_FILE custom_phy_4line.sip
+set_global_assignment -name QIP_FILE pll240_120.qip
+set_global_assignment -name SIP_FILE pll240_120.sip
+set_global_assignment -name QIP_FILE fifo64_16.qip
+set_global_assignment -name QIP_FILE fifo_mem.qip
+set_global_assignment -name SDC_FILE arria_5_072.sdc
+set_global_assignment -name QIP_FILE pll100.qip
+set_global_assignment -name SIP_FILE pll100.sip
+set_global_assignment -name SOURCE_FILE db/arria5_tst1.cmp.rdb
+set_global_assignment -name VERILOG_FILE iq_quarta_mix2.v
+set_global_assignment -name VERILOG_FILE uart_tx.v
+set_global_assignment -name VERILOG_FILE uart_tx_massiv.v
+set_global_assignment -name QIP_FILE pll_delay1.qip
+set_global_assignment -name SIP_FILE pll_delay1.sip
+set_global_assignment -name QIP_FILE fifo_gtx_adc.qip
+set_global_assignment -name QIP_FILE pll_120_120_96_96_96.qip
+set_global_assignment -name SIP_FILE pll_120_120_96_96_96.sip
+set_global_assignment -name VERILOG_FILE jesd204_lmfc.v
+set_global_assignment -name VERILOG_FILE line_world_align.v
+set_global_assignment -name VERILOG_FILE switch_data_flow.v
+set_global_assignment -name VERILOG_FILE mixer_to_iq.v
+set_global_assignment -name VERILOG_FILE dsp_step1.v
+set_global_assignment -name VERILOG_FILE decimator_t2.v
+set_global_assignment -name QIP_FILE pll125.qip
+set_global_assignment -name SIP_FILE pll125.sip
+set_global_assignment -name QIP_FILE pll_125_120_96_96_96_v1.qip
+set_global_assignment -name SIP_FILE pll_125_120_96_96_96_v1.sip
+set_global_assignment -name QIP_FILE pll_96.qip
+set_global_assignment -name SIP_FILE pll_96.sip
+set_global_assignment -name QIP_FILE pll_240_120.qip
+set_global_assignment -name SIP_FILE pll_240_120.sip
+set_global_assignment -name QIP_FILE iobuf_v1.qip
+set_global_assignment -name QIP_FILE buf_i2c.qip
+set_global_assignment -name VERILOG_FILE udp_form.v
+set_global_assignment -name VERILOG_FILE mac_rst.v
+set_global_assignment -name VERILOG_FILE Block_read_spi_mac.v
+set_global_assignment -name VERILOG_FILE Block_write_spi_mac.v
+set_global_assignment -name QIP_FILE reconfig_phy1.qip
+set_global_assignment -name SIP_FILE reconfig_phy1.sip
+set_global_assignment -name QIP_FILE pll_v040219_1.qip
+set_global_assignment -name SIP_FILE pll_v040219_1.sip
+set_global_assignment -name VERILOG_FILE udp_sender.v
+set_global_assignment -name QIP_FILE eth1.qip
+set_global_assignment -name SIP_FILE eth1.sip
+set_global_assignment -name QIP_FILE ram1.qip
+set_global_assignment -name QIP_FILE mem1.qip
+set_global_assignment -name VERILOG_FILE arp_sender.v
+set_global_assignment -name QIP_FILE pll_v070319.qip
+set_global_assignment -name SIP_FILE pll_v070319.sip
+set_global_assignment -name SIGNALTAP_FILE output_files/stp1.stp
+set_global_assignment -name VERILOG_FILE z1.v
+set_global_assignment -name QIP_FILE fifo1.qip
+set_global_assignment -name QIP_FILE ram4.qip
+set_global_assignment -name QIP_FILE fifo.qip
+set_global_assignment -name QIP_FILE r.qip
+set_global_assignment -name QIP_FILE fifo_to_125.qip
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name SIP_FILE pll.sip
+set_global_assignment -name QIP_FILE fir.qip
+set_global_assignment -name SIP_FILE fir.sip
+set_global_assignment -name QIP_FILE mem_z1.qip
+set_global_assignment -name QIP_FILE fir_v2.qip
+set_global_assignment -name SIP_FILE fir_v2.sip
+set_global_assignment -name QIP_FILE pll_125.qip
+set_global_assignment -name SIP_FILE pll_125.sip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

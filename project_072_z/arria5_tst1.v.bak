@@ -1,0 +1,2763 @@
+
+//synthesis_resources = arriav_io_ibuf 1 
+//synopsys translate_off
+`timescale 1 ps / 1 ps
+//synopsys translate_on
+
+
+module top_module(
+
+		input wire clk_100MHZ,
+		
+//		input wire si570_clk,
+		
+		input wire REF3,
+		
+		input wire SYSREF0,
+		
+		input wire SYSREF5,
+
+		input wire SYSREF6,	
+	
+	   input wire FPGA_SYNC1,
+			
+//		input wire FPGA_SYNC2,
+	
+//		input wire FPGA_SYNC3,
+			
+//--------------------------------
+
+output wire UPR_AT4_05,
+output wire UPR_AT4_1,
+output wire UPR_AT4_2,
+output wire UPR_AT4_4,
+output wire UPR_AT4_8,
+output wire UPR_AT4_16,
+	  
+output wire UPR_AT1_05,
+output wire UPR_AT1_1,
+output wire UPR_AT1_2,
+output wire UPR_AT1_4,
+output wire UPR_AT1_8,
+output wire UPR_AT1_16,
+	  
+output wire UPR_AT2_05,
+output wire UPR_AT2_1,
+output wire UPR_AT2_2,
+output wire UPR_AT2_4,
+output wire UPR_AT2_8,
+output wire UPR_AT2_16,
+	  
+output wire UPR_AT3_05,
+output wire UPR_AT3_1,
+output wire UPR_AT3_2,
+output wire UPR_AT3_4,
+output wire UPR_AT3_8,
+output wire UPR_AT3_16,
+	  
+output wire UPR_SWITCH1,
+output wire UPR_SWITCH2,
+output wire UPR_SWITCH3,
+output wire UPR_SWITCH4,
+	  
+input wire KAN1_KONTROL,
+input wire KAN2_KONTROL,
+input wire KAN3_KONTROL,
+input wire KAN4_KONTROL,
+	  
+input wire IZL1_KONTROL,
+input wire IZL2_KONTROL,
+input wire IZL3_KONTROL,
+input wire IZL4_KONTROL,
+	  
+output wire LMK_STATUS_LD1_FPGA_3V3,
+output wire LMK_STATUS_LD2_FPGA_3V3,
+	  
+input wire LMK_STATUS_LD1_3V3,
+input wire LMK_STATUS_LD2_3V3,
+	  
+output wire D1_ALARM_FPGA,
+output wire D2_ALARM_FPGA,
+	  
+output wire EN_2V5_VDA,
+output wire REZERV1,
+output wire FPGA_IND1,
+output wire FPGA_IND2,
+	  
+input wire SYS_REF,
+	  
+input wire ADDR0,
+input wire ADDR1,
+input wire ADDR2,
+input wire ADDR3,
+ 
+input wire CS_ADC1,
+input wire CS_ADC2,
+input wire CS_DAC1,
+input wire CS_DAC2,
+input wire CS_LMK,
+input wire CS_FPGA1,
+input wire CS_FPGA2,
+	  
+//------------------------------------------------------
+	
+input wire UART6_TX, //uart6 mk
+output wire UART6_RX,
+	 
+input wire UART1_TX, //uart1 mk
+output wire UART1_RX,
+	 
+input wire TX_FTDI_1, //FTDI1 mk
+output wire RX_FTDI_1,
+	 
+input wire TX_FTDI_2, //FTDI2 mk
+output wire RX_FTDI_2,
+	 
+output wire BOOT1,
+output wire BOOT0,
+	 
+input wire BOOT_MK_FTDI,
+input wire RESET_MK_FTDI,
+	 
+	 
+input wire MR_RESET_MK_FPGA, 	// сигнал ресет для МК
+output wire RESET_MK,
+input wire BOOT_MK_FPGA, 		// сигнал , буут для МК
+output wire CLK_FOR_MK_3V3,     // clk на МК 
+	  
+output wire TNC_MK_1HZ, //1 сек к mk
+output wire INT1_FPGA,
+	  	  
+input wire [7:0] WDATA_MK, //шина 8 бит с МК
+input wire OK_BUS,
+input wire WR_BUS,
+input wire RD_BUS,
+	  
+//--------------------------
+output wire SPI4_SCK_MK,  //SPI где слейв МК  ,выдача данных с ПЛИС на МК
+output wire SPI4_NSS_MK,
+output wire SPI4_MOSI_MK,
+ input wire SPI4_MISO_MK,
+	  
+	  
+ input wire SPI3_SCK,  //SPI где слейв ПЛИС
+ input wire SPI3_CS,
+output wire SPI3_MISO,
+ input wire SPI3_MOSI,
+	  
+output wire SPI2_NSS_MK, 
+	  
+//-----------GTX---------------
+
+	
+     input wire RX_GTP,
+    output wire TX_GTP,
+
+//	  input wire FPGA_F48MHZ,
+//	  input wire DCLK6,
+//	  input wire DCLK5,
+//	  input wire DCLK0,
+  
+
+//	 output wire D2_RX0,
+//	 output wire D2_RX1,
+	 
+//-----------------------
+
+//	 output wire D1_RX0,
+//	 output wire D1_RX1, 
+	 
+//-----------------------	 
+/*
+	  input wire A2_TX0,
+	  input wire A2_TX1,
+	  input wire A1_TX3,
+	  input wire A1_TX2,
+      input wire A2_TX3,	  
+	  input wire A2_TX2,
+	  input wire A1_TX1,
+	  input wire A1_TX0,
+*/	  
+//-----------DAC---------------
+	  
+output wire DAC_SYNC, //Сигнал идёт наружу кассеты к АЦ
+	  
+ input wire D2_SYNCB,
+ input wire D1_SYNCB,
+  
+output wire D1_RESETB,
+output wire D1_SCLK,
+output wire D1_SDIO,
+ input wire D1_SDO,
+output wire D1_SDENB,
+output wire D1_SLEEP,
+input  wire D1_SYNC_N_AB,
+input  wire D1_SYNC_N_CD,
+output wire D1_TXENABLE,	 
+ input wire D1_ALARM,
+	 
+output wire D2_RESETB,
+output wire D2_SCLK,
+output wire D2_SDIO,
+ input wire D2_SDO,
+output wire D2_SDENB,
+output wire D2_SLEEP,
+ input wire D2_SYNC_N_AB,
+ input wire D2_SYNC_N_CD,
+output wire D2_TXENABLE,
+ input wire D2_ALARM,
+	  
+//-----------ADC---------------
+
+	input wire A1_OVRA_1V8,
+	input wire A1_OVRB_1V8,
+   output wire A1_CTRL2_1V8,
+   output wire A1_CTRL1_1V8,
+   output wire A1_PWRDOWN_1V8, 
+   output wire A1_RESET_1V8,
+   output wire A1_SCLK_1V8,
+   output wire A1_SDATA_1V8,
+    input wire A1_SDOUT_1V8,
+   output wire A1_SEN_1V8,
+   output wire A1_STBY_1V8,
+		  
+    input wire A2_OVRA_1V8,
+    input wire A2_OVRB_1V8,
+   output wire A2_CTRL2_1V8,
+   output wire A2_CTRL1_1V8,
+   output wire A2_PWRDOWN_1V8, 
+   output wire A2_RESET_1V8,
+   output wire A2_SCLK_1V8,
+   output wire A2_SDATA_1V8,
+    input wire A2_SDOUT_1V8,
+   output wire A2_SEN_1V8,
+   output wire A2_STBY_1V8,
+  
+   output wire A1_SNC,
+   output wire A2_SNC,  
+	  
+//-----------LMK---------------
+	  output wire LMK_SEL0_3V3,
+	  output wire LMK_SEL1_3V3,
+	   input wire LMK_RESET_3V3,//SPI readback from LMK
+	  output wire LMK_SCK_3V3,
+	  output wire LMK_SDIO_3V3,
+	  output wire LMK_CS_3V3,
+	  output wire LMK_SYNC_3V3,
+	  
+//----------ONET----------------
+	  
+	  input wire ONET1_RX_LOS,
+	  input wire ONET2_RX_LOS,
+	  
+//--------------------------
+	  output wire RNE1_RS422,
+	  output wire DE1RX_RS422,
+	  output wire RX1_RS422,
+	  input  wire TX1_RS422,
+	  
+//--------------------------
+	  
+	  output wire FLASH_CLK_3V3,     //ноги управления резервной flash
+	  output wire FLASH_MOSI_3V3,
+	  output wire FLASH_CS_3V3,
+	  input  wire FLASH_MISO_3V3,
+	  input  wire CS_FLASH_FPGA, 		// сигнал чипсилекта с МК на флеш через ПЛИС
+	  
+	  output wire DE_MISO_LVDS_3V3,  //ноги управления буфером SPI
+	  output wire SYNC_DA2,  			//sync для источника питания 
+	 
+	  input  wire CE_MO,
+	  input  wire CLK_MO,
+	  input  wire D_MOSI,
+	  output wire D_MISO,
+	  
+	  output wire SEL_ETALON_3V3,
+//------------SFP----------------	  
+	  inout  wire SDATA1_I2C,
+	  output wire SCLK1_I2C,
+	  input  wire SFP1_TX_FAULT,
+	  input  wire SFP1_PRESENT,
+	  input  wire SFP1_LOS,
+	  output wire RATE1_SELECTION,
+	  output wire SFP1_TX_DISABLE,
+
+//	  inout  wire SDATA2_I2C,
+//	  output wire SCLK2_I2C,
+//-------------------------------	  
+     output wire FPGA_LED1_3V3,
+     output wire T_TEST1,
+	 output wire T_TEST2
+     );
+	  
+	  wire xA1_PWRDOWN_upr_MK;
+	  
+	  wire xA2_PWRDOWN_upr_MK;	
+	  
+	  wire RX_GTP_o;
+		 
+	  wire reset_all;
+	  
+  	  wire signal_wire0 = 1'b0;
+	  wire signal_wire1 = 1'b0;
+	
+	  wire [15:0] rx_parallel_data_out = 16'd0;
+	  wire [1:0]  rx_ctrldetect;
+	  
+	  wire xCE_MO;
+	  wire xCLK_MO;
+	  wire xD_MOSI;
+	  wire xD_MISO;
+	  wire xFPGA_SYNC1;
+	  wire clk_hclk;
+	  wire fboutclk;
+	  wire [69:0] zreconfig_to_xcvr;
+	  wire zreconfig_from_xcvr;
+      wire clk_100MHZ_glob;
+      wire clk_100MHz_eth;
+
+	  wire clk360_locked;
+	  wire reset_240;
+	  wire locked_120;
+	  wire locked_adc2;
+	  wire locked_dac1;
+	  wire locked_dac2;
+
+pll_v040219_1_0002 
+pll_v040219_1_inst (
+		.refclk   (REF3),   //  refclk.clk
+		.rst      (reset_all),      //   reset.reset
+		.outclk_0 (clk_125), // outclk0.clk
+		.outclk_1 (clk_12), // outclk1.clk
+		.outclk_2 (clk_100MHz_eth), // outclk2.clk
+		.locked   (locked_125)    //  locked.export
+	);
+/*
+pll_125_120_96_96_96_v1_0002 
+pll_125_12_inst (
+		.refclk   (REF3),   //  refclk.clk
+		.rst      (reset_all),      //   reset.reset
+		.outclk_0 (clk_125), // outclk0.clk
+		.outclk_1 (clk_12), // outclk1.clk
+		.locked   (locked_125)    //  locked.export
+	);
+*/
+pll_240_120_0002 
+pll240_120_ADC1 
+(
+		.refclk   (clk_125),   //  refclk.clk
+		.rst      (reset_125),      //   reset.reset
+		.outclk_0 (clk_240_adc1), // outclk0.clk
+		.outclk_1 (clk_120_adc1), // outclk1.clk
+		.locked   (locked_120)    //  locked.export
+);
+
+pll_96_0002 
+pll_96_dac1 
+(
+		.refclk   (clk_125),   //  refclk.clk
+		.rst      (reset_125),      //   reset.reset
+		.outclk_0 (clk_96_dac1), // outclk0.clk
+		.locked   (locked_dac1)    //  locked.export
+);
+
+pll_96_0002 
+pll_96_dac2 
+(
+		.refclk   (clk_125),   //  refclk.clk
+		.rst      (reset_125),      //   reset.reset
+		.outclk_0 (clk_96_dac2), // outclk0.clk
+		.locked   (locked_dac2)    //  locked.export
+);
+
+wire clk_125;
+wire locked_125;
+wire reset_125;
+
+/*
+pll100_0002 
+pll100_inst (
+		.refclk   (clk_100MHZ),   //  refclk.clk
+		.rst      (0),      //   reset.reset
+		.outclk_0 (clk_100MHZ_glob), // outclk0.clk
+		.locked   (clk100_locked)    //  locked.export
+	);
+*/	
+
+wire reset_100eth;
+
+rst rst3(clk_125,reset_all);
+rst rst6(clk_240_adc1,reset_240);
+rst rst7(clk_125,reset_125);
+rst rst8(clk_100MHz_eth,reset_100eth);
+	
+bufi3	bufi3_inst1 (
+	.datain  ( { CE_MO, CLK_MO, D_MOSI} ),
+	.dataout ( {xCE_MO,xCLK_MO,xD_MOSI} )
+	);
+	  
+buf_out1	buf_out1_inst3 (
+	.datain ( xD_MISO ),
+	.dataout ( D_MISO )
+	);
+
+test_led tst_led2(clk_125 ,xT_TEST3 ,xFPGA_IND1,xFPGA_IND2);
+
+wire   xKAN1_KONTROL;
+wire   xKAN2_KONTROL;
+wire   xKAN3_KONTROL;
+wire   xKAN4_KONTROL;
+	  
+wire   xIZL1_KONTROL;
+wire   xIZL2_KONTROL;
+wire   xIZL3_KONTROL;
+wire   xIZL4_KONTROL;
+		  
+wire   xLMK_STATUS_LD1_3V3;
+wire   xLMK_STATUS_LD2_3V3;
+	  
+wire   xD1_ALARM_FPGA;
+wire   xD2_ALARM_FPGA;
+	
+wire   xSYS_REF;
+	  
+wire   xADDR0;
+wire   xADDR1;
+wire   xADDR2;
+wire   xADDR3;
+	  
+wire   xCS_ADC1;
+wire   xCS_ADC2;
+wire   xCS_DAC1;
+wire   xCS_DAC2;
+wire   xCS_LMK;
+wire   xCS_FPGA1;
+wire   xCS_FPGA2;
+
+wire rzrv1;
+wire rzrv2;
+
+bufout2	bufout2_1 (
+	.datain ( {
+	xD1_ALARM_FPGA,
+	xD2_ALARM_FPGA} ),
+	.dataout ( {
+	D1_ALARM_FPGA,
+	D2_ALARM_FPGA} )
+	);
+
+bufin24	buf_in24_inst1 (
+	.datain ( 
+	  {KAN1_KONTROL,
+	   KAN2_KONTROL,
+	   KAN3_KONTROL,
+	   KAN4_KONTROL,
+	  
+	   IZL1_KONTROL,
+	   IZL2_KONTROL,
+	   IZL3_KONTROL,
+	   IZL4_KONTROL,
+		  
+	   LMK_STATUS_LD1_3V3,
+	   LMK_STATUS_LD2_3V3,
+	  
+	   1'h0,
+	   1'h0,
+	
+	   SYS_REF,
+	  
+	   ADDR0,
+	   ADDR1,
+	   ADDR2,
+	   ADDR3,
+	  
+	   CS_ADC1,
+	   CS_ADC2,
+	   CS_DAC1,
+	   CS_DAC2,
+	   CS_LMK,
+	   CS_FPGA1,
+	   CS_FPGA2} ),
+		
+	.dataout ( 
+	  {xKAN1_KONTROL,
+	   xKAN2_KONTROL,
+	   xKAN3_KONTROL,
+	   xKAN4_KONTROL,
+	  
+	   xIZL1_KONTROL,
+	   xIZL2_KONTROL,
+	   xIZL3_KONTROL,
+	   xIZL4_KONTROL,
+		  
+	   xLMK_STATUS_LD1_3V3,
+	   xLMK_STATUS_LD2_3V3,
+	  
+	   rzrv1,
+	   rzrv1,
+	
+	   xSYS_REF,
+	  
+	   xADDR0,
+	   xADDR1,
+	   xADDR2,
+	   xADDR3,
+	  
+	   xCS_ADC1,
+	   xCS_ADC2,
+	   xCS_DAC1,
+	   xCS_DAC2,
+	   xCS_LMK,
+	   xCS_FPGA1,
+	   xCS_FPGA2
+		} )
+	);
+
+	
+wire xUPR_AT4_05;
+wire xUPR_AT4_1;
+wire xUPR_AT4_2;
+wire xUPR_AT4_4;
+wire xUPR_AT4_8;
+wire xUPR_AT4_16;
+	  
+wire xUPR_AT1_05;
+wire xUPR_AT1_1;
+wire xUPR_AT1_2;
+wire xUPR_AT1_4;
+wire xUPR_AT1_8;
+wire xUPR_AT1_16;
+	  
+wire xUPR_AT2_05;
+wire xUPR_AT2_1;
+wire xUPR_AT2_2;
+wire xUPR_AT2_4;
+wire xUPR_AT2_8;
+wire xUPR_AT2_16;
+	  
+wire xUPR_AT3_05;
+wire xUPR_AT3_1;
+wire xUPR_AT3_2;
+wire xUPR_AT3_4;
+wire xUPR_AT3_8;
+wire xUPR_AT3_16;
+	  
+wire xUPR_SWITCH1;
+wire xUPR_SWITCH2;
+wire xUPR_SWITCH3;
+wire xUPR_SWITCH4;
+	   
+wire xLMK_STATUS_LD1_FPGA_3V3;
+wire xLMK_STATUS_LD2_FPGA_3V3;
+	  
+wire xEN_2V5_VDA;
+wire xREZERV1;
+wire xFPGA_IND1;
+wire xFPGA_IND2;
+	
+buf34_out	buf34_out_inst (
+	.datain (  
+	 {xUPR_AT4_05,
+	  xUPR_AT4_1,
+      xUPR_AT4_2,
+      xUPR_AT4_4,
+	  xUPR_AT4_8,
+	  xUPR_AT4_16,
+	  
+	  xUPR_AT1_05,
+	  xUPR_AT1_1,
+	  xUPR_AT1_2,
+	  xUPR_AT1_4,
+	  xUPR_AT1_8,
+	  xUPR_AT1_16,
+	  
+	  xUPR_AT2_05,
+	  xUPR_AT2_1,
+	  xUPR_AT2_2,
+	  xUPR_AT2_4,
+	  xUPR_AT2_8,
+	  xUPR_AT2_16,
+	  
+	  xUPR_AT3_05,
+	  xUPR_AT3_1,
+	  xUPR_AT3_2,
+	  xUPR_AT3_4,
+	  xUPR_AT3_8,
+	  xUPR_AT3_16,
+	  
+	  xUPR_SWITCH1,
+	  xUPR_SWITCH2,
+	  xUPR_SWITCH3,
+	  xUPR_SWITCH4,
+	   
+	  xLMK_STATUS_LD1_FPGA_3V3,
+	  xLMK_STATUS_LD2_FPGA_3V3,
+	  
+	  xEN_2V5_VDA,
+	  xREZERV1,
+	  xFPGA_IND1,
+	  xFPGA_IND2} 
+	  ),
+	.dataout (  
+	{ UPR_AT4_05,
+	  UPR_AT4_1,
+     UPR_AT4_2,
+     UPR_AT4_4,
+	  UPR_AT4_8,
+	  UPR_AT4_16,
+	  
+	  UPR_AT1_05,
+	  UPR_AT1_1,
+	  UPR_AT1_2,
+	  UPR_AT1_4,
+	  UPR_AT1_8,
+	  UPR_AT1_16,
+	  
+	  UPR_AT2_05,
+	  UPR_AT2_1,
+	  UPR_AT2_2,
+	  UPR_AT2_4,
+	  UPR_AT2_8,
+	  UPR_AT2_16,
+	  
+	  UPR_AT3_05,
+	  UPR_AT3_1,
+	  UPR_AT3_2,
+	  UPR_AT3_4,
+	  UPR_AT3_8,
+	  UPR_AT3_16,
+	  
+	  UPR_SWITCH1,
+	  UPR_SWITCH2,
+	  UPR_SWITCH3,
+	  UPR_SWITCH4,
+	   
+	  LMK_STATUS_LD1_FPGA_3V3,
+	  LMK_STATUS_LD2_FPGA_3V3,
+	  
+	  EN_2V5_VDA,
+	  REZERV1,
+	  FPGA_IND1,
+	  FPGA_IND2} )
+	);
+	
+wire xUART6_TX; 
+wire xUART1_TX; 	 
+wire xTX_FTDI_1;	 
+wire xTX_FTDI_2; 	 
+wire xBOOT_MK_FTDI;
+wire xRESET_MK_FTDI;	  
+wire xMR_RESET_MK_FPGA; 
+wire xBOOT_MK_FPGA; 		 
+wire [7:0] xWDATA_MK; 
+wire xOK_BUS;
+wire xWR_BUS;
+wire xRD_BUS;
+	
+	
+bufin20	bufin20_inst (
+	.datain ( 
+	 {UART6_TX, 
+	  UART1_TX, 	 
+	  TX_FTDI_1,	 
+	  TX_FTDI_2, 	 
+	  BOOT_MK_FTDI,
+	  RESET_MK_FTDI,	  
+	  MR_RESET_MK_FPGA, 
+	  BOOT_MK_FPGA,		 
+	  WDATA_MK[7:0], 
+	  OK_BUS,
+	  WR_BUS,
+	  RD_BUS}
+	  ),
+	.dataout (  
+	 {xUART6_TX, 
+	  xUART1_TX, 	 
+	  xTX_FTDI_1,	 
+	  xTX_FTDI_2, 	 
+	  xBOOT_MK_FTDI,
+	  xRESET_MK_FTDI,	  
+	  xMR_RESET_MK_FPGA, 
+	  xBOOT_MK_FPGA,		 
+	  xWDATA_MK[7:0], 
+	  xOK_BUS,
+	  xWR_BUS,
+	  xRD_BUS} )
+	);
+
+wire xUART6_RX;
+wire xUART1_RX;
+wire xRX_FTDI_1;
+wire xRX_FTDI_2;	 
+wire xBOOT1;
+wire xBOOT0;
+wire xRESET_MK;
+wire xCLK_FOR_MK_3V3;
+wire xTNC_MK_1HZ;
+wire xINT1_FPGA;	
+	
+bufout10	bufout10_inst (
+	.datain (  
+	{xUART6_RX,
+	 xUART1_RX,
+	 xRX_FTDI_1,
+	 xRX_FTDI_2,	 
+	 xBOOT1,
+	 xBOOT0,
+	 xRESET_MK,
+	 xCLK_FOR_MK_3V3,
+	 xTNC_MK_1HZ,
+	 xINT1_FPGA }
+	 ),
+	.dataout ( 
+	{UART6_RX,
+	 UART1_RX,
+	 RX_FTDI_1,
+	 RX_FTDI_2,	 
+	 BOOT1,
+	 BOOT0,
+	 RESET_MK,
+	 CLK_FOR_MK_3V3,
+	 TNC_MK_1HZ,
+	 INT1_FPGA}
+	 )
+	);
+	
+	
+wire xSPI4_SCK_MK;
+wire xSPI4_NSS_MK;
+wire xSPI4_MOSI_MK;
+wire xSPI3_SCK;
+wire xSPI3_CS;
+wire xSPI3_MISO;
+wire xSPI2_NSS_MK;
+	 
+bufout4	bufout4_1 (
+	.datain ( 
+	{xSPI4_SCK_MK,
+	 xSPI4_NSS_MK,
+	 xSPI4_MOSI_MK,
+	 xSPI3_MISO} ),
+	.dataout ( 
+	{SPI4_SCK_MK,
+	 SPI4_NSS_MK,
+	 SPI4_MOSI_MK,
+  	 SPI3_MISO}
+	 )
+	);
+
+ bufi3	bufi3_1 (
+	.datain ( 
+	{SPI3_MOSI,
+	 SPI3_SCK,
+	 SPI3_CS
+	 } ),
+	.dataout ( 
+	{xSPI3_MOSI,
+	 xSPI3_SCK,
+	 xSPI3_CS}
+	 )
+	);
+	
+buf_out1	buf_out1_1 (
+	.datain ( xSPI2_NSS_MK ),
+	.dataout ( SPI2_NSS_MK )
+	);
+	
+	
+ wire xSPI4_MISO_MK;
+ wire xSPI3_MOSI;
+	
+bufi1	bufi1_inst1 (
+	.datain ( SPI4_MISO_MK ),
+	.dataout ( xSPI4_MISO_MK )
+	);
+	
+	
+	
+wire xDAC_SYNC;
+wire xD1_RESETB;
+wire xD1_SCLK;
+wire xD1_SDO;
+wire xD1_SDENB;
+wire xD1_SLEEP;
+wire xD1_SYNC_N_AB;
+wire xD1_SYNC_N_CD;
+wire xD1_TXENABLE; 
+wire xD2_RESETB;
+wire xD2_SCLK;
+wire xD2_SDO;
+wire xD2_SDENB;
+wire xD2_SLEEP;
+wire xD2_SYNC_N_AB;
+wire xD2_SYNC_N_CD;
+wire xD2_TXENABLE;
+
+wire xD1_SLEEP_upr_MK;
+wire xD2_SLEEP_upr_MK;
+
+wire xD1_RESETB_upr_MK;
+wire xD2_RESETB_upr_MK;
+
+//--------------DAC1----------------
+assign xD1_RESETB = xD1_RESETB_upr_MK;
+assign xD1_SLEEP  = xD1_SLEEP_upr_MK; 
+assign xD1_TXENABLE=1;
+//----------------------------------
+//--------------DAC2----------------
+assign xD2_RESETB = xD2_RESETB_upr_MK;
+assign xD2_SLEEP  = xD2_SLEEP_upr_MK; 
+assign xD2_TXENABLE=1;
+//----------------------------------
+
+bufi4	buf4_1 (
+	.datain ( {
+	D1_SYNC_N_AB,
+	D1_SYNC_N_CD,
+	D2_SYNC_N_AB,
+	D2_SYNC_N_CD}),
+	.dataout (  {
+	xD1_SYNC_N_AB,
+	xD1_SYNC_N_CD,
+	xD2_SYNC_N_AB,
+	xD2_SYNC_N_CD})
+	);
+	
+bufout11	bufout11_1 (
+	.datain ( 
+	{ xDAC_SYNC,
+	  xD1_RESETB,
+	  xD1_SCLK,
+	  xD1_SDENB,
+	  xD1_SLEEP,
+	  xD1_TXENABLE,	 
+	  xD2_RESETB,
+	  xD2_SCLK,
+	  xD2_SDENB,
+	  xD2_SLEEP,
+	  xD2_TXENABLE} ),
+	.dataout ( 
+	{ DAC_SYNC,
+	  D1_RESETB,
+	  D1_SCLK,
+	  D1_SDENB,
+	  D1_SLEEP,
+	  D1_TXENABLE,	 
+	  D2_RESETB,
+	  D2_SCLK,
+	  D2_SDENB,
+	  D2_SLEEP,
+	  D2_TXENABLE}
+	  )
+	);	
+	
+	
+bufi1	bufi_d1_sdo (
+	.datain ( D1_SDO ),
+	.dataout ( xD1_SDO )
+	);
+	
+bufi1	bufi_d2_sdo (
+	.datain ( D2_SDO ),
+	.dataout ( xD2_SDO )
+	);	
+	
+	
+wire xD2_SYNCB;	  
+wire xD1_SYNCB;
+wire xD1_SDIO;
+wire xD1_ALARM;
+wire xD2_SDIO;
+wire xD2_ALARM;
+	  
+bufi4	bufi4_inst1 (
+	.datain ( 
+	  {D2_SYNCB,	  
+	   D1_SYNCB,
+	   D1_ALARM,
+	   D2_ALARM} ),
+	.dataout ( 
+	  {xD2_SYNCB,	  
+	   xD1_SYNCB,
+	   xD1_ALARM,
+	   xD2_ALARM} )
+	);
+	
+	
+	
+bufout3	
+	bufout3_inst1 (
+	.datain ( 
+				{xD1_SDIO,
+				xD2_SDIO,
+				xLMK_SDIO_3V3}),
+	.dataout (
+				{D1_SDIO,
+				D2_SDIO,
+				LMK_SDIO_3V3})
+				);
+
+	
+	
+wire xA1_OVRA_1V8;
+wire xA1_OVRB_1V8;
+wire xA1_SDOUT_1V8;
+wire xA2_OVRA_1V8;
+wire xA2_OVRB_1V8;
+wire xA2_SDOUT_1V8;
+	
+	bufi6	bufi6_inst2 (
+	.datain ( 
+	{A1_OVRA_1V8,
+	 A1_OVRB_1V8,
+	 A1_SDOUT_1V8,
+	 A2_OVRA_1V8,
+	 A2_OVRB_1V8,
+    A2_SDOUT_1V8} ),
+	.dataout (
+{	xA1_OVRA_1V8,
+	xA1_OVRB_1V8,
+	xA1_SDOUT_1V8,
+	xA2_OVRA_1V8,
+	xA2_OVRB_1V8,
+   xA2_SDOUT_1V8} )
+	);
+	
+wire xA1_CTRL2_1V8;
+wire xA1_CTRL1_1V8;
+wire xA1_PWRDOWN_1V8; 
+wire xA1_RESET_1V8;
+wire xA1_SCLK_1V8;
+wire xA1_SDATA_1V8;
+wire xA1_SEN_1V8;
+wire xA1_STBY_1V8;
+wire xA2_CTRL2_1V8;
+wire xA2_CTRL1_1V8;
+wire xA2_PWRDOWN_1V8; 
+wire xA2_RESET_1V8;
+wire xA2_SCLK_1V8;
+wire xA2_SDATA_1V8;
+wire xA2_SEN_1V8;
+wire xA2_STBY_1V8;
+wire xA1_SNC;
+wire xA2_SNC;
+
+bufout16	bufout16_inst (
+	.datain ( 
+	{ xA1_CTRL2_1V8,
+	  xA1_CTRL1_1V8,
+	  xA1_PWRDOWN_1V8, 
+	  xA1_RESET_1V8,
+	  xA1_SCLK_1V8,
+	  xA1_SDATA_1V8,
+	  xA1_SEN_1V8,
+	  xA1_STBY_1V8,
+	  xA2_CTRL2_1V8,
+	  xA2_CTRL1_1V8,
+	  xA2_PWRDOWN_1V8, 
+	  xA2_RESET_1V8,
+	  xA2_SCLK_1V8,
+	  xA2_SDATA_1V8,
+	  xA2_SEN_1V8,
+	  xA2_STBY_1V8} ),
+	.dataout ( 
+	{ A1_CTRL2_1V8,
+	  A1_CTRL1_1V8,
+	  A1_PWRDOWN_1V8, 
+	  A1_RESET_1V8,
+	  A1_SCLK_1V8,
+	  A1_SDATA_1V8,
+	  A1_SEN_1V8,
+	  A1_STBY_1V8,
+	  A2_CTRL2_1V8,
+	  A2_CTRL1_1V8,
+	  A2_PWRDOWN_1V8, 
+	  A2_RESET_1V8,
+	  A2_SCLK_1V8,
+	  A2_SDATA_1V8,
+	  A2_SEN_1V8,
+	  A2_STBY_1V8} )
+	);
+	
+buf_out1	buf_out1_inst1 (
+	.datain ( xA1_SNC ),
+	.dataout ( A1_SNC )
+	);
+	
+	
+buf_out1	buf_out1_inst2 (
+	.datain ( xA2_SNC ),
+	.dataout ( A2_SNC )
+	);
+	
+	
+	  wire xLMK_SEL0_3V3;
+	  wire xLMK_SEL1_3V3;
+	  wire xLMK_RESET_3V3;
+	  wire xLMK_SCK_3V3;
+	  wire xLMK_CS_3V3;
+	  wire xLMK_SYNC_3V3;
+	  wire xRNE1_RS422;
+	  wire xDE1RX_RS422;
+	  wire xRX1_RS422;
+	  wire xFLASH_CLK_3V3;  
+	  wire xFLASH_MOSI_3V3;
+	  wire xFLASH_CS_3V3;
+	  wire xDE_MISO_LVDS_3V3;  
+	  wire xSYNC_DA2;
+	  wire xSEL_ETALON_3V3;
+      wire xFPGA_LED1_3V3;
+      wire xT_TEST1;
+	  wire xT_TEST2;
+	  wire xT_TEST3;
+	  
+	   test_led tst_led1(clk_125,xFPGA_LED1_3V3,xT_TEST1  ,xT_TEST2);
+
+	   
+	  wire xLMK_SDIO_3V3; 
+		
+		
+//----------------------------SPI LMK---------------------------------------------------	   
+	   assign xLMK_SCK_3V3 =xSPI3_SCK;
+	   assign xLMK_CS_3V3  =xCS_LMK;
+	   assign xLMK_SDIO_3V3=xSPI3_MOSI;
+	
+		
+	bufout17	bufout17_inst2 (
+	.datain (
+	 {xLMK_SEL0_3V3,
+	  xLMK_SEL1_3V3,
+	  xLMK_SCK_3V3,
+	  xLMK_CS_3V3,
+	  xLMK_SYNC_3V3,
+	  xRNE1_RS422,
+	  xDE1RX_RS422,
+	  xRX1_RS422,
+	  xFLASH_CLK_3V3,  
+	  xFLASH_MOSI_3V3,
+	  xFLASH_CS_3V3,
+	  xDE_MISO_LVDS_3V3,  
+	  xSYNC_DA2,
+	  xSEL_ETALON_3V3,
+  	  xFPGA_LED1_3V3,
+  	  xT_TEST1,
+	  xT_TEST2} 
+	  ),
+	.dataout (
+	 {LMK_SEL0_3V3,
+	  LMK_SEL1_3V3,
+	  LMK_SCK_3V3,
+	  LMK_CS_3V3,
+	  LMK_SYNC_3V3,
+	  RNE1_RS422,
+	  DE1RX_RS422,
+	  RX1_RS422,
+	  FLASH_CLK_3V3,  
+	  FLASH_MOSI_3V3,
+	  FLASH_CS_3V3,
+	  DE_MISO_LVDS_3V3,  
+	  SYNC_DA2,
+	  SEL_ETALON_3V3,
+     FPGA_LED1_3V3,
+     T_TEST1,
+	  T_TEST2} )
+	);
+	
+bufi1	bufi1_inst5 (
+	.datain ( LMK_RESET_3V3 ),
+	.dataout ( xLMK_RESET_3V3 )
+	);
+	
+
+wire xONET1_RX_LOS;
+wire xONET2_RX_LOS;
+wire xTX1_RS422;
+wire xFLASH_MISO_3V3;
+wire xCS_FLASH_FPGA;	
+	
+bufi5	bufi5_inst (
+	.datain ( 
+	{ 
+	  ONET1_RX_LOS,
+	  ONET2_RX_LOS,
+	  TX1_RS422,
+	  FLASH_MISO_3V3,
+	  CS_FLASH_FPGA}
+	  ),
+	.dataout ( 
+	{ 
+	  xONET1_RX_LOS,
+	  xONET2_RX_LOS,
+	  xTX1_RS422,
+	  xFLASH_MISO_3V3,
+	  xCS_FLASH_FPGA}
+	  )
+	);	
+	
+//------------------------TEST SPI---------------------------------
+
+wire xSPI3_MISO1;
+wire xSPI3_MISO2;
+wire xSPI3_MISO3;
+wire xSPI3_MISO4;
+wire xSPI3_MISO5;
+wire xSPI3_MISO6;
+wire xSPI3_MISO7;
+wire xSPI3_MISO8;
+wire xSPI3_MISO9;
+wire xSPI3_MISO10;
+wire xSPI3_MISO11;
+wire xSPI3_MISO12;
+wire xSPI3_MISO13;
+wire xSPI3_MISO14;
+wire xSPI3_MISO15;
+wire xSPI3_MISO16;
+wire xSPI3_MISO17;
+wire xSPI3_MISO18;
+wire xSPI3_MISO19;
+wire xSPI3_MISO20;
+wire xSPI3_MISO21;
+wire xSPI3_MISO22;
+wire xSPI3_MISO23;
+wire xSPI3_MISO24;
+wire xSPI3_MISO25;
+
+wire xSPI3_MISO26;
+wire xSPI3_MISO27;
+wire xSPI3_MISO28;
+wire xSPI3_MISO29;
+wire xSPI3_MISO30;
+wire xSPI3_MISO31;
+wire xSPI3_MISO32;
+wire xSPI3_MISO33;
+wire xSPI3_MISO34;
+wire xSPI3_MISO35;
+
+
+wire [31:0] wTESTwr;
+wire [ 3:0] wire_out;
+
+
+Block_read_spi 
+ #(32,30) spi_test       (.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO1),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport(32'hdeedbeef));//чтение test
+	
+Block_read_spi 
+ #(32,35)     spi_TEST_rd(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO2),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport(wTESTwr));//чтение контрольного регистра - проверка шины SPI	
+
+Block_write_spi 
+ #(32,36) spi_TEST_wr( .clk(clk_125),.sclk(xSPI3_SCK),   .mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out(wTESTwr));	  //запись контрольного регистра - проверка шины SPI
+
+//-----------------------------------------------------------------
+
+	
+	 Block_write_spi 
+ #(8,1) spi_att1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 ({xUPR_AT1_05,
+			xUPR_AT1_1,
+			xUPR_AT1_2,
+			xUPR_AT1_4,
+			xUPR_AT1_8,
+			xUPR_AT1_16}
+			) );		
+	
+ Block_write_spi 
+ #(8,2) spi_att2( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 ({xUPR_AT2_05,
+			xUPR_AT2_1,
+			xUPR_AT2_2,
+			xUPR_AT2_4,
+			xUPR_AT2_8,
+			xUPR_AT2_16}
+			) );
+
+ Block_write_spi 
+ #(8,3) spi_att3( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 ({xUPR_AT3_05,
+			xUPR_AT3_1,
+			xUPR_AT3_2,
+			xUPR_AT3_4,
+			xUPR_AT3_8,
+			xUPR_AT3_16}
+			) );
+			
+ Block_write_spi 
+ #(8,4) spi_att4( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 ({xUPR_AT4_05,
+			xUPR_AT4_1,
+			xUPR_AT4_2,
+			xUPR_AT4_4,
+			xUPR_AT4_8,
+			xUPR_AT4_16}
+			) );
+			
+	
+	 Block_write_spi 
+ #(8,5) spi_upr1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 ({xUPR_SWITCH1,
+			xUPR_SWITCH2,
+			xUPR_SWITCH3,
+			xUPR_SWITCH4,
+			xREZERV1		  //индикация лицевой панели 2
+			}  //индикация лицевой панели 1
+			) );
+
+//PWRDN для АЦП и ЦАП с МК			
+
+			
+	 Block_write_spi 
+ #(8,127) spi_PWRDN( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 ({ xD1_RESETB_upr_MK,
+		    xD2_RESETB_upr_MK,
+			 xA1_RESET_MK,
+			 xA2_RESET_MK,
+			 xD1_SLEEP_upr_MK,
+			 xD2_SLEEP_upr_MK,
+			 xA1_PWRDOWN_upr_MK,
+			 xA2_PWRDOWN_upr_MK
+			}  
+			) );
+			
+//-----------------------------контроль входных сигналов через SPI --------------------------------------------------
+
+	 Block_read_spi 
+ #(8,6) spi_control1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO3),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({xKAN1_KONTROL,
+			xKAN2_KONTROL,
+			xKAN3_KONTROL,
+			xKAN4_KONTROL,
+			xIZL1_KONTROL,
+			xIZL2_KONTROL,
+			xIZL3_KONTROL,  // 
+			xIZL4_KONTROL}  // 
+			) ); 
+			
+	 Block_read_spi 
+ #(8,7) spi_control2( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO4),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({ xADDR0,
+			xADDR1,
+			xADDR2,
+			xADDR3,
+			xD1_ALARM,
+			xD2_ALARM,
+			xLMK_STATUS_LD1_3V3,  // 
+			xLMK_STATUS_LD2_3V3}  // 
+			) ); 
+			
+	 Block_read_spi 
+ #(8,8) spi_control3( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO5),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({ xONET1_RX_LOS,
+			xONET2_RX_LOS,
+			xADDR2,
+			xADDR3,
+			xD1_ALARM_FPGA,
+			xD2_ALARM_FPGA,
+			xLMK_STATUS_LD1_3V3,  // 
+			xLMK_STATUS_LD2_3V3}  // 
+			) );
+
+			
+//------------------TEMP signal-------------------
+assign xLMK_SEL0_3V3  = 1'h00;//поменять управление в процессе отладки!!!
+assign xLMK_SEL1_3V3  = 1'h00;
+assign xLMK_SYNC_3V3  = xWDATA_MK[0];
+//------------------------------------------------			
+			
+			
+//----------------------------------------------------------------			
+assign xEN_2V5_VDA=1'h1; //0 - выключен источник питания для DAC и ADC			
+//----------------------------------------------------------------
+assign xTNC_MK_1HZ     = xFPGA_SYNC1;  //направляем сигнал 1сек на мк
+assign xSEL_ETALON_3V3 = 1'h1; //1 - включаем поступление сигнала эталона с ВЧ разъёма
+
+assign xD1_SDENB=xCS_DAC1;
+assign xD2_SDENB=xCS_DAC2;
+
+assign xFLASH_CS_3V3 =xCS_FLASH_FPGA;
+assign xFLASH_CLK_3V3=xSPI3_SCK;
+
+assign xD2_SCLK		=xSPI3_SCK;
+assign xD1_SCLK		=xSPI3_SCK; 
+
+assign xD1_SDIO      = xSPI3_MOSI;
+assign xD2_SDIO      = xSPI3_MOSI;
+
+assign xFLASH_MOSI_3V3 = xSPI3_MOSI;
+
+wire xSPI3_MISO_AND;
+assign xSPI3_MISO_AND = 
+							xSPI3_MISO1&
+							xSPI3_MISO2&
+							xSPI3_MISO3&
+							xSPI3_MISO4&
+							xSPI3_MISO5&
+							xSPI3_MISO6&
+							xSPI3_MISO7&
+							xSPI3_MISO8&
+							xSPI3_MISO9&  
+							xSPI3_MISO10&
+							xSPI3_MISO11&
+							xSPI3_MISO12&
+
+							xSPI3_MISO13&//adc2
+							xSPI3_MISO14&//adc2
+							xSPI3_MISO15&//adc2
+							xSPI3_MISO16&//adc2
+							xSPI3_MISO17&//adc2
+							xSPI3_MISO18&//adc2
+							xSPI3_MISO19&//adc2
+							xSPI3_MISO20&//adc2
+							xSPI3_MISO21&//i2c SFP1 
+							xSPI3_MISO22&//MAC eth
+
+							xSPI3_MISO23&//DAC2
+			  		    	xSPI3_MISO24&//DAC2
+				    		xSPI3_MISO25&//DAC2
+
+				    		xSPI3_MISO26&//ADC1
+				//   		xSPI3_MISO27&////не используется
+				    		xSPI3_MISO28&//ADC1
+				    		xSPI3_MISO29&//ADC1
+				    		xSPI3_MISO30&//ADC1
+				    		xSPI3_MISO31&//ADC1
+				    		xSPI3_MISO32&//ADC1
+				    		xSPI3_MISO33&//ADC1
+				    		xSPI3_MISO34&//ADC1
+				    		xSPI3_MISO35 //ADC1
+									;
+//---------------------------------------------									
+//assign xSPI3_MISO = xD1_SDO;//TEST!!!
+									
+ 
+assign xSPI3_MISO  = (!xCS_FPGA1)   ?xSPI3_MISO_AND:
+					 (!xCS_LMK  )	      ?xLMK_RESET_3V3://вывожу spi с LMK через её ногу reset
+				 // (!xCS_FLASH_FPGA)   ?xFLASH_MISO_3V3:
+			 		 (!xD1_SDENB)		   ?xD1_SDO:
+					 (!xD2_SDENB)		   ?xD2_SDO:	
+					 (!xA1_SEN_1V8)      ?xA1_SDOUT_1V8:
+					 (!xA2_SEN_1V8)      ?xA2_SDOUT_1V8:1'h1;
+
+ 							
+assign xLMK_STATUS_LD1_FPGA_3V3=xLMK_STATUS_LD2_3V3;//тестовый вывод с LMK 							
+assign xLMK_STATUS_LD2_FPGA_3V3=JESD_DAC1_sync_n;//тестовый вывод с DAC
+ 
+//----------BOOT uart stm32---------- 
+wire wRESET_MK;
+
+reset_long
+#(1000000) rst_mk (.clk(clk_125),.en(xBOOT_MK_FTDI &  xMR_RESET_MK_FPGA), .rst(wRESET_MK));  //модуль ресета для мк
+//assign wRESET_MK=0;
+
+assign xUART1_RX  = xTX_FTDI_1;
+assign xRX_FTDI_1 = xUART1_TX;
+
+
+assign xBOOT1    = 1'h0 ; //для stm32
+assign xBOOT0    = (~xRESET_MK_FTDI)  | xBOOT_MK_FPGA;
+assign xRESET_MK = wRESET_MK;
+
+
+//--------------rs485-------------------
+
+assign xRX1_RS422   =  xUART6_TX;
+assign xUART6_RX    =  xTX1_RS422 & xTX_FTDI_2;
+assign xRNE1_RS422  =  xCS_FPGA2;
+assign xDE1RX_RS422 = ~xCS_FPGA2;
+
+//assign xRX_FTDI_2   =  xUART6_TX;
+
+//-------------SYS_SPI----------------
+	  
+assign xD_MISO           = xSPI4_MISO_MK;
+assign xSPI4_NSS_MK      = xCE_MO;
+assign xCLK_MO           = xSPI4_SCK_MK;
+assign xSPI4_MOSI_MK     = xD_MOSI;
+//assign xDE_MISO_LVDS_3V3 = xLMK_STATUS_LD1_3V3; //управление буфером lvds - MISO от микроконтроллера 
+
+//------------------------------------
+//----------------ADC-------------------
+
+wire xA1_RESET_MK;
+wire xA2_RESET_MK;
+
+assign xA2_RESET_1V8 =xA2_RESET_MK;
+assign xA1_RESET_1V8 =xA1_RESET_MK;
+assign rst_adc2_align=xA2_RESET_MK;
+assign rst_adc1_align=xA1_RESET_MK;
+
+assign xA1_SEN_1V8   =xCS_ADC1;
+assign xA2_SEN_1V8   =xCS_ADC2;
+assign xA2_SCLK_1V8  =xSPI3_SCK;
+assign xA1_SCLK_1V8  =xSPI3_SCK;
+assign xA1_SDATA_1V8 =xSPI3_MOSI; 
+assign xA2_SDATA_1V8 =xSPI3_MOSI;
+
+assign xA1_CTRL2_1V8  =0;//zero - Normal operation
+assign xA1_CTRL1_1V8  =0;
+assign xA1_PWRDOWN_1V8=xA1_PWRDOWN_upr_MK;
+assign xA1_STBY_1V8   =0;
+
+assign xA2_CTRL2_1V8  =0;//zero - Normal operation
+assign xA2_CTRL1_1V8  =0;
+assign xA2_PWRDOWN_1V8=xA2_PWRDOWN_upr_MK;
+assign xA2_STBY_1V8   =0;
+//---------------------Test uart out---------------------------------
+wire utx_m1_fifo_wr_ev;
+wire utx_m1_fifo_rd_ev;
+wire [7:0] utx_m1_upr;
+wire utx_m1_tx;
+
+wire [15:0] utx_data_adc0;
+wire fifo_full_adc0;
+
+assign xRX_FTDI_2=utx_m1_tx; //сигнал ТХ uart
+
+uart_tx_massiv 
+utx_m1(
+	.tx(utx_m1_tx),
+	.fifo_wr_en(utx_m1_fifo_wr_ev),
+	.fifo_rd_en(utx_m1_fifo_rd_ev),
+	.clk(clk_240_adc1),
+	.in(utx_data_adc0),
+	.rst(utx_m1_upr[0]),
+	.fifo_full(fifo_full_adc0)
+);
+
+
+ switch_data_flow 
+ sw1(
+	.spi_out(adc0_0_data_spi),
+	.uart_out(utx_data_adc0),
+	.fifo_full_uart(fifo_full_adc0),
+	.fifo0_wr(fifo_mem_adc0_0_wrreq),
+	.fifo0_rd(fifo_mem_adc0_0_rdreq),
+	.fifo1_wr(fifo_mem_adc0_1_wrreq),
+	.fifo1_rd(fifo_mem_adc0_1_rdreq),
+	.fifo2_wr(fifo_mem_adc2_0_wrreq),
+	.fifo2_rd(fifo_mem_adc2_0_rdreq),
+	.fifo3_wr(fifo_mem_adc2_1_wrreq),
+	.fifo3_rd(fifo_mem_adc2_1_rdreq),
+	.clk(),
+	.data0(fifo_switch_data_adc0_data0),
+	.data1(fifo_switch_data_adc0_data1),
+	.data2(fifo_switch_data_adc2_data0),
+	.data3(fifo_switch_data_adc2_data1),
+	.fifo0_full(fifo_mem_adc0_0_full),
+	.fifo1_full(fifo_mem_adc0_1_full),
+	.fifo2_full(fifo_mem_adc2_0_full),
+	.fifo3_full(fifo_mem_adc2_1_full),	
+	.upr(sw_tst_upr[7:0]),
+	.rst(reset_all),	
+	.fifo_wr_spi(adc0_fifo_wr[0]),
+	.uart_fifo_wr_en(utx_m1_fifo_wr_ev),
+	.uart_fifo_rd_en(utx_m1_fifo_rd_ev),
+	.spi_clr_fifo(fifo_adc_rdreq_spi)
+);
+
+wire [7:0] sw_tst_upr;
+wire fifo_adc_rdreq_spi;
+wire [15:0] adc_data_spi;
+wire [7:0]  adc0_fifo_wr;
+
+Block_write_spi 
+ #(8,114) spi_utx_m2_upr( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (sw_tst_upr));//команда управления выводом данных:0 - 0 ацп, 1- 1 ацп , 2 - управление с SPI (подача команды запись в fifo)(команда:~0 adc1_fifo_upr:0;)
+
+Block_write_spi 
+ #(8,111) spi_utx_m1_upr( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (utx_m1_upr));//включение-отключение вывода потока из фифо в уарт напрямую с плис(команда:~0 adc1_fifo_uart_en:0;)
+
+Block_write_spi 
+ #(8,109) spi_wr_adc_upr_1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (adc0_fifo_wr));//xtx_parallel_data команда записи новых данных в !предварительно выкаченное ФИФО!()
+	
+Block_read_spi_v3 //скачиваем содержимое fifo ADC 
+ #(16,107) spi_fiforead_adc0_1(.clk240(clk_240_adc1),.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO26)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(fifo_adc_rdreq_spi),.inport (adc_data_spi));//
+
+//----------------FIFO для отладки---------------------------
+wire fifo_mem_adc0_1_rdreq;
+wire fifo_mem_adc0_1_wrreq;
+
+wire fifo_mem_adc0_0_rdreq;
+wire fifo_mem_adc0_0_wrreq;
+
+wire fifo_mem_adc0_0_full;
+wire fifo_mem_adc0_1_full;
+
+wire [15:0] fifo_switch_data_adc0_data0;
+wire [15:0] fifo_switch_data_adc0_data1;
+
+reg [15:0] q_data=0;
+
+//always @(posedge clk_240_adc1)
+//	begin
+//		q_data<=q_data+1;
+//	end
+
+wire  fifo_mem_adc0_0_i_wrreq;
+wire  fifo_mem_adc0_1_i_wrreq;
+
+assign fifo_mem_adc0_0_i_wrreq=fifo_mem_adc0_0_wrreq&dsp0_0_valid;
+
+/*    15-01-19
+
+fifo_mem	fifo_mem_adc0_0 (
+	.clock ( clk_240_adc1 ),
+	.data (data_dsp_adc0_0_i),//ch0_adc0_data
+	.rdreq (fifo_mem_adc0_0_rdreq),
+	.wrreq (fifo_mem_adc0_0_i_wrreq),//fifo_mem_adc0_0_wrreq
+	.full (fifo_mem_adc0_0_full ),
+	.q (fifo_switch_data_adc0_data0)
+	);
+
+assign fifo_mem_adc0_1_i_wrreq=fifo_mem_adc0_1_wrreq&dsp0_1_valid;	
+
+fifo_mem	fifo_mem_adc0_1 (
+	.clock ( clk_240_adc1 ),
+	.data  (data_dsp_adc0_1_i),//ch1_adc0_data
+	.rdreq (fifo_mem_adc0_1_rdreq),
+	.wrreq (fifo_mem_adc0_1_wrreq),
+	.full (fifo_mem_adc0_1_full),
+	.q (fifo_switch_data_adc0_data1)
+	);
+	*/
+//---------------------ADC1-------------------------------------------
+
+wire [ 7:0] xrx_runningdisp_adc1;
+wire [ 7:0] xrx_disperr_adc1;
+wire [ 7:0] xrx_errdetect_adc1;
+wire [ 3:0] xrx_clkout_adc1;
+wire [63:0] xrx_parallel_data_adc1;
+wire [ 7:0] xrx_datak_adc1;
+wire rst_adc1_align;
+wire sync_n_adc1;
+wire xrx_ready_adc1;
+wire [7:0]  xrx_patterndetect_adc1;
+wire [7:0]  xrx_syncstatus_adc1;
+wire [19:0] rx_bitslipboundaryselectout_adc1;
+wire [15:0] ch0_adc0_data;
+wire [15:0] ch1_adc0_data;
+wire [63:0] adc_data_tst1_1;
+wire [63:0] adc_data_tst2_1;
+
+
+assign xA1_SNC=sync_n_adc1;//SYNC_N ADC1
+
+/*    15-01-19
+custom_phy_4line 
+adc1_phy(
+		.phy_mgmt_clk(clk_125),         //       phy_mgmt_clk.clk
+		.phy_mgmt_clk_reset(),   // phy_mgmt_clk_reset.reset
+		.phy_mgmt_address(),     //           phy_mgmt.address
+		.phy_mgmt_read(),        //                   .read
+		.phy_mgmt_readdata(),    //                   .readdata
+		.phy_mgmt_waitrequest(), //                   .waitrequest
+		.phy_mgmt_write(),       //                   .write
+		.phy_mgmt_writedata(),   //                   .writedata
+		.rx_ready(xrx_ready_adc1),  //           rx_ready.export
+		.pll_ref_clk(clk_120_adc1), //        pll_ref_clk.clk
+		.rx_serial_data({A1_TX3,A1_TX2,A1_TX1,A1_TX0}),       //     rx_serial_data.export
+		.rx_runningdisp(xrx_runningdisp_adc1),       //     rx_runningdisp.export
+		.rx_disperr(xrx_disperr_adc1),           //         rx_disperr.export
+		.rx_errdetect(xrx_errdetect_adc1),         //       rx_errdetect.export
+		.rx_patterndetect(xrx_patterndetect_adc1),
+		.rx_syncstatus(xrx_syncstatus_adc1),
+        .rx_bitslipboundaryselectout(rx_bitslipboundaryselectout_adc1),		
+		.rx_coreclkin({clk_120_adc1,clk_120_adc1,clk_120_adc1,clk_120_adc1}),
+		.rx_clkout(xrx_clkout_adc1),            //          rx_clkout.export
+		.rx_parallel_data(xrx_parallel_data_adc1),     //   rx_parallel_data.export
+		.rx_datak(xrx_datak_adc1),             //           rx_datak.export
+		.reconfig_from_xcvr(),   // reconfig_from_xcvr.reconfig_from_xcvr
+		.reconfig_to_xcvr()      //   reconfig_to_xcvr.reconfig_to_xcvr
+	);
+*/
+
+wire fifo_adc1_full_sig_1;
+
+
+
+reg [31:0] test_data=0;
+
+always @(posedge clk_120_adc1)
+	begin
+		test_data<=test_data+1;
+	end	
+
+wire tst_adc1;
+wire [3:0] w_ok0;
+wire [3:0] w_ok1;
+wire [7:0] walign_tst;
+wire adc0_sysref_error; 
+
+/*    15-01-19
+adc1_jesd_rcv
+adc1
+(
+.clk_120(clk_120_adc1),//входная тактовая частота
+.clk_240(clk_240_adc1),//выходная тактовая частота
+.rst_adc_align(rst_adc1_align),//подать ресет от микроконтроллера для АЦП0
+.SYSREF0(SYSREF0),
+.xrx_syncstatus_adc(xrx_syncstatus_adc1),
+.xrx_disperr_adc(xrx_disperr_adc1),
+.xrx_errdetect_adc(xrx_errdetect_adc1),
+.xrx_parallel_data_adc(xrx_parallel_data_adc1),
+.xrx_datak_adc(xrx_datak_adc1),
+.fifo2clk_tst_rd(tst_adc1),//сигнал чтения для тестового вывода слов на SPI
+.walign_tst(walign_tst),//тестовый вывод кода смещения входного слова
+.w_ok0(w_ok0),//выход кода смещения эластикбуфера0
+.w_ok1(w_ok1),//выход кода смещения эластикбуфера1
+.sync_n_adc(sync_n_adc1),//выход сигнала SYNC_N
+.sysref_error(adc0_sysref_error),
+.ch_adc0_data(ch0_adc0_data),
+.ch_adc1_data(ch1_adc0_data),
+.adc_data_tst2(adc_data_tst2_1),
+.adc_data_tst1(adc_data_tst1_1)
+);
+*/
+
+//---------------control error SYNC_N ADC1-------------
+wire [15:0] error_adc1;
+wire [15:0] error_sysref_adc1;
+wire wclr1_adc1;
+wire wclr2_adc1;
+wire wclr3_adc1;
+
+error_sch  
+block_error_adc1 
+ (
+  	.out(error_adc1),
+	.clk(clk_240_adc1),
+	.event_int(~sync_n_adc1),
+	.rst(wclr1_adc1)
+);
+
+error_sch  
+block_error_sysref_adc1 
+ (
+  	.out(error_sysref_adc1),
+	.clk(clk_120_adc1),
+	.event_int(adc0_sysref_error),
+	.rst(wclr2_adc1)
+);
+
+Block_read_spi_v2 
+ #(16,110) spi_error_adc1(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO28)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(wclr1_adc1),           .inport (error_adc1));
+ Block_read_spi_v2 
+ #(16,112) spi_error_sysref_adc1(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						      .miso(xSPI3_MISO30)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						      .clr(wclr2_adc1),      .inport (error_sysref_adc1));
+  Block_read_spi_v2 
+ #(8,113) spi_walign_adc1(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						      .miso(xSPI3_MISO31)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						      .clr(wclr3_adc1),      .inport (walign_tst));
+//-------------------------------------------------
+Block_read_spi 
+ #(32,100) spi_custom_phy_reg1_adc1( .clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO29),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({
+		 xrx_runningdisp_adc1[7:0],
+		       xrx_datak_adc1[7:0],
+		     xrx_disperr_adc1[7:0],
+		   xrx_errdetect_adc1[7:0]		   
+			}));
+
+Block_read_spi_v2 
+ #(64,103) spi_custom_phy_reg4_adc1(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO32)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(),           .inport (adc_data_tst1_1));
+ Block_read_spi_v2 
+ #(64,106) spi_custom_phy_reg5_adc1(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO33)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(tst_adc1),           .inport (adc_data_tst2_1));
+
+		 
+Block_read_spi 
+ #(24,104) spi_custom_phy_reg6_adc1( .clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO34),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({1'b0,
+		 	w_ok0,
+	  	 xrx_ready_adc1,		  
+		 sync_n_adc1,
+		 locked_120,
+		 xrx_patterndetect_adc1[7:0],
+		 xrx_syncstatus_adc1[7:0]		 
+			}));
+			
+Block_read_spi 
+ #(24,105) spi_custom_phy_reg7_adc1( .clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO35),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({4'b0000,
+	  	 rx_bitslipboundaryselectout_adc1[19:0]		 
+			}));			
+
+//---------------------ADC2-------------------------------------------
+//----------------FIFO для отладки---------------------------
+wire fifo_mem_adc2_1_rdreq;
+wire fifo_mem_adc2_1_wrreq;
+
+wire fifo_mem_adc2_0_rdreq;
+wire fifo_mem_adc2_0_wrreq;
+
+wire fifo_mem_adc2_0_full;
+wire fifo_mem_adc2_1_full;
+
+wire [15:0] fifo_switch_data_adc2_data0;
+wire [15:0] fifo_switch_data_adc2_data1;
+
+reg [15:0] q2_data=0;
+
+always @(posedge clk_240_adc1)
+	begin
+		q2_data<=q2_data+1;
+	end
+/*    15-01-19
+fifo_mem	fifo_mem_adc2_0 (
+	.clock ( clk_240_adc1 ),
+	.data (ch0_adc2_data),//
+	.rdreq (fifo_mem_adc2_0_rdreq),
+	.wrreq (fifo_mem_adc2_0_wrreq),
+	.full (fifo_mem_adc2_0_full ),
+	.q (fifo_switch_data_adc2_data0)
+	);
+
+	
+fifo_mem	fifo_mem_adc2_1 (
+	.clock ( clk_240_adc1 ),
+	.data (ch1_adc2_data),
+	.rdreq (fifo_mem_adc2_1_rdreq),
+	.wrreq (fifo_mem_adc2_1_wrreq),
+	.full (fifo_mem_adc2_1_full),
+	.q (fifo_switch_data_adc2_data1)
+	);
+*/	
+//---------------------ADC2-------------------------------------------
+
+wire [ 7:0] xrx_runningdisp_adc2;
+wire [ 7:0] xrx_disperr_adc2;
+wire [ 7:0] xrx_errdetect_adc2;
+wire [ 3:0] xrx_clkout_adc2;
+wire [63:0] xrx_parallel_data_adc2;
+wire [ 7:0] xrx_datak_adc2;
+wire rst_adc2_align;
+wire sync_n_adc2;
+wire xrx_ready_adc2;
+wire [7:0]  xrx_patterndetect_adc2;
+wire [7:0]  xrx_syncstatus_adc2;
+wire [19:0] rx_bitslipboundaryselectout_adc2;
+wire [15:0] ch0_adc2_data;
+wire [15:0] ch1_adc2_data;
+wire [63:0] adc_data_tst1_2;
+wire [63:0] adc_data_tst2_2;
+
+
+assign xA2_SNC=sync_n_adc2;//SYNC_N ADC2
+/*    15-01-19
+custom_phy_4line 
+adc2_phy(
+		.phy_mgmt_clk(clk_125),         //       phy_mgmt_clk.clk
+		.phy_mgmt_clk_reset(),   // phy_mgmt_clk_reset.reset
+		.phy_mgmt_address(),     //           phy_mgmt.address
+		.phy_mgmt_read(),        //                   .read
+		.phy_mgmt_readdata(),    //                   .readdata
+		.phy_mgmt_waitrequest(), //                   .waitrequest
+		.phy_mgmt_write(),       //                   .write
+		.phy_mgmt_writedata(),   //                   .writedata
+		.rx_ready(xrx_ready_adc2),  //           rx_ready.export
+		.pll_ref_clk(clk_120_adc1), //        pll_ref_clk.clk
+		.rx_serial_data({A2_TX3,A2_TX2,A2_TX1,A2_TX0}),       //     rx_serial_data.export
+		.rx_runningdisp(xrx_runningdisp_adc2),       //     rx_runningdisp.export
+		.rx_disperr(xrx_disperr_adc2),           //         rx_disperr.export
+		.rx_errdetect(xrx_errdetect_adc2),         //       rx_errdetect.export
+		.rx_patterndetect(xrx_patterndetect_adc2),
+		.rx_syncstatus(xrx_syncstatus_adc2),
+        .rx_bitslipboundaryselectout(rx_bitslipboundaryselectout_adc2),		
+		.rx_coreclkin({clk_120_adc1,clk_120_adc1,clk_120_adc1,clk_120_adc1}),
+		.rx_clkout(xrx_clkout_adc2),            //          rx_clkout.export
+		.rx_parallel_data(xrx_parallel_data_adc2),     //   rx_parallel_data.export
+		.rx_datak(xrx_datak_adc2),             //           rx_datak.export
+		.reconfig_from_xcvr(),   // reconfig_from_xcvr.reconfig_from_xcvr
+		.reconfig_to_xcvr()      //   reconfig_to_xcvr.reconfig_to_xcvr
+	);
+*/
+
+wire fifo_adc2_full_sig_1;
+
+
+
+reg [31:0] test2_data=0;
+
+always @(posedge clk_120_adc1)
+	begin
+		test2_data<=test2_data+1;
+	end	
+
+wire tst_adc2;
+
+wire [3:0] w2_ok0;
+wire [3:0] w2_ok1;
+wire [7:0] walign2_tst;
+wire adc2_sysref_error; 
+
+/*    15-01-19
+adc2_jesd_rcv
+adc2
+(
+.clk_120(clk_120_adc1),//входная тактовая частота
+.clk_240(clk_240_adc1),//выходная тактовая частота
+.rst_adc_align(rst_adc2_align),//подать ресет от микроконтроллера для АЦП0
+.SYSREF0(SYSREF0),
+.xrx_syncstatus_adc(xrx_syncstatus_adc2),
+.xrx_disperr_adc(xrx_disperr_adc2),
+.xrx_errdetect_adc(xrx_errdetect_adc2),
+.xrx_parallel_data_adc(xrx_parallel_data_adc2),
+.xrx_datak_adc(xrx_datak_adc2),
+.fifo2clk_tst_rd(tst_adc2),//сигнал чтения для тестового вывода слов на SPI
+.walign_tst(walign2_tst),//тестовый вывод кода смещения входного слова
+.w_ok0(w2_ok0),//выход кода смещения эластикбуфера0
+.w_ok1(w2_ok1),//выход кода смещения эластикбуфера1
+.sync_n_adc(sync_n_adc2),//выход сигнала SYNC_N
+.sysref_error(adc2_sysref_error),
+.ch_adc0_data(ch0_adc2_data),
+.ch_adc1_data(ch1_adc2_data),
+.adc_data_tst2(adc_data_tst2_2),
+.adc_data_tst1(adc_data_tst1_2)
+);
+*/
+
+//---------------control error SYNC_N ADC2-------------
+wire [15:0] error_adc2;
+wire [15:0] error_sysref_adc2;
+wire wclr1_adc2;
+wire wclr2_adc2;
+wire wclr3_adc2;
+
+error_sch  
+block_error_adc2 
+ (
+  	.out(error_adc2),
+	.clk(clk_240_adc1),
+	.event_int(~sync_n_adc2),
+	.rst(wclr1_adc2)
+);
+
+error_sch  
+block_error_sysref_adc2 
+ (
+  	.out(error_sysref_adc2),
+	.clk(clk_120_adc1),
+	.event_int(adc2_sysref_error),
+	.rst(wclr2_adc2)
+);
+
+Block_read_spi_v2 
+ #(16,60) spi_error_adc2(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO13)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(wclr1_adc2),           .inport (error_adc2));
+ Block_read_spi_v2 
+ #(16,61) spi_error_sysref_adc2(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						      .miso(xSPI3_MISO14)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						      .clr(wclr2_adc2),      .inport (error_sysref_adc2));
+  Block_read_spi_v2 
+ #(8,65) spi_walign_adc2(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						      .miso(xSPI3_MISO15)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						      .clr(wclr3_adc2),      .inport (walign2_tst));
+//-------------------------------------------------
+Block_read_spi 
+ #(32,50) spi_custom_phy_reg1_adc2( .clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO16),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({
+		 xrx_runningdisp_adc2[7:0],
+		       xrx_datak_adc2[7:0],
+		     xrx_disperr_adc2[7:0],
+		   xrx_errdetect_adc2[7:0]		   
+			}));
+
+Block_read_spi_v2 
+ #(64,53) spi_custom_phy_reg4_adc2(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO17)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(),           .inport (adc_data_tst1_2));
+ Block_read_spi_v2 
+ #(64,56) spi_custom_phy_reg5_adc2(.clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO18)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(tst_adc2),           .inport (adc_data_tst2_2));
+
+		 
+Block_read_spi 
+ #(24,54) spi_custom_phy_reg6_adc2( .clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO19),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({1'b0,
+		 	w2_ok0,
+	  	 xrx_ready_adc2,		  
+		 sync_n_adc2,
+		 locked_120,
+		 xrx_patterndetect_adc2[7:0],
+		 xrx_syncstatus_adc2[7:0]		 
+			}));
+			
+Block_read_spi 
+ #(24,55) spi_custom_phy_reg7_adc2( .clk(clk_120_adc1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO20),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({4'b0000,
+	  	 rx_bitslipboundaryselectout_adc2[19:0]		 
+			}));			
+//--------------------------------------
+wire 		xphy_mgmt_clk_reset;
+wire [0:0]  xtx_pma_clkout;
+wire [79:0] xtx_pma_parallel_data;
+
+
+wire [8:0]  xphy_mgmt_address;
+wire        xphy_mgmt_read;
+wire [31:0] xphy_mgmt_readdata;
+wire        xphy_mgmt_waitrequest;
+wire        xphy_mgmt_write;
+wire [31:0] xphy_mgmt_writedata;
+wire        xtx_ready;
+wire        xrx_ready;
+wire [1:0]  xrx_runningdisp;
+wire [1:0]  xrx_disperr;
+wire [1:0]  xrx_errdetect;
+wire [0:0]  xtx_clkout;
+wire [0:0]  xrx_clkout; 
+wire [15:0] xtx_parallel_data;
+wire [1:0]  xtx_datak;
+wire [15:0] xrx_parallel_data;
+wire [1:0]  xrx_datak;
+
+wire        xSYSREF0;
+wire        xdev_sync_n;
+wire [3:0]	xsomf;
+
+bufi1	bufi1_inst2 (
+	.datain ( SYSREF0 ),
+	.dataout ( xSYSREF0 )
+	);
+	
+	
+	wire	[7:0]	xcsr_f;
+	wire	[4:0]	xcsr_k;
+	wire	[4:0]	xcsr_l;
+	wire	[7:0]	xcsr_m;
+	wire	[4:0]	xcsr_n;
+	wire	[4:0]	xcsr_s;
+	wire	[4:0]	xcsr_cf;
+	wire	[1:0]	xcsr_cs;
+	wire  		xcsr_hd;
+	wire  [4:0]	xcsr_np;
+	wire  [1:0]	xcsr_lane_powerdown;	
+	
+	wire 			  xtxlink_rst_n_reset_n;
+	wire 			  xjesd204_tx_avs_rst_n;
+	wire  [7:0]   xjesd204_tx_avs_address;
+	wire          xjesd204_tx_avs_read;
+	wire  [31:0]  xjesd204_tx_avs_readdata;  
+	wire  		  xjesd204_tx_avs_waitrequest;	
+	wire          xjesd204_tx_avs_write;
+	wire  [31:0]  xjesd204_tx_avs_writedata;
+	wire  [63:0] 	  xjesd204_tx_link_data;
+	wire  [7:0]   xjesd204_tx_link_valid;
+	wire 			  xjesd204_tx_link_ready;
+	wire 			  xjesd204_tx_int;
+	
+	wire 			  xjesd204_tx_frame_ready;
+	wire [3:0]    xcsr_tx_testmode;
+	 reg [31:0]   xcsr_tx_testpattern_a=32'hBeefBeef;
+	 reg [31:0]   xcsr_tx_testpattern_b=32'hBaafBeef;
+	 reg [31:0]   xcsr_tx_testpattern_c=32'hBccfBeef;
+	 reg [31:0]   xcsr_tx_testpattern_d=32'hBddfBeef;
+	 
+	wire          xjesd204_tx_frame_error;
+	wire [63:0]   xjesd204_tx_dlb_data;
+	wire [7:0]	  xjesd204_tx_dlb_kchar_data;
+	wire 			  xtxphy_clk;
+
+	
+	wire [0:0] tx_forceelecidle;
+	
+	wire [0:0] xrx_is_lockedtoref;
+	wire [0:0] xrx_is_lockedtodata;
+	wire [0:0] xrx_signaldetect;
+	wire [1:0] xrx_patterndetect;
+	wire [1:0] xrx_syncstatus;
+	wire [4:0] xrx_bitslipboundaryselectout;
+	
+wire 			 xreconfig_busy;
+wire [6:0]   xreconfig_mgmt_address;
+wire         xreconfig_mgmt_read;
+wire [31:0]  xreconfig_mgmt_readdata;
+wire         xreconfig_mgmt_waitrequest;
+wire         xreconfig_mgmt_write;
+wire [31:0]  xreconfig_mgmt_writedata;
+wire [139:0] xreconfig_to_xcvr;
+wire [91:0]  xreconfig_from_xcvr;
+	
+	
+//assign xphy_mgmt_clk_reset = 0;
+assign xphy_mgmt_address   = 0;
+assign xphy_mgmt_read      = 0;
+assign xphy_mgmt_write     = 0;
+assign xphy_mgmt_writedata = 0;
+
+assign xrx_bitslipboundaryselectout=0;
+
+ 
+assign xtx_datak = 0;//data
+
+
+wire xpll_powerdown;
+wire xtx_digitalreset;
+wire xtx_analogreset;
+wire xtx_cal_busy;
+wire xrx_digitalreset;
+wire xrx_analogreset;
+wire xrx_cal_busy;
+
+wire phy_rst;
+
+wire [15:0] xtx_parallel_data_alias;
+wire datak_align;
+
+
+//-----------------------------test PHY ----------------------------------------------------------------	
+	
+Block_read_spi 
+ #(24,20) spi_custom_phy0( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO6),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({
+		   1'b0,
+		   1'b0,
+		   clk96_locked,
+		   xrx_cal_busy,
+		   xtx_cal_busy,	
+		   pll125_locked,
+		   xONET2_RX_LOS,
+		   xONET1_RX_LOS,
+		   xtx_ready,
+		   xrx_ready,
+		   xrx_is_lockedtoref,
+		   xrx_is_lockedtodata,
+		   xrx_signaldetect,
+		   xpll_locked,
+		   xrx_patterndetect[1],
+		   xrx_patterndetect[0],
+		   xrx_disperr[1],
+		   xrx_disperr[0],
+		   xrx_runningdisp[1],
+		   xrx_runningdisp[0],
+		   xrx_errdetect[1],
+		   xrx_errdetect[0],  // 
+		   xrx_syncstatus[1],
+		   xrx_syncstatus[0]}  // 
+			) );
+
+wire [15:0] tst_line1;
+wire [ 7:0] xrst_wire;
+
+assign phy_rst=tst_line1[15];
+
+wire [7:0] xrx_parallel_data_cdc;
+
+/*
+sync_data #(8,1) 
+sync1 
+ (
+   .in_clk(clk_96),
+   .in_data(xrx_parallel_data),
+   .out_clk(clk_96Mhz_dub),
+   .out_data(xrx_parallel_data_cdc)
+);
+	
+*/
+			
+Block_read_spi 
+ #(32,21) spi_custom_phy1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO7),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 (xphy_mgmt_readdata));
+
+Block_read_spi 
+ #(16,22) spi_custom_phy2( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO8),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({xrx_parallel_data}));//xrx_parallel_data
+		 
+Block_write_spi 
+ #(16,23) spi_wr_custom_phy1_data( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (tst_line1));//xtx_parallel_data
+/*		 
+Block_write_spi 
+ #(8,23) spi_reset_custom_phy1_data( .clk(clk_96Mhz_dub),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (xrst_wire));//xtx_parallel_data
+		 */
+		 
+assign xtx_parallel_data=tst_line1[15:0];
+//----------------------test_DDS------------------------------
+
+wire [16:0]  nco_faza; 
+wire [ 1:0]  qwadrant;
+
+wire [16:0] nco_x;
+wire [16:0] nco_y;
+
+wire [16:0] cordic_x;	
+wire [16:0] cordic_y;	 
+
+wire [17:0] data_DAC_q;
+wire [17:0] data_DAC_i;
+
+wire reset_dds;
+wire [31:0] upr;
+wire dds_valid;
+
+Block_write_spi 
+ #(32,77) spi_wr_DDS( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (upr));//xtx_parallel_data
+
+rst rst_dds(clk_125,reset_dds);
+/*
+nco_faza  nco_faza1 (.clk(clk_96Mhz), 
+                     .rst(reset_dds), 
+                     .step(), 
+                     .upr(upr), 
+                     .faza(nco_faza[16:0]), 
+                     .out_v(), 
+                     .qwadrant(qwadrant[1:0]), 
+                     .x(nco_x[16:0]), 
+                     .y(nco_y[16:0]));
+					 
+cordic  cordic1 (.clk(clk_96Mhz), 
+                   .rst(reset_dds), 
+                   .theta_i(nco_faza[16:0]), 
+                   .x_i(nco_x[16:0]), 
+                   .y_i(nco_y[16:0]), 
+                   .theta_o(), 
+                   .x_o(cordic_x[16:0]), 
+                   .y_o(cordic_y[16:0]));  
+				   
+convert_cos  convert_cos1 (.clk(clk_96Mhz), 
+                        .cos_a(cordic_y[16:0]), 
+                        .qwadrant(qwadrant[1:0]), 
+                        .sin_a(cordic_x[16:0]), 
+                        .cos(data_DAC_q[16:0]), 
+                        .sin(data_DAC_i[16:0]));
+*/
+/*    15-01-19						
+	dds1 dds1_1 (
+		.clk        (clk_125),        // clk.clk
+		.reset_n    (~reset_dds),    // rst.reset_n
+		.clken      (1),      //  in.clken
+		.phi_inc_i  (0),  //    .phi_inc_i
+		.freq_mod_i (upr), //    .freq_mod_i
+		.fsin_o     (data_DAC_q),     // out.fsin_o
+		.fcos_o     (data_DAC_i),     //    .fcos_o
+		.out_valid  (dds_valid)   //    .out_valid
+	);
+*/
+//---------------------JESD204b_dac1--------------------------		 
+
+wire 			 dac1_phy_mgmt_clk;
+wire 			 dac1_phy_mgmt_clk_reset;
+wire [8:0]   dac1_phy_mgmt_address;
+wire 			 dac1_phy_mgmt_read;
+wire [31:0]  dac1_phy_mgmt_readdata;
+wire 			 dac1_phy_mgmt_waitrequest;
+wire 			 dac1_phy_mgmt_write;
+wire [31:0]  dac1_phy_mgmt_writedata;
+
+wire         dac1_tx_ready;
+wire [ 1:0]  dac1_tx_serial_data;
+wire         dac1_pll_locked;
+wire [ 1:0]  dac1_tx_clkout;
+
+wire [ 3:0]  dac1_tx_datak;
+wire [ 3:0]  dac1_tx_dispval;
+wire [ 3:0]  dac1_tx_forcedisp;
+wire [183:0] dac1_reconfig_from_xcvr;
+wire [279:0] dac1_reconfig_to_xcvr;
+
+
+
+wire [31:0] dac1_tx_parallel_data_alias;
+wire [31:0] dac1_tx_parallel_data;
+wire [ 3:0] dac1_datak_align;
+wire JESD_DAC1_sync_n;
+
+assign  JESD_DAC1_sync_n=xD1_SYNCB;//&xD1_SYNC_N_AB&xD1_SYNC_N_CD
+assign  xD1_ALARM_FPGA=JESD_DAC1_sync_n;//выводим сигнал sync_n на прерывание для МК
+
+
+wire wclr1;
+wire wclr2;
+wire [15:0] err_data1;
+wire [15:0] err_data2;
+
+error_sch  
+error1 
+ (
+  	.out(err_data1),
+	.clk(clk_125),
+	.event_int(xD1_ALARM),
+	.rst(wclr1)
+);
+
+error_sch  
+error2 
+ (
+  	.out(err_data2),
+	.clk(clk_125),
+	.event_int(~JESD_DAC1_sync_n),
+	.rst(wclr2)
+);
+
+Block_read_spi_v2 
+ #(16,70) spi_error_dac1(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO11)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(wclr1),           .inport (err_data1));
+Block_read_spi_v2 
+ #(16,71) spi_error_dac2(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO12)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(wclr2),           .inport (err_data2));
+
+wire [31:0] data_dac;
+wire [15:0] tst_data;
+wire [ 7:0] upr_tst; 
+ 
+/*						 
+comm1
+com1 (
+	.out(data_dac),
+	.clk(clk_96Mhz),
+	.upr(xWDATA_MK[2]),
+	.in_I(data_DAC_i[16:1]),
+	.in_Q(data_DAC_q[16:1]),
+	.in_tst(16'h3fff)
+);
+*/
+
+/*
+test_sqr_gen 
+tst1(
+	.out(tst_data),
+	.clk(clk_96Mhz),
+	.rst(0)
+);	
+*/	
+	
+
+Block_write_spi 
+ #(8,88) spi_wr_a1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (upr_tst));
+
+wire [15:0] temp_data_q;
+wire [15:0] temp_data_i;
+
+assign temp_data_q={data_DAC_q[9:2],data_DAC_q[17:10]};
+assign temp_data_i={data_DAC_i[9:2],data_DAC_i[17:10]};
+
+//assign temp_data_q={data_DAC_q[8:1],data_DAC_q[16:9]};
+//assign temp_data_i={data_DAC_i[8:1],data_DAC_i[16:9]};
+
+//assign temp_data_q={data_DAC_q[16:1]};
+//assign temp_data_i={data_DAC_i[16:1]};
+
+/*    15-01-19		 
+sync_align_ila #(32,4)
+sa_ila(
+	.dout   (dac1_tx_parallel_data_alias),
+	.txdatak(dac1_datak_align),
+	.clk    (clk_96_dac1),
+	.sstatus(JESD_DAC1_sync_n),
+	.sysref (SYSREF0),
+	.data   ({temp_data_q,temp_data_i})
+	
+);	
+	
+
+custom_phy_dac
+dac1
+(
+		.phy_mgmt_clk                (clk_125),         //       phy_mgmt_clk.clk
+		.phy_mgmt_clk_reset          (dac1_phy_mgmt_clk_reset),   // phy_mgmt_clk_reset.reset
+		.phy_mgmt_address            (dac1_phy_mgmt_address),     //           phy_mgmt.address
+		.phy_mgmt_read               (dac1_phy_mgmt_read),        //                   .read
+		.phy_mgmt_readdata           (dac1_phy_mgmt_readdata),    //                   .readdata
+		.phy_mgmt_waitrequest        (dac1_phy_mgmt_waitrequest), //                   .waitrequest
+		.phy_mgmt_write              (dac1_phy_mgmt_write),       //                   .write
+		.phy_mgmt_writedata          (dac1_phy_mgmt_writedata),   //                   .writedata
+		.tx_ready                    (dac1_tx_ready),             //           tx_ready.export
+		.pll_ref_clk                 (clk_96_dac1),          //        pll_ref_clk.clk clk_96Mhz
+		.tx_serial_data              ({D1_RX1,D1_RX0}),       //     tx_serial_data.export
+		.pll_locked                  (dac1_pll_locked),           //         pll_locked.export
+		.tx_clkout                   (dac1_tx_clkout),            //          tx_clkout.export
+		.tx_parallel_data            (dac1_tx_parallel_data_alias),     //   tx_parallel_data.export
+		.tx_datak                    (dac1_datak_align),             //           tx_datak.export
+		.reconfig_from_xcvr          (),   // reconfig_from_xcvr.reconfig_from_xcvr
+		.reconfig_to_xcvr            ()     //   reconfig_to_xcvr.reconfig_to_xcvr
+	);
+*/
+	
+Block_read_spi 
+ #(8,40) spi_custom_phy_dac1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO10),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({
+		   locked_dac1,
+		   dac1_pll_locked,
+		   dac1_tx_ready,
+		   JESD_DAC1_sync_n,
+		   dac1_datak_align[3],
+		   dac1_datak_align[2],  // 
+		   dac1_datak_align[1],
+		   dac1_datak_align[0]}  // 
+			) );
+			
+Block_write_spi 
+ #(32,41) spi_wr_custom_phy_dac1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (dac1_tx_parallel_data));
+	
+			
+			
+//---------------------JESD204b_dac2--------------------------	
+	 
+
+wire 			 dac2_phy_mgmt_clk;
+wire 			 dac2_phy_mgmt_clk_reset;
+wire [8:0]   dac2_phy_mgmt_address;
+wire 			 dac2_phy_mgmt_read;
+wire [31:0]  dac2_phy_mgmt_readdata;
+wire 			 dac2_phy_mgmt_waitrequest;
+wire 			 dac2_phy_mgmt_write;
+wire [31:0]  dac2_phy_mgmt_writedata;
+
+wire         dac2_tx_ready;
+wire [ 1:0]  dac2_tx_serial_data;
+wire         dac2_pll_locked;
+wire [ 1:0]  dac2_tx_clkout;
+
+wire [ 3:0]  dac2_tx_datak;
+wire [ 3:0]  dac2_tx_dispval;
+wire [ 3:0]  dac2_tx_forcedisp;
+wire [183:0] dac2_reconfig_from_xcvr;
+wire [279:0] dac2_reconfig_to_xcvr;
+
+
+
+wire [31:0] dac2_tx_parallel_data_alias;
+wire [31:0] dac2_tx_parallel_data;
+wire [ 3:0] dac2_datak_align;
+wire JESD_DAC2_sync_n;
+
+assign  JESD_DAC2_sync_n=xD2_SYNCB;//&xD1_SYNC_N_AB&xD1_SYNC_N_CD
+assign  xD2_ALARM_FPGA=JESD_DAC2_sync_n;//выводим сигнал sync_n на прерывание для МК
+
+
+wire wclr1_D2;
+wire wclr2_D2;
+wire [15:0] err_data1_D2;
+wire [15:0] err_data2_D2;
+
+error_sch  
+error1_D2 
+ (
+  	.out(err_data1_D2),
+	.clk(clk_125),
+	.event_int(xD2_ALARM),
+	.rst(wclr1_D2)
+);
+
+error_sch  
+error2_D2 
+ (
+  	.out(err_data2_D2),
+	.clk(clk_125),
+	.event_int(~JESD_DAC2_sync_n),
+	.rst(wclr2_D2)
+);
+
+
+Block_read_spi_v2 
+ #(16,72) spi_error_dac1_D2(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO23)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(wclr1_D2),           .inport (err_data1_D2));
+Block_read_spi_v2 
+ #(16,73) spi_error_dac2_D2(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),
+						 .miso(xSPI3_MISO24)  ,.cs(xCS_FPGA1)  ,.rst(reset_all),
+						 .clr(wclr2_D2),           .inport (err_data2_D2));
+
+wire [31:0] data_dac2;
+wire [15:0] tst_data_D2;
+wire [ 7:0] upr_tst_D2; 
+ 
+
+
+Block_write_spi 
+ #(8,89) spi_wr_a1_D2( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (upr_tst_D2));
+
+wire [15:0] D2_temp_data_q;
+wire [15:0] D2_temp_data_i;
+
+assign D2_temp_data_q={data_DAC_q[9:2],data_DAC_q[17:10]};
+assign D2_temp_data_i={data_DAC_i[9:2],data_DAC_i[17:10]};
+
+/*    15-01-19		 
+sync_align_ila #(32,4)
+sa_ila_D2(
+	.dout   (dac2_tx_parallel_data_alias),
+	.txdatak(dac2_datak_align),
+	.clk    (clk_96_dac2),
+	.sstatus(JESD_DAC2_sync_n),
+	.sysref (SYSREF0),
+	.data   ({D2_temp_data_q,D2_temp_data_i})
+	
+);	
+	
+
+custom_phy_dac
+dac2
+(
+		.phy_mgmt_clk                (clk_125),         //       phy_mgmt_clk.clk
+		.phy_mgmt_clk_reset          (dac2_phy_mgmt_clk_reset),   // phy_mgmt_clk_reset.reset
+		.phy_mgmt_address            (dac2_phy_mgmt_address),     //           phy_mgmt.address
+		.phy_mgmt_read               (dac2_phy_mgmt_read),        //                   .read
+		.phy_mgmt_readdata           (dac2_phy_mgmt_readdata),    //                   .readdata
+		.phy_mgmt_waitrequest        (dac2_phy_mgmt_waitrequest), //                   .waitrequest
+		.phy_mgmt_write              (dac2_phy_mgmt_write),       //                   .write
+		.phy_mgmt_writedata          (dac2_phy_mgmt_writedata),   //                   .writedata
+		.tx_ready                    (dac2_tx_ready),             //           tx_ready.export
+		.pll_ref_clk                 (clk_96_dac2),          //        pll_ref_clk.clk
+		.tx_serial_data              ({D2_RX1,D2_RX0}),       //     tx_serial_data.export
+		.pll_locked                  (dac2_pll_locked),           //         pll_locked.export
+		.tx_clkout                   (dac2_tx_clkout),            //          tx_clkout.export
+		.tx_parallel_data            (dac2_tx_parallel_data_alias),     //   tx_parallel_data.export
+		.tx_datak                    (dac2_datak_align),             //           tx_datak.export
+		.reconfig_from_xcvr          (),   // reconfig_from_xcvr.reconfig_from_xcvr
+		.reconfig_to_xcvr            ()     //   reconfig_to_xcvr.reconfig_to_xcvr
+	);
+*/
+	
+Block_read_spi 
+ #(8,42) spi_custom_phy_dac2_D2( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO25),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport
+		 ({
+		   locked_dac2,
+		   dac2_pll_locked,
+		   dac2_tx_ready,
+		   JESD_DAC2_sync_n,
+		   dac2_datak_align[3],
+		   dac2_datak_align[2],  // 
+		   dac2_datak_align[1],
+		   dac2_datak_align[0]}  // 
+			) );
+			
+Block_write_spi 
+ #(32,43) spi_wr_custom_phy_dac1_D2( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out
+		 (dac2_tx_parallel_data));
+	
+		
+		
+//-------------------ETH1----------------------------
+
+wire led_crs;
+wire led_col;
+wire led_link;
+wire led_panel_link;
+wire led_an;
+wire led_char_err;
+wire led_disp_err;
+
+wire [31:0] data_udp_form_tx;
+wire [1:0] tx_mod_w;
+wire tx_sop_w;
+wire tx_eop_w;
+wire tx_err_w;
+wire tx_wren_w;
+wire tx_crc_fwd_w;
+wire tx_uflow_w;
+wire tx_rdy_w;
+wire tx_septy_w;
+wire tx_a_full;
+wire tx_a_empty_w;
+wire reg_busy_w;
+wire reset_mac;
+
+ mac_rst
+ mrst1
+(
+  .clk(clk_125),
+  .en(locked_125),
+  .reset(reset_mac)
+);
+
+wire [7:0] control_UDP_form;
+wire udp_en;
+
+Block_write_spi_mac //управление потоком в MAC 1 - вкл , 0 - выкл
+ #(8,15) spi_wr_data_UDP_MAC0(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out (control_UDP_form),.wr(udp_en),.wtreq(0));
+/*
+udp_form 
+udp_f1( 
+	.clk(clk_100MHz_eth) ,
+	.en(control_UDP_form[0]),
+	.data_tx(data_udp_form_tx) ,
+	.tx_mod(tx_mod_w) ,
+	.tx_sop(tx_sop_w) ,
+	.tx_eop(tx_eop_w) ,
+	.tx_err(tx_err_w) ,
+	.tx_wren(tx_wren_w) ,
+	.tx_crc_fwd(tx_crc_fwd_w) ,
+	.tx_uflow(tx_uflow_w) ,
+	.tx_rdy(tx_rdy_w) ,
+	.tx_septy(tx_septy_w) ,
+	.tx_a_full(tx_a_full) ,
+	.tx_a_empty(tx_a_empty_w)
+	 );
+*/
+udp_sender 
+udp1( 
+	.en(udp_en),
+	.tx_uflow() ,
+	.tx_septy() ,
+	.tx_mod(tx_mod_w) ,
+	.tx_err() ,
+	.tx_crc_fwd() ,
+	.tx_wren(tx_wren_w) ,
+	.tx_rdy(tx_rdy_w) ,
+	.tx_eop(tx_eop_w) ,
+	.tx_sop(tx_sop_w) ,
+	.tx_data(data_udp_form_tx) ,
+	.lenght(38) ,
+	.port_dest(390) ,
+	.port_source(1000) ,
+	.ip_dest(32'hC0a80101) ,
+	.ip_source(32'hC0a80102) ,
+	.dest_mac(48'hffffffffffff) ,
+	.mac(48'hcb4a17231c00) ,//MAC address is 00-1C-23-17-4A-CB
+	.clk(clk_125) );
+
+wire [139:0] reconfig_to_xcvr_w1;
+wire [91:0]  reconfig_from_xcvr_w1;
+
+wire  ff_rx_a_full_w;
+wire  ff_rx_a_empty_w;
+wire w_rx_err;
+wire w_ff_rx_rdy;
+
+eth5_0002 
+eth_full1_inst (
+		.clk              (clk_125),              // control_port_clock_connection.clk
+		.reset            (reset_mac),            //              reset_connection.reset
+		.reg_data_out     (MAC_control_rd_data),  //                  control_port.readdata
+		.reg_rd           (MAC_reg_rd),           //                              .read
+		.reg_data_in      (MAC_CONTROL_DATA_IN),  //                              .writedata
+		.reg_wr           (MAC_reg_wr),           //                              .write
+		.reg_busy         (reg_busy_w),           //                              .waitrequest
+		.reg_addr         (MAC_control_adr),      //                              .address
+		.ff_rx_clk        (clk_100MHz_eth),        //      receive_clock_connection.clk
+		.ff_tx_clk        (clk_100MHz_eth),        //     transmit_clock_connection.clk
+		.ff_rx_data       (),        //                       receive.data
+		.ff_rx_eop        (),        //                              .endofpacket
+		.rx_err           (w_rx_err),        //                              .error
+		.ff_rx_mod        (),        //                              .empty
+		.ff_rx_rdy        (1'b1),        //                              .ready
+		.ff_rx_sop        (),        //                              .startofpacket
+		.ff_rx_dval       (),        //                              .valid
+		.ff_tx_data       (data_udp_form_tx),       //                      transmit.data
+		.ff_tx_eop        (tx_eop_w),        //                              .endofpacket
+		.ff_tx_err        (tx_err_w),        //                              .error
+		.ff_tx_mod        (tx_mod_w),        //                              .empty
+		.ff_tx_rdy        (tx_rdy_w),        //                              .ready
+		.ff_tx_sop        (tx_sop_w),        //                              .startofpacket
+		.ff_tx_wren       (tx_wren_w),       //                              .valid
+	//	.magic_wakeup     (),     //           mac_misc_connection.magic_wakeup
+	//	.magic_sleep_n    (1'b1),    //                              .magic_sleep_n
+		.ff_tx_crc_fwd    (1'b0),    //                              .ff_tx_crc_fwd   Связан с генерацией crc для отправляемого пакета 
+		.ff_tx_septy      (),      //                              .ff_tx_septy
+		.tx_ff_uflow      (),      //                              .tx_ff_uflow
+		.ff_tx_a_full     (),     //                              .ff_tx_a_full
+		.ff_tx_a_empty    (),    //                              .ff_tx_a_empty
+		.rx_err_stat      (),      //                              .rx_err_stat
+		.rx_frm_type      (),      //                              .rx_frm_type
+		.ff_rx_dsav       (),       //                              .ff_rx_dsav
+		.ff_rx_a_full     (),     //                              .ff_rx_a_full
+		.ff_rx_a_empty    (),    //                              .ff_rx_a_empty
+		.ref_clk          (clk_125),          //  pcs_ref_clk_clock_connection.clk
+		.led_crs          (led_crs),          //         status_led_connection.crs
+		.led_link         (led_link),         //                              .link
+		.led_panel_link   (led_panel_link),   //                              .panel_link
+		.led_col          (led_col),          //                              .col
+		.led_an           (led_an),           //                              .an
+		.led_char_err     (led_char_err),     //                              .char_err
+		.led_disp_err     (led_disp_err),     //                              .disp_err
+		.rx_recovclkout   (),   //     serdes_control_connection.rx_recovclkout
+		.reconfig_togxb   (reconfig_to_xcvr_w1),   //                              .reconfig_togxb
+		.reconfig_fromgxb (reconfig_from_xcvr_w1), //                              .reconfig_fromgxb
+		.rxp              (RX_GTP),              //             serial_connection.rxp
+		.txp              (TX_GTP)               //                              .txp
+	);
+
+reconfig_phy1 
+rec_ph1(
+		.reconfig_busy(),             //      reconfig_busy.reconfig_busy
+		.mgmt_clk_clk(clk_125),              //       mgmt_clk_clk.clk
+		.mgmt_rst_reset(reset_mac),            //     mgmt_rst_reset.reset
+		.reconfig_mgmt_address(),     //      reconfig_mgmt.address
+		.reconfig_mgmt_read(),        //                   .read
+		.reconfig_mgmt_readdata(),    //                   .readdata
+		.reconfig_mgmt_waitrequest(), //                   .waitrequest
+		.reconfig_mgmt_write(),       //                   .write
+		.reconfig_mgmt_writedata(),   //                   .writedata
+		.reconfig_to_xcvr(reconfig_to_xcvr_w1),          //   reconfig_to_xcvr.reconfig_to_xcvr
+		.reconfig_from_xcvr(reconfig_from_xcvr_w1)         // reconfig_from_xcvr.reconfig_from_xcvr
+	);
+
+
+wire [31:0] MAC_CONTROL_DATA_IN;
+wire MAC_reg_wr;
+wire MAC_reg_rd;
+wire [7:0] MAC_control_adr;
+wire [31:0] MAC_control_rd_data;
+
+Block_write_spi //записываем адресс чтения/записи (пишется первым)
+ #( 8,13) spi_wr_adr_MAC0( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out (MAC_control_adr));//адресс 32-bit word-aligned register address.
+
+Block_write_spi_mac //запись в МАС данных
+ #(32,12) spi_wr_data_MAC0(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out (MAC_CONTROL_DATA_IN),.wr(MAC_reg_wr),.wtreq(reg_busy_w));
+
+Block_read_spi_mac  //чтение 32 бит данных
+ #(32,14) spi_rd_data_MAC0( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO22),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,.inport	 (MAC_control_rd_data),.clr(MAC_reg_rd),.wtreq(reg_busy_w));//
+
+Block_read_spi 
+ #(16,9) spi_eth1( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO9),
+ .cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.inport	 ({		1'h00,
+					w_rx_err,
+					w_ff_rx_rdy,
+					tx_a_empty_w,
+					tx_a_full,
+					ff_rx_a_empty_w,
+					ff_rx_a_full_w,
+					tx_rdy_w,
+					locked_125,
+					   led_crs,
+					   led_col,
+					   led_link,
+					   led_panel_link,
+					   led_an,
+					   led_char_err,
+					   led_disp_err}));
+		   
+//------------------------------------------
+
+wire [31:0] sfp_i2c_wr_data;
+wire [15:0] sfp_i2c_rd_data;
+wire sfp_i2c_wr;
+wire wire_i2c_in;
+wire wire_i2c_out;
+wire wire_i2c_drv;
+
+buf_i2c	
+buf_i2c_inst (
+	.datain ( wire_i2c_out ),
+	.oe (wire_i2c_drv),// сигнал управления
+	.dataio ( SDATA1_I2C ),
+	.dataout ( wire_i2c_in )
+	);
+
+
+i2c_master_v2 
+i2c_1(
+	.asc_err(),
+	.data(sfp_i2c_rd_data),
+	.ready(),
+	.scl(SCLK1_I2C),
+	.o_sda(wire_i2c_out),
+	.i_sda(wire_i2c_in),
+	.drv(wire_i2c_drv),
+	.clk(clk_125),
+	.rst(reset_all),
+	.en(sfp_i2c_wr),
+	.in(sfp_i2c_wr_data)
+);
+
+
+assign RATE1_SELECTION=1;
+assign SFP1_TX_DISABLE=0;
+
+
+//записываем команду в блок i2c в формате: {<w/r>[6:0][7:0]}
+//                                        зап/чте адр дата												
+Block_write_spi_v2 
+ #(32,10) spi_i2c_upr1(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(reset_all) ,
+	.out (sfp_i2c_wr_data),.wr(sfp_i2c_wr));
+
+Block_read_spi 
+ #(24,11) spi_i2c_rd1(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO21),.cs(xCS_FPGA1),.rst(reset_all) ,
+	.inport	 ({5'b00000,SFP1_TX_FAULT,SFP1_PRESENT,SFP1_LOS,sfp_i2c_rd_data}));
+
+//-----------------------------------------------
+//-----DSP
+
+wire [15:0] data_dsp_adc0_0_i;
+wire [15:0] data_dsp_adc0_0_q;
+wire dsp0_0_valid;
+/* 15-01-19
+dsp_step1 
+dsp0_0(
+.clk(clk_240_adc1),
+.rst(reset_240),
+.in(ch0_adc0_data),
+.i(data_dsp_adc0_0_i),
+.q(data_dsp_adc0_0_q),
+.valid(dsp0_0_valid)
+);
+
+wire [15:0] data_dsp_adc0_1_i;
+wire [15:0] data_dsp_adc0_1_q;
+wire dsp0_1_valid;
+
+dsp_step1 
+dsp0_1(
+.clk(clk_240_adc1),
+.rst(reset_240),
+.in(ch1_adc0_data),
+.i(data_dsp_adc0_1_i),
+.q(data_dsp_adc0_1_q),
+.valid(dsp0_1_valid)
+);
+*/
+//-----------------------------------------------
+endmodule
+
+
+	

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="pll_delay1_sim/pll_delay1.vo" type="VERILOG" />
+ <topLevel name="pll_delay1" />
+ <deviceFamily name="arriav" />
+</simPackage>

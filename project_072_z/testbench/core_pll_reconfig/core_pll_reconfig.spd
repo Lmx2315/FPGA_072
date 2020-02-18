@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="submodules/altera_pll_reconfig_top.v"
+   type="VERILOG"
+   library="core_pll_reconfig" />
+ <file
+   path="submodules/altera_pll_reconfig_mif_reader.v"
+   type="VERILOG"
+   library="core_pll_reconfig" />
+ <file
+   path="submodules/altera_pll_reconfig_core.v"
+   type="VERILOG"
+   library="core_pll_reconfig" />
+ <file
+   path="submodules/altera_std_synchronizer.v"
+   type="VERILOG"
+   library="core_pll_reconfig" />
+ <file path="core_pll_reconfig.v" type="VERILOG" />
+ <topLevel name="core_pll_reconfig" />
+ <deviceFamily name="arriav" />
+</simPackage>

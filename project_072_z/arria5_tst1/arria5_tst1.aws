@@ -1,0 +1,14 @@
+[Version]
+Version=10.4
+[Designs]
+arria5_tst1=arria5_tst1.adf
+[Settings]
+Active=arria5_tst1
+[Expand]
+arria5_tst1=1
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
