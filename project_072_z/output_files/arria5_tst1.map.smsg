@@ -50,4 +50,3 @@ Warning (10720): Verilog HDL or VHDL warning at eth1/sv_reconfig_bundle_to_xcvr.
 Warning (10720): Verilog HDL or VHDL warning at eth1/av_reconfig_bundle_to_xcvr.sv(26): MESSAGE_ON or MESSAGE_OFF directive cannot process the non-HDL message ID 13024. File: F:/project_072_z/eth1/av_reconfig_bundle_to_xcvr.sv Line: 26
 Warning (10720): Verilog HDL or VHDL warning at eth1/av_reconfig_bundle_to_xcvr.sv(26): MESSAGE_ON or MESSAGE_OFF directive cannot process the non-HDL message ID 21074. File: F:/project_072_z/eth1/av_reconfig_bundle_to_xcvr.sv Line: 26
 Warning (13024): Output pins are stuck at VCC or GND
-Warning (21074): Design contains 15 input pin(s) that do not drive logic

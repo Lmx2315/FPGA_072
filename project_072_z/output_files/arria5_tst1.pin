@@ -380,7 +380,7 @@ RESERVED_INPUT               : AK2       :        :                   :         
 REF3                         : AK3       : input  : LVDS              :         : 4A        : Y              
 SYSREF0                      : AK4       : input  : LVDS              :         : 4A        : Y              
 SYSREF0(n)                   : AK5       : input  : LVDS              :         : 4A        : Y              
-D_MISO                       : AK6       : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AK6       :        :                   :         : 4A        :                
 D2_SDIO                      : AK7       : output : 1.8 V             :         : 4B        : Y              
 A1_OVRA_1V8                  : AK8       : input  : 1.8 V             :         : 4B        : Y              
 VCCIO4B                      : AK9       : power  :                   : 1.8V    : 4B        :                
@@ -956,7 +956,7 @@ GND                          : Y9        : gnd    :                   :         
 VCCPD4BCD                    : Y10       : power  :                   : 2.5V    : 4B, 4C, 4D :                
 GND                          : Y11       : gnd    :                   :         :           :                
 RESERVED_INPUT               : Y12       :        :                   :         : 4C        :                
-RESERVED_INPUT               : Y13       :        :                   :         : 4C        :                
+D_MISO                       : Y13       : output : 2.5 V             :         : 4C        : N              
 GND                          : Y14       : gnd    :                   :         :           :                
 VCCPD4BCD                    : Y15       : power  :                   : 2.5V    : 4B, 4C, 4D :                
 DNU                          : Y16       :        :                   :         :           :                
