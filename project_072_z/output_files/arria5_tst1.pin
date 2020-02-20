@@ -262,7 +262,7 @@ GND                          : AF3       : gnd    :                   :         
 RESERVED_INPUT               : AF4       :        :                   :         : 4A        :                
 GND                          : AF5       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF6       :        :                   :         : 4A        :                
-D_MISO                       : AF7       : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AF7       :        :                   :         : 4A        :                
 GND                          : AF8       : gnd    :                   :         :           :                
 A1_CTRL2_1V8                 : AF9       : output : 1.8 V             :         : 4B        : Y              
 A2_SCLK_1V8                  : AF10      : output : 1.8 V             :         : 4B        : Y              
@@ -380,7 +380,7 @@ RESERVED_INPUT               : AK2       :        :                   :         
 REF3                         : AK3       : input  : LVDS              :         : 4A        : Y              
 SYSREF0                      : AK4       : input  : LVDS              :         : 4A        : Y              
 SYSREF0(n)                   : AK5       : input  : LVDS              :         : 4A        : Y              
-RESERVED_INPUT               : AK6       :        :                   :         : 4A        :                
+D_MISO                       : AK6       : output : 2.5 V             :         : 4A        : N              
 D2_SDIO                      : AK7       : output : 1.8 V             :         : 4B        : Y              
 A1_OVRA_1V8                  : AK8       : input  : 1.8 V             :         : 4B        : Y              
 VCCIO4B                      : AK9       : power  :                   : 1.8V    : 4B        :                

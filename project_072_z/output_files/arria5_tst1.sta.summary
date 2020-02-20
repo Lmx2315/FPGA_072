@@ -3,72 +3,72 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1100mV 85C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -3.208
-TNS   : -1977.253
+Slack : -3.190
+TNS   : -1758.074
 
 Type  : Slow 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -2.579
-TNS   : -9.663
+Slack : -2.409
+TNS   : -9.269
 
 Type  : Slow 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : -2.521
-TNS   : -5.039
-
-Type  : Slow 1100mV 85C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -1.494
-TNS   : -339.649
+Slack : -2.358
+TNS   : -4.571
 
 Type  : Slow 1100mV 85C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -1.423
-TNS   : -15.246
+Slack : -1.411
+TNS   : -15.463
+
+Type  : Slow 1100mV 85C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.146
+TNS   : -441.463
 
 Type  : Slow 1100mV 85C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -0.053
-TNS   : -0.189
+Slack : -0.148
+TNS   : -0.920
 
 Type  : Slow 1100mV 85C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.240
+Slack : 0.239
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : 0.242
+Slack : 0.240
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.257
+Slack : 0.242
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.363
+Slack : 0.283
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -0.229
-TNS   : -41.257
+Slack : -0.178
+TNS   : -35.904
 
 Type  : Slow 1100mV 85C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.214
+Slack : 0.199
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 4.645
+Slack : 4.603
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.446
+Slack : 0.358
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.530
+Slack : 0.500
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.833
+Slack : 0.873
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : -1.451
-TNS   : -19.401
+TNS   : -18.565
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : -0.868
@@ -119,7 +119,7 @@ Slack : 1.041
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 1.273
+Slack : 1.279
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
@@ -211,72 +211,72 @@ Slack : 4.164
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -2.896
-TNS   : -1631.142
+Slack : -2.869
+TNS   : -1462.041
 
 Type  : Slow 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -2.295
-TNS   : -8.546
+Slack : -2.145
+TNS   : -8.177
 
 Type  : Slow 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : -2.239
-TNS   : -4.390
-
-Type  : Slow 1100mV 0C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -1.354
-TNS   : -228.470
+Slack : -2.077
+TNS   : -4.058
 
 Type  : Slow 1100mV 0C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -1.306
-TNS   : -14.036
+Slack : -1.298
+TNS   : -14.229
+
+Type  : Slow 1100mV 0C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : -1.018
+TNS   : -312.313
 
 Type  : Slow 1100mV 0C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -0.196
-TNS   : -1.475
+Slack : -0.284
+TNS   : -2.894
 
 Type  : Slow 1100mV 0C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.165
+Slack : 0.153
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.222
+Slack : 0.220
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : 0.224
+Slack : 0.221
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.337
+Slack : 0.263
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -0.117
-TNS   : -7.695
+Slack : -0.073
+TNS   : -2.712
 
 Type  : Slow 1100mV 0C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.393
+Slack : 0.362
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 4.837
+Slack : 4.830
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.360
+Slack : 0.253
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.433
+Slack : 0.419
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.773
+Slack : 0.803
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : -1.451
-TNS   : -19.401
+TNS   : -18.565
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : -0.868
@@ -327,7 +327,7 @@ Slack : 1.041
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 1.264
+Slack : 1.268
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
@@ -371,11 +371,11 @@ Slack : 2.070
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 3.174
+Slack : 3.175
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : 3.337
+Slack : 3.338
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'eth1|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
@@ -419,31 +419,31 @@ Slack : 4.165
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -2.084
-TNS   : -65.129
+Slack : -2.131
+TNS   : -84.869
 
 Type  : Fast 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : -1.839
-TNS   : -3.596
+Slack : -1.731
+TNS   : -3.327
 
 Type  : Fast 1100mV 85C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -1.787
-TNS   : -6.841
+Slack : -1.640
+TNS   : -6.446
 
 Type  : Fast 1100mV 85C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -0.072
-TNS   : -0.348
+Slack : -0.063
+TNS   : -0.340
 
 Type  : Fast 1100mV 85C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.093
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.077
+Slack : 0.221
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.156
+Slack : 0.120
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
+Slack : 0.134
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
@@ -455,36 +455,36 @@ Slack : 0.160
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.223
+Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.397
+Slack : 0.450
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.998
+Slack : 0.969
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 5.624
+Slack : 5.550
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.227
+Slack : 0.189
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.311
+Slack : 0.309
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.481
+Slack : 0.521
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : -0.418
-TNS   : -15.048
+TNS   : -14.212
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : 0.165
@@ -535,7 +535,7 @@ Slack : 1.041
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 1.293
+Slack : 1.297
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
@@ -583,7 +583,7 @@ Slack : 3.210
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : 3.381
+Slack : 3.382
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'eth1|eth_full1_inst|i_custom_phyip_0|A5|transceiver_core|gen.av_xcvr_native_insts[0].gen_bonded_group.av_xcvr_native_inst|inst_av_pma|av_rx_pma|rx_pmas[0].rx_pma.rx_pma_deser|clk90b'
@@ -627,72 +627,72 @@ Slack : 4.161
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -1.546
-TNS   : -37.215
-
-Type  : Fast 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : -1.401
-TNS   : -5.343
+Slack : -1.589
+TNS   : -47.289
 
 Type  : Fast 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : -1.369
-TNS   : -2.728
+Slack : -1.320
+TNS   : -2.503
+
+Type  : Fast 1100mV 0C Model Setup 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
+Slack : -1.282
+TNS   : -5.021
 
 Type  : Fast 1100mV 0C Model Setup 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.031
+Slack : 0.039
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.315
+Slack : 0.379
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : -0.079
-TNS   : -0.170
+Slack : -0.009
+TNS   : -0.013
+
+Type  : Fast 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
+Slack : 0.053
+TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.091
+Slack : 0.054
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.124
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[1]'
-Slack : 0.136
+Slack : 0.123
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.148
+Slack : 0.166
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.566
+Slack : 0.611
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 1.201
+Slack : 1.160
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 5.902
+Slack : 5.866
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.159
+Slack : 0.114
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'pll_0002:pll_1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 0.267
+Slack : 0.249
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
-Slack : 0.437
+Slack : 0.464
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_96_0002:pll_96_dac1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : -0.418
-TNS   : -15.048
+TNS   : -14.212
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_125_0002:pll_125_eth0|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'
 Slack : 0.165
@@ -743,7 +743,7 @@ Slack : 1.041
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_240_120_0002:pll240_120_ADC1|altera_pll:altera_pll_i|outclk_wire[0]'
-Slack : 1.297
+Slack : 1.300
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'pll_0002:pll_1|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0'

@@ -1295,7 +1295,7 @@ wire dummy_wire;
 
 			
 	 Block_write_spi 
- #(8,127) spi_PWRDN( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(rst_block000) ,
+ #(8,99) spi_PWRDN( .clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(rst_block000) ,
 	.out
 		 ({ xD1_RESETB_upr_MK,
 		    xD2_RESETB_upr_MK,
@@ -2130,7 +2130,7 @@ DDS_48_v1 dds_0 (
 		.clk         (clk_96_dac1),     // clk.clk
 		.reset_n     (~reset_dds0),     // rst.reset_n
 		.clken       (1),       		//  in.clken
-		.phi_inc_i   (upr_dds0_reg),   	//    .phi_inc_i
+		.phi_inc_i   (48'd43980465111040),   	//upr_dds0_reg    .phi_inc_i
 		.freq_mod_i  (0),  				//    .freq_mod_i
 		.phase_mod_i (0), 				//    .phase_mod_i
 		.fsin_o      (data_DAC0_q),     // out.fsin_o
@@ -2309,7 +2309,7 @@ DDS_48_v1 dds_1 (
 		.clk         (clk_96_dac2),     // clk.clk
 		.reset_n     (~reset_dds1),     // rst.reset_n
 		.clken       (1),       		//  in.clken
-		.phi_inc_i   (upr_dds1_reg),   	//    .phi_inc_i
+		.phi_inc_i   (48'd43980465111040),   	// upr_dds1_reg   .phi_inc_i
 		.freq_mod_i  (0),  				//    .freq_mod_i
 		.phase_mod_i (0), 				//    .phase_mod_i
 		.fsin_o      (data_DAC1_q),     // out.fsin_o
