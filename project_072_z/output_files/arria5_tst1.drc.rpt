@@ -1,5 +1,5 @@
 Design Assistant report for arria5_tst1
-Thu Feb 20 18:32:02 2020
+Fri Feb 21 10:01:33 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------+
 ; Design Assistant Summary                                                ;
 +-----------------------------------+-------------------------------------+
-; Design Assistant Status           ; Analyzed - Thu Feb 20 18:32:02 2020 ;
+; Design Assistant Status           ; Analyzed - Fri Feb 21 10:01:33 2020 ;
 ; Revision Name                     ; arria5_tst1                         ;
 ; Top-level Entity Name             ; top_module                          ;
 ; Family                            ; Arria V                             ;
@@ -70,10 +70,10 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.7%      ;
-;     Processor 3            ;   0.6%      ;
+;     Processor 3            ;   0.7%      ;
 ;     Processor 4            ;   0.6%      ;
 ;     Processor 5            ;   0.6%      ;
-;     Processor 6            ;   0.5%      ;
+;     Processor 6            ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -655,7 +655,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Design Assistant
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Thu Feb 20 18:31:12 2020
+    Info: Processing started: Fri Feb 21 10:00:45 2020
 Info: Command: quartus_drc arria5_tst1 -c arria5_tst1
 Warning (125092): Tcl Script File BUFIN24.qip not found
     Info (125063): set_global_assignment -name QIP_FILE BUFIN24.qip
@@ -1602,9 +1602,9 @@ Info (308044): (Information) Rule T102: Top nodes with the highest number of fan
     Info (308002): Truncated list of Design Assistant messages to 30 messages. Go to sections under Design Assistant section of Compilation Report for complete lists of Design Assistant messages generated.
 Info (308007): Design Assistant information: finished post-fitting analysis of current design -- generated 383 information messages and 13 warning messages
 Info: Quartus Prime Design Assistant was successful. 0 errors, 540 warnings
-    Info: Peak virtual memory: 1179 megabytes
-    Info: Processing ended: Thu Feb 20 18:32:02 2020
-    Info: Elapsed time: 00:00:50
-    Info: Total CPU time (on all processors): 00:00:50
+    Info: Peak virtual memory: 1177 megabytes
+    Info: Processing ended: Fri Feb 21 10:01:33 2020
+    Info: Elapsed time: 00:00:48
+    Info: Total CPU time (on all processors): 00:00:48
 
 

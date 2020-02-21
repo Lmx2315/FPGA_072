@@ -1,5 +1,5 @@
 Timing Analyzer report for arria5_tst1
-Thu Feb 20 18:31:10 2020
+Fri Feb 21 10:00:43 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -102,16 +102,16 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 2.26        ;
+; Average used               ; 2.21        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  27.9%      ;
-;     Processor 3            ;  27.6%      ;
-;     Processor 4            ;  27.5%      ;
-;     Processor 5            ;  21.6%      ;
-;     Processor 6            ;  21.6%      ;
+;     Processor 2            ;  26.7%      ;
+;     Processor 3            ;  26.5%      ;
+;     Processor 4            ;  26.4%      ;
+;     Processor 5            ;  20.7%      ;
+;     Processor 6            ;  20.7%      ;
 +----------------------------+-------------+
 
 
@@ -120,14 +120,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------+--------+--------------------------+
 ; SDC File Path                             ; Status ; Read at                  ;
 +-------------------------------------------+--------+--------------------------+
-; arria5_tst1.sdc                           ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; phy_reconfig/av_xcvr_reconfig.sdc         ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; phy_reconfig/altera_reset_controller.sdc  ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; reconfig_phy1/av_xcvr_reconfig.sdc        ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; reconfig_phy1/altera_reset_controller.sdc ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; eth1/altera_reset_controller.sdc          ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; eth1/altera_eth_tse_pcs_pma_phyip.sdc     ; OK     ; Thu Feb 20 18:30:40 2020 ;
-; eth1/altera_eth_tse_mac.sdc               ; OK     ; Thu Feb 20 18:30:40 2020 ;
+; arria5_tst1.sdc                           ; OK     ; Fri Feb 21 10:00:14 2020 ;
+; phy_reconfig/av_xcvr_reconfig.sdc         ; OK     ; Fri Feb 21 10:00:14 2020 ;
+; phy_reconfig/altera_reset_controller.sdc  ; OK     ; Fri Feb 21 10:00:14 2020 ;
+; reconfig_phy1/av_xcvr_reconfig.sdc        ; OK     ; Fri Feb 21 10:00:14 2020 ;
+; reconfig_phy1/altera_reset_controller.sdc ; OK     ; Fri Feb 21 10:00:14 2020 ;
+; eth1/altera_reset_controller.sdc          ; OK     ; Fri Feb 21 10:00:14 2020 ;
+; eth1/altera_eth_tse_pcs_pma_phyip.sdc     ; OK     ; Fri Feb 21 10:00:15 2020 ;
+; eth1/altera_eth_tse_mac.sdc               ; OK     ; Fri Feb 21 10:00:15 2020 ;
 +-------------------------------------------+--------+--------------------------+
 
 
@@ -2279,7 +2279,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Thu Feb 20 18:30:06 2020
+    Info: Processing started: Fri Feb 21 09:59:42 2020
 Info: Command: quartus_sta arria5_tst1 -c arria5_tst1
 Info: qsta_default_script.tcl version: #1
 Warning (20013): Ignored 15 assignments for entity "PHY_pll" -- entity does not exist in design
@@ -3950,9 +3950,9 @@ Info (332114): Report Metastability: Found 1048 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 740 warnings
-    Info: Peak virtual memory: 1865 megabytes
-    Info: Processing ended: Thu Feb 20 18:31:10 2020
-    Info: Elapsed time: 00:01:04
-    Info: Total CPU time (on all processors): 00:01:41
+    Info: Peak virtual memory: 1863 megabytes
+    Info: Processing ended: Fri Feb 21 10:00:43 2020
+    Info: Elapsed time: 00:01:01
+    Info: Total CPU time (on all processors): 00:01:35
 
 
