@@ -1,3 +1,9 @@
+27-03-2020
+----------
+Сигналы с рабочим "уровнем" :
+SYS_TIME_UPDATE
+
+
 26-03-2020
 ----------
 
@@ -94,7 +100,7 @@ DAC1_RST
 FPGA_wSPI (8,127,tmp1);
 DAC2_RST  
 FPGA_wSPI (8,127,tmp1); 
-DAC2_PWRDN
+D-AC2_PWRDN
 FPGA_wSPI (8,127,tmp1); 
 DAC1_PWRDN
 FPGA_wSPI (8,127,tmp1);  
