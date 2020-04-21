@@ -49,9 +49,9 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 896
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (SystemVerilog)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "SYSTEMVERILOG HDL" -section_id eda_simulation
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name ENABLE_OCT_DONE OFF
@@ -659,25 +659,32 @@ set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
 set_global_assignment -name FLOW_ENABLE_IO_ASSIGNMENT_ANALYSIS ON
 set_global_assignment -name ALLOW_REGISTER_RETIMING OFF
 set_global_assignment -name EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY "C:\\Work_murmansk\\Modelsim_pj\\Modelsim_rep\\TB_UDP\\lib" -section_id eda_simulation
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/DDS_48_v1.v
+set_global_assignment -name VERILOG_INPUT_VERSION SYSTEMVERILOG_2005
+set_global_assignment -name VERILOG_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name SYSTEMVERILOG_FILE writer_com_mem.sv
+set_global_assignment -name VERILOG_FILE uart.v
+set_global_assignment -name SYSTEMVERILOG_FILE test_t1hz.sv
+set_global_assignment -name SYSTEMVERILOG_FILE send_to_uart.sv
+set_global_assignment -name SYSTEMVERILOG_FILE master_start.sv
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/DDS_48_v1.v -library DDS_48_v1
 set_global_assignment -name QIP_FILE DDS_48_v1/synthesis/DDS_48_v1.qip
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/dop_reg.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_seg_sel.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_init_pm.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_fs.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_2c.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_pxx.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_isdr.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_fxx.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_dxx_g.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_dxx.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_crd_par.v
-set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/dop_reg.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_seg_sel.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_init_pm.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_fs.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/cord_2c.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_pxx.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_isdr.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_fxx.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_dxx_g.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_dxx.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_crd_par.v -library DDS_48_v1
+set_global_assignment -name VERILOG_FILE DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v -library DDS_48_v1
 set_global_assignment -name VERILOG_FILE sdram_mk_upr.v
 set_global_assignment -name VERILOG_FILE sdram_cntr.v
 set_global_assignment -name QIP_FILE mem_for_sdram_v1.qip
@@ -814,5 +821,7 @@ set_global_assignment -name QIP_FILE fir_v2.qip
 set_global_assignment -name SIP_FILE fir_v2.sip
 set_global_assignment -name QIP_FILE pll_125.qip
 set_global_assignment -name SIP_FILE pll_125.sip
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name QIP_FILE registre_MEM.qip
+set_global_assignment -name QIP_FILE pll_96_48.qip
+set_global_assignment -name SIP_FILE pll_96_48.sip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

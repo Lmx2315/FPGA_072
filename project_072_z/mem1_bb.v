@@ -35,20 +35,23 @@ module mem1 (
 	clock,
 	data,
 	rdaddress,
+	rden,
 	wraddress,
 	wren,
 	q);
 
 	input	  clock;
-	input	[31:0]  data;
-	input	[10:0]  rdaddress;
-	input	[10:0]  wraddress;
+	input	[337:0]  data;
+	input	[7:0]  rdaddress;
+	input	  rden;
+	input	[7:0]  wraddress;
 	input	  wren;
-	output	[31:0]  q;
+	output	[337:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
 	tri1	  clock;
+	tri1	  rden;
 	tri0	  wren;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
@@ -89,7 +92,7 @@ endmodule
 // Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 // Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 // Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
-// Retrieval info: PRIVATE: MEMSIZE NUMERIC "65536"
+// Retrieval info: PRIVATE: MEMSIZE NUMERIC "86528"
 // Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
 // Retrieval info: PRIVATE: MIFfilename STRING ""
 // Retrieval info: PRIVATE: OPERATION_MODE NUMERIC "2"
@@ -97,7 +100,7 @@ endmodule
 // Retrieval info: PRIVATE: OUTDATA_REG_B NUMERIC "1"
 // Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_MIXED_PORTS NUMERIC "2"
-// Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "1"
+// Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_A NUMERIC "3"
 // Retrieval info: PRIVATE: READ_DURING_WRITE_MODE_PORT_B NUMERIC "3"
 // Retrieval info: PRIVATE: REGdata NUMERIC "1"
 // Retrieval info: PRIVATE: REGq NUMERIC "1"
@@ -109,15 +112,15 @@ endmodule
 // Retrieval info: PRIVATE: USE_DIFF_CLKEN NUMERIC "0"
 // Retrieval info: PRIVATE: UseDPRAM NUMERIC "1"
 // Retrieval info: PRIVATE: VarWidth NUMERIC "0"
-// Retrieval info: PRIVATE: WIDTH_READ_A NUMERIC "32"
-// Retrieval info: PRIVATE: WIDTH_READ_B NUMERIC "32"
-// Retrieval info: PRIVATE: WIDTH_WRITE_A NUMERIC "32"
-// Retrieval info: PRIVATE: WIDTH_WRITE_B NUMERIC "32"
+// Retrieval info: PRIVATE: WIDTH_READ_A NUMERIC "338"
+// Retrieval info: PRIVATE: WIDTH_READ_B NUMERIC "338"
+// Retrieval info: PRIVATE: WIDTH_WRITE_A NUMERIC "338"
+// Retrieval info: PRIVATE: WIDTH_WRITE_B NUMERIC "338"
 // Retrieval info: PRIVATE: WRADDR_ACLR_B NUMERIC "0"
 // Retrieval info: PRIVATE: WRADDR_REG_B NUMERIC "0"
 // Retrieval info: PRIVATE: WRCTRL_ACLR_B NUMERIC "0"
 // Retrieval info: PRIVATE: enable NUMERIC "0"
-// Retrieval info: PRIVATE: rden NUMERIC "0"
+// Retrieval info: PRIVATE: rden NUMERIC "1"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: ADDRESS_ACLR_B STRING "NONE"
 // Retrieval info: CONSTANT: ADDRESS_REG_B STRING "CLOCK0"
@@ -126,34 +129,37 @@ endmodule
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_B STRING "BYPASS"
 // Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Arria V"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
-// Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "2048"
-// Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "2048"
+// Retrieval info: CONSTANT: NUMWORDS_A NUMERIC "256"
+// Retrieval info: CONSTANT: NUMWORDS_B NUMERIC "256"
 // Retrieval info: CONSTANT: OPERATION_MODE STRING "DUAL_PORT"
 // Retrieval info: CONSTANT: OUTDATA_ACLR_B STRING "NONE"
 // Retrieval info: CONSTANT: OUTDATA_REG_B STRING "CLOCK0"
 // Retrieval info: CONSTANT: POWER_UP_UNINITIALIZED STRING "FALSE"
+// Retrieval info: CONSTANT: RDCONTROL_REG_B STRING "CLOCK0"
 // Retrieval info: CONSTANT: READ_DURING_WRITE_MODE_MIXED_PORTS STRING "DONT_CARE"
-// Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "11"
-// Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "11"
-// Retrieval info: CONSTANT: WIDTH_A NUMERIC "32"
-// Retrieval info: CONSTANT: WIDTH_B NUMERIC "32"
+// Retrieval info: CONSTANT: WIDTHAD_A NUMERIC "8"
+// Retrieval info: CONSTANT: WIDTHAD_B NUMERIC "8"
+// Retrieval info: CONSTANT: WIDTH_A NUMERIC "338"
+// Retrieval info: CONSTANT: WIDTH_B NUMERIC "338"
 // Retrieval info: CONSTANT: WIDTH_BYTEENA_A NUMERIC "1"
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
-// Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
-// Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
-// Retrieval info: USED_PORT: rdaddress 0 0 11 0 INPUT NODEFVAL "rdaddress[10..0]"
-// Retrieval info: USED_PORT: wraddress 0 0 11 0 INPUT NODEFVAL "wraddress[10..0]"
+// Retrieval info: USED_PORT: data 0 0 338 0 INPUT NODEFVAL "data[337..0]"
+// Retrieval info: USED_PORT: q 0 0 338 0 OUTPUT NODEFVAL "q[337..0]"
+// Retrieval info: USED_PORT: rdaddress 0 0 8 0 INPUT NODEFVAL "rdaddress[7..0]"
+// Retrieval info: USED_PORT: rden 0 0 0 0 INPUT VCC "rden"
+// Retrieval info: USED_PORT: wraddress 0 0 8 0 INPUT NODEFVAL "wraddress[7..0]"
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT GND "wren"
-// Retrieval info: CONNECT: @address_a 0 0 11 0 wraddress 0 0 11 0
-// Retrieval info: CONNECT: @address_b 0 0 11 0 rdaddress 0 0 11 0
+// Retrieval info: CONNECT: @address_a 0 0 8 0 wraddress 0 0 8 0
+// Retrieval info: CONNECT: @address_b 0 0 8 0 rdaddress 0 0 8 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
-// Retrieval info: CONNECT: @data_a 0 0 32 0 data 0 0 32 0
+// Retrieval info: CONNECT: @data_a 0 0 338 0 data 0 0 338 0
+// Retrieval info: CONNECT: @rden_b 0 0 0 0 rden 0 0 0 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
-// Retrieval info: CONNECT: q 0 0 32 0 @q_b 0 0 32 0
+// Retrieval info: CONNECT: q 0 0 338 0 @q_b 0 0 338 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL mem1.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL mem1.inc FALSE
 // Retrieval info: GEN_FILE: TYPE_NORMAL mem1.cmp FALSE
-// Retrieval info: GEN_FILE: TYPE_NORMAL mem1.bsf FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL mem1.bsf TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL mem1_inst.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL mem1_bb.v TRUE
 // Retrieval info: LIB_FILE: altera_mf

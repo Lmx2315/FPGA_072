@@ -142,10 +142,10 @@ input  wire WR_BUS,
 input  wire RD_BUS,
 	  
 //--------------------------
-output wire SPI4_SCK_MK,  //SPI где слейв МК  ,выдача данных с ПЛИС на МК
-output wire SPI4_NSS_MK,
-output wire SPI4_MOSI_MK,
- input wire SPI4_MISO_MK,
+input  wire SPI4_SCK_MK,  //SPI , слейв ПЛИС  (скоростной интерфейс для команд реального времени
+input  wire SPI4_NSS_MK,  //передача идёт пачкой по 51 байт
+input  wire SPI4_MOSI_MK,
+output wire SPI4_MISO_MK,
 	  
 	  
  input wire SPI3_SCK,  //SPI где слейв ПЛИС
@@ -384,6 +384,8 @@ output wire D2_TXENABLE,
 	  wire clk_240_adc2;
 	  wire clk_120_adc1;
 	  wire clk_120_adc2;
+	  wire clk_48_1;
+	  wire clk_48_2;
 
 pll_0002 
 pll_1(
@@ -416,22 +418,24 @@ pll240_120_ADC2
 		.locked   (locked_120_2)    //  locked.export
 );
 
-pll_96_0002 
+pll_96_48 
 pll_96_dac1 
 (
-		.refclk   (clk_125),   //  refclk.clk
+		.refclk   (clk_125),   		//  refclk.clk
 		.rst      (reset_125),      //   reset.reset
-		.outclk_0 (clk_96_dac1), // outclk0.clk
-		.locked   (locked_dac1)    //  locked.export
+		.outclk_0 (clk_96_dac1), 	// outclk0.clk
+		.outclk_1 (clk_48_1), 		// outclk0.clk		
+		.locked   (locked_dac1)    	//  locked.export
 );
 
-pll_96_0002 
+pll_96_48 
 pll_96_dac2 
 (
-		.refclk   (clk_125),   //  refclk.clk
+		.refclk   (clk_125),   		//  refclk.clk
 		.rst      (reset_125),      //   reset.reset
-		.outclk_0 (clk_96_dac2), // outclk0.clk
-		.locked   (locked_dac2)    //  locked.export
+		.outclk_0 (clk_96_dac2), 	// outclk0.clk
+	   .outclk_1 (clk_48_2), 		// outclk0.clk
+		.locked   (locked_dac2)    	//  locked.export
 );
 
 pll_125_0002
@@ -1468,7 +1472,7 @@ assign xUART6_RX    =  xTX1_RS422 & xTX_FTDI_2;
 assign xRNE1_RS422  =  xCS_FPGA2;
 assign xDE1RX_RS422 = ~xCS_FPGA2;
 
-//assign xRX_FTDI_2   =  xUART6_TX;
+assign xRX_FTDI_2   =  TxD_test;//тут выводим тестовые данные с SPI-DMA (SPI4)  xUART6_TX
 
 //-------------SYS_SPI----------------
 	  
@@ -1518,7 +1522,6 @@ assign xA2_CTRL2_1V8  =0;//zero - Normal operation
 assign xA2_CTRL1_1V8  =0;
 assign xA2_PWRDOWN_1V8=xA2_PWRDOWN_upr_MK;
 assign xA2_STBY_1V8   =0;
-
 
 
 //---------------------ADC1-------------------------------------------
@@ -1574,14 +1577,6 @@ adc1_phy(
 
 wire fifo_adc1_full_sig_1;
 
-
-
-reg [31:0] test_data=0;
-
-always @(posedge clk_120_adc1)
-	begin
-		test_data<=test_data+1;
-	end	
 
 wire tst_adc1;
 wire [3:0] w_ok0;
@@ -1864,163 +1859,230 @@ Block_read_spi
 	  	 rx_bitslipboundaryselectout_adc2[19:0]		 
 			}));			
 //--------------------------------------
-wire 		xphy_mgmt_clk_reset;
-wire [0:0]  xtx_pma_clkout;
-wire [79:0] xtx_pma_parallel_data;
-
-
-wire [8:0]  xphy_mgmt_address;
-wire        xphy_mgmt_read;
-wire [31:0] xphy_mgmt_readdata;
-wire        xphy_mgmt_waitrequest;
-wire        xphy_mgmt_write;
-wire [31:0] xphy_mgmt_writedata;
-wire        xtx_ready;
-wire        xrx_ready;
-wire [1:0]  xrx_runningdisp;
-wire [1:0]  xrx_disperr;
-wire [1:0]  xrx_errdetect;
-wire [0:0]  xtx_clkout;
-wire [0:0]  xrx_clkout; 
-wire [15:0] xtx_parallel_data;
-wire [1:0]  xtx_datak;
-wire [15:0] xrx_parallel_data;
-wire [1:0]  xrx_datak;
-
 wire        xSYSREF0;
-wire        xdev_sync_n;
-wire [3:0]	xsomf;
-
 bufi1	bufi1_inst2 (
 	.datain ( SYSREF0 ),
 	.dataout ( xSYSREF0 )
 	);
+
+//------------------Синхронизатор1--------------------
+
+logic 		 w_REQ_COMM 	;
+logic [63:0] TIME 			;
+logic [47:0] FREQ     		;
+logic [47:0] FREQ_STEP 		;
+logic [31:0] FREQ_RATE 		;
+logic [63:0] TIME_START		;
+logic [63:0] TIME_INIT		;
+logic 		 SYS_TIME_UPDATE;
+logic 		 T1HZ 			;
+logic 		 spi_WR 		;//сигнал записи данных из вне в реестр реального времени
+logic 		 mem_WR			;//сигнал записи данных из реестра реального времени в синхронизатор
+logic [15:0] N_impuls 		;
+logic [ 1:0] TYPE_impulse 	;
+logic [31:0] Interval_Ti 	;
+logic [31:0] Interval_Tp 	;
+logic [31:0] Tblank1 		;
+logic [31:0] Tblank2 		;
+
+//----------------------------
+// вайры для между реестра и синхронизатора
+logic [47:0] mFREQ     		;
+logic [47:0] mFREQ_STEP 	;
+logic [31:0] mFREQ_RATE 	;
+logic [63:0] mTIME_START	;
+logic [15:0] mN_impuls 		;
+logic [ 1:0] mTYPE_impulse 	;
+logic [31:0] mInterval_Ti 	;
+logic [31:0] mInterval_Tp 	;
+logic [31:0] mTblank1 		;
+logic [31:0] mTblank2 		;
+
+//----------------------------
+
+logic [47:0] 	wFREQ 		;
+logic [47:0] 	wFREQ_STEP 	;
+logic [31:0] 	wFREQ_RATE	;
+logic 			DDS_START 	;
+
+logic [15:0] dds_data_I;
+logic [15:0] dds_data_Q;
+logic 		 dds_valid ;
+
+logic 		SYS_TIME_UPDATE_OK;
+logic 		En_Iz;
+logic 		En_Pr;
+
+logic wREQ=0;
+logic wACK=0;
+
+//----------DDS тактируется 96 МГц !!!---------------------------
+
+logic [15:0] data_I;
+logic [15:0] data_Q;
+
+dds_chirp 
+dds1(
+	.clk_96 		(clk_96_dac1),    	// Clock
+	.clk_48 		(clk_48_1 	),
+	.REQ			(wREQ		),  	//запрос на передачу данных из 125 МГц в 96 МГц
+    .ACK			(wACK		),		//подтверждение что данные переданы
+	.DDS_freq 		(wFREQ 		),
+	.DDS_delta_freq (wFREQ_STEP ),
+	.DDS_delta_rate (wFREQ_RATE ),
+	.start 			(DDS_START 	),
+	.data_I 		(data_I 	),
+	.data_Q 		(data_Q 	),
+	.valid 			(dds_valid 	)	
+);
+
+//-------------Синхронизатор тактируется 48 МГц !!!-------------
+
+rst reset_sync1_1(clk_48_1,rst_sync1);
+test_t1hz inst_test_t1hz (.clk(clk_48_1), .z(T1HZ));//временная тестовая имитация квазисекундной метки (67/48)
+
+master_start 
+sync1(
+.DDS_freq 			(wFREQ 				),
+.DDS_delta_freq 	(wFREQ_STEP 		),
+.DDS_delta_rate 	(wFREQ_RATE 		),
+.DDS_start 			(DDS_START 			),
+.REQ				(wREQ				),	//запрос на передачу данных
+.ACK				(wACK				),  //подтверждение принятых данных из DDS
+.REQ_COMMAND 		(w_REQ_COMM 		),  //запрос новой команды из реестра реального времени
+.RESET 				(rst_sync1			),
+.CLK 				(clk_48_1 			),
+.SYS_TIME 			(tmp_TIME			),	//код времени для предустановки по сигналу T1c
+.SYS_TIME_UPDATE 	(SYS_TIME_UPDATE 	),	//сигнал управления который включает готовность установки системного времени по сигналу T1hz 
+.TIME 				(TIME 				),
+.T1hz 				(T1HZ 				),	//сигнал секундной метки
+.WR_DATA 			(mem_WR 			),  //сигнал записи данных в синхронизатор
+.MEM_DDS_freq 		(mFREQ 				),  //данные команды из реестра реального времени
+.MEM_DDS_delta_freq (mFREQ_STEP  		),  //данные команды из реестра реального времени
+.MEM_DDS_delta_rate (mFREQ_RATE			),  //данные команды из реестра реального времени
+.MEM_TIME_START 	(mTIME_START 		),  //данные команды из реестра реального времени
+.MEM_N_impuls 		(mN_impuls 			),  //данные команды из реестра реального времени
+.MEM_TYPE_impulse 	(mTYPE_impulse   	),  //тип формируемой пачки  :0 - повторяющаяся (некогерентный),1 - когерентная (DDS не перепрограммируется)
+.MEM_Interval_Ti 	(mInterval_Ti 		),  //данные команды из реестра реального времени
+.MEM_Interval_Tp 	(mInterval_Tp 		),  //данные команды из реестра реального времени
+.MEM_Tblank1		(mTblank1 			),  //данные команды из реестра реального времени
+.MEM_Tblank2 		(mTblank2 			),  //данные команды из реестра реального времени
+.SYS_TIME_UPDATE_OK (SYS_TIME_UPDATE_OK ),	//флаг показывающий,что по секундной метке произошла установка системного времени
+.En_Iz 				(En_Iz 				),  //сформированый интервал Излучения
+.En_Pr 				(En_Pr 				)   //сформированый интервал Приёма
+);
+
+rst reset_wcm1_1(clk_48_1,rst_wcm1);
+
+wcm 
+wcm1(						  		  //блок записи и чтения команд реального времени в память и из.
+.CLK 		    (clk_48_1),
+.rst_n 	        (~rst_wcm1),
+.REQ_COMM 	    (w_REQ_COMM   		),//запрос новой команды для исполнения синхронизатором (тут вход)
+.TIME 		    (TIME 		 		),//текущее системное время 
+.SYS_TIME_UPDATE(SYS_TIME_UPDATE_OK	),//сигнал сообщающий о перестановке системного времени!!!
+.FREQ           (tmp_FREQ 		 	),//данные с интерфейса МК
+.FREQ_STEP      (tmp_FREQ_STEP 	 	),//----------------------
+.FREQ_RATE      (tmp_FREQ_RATE 	 	),//--------//------------ 
+.TIME_START     (tmp_TIME_START  	),
+.N_impulse 	    (tmp_N_impuls 		),
+.TYPE_impulse   (tmp_TYPE_impulse	),
+.Interval_Ti    (tmp_Interval_Ti 	),
+.Interval_Tp    (tmp_Interval_Tp 	),
+.Tblank1 	    (tmp_Tblank1 	 	),
+.Tblank2        (tmp_Tblank2 	 	),
+.SPI_WR		    (spi_WR 		 	),  //сигнал записи для данных из вне в реестр реального времени
+.DATA_WR 	    (mem_WR		 		),  //сигнал записи для передачи данных в блок синхронизации
+.FREQ_z         (mFREQ 		 		),  //части команды выводимые из модуля в блок синхронизации и исполнения
+.FREQ_STEP_z    (mFREQ_STEP 	 	),
+.FREQ_RATE_z    (mFREQ_RATE 	 	),
+.TIME_START_z   (mTIME_START	 	),
+.N_impuls_z     (mN_impuls 	 		),
+.TYPE_impulse_z (mTYPE_impulse		),
+.Interval_Ti_z  (mInterval_Ti 		),
+.Interval_Tp_z  (mInterval_Tp 		),
+.Tblank1_z      (mTblank1 	 		),
+.Tblank2_z      (mTblank2 	 		) //-----//-------	 
+);
+
+//----------------SPI управление-----------------
+logic [ 63:0]	 tmp_TIME 		  ;
+logic [ 47:0] 	 tmp_FREQ 		  ;
+logic [ 47:0] 	 tmp_FREQ_STEP 	  ;
+logic [ 31:0] 	 tmp_FREQ_RATE	  ;
+logic [ 63:0]    tmp_TIME_START   ;
+logic [ 15:0]    tmp_N_impulse    ;
+logic [  7:0]    tmp_TYPE_impulse ;
+logic [ 31:0]    tmp_Interval_Ti  ;
+logic [ 31:0]    tmp_Interval_Tp  ;
+logic [ 31:0]    tmp_Tblank1	  ;
+logic [ 31:0]    tmp_Tblank2	  ;
 	
-	
-	wire	[7:0]	xcsr_f;
-	wire	[4:0]	xcsr_k;
-	wire	[4:0]	xcsr_l;
-	wire	[7:0]	xcsr_m;
-	wire	[4:0]	xcsr_n;
-	wire	[4:0]	xcsr_s;
-	wire	[4:0]	xcsr_cf;
-	wire	[1:0]	xcsr_cs;
-	wire  		xcsr_hd;
-	wire  [4:0]	xcsr_np;
-	wire  [1:0]	xcsr_lane_powerdown;	
-	
-	wire 			  xtxlink_rst_n_reset_n;
-	wire 			  xjesd204_tx_avs_rst_n;
-	wire  [7:0]   xjesd204_tx_avs_address;
-	wire          xjesd204_tx_avs_read;
-	wire  [31:0]  xjesd204_tx_avs_readdata;  
-	wire  		  xjesd204_tx_avs_waitrequest;	
-	wire          xjesd204_tx_avs_write;
-	wire  [31:0]  xjesd204_tx_avs_writedata;
-	wire  [63:0] 	  xjesd204_tx_link_data;
-	wire  [7:0]   xjesd204_tx_link_valid;
-	wire 			  xjesd204_tx_link_ready;
-	wire 			  xjesd204_tx_int;
-	
-	wire 			  xjesd204_tx_frame_ready;
-	wire [3:0]    xcsr_tx_testmode;
-	 reg [31:0]   xcsr_tx_testpattern_a=32'hBeefBeef;
-	 reg [31:0]   xcsr_tx_testpattern_b=32'hBaafBeef;
-	 reg [31:0]   xcsr_tx_testpattern_c=32'hBccfBeef;
-	 reg [31:0]   xcsr_tx_testpattern_d=32'hBddfBeef;
-	 
-	wire          xjesd204_tx_frame_error;
-	wire [63:0]   xjesd204_tx_dlb_data;
-	wire [7:0]	  xjesd204_tx_dlb_kchar_data;
-	wire 			  xtxphy_clk;
+rst reset_spi1_1(clk_48_1,rst_spi1);
 
-	
-	wire [0:0] tx_forceelecidle;
-	
-	wire [0:0] xrx_is_lockedtoref;
-	wire [0:0] xrx_is_lockedtodata;
-	wire [0:0] xrx_signaldetect;
-	wire [1:0] xrx_patterndetect;
-	wire [1:0] xrx_syncstatus;
-	wire [4:0] xrx_bitslipboundaryselectout;
-	
-wire 			 xreconfig_busy;
-wire [6:0]   xreconfig_mgmt_address;
-wire         xreconfig_mgmt_read;
-wire [31:0]  xreconfig_mgmt_readdata;
-wire         xreconfig_mgmt_waitrequest;
-wire         xreconfig_mgmt_write;
-wire [31:0]  xreconfig_mgmt_writedata;
-wire [139:0] xreconfig_to_xcvr;
-wire [91:0]  xreconfig_from_xcvr;
-	
-	
-//assign xphy_mgmt_clk_reset = 0;
-assign xphy_mgmt_address   = 0;
-assign xphy_mgmt_read      = 0;
-assign xphy_mgmt_write     = 0;
-assign xphy_mgmt_writedata = 0;
+assign TYPE_impulse=tmp_TYPE_impulse[1:0];//используем два младших бита как тип импульсов
 
-assign xrx_bitslipboundaryselectout=0;
+DMA_SPI 
+spi1
+		(
+			.clk             (clk_48_1),
+			.clk_en          (1),
+			.rst_n           (~rst_spi1),
+			.MOSI            (xSPI4_MOSI_MK),
+			.CS              (xSPI4_NSS_MK ),
+			.SCLK            (xSPI4_SCK_MK ),
 
- 
-assign xtx_datak = 0;//data
+			.TIME            (tmp_TIME),
+			.SYS_TIME_UPDATE (SYS_TIME_UPDATE),
+			.FREQ            (tmp_FREQ),
+			.FREQ_STEP       (tmp_FREQ_STEP),
+			.FREQ_RATE       (tmp_FREQ_RATE),
+			.TIME_START      (tmp_TIME_START),
+			.N_impulse       (tmp_N_impulse),
+			.TYPE_impulse    (tmp_TYPE_impulse),
+			.Interval_Ti     (tmp_Interval_Ti),
+			.Interval_Tp     (tmp_Interval_Tp),
+			.Tblank1         (tmp_Tblank1),
+			.Tblank2         (tmp_Tblank2),
+
+			.SPI_WR          (spi_WR)
+		);
+//---------------------тестовый вывод на уарт-----------------
+logic [407:0] test_data;
+logic [  7:0]  DATA_out;
+logic 		   TxD_busy;	 
+logic 		   SEND;
+
+rst reset_u1_1(clk_48_1,rst_uart1);
 
 
-wire xpll_powerdown;
-wire xtx_digitalreset;
-wire xtx_analogreset;
-wire xtx_cal_busy;
-wire xrx_digitalreset;
-wire xrx_analogreset;
-wire xrx_cal_busy;
+assign test_data={tmp_TIME       ,tmp_FREQ     ,tmp_FREQ_STEP   ,tmp_FREQ_RATE  ,
+					  tmp_TIME_START ,tmp_N_impulse,tmp_TYPE_impulse,tmp_Interval_Ti,
+					  tmp_Interval_Tp,tmp_Tblank1  ,tmp_Tblank2};
 
-wire phy_rst;
+send_to_uart tst_u1
+		(
+			.clk      (clk_48_1),
+			.rst_n    (~rst_uart1),
+			.data_in  (test_data),
+			.RCV      (spi_WR),
+			.BUSY     (TxD_busy),
+			.DATA_out (DATA_out),
+			.SEND     (SEND)
+		);
 
-wire [15:0] xtx_parallel_data_alias;
-wire datak_align;
+logic TxD_test;
 
-//----------------------test_DDS------------------------------
-
-wire [16:0]  nco_faza; 
-wire [ 1:0]  qwadrant;
-
-wire [16:0] nco_x;
-wire [16:0] nco_y;
-
-wire [16:0] cordic_x;	
-wire [16:0] cordic_y;	 
-
-
-
-
-/*
-nco_faza  nco_faza1 (.clk(clk_96Mhz), 
-                     .rst(reset_dds), 
-                     .step(), 
-                     .upr(upr), 
-                     .faza(nco_faza[16:0]), 
-                     .out_v(), 
-                     .qwadrant(qwadrant[1:0]), 
-                     .x(nco_x[16:0]), 
-                     .y(nco_y[16:0]));
-					 
-cordic  cordic1 (.clk(clk_96Mhz), 
-                   .rst(reset_dds), 
-                   .theta_i(nco_faza[16:0]), 
-                   .x_i(nco_x[16:0]), 
-                   .y_i(nco_y[16:0]), 
-                   .theta_o(), 
-                   .x_o(cordic_x[16:0]), 
-                   .y_o(cordic_y[16:0]));  
-				   
-convert_cos  convert_cos1 (.clk(clk_96Mhz), 
-                        .cos_a(cordic_y[16:0]), 
-                        .qwadrant(qwadrant[1:0]), 
-                        .sin_a(cordic_x[16:0]), 
-                        .cos(data_DAC_q[16:0]), 
-                        .sin(data_DAC_i[16:0]));
-*/
+async_transmitter #(
+			.ClkFrequency(48000000),
+			.Baud		 (9600    )
+		) tx1 (
+			.clk       (clk_48_1),
+			.TxD_start (SEND),
+			.TxD_data  (DATA_out),
+			.TxD       (TxD_test),
+			.TxD_busy  (TxD_busy)
+		);
 
 //---------------------JESD204b_dac1--------------------------		 
 
@@ -2091,61 +2153,16 @@ Block_read_spi_v2
 wire [31:0] data_dac;
 wire [15:0] tst_data;
 
-//----------------DDS-------------------
+//----------------DAC1---------------------------------		 
 
-wire [47:0] upr;
-
-wire rst_block003;
-rst reset003(clk_96_dac1,rst_block003);
-Block_write_spi 
- #(48,77) spi_wr_DDS( .clk(clk_96_dac1),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(),.cs(xCS_FPGA1) ,.rst(rst_block003) ,
-	.out
-		 (upr));//
-
-wire reset_dds0;
-rst rst_dds0(clk_96_dac1,reset_dds0);
-
-wire [15:0] data_DAC0_q;
-wire [15:0] data_DAC0_i;
-
-reg [47:0] upr_dds0_reg  =0;
-reg [47:0] upr_dds0_reg_t=0;
-always @(posedge clk_96_dac1) 
-begin
-upr_dds0_reg_t<=upr;
-upr_dds0_reg  <=upr_dds0_reg_t;
-end
-/*	
-dds dds_0 (
-		.clk       (clk_96_dac1),   // clk.clk
-		.reset_n   (~reset_dds0),   	// rst.reset_n
-		.clken     (1),     		// in.clken
-		.phi_inc_i (upr_dds0_reg), 			// phi_inc_i
-		.fsin_o    (data_DAC0_q),    // out.fsin_o
-		.fcos_o    (data_DAC0_i),    // fcos_o
-		.out_valid ()  	// out_valid
-	);
-*/
-DDS_48_v1 dds_0 (
-		.clk         (clk_96_dac1),     // clk.clk
-		.reset_n     (~reset_dds0),     // rst.reset_n
-		.clken       (1),       		//  in.clken
-		.phi_inc_i   (upr_dds0_reg),   	//    .phi_inc_i  48'd43980465111040
-		.freq_mod_i  (0),  				//    .freq_mod_i
-		.phase_mod_i (0), 				//    .phase_mod_i
-		.fsin_o      (data_DAC0_q),     // out.fsin_o
-		.fcos_o      (data_DAC0_i),     //    .fcos_o
-		.out_valid   ()    				//    .out_valid
-	);
-
-	
-//--------------------------------------		 
+//assign data_DAC0_i=data_I;
+//assign data_DAC0_q=data_Q;
 
 wire [15:0] temp_data_q;
 wire [15:0] temp_data_i;
 
-assign temp_data_q={data_DAC0_q[7:0],data_DAC0_q[15:8]};
-assign temp_data_i={data_DAC0_i[7:0],data_DAC0_i[15:8]};
+assign temp_data_q={data_I[7:0],data_I[15:8]};
+assign temp_data_i={data_Q[7:0],data_Q[15:8]};
 
 //    15-01-19		 
 sync_align_ila #(32,4)
@@ -2279,50 +2296,17 @@ Block_read_spi_v2
 
 wire [31:0] data_dac2;
 wire [15:0] tst_data_D2;
-		 
-//----------------DDS-------------------
-wire reset_dds1;
-rst rst_dds(clk_96_dac2,reset_dds1);
 
-wire [15:0] data_DAC1_q;
-wire [15:0] data_DAC1_i;
-
-reg [47:0] upr_dds1_reg  =0;
-reg [47:0] upr_dds1_reg_t=0;
-always @(posedge clk_96_dac2) 
-begin
-upr_dds1_reg_t<=upr;
-upr_dds1_reg  <=upr_dds1_reg_t;
-end
-/*	
-dds dds_1 (
-		.clk       (clk_96_dac2),   // clk.clk
-		.reset_n   (~reset_dds1),  	// rst.reset_n
-		.clken     (1),     		// in.clken
-		.phi_inc_i (upr_dds1_reg), 	// phi_inc_i
-		.fsin_o    (data_DAC1_q),   // out.fsin_o
-		.fcos_o    (data_DAC1_i),   // fcos_o
-		.out_valid ()  				// out_valid
-	);
-*/
-DDS_48_v1 dds_1 (
-		.clk         (clk_96_dac2),     // clk.clk
-		.reset_n     (~reset_dds1),     // rst.reset_n
-		.clken       (1),       		//  in.clken
-		.phi_inc_i   (upr_dds1_reg),   	// upr_dds1_reg   .phi_inc_i
-		.freq_mod_i  (0),  				//    .freq_mod_i
-		.phase_mod_i (0), 				//    .phase_mod_i
-		.fsin_o      (data_DAC1_q),     // out.fsin_o
-		.fcos_o      (data_DAC1_i),     //    .fcos_o
-		.out_valid   ()    				//    .out_valid
-	);	
 //--------------------------------------
+
+//assign data_DAC1_i=data_I;
+//assign data_DAC1_q=data_Q;
 
 wire [15:0] D2_temp_data_q;
 wire [15:0] D2_temp_data_i;
 
-assign D2_temp_data_q={data_DAC1_q[7:0],data_DAC1_q[15:8]};
-assign D2_temp_data_i={data_DAC1_i[7:0],data_DAC1_i[15:8]};
+assign D2_temp_data_q={data_Q[7:0],data_Q[15:8]};
+assign D2_temp_data_i={data_I[7:0],data_I[15:8]};
 
 
 //    15-01-19		 

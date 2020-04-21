@@ -86,8 +86,8 @@ RESERVED_INPUT               : A6        :        :                   :         
 RESERVED_INPUT               : A7        :        :                   :         : 7B        :                
 BOOT0                        : A8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
 VCCIO7B                      : A9        : power  :                   : 3.3V    : 7B        :                
-SPI4_MOSI_MK                 : A10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
-SPI4_MISO_MK                 : A11       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+SPI4_MOSI_MK                 : A10       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
+SPI4_MISO_MK                 : A11       : output : 3.3-V LVCMOS      :         : 7B        : Y              
 VCCIO7C                      : A12       : power  :                   : 3.3V    : 7C        :                
 SFP1_TX_FAULT                : A13       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
 LMK_STATUS_LD2_FPGA_3V3      : A14       : output : 3.3-V LVCMOS      :         : 7C        : Y              
@@ -329,7 +329,7 @@ VCCIO4B                      : AH10      : power  :                   : 1.8V    
 D2_SYNCB                     : AH11      : input  : LVDS              :         : 4C        : Y              
 SYSREF6                      : AH12      : input  : LVDS              :         : 4C        : Y              
 SYSREF5(n)                   : AH13      : input  : LVDS              :         : 4C        : Y              
-RESERVED_INPUT               : AH14      :        :                   :         : 4C        :                
+D_MISO                       : AH14      : output : 2.5 V             :         : 4C        : N              
 RESERVED_INPUT               : AH15      :        :                   :         : 4C        :                
 VCCIO4D                      : AH16      : power  :                   : 1.8V    : 4D        :                
 D1_TXENABLE                  : AH17      : output : 1.8 V             :         : 4D        : Y              
@@ -443,7 +443,7 @@ VCCIO7A                      : C6        : power  :                   : 3.3V    
 BOOT1                        : C7        : output : 3.3-V LVCMOS      :         : 7B        : Y              
 SPI2_NSS_MK                  : C8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
 VCCIO7B                      : C9        : power  :                   : 3.3V    : 7B        :                
-D_MOSI                       : C10       : input  : 2.5 V             :         : 7B        : N              
+RESERVED_INPUT               : C10       :        :                   :         : 7B        :                
 RESERVED_INPUT               : C11       :        :                   :         : 7B        :                
 VCCIO7C                      : C12       : power  :                   : 3.3V    : 7C        :                
 SFP1_LOS                     : C13       : input  : 3.3-V LVCMOS      :         : 7C        : Y              
@@ -568,7 +568,7 @@ RESERVED_INPUT               : G11       :        :                   :         
 RESERVED_INPUT               : G12       :        :                   :         : 7C        :                
 UPR_SWITCH2                  : G13       : output : 3.3-V LVCMOS      :         : 7C        : Y              
 LMK_STATUS_LD1_FPGA_3V3      : G14       : output : 3.3-V LVCMOS      :         : 7C        : Y              
-RESERVED_INPUT               : G15       :        :                   :         : 7D        :                
+D_MOSI                       : G15       : input  : 2.5 V             :         : 7D        : N              
 WDATA_MK2                    : G16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
 CS_DAC2                      : G17       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
 RESERVED_INPUT               : G18       :        :                   :         : 7D        :                
@@ -623,7 +623,7 @@ ADDR3                        : J6        : input  : 3.3-V LVCMOS      :         
 INT1_FPGA                    : J7        : output : 3.3-V LVCMOS      :         : 7A        : Y              
 UART1_TX                     : J8        : input  : 3.3-V LVCMOS      :         : 7B        : Y              
 RESERVED_INPUT               : J9        :        :                   :         : 7B        :                
-SPI4_SCK_MK                  : J10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+SPI4_SCK_MK                  : J10       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
 RESERVED_INPUT               : J11       :        :                   :         : 7C        :                
 RESERVED_INPUT               : J12       :        :                   :         : 7C        :                
 RESERVED_INPUT               : J13       :        :                   :         : 7C        :                
@@ -653,7 +653,7 @@ ADDR2                        : K6        : input  : 3.3-V LVCMOS      :         
 RESERVED_INPUT               : K7        :        :                   :         : 7A        :                
 UART1_RX                     : K8        : output : 3.3-V LVCMOS      :         : 7B        : Y              
 RESERVED_INPUT               : K9        :        :                   :         : 7B        :                
-SPI4_NSS_MK                  : K10       : output : 3.3-V LVCMOS      :         : 7B        : Y              
+SPI4_NSS_MK                  : K10       : input  : 3.3-V LVCMOS      :         : 7B        : Y              
 TNC_MK_1HZ                   : K11       : output : 3.3-V LVCMOS      :         : 7C        : Y              
 RESERVED_INPUT               : K12       :        :                   :         : 7C        :                
 RESERVED_INPUT               : K13       :        :                   :         : 7C        :                
@@ -956,7 +956,7 @@ GND                          : Y9        : gnd    :                   :         
 VCCPD4BCD                    : Y10       : power  :                   : 2.5V    : 4B, 4C, 4D :                
 GND                          : Y11       : gnd    :                   :         :           :                
 RESERVED_INPUT               : Y12       :        :                   :         : 4C        :                
-D_MISO                       : Y13       : output : 2.5 V             :         : 4C        : N              
+RESERVED_INPUT               : Y13       :        :                   :         : 4C        :                
 GND                          : Y14       : gnd    :                   :         :           :                
 VCCPD4BCD                    : Y15       : power  :                   : 2.5V    : 4B, 4C, 4D :                
 DNU                          : Y16       :        :                   :         :           :                
