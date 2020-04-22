@@ -230,7 +230,7 @@ GND                          : AE1       : gnd    :                   :         
 GND                          : AE2       : gnd    :                   :         :           :                
 GND                          : AE3       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AE4       :        :                   :         : 4A        :                
-RESERVED_INPUT               : AE5       :        :                   :         : 4A        :                
+D_MOSI                       : AE5       : input  : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT               : AE6       :        :                   :         : 4A        :                
 RESERVED_INPUT               : AE7       :        :                   :         : 4A        :                
 A2_RESET_1V8                 : AE8       : output : 1.8 V             :         : 4B        : Y              
@@ -268,7 +268,7 @@ A1_CTRL2_1V8                 : AF9       : output : 1.8 V             :         
 A2_SCLK_1V8                  : AF10      : output : 1.8 V             :         : 4B        : Y              
 GND                          : AF11      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF12      :        :                   :         : 4C        :                
-RESERVED_INPUT               : AF13      :        :                   :         : 4C        :                
+D_MISO                       : AF13      : output : 2.5 V             :         : 4C        : N              
 GND                          : AF14      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF15      :        :                   :         : 4C        :                
 D1_SDO                       : AF16      : input  : 1.8 V             :         : 4D        : Y              
@@ -329,7 +329,7 @@ VCCIO4B                      : AH10      : power  :                   : 1.8V    
 D2_SYNCB                     : AH11      : input  : LVDS              :         : 4C        : Y              
 SYSREF6                      : AH12      : input  : LVDS              :         : 4C        : Y              
 SYSREF5(n)                   : AH13      : input  : LVDS              :         : 4C        : Y              
-D_MISO                       : AH14      : output : 2.5 V             :         : 4C        : N              
+RESERVED_INPUT               : AH14      :        :                   :         : 4C        :                
 RESERVED_INPUT               : AH15      :        :                   :         : 4C        :                
 VCCIO4D                      : AH16      : power  :                   : 1.8V    : 4D        :                
 D1_TXENABLE                  : AH17      : output : 1.8 V             :         : 4D        : Y              
@@ -568,7 +568,7 @@ RESERVED_INPUT               : G11       :        :                   :         
 RESERVED_INPUT               : G12       :        :                   :         : 7C        :                
 UPR_SWITCH2                  : G13       : output : 3.3-V LVCMOS      :         : 7C        : Y              
 LMK_STATUS_LD1_FPGA_3V3      : G14       : output : 3.3-V LVCMOS      :         : 7C        : Y              
-D_MOSI                       : G15       : input  : 2.5 V             :         : 7D        : N              
+RESERVED_INPUT               : G15       :        :                   :         : 7D        :                
 WDATA_MK2                    : G16       : output : 3.3-V LVCMOS      :         : 7D        : Y              
 CS_DAC2                      : G17       : input  : 3.3-V LVCMOS      :         : 7D        : Y              
 RESERVED_INPUT               : G18       :        :                   :         : 7D        :                

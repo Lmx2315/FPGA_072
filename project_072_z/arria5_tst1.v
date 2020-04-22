@@ -815,7 +815,8 @@ wire xSPI3_SCK;
 wire xSPI3_CS;
 wire xSPI3_MISO;
 wire xSPI2_NSS_MK;
-	 
+	
+/*	 
 bufout4	bufout4_1 (
 	.datain ( 
 	{xSPI4_SCK_MK,
@@ -829,7 +830,7 @@ bufout4	bufout4_1 (
   	 SPI3_MISO}
 	 )
 	);
-
+*/
  bufi3	bufi3_1 (
 	.datain ( 
 	{SPI3_MOSI,
@@ -1435,7 +1436,8 @@ assign xSPI3_MISO_AND =
 									
 //---------------------------------------------									
 //assign xSPI3_MISO = xD1_SDO;//TEST!!!
-									
+
+assign SPI3_MISO =	xSPI3_MISO;						
  
 assign xSPI3_MISO  = (!xCS_FPGA1)          ?xSPI3_MISO_AND:
 					 (!xCS_LMK  )	       ?xLMK_RESET_3V3://вывожу spi с LMK через её ногу reset
@@ -1475,13 +1477,13 @@ assign xDE1RX_RS422 = ~xCS_FPGA2;
 assign xRX_FTDI_2   =  TxD_test;//тут выводим тестовые данные с SPI-DMA (SPI4)  xUART6_TX
 
 //-------------SYS_SPI----------------
-	  
+/*	  
 assign xD_MISO           = xSPI4_MISO_MK;
 assign xSPI4_NSS_MK      = xCE_MO;
 assign xCLK_MO           = xSPI4_SCK_MK;
 assign xSPI4_MOSI_MK     = xD_MOSI;
 //assign xDE_MISO_LVDS_3V3 = xLMK_STATUS_LD1_3V3; //управление буфером lvds - MISO от микроконтроллера 
-
+*/
 //----------------ADC-------------------
 
 reg r_xA1_RESET_1V8 =0;
@@ -2022,6 +2024,10 @@ rst reset_spi1_1(clk_48_1,rst_spi1);
 
 assign TYPE_impulse=tmp_TYPE_impulse[1:0];//используем два младших бита как тип импульсов
 
+assign xSPI4_SCK_MK =SPI4_SCK_MK ;
+assign xSPI4_NSS_MK =SPI4_NSS_MK ;
+assign xSPI4_MOSI_MK=SPI4_MOSI_MK;
+
 DMA_SPI 
 spi1
 		(
@@ -2064,7 +2070,7 @@ send_to_uart tst_u1
 		(
 			.clk      (clk_48_1),
 			.rst_n    (~rst_uart1),
-			.data_in  (test_data),
+			.data_in  (test_data),//
 			.RCV      (spi_WR),
 			.BUSY     (TxD_busy),
 			.DATA_out (DATA_out),

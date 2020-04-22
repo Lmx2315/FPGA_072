@@ -1,5 +1,5 @@
 EDA Netlist Writer report for arria5_tst1
-Tue Apr 21 13:04:28 2020
+Wed Apr 22 18:12:09 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Apr 21 13:04:28 2020 ;
+; EDA Netlist Writer Status ; Successful - Wed Apr 22 18:12:09 2020 ;
 ; Revision Name             ; arria5_tst1                           ;
 ; Top-level Entity Name     ; top_module                            ;
 ; Family                    ; Arria V                               ;
@@ -66,13 +66,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+--------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Simulation Generated Files                                                        ;
-+-----------------------------------------------------------------------------------+
-; Generated Files                                                                   ;
-+-----------------------------------------------------------------------------------+
-; C:/Work/Altera_project/FPGA_072/project_072_z/simulation/modelsim/arria5_tst1.svo ;
-+-----------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                          ;
++-------------------------------------------------------------------------------------+
+; Generated Files                                                                     ;
++-------------------------------------------------------------------------------------+
+; C:/Work_murmansk/Quartus/FPGA_072/project_072_z/simulation/modelsim/arria5_tst1.svo ;
++-------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,7 +81,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Tue Apr 21 13:03:53 2020
+    Info: Processing started: Wed Apr 22 18:11:30 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off arria5_tst1 -c arria5_tst1
 Warning (125092): Tcl Script File BUFIN24.qip not found
     Info (125063): set_global_assignment -name QIP_FILE BUFIN24.qip
@@ -92,11 +92,11 @@ Warning (125092): Tcl Script File pll125/pll125_0002.qip not found
 Warning (125092): Tcl Script File r.qip not found
     Info (125063): set_global_assignment -name QIP_FILE r.qip
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
-Info (204019): Generated file arria5_tst1.svo in folder "C:/Work/Altera_project/FPGA_072/project_072_z/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file arria5_tst1.svo in folder "C:/Work_murmansk/Quartus/FPGA_072/project_072_z/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1221 megabytes
-    Info: Processing ended: Tue Apr 21 13:04:29 2020
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:35
+    Info: Peak virtual memory: 1216 megabytes
+    Info: Processing ended: Wed Apr 22 18:12:10 2020
+    Info: Elapsed time: 00:00:40
+    Info: Total CPU time (on all processors): 00:00:39
 
 

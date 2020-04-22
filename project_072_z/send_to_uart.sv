@@ -25,22 +25,33 @@ logic FLAG_SEND    =0;
 
 always_ff @(posedge clk) 
 begin
-	if(~rst_n) begin
-		 MEM<= 0;
+	if(~rst_n) 
+	begin
+	 MEM	  <=0;
+	 FLAG_SEND<=0;	
 	end else 
 	if (RCV)
 	begin
 	MEM	 	 <= data_in;
 	FLAG_WORK<=1'b1;
+	FLAG_SEND<=0;	
 	N_sch    <=8'd51;//количество байт во входных данных
 	end else
 	if (FLAG_WORK)
 	begin
 		if (BUSY==0)
 		begin
-		if (FLAG_SEND==0)  MEM<=MEM<<8;
-		    FLAG_SEND<=1;	
-		if (N_sch>0) N_sch<=N_sch-1'b1; else FLAG_WORK<=0;
+		FLAG_SEND<=1;
+		if (FLAG_SEND==0)
+			begin
+			if (FLAG_SEND==0)  MEM<=MEM<<8;
+			if (N_sch>0) N_sch<=N_sch-1'b1; 
+			else 
+				begin 
+				FLAG_WORK<=0;
+				FLAG_SEND<=0;
+				end	
+			end		
 		end 
 			else FLAG_SEND<=0;	
 	end
