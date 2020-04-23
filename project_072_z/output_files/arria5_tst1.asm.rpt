@@ -1,5 +1,5 @@
 Assembler report for arria5_tst1
-Wed Apr 22 18:08:54 2020
+Thu Apr 23 14:31:39 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Work_murmansk/Quartus/FPGA_072/project_072_z/output_files/arria5_tst1.sof
+  6. Assembler Device Options: F:/project_072_z/output_files/arria5_tst1.sof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Apr 22 18:08:54 2020 ;
+; Assembler Status      ; Successful - Thu Apr 23 14:31:39 2020 ;
 ; Revision Name         ; arria5_tst1                           ;
 ; Top-level Entity Name ; top_module                            ;
 ; Family                ; Arria V                               ;
@@ -58,27 +58,28 @@ refer to the applicable agreement for further details.
 +--------+-----------------------------------+--------------+
 ; Vendor ; IP Core Name                      ; License Type ;
 +--------+-----------------------------------+--------------+
+; Altera ; NCO Compiler (6AF7 0014)          ; Licensed     ;
 ; Altera ; Triple-Speed Ethernet (6AF7 00BD) ; Licensed     ;
 +--------+-----------------------------------+--------------+
 
 
-+------------------------------------------------------------------------------+
-; Assembler Generated Files                                                    ;
-+------------------------------------------------------------------------------+
-; File Name                                                                    ;
-+------------------------------------------------------------------------------+
-; C:/Work_murmansk/Quartus/FPGA_072/project_072_z/output_files/arria5_tst1.sof ;
-+------------------------------------------------------------------------------+
++-----------------------------------------------+
+; Assembler Generated Files                     ;
++-----------------------------------------------+
+; File Name                                     ;
++-----------------------------------------------+
+; F:/project_072_z/output_files/arria5_tst1.sof ;
++-----------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Work_murmansk/Quartus/FPGA_072/project_072_z/output_files/arria5_tst1.sof ;
-+----------------+---------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                               ;
-+----------------+---------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x04A16A8B                                                                            ;
-; Checksum       ; 0x04A16A8B                                                                            ;
-+----------------+---------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------+
+; Assembler Device Options: F:/project_072_z/output_files/arria5_tst1.sof ;
++----------------+--------------------------------------------------------+
+; Option         ; Setting                                                ;
++----------------+--------------------------------------------------------+
+; JTAG usercode  ; 0x050C4931                                             ;
+; Checksum       ; 0x050C4931                                             ;
++----------------+--------------------------------------------------------+
 
 
 +--------------------+
@@ -87,7 +88,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Wed Apr 22 18:08:13 2020
+    Info: Processing started: Thu Apr 23 14:30:59 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off arria5_tst1 -c arria5_tst1
 Warning (125092): Tcl Script File BUFIN24.qip not found
     Info (125063): set_global_assignment -name QIP_FILE BUFIN24.qip
@@ -99,8 +100,8 @@ Warning (125092): Tcl Script File r.qip not found
     Info (125063): set_global_assignment -name QIP_FILE r.qip
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 995 megabytes
-    Info: Processing ended: Wed Apr 22 18:08:54 2020
+    Info: Peak virtual memory: 1033 megabytes
+    Info: Processing ended: Thu Apr 23 14:31:40 2020
     Info: Elapsed time: 00:00:41
     Info: Total CPU time (on all processors): 00:00:41
 

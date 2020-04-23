@@ -91,17 +91,17 @@ begin
 		end
 end
 
-assign 		       TIME=REG_CLK[407:344];
-assign 		       FREQ=REG_CLK[343:296];
-assign        FREQ_STEP=REG_CLK[295:248];
-assign        FREQ_RATE=REG_CLK[247:216];
-assign       TIME_START=REG_CLK[215:152];
-assign        N_impulse=REG_CLK[151:136];
-assign     TYPE_impulse=REG_CLK[135:128];
-assign      Interval_Ti=REG_CLK[127: 96];
-assign      Interval_Tp=REG_CLK[ 95: 64];
-assign          Tblank1=REG_CLK[ 63: 32];
-assign          Tblank2=REG_CLK[ 31:  0];
+assign 		       TIME=REG_CLK[407:344];//m[ 0- 7]  56 , 48 , 40 , 32 , 24 , 16 , 8 , 0
+assign 		       FREQ=REG_CLK[343:296];//m[ 8-13]          , 40 , 32 , 24 , 16 , 8 , 0
+assign        FREQ_STEP=REG_CLK[295:248];//m[14-19]			 , 40 , 32 , 24 , 16 , 8 , 0
+assign        FREQ_RATE=REG_CLK[247:216];//m[20-23]			             24 , 16 , 8 , 0
+assign       TIME_START=REG_CLK[215:152];//m[24-31]  56 , 48 , 40 , 32 , 24 , 16 , 8 , 0
+assign        N_impulse=REG_CLK[151:136];//m[32-33] 							   8 , 0
+assign     TYPE_impulse=REG_CLK[135:128];//m[34] 									 , 0
+assign      Interval_Ti=REG_CLK[127: 96];//m[35-38]						 24 , 16 , 8 , 0
+assign      Interval_Tp=REG_CLK[ 95: 64];//m[39-42]						 24 , 16 , 8 , 0
+assign          Tblank1=REG_CLK[ 63: 32];//m[43-46]	                     24 , 16 , 8 , 0
+assign          Tblank2=REG_CLK[ 31:  0];//m[47-50] 					 24 , 16 , 8 , 0
 assign 		     SPI_WR=FLAG_SPI_WR;
 assign 	SYS_TIME_UPDATE=FLAG_SYS_TIME_UPDATE;		
 

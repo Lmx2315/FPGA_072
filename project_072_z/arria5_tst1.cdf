@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5AGXMA7G4F31) Path("C:/Work_murmansk/Quartus/FPGA_072/project_072_z/output_files/") File("arria5_tst1.sof") MfrSpec(OpMask(1));
+		Device PartName(5AGXMA7G4F31) Path("F:/project_072_z/output_files/") File("arria5_tst1.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

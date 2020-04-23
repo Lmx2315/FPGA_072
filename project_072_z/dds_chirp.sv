@@ -4,8 +4,8 @@ module dds_chirp (
 	input REQ,  	//запрос на передачу данных из 125 МГц в 96 МГц
    output ACK,		//подтверждение что данные переданы
 	input [47:0] DDS_freq,
-	input [47:0] DDS_delta_freq,
-	input [31:0] DDS_delta_rate,
+	input [47:0] DDS_delta_freq,//шаг пересчёта фазы
+	input [31:0] DDS_delta_rate,//таймер пересчёта фазы 1/96 
 	input start,
 	output[15:0] data_I,
 	output[15:0] data_Q,
@@ -77,7 +77,7 @@ begin
 		reg_clk_en	 <= 1'b0;
 	end
 end
-/*
+
 DDS_48_v1 dds_0 (
 		.clk         (clk_96),     		// clk.clk
 		.reset_n     (reg_rst_n),  		// rst.reset_n
@@ -89,5 +89,5 @@ DDS_48_v1 dds_0 (
 		.fcos_o      (data_Q),     		//    .fcos_o
 		.out_valid   (valid)  			//    .out_valid
 	);
-*/
+
 endmodule

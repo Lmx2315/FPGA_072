@@ -1422,7 +1422,7 @@ assign xSPI3_MISO_AND =
 				    		xSPI3_MISO25&//DAC2
 
 				//    		xSPI3_MISO26&//ADC1
-				//   		xSPI3_MISO27&////не используется
+				     		xSPI3_MISO27&//тестируем модуль приёма данных для блока sync
 				    		xSPI3_MISO28&//ADC1
 				    		xSPI3_MISO29&//ADC1
 				    		xSPI3_MISO30&//ADC1
@@ -1974,6 +1974,9 @@ sync1(
 .En_Pr 				(En_Pr 				)   //сформированый интервал Приёма
 );
 
+assign xFPGA_LED1_3V3=En_Iz;//тестовый вывод на HL10
+
+
 rst reset_wcm1_1(clk_48_1,rst_wcm1);
 
 wcm 
@@ -2046,7 +2049,7 @@ spi1
 			.TIME_START      (tmp_TIME_START),
 			.N_impulse       (tmp_N_impulse),
 			.TYPE_impulse    (tmp_TYPE_impulse),
-			.Interval_Ti     (tmp_Interval_Ti),
+			.Interval_Ti     (tmp_Interval_Ti),//интервал измеряется в 1/48 МГц - еденицах
 			.Interval_Tp     (tmp_Interval_Tp),
 			.Tblank1         (tmp_Tblank1),
 			.Tblank2         (tmp_Tblank2),
@@ -2090,6 +2093,9 @@ async_transmitter #(
 			.TxD_busy  (TxD_busy)
 		);
 
+ Block_read_spi_v2 
+ #(64,49) spi_test_sync(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO27)  ,.cs(xCS_FPGA1)  ,.rst(0),
+						 .clr(),           .inport (tmp_TIME)); //чтение test
 //---------------------JESD204b_dac1--------------------------		 
 
 wire 			 dac1_phy_mgmt_clk;
@@ -2598,7 +2604,7 @@ assign SWE  = w_swe;
 assign ABE0 = w_abe[0];
 assign ABE1 = w_abe[1];
 
-assign xFPGA_LED1_3V3=0;
+//assign xFPGA_LED1_3V3=0;
 assign CLK_OUT=clk_125_n;//clk_125_90 clk_125_n
 
 

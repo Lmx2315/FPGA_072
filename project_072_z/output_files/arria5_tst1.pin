@@ -142,7 +142,7 @@ GND                          : AB3       : gnd    :                   :         
 GND                          : AB4       : gnd    :                   :         :           :                
 VCCIO4A                      : AB5       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AB6       :        :                   :         : 4A        :                
-RESERVED_INPUT               : AB7       :        :                   :         : 4A        :                
+D_MOSI                       : AB7       : input  : 2.5 V             :         : 4A        : N              
 D2_SYNC_N_AB                 : AB8       : input  : 1.8 V             :         : 4B        : Y              
 A1_SDOUT_1V8                 : AB9       : input  : 1.8 V             :         : 4B        : Y              
 A1_SEN_1V8                   : AB10      : output : 1.8 V             :         : 4B        : Y              
@@ -230,7 +230,7 @@ GND                          : AE1       : gnd    :                   :         
 GND                          : AE2       : gnd    :                   :         :           :                
 GND                          : AE3       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AE4       :        :                   :         : 4A        :                
-D_MOSI                       : AE5       : input  : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AE5       :        :                   :         : 4A        :                
 RESERVED_INPUT               : AE6       :        :                   :         : 4A        :                
 RESERVED_INPUT               : AE7       :        :                   :         : 4A        :                
 A2_RESET_1V8                 : AE8       : output : 1.8 V             :         : 4B        : Y              
@@ -259,7 +259,7 @@ GND                          : AE30      : gnd    :                   :         
 RREF                         : AF1       :        :                   :         :           :                
 DNU                          : AF2       :        :                   :         :           :                
 GND                          : AF3       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AF4       :        :                   :         : 4A        :                
+D_MISO                       : AF4       : output : 2.5 V             :         : 4A        : N              
 GND                          : AF5       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF6       :        :                   :         : 4A        :                
 RESERVED_INPUT               : AF7       :        :                   :         : 4A        :                
@@ -268,7 +268,7 @@ A1_CTRL2_1V8                 : AF9       : output : 1.8 V             :         
 A2_SCLK_1V8                  : AF10      : output : 1.8 V             :         : 4B        : Y              
 GND                          : AF11      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF12      :        :                   :         : 4C        :                
-D_MISO                       : AF13      : output : 2.5 V             :         : 4C        : N              
+RESERVED_INPUT               : AF13      :        :                   :         : 4C        :                
 GND                          : AF14      : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF15      :        :                   :         : 4C        :                
 D1_SDO                       : AF16      : input  : 1.8 V             :         : 4D        : Y              

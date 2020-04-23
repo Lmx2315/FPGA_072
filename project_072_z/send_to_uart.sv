@@ -22,6 +22,7 @@ logic [407:0] MEM  =0;
 logic FLAG_WORK    =0;
 logic [  7:0] N_sch=0;
 logic FLAG_SEND    =0;
+logic [  7:0] dat_o=0;
 
 always_ff @(posedge clk) 
 begin
@@ -44,7 +45,7 @@ begin
 		FLAG_SEND<=1;
 		if (FLAG_SEND==0)
 			begin
-			if (FLAG_SEND==0)  MEM<=MEM<<8;
+			if (FLAG_SEND==0)  begin MEM<=MEM<<8; dat_o<=MEM[407:400]; end
 			if (N_sch>0) N_sch<=N_sch-1'b1; 
 			else 
 				begin 
@@ -59,6 +60,6 @@ begin
 end
 
 assign SEND     = FLAG_SEND;
-assign DATA_out = MEM[407:400];
+assign DATA_out = dat_o;
 
 endmodule
