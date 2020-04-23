@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Apr 23 14:30:37 2020
+Fitter Status : Successful - Thu Apr 23 17:57:56 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : arria5_tst1
 Top-level Entity Name : top_module
 Family : Arria V
 Device : 5AGXMA7G4F31C4
 Timing Models : Final
-Logic utilization (in ALMs) : 11,976 / 91,680 ( 13 % )
-Total registers : 25800
+Logic utilization (in ALMs) : 11,992 / 91,680 ( 13 % )
+Total registers : 25777
 Total pins : 269 / 468 ( 57 % )
 Total virtual pins : 0
 Total block memory bits : 722,150 / 13,987,840 ( 5 % )

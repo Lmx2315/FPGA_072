@@ -1877,7 +1877,7 @@ logic [31:0] FREQ_RATE 		;
 logic [63:0] TIME_START		;
 logic [63:0] TIME_INIT		;
 logic 		 SYS_TIME_UPDATE;
-logic 		 T1HZ 			;
+logic 		 T1HZ 			;//имитация секундной метки
 logic 		 spi_WR 		;//сигнал записи данных из вне в реестр реального времени
 logic 		 mem_WR			;//сигнал записи данных из реестра реального времени в синхронизатор
 logic [15:0] N_impuls 		;
@@ -1974,7 +1974,7 @@ sync1(
 .En_Pr 				(En_Pr 				)   //сформированый интервал Приёма
 );
 
-assign xFPGA_LED1_3V3=En_Iz;//тестовый вывод на HL10
+assign xFPGA_LED1_3V3=SYS_TIME_UPDATE_OK;//тестовый вывод на HL10
 
 
 rst reset_wcm1_1(clk_48_1,rst_wcm1);
@@ -2095,7 +2095,7 @@ async_transmitter #(
 
  Block_read_spi_v2 
  #(64,49) spi_test_sync(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO27)  ,.cs(xCS_FPGA1)  ,.rst(0),
-						 .clr(),           .inport (tmp_TIME)); //чтение test
+						 .clr(),           .inport ({tmp_TIME_START})); //чтение test
 //---------------------JESD204b_dac1--------------------------		 
 
 wire 			 dac1_phy_mgmt_clk;
