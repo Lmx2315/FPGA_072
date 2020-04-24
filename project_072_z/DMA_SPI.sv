@@ -32,17 +32,6 @@ module DMA_SPI (
 	output 		  SPI_WR       
 );
 
-//-------регистры для хранения команды из spi
-logic [ 47:0] 	 tmp_FREQ 		    =0;
-logic [ 47:0] 	 tmp_FREQ_STEP 	    =0;
-logic [ 31:0] 	 tmp_FREQ_RATE	    =0;
-logic [ 63:0]    tmp_TIME_START     =0;
-logic [ 15:0]    tmp_N_impulse      =0;
-logic [  7:0]    tmp_TYPE_impulse   =0;
-logic [ 31:0]    tmp_Interval_Ti    =0;
-logic [ 31:0]    tmp_Interval_Tp    =0;
-logic [ 31:0]    tmp_Tblank1	    =0;
-logic [ 31:0]    tmp_Tblank2	    =0;
 
 logic [407:0]  REG_SPI=0;//асинхронный регистр
 logic [407:0]  REG_CLK=0;//синхронный регистр
@@ -86,7 +75,7 @@ begin
 		end	else
 		begin
 		FLAG_SPI_WR<=0;
-		if (timer>0) timer<=timer-1; 
+		if (timer>8'h0) timer<=timer-1; 
 		else FLAG_SYS_TIME_UPDATE<=0; 
 		end
 end

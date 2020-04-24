@@ -25,7 +25,8 @@ output [ 1:0] TYPE_impulse_z ,
 output [31:0] Interval_Ti_z  ,
 output [31:0] Interval_Tp_z  ,
 output [31:0] Tblank1_z      ,
-output [31:0] Tblank2_z    	  //-----//-------	 
+output [31:0] Tblank2_z    	 ,//-----//-------	 
+output [31:0] TEST 			 
 );
 
 parameter N_IDX      = 8;//размер памяти в строках (N-1)
@@ -53,7 +54,7 @@ logic [ 31:0]    mem_Interval_Tp    =0;
 logic [ 31:0]    mem_Tblank1	    =0;
 logic [ 31:0]    mem_Tblank2	    =0;
 //----------------------------------------
-logic [337:0]    data_sig           =0;
+
 logic [337:0] 	   w_REG_DATA       =0;//данные для записи в реестр
 logic [  7:0] 	   w_REG_ADDR       =0;//адрес в реестре куда можно делать свежую запись
 logic [  7:0]     rd_REG_ADDR       =0;//адрес в реестре для чтения
@@ -65,12 +66,12 @@ logic 			 FLAG_WORK_PROCESS	=0;//сигнал что идёт какой-то п
 logic 			 FLAG_CLR_COMMAND   =0;//флаг того что надо стереть команду в памяти
 logic 			 FLAG_WR_COMMAND    =0;//флаг того что надо записать новую команду в память
 logic 			 FLAG_CMD_SEARCH    =0;//флаг что найдена команда к исполнению в следующие 8 мкс
-logic 			 FLAG_SPI_WR 		=0;//флаг того что произошла запись из spi
+
 logic [  2:0]	 FLAG_REG_STATUS	=0;//флаг того что найдено место в памяти для новой команды
 logic [337:0] 	 DATA_TIME_REG 		=0;//
-logic [ 63:0]    CMD_TIME			=0;//время исполнения команды
+
 logic [ 63:0]    reg_TIME 			=0;//тут храним текущее время
-logic [ 63:0]    tmp_TIME 			=0;//временное время, для поиска ближайшей на исполнение команды
+
 logic 			 reg_DATA_WR		=0;//сигнал записи данных в память синхроблока
 logic [ 63:0]    tmp_CMD_TIME		=0;//временное хранение данных для поиска команды в реестре
 logic [  7:0] 	 tmp_CMD_ADDR 		=0;//временное хранение данных для поиска команды в реестре	
@@ -80,7 +81,7 @@ logic 			FLAG_WR_SPI_DATA	=0;//флаг того что была запись д
 logic [  2:0]   frnt2               =0;//регистр для поиска фронта сигнала SYS_TIME_UPDATE
 logic [  2:0]   frnt3				=0;//регистр поиска фронта  сигнала REQ_COMM
 logic [ 63:0]   var1				=64'h0000000000000000;//переменная обозначает пустое место в памяти
-logic [  1:0]   tmp_delay 			=0;//задержка для учёта латентности
+
 logic [  7:0]   t0_CMD_ADDR 	    =0;//адресс команды с учётом латентности
 logic [  7:0]   t1_CMD_ADDR 	    =0;//адресс команды с учётом латентности
 logic 			FLAG_SRCH			=0;//флаг того что круг поиска завершён
@@ -88,7 +89,6 @@ logic 			FLAG_REQ_COMM 		=0;//флаг запроса по сигналу REQ_CO
 logic 			FLAG_NEW_CMD_WR 	=0;//флаг начала поиска новой команды на исполнение, после записи в реестр
 logic 			FLAG_SRCH_FAULT		=0;//флаг неудачного поиска новой команды в реестре
  //-----------------------------------------------------------------------------------------------------------
-enum {idle_clr,start,clear,cycle,end_cycle			  							  } clr_state,clr_next_state;
 enum {clr_all,clr_data,wr_data,idle_status			  							  } status   ,next_status   ; 
 enum {search_a,end_search,read_data,end_read_data,search_time,end_search_time,step2_search_time,step3_search_time,idle  } rd_status,rd_next_status;
 
@@ -129,7 +129,6 @@ begin
 	end else
 	 begin
 	 reg_TIME <= TIME ;//перезапоминаем время
-	 tmp_TIME <= reg_TIME+TIME_REZERV;
 	 end
 end
 
@@ -171,16 +170,6 @@ always_comb
 	step3_search_time:rd_next_status=end_search_time;
 	  end_search_time:rd_next_status=idle;
 	         default :rd_next_status=idle;
-	endcase
-end
-
-always_comb
- begin
-	case (clr_state)
-		 idle_clr:clr_next_state=start;
-		    start:clr_next_state=clear;
-		    clear:clr_next_state=end_cycle;
-		  default:clr_next_state=end_cycle;
 	endcase
 end
 
@@ -316,7 +305,7 @@ begin
 
 end
 
-
+assign TEST 		 = {29'h0,FLAG_REG_STATUS};
 assign DATA_WR       = reg_DATA_WR     ;
 assign FREQ_z        = mem_FREQ        ;      
 assign FREQ_STEP_z   = mem_FREQ_STEP   ;

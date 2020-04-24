@@ -1430,8 +1430,8 @@ assign xSPI3_MISO_AND =
 				    		xSPI3_MISO32&//ADC1
 				    		xSPI3_MISO33&//ADC1
 				    		xSPI3_MISO34&//ADC1
-				    		xSPI3_MISO35;//
-				    //		xSPI3_MISO36&//
+				    		xSPI3_MISO35&//
+				    		xSPI3_MISO36;//тестируем модуль приёма данных для блока sync
 				    //		xSPI3_MISO37 //
 									
 //---------------------------------------------									
@@ -1881,7 +1881,7 @@ logic 		 T1HZ 			;//имитация секундной метки
 logic 		 spi_WR 		;//сигнал записи данных из вне в реестр реального времени
 logic 		 mem_WR			;//сигнал записи данных из реестра реального времени в синхронизатор
 logic [15:0] N_impuls 		;
-logic [ 1:0] TYPE_impulse 	;
+
 logic [31:0] Interval_Ti 	;
 logic [31:0] Interval_Tp 	;
 logic [31:0] Tblank1 		;
@@ -1943,6 +1943,8 @@ dds1(
 rst reset_sync1_1(clk_48_1,rst_sync1);
 test_t1hz inst_test_t1hz (.clk(clk_48_1), .z(T1HZ));//временная тестовая имитация квазисекундной метки (67/48)
 
+logic [64:0] test_mstrt;
+
 master_start 
 sync1(
 .DDS_freq 			(wFREQ 				),
@@ -1956,7 +1958,6 @@ sync1(
 .CLK 				(clk_48_1 			),
 .SYS_TIME 			(tmp_TIME			),	//код времени для предустановки по сигналу T1c
 .SYS_TIME_UPDATE 	(SYS_TIME_UPDATE 	),	//сигнал управления который включает готовность установки системного времени по сигналу T1hz 
-.TIME 				(TIME 				),
 .T1hz 				(T1HZ 				),	//сигнал секундной метки
 .WR_DATA 			(mem_WR 			),  //сигнал записи данных в синхронизатор
 .MEM_DDS_freq 		(mFREQ 				),  //данные команды из реестра реального времени
@@ -1970,14 +1971,18 @@ sync1(
 .MEM_Tblank1		(mTblank1 			),  //данные команды из реестра реального времени
 .MEM_Tblank2 		(mTblank2 			),  //данные команды из реестра реального времени
 .SYS_TIME_UPDATE_OK (SYS_TIME_UPDATE_OK ),	//флаг показывающий,что по секундной метке произошла установка системного времени
+.TIME 				(TIME 				),
+.TEST 				(test_mstrt         ),	//тестовый вывод внутренней информации
 .En_Iz 				(En_Iz 				),  //сформированый интервал Излучения
 .En_Pr 				(En_Pr 				)   //сформированый интервал Приёма
 );
 
-assign xFPGA_LED1_3V3=SYS_TIME_UPDATE_OK;//тестовый вывод на HL10
+assign xFPGA_LED1_3V3=En_Iz;//тестовый вывод на HL10
 
 
 rst reset_wcm1_1(clk_48_1,rst_wcm1);
+
+logic [31:0] TEST_wcw;
 
 wcm 
 wcm1(						  		  //блок записи и чтения команд реального времени в память и из.
@@ -2003,11 +2008,12 @@ wcm1(						  		  //блок записи и чтения команд реаль
 .FREQ_RATE_z    (mFREQ_RATE 	 	),
 .TIME_START_z   (mTIME_START	 	),
 .N_impuls_z     (mN_impuls 	 		),
-.TYPE_impulse_z (mTYPE_impulse		),
+.TYPE_impulse_z (mTYPE_impulse		), //2 бита шириной!!!
 .Interval_Ti_z  (mInterval_Ti 		),
 .Interval_Tp_z  (mInterval_Tp 		),
 .Tblank1_z      (mTblank1 	 		),
-.Tblank2_z      (mTblank2 	 		) //-----//-------	 
+.Tblank2_z      (mTblank2 	 		), //-----//-------	 
+.TEST 			(TEST_wcw),
 );
 
 //----------------SPI управление-----------------
@@ -2025,8 +2031,6 @@ logic [ 31:0]    tmp_Tblank2	  ;
 	
 rst reset_spi1_1(clk_48_1,rst_spi1);
 
-assign TYPE_impulse=tmp_TYPE_impulse[1:0];//используем два младших бита как тип импульсов
-
 assign xSPI4_SCK_MK =SPI4_SCK_MK ;
 assign xSPI4_NSS_MK =SPI4_NSS_MK ;
 assign xSPI4_MOSI_MK=SPI4_MOSI_MK;
@@ -2040,7 +2044,6 @@ spi1
 			.MOSI            (xSPI4_MOSI_MK),
 			.CS              (xSPI4_NSS_MK ),
 			.SCLK            (xSPI4_SCK_MK ),
-
 			.TIME            (tmp_TIME),
 			.SYS_TIME_UPDATE (SYS_TIME_UPDATE),
 			.FREQ            (tmp_FREQ),
@@ -2094,8 +2097,12 @@ async_transmitter #(
 		);
 
  Block_read_spi_v2 
- #(64,49) spi_test_sync(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO27)  ,.cs(xCS_FPGA1)  ,.rst(0),
-						 .clr(),           .inport ({tmp_TIME_START})); //чтение test
+ #(64,51) spi_test1_sync(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO36)  ,.cs(xCS_FPGA1)  ,.rst(0),
+						 .clr(),           .inport (test_mstrt)); //чтение test
+
+ Block_read_spi_v2 
+ #(64,49) spi_test2_sync(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO27)  ,.cs(xCS_FPGA1)  ,.rst(0),
+						 .clr(),           .inport ({TIME[55:0],TEST_wcw[7:0]})); //чтение test
 //---------------------JESD204b_dac1--------------------------		 
 
 wire 			 dac1_phy_mgmt_clk;
@@ -2590,8 +2597,9 @@ SDRAM_CNTR0
 	 .o_sdram_dqmh					(w_abe[1]) //ABE1
 );
 
-reg test_1=0;
-//always @(posedge clk_250) test_1<=A1;
+
+
+
 
 assign {D15,D14,D13,D12,D11,D10,D9,D8,D7,D6,D5,D4,D3,D2,D1,D0} = sdram_buf_we ? sdram_data_o : 16'hz;
 assign {A13,A12,SA10,A10,A9,A8,A7,A6,A5,A4,A3,A2,A1}           = sdr_addr;

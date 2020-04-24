@@ -1,5 +1,5 @@
 Assembler report for arria5_tst1
-Thu Apr 23 17:59:05 2020
+Fri Apr 24 17:27:19 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Apr 23 17:59:05 2020 ;
+; Assembler Status      ; Successful - Fri Apr 24 17:27:19 2020 ;
 ; Revision Name         ; arria5_tst1                           ;
 ; Top-level Entity Name ; top_module                            ;
 ; Family                ; Arria V                               ;
@@ -77,8 +77,8 @@ refer to the applicable agreement for further details.
 +----------------+--------------------------------------------------------+
 ; Option         ; Setting                                                ;
 +----------------+--------------------------------------------------------+
-; JTAG usercode  ; 0x050B3354                                             ;
-; Checksum       ; 0x050B3354                                             ;
+; JTAG usercode  ; 0x05106A61                                             ;
+; Checksum       ; 0x05106A61                                             ;
 +----------------+--------------------------------------------------------+
 
 
@@ -88,7 +88,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Thu Apr 23 17:58:20 2020
+    Info: Processing started: Fri Apr 24 17:26:38 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off arria5_tst1 -c arria5_tst1
 Warning (125092): Tcl Script File BUFIN24.qip not found
     Info (125063): set_global_assignment -name QIP_FILE BUFIN24.qip
@@ -100,9 +100,9 @@ Warning (125092): Tcl Script File r.qip not found
     Info (125063): set_global_assignment -name QIP_FILE r.qip
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 1027 megabytes
-    Info: Processing ended: Thu Apr 23 17:59:06 2020
-    Info: Elapsed time: 00:00:46
-    Info: Total CPU time (on all processors): 00:00:46
+    Info: Peak virtual memory: 1037 megabytes
+    Info: Processing ended: Fri Apr 24 17:27:20 2020
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:00:42
 
 
