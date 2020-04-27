@@ -111,7 +111,7 @@ GND                          : AA2       : gnd    :                   :         
 GXB_NC                       : AA3       :        :                   :         : B0R       :                
 GXB_NC                       : AA4       :        :                   :         : B0R       :                
 GND                          : AA5       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AA6       :        :                   :         : 4A        :                
+D_MISO                       : AA6       : output : 2.5 V             :         : 4A        : N              
 VCCPD4A                      : AA7       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AA8       :        :                   :         : 4A        :                
 D2_SYNC_N_CD                 : AA9       : input  : 1.8 V             :         : 4B        : Y              
@@ -142,7 +142,7 @@ GND                          : AB3       : gnd    :                   :         
 GND                          : AB4       : gnd    :                   :         :           :                
 VCCIO4A                      : AB5       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AB6       :        :                   :         : 4A        :                
-D_MOSI                       : AB7       : input  : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AB7       :        :                   :         : 4A        :                
 D2_SYNC_N_AB                 : AB8       : input  : 1.8 V             :         : 4B        : Y              
 A1_SDOUT_1V8                 : AB9       : input  : 1.8 V             :         : 4B        : Y              
 A1_SEN_1V8                   : AB10      : output : 1.8 V             :         : 4B        : Y              
@@ -259,7 +259,7 @@ GND                          : AE30      : gnd    :                   :         
 RREF                         : AF1       :        :                   :         :           :                
 DNU                          : AF2       :        :                   :         :           :                
 GND                          : AF3       : gnd    :                   :         :           :                
-D_MISO                       : AF4       : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AF4       :        :                   :         : 4A        :                
 GND                          : AF5       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF6       :        :                   :         : 4A        :                
 RESERVED_INPUT               : AF7       :        :                   :         : 4A        :                
@@ -320,7 +320,7 @@ RESERVED_INPUT               : AH1       :        :                   :         
 RESERVED_INPUT               : AH2       :        :                   :         : 4A        :                
 VCCIO4A                      : AH3       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AH4       :        :                   :         : 4A        :                
-RESERVED_INPUT               : AH5       :        :                   :         : 4A        :                
+D_MOSI                       : AH5       : input  : 2.5 V             :         : 4A        : N              
 VCCIO4A                      : AH6       : power  :                   : 2.5V    : 4A        :                
 D2_RESETB                    : AH7       : output : 1.8 V             :         : 4B        : Y              
 D2_SDENB                     : AH8       : output : 1.8 V             :         : 4B        : Y              
@@ -856,8 +856,8 @@ A1_TX3(n)                    : T29       : input  : 1.5-V PCML        :         
 A1_TX3                       : T30       : input  : 1.5-V PCML        :         : B0L       : Y              
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
-TX2_GTP                      : U3        : output : 1.5-V PCML        :         : B1R       : Y              
-TX2_GTP(n)                   : U4        : output : 1.5-V PCML        :         : B1R       : Y              
+GXB_NC                       : U3        :        :                   :         : B1R       :                
+GXB_NC                       : U4        :        :                   :         : B1R       :                
 GND                          : U5        : gnd    :                   :         :           :                
 VCCL_GXBR0                   : U6        : power  :                   : 1.1V    :           :                
 GND                          : U7        : gnd    :                   :         :           :                
@@ -884,8 +884,8 @@ GXB_NC                       : U27       :        :                   :         
 GXB_NC                       : U28       :        :                   :         : B0L       :                
 GND                          : U29       : gnd    :                   :         :           :                
 GND                          : U30       : gnd    :                   :         :           :                
-RX2_GTP                      : V1        : input  : 2.5-V PCML        :         : B1R       : Y              
-RX2_GTP(n)                   : V2        : input  : 2.5-V PCML        :         : B1R       : Y              
+GND                          : V1        :        :                   :         : B1R       :                
+GND                          : V2        :        :                   :         : B1R       :                
 GND                          : V3        : gnd    :                   :         :           :                
 GND                          : V4        : gnd    :                   :         :           :                
 VCCT_GXBR0                   : V5        : power  :                   : 1.1V    :           :                
@@ -916,8 +916,8 @@ A2_TX1(n)                    : V29       : input  : 1.5-V PCML        :         
 A2_TX1                       : V30       : input  : 1.5-V PCML        :         : B0L       : Y              
 GND                          : W1        : gnd    :                   :         :           :                
 GND                          : W2        : gnd    :                   :         :           :                
-TX_GTP                       : W3        : output : 1.5-V PCML        :         : B0R       : Y              
-TX_GTP(n)                    : W4        : output : 1.5-V PCML        :         : B0R       : Y              
+GXB_NC                       : W3        :        :                   :         : B0R       :                
+GXB_NC                       : W4        :        :                   :         : B0R       :                
 VCCR_GXBR                    : W5        : power  :                   : 1.1V    :           :                
 VCCR_GXBR                    : W6        : power  :                   : 1.1V    :           :                
 GND                          : W7        : gnd    :                   :         :           :                
@@ -944,8 +944,8 @@ GXB_NC                       : W27       :        :                   :         
 GXB_NC                       : W28       :        :                   :         : B0L       :                
 GND                          : W29       : gnd    :                   :         :           :                
 GND                          : W30       : gnd    :                   :         :           :                
-RX_GTP                       : Y1        : input  : 2.5-V PCML        :         : B0R       : Y              
-RX_GTP(n)                    : Y2        : input  : 2.5-V PCML        :         : B0R       : N              
+GND                          : Y1        :        :                   :         : B0R       :                
+GND                          : Y2        :        :                   :         : B0R       :                
 GND                          : Y3        : gnd    :                   :         :           :                
 GND                          : Y4        : gnd    :                   :         :           :                
 GND                          : Y5        : gnd    :                   :         :           :                

@@ -1,23 +1,23 @@
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al2|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_walign_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al1|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
 
 State Machine - |top_module|adc2_jesd_rcv:adc2|adc2_align:al2|step
 Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
@@ -38,6 +38,16 @@ step.00000011 0 0 0 1 0 0 1
 step.00000100 0 0 1 0 0 0 1 
 step.00000101 0 1 0 0 0 0 1 
 step.00000110 1 0 0 0 0 0 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_walign_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
 
 State Machine - |top_module|adc2_jesd_rcv:adc2|line_world_align:gen_lane[3].al|align
 Name align.00000000 align.00000010 align.00000001 
@@ -63,672 +73,10 @@ align.00000000 0 0 0
 align.00000001 1 0 1 
 align.00000010 1 1 0 
 
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_register_map:U_REG|altera_tse_rx_counter_cntl:U_RXCNT|state
-Name state.STM_TYPE_DELAY state.STM_TYPE_RST_DONE state.STM_TYPE_IDLE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_RST_CNT 
-state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
-state.STM_TYPE_RD_CNT 0 0 0 0 0 1 1 
-state.STM_TYPE_INC_CNT 0 0 0 0 1 0 1 
-state.STM_TYPE_WR_CNT 0 0 0 1 0 0 1 
-state.STM_TYPE_IDLE 0 0 1 0 0 0 1 
-state.STM_TYPE_RST_DONE 0 1 0 0 0 0 1 
-state.STM_TYPE_DELAY 1 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|mk_to_udp_sender:udp_send2|step
-Name step.0000000000010001 step.0000000000010000 step.0000000000001111 step.0000000000001011 step.0000000000001010 step.0000000000001001 step.0000000000001000 step.0000000000000111 step.0000000000000110 step.0000000000000101 step.0000000000000100 step.0000000000000011 step.0000000000000010 step.0000000000000001 step.0000000000000000 step.0000001111101000 
-step.0000000000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-step.0000000000000001 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
-step.0000000000000010 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
-step.0000000000000011 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
-step.0000000000000100 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
-step.0000000000000101 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
-step.0000000000000110 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
-step.0000000000000111 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
-step.0000000000001000 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
-step.0000000000001001 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001010 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001011 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000001111101000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_read_spi:spi_eth1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_top_pcs_strx_gx:U_PCS|altera_tse_rx_encapsulation_strx_gx:U_RCAPS|state
-Name state.STM_TYP_EARLY_END_EXTEND3 state.STM_TYP_EARLY_END_EXTEND2 state.STM_TYP_EARLY_END_EXTEND1 state.STM_TYP_FRM_END_EXTEND2 state.STM_TYP_FRM_END_EXTEND1 state.STM_TYP_RX_FAULT state.STM_TYP_RX_INVAL state.STM_TYP_AN_CD state.STM_TYP_AN_CC state.STM_TYP_AN_CB state.STM_TYP_EARLY_END state.STM_TYP_FALSE_CAR state.STM_TYP_FRM_END2 state.STM_TYP_FRM_END1 state.STM_TYP_FRM state.STM_TYP_FRM_START state.STM_TYP_RX_K state.STM_TYP_IDLE_D state.STM_TYP_K_WAIT 
-state.STM_TYP_K_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.STM_TYP_IDLE_D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.STM_TYP_RX_K 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.STM_TYP_FRM_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.STM_TYP_FRM 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.STM_TYP_FRM_END1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.STM_TYP_FRM_END2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.STM_TYP_FALSE_CAR 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.STM_TYP_AN_CB 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_AN_CC 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_AN_CD 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_RX_INVAL 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_RX_FAULT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_FRM_END_EXTEND1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_FRM_END_EXTEND2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END_EXTEND1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END_EXTEND2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END_EXTEND3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|mk_to_udp_sender:udp_send2|step
-Name step.0000000000010001 step.0000000000010000 step.0000000000001111 step.0000000000001011 step.0000000000001010 step.0000000000001001 step.0000000000001000 step.0000000000000111 step.0000000000000110 step.0000000000000101 step.0000000000000100 step.0000000000000011 step.0000000000000010 step.0000000000000001 step.0000000000000000 step.0000001111101000 
-step.0000000000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-step.0000000000000001 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
-step.0000000000000010 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
-step.0000000000000011 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
-step.0000000000000100 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
-step.0000000000000101 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
-step.0000000000000110 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
-step.0000000000000111 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
-step.0000000000001000 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
-step.0000000000001001 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001010 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001011 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000001111101000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_walign_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_sysref_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al2|step
-Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 0 0 0 
-step.00000001 0 0 0 0 0 1 1 
-step.00000010 0 0 0 0 1 0 1 
-step.00000011 0 0 0 1 0 0 1 
-step.00000100 0 0 1 0 0 0 1 
-step.00000101 0 1 0 0 0 0 1 
-step.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al1|step
-Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 0 0 0 
-step.00000001 0 0 0 0 0 1 1 
-step.00000010 0 0 0 0 1 0 1 
-step.00000011 0 0 0 1 0 0 1 
-step.00000100 0 0 1 0 0 0 1 
-step.00000101 0 1 0 0 0 0 1 
-step.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[3].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[2].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[1].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[0].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_register_map:U_REG|altera_tse_tx_counter_cntl:U_TXCNT|state
-Name state.STM_TYPE_WR_CNT_DONE state.STM_TYPE_RST_DONE state.STM_TYPE_IDLE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_RST_CNT 
-state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
-state.STM_TYPE_RD_CNT 0 0 0 0 0 1 1 
-state.STM_TYPE_INC_CNT 0 0 0 0 1 0 1 
-state.STM_TYPE_WR_CNT 0 0 0 1 0 0 1 
-state.STM_TYPE_IDLE 0 0 1 0 0 0 1 
-state.STM_TYPE_RST_DONE 0 1 0 0 0 0 1 
-state.STM_TYPE_WR_CNT_DONE 1 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_register_map:U_REG|altera_tse_rx_counter_cntl:U_RXCNT|state
-Name state.STM_TYPE_DELAY state.STM_TYPE_RST_DONE state.STM_TYPE_IDLE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_RST_CNT 
-state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
-state.STM_TYPE_RD_CNT 0 0 0 0 0 1 1 
-state.STM_TYPE_INC_CNT 0 0 0 0 1 0 1 
-state.STM_TYPE_WR_CNT 0 0 0 1 0 0 1 
-state.STM_TYPE_IDLE 0 0 1 0 0 0 1 
-state.STM_TYPE_RST_DONE 0 1 0 0 0 0 1 
-state.STM_TYPE_DELAY 1 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_read_spi_mac:spi_rd_data_mem1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
 State Machine - |top_module|Block_read_spi:spi_read_data_MEM|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_read_spi:spi_i2c_rd1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_read_spi:spi_eth1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_phyip_terminator:i_phyip_terminator_0|altera_tse_fake_master:i_altera_tse_fake_master|state
-Name state.WRITE_DATA 
-state.IDLE 0 
-state.WRITE_DATA 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_top_pcs_strx_gx:U_PCS|altera_tse_tx_encapsulation:U_TCAPS|state
-Name state.STM_TYP_CF_C2D state.STM_TYP_CF_C2C state.STM_TYP_CF_C2B state.STM_TYP_CF_C2A state.STM_TYP_CF_C1D state.STM_TYP_CF_C1C state.STM_TYP_CF_C1B state.STM_TYP_CF_C1A state.STM_TYP_FRM_END3 state.STM_TYP_FRM_DATA_ERR state.STM_TYP_FRM_START_ERR state.STM_TYP_FRM_END2 state.STM_TYP_FRM_END state.STM_TYP_FRM state.STM_TYP_FRM_START state.STM_TYP_IDLE 
-state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.STM_TYP_FRM_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.STM_TYP_FRM 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.STM_TYP_FRM_END 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.STM_TYP_FRM_END2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.STM_TYP_FRM_START_ERR 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.STM_TYP_FRM_DATA_ERR 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.STM_TYP_FRM_END3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1A 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1B 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1C 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1D 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2A 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2B 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2C 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2D 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_top_pcs_strx_gx:U_PCS|altera_tse_rx_encapsulation_strx_gx:U_RCAPS|state
-Name state.STM_TYP_EARLY_END_EXTEND3 state.STM_TYP_EARLY_END_EXTEND2 state.STM_TYP_EARLY_END_EXTEND1 state.STM_TYP_FRM_END_EXTEND2 state.STM_TYP_FRM_END_EXTEND1 state.STM_TYP_RX_FAULT state.STM_TYP_RX_INVAL state.STM_TYP_AN_CD state.STM_TYP_AN_CC state.STM_TYP_AN_CB state.STM_TYP_EARLY_END state.STM_TYP_FALSE_CAR state.STM_TYP_FRM_END2 state.STM_TYP_FRM_END1 state.STM_TYP_FRM state.STM_TYP_FRM_START state.STM_TYP_RX_K state.STM_TYP_IDLE_D state.STM_TYP_K_WAIT 
-state.STM_TYP_K_WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.STM_TYP_IDLE_D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.STM_TYP_RX_K 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.STM_TYP_FRM_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.STM_TYP_FRM 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.STM_TYP_FRM_END1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.STM_TYP_FRM_END2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.STM_TYP_FALSE_CAR 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.STM_TYP_AN_CB 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_AN_CC 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_AN_CD 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_RX_INVAL 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_RX_FAULT 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_FRM_END_EXTEND1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_FRM_END_EXTEND2 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END_EXTEND1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END_EXTEND2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_EARLY_END_EXTEND3 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_register_map:U_REG|altera_tse_tx_counter_cntl:U_TXCNT|state
-Name state.STM_TYPE_WR_CNT_DONE state.STM_TYPE_RST_DONE state.STM_TYPE_IDLE state.STM_TYPE_WR_CNT state.STM_TYPE_INC_CNT state.STM_TYPE_RD_CNT state.STM_TYPE_RST_CNT 
-state.STM_TYPE_RST_CNT 0 0 0 0 0 0 0 
-state.STM_TYPE_RD_CNT 0 0 0 0 0 1 1 
-state.STM_TYPE_INC_CNT 0 0 0 0 1 0 1 
-state.STM_TYPE_WR_CNT 0 0 0 1 0 0 1 
-state.STM_TYPE_IDLE 0 0 1 0 0 0 1 
-state.STM_TYPE_RST_DONE 0 1 0 0 0 0 1 
-state.STM_TYPE_WR_CNT_DONE 1 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_read_spi:spi_i2c_rd1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_TEST_rd|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_test|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_rx_min_ff:U_RXFF|state
-Name state.LOC_STATE_FF_DATA_FLUSH_WAIT state.LOC_STATE_RST_DONE state.LOC_STATE_SHIFT_WAIT state.LOC_STATE_FF_FLUSH_WAIT state.LOC_STATE_FF_DATA_FLUSH state.LOC_STATE_END_FRM state.LOC_STATE_SHIFT state.LOC_STATE_WAIT state.LOC_STATE_DATA state.LOC_STATE_IDLE 
-state.LOC_STATE_IDLE 0 0 0 0 0 0 0 0 0 0 
-state.LOC_STATE_DATA 0 0 0 0 0 0 0 0 1 1 
-state.LOC_STATE_WAIT 0 0 0 0 0 0 0 1 0 1 
-state.LOC_STATE_SHIFT 0 0 0 0 0 0 1 0 0 1 
-state.LOC_STATE_END_FRM 0 0 0 0 0 1 0 0 0 1 
-state.LOC_STATE_FF_DATA_FLUSH 0 0 0 0 1 0 0 0 0 1 
-state.LOC_STATE_FF_FLUSH_WAIT 0 0 0 1 0 0 0 0 0 1 
-state.LOC_STATE_SHIFT_WAIT 0 0 1 0 0 0 0 0 0 1 
-state.LOC_STATE_RST_DONE 0 1 0 0 0 0 0 0 0 1 
-state.LOC_STATE_FF_DATA_FLUSH_WAIT 1 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_read_spi_mac:spi_rd_stat_mem1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_rx_min_ff:U_RXFF|state
-Name state.LOC_STATE_FF_DATA_FLUSH_WAIT state.LOC_STATE_RST_DONE state.LOC_STATE_SHIFT_WAIT state.LOC_STATE_FF_FLUSH_WAIT state.LOC_STATE_FF_DATA_FLUSH state.LOC_STATE_END_FRM state.LOC_STATE_SHIFT state.LOC_STATE_WAIT state.LOC_STATE_DATA state.LOC_STATE_IDLE 
-state.LOC_STATE_IDLE 0 0 0 0 0 0 0 0 0 0 
-state.LOC_STATE_DATA 0 0 0 0 0 0 0 0 1 1 
-state.LOC_STATE_WAIT 0 0 0 0 0 0 0 1 0 1 
-state.LOC_STATE_SHIFT 0 0 0 0 0 0 1 0 0 1 
-state.LOC_STATE_END_FRM 0 0 0 0 0 1 0 0 0 1 
-state.LOC_STATE_FF_DATA_FLUSH 0 0 0 0 1 0 0 0 0 1 
-state.LOC_STATE_FF_FLUSH_WAIT 0 0 0 1 0 0 0 0 0 1 
-state.LOC_STATE_SHIFT_WAIT 0 0 1 0 0 0 0 0 0 1 
-state.LOC_STATE_RST_DONE 0 1 0 0 0 0 0 0 0 1 
-state.LOC_STATE_FF_DATA_FLUSH_WAIT 1 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_read_spi_mac:spi_rd_stat_mem1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_read_spi_mac:spi_rd_data_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi:spi_wr_adr_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_pcs_control:U_REG|altera_tse_pcs_host_control:U_CTRL|state
-Name state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_IDLE 
-state.STM_TYPE_IDLE 0 0 0 0 
-state.STM_TYPE_NEXT_CYCLE 0 0 1 1 
-state.STM_TYPE_END_READ 0 1 0 1 
-state.STM_TYPE_WAIT_CYCLE 1 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_top_pcs_strx_gx:U_PCS|altera_tse_top_autoneg:U_AUTONEG|state
-Name state.STM_TYP_NO_AN_LINK state.STM_TYP_LINK_OK state.STM_TYP_IDLE_DETECT state.STM_TYP_COMPLETE_ACK state.STM_TYP_ACK_DETECT state.STM_TYP_ABILITY_DETECT state.STM_TYP_AUTONEG_RESTART state.STM_TYP_AUTONEG_ENA 
-state.STM_TYP_AUTONEG_ENA 0 0 0 0 0 0 0 0 
-state.STM_TYP_AUTONEG_RESTART 0 0 0 0 0 0 1 1 
-state.STM_TYP_ABILITY_DETECT 0 0 0 0 0 1 0 1 
-state.STM_TYP_ACK_DETECT 0 0 0 0 1 0 0 1 
-state.STM_TYP_COMPLETE_ACK 0 0 0 1 0 0 0 1 
-state.STM_TYP_IDLE_DETECT 0 0 1 0 0 0 0 1 
-state.STM_TYP_LINK_OK 0 1 0 0 0 0 0 1 
-state.STM_TYP_NO_AN_LINK 1 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_host_control:U_CTRL|state
-Name state.STM_TYPE_STAT_READ state.STM_TYPE_WAIT_BUSY state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_MDIO_WRITE state.STM_TYPE_MDIO_READ state.STM_TYPE_IDLE 
-state.STM_TYPE_IDLE 0 0 0 0 0 0 0 0 
-state.STM_TYPE_MDIO_READ 0 0 0 0 0 0 1 1 
-state.STM_TYPE_MDIO_WRITE 0 0 0 0 0 1 0 1 
-state.STM_TYPE_NEXT_CYCLE 0 0 0 0 1 0 0 1 
-state.STM_TYPE_END_READ 0 0 0 1 0 0 0 1 
-state.STM_TYPE_WAIT_CYCLE 0 0 1 0 0 0 0 1 
-state.STM_TYPE_WAIT_BUSY 0 1 0 0 0 0 0 1 
-state.STM_TYPE_STAT_READ 1 0 0 0 0 0 0 1 
-
-State Machine - |top_module|Block_write_spi:spi_LED|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_PWRDN|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_read_spi_mac:spi_rd_data_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi:spi_wr_adr_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_phyip_terminator:i_phyip_terminator_0|altera_tse_fake_master:i_altera_tse_fake_master|state
-Name state.WRITE_DATA 
-state.IDLE 0 
-state.WRITE_DATA 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_pcs_control:U_REG|altera_tse_pcs_host_control:U_CTRL|state
-Name state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_IDLE 
-state.STM_TYPE_IDLE 0 0 0 0 
-state.STM_TYPE_NEXT_CYCLE 0 0 1 1 
-state.STM_TYPE_END_READ 0 1 0 1 
-state.STM_TYPE_WAIT_CYCLE 1 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_top_pcs_strx_gx:U_PCS|altera_tse_tx_encapsulation:U_TCAPS|state
-Name state.STM_TYP_CF_C2D state.STM_TYP_CF_C2C state.STM_TYP_CF_C2B state.STM_TYP_CF_C2A state.STM_TYP_CF_C1D state.STM_TYP_CF_C1C state.STM_TYP_CF_C1B state.STM_TYP_CF_C1A state.STM_TYP_FRM_END3 state.STM_TYP_FRM_DATA_ERR state.STM_TYP_FRM_START_ERR state.STM_TYP_FRM_END2 state.STM_TYP_FRM_END state.STM_TYP_FRM state.STM_TYP_FRM_START state.STM_TYP_IDLE 
-state.STM_TYP_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.STM_TYP_FRM_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.STM_TYP_FRM 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.STM_TYP_FRM_END 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.STM_TYP_FRM_END2 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.STM_TYP_FRM_START_ERR 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.STM_TYP_FRM_DATA_ERR 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.STM_TYP_FRM_END3 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1A 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1B 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1C 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C1D 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2A 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2B 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2C 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.STM_TYP_CF_C2D 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_pcs_pma_phyip:i_tse_pcs_0|altera_tse_top_1000_base_x_strx_gx:altera_tse_top_1000_base_x_strx_gx_inst|altera_tse_top_pcs_strx_gx:U_PCS|altera_tse_top_autoneg:U_AUTONEG|state
-Name state.STM_TYP_NO_AN_LINK state.STM_TYP_LINK_OK state.STM_TYP_IDLE_DETECT state.STM_TYP_COMPLETE_ACK state.STM_TYP_ACK_DETECT state.STM_TYP_ABILITY_DETECT state.STM_TYP_AUTONEG_RESTART state.STM_TYP_AUTONEG_ENA 
-state.STM_TYP_AUTONEG_ENA 0 0 0 0 0 0 0 0 
-state.STM_TYP_AUTONEG_RESTART 0 0 0 0 0 0 1 1 
-state.STM_TYP_ABILITY_DETECT 0 0 0 0 0 1 0 1 
-state.STM_TYP_ACK_DETECT 0 0 0 0 1 0 0 1 
-state.STM_TYP_COMPLETE_ACK 0 0 0 1 0 0 0 1 
-state.STM_TYP_IDLE_DETECT 0 0 1 0 0 0 0 1 
-state.STM_TYP_LINK_OK 0 1 0 0 0 0 0 1 
-state.STM_TYP_NO_AN_LINK 1 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_mac_control:U_MAC_CONTROL|altera_tse_host_control:U_CTRL|state
-Name state.STM_TYPE_STAT_READ state.STM_TYPE_WAIT_BUSY state.STM_TYPE_WAIT_CYCLE state.STM_TYPE_END_READ state.STM_TYPE_NEXT_CYCLE state.STM_TYPE_MDIO_WRITE state.STM_TYPE_MDIO_READ state.STM_TYPE_IDLE 
-state.STM_TYPE_IDLE 0 0 0 0 0 0 0 0 
-state.STM_TYPE_MDIO_READ 0 0 0 0 0 0 1 1 
-state.STM_TYPE_MDIO_WRITE 0 0 0 0 0 1 0 1 
-state.STM_TYPE_NEXT_CYCLE 0 0 0 0 1 0 0 1 
-state.STM_TYPE_END_READ 0 0 0 1 0 0 0 1 
-state.STM_TYPE_WAIT_CYCLE 0 0 1 0 0 0 0 1 
-state.STM_TYPE_WAIT_BUSY 0 1 0 0 0 0 0 1 
-state.STM_TYPE_STAT_READ 1 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|udp_sender:udp1|step
-Name step.0000000000010001 step.0000000000010000 step.0000000000001111 step.0000000000001100 step.0000000000001011 step.0000000000001010 step.0000000000001001 step.0000000000001000 step.0000000000000111 step.0000000000000110 step.0000000000000101 step.0000000000000100 step.0000000000000011 step.0000000000000010 step.0000000000000001 step.0000000000000000 step.0000001111101000 
-step.0000000000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-step.0000000000000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
-step.0000000000000010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
-step.0000000000000011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
-step.0000000000000100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
-step.0000000000000101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
-step.0000000000000110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
-step.0000000000000111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
-step.0000000000001000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
-step.0000000000001001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000001111101000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-
-State Machine - |top_module|eth_1g_top:eth2|udp_arbitr_3:ar1|FLAG_udp1_process
-Name FLAG_udp1_process.00 FLAG_udp1_process.10 FLAG_udp1_process.01 
-FLAG_udp1_process.00 0 0 0 
-FLAG_udp1_process.01 1 0 1 
-FLAG_udp1_process.10 1 1 0 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_crc_mem3|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_upr1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_att4|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_att3|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_test2_sync|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_test1_sync|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_read_spi_mac:spi_rd_data_mem2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_read_spi_mac:spi_rd_data_mem1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_read_spi_mac:spi_rd_data_mem2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac2_D2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac1_D2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_control1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_top_1geth:U_GETH|altera_tse_rx_stat_extract:U_RXSTAT|state
-Name state.stm_typ_end_frm state.stm_typ_frm state.stm_typ_sfd state.stm_typ_idle 
-state.stm_typ_idle 0 0 0 0 
-state.stm_typ_sfd 0 0 1 1 
-state.stm_typ_frm 0 1 0 1 
-state.stm_typ_end_frm 1 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|udp_arbitr_3:ar1|FLAG_udp2_process
-Name FLAG_udp2_process.00 FLAG_udp2_process.10 FLAG_udp2_process.01 
-FLAG_udp2_process.00 0 0 0 
-FLAG_udp2_process.01 1 0 1 
-FLAG_udp2_process.10 1 1 0 
-
-State Machine - |top_module|eth_1g_top:eth2|crc_form:crc1|step
-Name step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 
-step.00000001 0 0 1 1 
-step.00000010 0 1 0 1 
-step.00000011 1 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|crc_form:crc1|n_fifo
-Name n_fifo.00000001 
-n_fifo.00000000 0 
-n_fifo.00000001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_UDP_MAC0|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_adr_mem1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_att2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_att1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|sync_align_ila:sa_ila_D2|step_faza
-Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
-step_faza.00000000 0 0 0 0 0 0 0 
-step_faza.00000001 0 0 0 0 0 1 1 
-step_faza.00000010 0 0 0 0 1 0 1 
-step_faza.00000011 0 0 0 1 0 0 1 
-step_faza.00000100 0 0 1 0 0 0 1 
-step_faza.00000101 0 1 0 0 0 0 1 
-step_faza.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|Block_write_spi:spi_wr_custom_phy_dac1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_custom_phy_dac1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|sync_align_ila:sa_ila|step_faza
-Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
-step_faza.00000000 0 0 0 0 0 0 0 
-step_faza.00000001 0 0 0 0 0 1 1 
-step_faza.00000010 0 0 0 0 1 0 1 
-step_faza.00000011 0 0 0 1 0 0 1 
-step_faza.00000100 0 0 1 0 0 0 1 
-step_faza.00000101 0 1 0 0 0 0 1 
-step_faza.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|arp_sender:arp1|step
-Name step.0000000000010100 step.0000000000010011 step.0000000000001101 step.0000000000001100 step.0000000000001011 step.0000000000001010 step.0000000000001001 step.0000000000001000 step.0000000000000111 step.0000000000000110 step.0000000000000101 step.0000000000000100 step.0000000000000011 step.0000000000000010 step.0000000000000001 step.0000000000000000 
-step.0000000000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-step.0000000000000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-step.0000000000000010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-step.0000000000000011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-step.0000000000000100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-step.0000000000000101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-step.0000000000000110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-step.0000000000000111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-step.0000000000001000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-step.0000000000001001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-step.0000000000001010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-step.0000000000001011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000001100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000001101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000010011 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000010100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|udp_arbitr_3:ar1|FLAG_arp_process
-Name FLAG_arp_process.00 FLAG_arp_process.10 FLAG_arp_process.01 
-FLAG_arp_process.00 0 0 0 
-FLAG_arp_process.01 1 0 1 
-FLAG_arp_process.10 1 1 0 
-
-State Machine - |top_module|eth_1g_top:eth2|arp_sender:arp1|step
-Name step.0000000000010100 step.0000000000010011 step.0000000000001101 step.0000000000001100 step.0000000000001011 step.0000000000001010 step.0000000000001001 step.0000000000001000 step.0000000000000111 step.0000000000000110 step.0000000000000101 step.0000000000000100 step.0000000000000011 step.0000000000000010 step.0000000000000001 step.0000000000000000 
-step.0000000000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-step.0000000000000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-step.0000000000000010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-step.0000000000000011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-step.0000000000000100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-step.0000000000000101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-step.0000000000000110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-step.0000000000000111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-step.0000000000001000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-step.0000000000001001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-step.0000000000001010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-step.0000000000001011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000001100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000001101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000010011 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-step.0000000000010100 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|udp_arbitr_3:ar1|FLAG_arp_process
-Name FLAG_arp_process.00 FLAG_arp_process.10 FLAG_arp_process.01 
-FLAG_arp_process.00 0 0 0 
-FLAG_arp_process.01 1 0 1 
-FLAG_arp_process.10 1 1 0 
-
-State Machine - |top_module|Block_write_spi_mac:spi_adr_read_MEM|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi_mac:spi_test_sdram_wr|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|sdram_mk_upr:u1|step_wr
-Name step_wr.00000101 step_wr.00000100 step_wr.00000011 step_wr.00000010 step_wr.00000000 step_wr.11001000 
-step_wr.00000000 0 0 0 0 0 0 
-step_wr.00000010 0 0 0 1 1 0 
-step_wr.00000011 0 0 1 0 1 0 
-step_wr.00000100 0 1 0 0 1 0 
-step_wr.00000101 1 0 0 0 1 0 
-step_wr.11001000 0 0 0 0 1 1 
-
-State Machine - |top_module|sdram_mk_upr:u1|step_rd
-Name step_rd.00000011 step_rd.00000010 step_rd.00000001 step_rd.00000000 step_rd.11001000 step_rd.00010100 
-step_rd.00000000 0 0 0 0 0 0 
-step_rd.00000001 0 0 1 1 0 0 
-step_rd.00000010 0 1 0 1 0 0 
-step_rd.00000011 1 0 0 1 0 0 
-step_rd.00010100 0 0 0 1 0 1 
-step_rd.11001000 0 0 0 1 1 0 
 
 State Machine - |top_module|sdram_cntr:SDRAM_CNTR0|w_st
 Name w_st.01 
@@ -776,37 +124,120 @@ st.READ_WAIT3 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 st.READ_DATA 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 st.READ_END 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_mem3|flag
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_adr_mem3|flag
+State Machine - |top_module|Block_read_spi_v2:spi_walign_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_adr_mem2|flag
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[3].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
+
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[2].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
+
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[1].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
+
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[0].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
+
+State Machine - |top_module|master_start:sync1|reg_MEM_TYPE_impulse
+Name 
+reg_MEM_TYPE_impulse.00 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac2_D2|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_adr_mem3|flag
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac1_D2|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_IP_my|flag
+State Machine - |top_module|Block_read_spi_v2:spi_error_sysref_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_PORT_my|flag
+State Machine - |top_module|Block_read_spi:spi_control2|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_MAC_my|flag
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_control1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_test1_sync|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi_mac:spi_test_sdram_wr|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_LED|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_PWRDN|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_upr1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_att4|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -821,67 +252,90 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
+State Machine - |top_module|Block_write_spi:spi_wr_custom_phy_dac1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_dac1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
 State Machine - |top_module|Block_read_spi:spi_control3|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi:spi_control2|flag
+State Machine - |top_module|Block_write_spi:spi_att3|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth2|eth1_0002:eth_full1_inst|altera_eth_tse_mac:i_tse_mac|altera_tse_top_w_fifo_10_100_1000:U_MAC_TOP|altera_tse_top_w_fifo:U_MAC|altera_tse_top_1geth:U_GETH|altera_tse_rx_stat_extract:U_RXSTAT|state
-Name state.stm_typ_end_frm state.stm_typ_frm state.stm_typ_sfd state.stm_typ_idle 
-state.stm_typ_idle 0 0 0 0 
-state.stm_typ_sfd 0 0 1 1 
-state.stm_typ_frm 0 1 0 1 
-state.stm_typ_end_frm 1 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth2|udp_arbitr_3:ar1|FLAG_udp2_process
-Name FLAG_udp2_process.00 FLAG_udp2_process.10 FLAG_udp2_process.01 
-FLAG_udp2_process.00 0 0 0 
-FLAG_udp2_process.01 1 0 1 
-FLAG_udp2_process.10 1 1 0 
-
-State Machine - |top_module|eth_1g_top:eth1|crc_form:crc1|step
-Name step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 
-step.00000001 0 0 1 1 
-step.00000010 0 1 0 1 
-step.00000011 1 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|crc_form:crc1|n_fifo
-Name n_fifo.00000001 
-n_fifo.00000000 0 
-n_fifo.00000001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_UDP_MAC0|flag
+State Machine - |top_module|Block_read_spi_v2:spi_test2_sync|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_adr_mem1|flag
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_IP_my|flag
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg1_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_PORT_my|flag
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_mac:spi_wr_data_MAC_my|flag
+State Machine - |top_module|Block_read_spi:spi_test|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_data_mem3|flag
+State Machine - |top_module|Block_write_spi_mac:spi_adr_read_MEM|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|sdram_mk_upr:u1|step_wr
+Name step_wr.00000101 step_wr.00000100 step_wr.00000011 step_wr.00000010 step_wr.00000000 step_wr.11001000 
+step_wr.00000000 0 0 0 0 0 0 
+step_wr.00000010 0 0 0 1 1 0 
+step_wr.00000011 0 0 1 0 1 0 
+step_wr.00000100 0 1 0 0 1 0 
+step_wr.00000101 1 0 0 0 1 0 
+step_wr.11001000 0 0 0 0 1 1 
+
+State Machine - |top_module|sdram_mk_upr:u1|step_rd
+Name step_rd.00000011 step_rd.00000010 step_rd.00000001 step_rd.00000000 step_rd.11001000 step_rd.00010100 
+step_rd.00000000 0 0 0 0 0 0 
+step_rd.00000001 0 0 1 1 0 0 
+step_rd.00000010 0 1 0 1 0 0 
+step_rd.00000011 1 0 0 1 0 0 
+step_rd.00010100 0 0 0 1 0 1 
+step_rd.11001000 0 0 0 1 1 0 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_att2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_att1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -891,38 +345,7 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|eth_1g_top:eth1|udp_sender:udp1|step
-Name step.0000000000010001 step.0000000000010000 step.0000000000001111 step.0000000000001100 step.0000000000001011 step.0000000000001010 step.0000000000001001 step.0000000000001000 step.0000000000000111 step.0000000000000110 step.0000000000000101 step.0000000000000100 step.0000000000000011 step.0000000000000010 step.0000000000000001 step.0000000000000000 step.0000001111101000 
-step.0000000000000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-step.0000000000000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 
-step.0000000000000010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 
-step.0000000000000011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 0 
-step.0000000000000100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 
-step.0000000000000101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 
-step.0000000000000110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 
-step.0000000000000111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 
-step.0000000000001000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 
-step.0000000000001001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000001111 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010000 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000000000010001 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
-step.0000001111101000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-
-State Machine - |top_module|eth_1g_top:eth1|udp_arbitr_3:ar1|FLAG_udp1_process
-Name FLAG_udp1_process.00 FLAG_udp1_process.10 FLAG_udp1_process.01 
-FLAG_udp1_process.00 0 0 0 
-FLAG_udp1_process.01 1 0 1 
-FLAG_udp1_process.10 1 1 0 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_crc_mem3|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc2|flag
+State Machine - |top_module|Block_read_spi:spi_TEST_rd|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -942,79 +365,22 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|sync_align_ila:sa_ila|step_faza
+Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
+step_faza.00000000 0 0 0 0 0 0 0 
+step_faza.00000001 0 0 0 0 0 1 1 
+step_faza.00000010 0 0 0 0 1 0 1 
+step_faza.00000011 0 0 0 1 0 0 1 
+step_faza.00000100 0 0 1 0 0 0 1 
+step_faza.00000101 0 1 0 0 0 0 1 
+step_faza.00000110 1 0 0 0 0 0 1 
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg1_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|Block_write_spi_v2:spi_i2c_upr1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth2|i2c_master_v2:i2c_1|state
-Name state.11001011 state.11001010 state.11001001 state.11001000 state.00110011 state.00101001 state.00011111 state.00011100 state.00011011 state.00011010 state.00011001 state.00011000 state.00010111 state.00010110 state.00010101 state.00010100 state.00000110 state.00000101 state.00000100 state.00000011 state.00000010 state.00000001 state.00000000 
-state.00000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.00000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.00000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.00000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.00000100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.00000101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.00000110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.00010100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.00010101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.00010110 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.00010111 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.00011000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.00011001 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011011 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011100 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011111 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00101001 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00110011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001001 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001010 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001011 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_mac:spi_wr_adr_mem2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|Block_write_spi_v2:spi_i2c_upr1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|eth_1g_top:eth1|i2c_master_v2:i2c_1|state
-Name state.11001011 state.11001010 state.11001001 state.11001000 state.00110011 state.00101001 state.00011111 state.00011100 state.00011011 state.00011010 state.00011001 state.00011000 state.00010111 state.00010110 state.00010101 state.00010100 state.00000110 state.00000101 state.00000100 state.00000011 state.00000010 state.00000001 state.00000000 
-state.00000000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-state.00000001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
-state.00000010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
-state.00000011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
-state.00000100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
-state.00000101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
-state.00000110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
-state.00010100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
-state.00010101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
-state.00010110 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
-state.00010111 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
-state.00011000 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
-state.00011001 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011010 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011011 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011100 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00011111 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00101001 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.00110011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001000 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001001 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001010 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
-state.11001011 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+State Machine - |top_module|sync_align_ila:sa_ila_D2|step_faza
+Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
+step_faza.00000000 0 0 0 0 0 0 0 
+step_faza.00000001 0 0 0 0 0 1 1 
+step_faza.00000010 0 0 0 0 1 0 1 
+step_faza.00000011 0 0 0 1 0 0 1 
+step_faza.00000100 0 0 1 0 0 0 1 
+step_faza.00000101 0 1 0 0 0 0 1 
+step_faza.00000110 1 0 0 0 0 0 1 

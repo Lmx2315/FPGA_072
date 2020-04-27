@@ -29,7 +29,7 @@ output [31:0] Tblank2_z    	 ,//-----//-------
 output [31:0] TEST 			 
 );
 
-parameter N_IDX      = 8;//размер памяти в строках (N-1)
+parameter N_IDX      =32;//размер памяти в строках (N-1)
 parameter TIME_REZERV=48*8;//8 мкс запас времени
 //-------регистры для хранения команды из spi
 logic [ 47:0] 	 tmp_FREQ 		    =0;
@@ -92,7 +92,8 @@ logic 			FLAG_SRCH_FAULT		=0;//флаг неудачного поиска нов
 enum {clr_all,clr_data,wr_data,idle_status			  							  } status   ,next_status   ; 
 enum {search_a,end_search,read_data,end_read_data,search_time,end_search_time,step2_search_time,step3_search_time,idle  } rd_status,rd_next_status;
 
-always_ff @(posedge CLK or negedge rst_n) begin 
+always_ff @(posedge CLK) 
+begin 
 	if(~rst_n) 
 	begin
 	tmp_FREQ 		<=0;

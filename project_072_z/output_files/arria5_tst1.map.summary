@@ -1,17 +1,17 @@
-Analysis & Synthesis Status : Successful - Fri Apr 24 17:09:50 2020
+Analysis & Synthesis Status : Successful - Mon Apr 27 18:14:16 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : arria5_tst1
 Top-level Entity Name : top_module
 Family : Arria V
 Logic utilization (in ALMs) : N/A
-Total registers : 24823
-Total pins : 244
+Total registers : 9860
+Total pins : 240
 Total virtual pins : 0
-Total block memory bits : 722,150
+Total block memory bits : 86,324
 Total DSP Blocks : 0
-Total HSSI RX PCSs : 10
-Total HSSI PMA RX Deserializers : 10
-Total HSSI TX PCSs : 6
-Total HSSI PMA TX Serializers : 6
-Total PLLs : 22
+Total HSSI RX PCSs : 8
+Total HSSI PMA RX Deserializers : 8
+Total HSSI TX PCSs : 4
+Total HSSI PMA TX Serializers : 4
+Total PLLs : 16
 Total DLLs : 0

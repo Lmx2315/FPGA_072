@@ -158,11 +158,11 @@ output wire SPI2_NSS_MK,
 //-----------GTX---------------
 
 	
-    input wire RX_GTP,
-   output wire TX_GTP,
+//    input wire RX_GTP, //ETH1
+//   output wire TX_GTP,
 
-    input wire RX2_GTP,
-   output wire TX2_GTP,
+ //   input wire RX2_GTP, //ETH2
+ //  output wire TX2_GTP,
 
 //	  input wire FPGA_F48MHZ,
 //	  input wire DCLK6,
@@ -1401,7 +1401,7 @@ assign xSPI3_MISO_AND =
 					//		xSPI3_MISO6&
 					//		xSPI3_MISO7&
 					//		xSPI3_MISO8&
-							xSPI3_MISO9&  //eth1
+					//		xSPI3_MISO9&  //eth1
 							xSPI3_MISO10&
 							xSPI3_MISO11&
 							xSPI3_MISO12&
@@ -1414,7 +1414,7 @@ assign xSPI3_MISO_AND =
 							xSPI3_MISO18&//adc2
 							xSPI3_MISO19&//adc2
 							xSPI3_MISO20&//adc2
-							xSPI3_MISO21&//eth2
+				//			xSPI3_MISO21&//eth2
 							xSPI3_MISO22&//test SDRAM
 
 							xSPI3_MISO23&//DAC2
@@ -1870,15 +1870,15 @@ bufi1	bufi1_inst2 (
 //------------------Синхронизатор1--------------------
 
 logic 		 w_REQ_COMM 	;
-logic [63:0] TIME 			;
+logic [63:0] wTIME 			;
 logic [47:0] FREQ     		;
 logic [47:0] FREQ_STEP 		;
 logic [31:0] FREQ_RATE 		;
 logic [63:0] TIME_START		;
 logic [63:0] TIME_INIT		;
-logic 		 SYS_TIME_UPDATE;
-logic 		 T1HZ 			;//имитация секундной метки
-logic 		 spi_WR 		;//сигнал записи данных из вне в реестр реального времени
+logic 		 sSYS_TIME_UPDATE;
+logic 		 w_T1HZ 		;//имитация секундной метки
+logic 		 w_spi_WR 		;//сигнал записи данных из вне в реестр реального времени
 logic 		 mem_WR			;//сигнал записи данных из реестра реального времени в синхронизатор
 logic [15:0] N_impuls 		;
 
@@ -1912,8 +1912,8 @@ logic [15:0] dds_data_Q;
 logic 		 dds_valid ;
 
 logic 		SYS_TIME_UPDATE_OK;
-logic 		En_Iz;
-logic 		En_Pr;
+logic 		wEn_Iz;
+logic 		wEn_Pr;
 
 logic wREQ=0;
 logic wACK=0;
@@ -1941,9 +1941,9 @@ dds1(
 //-------------Синхронизатор тактируется 48 МГц !!!-------------
 
 rst reset_sync1_1(clk_48_1,rst_sync1);
-test_t1hz inst_test_t1hz (.clk(clk_48_1), .z(T1HZ));//временная тестовая имитация квазисекундной метки (67/48)
+test_t1hz inst_test_t1hz (.clk(clk_48_1), .z(w_T1HZ));//временная тестовая имитация квазисекундной метки (67/48)
 
-logic [64:0] test_mstrt;
+logic [63:0] test_mstrt;
 
 master_start 
 sync1(
@@ -1957,8 +1957,8 @@ sync1(
 .RESET 				(rst_sync1			),
 .CLK 				(clk_48_1 			),
 .SYS_TIME 			(tmp_TIME			),	//код времени для предустановки по сигналу T1c
-.SYS_TIME_UPDATE 	(SYS_TIME_UPDATE 	),	//сигнал управления который включает готовность установки системного времени по сигналу T1hz 
-.T1hz 				(T1HZ 				),	//сигнал секундной метки
+.SYS_TIME_UPDATE 	(sSYS_TIME_UPDATE 	),	//сигнал управления который включает готовность установки системного времени по сигналу T1hz 
+.T1hz 				(w_T1HZ				),	//сигнал секундной метки
 .WR_DATA 			(mem_WR 			),  //сигнал записи данных в синхронизатор
 .MEM_DDS_freq 		(mFREQ 				),  //данные команды из реестра реального времени
 .MEM_DDS_delta_freq (mFREQ_STEP  		),  //данные команды из реестра реального времени
@@ -1971,13 +1971,13 @@ sync1(
 .MEM_Tblank1		(mTblank1 			),  //данные команды из реестра реального времени
 .MEM_Tblank2 		(mTblank2 			),  //данные команды из реестра реального времени
 .SYS_TIME_UPDATE_OK (SYS_TIME_UPDATE_OK ),	//флаг показывающий,что по секундной метке произошла установка системного времени
-.TIME 				(TIME 				),
+.TIME 				(wTIME 				),
 .TEST 				(test_mstrt         ),	//тестовый вывод внутренней информации
-.En_Iz 				(En_Iz 				),  //сформированый интервал Излучения
-.En_Pr 				(En_Pr 				)   //сформированый интервал Приёма
+.En_Iz 				(wEn_Iz 			),  //сформированый интервал Излучения
+.En_Pr 				(wEn_Pr 			)   //сформированый интервал Приёма
 );
 
-assign xFPGA_LED1_3V3=En_Iz;//тестовый вывод на HL10
+assign xFPGA_LED1_3V3=wEn_Iz;//тестовый вывод на HL10
 
 
 rst reset_wcm1_1(clk_48_1,rst_wcm1);
@@ -1989,7 +1989,7 @@ wcm1(						  		  //блок записи и чтения команд реаль
 .CLK 		    (clk_48_1),
 .rst_n 	        (~rst_wcm1),
 .REQ_COMM 	    (w_REQ_COMM   		),//запрос новой команды для исполнения синхронизатором (тут вход)
-.TIME 		    (TIME 		 		),//текущее системное время 
+.TIME 		    (wTIME 		 		),//текущее системное время 
 .SYS_TIME_UPDATE(SYS_TIME_UPDATE_OK	),//сигнал сообщающий о перестановке системного времени!!!
 .FREQ           (tmp_FREQ 		 	),//данные с интерфейса МК
 .FREQ_STEP      (tmp_FREQ_STEP 	 	),//----------------------
@@ -2001,7 +2001,7 @@ wcm1(						  		  //блок записи и чтения команд реаль
 .Interval_Tp    (tmp_Interval_Tp 	),
 .Tblank1 	    (tmp_Tblank1 	 	),
 .Tblank2        (tmp_Tblank2 	 	),
-.SPI_WR		    (spi_WR 		 	),  //сигнал записи для данных из вне в реестр реального времени
+.SPI_WR		    (w_spi_WR 		 	),  //сигнал записи для данных из вне в реестр реального времени
 .DATA_WR 	    (mem_WR		 		),  //сигнал записи для передачи данных в блок синхронизации
 .FREQ_z         (mFREQ 		 		),  //части команды выводимые из модуля в блок синхронизации и исполнения
 .FREQ_STEP_z    (mFREQ_STEP 	 	),
@@ -2045,7 +2045,7 @@ spi1
 			.CS              (xSPI4_NSS_MK ),
 			.SCLK            (xSPI4_SCK_MK ),
 			.TIME            (tmp_TIME),
-			.SYS_TIME_UPDATE (SYS_TIME_UPDATE),
+			.SYS_TIME_UPDATE (sSYS_TIME_UPDATE),
 			.FREQ            (tmp_FREQ),
 			.FREQ_STEP       (tmp_FREQ_STEP),
 			.FREQ_RATE       (tmp_FREQ_RATE),
@@ -2057,13 +2057,13 @@ spi1
 			.Tblank1         (tmp_Tblank1),
 			.Tblank2         (tmp_Tblank2),
 
-			.SPI_WR          (spi_WR)
+			.SPI_WR          (w_spi_WR)
 		);
 //---------------------тестовый вывод на уарт-----------------
 logic [407:0] test_data;
 logic [  7:0]  DATA_out;
 logic 		   TxD_busy;	 
-logic 		   SEND;
+logic 		   wSEND;
 
 rst reset_u1_1(clk_48_1,rst_uart1);
 
@@ -2077,10 +2077,10 @@ send_to_uart tst_u1
 			.clk      (clk_48_1),
 			.rst_n    (~rst_uart1),
 			.data_in  (test_data),//
-			.RCV      (spi_WR),
+			.RCV      (w_spi_WR),
 			.BUSY     (TxD_busy),
 			.DATA_out (DATA_out),
-			.SEND     (SEND)
+			.SEND     (wSEND)
 		);
 
 logic TxD_test;
@@ -2090,7 +2090,7 @@ async_transmitter #(
 			.Baud		 (9600    )
 		) tx1 (
 			.clk       (clk_48_1),
-			.TxD_start (SEND),
+			.TxD_start (wSEND),
 			.TxD_data  (DATA_out),
 			.TxD       (TxD_test),
 			.TxD_busy  (TxD_busy)
@@ -2102,7 +2102,7 @@ async_transmitter #(
 
  Block_read_spi_v2 
  #(64,49) spi_test2_sync(.clk(clk_125),.sclk(xSPI3_SCK),.mosi(xSPI3_MOSI),.miso(xSPI3_MISO27)  ,.cs(xCS_FPGA1)  ,.rst(0),
-						 .clr(),           .inport ({TIME[55:0],TEST_wcw[7:0]})); //чтение test
+						 .clr(),           .inport ({wTIME[55:0],TEST_wcw[7:0]})); //чтение test
 //---------------------JESD204b_dac1--------------------------		 
 
 wire 			 dac1_phy_mgmt_clk;
@@ -2407,7 +2407,7 @@ end
 
 wire rst_block_eth1;
 rst reset_ETH1(clk_125,rst_block_eth1);
-
+/*
 eth_1g_top //MAC0
 #(
 	18,//чтение 32 бит служебных данных из памяти UDP ресивера 
@@ -2454,7 +2454,7 @@ eth1(
 	.SFP1_TX_DISABLE(SFP1_TX_DISABLE),
 	.INT_MK(xINT1_FPGA)//прерывание на мк!!!
 	);
-
+*/
 //--------------------------------------
 wire [31:0] data_test; 
 wire [15:0]	d_gen;
@@ -2473,7 +2473,7 @@ tst1(
 
 wire rst_block_eth2;
 rst reset_ETH2(clk_125,rst_block_eth2);
-
+/*
 eth_1g_top //MAC1
 #(
 	126,//чтение 32 бит служебных данных из памяти UDP ресивера 
@@ -2520,7 +2520,7 @@ eth2(
 	.SFP1_TX_DISABLE(SFP2_TX_DISABLE),
 	.INT_MK(xWDATA_MK2)
 	);
-	
+	*/
 //-----------------------------------------------
 //sdram
 
