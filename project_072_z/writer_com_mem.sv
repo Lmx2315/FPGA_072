@@ -29,7 +29,7 @@ output [31:0] Tblank2_z    	 ,//-----//-------
 output [31:0] TEST 			 
 );
 
-parameter N_IDX      =32;//размер памяти в строках (N-1)
+parameter N_IDX      =255;//размер памяти в строках (N-1)
 parameter TIME_REZERV=48*8;//8 мкс запас времени
 //-------регистры для хранения команды из spi
 logic [ 47:0] 	 tmp_FREQ 		    =0;
@@ -379,7 +379,7 @@ begin
 end
  
 
-mem1	
+mem1	//256 строк по 338 бит
 registre_MEM_inst (
 	.clock 			( CLK ),
 	.data 			( w_REG_DATA ),

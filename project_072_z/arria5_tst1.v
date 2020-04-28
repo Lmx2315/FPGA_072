@@ -1995,7 +1995,7 @@ wcm1(						  		  //блок записи и чтения команд реаль
 .FREQ_STEP      (tmp_FREQ_STEP 	 	),//----------------------
 .FREQ_RATE      (tmp_FREQ_RATE 	 	),//--------//------------ 
 .TIME_START     (tmp_TIME_START  	),
-.N_impulse 	    (tmp_N_impuls 		),
+.N_impulse 	    (tmp_N_impulse 		),
 .TYPE_impulse   (tmp_TYPE_impulse	),
 .Interval_Ti    (tmp_Interval_Ti 	),
 .Interval_Tp    (tmp_Interval_Tp 	),
@@ -2177,11 +2177,20 @@ wire [15:0] tst_data;
 //assign data_DAC0_i=data_I;
 //assign data_DAC0_q=data_Q;
 
-wire [15:0] temp_data_q;
-wire [15:0] temp_data_i;
+reg [15:0] temp_data_q=16'h0080;
+reg [15:0] temp_data_i=16'h0080;
 
-assign temp_data_q={data_I[7:0],data_I[15:8]};
-assign temp_data_i={data_Q[7:0],data_Q[15:8]};
+always @(posedge clk_96_dac1)
+if (dds_valid)
+begin
+temp_data_q<={data_I[7:0],data_I[15:8]};
+temp_data_i<={data_Q[7:0],data_Q[15:8]};
+end else
+begin
+temp_data_q<=16'h0000;
+temp_data_i<=16'h0000;
+end
+
 
 //    15-01-19		 
 sync_align_ila #(32,4)
@@ -2321,12 +2330,19 @@ wire [15:0] tst_data_D2;
 //assign data_DAC1_i=data_I;
 //assign data_DAC1_q=data_Q;
 
-wire [15:0] D2_temp_data_q;
-wire [15:0] D2_temp_data_i;
+reg [15:0] D2_temp_data_q=16'h0080;
+reg [15:0] D2_temp_data_i=16'h0080;
 
-assign D2_temp_data_q={data_Q[7:0],data_Q[15:8]};
-assign D2_temp_data_i={data_I[7:0],data_I[15:8]};
-
+always @(posedge clk_96_dac2)
+if (dds_valid)
+begin
+D2_temp_data_q<={data_I[7:0],data_I[15:8]};
+D2_temp_data_i<={data_Q[7:0],data_Q[15:8]};
+end else
+begin
+D2_temp_data_q<=16'h0000;
+D2_temp_data_i<=16'h0000;
+end
 
 //    15-01-19		 
 sync_align_ila #(32,4)
@@ -2336,8 +2352,7 @@ sa_ila_D2(
 	.clk    (clk_96_dac2),
 	.sstatus(JESD_DAC2_sync_n),
 	.sysref (SYSREF0),
-	.data   ({D2_temp_data_q,D2_temp_data_i})
-	
+	.data   ({D2_temp_data_q,D2_temp_data_i})	
 );	
 	
 

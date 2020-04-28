@@ -124,12 +124,12 @@ else
 	reg_MEM_DDS_delta_freq<=MEM_DDS_delta_freq;
 	reg_MEM_DDS_delta_rate<=MEM_DDS_delta_rate;
 	reg_MEM_TIME_START 	  <=MEM_TIME_START;
-	reg_MEM_N_impuls      <=1000;//MEM_N_impuls
-	reg_MEM_TYPE_impulse  <=0;//MEM_TYPE_impulse
-	reg_MEM_Interval_Ti   <=4800;//MEM_Interval_Ti
-	reg_MEM_Interval_Tp   <=4800;//MEM_Interval_Tp
-	reg_MEM_Tblank1       <=480;//MEM_Tblank1
-	reg_MEM_Tblank2       <=480;//MEM_Tblank2
+	reg_MEM_N_impuls      <=MEM_N_impuls;//
+	reg_MEM_TYPE_impulse  <=MEM_TYPE_impulse;//
+	reg_MEM_Interval_Ti   <=MEM_Interval_Ti;//
+	reg_MEM_Interval_Tp   <=MEM_Interval_Tp;//
+	reg_MEM_Tblank1       <=MEM_Tblank1;//
+	reg_MEM_Tblank2       <=MEM_Tblank2;//
 	end
 
 
@@ -157,7 +157,7 @@ FLAG_START_PROCESS_CMD<=1'b0;
 end
 else
 begin
-	if (TIME_MASTER==64'd48000000) FLAG_START_PROCESS_CMD<=1'b1;//reg_MEM_TIME_START
+	if (TIME_MASTER==reg_MEM_TIME_START) FLAG_START_PROCESS_CMD<=1'b1;//
 	else
 		if (state==cycle) 				 FLAG_START_PROCESS_CMD<=1'b0;
 end

@@ -8,7 +8,7 @@ Warning (10273): Verilog HDL warning at sdram_controller_2.v(150): extended usin
 Warning (10273): Verilog HDL warning at sdram_controller_2.v(401): extended using "x" or "z" File: F:/project_072_z/sdram_controller_2.v Line: 401
 Warning (10273): Verilog HDL warning at sdram_controller_2.v(405): extended using "x" or "z" File: F:/project_072_z/sdram_controller_2.v Line: 405
 Warning (10273): Verilog HDL warning at sdram_controller_2.v(408): extended using "x" or "z" File: F:/project_072_z/sdram_controller_2.v Line: 408
-Warning (10273): Verilog HDL warning at arria5_tst1.v(2604): extended using "x" or "z" File: F:/project_072_z/arria5_tst1.v Line: 2604
+Warning (10273): Verilog HDL warning at arria5_tst1.v(2619): extended using "x" or "z" File: F:/project_072_z/arria5_tst1.v Line: 2619
 Warning (10720): Verilog HDL or VHDL warning at custom_phy/sv_reconfig_bundle_to_xcvr.sv(26): MESSAGE_ON or MESSAGE_OFF directive cannot process the non-HDL message ID 13024. File: F:/project_072_z/custom_phy/sv_reconfig_bundle_to_xcvr.sv Line: 26
 Warning (10720): Verilog HDL or VHDL warning at custom_phy/sv_reconfig_bundle_to_xcvr.sv(26): MESSAGE_ON or MESSAGE_OFF directive cannot process the non-HDL message ID 21074. File: F:/project_072_z/custom_phy/sv_reconfig_bundle_to_xcvr.sv Line: 26
 Warning (10720): Verilog HDL or VHDL warning at custom_phy/av_reconfig_bundle_to_xcvr.sv(26): MESSAGE_ON or MESSAGE_OFF directive cannot process the non-HDL message ID 13024. File: F:/project_072_z/custom_phy/av_reconfig_bundle_to_xcvr.sv Line: 26
