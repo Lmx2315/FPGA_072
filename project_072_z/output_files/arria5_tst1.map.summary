@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Tue Apr 28 16:42:59 2020
+Analysis & Synthesis Status : Successful - Wed Apr 29 16:51:05 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : arria5_tst1
 Top-level Entity Name : top_module
 Family : Arria V
 Logic utilization (in ALMs) : N/A
-Total registers : 10410
+Total registers : 10470
 Total pins : 240
 Total virtual pins : 0
 Total block memory bits : 123,700

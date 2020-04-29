@@ -2191,6 +2191,30 @@ temp_data_q<=16'h0000;
 temp_data_i<=16'h0000;
 end
 
+reg [15:0] scrambled_data1_i=0;
+reg [15:0] scrambled_data1_q=0;
+
+jesd204_scrambler #(
+  .WIDTH(16),
+  .DESCRAMBLE(0)
+) i_scrambler1 (
+  .clk(clk_96_dac1),
+  .reset(~dac1_tx_ready),
+  .enable(1),
+  .data_in(temp_data_i),
+  .data_out(scrambled_data1_i)
+);
+
+jesd204_scrambler #(
+  .WIDTH(16),
+  .DESCRAMBLE(0)
+) q_scrambler1 (
+  .clk(clk_96_dac1),
+  .reset(~dac1_tx_ready),
+  .enable(1),
+  .data_in(temp_data_q),
+  .data_out(scrambled_data1_q)
+);
 
 //    15-01-19		 
 sync_align_ila #(32,4)
@@ -2200,8 +2224,7 @@ sa_ila(
 	.clk    (clk_96_dac1),
 	.sstatus(JESD_DAC1_sync_n),
 	.sysref (SYSREF0),
-	.data   ({temp_data_q,temp_data_i})
-	
+	.data   ({scrambled_data1_q,scrambled_data1_i})	//{temp_data_q,temp_data_i}
 );	
 	
 
@@ -2344,6 +2367,31 @@ D2_temp_data_q<=16'h0000;
 D2_temp_data_i<=16'h0000;
 end
 
+reg [15:0] scrambled_data2_i=0;
+reg [15:0] scrambled_data2_q=0;
+
+jesd204_scrambler #(
+  .WIDTH(16),
+  .DESCRAMBLE(0)
+) i_scrambler2 (
+  .clk(clk_96_dac2),
+  .reset(~dac2_tx_ready),
+  .enable(1),
+  .data_in(D2_temp_data_i),
+  .data_out(scrambled_data2_i)
+);
+
+jesd204_scrambler #(
+  .WIDTH(16),
+  .DESCRAMBLE(0)
+) q_scrambler2 (
+  .clk(clk_96_dac2),
+  .reset(~dac2_tx_ready),
+  .enable(1),
+  .data_in(D2_temp_data_q),
+  .data_out(scrambled_data2_q)
+);
+
 //    15-01-19		 
 sync_align_ila #(32,4)
 sa_ila_D2(
@@ -2352,8 +2400,9 @@ sa_ila_D2(
 	.clk    (clk_96_dac2),
 	.sstatus(JESD_DAC2_sync_n),
 	.sysref (SYSREF0),
-	.data   ({D2_temp_data_q,D2_temp_data_i})	
+	.data   ({scrambled_data2_q,scrambled_data2_i})//{D2_temp_data_q,D2_temp_data_i}	
 );	
+
 	
 
 custom_phy_dac

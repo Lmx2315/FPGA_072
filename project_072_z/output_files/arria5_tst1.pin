@@ -111,7 +111,7 @@ GND                          : AA2       : gnd    :                   :         
 GXB_NC                       : AA3       :        :                   :         : B0R       :                
 GXB_NC                       : AA4       :        :                   :         : B0R       :                
 GND                          : AA5       : gnd    :                   :         :           :                
-D_MISO                       : AA6       : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AA6       :        :                   :         : 4A        :                
 VCCPD4A                      : AA7       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AA8       :        :                   :         : 4A        :                
 D2_SYNC_N_CD                 : AA9       : input  : 1.8 V             :         : 4B        : Y              
@@ -262,7 +262,7 @@ GND                          : AF3       : gnd    :                   :         
 RESERVED_INPUT               : AF4       :        :                   :         : 4A        :                
 GND                          : AF5       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF6       :        :                   :         : 4A        :                
-RESERVED_INPUT               : AF7       :        :                   :         : 4A        :                
+D_MISO                       : AF7       : output : 2.5 V             :         : 4A        : N              
 GND                          : AF8       : gnd    :                   :         :           :                
 A1_CTRL2_1V8                 : AF9       : output : 1.8 V             :         : 4B        : Y              
 A2_SCLK_1V8                  : AF10      : output : 1.8 V             :         : 4B        : Y              
