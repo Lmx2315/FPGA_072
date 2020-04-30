@@ -6,7 +6,7 @@
    version="1.0"
    description=""
    tags="INTERNAL_COMPONENT=true"
-   categories="" />
+   categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
    element nco_ii_0
@@ -31,7 +31,7 @@
  <parameter name="hideFromIPCatalog" value="true" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
- <parameter name="projectName" value="" />
+ <parameter name="projectName" value="arria5_tst1.qpf" />
  <parameter name="sopcBorderPoints" value="false" />
  <parameter name="systemHash" value="0" />
  <parameter name="testBenchDutName" value="" />
@@ -65,10 +65,10 @@
   <parameter name="aprf" value="32" />
   <parameter name="apri" value="16" />
   <parameter name="aprp" value="16" />
-  <parameter name="arch" value="cordic" />
+  <parameter name="arch" value="large_rom" />
   <parameter name="cordic_arch" value="parallel" />
   <parameter name="design_env" value="NATIVE" />
-  <parameter name="dpri" value="8" />
+  <parameter name="dpri" value="10" />
   <parameter name="fmod_pipe" value="1" />
   <parameter name="freq_out" value="15.0" />
   <parameter name="fsamp" value="96.0" />

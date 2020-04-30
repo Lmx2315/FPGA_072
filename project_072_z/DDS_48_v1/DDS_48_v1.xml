@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2020.02.17.17:53:17"
+ date="2020.04.30.13:55:00"
  outputDirectory="F:/project_072_z/DDS_48_v1/">
  <perimeter>
   <parameter
@@ -80,13 +80,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="DDS_48_v1:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_FAMILY=Arria V,AUTO_DEVICE_SPEEDGRADE=4_H4,AUTO_GENERATION_ID=1581951084,AUTO_UNIQUE_ID=(altera_nco_ii:18.1:apr=48,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=8,fmod_pipe=1,freq_out=15.0,fsamp=96.0,hyper_opt=false,hyper_opt_select=false,mpr=16,numba=1,numch=1,phi_inc=43980465111040,pmod_pipe=1,real_freq_out=15.0,selected_device_family=Arria V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=true,want_phase_mod=true,want_sin_and_cos=dual_output)"
+   parameterizationKey="DDS_48_v1:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5AGXMA7G4F31C4,AUTO_DEVICE_FAMILY=Arria V,AUTO_DEVICE_SPEEDGRADE=4_H4,AUTO_GENERATION_ID=1588243979,AUTO_UNIQUE_ID=(altera_nco_ii:18.1:apr=48,aprf=32,apri=16,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=10,fmod_pipe=1,freq_out=15.0,fsamp=96.0,hyper_opt=false,hyper_opt_select=false,mpr=16,numba=1,numch=1,phi_inc=43980465111040,pmod_pipe=1,real_freq_out=15.0,selected_device_family=Arria V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=true,want_phase_mod=true,want_sin_and_cos=dual_output)"
    instancePathKey="DDS_48_v1"
    kind="DDS_48_v1"
    version="1.0"
    name="DDS_48_v1">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1581951084" />
+  <parameter name="AUTO_GENERATION_ID" value="1588243979" />
   <parameter name="AUTO_DEVICE" value="5AGXMA7G4F31C4" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Arria V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -104,31 +104,7 @@
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/dop_reg.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_seg_sel.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx_g.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_2c.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_mob_rw.v"
        type="VERILOG"
        attributes="" />
    <file
@@ -136,15 +112,15 @@
        type="VERILOG"
        attributes="" />
    <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
        path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_pxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_fs.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_init_pm.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx_g.v"
        type="VERILOG"
        attributes="" />
    <file
@@ -152,16 +128,24 @@
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_gal.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_crd_par.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_as_m_cen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v"
        type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0_sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0_cos.hex"
+       type="HEX"
        attributes="" />
    <file
        path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v"
@@ -211,7 +195,7 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_nco_ii:18.1:apr=48,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=8,fmod_pipe=1,freq_out=15.0,fsamp=96.0,hyper_opt=false,hyper_opt_select=false,mpr=16,numba=1,numch=1,phi_inc=43980465111040,pmod_pipe=1,real_freq_out=15.0,selected_device_family=Arria V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=true,want_phase_mod=true,want_sin_and_cos=dual_output"
+   parameterizationKey="altera_nco_ii:18.1:apr=48,aprf=32,apri=16,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=10,fmod_pipe=1,freq_out=15.0,fsamp=96.0,hyper_opt=false,hyper_opt_select=false,mpr=16,numba=1,numch=1,phi_inc=43980465111040,pmod_pipe=1,real_freq_out=15.0,selected_device_family=Arria V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=true,want_phase_mod=true,want_sin_and_cos=dual_output"
    instancePathKey="DDS_48_v1:.:nco_ii_0"
    kind="altera_nco_ii"
    version="18.1"
@@ -231,7 +215,7 @@
   <parameter name="apr" value="48" />
   <parameter name="hyper_opt" value="false" />
   <parameter name="trig_cycles_per_output" value="1" />
-  <parameter name="dpri" value="8" />
+  <parameter name="dpri" value="10" />
   <parameter name="mpr" value="16" />
   <parameter name="design_env" value="NATIVE" />
   <parameter name="numch" value="1" />
@@ -240,7 +224,7 @@
   <parameter name="want_sin_and_cos" value="dual_output" />
   <parameter name="phi_inc" value="43980465111040" />
   <parameter name="fmod_pipe" value="1" />
-  <parameter name="arch" value="cordic" />
+  <parameter name="arch" value="large_rom" />
   <parameter name="freq_out" value="15.0" />
   <parameter name="real_freq_out" value="15.0" />
   <generatedFiles>
@@ -249,31 +233,7 @@
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_axor_1p_lpm.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/dop_reg.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_seg_sel.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx_g.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_2c.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_mob_rw.v"
        type="VERILOG"
        attributes="" />
    <file
@@ -281,15 +241,15 @@
        type="VERILOG"
        attributes="" />
    <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
        path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_pxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_fs.v"
-       type="VERILOG"
-       attributes="" />
-   <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cord_init_pm.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_dxx_g.v"
        type="VERILOG"
        attributes="" />
    <file
@@ -297,16 +257,24 @@
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_zxor_1p_lpm.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_gal.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_crd_par.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_nco_as_m_cen.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/cordic_sxor_1p_lpm.v"
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/asj_altqmcpipe.v"
        type="VERILOG"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0_sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0_cos.hex"
+       type="HEX"
        attributes="" />
    <file
        path="F:/project_072_z/DDS_48_v1/synthesis/submodules/DDS_48_v1_nco_ii_0.v"

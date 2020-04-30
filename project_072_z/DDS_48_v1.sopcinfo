@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="DDS_48_v1" kind="DDS_48_v1" version="1.0" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2020.02.17.17:51:24 -->
+ <!-- 2020.04.30.13:52:59 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1581951084</value>
+  <value>1588243979</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -109,7 +109,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="arch">
    <type>java.lang.String</type>
-   <value>cordic</value>
+   <value>large_rom</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -185,7 +185,7 @@ the requested settings for a module instance. -->
    <value>parallel</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>true</visible>
+   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="trig_cycles_per_output">
@@ -214,7 +214,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dpri">
    <type>int</type>
-   <value>8</value>
+   <value>10</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

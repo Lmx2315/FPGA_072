@@ -1899,17 +1899,12 @@ logic [31:0] mInterval_Ti 	;
 logic [31:0] mInterval_Tp 	;
 logic [31:0] mTblank1 		;
 logic [31:0] mTblank2 		;
-
 //----------------------------
 
 logic [47:0] 	wFREQ 		;
 logic [47:0] 	wFREQ_STEP 	;
 logic [31:0] 	wFREQ_RATE	;
 logic 			DDS_START 	;
-
-logic [15:0] dds_data_I;
-logic [15:0] dds_data_Q;
-logic 		 dds_valid ;
 
 logic 		SYS_TIME_UPDATE_OK;
 logic 		wEn_Iz;
@@ -1922,6 +1917,7 @@ logic wACK=0;
 
 logic [15:0] data_I;
 logic [15:0] data_Q;
+logic 		 dds_valid;
 
 dds_chirp 
 dds1(
@@ -2191,8 +2187,8 @@ temp_data_q<=16'h0000;
 temp_data_i<=16'h0000;
 end
 
-reg [15:0] scrambled_data1_i=0;
-reg [15:0] scrambled_data1_q=0;
+wire [15:0] scrambled_data1_i;
+wire [15:0] scrambled_data1_q;
 
 jesd204_scrambler #(
   .WIDTH(16),
@@ -2367,8 +2363,8 @@ D2_temp_data_q<=16'h0000;
 D2_temp_data_i<=16'h0000;
 end
 
-reg [15:0] scrambled_data2_i=0;
-reg [15:0] scrambled_data2_q=0;
+wire [15:0] scrambled_data2_i;
+wire [15:0] scrambled_data2_q;
 
 jesd204_scrambler #(
   .WIDTH(16),

@@ -1,47 +1,37 @@
-# system info DDS_48_v1 on 2020.02.17.17:48:46
+# system info DDS_48_v1 on 2020.04.30.13:50:16
 system_info:
 name,value
 DEVICE,5AGXMA7G4F31C4
 DEVICE_FAMILY,Arria V
-GENERATION_ID,1581950847
+GENERATION_ID,1588243743
 #
 #
-# Files generated for DDS_48_v1 on 2020.02.17.17:48:46
+# Files generated for DDS_48_v1 on 2020.04.30.13:50:16
 files:
 filepath,kind,attributes,module,is_top
 simulation/DDS_48_v1.v,VERILOG,,DDS_48_v1,true
 simulation/submodules/mentor/asj_nco_fxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/aldec/asj_nco_fxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/asj_nco_apr_dxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/asj_nco_apr_dxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cordic_axor_1p_lpm.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cordic_axor_1p_lpm.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/dop_reg.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/dop_reg.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cord_seg_sel.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cord_seg_sel.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/asj_dxx_g.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/asj_dxx_g.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cord_2c.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cord_2c.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/asj_altqmcpipe.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/asj_altqmcpipe.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/mentor/asj_nco_mob_rw.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_mob_rw.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/mentor/asj_nco_isdr.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/aldec/asj_nco_isdr.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/mentor/asj_nco_apr_dxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_apr_dxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/mentor/asj_nco_pxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/aldec/asj_nco_pxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cord_fs.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cord_fs.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cord_init_pm.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cord_init_pm.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/mentor/asj_dxx_g.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/aldec/asj_dxx_g.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/mentor/asj_dxx.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
 simulation/submodules/aldec/asj_dxx.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cordic_zxor_1p_lpm.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cordic_zxor_1p_lpm.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/asj_crd_par.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/asj_crd_par.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/mentor/cordic_sxor_1p_lpm.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
-simulation/submodules/aldec/cordic_sxor_1p_lpm.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/mentor/asj_gal.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/aldec/asj_gal.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/mentor/asj_nco_as_m_cen.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/aldec/asj_nco_as_m_cen.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/mentor/asj_altqmcpipe.v,VERILOG_ENCRYPT,MENTOR_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/aldec/asj_altqmcpipe.v,VERILOG_ENCRYPT,ALDEC_SPECIFIC,DDS_48_v1_nco_ii_0,false
+simulation/submodules/DDS_48_v1_nco_ii_0_sin.hex,HEX,,DDS_48_v1_nco_ii_0,false
+simulation/submodules/DDS_48_v1_nco_ii_0_cos.hex,HEX,,DDS_48_v1_nco_ii_0,false
 simulation/submodules/DDS_48_v1_nco_ii_0.v,VERILOG,,DDS_48_v1_nco_ii_0,false
 simulation/submodules/DDS_48_v1_nco_ii_0_tb.vhd,OTHER,,DDS_48_v1_nco_ii_0,false
 simulation/submodules/c_model/model_wrapper.cpp,OTHER,,DDS_48_v1_nco_ii_0,false

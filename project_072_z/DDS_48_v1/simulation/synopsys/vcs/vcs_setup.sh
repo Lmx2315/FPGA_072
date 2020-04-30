@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 18.1 625 win32 2020.02.17.17:48:47
+# ACDS 18.1 625 win32 2020.04.30.13:50:18
 
 # ----------------------------------------
 # vcs - auto-generated simulation script
@@ -94,7 +94,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 18.1 625 win32 2020.02.17.17:48:47
+# ACDS 18.1 625 win32 2020.04.30.13:50:18
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="DDS_48_v1"
@@ -129,6 +129,10 @@ fi
 
 # ----------------------------------------
 # copy RAM/ROM files to simulation directory
+if [ $SKIP_FILE_COPY -eq 0 ]; then
+  cp -f $QSYS_SIMDIR/submodules/DDS_48_v1_nco_ii_0_sin.hex ./
+  cp -f $QSYS_SIMDIR/submodules/DDS_48_v1_nco_ii_0_cos.hex ./
+fi
 
 vcs -lca -timescale=1ps/1ps -sverilog +verilog2001ext+.v -ntb_opts dtm $ELAB_OPTIONS $USER_DEFINED_ELAB_OPTIONS \
   -v $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_primitives.v \

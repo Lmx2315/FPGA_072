@@ -1,5 +1,5 @@
 Flow report for arria5_tst1
-Wed Apr 29 16:59:32 2020
+Thu Apr 30 14:14:02 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,18 +40,18 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Wed Apr 29 16:59:32 2020           ;
+; Flow Status                     ; Successful - Thu Apr 30 14:14:02 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; arria5_tst1                                     ;
 ; Top-level Entity Name           ; top_module                                      ;
 ; Family                          ; Arria V                                         ;
 ; Device                          ; 5AGXMA7G4F31C4                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 4,778 / 91,680 ( 5 % )                          ;
-; Total registers                 ; 10879                                           ;
+; Logic utilization (in ALMs)     ; 3,801 / 91,680 ( 4 % )                          ;
+; Total registers                 ; 8541                                            ;
 ; Total pins                      ; 261 / 468 ( 56 % )                              ;
 ; Total virtual pins              ; 0                                               ;
-; Total block memory bits         ; 123,700 / 13,987,840 ( < 1 % )                  ;
+; Total block memory bits         ; 2,220,852 / 13,987,840 ( 16 % )                 ;
 ; Total DSP Blocks                ; 0 / 800 ( 0 % )                                 ;
 ; Total HSSI RX PCSs              ; 8 / 18 ( 44 % )                                 ;
 ; Total HSSI PMA RX Deserializers ; 8 / 18 ( 44 % )                                 ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/29/2020 16:47:19 ;
+; Start date & time ; 04/30/2020 14:01:23 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arria5_tst1         ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------+-------------+----------------+
 ; ALLOW_REGISTER_MERGING                           ; Off                                                                                                              ; On                                   ; --          ; --             ;
 ; ALLOW_REGISTER_RETIMING                          ; Off                                                                                                              ; On                                   ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                            ; 246744076312469.158816800611624                                                                                  ; --                                   ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                            ; 246744076312469.158824445107100                                                                                  ; --                                   ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME                         ; NA                                                                                                               ; --                                   ; --          ; tb             ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH             ; tb                                                                                                               ; --                                   ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT                           ; Systemverilog Hdl                                                                                                ; --                                   ; --          ; eda_simulation ;
@@ -1307,7 +1307,7 @@ refer to the applicable agreement for further details.
 ; SLD_FILE                                         ; dds/synthesis/dds.debuginfo                                                                                      ; --                                   ; --          ; --             ;
 ; SLD_FILE                                         ; nco_test/synthesis/nco_test.debuginfo                                                                            ; --                                   ; --          ; --             ;
 ; SLD_FILE                                         ; cic/synthesis/cic.debuginfo                                                                                      ; --                                   ; --          ; --             ;
-; SLD_INFO                                         ; QSYS_NAME DDS_48_v1 HAS_SOPCINFO 1 GENERATION_ID 1581951084                                                      ; --                                   ; DDS_48_v1   ; --             ;
+; SLD_INFO                                         ; QSYS_NAME DDS_48_v1 HAS_SOPCINFO 1 GENERATION_ID 1588243979                                                      ; --                                   ; DDS_48_v1   ; --             ;
 ; SLD_INFO                                         ; QSYS_NAME cic HAS_SOPCINFO 1 GENERATION_ID 1558424783                                                            ; --                                   ; cic         ; --             ;
 ; SLD_INFO                                         ; QSYS_NAME dds HAS_SOPCINFO 1 GENERATION_ID 1570690408                                                            ; --                                   ; dds         ; --             ;
 ; SLD_INFO                                         ; QSYS_NAME nco_test HAS_SOPCINFO 1 GENERATION_ID 1557213253                                                       ; --                                   ; nco_test    ; --             ;
@@ -1382,14 +1382,14 @@ refer to the applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:04:23     ; 1.2                     ; 1374 MB             ; 00:04:37                           ;
-; I/O Assignment Analysis ; 00:01:23     ; 1.0                     ; 1827 MB             ; 00:01:23                           ;
-; Fitter                  ; 00:04:14     ; 1.2                     ; 3730 MB             ; 00:09:14                           ;
-; Assembler               ; 00:00:30     ; 1.0                     ; 851 MB              ; 00:00:30                           ;
-; Timing Analyzer         ; 00:00:52     ; 1.8                     ; 1563 MB             ; 00:01:07                           ;
-; Design Assistant        ; 00:00:37     ; 1.0                     ; 853 MB              ; 00:00:36                           ;
-; EDA Netlist Writer      ; 00:00:25     ; 1.0                     ; 1026 MB             ; 00:00:25                           ;
-; Total                   ; 00:12:24     ; --                      ; --                  ; 00:17:52                           ;
+; Analysis & Synthesis    ; 00:05:09     ; 1.1                     ; 1475 MB             ; 00:04:33                           ;
+; I/O Assignment Analysis ; 00:01:19     ; 1.0                     ; 1824 MB             ; 00:01:19                           ;
+; Fitter                  ; 00:04:04     ; 1.1                     ; 3683 MB             ; 00:09:00                           ;
+; Assembler               ; 00:00:31     ; 1.0                     ; 874 MB              ; 00:00:31                           ;
+; Timing Analyzer         ; 00:00:50     ; 1.8                     ; 1545 MB             ; 00:01:03                           ;
+; Design Assistant        ; 00:00:35     ; 1.0                     ; 839 MB              ; 00:00:35                           ;
+; EDA Netlist Writer      ; 00:00:23     ; 1.0                     ; 1013 MB             ; 00:00:23                           ;
+; Total                   ; 00:12:51     ; --                      ; --                  ; 00:17:24                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

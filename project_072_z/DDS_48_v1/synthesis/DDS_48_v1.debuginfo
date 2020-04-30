@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="DDS_48_v1" kind="system" version="18.1" fabric="QSYS">
  <!-- Format version 18.1 625 (Future versions may contain additional information.) -->
- <!-- 2020.02.17.17:53:17 -->
+ <!-- 2020.04.30.13:55:01 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1581951084</value>
+  <value>1588243979</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -101,7 +101,7 @@
  </parameter>
  <parameter name="projectName">
   <type>java.lang.String</type>
-  <value></value>
+  <value>arria5_tst1.qpf</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -161,7 +161,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="arch">
    <type>java.lang.String</type>
-   <value>cordic</value>
+   <value>large_rom</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -237,7 +237,7 @@ the requested settings for a module instance. -->
    <value>parallel</value>
    <derived>false</derived>
    <enabled>true</enabled>
-   <visible>true</visible>
+   <visible>false</visible>
    <valid>true</valid>
   </parameter>
   <parameter name="trig_cycles_per_output">
@@ -266,7 +266,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="dpri">
    <type>int</type>
-   <value>8</value>
+   <value>10</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -632,5 +632,5 @@ parameters are a RESULT of the module parameters. -->
   <version>18.1</version>
  </plugin>
  <reportVersion>18.1 625</reportVersion>
- <uniqueIdentifier>3E6090C774CA0000017053A30A7B</uniqueIdentifier>
+ <uniqueIdentifier>C22C49E92D4800000171CAB9194C</uniqueIdentifier>
 </EnsembleReport>

@@ -1,22 +1,23 @@
 
-State Machine - |top_module|Block_read_spi:spi_read_data_MEM|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al2|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
 
-State Machine - |top_module|sdram_mk_upr:u1|step_rd
-Name step_rd.00000011 step_rd.00000010 step_rd.00000001 step_rd.00000000 step_rd.11001000 step_rd.00010100 
-step_rd.00000000 0 0 0 0 0 0 
-step_rd.00000001 0 0 1 1 0 0 
-step_rd.00000010 0 1 0 1 0 0 
-step_rd.00000011 1 0 0 1 0 0 
-step_rd.00010100 0 0 0 1 0 1 
-step_rd.11001000 0 0 0 1 1 0 
-
-State Machine - |top_module|sdram_cntr:SDRAM_CNTR0|w_st
-Name w_st.01 
-w_st.00 0 
-w_st.01 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al1|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
 
 State Machine - |top_module|adc2_jesd_rcv:adc2|adc2_align:al2|step
 Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
@@ -38,45 +39,39 @@ step.00000100 0 0 1 0 0 0 1
 step.00000101 0 1 0 0 0 0 1 
 step.00000110 1 0 0 0 0 0 1 
 
-State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al2|step
-Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 0 0 0 
-step.00000001 0 0 0 0 0 1 1 
-step.00000010 0 0 0 0 1 0 1 
-step.00000011 0 0 0 1 0 0 1 
-step.00000100 0 0 1 0 0 0 1 
-step.00000101 0 1 0 0 0 0 1 
-step.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al1|step
-Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 0 0 0 
-step.00000001 0 0 0 0 0 1 1 
-step.00000010 0 0 0 0 1 0 1 
-step.00000011 0 0 0 1 0 0 1 
-step.00000100 0 0 1 0 0 0 1 
-step.00000101 0 1 0 0 0 0 1 
-step.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc2|flag
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi:spi_test|flag
+State Machine - |top_module|Block_read_spi_v2:spi_walign_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[3].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg1_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[2].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
+
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[1].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
+
+State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[0].al|align
+Name align.00000000 align.00000010 align.00000001 
+align.00000000 0 0 0 
+align.00000001 1 0 1 
+align.00000010 1 1 0 
 
 State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc2|flag
 Name flag.0001 
@@ -84,11 +79,6 @@ flag.0000 0
 flag.0001 1 
 
 State Machine - |top_module|Block_read_spi_v2:spi_walign_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_adc2|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -122,153 +112,15 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi_v2:spi_error_sysref_adc1|flag
+State Machine - |top_module|Block_read_spi:spi_read_data_MEM|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi:spi_control1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_walign_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[3].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[2].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[1].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|line_world_align:gen_lane[0].al|align
-Name align.00000000 align.00000010 align.00000001 
-align.00000000 0 0 0 
-align.00000001 1 0 1 
-align.00000010 1 1 0 
-
-State Machine - |top_module|Block_read_spi_v2:spi_test1_sync|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_TEST_wr|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_TEST_rd|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_control2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi_mac:spi_test_sdram_wr|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_LED|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_PWRDN|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_upr1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_att4|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi:spi_att2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac2_D2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac1_D2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_dac1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_write_spi_mac:spi_adr_read_MEM|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|sdram_mk_upr:u1|step_wr
-Name step_wr.00000101 step_wr.00000100 step_wr.00000011 step_wr.00000010 step_wr.00000000 step_wr.11001000 
-step_wr.00000000 0 0 0 0 0 0 
-step_wr.00000010 0 0 0 1 1 0 
-step_wr.00000011 0 0 1 0 1 0 
-step_wr.00000100 0 1 0 0 1 0 
-step_wr.00000101 1 0 0 0 1 0 
-step_wr.11001000 0 0 0 0 1 1 
+State Machine - |top_module|sdram_cntr:SDRAM_CNTR0|w_st
+Name w_st.01 
+w_st.00 0 
+w_st.01 1 
 
 State Machine - |top_module|sdram_cntr:SDRAM_CNTR0|st
 Name st.READ_END st.READ_DATA st.READ_WAIT3 st.READ_WAIT2 st.READ_WAIT1 st.READ_START st.READ_NOP2 st.READ_NOP1 st.READ_ACT st.READ st.WRITE_STOP_PRE st.WRITE_STOP1 st.WRITE_STOP0 st.WRITE_N st.WRITE_D0 st.WRITE_NOP2 st.WRITE_NOP1 st.WRITE_ACT st.WRITE st.REF_WAIT st.REF_AREF st.REF_NOP2 st.REF_NOP1 st.REF st.IDLE st.INIT_LMR2 st.INIT_LMR1 st.INIT_LMR st.INIT_WAIT3 st.INIT_WAIT2 st.INIT_REF2 st.INIT_WAIT1 st.INIT_REF1 st.INIT_NOP2 st.INIT_NOP1 st.INIT_PRE st.INIT_POWERUP st.00000000 
@@ -311,6 +163,159 @@ st.READ_WAIT3 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 st.READ_DATA 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 st.READ_END 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
+State Machine - |top_module|Block_read_spi_v2:spi_error_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_sysref_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_test1_sync|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac2_D2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac1_D2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg1_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi_mac:spi_test_sdram_wr|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_LED|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_PWRDN|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_upr1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi:spi_att4|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_test|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_write_spi_mac:spi_adr_read_MEM|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|sdram_mk_upr:u1|step_wr
+Name step_wr.00000101 step_wr.00000100 step_wr.00000011 step_wr.00000010 step_wr.00000000 step_wr.11001000 
+step_wr.00000000 0 0 0 0 0 0 
+step_wr.00000010 0 0 0 1 1 0 
+step_wr.00000011 0 0 1 0 1 0 
+step_wr.00000100 0 1 0 0 1 0 
+step_wr.00000101 1 0 0 0 1 0 
+step_wr.11001000 0 0 0 0 1 1 
+
+State Machine - |top_module|sdram_mk_upr:u1|step_rd
+Name step_rd.00000011 step_rd.00000010 step_rd.00000001 step_rd.00000000 step_rd.11001000 step_rd.00010100 
+step_rd.00000000 0 0 0 0 0 0 
+step_rd.00000001 0 0 1 1 0 0 
+step_rd.00000010 0 1 0 1 0 0 
+step_rd.00000011 1 0 0 1 0 0 
+step_rd.00010100 0 0 0 1 0 1 
+step_rd.11001000 0 0 0 1 1 0 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|sync_align_ila:sa_ila|step_faza
+Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
+step_faza.00000000 0 0 0 0 0 0 0 
+step_faza.00000001 0 0 0 0 0 1 1 
+step_faza.00000010 0 0 0 0 1 0 1 
+step_faza.00000011 0 0 0 1 0 0 1 
+step_faza.00000100 0 0 1 0 0 0 1 
+step_faza.00000101 0 1 0 0 0 0 1 
+step_faza.00000110 1 0 0 0 0 0 1 
+
+State Machine - |top_module|sync_align_ila:sa_ila_D2|step_faza
+Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
+step_faza.00000000 0 0 0 0 0 0 0 
+step_faza.00000001 0 0 0 0 0 1 1 
+step_faza.00000010 0 0 0 0 1 0 1 
+step_faza.00000011 0 0 0 1 0 0 1 
+step_faza.00000100 0 0 1 0 0 0 1 
+step_faza.00000101 0 1 0 0 0 0 1 
+step_faza.00000110 1 0 0 0 0 0 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_dac1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_control2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_control1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
 State Machine - |top_module|Block_write_spi:spi_wr_custom_phy_dac1_D2|flag
 Name flag.0001 
 flag.0000 0 
@@ -341,12 +346,22 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
+State Machine - |top_module|Block_write_spi:spi_att2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
 State Machine - |top_module|Block_write_spi:spi_att1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc2|flag
+State Machine - |top_module|Block_write_spi:spi_TEST_wr|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_TEST_rd|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -361,22 +376,7 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|sync_align_ila:sa_ila|step_faza
-Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
-step_faza.00000000 0 0 0 0 0 0 0 
-step_faza.00000001 0 0 0 0 0 1 1 
-step_faza.00000010 0 0 0 0 1 0 1 
-step_faza.00000011 0 0 0 1 0 0 1 
-step_faza.00000100 0 0 1 0 0 0 1 
-step_faza.00000101 0 1 0 0 0 0 1 
-step_faza.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|sync_align_ila:sa_ila_D2|step_faza
-Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
-step_faza.00000000 0 0 0 0 0 0 0 
-step_faza.00000001 0 0 0 0 0 1 1 
-step_faza.00000010 0 0 0 0 1 0 1 
-step_faza.00000011 0 0 0 1 0 0 1 
-step_faza.00000100 0 0 1 0 0 0 1 
-step_faza.00000101 0 1 0 0 0 0 1 
-step_faza.00000110 1 0 0 0 0 0 1 
+State Machine - |top_module|Block_read_spi_v2:spi_error_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 

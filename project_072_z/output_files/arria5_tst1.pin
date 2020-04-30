@@ -259,10 +259,10 @@ GND                          : AE30      : gnd    :                   :         
 RREF                         : AF1       :        :                   :         :           :                
 DNU                          : AF2       :        :                   :         :           :                
 GND                          : AF3       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AF4       :        :                   :         : 4A        :                
+D_MISO                       : AF4       : output : 2.5 V             :         : 4A        : N              
 GND                          : AF5       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AF6       :        :                   :         : 4A        :                
-D_MISO                       : AF7       : output : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AF7       :        :                   :         : 4A        :                
 GND                          : AF8       : gnd    :                   :         :           :                
 A1_CTRL2_1V8                 : AF9       : output : 1.8 V             :         : 4B        : Y              
 A2_SCLK_1V8                  : AF10      : output : 1.8 V             :         : 4B        : Y              
@@ -320,7 +320,7 @@ RESERVED_INPUT               : AH1       :        :                   :         
 RESERVED_INPUT               : AH2       :        :                   :         : 4A        :                
 VCCIO4A                      : AH3       : power  :                   : 2.5V    : 4A        :                
 RESERVED_INPUT               : AH4       :        :                   :         : 4A        :                
-D_MOSI                       : AH5       : input  : 2.5 V             :         : 4A        : N              
+RESERVED_INPUT               : AH5       :        :                   :         : 4A        :                
 VCCIO4A                      : AH6       : power  :                   : 2.5V    : 4A        :                
 D2_RESETB                    : AH7       : output : 1.8 V             :         : 4B        : Y              
 D2_SDENB                     : AH8       : output : 1.8 V             :         : 4B        : Y              
@@ -589,7 +589,7 @@ GND                          : H2        :        :                   :         
 GND                          : H3        : gnd    :                   :         :           :                
 GND                          : H4        : gnd    :                   :         :           :                
 DNU                          : H5        :        :                   :         :           :                
-RESERVED_INPUT               : H6        :        :                   :         : 7A        :                
+D_MOSI                       : H6        : input  : 2.5 V             :         : 7A        : N              
 RESERVED_INPUT               : H7        :        :                   :         : 7A        :                
 GND                          : H8        : gnd    :                   :         :           :                
 DE1RX_RS422                  : H9        : output : 3.3-V LVCMOS      :         : 7B        : Y              
