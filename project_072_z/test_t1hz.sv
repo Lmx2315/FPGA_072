@@ -5,11 +5,21 @@ module test_t1hz (
 	output z
 );
 
-logic [31:0] sch=0;
-
-always_ff @(posedge clk) 
-begin 
-	sch<=sch+1;
+reg signal_1sec;
+reg [31:0] timer_1sec=0;
+always @(posedge clk)
+begin
+if (timer_1sec!=24000000) 
+begin
+timer_1sec <=timer_1sec+1; 
 end
-assign z=sch[26];//будет 67/48  секунды , если clk=48 МГц
+else
+	begin
+	timer_1sec <=0;
+	signal_1sec<=~signal_1sec;	
+	end
+end
+
+assign z=signal_1sec;
+
 endmodule

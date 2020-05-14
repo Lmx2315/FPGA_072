@@ -1,5 +1,5 @@
 Flow report for arria5_tst1
-Thu Apr 30 14:14:02 2020
+Thu May 14 16:32:23 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Thu Apr 30 14:14:02 2020           ;
+; Flow Status                     ; Successful - Thu May 14 16:32:23 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; arria5_tst1                                     ;
 ; Top-level Entity Name           ; top_module                                      ;
 ; Family                          ; Arria V                                         ;
 ; Device                          ; 5AGXMA7G4F31C4                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 3,801 / 91,680 ( 4 % )                          ;
-; Total registers                 ; 8541                                            ;
+; Logic utilization (in ALMs)     ; 3,752 / 91,680 ( 4 % )                          ;
+; Total registers                 ; 8527                                            ;
 ; Total pins                      ; 261 / 468 ( 56 % )                              ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 2,220,852 / 13,987,840 ( 16 % )                 ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/30/2020 14:01:23 ;
+; Start date & time ; 05/14/2020 16:19:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; arria5_tst1         ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------+------------------------------------------------------------------------------------------------------------------+--------------------------------------+-------------+----------------+
 ; ALLOW_REGISTER_MERGING                           ; Off                                                                                                              ; On                                   ; --          ; --             ;
 ; ALLOW_REGISTER_RETIMING                          ; Off                                                                                                              ; On                                   ; --          ; --             ;
-; COMPILER_SIGNATURE_ID                            ; 246744076312469.158824445107100                                                                                  ; --                                   ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                            ; 246744076312469.158946233111400                                                                                  ; --                                   ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME                         ; NA                                                                                                               ; --                                   ; --          ; tb             ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH             ; tb                                                                                                               ; --                                   ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT                           ; Systemverilog Hdl                                                                                                ; --                                   ; --          ; eda_simulation ;
@@ -1382,14 +1382,14 @@ refer to the applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:05:09     ; 1.1                     ; 1475 MB             ; 00:04:33                           ;
-; I/O Assignment Analysis ; 00:01:19     ; 1.0                     ; 1824 MB             ; 00:01:19                           ;
-; Fitter                  ; 00:04:04     ; 1.1                     ; 3683 MB             ; 00:09:00                           ;
-; Assembler               ; 00:00:31     ; 1.0                     ; 874 MB              ; 00:00:31                           ;
-; Timing Analyzer         ; 00:00:50     ; 1.8                     ; 1545 MB             ; 00:01:03                           ;
-; Design Assistant        ; 00:00:35     ; 1.0                     ; 839 MB              ; 00:00:35                           ;
-; EDA Netlist Writer      ; 00:00:23     ; 1.0                     ; 1013 MB             ; 00:00:23                           ;
-; Total                   ; 00:12:51     ; --                      ; --                  ; 00:17:24                           ;
+; Analysis & Synthesis    ; 00:05:10     ; 1.2                     ; 1401 MB             ; 00:04:35                           ;
+; I/O Assignment Analysis ; 00:01:20     ; 1.0                     ; 1820 MB             ; 00:01:20                           ;
+; Fitter                  ; 00:04:11     ; 1.1                     ; 3683 MB             ; 00:09:17                           ;
+; Assembler               ; 00:00:33     ; 1.0                     ; 877 MB              ; 00:00:33                           ;
+; Timing Analyzer         ; 00:00:56     ; 1.8                     ; 1547 MB             ; 00:01:12                           ;
+; Design Assistant        ; 00:00:38     ; 1.0                     ; 845 MB              ; 00:00:38                           ;
+; EDA Netlist Writer      ; 00:00:24     ; 1.0                     ; 1008 MB             ; 00:00:24                           ;
+; Total                   ; 00:13:12     ; --                      ; --                  ; 00:17:59                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

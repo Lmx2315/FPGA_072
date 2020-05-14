@@ -101,16 +101,16 @@ input wire CS_FPGA2,
 	  
 //------------------------------------------------------
 	
-input wire UART6_TX, //uart6 mk
+input  wire UART6_TX, 			//uart6 mk
 output wire UART6_RX,
 	 
-input wire UART1_TX, //uart1 mk
+input  wire UART1_TX, 			//uart1 mk
 output wire UART1_RX,
 	 
-input wire TX_FTDI_1, //FTDI1 mk
+input  wire TX_FTDI_1, 			//FTDI1 mk
 output wire RX_FTDI_1,
 	 
-input wire TX_FTDI_2, //FTDI2 mk
+input  wire TX_FTDI_2,	 		//FTDI2 mk
 output wire RX_FTDI_2,
 	 
 output wire BOOT1,
@@ -120,22 +120,23 @@ input wire BOOT_MK_FTDI,
 input wire RESET_MK_FTDI,
 	 
 	 
-input wire MR_RESET_MK_FPGA, 	// сигнал ресет для МК
+ input wire MR_RESET_MK_FPGA, 	// сигнал ресет для МК
 output wire RESET_MK,
-input wire BOOT_MK_FPGA, 		// сигнал , буут для МК
+ input wire BOOT_MK_FPGA, 		// сигнал , буут для МК
 output wire CLK_FOR_MK_3V3,     // clk на МК 
 	  
-output wire TNC_MK_1HZ, //1 сек к mk
-output wire INT1_FPGA,
+output wire TNC_MK_1HZ, 		//1 сек к mk
+output wire INT1_FPGA,			//прерывание ETH1
+
 	  	  
-input   wire WDATA_MK0, //шина 8 бит с МК
-output  wire WDATA_MK1, //шина 8 бит с МК
-output  wire WDATA_MK2, //шина 8 бит с МК
-output  wire WDATA_MK3, //шина 8 бит с МК
-output  wire WDATA_MK4, //шина 8 бит с МК
-output  wire WDATA_MK5, //шина 8 бит с МК
-output  wire WDATA_MK6, //шина 8 бит с МК
-output  wire WDATA_MK7, //шина 8 бит с МК
+input   wire WDATA_MK0, //от МК к ПЛИС 
+output  wire WDATA_MK1, //нельзя использовать как прерывание!! эта ветка в МК занята секундной меткой
+output  wire WDATA_MK2, //нельзя использовать как прерывание!! эта ветка в МК занята прерыванием от ETH1
+output  wire WDATA_MK3, //прерывание от WCW
+output  wire WDATA_MK4, //
+output  wire WDATA_MK5, //
+output  wire WDATA_MK6, //
+output  wire WDATA_MK7, //нельзя использовать как прерывание!! эта ветка в МК занята прерыванием от ETH1
 
 output wire OK_BUS,
 input  wire WR_BUS,
@@ -148,7 +149,7 @@ input  wire SPI4_MOSI_MK,
 output wire SPI4_MISO_MK,
 	  
 	  
- input wire SPI3_SCK,  //SPI где слейв ПЛИС
+ input wire SPI3_SCK,  		//SPI где слейв ПЛИС
  input wire SPI3_CS,
 output wire SPI3_MISO,
  input wire SPI3_MOSI,
@@ -249,7 +250,7 @@ output wire D2_TXENABLE,
 //-----------LMK---------------
 	  output wire LMK_SEL0_3V3,
 	  output wire LMK_SEL1_3V3,
-	   input wire LMK_RESET_3V3,//SPI readback from LMK
+	   input wire LMK_RESET_3V3,	//SPI readback from LMK
 	  output wire LMK_SCK_3V3,
 	  output wire LMK_SDIO_3V3,
 	  output wire LMK_CS_3V3,
@@ -263,13 +264,13 @@ output wire D2_TXENABLE,
 	  
 //--------------------------
 	  
-	  output wire FLASH_CLK_3V3,     //ноги управления резервной flash
+	  output wire FLASH_CLK_3V3,     	//ноги управления резервной flash
 	  output wire FLASH_MOSI_3V3,
 	  output wire FLASH_CS_3V3,
 	  input  wire FLASH_MISO_3V3,
 	  input  wire CS_FLASH_FPGA, 		// сигнал чипсилекта с МК на флеш через ПЛИС
 	  
-	  output wire DE_MISO_LVDS_3V3,  //ноги управления буфером SPI
+	  output wire DE_MISO_LVDS_3V3,     //ноги управления буфером SPI
 	  output wire SYNC_DA2,  			//sync для источника питания 
 	 
 	  input  wire CE_MO,
@@ -740,8 +741,8 @@ wire xMR_RESET_MK_FPGA;
 wire xBOOT_MK_FPGA; 
 		 
 wire xWDATA_MK0;
-wire xWDATA_MK1; 
-wire xWDATA_MK2; 
+wire xWDATA_MK1;   //прерывание от WCM (сообщение что кончились записи в памяти команд реального времени)
+wire xWDATA_MK2;   //прерывание от UDP2 (ETH2)
 wire xWDATA_MK3; 
 wire xWDATA_MK4; 
 wire xWDATA_MK5; 
@@ -751,7 +752,10 @@ wire xWDATA_MK7;
 wire xOK_BUS;
 wire xWR_BUS;
 wire xRD_BUS;
-	
+
+assign  WDATA_MK1	        =xWDATA_MK1;    
+assign  WDATA_MK3	        =xWDATA_MK3; //прерывание от WCM (сообщение что кончились записи в памяти команд реального времени)
+
 assign 	xUART6_TX 	  		=UART6_TX;
 assign  xUART1_TX 	  		=UART1_TX;
 assign  xTX_FTDI_1	  		=TX_FTDI_1;
@@ -1374,7 +1378,7 @@ assign xLMK_SYNC_3V3  = xWDATA_MK0;
 //----------------------------------------------------------------			
 assign xEN_2V5_VDA=1'h1; //0 - выключен источник питания для DAC и ADC			
 //----------------------------------------------------------------
-assign xTNC_MK_1HZ     = signal_1sec;  //направляем сигнал 1сек на мк
+assign xTNC_MK_1HZ     = w_T1HZ;  //направляем сигнал 1сек на мк
 assign xSEL_ETALON_3V3 = 1'h1; //1 - включаем поступление сигнала эталона с ВЧ разъёма
 
 assign xD1_SDENB=xCS_DAC1;
@@ -2009,7 +2013,7 @@ wcm1(						  		  //блок записи и чтения команд реаль
 .Interval_Tp_z  (mInterval_Tp 		),
 .Tblank1_z      (mTblank1 	 		),
 .Tblank2_z      (mTblank2 	 		), 	//-----//-------	 
-.FLAG_CMD_SEARCH_FAULT(				),	//если в "1" то в памяти не найдено новой команды на исполнение, по этому сигналу подгружаются новые данные в память !!!
+.FLAG_CMD_SEARCH_FAULT(xWDATA_MK3	),	//если в "1" то в памяти не найдено новой команды на исполнение, по этому сигналу подгружаются новые данные в память !!!
 .SCH_BUSY_REG_MEM_port(             ),	//тут выводим количество занятых строк памяти - чтобы отслеживать утечку
 .TEST 			(TEST_wcw),
 );
@@ -2855,22 +2859,7 @@ dsp1_1(
 .valid(dsp1_1_valid)
 );
 */
-//------------------timer 1 sec-----------------
-reg signal_1sec;
-reg [31:0] timer_1sec=0;
-always @(posedge clk_125)
-begin
-if (timer_1sec!=62500000) 
-begin
-timer_1sec <=timer_1sec+1; 
-end
-else
-	begin
-	timer_1sec <=0;
-	signal_1sec<=~signal_1sec;	
-	end
-end
-//-----------------------------------------------
+
 //-----------------------------------------------
 endmodule
 
