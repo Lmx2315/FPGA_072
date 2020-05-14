@@ -2004,11 +2004,13 @@ wcm1(						  		  //блок записи и чтения команд реаль
 .FREQ_RATE_z    (mFREQ_RATE 	 	),
 .TIME_START_z   (mTIME_START	 	),
 .N_impuls_z     (mN_impuls 	 		),
-.TYPE_impulse_z (mTYPE_impulse		), //2 бита шириной!!!
+.TYPE_impulse_z (mTYPE_impulse		), 	//2 бита шириной!!!
 .Interval_Ti_z  (mInterval_Ti 		),
 .Interval_Tp_z  (mInterval_Tp 		),
 .Tblank1_z      (mTblank1 	 		),
-.Tblank2_z      (mTblank2 	 		), //-----//-------	 
+.Tblank2_z      (mTblank2 	 		), 	//-----//-------	 
+.FLAG_CMD_SEARCH_FAULT(				),	//если в "1" то в памяти не найдено новой команды на исполнение, по этому сигналу подгружаются новые данные в память !!!
+.SCH_BUSY_REG_MEM_port(             ),	//тут выводим количество занятых строк памяти - чтобы отслеживать утечку
 .TEST 			(TEST_wcw),
 );
 
