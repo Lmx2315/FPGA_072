@@ -1478,7 +1478,7 @@ assign xUART6_RX    =  xTX1_RS422 & xTX_FTDI_2;
 assign xRNE1_RS422  =  xCS_FPGA2;
 assign xDE1RX_RS422 = ~xCS_FPGA2;
 
-assign xRX_FTDI_2   =  TxD_test;//тут выводим тестовые данные с SPI-DMA (SPI4)  xUART6_TX
+assign xRX_FTDI_2   = TxD_test;//в тестовых целях выводим сигнал с WCW      xWDATA_MK3           //;//тут выводим тестовые данные с SPI-DMA (SPI4)  xUART6_TX
 
 //-------------SYS_SPI----------------
 /*	  
@@ -1495,6 +1495,7 @@ reg r_rst_adc1_align=0;
 
 reg r_xA2_RESET_1V8 =0;
 reg r_rst_adc2_align=0;
+
 always @(posedge clk_240_adc1)
 begin
 r_xA1_RESET_1V8 <=xA1_RESET_MK;
@@ -1983,11 +1984,12 @@ assign xFPGA_LED1_3V3=wEn_Iz;//тестовый вывод на HL10
 rst reset_wcm1_1(clk_48_1,rst_wcm1);
 
 logic [31:0] TEST_wcw;
+logic RST_WCW;
 
 wcm 
 wcm1(						  		  //блок записи и чтения команд реального времени в память и из.
 .CLK 		    (clk_48_1),
-.rst_n 	        (~rst_wcm1),
+.rst_n 	        (~RST_WCW),
 .REQ_COMM 	    (w_REQ_COMM   		),//запрос новой команды для исполнения синхронизатором (тут вход)
 .TIME 		    (wTIME 		 		),//текущее системное время 
 .SYS_TIME_UPDATE(SYS_TIME_UPDATE_OK	),//сигнал сообщающий о перестановке системного времени!!!
@@ -2059,7 +2061,8 @@ spi1
 			.Tblank1         (tmp_Tblank1),
 			.Tblank2         (tmp_Tblank2),
 
-			.SPI_WR          (w_spi_WR)
+			.SPI_WR          (w_spi_WR),
+			.RESET_WCW       (RST_WCW)  //очищает память команд каждую пересинхронизацию к текущему времени!!!!
 		);
 //---------------------тестовый вывод на уарт-----------------
 logic [407:0] test_data;

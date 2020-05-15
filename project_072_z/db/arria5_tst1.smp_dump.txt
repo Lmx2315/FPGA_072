@@ -1,8 +1,23 @@
 
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
+State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al2|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
+
+State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al1|step
+Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
+step.00000000 0 0 0 0 0 0 0 
+step.00000001 0 0 0 0 0 1 1 
+step.00000010 0 0 0 0 1 0 1 
+step.00000011 0 0 0 1 0 0 1 
+step.00000100 0 0 1 0 0 0 1 
+step.00000101 0 1 0 0 0 0 1 
+step.00000110 1 0 0 0 0 0 1 
 
 State Machine - |top_module|adc2_jesd_rcv:adc2|adc2_align:al2|step
 Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
@@ -24,25 +39,10 @@ step.00000100 0 0 1 0 0 0 1
 step.00000101 0 1 0 0 0 0 1 
 step.00000110 1 0 0 0 0 0 1 
 
-State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al2|step
-Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 0 0 0 
-step.00000001 0 0 0 0 0 1 1 
-step.00000010 0 0 0 0 1 0 1 
-step.00000011 0 0 0 1 0 0 1 
-step.00000100 0 0 1 0 0 0 1 
-step.00000101 0 1 0 0 0 0 1 
-step.00000110 1 0 0 0 0 0 1 
-
-State Machine - |top_module|adc1_jesd_rcv:adc1|adc1_align:al1|step
-Name step.00000110 step.00000101 step.00000100 step.00000011 step.00000010 step.00000001 step.00000000 
-step.00000000 0 0 0 0 0 0 0 
-step.00000001 0 0 0 0 0 1 1 
-step.00000010 0 0 0 0 1 0 1 
-step.00000011 0 0 0 1 0 0 1 
-step.00000100 0 0 1 0 0 0 1 
-step.00000101 0 1 0 0 0 0 1 
-step.00000110 1 0 0 0 0 0 1 
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
 
 State Machine - |top_module|Block_read_spi:spi_custom_phy_reg6_adc1|flag
 Name flag.0001 
@@ -147,7 +147,27 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_error_sysref_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
 State Machine - |top_module|Block_read_spi_v2:spi_test2_sync|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg1_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -203,16 +223,6 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_test|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
 State Machine - |top_module|Block_read_spi:spi_read_data_MEM|flag
 Name flag.0001 
 flag.0000 0 
@@ -224,26 +234,6 @@ flag.0000 0
 flag.0001 1 
 
 State Machine - |top_module|Block_read_spi_v2:spi_error_dac1_D2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg1_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg4_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi_v2:spi_error_sysref_adc1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
@@ -271,16 +261,6 @@ step_rd.00000011 1 0 0 1 0 0
 step_rd.00010100 0 0 0 1 0 1 
 step_rd.11001000 0 0 0 1 1 0 
 
-State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc2|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
-State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc1|flag
-Name flag.0001 
-flag.0000 0 
-flag.0001 1 
-
 State Machine - |top_module|Block_write_spi_mac:spi_test_sdram_wr|flag
 Name flag.0001 
 flag.0000 0 
@@ -306,25 +286,25 @@ Name flag.0001
 flag.0000 0 
 flag.0001 1 
 
-State Machine - |top_module|sync_align_ila:sa_ila|step_faza
-Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
-step_faza.00000000 0 0 0 0 0 0 0 
-step_faza.00000001 0 0 0 0 0 1 1 
-step_faza.00000010 0 0 0 0 1 0 1 
-step_faza.00000011 0 0 0 1 0 0 1 
-step_faza.00000100 0 0 1 0 0 0 1 
-step_faza.00000101 0 1 0 0 0 0 1 
-step_faza.00000110 1 0 0 0 0 0 1 
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
 
-State Machine - |top_module|sync_align_ila:sa_ila_D2|step_faza
-Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
-step_faza.00000000 0 0 0 0 0 0 0 
-step_faza.00000001 0 0 0 0 0 1 1 
-step_faza.00000010 0 0 0 0 1 0 1 
-step_faza.00000011 0 0 0 1 0 0 1 
-step_faza.00000100 0 0 1 0 0 0 1 
-step_faza.00000101 0 1 0 0 0 0 1 
-step_faza.00000110 1 0 0 0 0 0 1 
+State Machine - |top_module|Block_read_spi:spi_test|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi_v2:spi_custom_phy_reg5_adc2|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
+
+State Machine - |top_module|Block_read_spi:spi_custom_phy_reg7_adc1|flag
+Name flag.0001 
+flag.0000 0 
+flag.0001 1 
 
 State Machine - |top_module|Block_read_spi_v2:spi_error_dac2|flag
 Name flag.0001 
@@ -345,6 +325,26 @@ State Machine - |top_module|Block_read_spi:spi_control1|flag
 Name flag.0001 
 flag.0000 0 
 flag.0001 1 
+
+State Machine - |top_module|sync_align_ila:sa_ila|step_faza
+Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
+step_faza.00000000 0 0 0 0 0 0 0 
+step_faza.00000001 0 0 0 0 0 1 1 
+step_faza.00000010 0 0 0 0 1 0 1 
+step_faza.00000011 0 0 0 1 0 0 1 
+step_faza.00000100 0 0 1 0 0 0 1 
+step_faza.00000101 0 1 0 0 0 0 1 
+step_faza.00000110 1 0 0 0 0 0 1 
+
+State Machine - |top_module|sync_align_ila:sa_ila_D2|step_faza
+Name step_faza.00000110 step_faza.00000101 step_faza.00000100 step_faza.00000011 step_faza.00000010 step_faza.00000001 step_faza.00000000 
+step_faza.00000000 0 0 0 0 0 0 0 
+step_faza.00000001 0 0 0 0 0 1 1 
+step_faza.00000010 0 0 0 0 1 0 1 
+step_faza.00000011 0 0 0 1 0 0 1 
+step_faza.00000100 0 0 1 0 0 0 1 
+step_faza.00000101 0 1 0 0 0 0 1 
+step_faza.00000110 1 0 0 0 0 0 1 
 
 State Machine - |top_module|Block_write_spi:spi_att2|flag
 Name flag.0001 

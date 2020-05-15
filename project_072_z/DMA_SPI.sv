@@ -29,9 +29,11 @@ module DMA_SPI (
 	output [31:0] Interval_Tp,
 	output [31:0] Tblank1,
 	output [31:0] Tblank2,
-	output 		  SPI_WR       
+	output 		  SPI_WR,
+	output 		  RESET_WCW       
 );
 
+parameter DELAY_WR=256;
 
 logic [407:0]  REG_SPI=0;//асинхронный регистр
 logic [407:0]  REG_CLK=0;//синхронный регистр
@@ -40,7 +42,8 @@ logic [ 3:0] frnt_CS   		     =0;
 logic 		 FLAG_SPI_DATA_OK    =0;
 logic 		 FLAG_SPI_WR         =0;
 logic 		 FLAG_SYS_TIME_UPDATE=0;
-logic [ 7:0] timer               =0;
+logic [15:0] timer               =0;
+logic 		 FLAG_RSRT_WCW 		 =0;
 
 //------синхронный приём на частоте SPI----------
 always_ff @(posedge SCLK) 
@@ -67,16 +70,27 @@ begin
 		begin
 		if (REG_SPI[407:344]!=64'h0) //если пришло время переустановки часов отличное от нуля - то готовимся к пересинхронизации по секундной метке!!!
 			begin 
+				FLAG_RSRT_WCW       <=1;
 				FLAG_SYS_TIME_UPDATE<=1; 
-				timer<=128;//задержка снятия флага синхронизации системного времени
+				timer<=DELAY_WR;//задержка снятия флага синхронизации системного времени
+			end else
+			begin
+			FLAG_SPI_WR<=1;		
 			end
 		REG_CLK	   <=REG_SPI;
-		FLAG_SPI_WR<=1;	
 		end	else
 		begin
-		FLAG_SPI_WR<=0;
-		if (timer>8'h0) timer<=timer-1; 
-		else FLAG_SYS_TIME_UPDATE<=0; 
+		if (timer>16'h0) 
+			begin
+				timer<=timer-1;
+				if (timer==1)  FLAG_SPI_WR<=1;	
+				if (timer==(DELAY_WR-1)) FLAG_RSRT_WCW<=0;
+			end
+		else 
+			begin
+				FLAG_SYS_TIME_UPDATE<=0; 
+				FLAG_SPI_WR<=0;
+			end
 		end
 end
 
@@ -93,5 +107,6 @@ assign          Tblank1=REG_CLK[ 63: 32];//m[43-46]	                     24 , 16
 assign          Tblank2=REG_CLK[ 31:  0];//m[47-50] 					 24 , 16 , 8 , 0
 assign 		     SPI_WR=FLAG_SPI_WR;
 assign 	SYS_TIME_UPDATE=FLAG_SYS_TIME_UPDATE;		
+assign        RESET_WCW=FLAG_RSRT_WCW;
 
 endmodule

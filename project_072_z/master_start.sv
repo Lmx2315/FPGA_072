@@ -198,10 +198,10 @@ begin
 	if (state==idle)																			//ожидание начала работы
 		begin
 		step_tst<=3;
-		temp_TIMER1  		<=reg_MEM_Tblank1;  												//переписываем управляющие регистры в рабочие переменные
-		temp_TIMER2  		<=reg_MEM_Interval_Ti;
-		temp_TIMER3			<=reg_MEM_Tblank2;
-		temp_TIMER4			<=reg_MEM_Interval_Tp;
+		temp_TIMER1  		<=reg_MEM_Tblank1    -1;  												//переписываем управляющие регистры в рабочие переменные
+		temp_TIMER2  		<=reg_MEM_Interval_Ti-1;
+		temp_TIMER3			<=reg_MEM_Tblank2    -1;
+		temp_TIMER4			<=reg_MEM_Interval_Tp-1;
 		FLAG_END_PROCESS_CMD<=1'b0;		
 		if (reg_temp_N_impuls>0) 
 			begin
