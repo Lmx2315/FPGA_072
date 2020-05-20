@@ -171,7 +171,7 @@ GND                          : AC2       : gnd    :                   :         
 GXB_NC                       : AC3       :        :                   :         : B0R       :                
 GXB_NC                       : AC4       :        :                   :         : B0R       :                
 GND                          : AC5       : gnd    :                   :         :           :                
-RESERVED_INPUT               : AC6       :        :                   :         : 4A        :                
+D_MOSI                       : AC6       : input  : 2.5 V             :         : 4A        : N              
 RESERVED_INPUT               : AC7       :        :                   :         : 4A        :                
 GND                          : AC8       : gnd    :                   :         :           :                
 RESERVED_INPUT               : AC9       :        :                   :         : 4B        :                
@@ -299,7 +299,7 @@ A1_STBY_1V8                  : AG10      : output : 1.8 V             :         
 D2_SYNCB(n)                  : AG11      : input  : LVDS              :         : 4C        : Y              
 SYSREF6(n)                   : AG12      : input  : LVDS              :         : 4C        : Y              
 VCCIO4C                      : AG13      : power  :                   : 2.5V    : 4C        :                
-D_MISO                       : AG14      : output : 2.5 V             :         : 4C        : N              
+RESERVED_INPUT               : AG14      :        :                   :         : 4C        :                
 RESERVED_INPUT               : AG15      :        :                   :         : 4C        :                
 D1_SDIO                      : AG16      : output : 1.8 V             :         : 4D        : Y              
 D1_ALARM                     : AG17      : input  : 1.8 V             :         : 4D        : Y              
@@ -329,7 +329,7 @@ VCCIO4B                      : AH10      : power  :                   : 1.8V    
 D2_SYNCB                     : AH11      : input  : LVDS              :         : 4C        : Y              
 SYSREF6                      : AH12      : input  : LVDS              :         : 4C        : Y              
 SYSREF5(n)                   : AH13      : input  : LVDS              :         : 4C        : Y              
-D_MOSI                       : AH14      : input  : 2.5 V             :         : 4C        : N              
+RESERVED_INPUT               : AH14      :        :                   :         : 4C        :                
 RESERVED_INPUT               : AH15      :        :                   :         : 4C        :                
 VCCIO4D                      : AH16      : power  :                   : 1.8V    : 4D        :                
 D1_TXENABLE                  : AH17      : output : 1.8 V             :         : 4D        : Y              
@@ -856,8 +856,8 @@ A1_TX3(n)                    : T29       : input  : 1.5-V PCML        :         
 A1_TX3                       : T30       : input  : 1.5-V PCML        :         : B0L       : Y              
 GND                          : U1        : gnd    :                   :         :           :                
 GND                          : U2        : gnd    :                   :         :           :                
-GXB_NC                       : U3        :        :                   :         : B1R       :                
-GXB_NC                       : U4        :        :                   :         : B1R       :                
+TX2_GTP                      : U3        : output : 1.5-V PCML        :         : B1R       : Y              
+TX2_GTP(n)                   : U4        : output : 1.5-V PCML        :         : B1R       : Y              
 GND                          : U5        : gnd    :                   :         :           :                
 VCCL_GXBR0                   : U6        : power  :                   : 1.1V    :           :                
 GND                          : U7        : gnd    :                   :         :           :                
@@ -884,8 +884,8 @@ GXB_NC                       : U27       :        :                   :         
 GXB_NC                       : U28       :        :                   :         : B0L       :                
 GND                          : U29       : gnd    :                   :         :           :                
 GND                          : U30       : gnd    :                   :         :           :                
-GND                          : V1        :        :                   :         : B1R       :                
-GND                          : V2        :        :                   :         : B1R       :                
+RX2_GTP                      : V1        : input  : 2.5-V PCML        :         : B1R       : Y              
+RX2_GTP(n)                   : V2        : input  : 2.5-V PCML        :         : B1R       : Y              
 GND                          : V3        : gnd    :                   :         :           :                
 GND                          : V4        : gnd    :                   :         :           :                
 VCCT_GXBR0                   : V5        : power  :                   : 1.1V    :           :                
@@ -955,7 +955,7 @@ GND                          : Y8        : gnd    :                   :         
 GND                          : Y9        : gnd    :                   :         :           :                
 VCCPD4BCD                    : Y10       : power  :                   : 2.5V    : 4B, 4C, 4D :                
 GND                          : Y11       : gnd    :                   :         :           :                
-RESERVED_INPUT               : Y12       :        :                   :         : 4C        :                
+D_MISO                       : Y12       : output : 2.5 V             :         : 4C        : N              
 RESERVED_INPUT               : Y13       :        :                   :         : 4C        :                
 GND                          : Y14       : gnd    :                   :         :           :                
 VCCPD4BCD                    : Y15       : power  :                   : 2.5V    : 4B, 4C, 4D :                

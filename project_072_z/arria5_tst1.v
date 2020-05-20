@@ -162,8 +162,8 @@ output wire SPI2_NSS_MK,
 //    input wire RX_GTP, //ETH1
 //   output wire TX_GTP,
 
- //   input wire RX2_GTP, //ETH2
- //  output wire TX2_GTP,
+     input wire RX2_GTP, //ETH2
+    output wire TX2_GTP,
 
 //	  input wire FPGA_F48MHZ,
 //	  input wire DCLK6,
@@ -1418,7 +1418,7 @@ assign xSPI3_MISO_AND =
 							xSPI3_MISO18&//adc2
 							xSPI3_MISO19&//adc2
 							xSPI3_MISO20&//adc2
-				//			xSPI3_MISO21&//eth2
+							xSPI3_MISO21&//     eth2
 							xSPI3_MISO22&//test SDRAM
 
 							xSPI3_MISO23&//DAC2
@@ -1876,6 +1876,8 @@ bufi1	bufi1_inst2 (
 
 logic 		 w_REQ_COMM 	;
 logic [63:0] wTIME 			;
+logic [63:0] wTIME_DSP1		;
+logic [63:0] wTIME_DSP0		;
 logic [47:0] FREQ     		;
 logic [47:0] FREQ_STEP 		;
 logic [31:0] FREQ_RATE 		;
@@ -1945,6 +1947,7 @@ rst reset_sync1_1(clk_48_1,rst_sync1);
 test_t1hz inst_test_t1hz (.clk(clk_48_1), .z(w_T1HZ));//временная тестовая имитация квазисекундной метки (67/48)
 
 logic [63:0] test_mstrt;
+logic logic_En_ADC;
 
 master_start 
 sync1(
@@ -1972,11 +1975,20 @@ sync1(
 .MEM_Tblank1		(mTblank1 			),  //данные команды из реестра реального времени
 .MEM_Tblank2 		(mTblank2 			),  //данные команды из реестра реального времени
 .SYS_TIME_UPDATE_OK (SYS_TIME_UPDATE_OK ),	//флаг показывающий,что по секундной метке произошла установка системного времени
-.TIME 				(wTIME 				),
+.TIME 				(wTIME 				),  //выводим во вне текущее время
 .TEST 				(test_mstrt         ),	//тестовый вывод внутренней информации
+.En_ADC 			(logic_En_ADC 		),	//сигнал определяющий (интервал обработки АЦП)
 .En_Iz 				(wEn_Iz 			),  //сформированый интервал Излучения
 .En_Pr 				(wEn_Pr 			)   //сформированый интервал Приёма
 );
+
+
+always @(posedge clk_48_1) //дублируем текущее время для блоков DSP , допускаем задержку на такт
+ begin
+ wTIME_DSP1<=wTIME;
+ wTIME_DSP0<=wTIME;
+ end
+
 
 assign xFPGA_LED1_3V3=wEn_Iz;//тестовый вывод на HL10
 
@@ -2474,6 +2486,13 @@ if (sch_time <10)
 			end
 end
 
+logic [31:0] data_dsp2_adc0_0;
+logic [31:0] data_dsp2_adc0_1; 
+logic [31:0] real_TIME0_0;	
+logic [31:0] real_TIME0_1;	
+logic 		 dsp2_0_0_valid;
+logic 		 dsp2_0_1_valid;
+
 wire rst_block_eth1;
 rst reset_ETH1(clk_125,rst_block_eth1);
 /*
@@ -2499,10 +2518,10 @@ eth_1g_top //MAC0
 	46 //адрес по которому записываем MAC адрес в корку ETH
 	)
 eth1(
-	.data_1ch(data_test),//data_dsp_adc0_0 
-	.data_2ch(data_test),//data_dsp_adc0_1 
-	.wr_data_1ch(wr_en),//dsp0_0_valid 
-	.wr_data_2ch(wr_en),//dsp0_1_valid 
+	.data_1ch(data_dsp2_adc0_0),// data_test
+	.data_2ch(data_dsp2_adc0_1),// data_test
+	.wr_data_1ch(dsp2_0_0_valid),// wr_en
+	.wr_data_2ch(dsp2_0_1_valid),// wr_en
 	.wrclk(clk_240_adc1),//входной клок!!!!
 	.clk_12(o1),//этот не клок  а тактовый сигнал для часов
 	.clk_125  (clk_125),
@@ -2525,6 +2544,7 @@ eth1(
 	);
 */
 //--------------------------------------
+/*
 wire [31:0] data_test; 
 wire [15:0]	d_gen;
 wire wr_en;
@@ -2537,12 +2557,19 @@ tst1(
 .q(d_gen) ,
 .wr() ,
 .clk12() );	
-
+*/
 //-------------------------------------
+
+wire [31:0] data_dsp2_adc1_0;
+wire [31:0] data_dsp2_adc1_1; 
+wire [31:0] real_TIME1_0;	
+wire [31:0] real_TIME1_1;	
+wire 	    dsp2_1_0_valid;
+wire 	    dsp2_1_1_valid;	
 
 wire rst_block_eth2;
 rst reset_ETH2(clk_125,rst_block_eth2);
-/*
+
 eth_1g_top //MAC1
 #(
 	126,//чтение 32 бит служебных данных из памяти UDP ресивера 
@@ -2565,10 +2592,10 @@ eth_1g_top //MAC1
 	47  //адрес по которому записываем MAC адрес в корку ETH
 	)
 eth2(
-	.data_1ch(data_test),	//data_dsp_adc1_0 
-	.data_2ch(data_test),	//data_dsp_adc1_1 
-	.wr_data_1ch(wr_en),	//dsp1_0_valid 
-	.wr_data_2ch(wr_en),	//dsp1_1_valid 
+	.data_1ch(data_dsp2_adc1_0),	// data_test
+	.data_2ch(data_dsp2_adc1_1),	// data_test
+	.wr_data_1ch(dsp2_1_0_valid),	// wr_en
+	.wr_data_2ch(dsp2_1_1_valid),	// wr_en
 	.wrclk(clk_240_adc1),	//входной клок!!!!
 	.clk_12(o2),			//этот не клок  а тактовый сигнал для часов
 	.clk_125  (clk_125),
@@ -2589,7 +2616,7 @@ eth2(
 	.SFP1_TX_DISABLE(SFP2_TX_DISABLE),
 	.INT_MK(xWDATA_MK2)
 	);
-	*/
+
 //-----------------------------------------------
 //sdram
 
@@ -2780,7 +2807,7 @@ wire rst_00;
 rst rst_dsp00(clk_240_adc1,rst_00);
 
 always @(posedge clk_240_adc1) reg_ch1_adc2_data<=ch1_adc2_data;
-/*
+
 dsp_step1 
 dsp0_0(
 .clk(clk_240_adc1),//
@@ -2789,12 +2816,27 @@ dsp0_0(
 .data(data_dsp_adc0_0),
 .valid(dsp0_0_valid)
 );
-*/
+
+wire  rst_ds00;
+rst reset_ds00(clk_48_1,rst_ds00);
+dsp_step2 
+ds0_0(
+.clk 		(clk_48_1 	 	 ), // Clock  48 MHz - такой же клок как на синхронизаторе
+.clk_en 	(logic_En_ADC 	 ), // Clock Enable
+.rst_n 		(~rst_ds00 		 ), // Asynchronous reset active low
+.DATA 		(data_dsp_adc0_0 ),	//входные IQ данные
+.data_en 	(dsp0_0_valid 	 ),	//valid входных данных
+.real_TIME 	(wTIME_DSP0[31:0]), //вход тиков реального времени (младшие 32 бита)
+.dat_IQ 	(data_dsp2_adc0_0), //выход совмещённых IQ данных
+.dat_TIME 	(real_TIME0_0    ), //выход реального времени
+.valid 		(dsp2_0_0_valid  )	
+);
+
 wire rst_01;
 rst rst_dsp01(clk_240_adc1,rst_01);
 
 always @(posedge clk_240_adc1) reg_ch0_adc2_data<=ch0_adc2_data;
-/*
+
 dsp_step1 
 dsp0_1(
 .clk(clk_240_adc1),//
@@ -2803,26 +2845,22 @@ dsp0_1(
 .data(data_dsp_adc0_1),
 .valid(dsp0_1_valid)
 );
-*/
-//-----NCO test-----------
-/*
-  parameter freq1=32'h53333333;//78 Mhz	 
 
-wire [17:0] w_i_nco;
-wire [17:0] w_q_nco;
-wire nco_valid;
+wire  rst_ds01;
+rst reset_ds01(clk_48_1,rst_ds01);
+dsp_step2 
+ds0_1(
+.clk 		(clk_48_1 	 	 ), // Clock  48 MHz - такой же клок как на синхронизаторе
+.clk_en 	(logic_En_ADC 	 ), // Clock Enable
+.rst_n 		(~rst_ds01 		 ), // Asynchronous reset active low
+.DATA 		(data_dsp_adc0_1 ),	//входные IQ данные
+.data_en 	(dsp0_1_valid 	 ),	//valid входных данных
+.real_TIME 	(wTIME_DSP0[31:0]), //вход тиков реального времени (младшие 32 бита)
+.dat_IQ 	(data_dsp2_adc0_1), //выход совмещённых IQ данных
+.dat_TIME 	(real_TIME0_1    ), //выход реального времени
+.valid 		(dsp2_0_1_valid  )	
+);
 
-nco_test 
-nco1 (
-		.clk       (clk_240_adc1),       // clk.clk
-		.reset_n   (~rst_dsp1),   // rst.reset_n
-		.clken     (1'h1),     //  in.clken
-		.phi_inc_i (freq1), //    .phi_inc_i
-		.fsin_o    (w_i_nco),    // out.fsin_o
-		.fcos_o    (w_q_nco),    //    .fcos_o
-		.out_valid (nco_valid)  //    .out_valid
-	);
-*/
 //-----DSP ADC1-----------
 
 wire [31:0] data_dsp_adc1_0;
@@ -2838,21 +2876,36 @@ wire rst_10;
 rst rst_dsp10(clk_240_adc1,rst_10);
 
 always @(posedge clk_240_adc1) reg_ch0_adc0_data<=ch0_adc0_data;//w_i_nco[17:2];//
-/*
+
 dsp_step1 
 dsp1_0(
-.clk(clk_240_adc1),//
+.clk(clk_240_adc1),		//
 .rst(rst_10),
-.in(reg_ch0_adc0_data),//
+.in(reg_ch0_adc0_data),	//
 .data(data_dsp_adc1_0),
 .valid(dsp1_0_valid)
 );
-*/
+
+wire  rst_ds10;
+rst reset_ds10(clk_48_1,rst_ds10);
+dsp_step2 
+ds1_0(
+.clk 		(clk_48_1 	 	 ), // Clock  48 MHz - такой же клок как на синхронизаторе
+.clk_en 	(logic_En_ADC 	 ), // Clock Enable
+.rst_n 		(~rst_ds10 		 ), // Asynchronous reset active low
+.DATA 		(data_dsp_adc1_0 ),	//входные IQ данные
+.data_en 	(dsp1_0_valid 	 ),	//valid входных данных
+.real_TIME 	(wTIME_DSP1[31:0]), //вход тиков реального времени (младшие 32 бита)
+.dat_IQ 	(data_dsp2_adc1_0), //выход совмещённых IQ данных
+.dat_TIME 	(real_TIME1_0    ), //выход реального времени
+.valid 		(dsp2_1_0_valid  )	
+);
+
 wire rst_11;
 rst rst_dsp11(clk_240_adc1,rst_11);
 
 always @(posedge clk_240_adc1) reg_ch1_adc0_data<=ch1_adc0_data;//w_q_nco[17:2];//
-/*
+
 dsp_step1 
 dsp1_1(
 .clk(clk_240_adc1),//
@@ -2861,7 +2914,21 @@ dsp1_1(
 .data(data_dsp_adc1_1),
 .valid(dsp1_1_valid)
 );
-*/
+
+wire  rst_ds11;
+rst reset_ds11(clk_48_1,rst_ds11);
+dsp_step2 
+ds1_1(
+.clk 		(clk_48_1 	 	 ), // Clock  48 MHz - такой же клок как на синхронизаторе
+.clk_en 	(logic_En_ADC 	 ), // Clock Enable
+.rst_n 		(~rst_ds11 		 ), // Asynchronous reset active low
+.DATA 		(data_dsp_adc1_1 ),	//входные IQ данные
+.data_en 	(dsp1_1_valid 	 ),	//valid входных данных
+.real_TIME 	(wTIME_DSP1[31:0]), //вход тиков реального времени (младшие 32 бита)
+.dat_IQ 	(data_dsp2_adc1_1), //выход совмещённых IQ данных
+.dat_TIME 	(real_TIME1_1    ), //выход реального времени
+.valid 		(dsp2_1_1_valid  )	
+);
 
 //-----------------------------------------------
 endmodule

@@ -1,5 +1,5 @@
 Assembler report for arria5_tst1
-Fri May 15 18:02:09 2020
+Wed May 20 17:12:27 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -38,7 +38,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri May 15 18:02:09 2020 ;
+; Assembler Status      ; Successful - Wed May 20 17:12:27 2020 ;
 ; Revision Name         ; arria5_tst1                           ;
 ; Top-level Entity Name ; top_module                            ;
 ; Family                ; Arria V                               ;
@@ -53,13 +53,15 @@ refer to the applicable agreement for further details.
 +--------+---------+---------------+
 
 
-+--------------------------------------------------+
-; Assembler Encrypted IP Cores Summary             ;
-+--------+--------------------------+--------------+
-; Vendor ; IP Core Name             ; License Type ;
-+--------+--------------------------+--------------+
-; Altera ; NCO Compiler (6AF7 0014) ; Licensed     ;
-+--------+--------------------------+--------------+
++-----------------------------------------------------------+
+; Assembler Encrypted IP Cores Summary                      ;
++--------+-----------------------------------+--------------+
+; Vendor ; IP Core Name                      ; License Type ;
++--------+-----------------------------------+--------------+
+; Altera ; NCO Compiler (6AF7 0014)          ; Licensed     ;
+; Altera ; CIC Compiler (6AF7 00BB)          ; Licensed     ;
+; Altera ; Triple-Speed Ethernet (6AF7 00BD) ; Licensed     ;
++--------+-----------------------------------+--------------+
 
 
 +-----------------------------------------------+
@@ -76,8 +78,8 @@ refer to the applicable agreement for further details.
 +----------------+--------------------------------------------------------+
 ; Option         ; Setting                                                ;
 +----------------+--------------------------------------------------------+
-; JTAG usercode  ; 0x05819A23                                             ;
-; Checksum       ; 0x05819A23                                             ;
+; JTAG usercode  ; 0x0ECC6C38                                             ;
+; Checksum       ; 0x0ECC6C38                                             ;
 +----------------+--------------------------------------------------------+
 
 
@@ -87,7 +89,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
-    Info: Processing started: Fri May 15 18:01:37 2020
+    Info: Processing started: Wed May 20 17:11:31 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off arria5_tst1 -c arria5_tst1
 Warning (125092): Tcl Script File BUFIN24.qip not found
     Info (125063): set_global_assignment -name QIP_FILE BUFIN24.qip
@@ -99,9 +101,9 @@ Warning (125092): Tcl Script File r.qip not found
     Info (125063): set_global_assignment -name QIP_FILE r.qip
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 875 megabytes
-    Info: Processing ended: Fri May 15 18:02:10 2020
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:33
+    Info: Peak virtual memory: 1250 megabytes
+    Info: Processing ended: Wed May 20 17:12:28 2020
+    Info: Elapsed time: 00:00:57
+    Info: Total CPU time (on all processors): 00:00:56
 
 
